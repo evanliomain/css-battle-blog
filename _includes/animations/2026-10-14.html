@@ -1,0 +1,105 @@
+<figure class="anim t1014" data-duration="27" data-scene="t1014" data-wide="-80 -40 560 350" style="--bg:#9f6766">
+<style>
+.t1014{--mark:#ffd23f}
+.t1014 .scene>*{box-sizing:border-box}
+.t1014 .white{left:-80px;top:-40px;width:560px;height:350px;background:#fff}
+.t1014 .h,.t1014 .h-out,.t1014 .b,.t1014 .b-out{left:0;top:0}
+.t1014 .h-out,.t1014 .b-out{outline:2px dashed var(--mark);outline-offset:-1px}
+.t1014 .tag{z-index:60;font:600 12px/1 ui-monospace,SFMono-Regular,Menlo,monospace;color:#14171c;background:var(--mark);padding:3px 5px;border-radius:3px;white-space:nowrap}
+.t1014[data-view="wide"] .tag{font-size:15px}
+.t1014[data-view="canvas"] .tag.w{display:none}
+</style>
+<div class="anim-col">
+<div class="stage" role="img" aria-label="{% if include.lang == "fr" %}Animation : la boîte de html zoomée ×5, presque hors du canevas, son ombre verte, son ombre rose qui coupe l'épaule droite, puis le body zoomé ×25 et arrondi qui creuse l'encoche{% else %}Animation: html's box zoomed ×5, mostly off the canvas, its green shadow, its pink shadow cutting the right shoulder, then body zoomed ×25 and rounded, carving the notch{% endif %}">
+<div class="scene">
+<div class="white"></div>
+<div class="h"></div>
+<div class="b"></div>
+<div class="h-out"></div>
+<div class="b-out"></div>
+<b class="tag" data-w="1" style="left:8px;top:236px">html · margin:-6 54 30-14 · zoom:5</b>
+<b class="tag" data-w="2" style="left:8px;top:236px">9mm 6vh 0-2px × 5 → {% if include.lang == "fr" %}170,08{% else %}170.08{% endif %} 90 0 -10</b>
+<b class="tag" data-w="2" style="left:8px;top:262px">{% if include.lang == "fr" %}pas d'ombre sous la boîte{% else %}no shadow under the box{% endif %}</b>
+<b class="tag" data-w="3" style="left:8px;top:236px">72q 0 × 5 → {% if include.lang == "fr" %}340,16{% else %}340.16{% endif %} 0</b>
+<b class="tag" data-w="4" style="left:8px;top:236px">body · zoom 5 × 5 = 25</b>
+<b class="tag" data-w="4" style="left:8px;top:262px">margin × 25 → 0 -95 20 245</b>
+<b class="tag" data-w="5" style="left:8px;top:236px">2q × 25 = {% if include.lang == "fr" %}47,25{% else %}47.25{% endif %}px → 25px</b>
+<b class="tag w" data-w="5" style="left:190px;top:-36px">{% if include.lang == "fr" %}ombres du body : à 1700px →{% else %}body's shadows: 1700px away →{% endif %}</b>
+</div>
+</div>
+<div class="legend"><span><i style="--c:#f08a4b"></i>{% if include.lang == "fr" %}boîte de html (sans couleur en vrai){% else %}html's box (no color in reality){% endif %}</span><span><i style="--c:#ffd166"></i>{% if include.lang == "fr" %}ombre rose de html{% else %}html's pink shadow{% endif %}</span><span><i style="--c:#6c8cff"></i>{% if include.lang == "fr" %}body (rose en vrai){% else %}body (pink in reality){% endif %}</span></div>
+</div>
+<div class="anim-side">
+<pre class="code" aria-hidden="true">&lt;style>*{<span data-on="1">background:#9F6766</span>;<span data-on="2 3 5">border-radius:2q</span>;<span data-on="1">margin:-6 54 30-14</span>;<span data-on="1 4">zoom:5</span>;box-shadow:<span data-on="3">72q 0#9F6766</span>,<span data-on="2">9mm 6vh 0-2px#BDE4C1</span>;<span data-on="4" data-tone="2">*{margin:0-3.8.8 9.8</span></pre>
+<div class="now" aria-live="polite">
+<div class="caps">
+{%- if include.lang == "fr" %}
+<div class="cap" data-t="0" data-step="html, zoomé ×5"><h3>1. html, zoomé ×5</h3><p><code>*</code> touche d'abord <code>html</code>. <code>zoom:5</code> multiplie toutes ses longueurs : ses marges deviennent −30, 270, 150 et −70. En mode quirks, sa boîte fait 400 − 270 + 70 = 200 de large et 300 + 30 − 150 = 180 de haut, en (−70, −30), presque hors du canevas. Son fond rose part sur tout le canevas : la boîte elle-même ne se voit pas.</p></div>
+<div class="cap" data-t="4" data-step="L'ombre verte"><h3>2. L'ombre verte</h3><p><code>9mm 6vh 0-2px</code>, ×5 : un décalage de 170,08 et 90, un étalement de −10. Une copie de 180 × 160 en (110, 70), à coins carrés. Une ombre extérieure n'est jamais peinte sous sa propre boîte : le coin arrondi de <code>html</code> creuse l'épaule gauche.</p></div>
+<div class="cap" data-t="9" data-step="L'ombre rose : l'épaule droite"><h3>3. L'ombre rose : l'épaule droite</h3><p><code>72q 0</code>, ×5 : une copie de la boîte décalée de 340,16 vers la droite, dans la couleur du fond. La première ombre passe au-dessus de la verte : son coin arrondi creuse l'épaule droite.</p></div>
+<div class="cap" data-t="14" data-step="body : zoom ×25"><h3>4. body : zoom ×25</h3><p><code>body</code> reçoit aussi <code>zoom:5</code>, en plus de celui de <code>html</code> : ×25. <code>margin:0-3.8.8 9.8</code> devient 0, −95, 20 et 245 : une boîte de 50 × 160 en (175, −30), étirée jusqu'à 20px du bas de <code>html</code>.</p></div>
+<div class="cap" data-t="18.5" data-step="Le rayon : l'encoche en U"><h3>5. Le rayon : l'encoche en U</h3><p>Sur <code>body</code>, <code>2q</code> fait 47,25px. Sur une boîte de 50px de large, le rayon est réduit à 25px : le bas devient un demi-cercle, rose comme le fond. C'est l'encoche. Ses ombres, ×25, partent à 1700 et 850px : hors du canevas.</p></div>
+<div class="cap" data-t="22" data-step="Résultat" data-live="136 caractères · 100 % identique"><h3>6. Résultat : 136 caractères</h3><p>Deux boîtes arrondies et deux ombres : le débardeur.</p></div>
+{%- else %}
+<div class="cap" data-t="0" data-step="html, zoomed ×5"><h3>1. html, zoomed ×5</h3><p><code>*</code> matches <code>html</code> first. <code>zoom:5</code> multiplies all its lengths: its margins become −30, 270, 150 and −70. In quirks mode, its box is 400 − 270 + 70 = 200 wide and 300 + 30 − 150 = 180 tall, at (−70, −30), mostly off the canvas. Its pink background spreads to the whole canvas: the box itself does not show.</p></div>
+<div class="cap" data-t="4" data-step="The green shadow"><h3>2. The green shadow</h3><p><code>9mm 6vh 0-2px</code>, ×5: an offset of 170.08 and 90, a spread of −10. A 180 × 160 copy at (110, 70), with square corners. An outer shadow is never painted under its own box, so <code>html</code>'s rounded corner carves the left shoulder.</p></div>
+<div class="cap" data-t="9" data-step="The pink shadow: right shoulder"><h3>3. The pink shadow: right shoulder</h3><p><code>72q 0</code>, ×5: a copy of the box moved 340.16 to the right, in the background color. The first shadow is painted over the green one, and its rounded corner carves the right shoulder.</p></div>
+<div class="cap" data-t="14" data-step="body: zoom ×25"><h3>4. body: zoom ×25</h3><p><code>body</code> gets <code>zoom:5</code> too, on top of <code>html</code>'s: ×25. <code>margin:0-3.8.8 9.8</code> becomes 0, −95, 20 and 245: a 50 × 160 box at (175, −30), stretched down to 20px above the bottom of <code>html</code>.</p></div>
+<div class="cap" data-t="18.5" data-step="The radius: the U notch"><h3>5. The radius: the U notch</h3><p>On <code>body</code>, <code>2q</code> is 47.25px. On a 50px-wide box the radius is cut down to 25px, so the bottom becomes a half circle, pink like the background. That is the notch. Its shadows, ×25, go 1700 and 850px away: off the canvas.</p></div>
+<div class="cap" data-t="22" data-step="Result" data-live="136 characters · 100% match"><h3>6. Result: 136 characters</h3><p>Two rounded boxes and two shadows: the tank top.</p></div>
+{%- endif %}
+</div>
+<div class="live"></div>
+</div>
+</div>
+<script>
+(window.AnimScenes = window.AnimScenes || {}).t1014 = (fig) => {
+  const fr = document.documentElement.lang === 'fr';
+  const $ = (s) => fig.querySelector(s), $$ = (s) => [...fig.querySelectorAll(s)];
+  const live = $('.live'), end = $('.cap[data-live]').dataset.live, caps = $$('.cap');
+  const white = $('.white'), H = $('.h'), hOut = $('.h-out'), B = $('.b'), bOut = $('.b-out');
+  const tags = $$('.tag[data-w]');
+  const ease = (x) => (x < 0.5 ? 4 * x * x * x : 1 - Math.pow(-2 * x + 2, 3) / 2);
+  const pr = (t, a, b) => ease(Math.min(1, Math.max(0, (t - a) / (b - a))));
+  const win = (t, a, b, f = 0.5) => Math.min(pr(t, a, a + f), 1 - pr(t, b - f, b));
+  const hex = (h) => [1, 3, 5].map((i) => parseInt(h.slice(i, i + 2), 16));
+  const mix = (a, b, m) => `rgb(${hex(a).map((v, i) => Math.round(v + (hex(b)[i] - v) * m)).join(',')})`;
+  const num = (v, d = 1) => (Math.abs(v) < 0.005 ? 0 : v).toFixed(d).replace('.', fr ? ',' : '.');
+  const Q = 96 / 101.6, PINK = '#9f6766', GREEN = '#bde4c1';
+  const box = (e, x, y, w, h) => Object.assign(e.style, { left: x + 'px', top: y + 'px', width: w + 'px', height: h + 'px' });
+  return (t, step) => {
+    const teach = fig.dataset.teach === '1';
+    const real = teach ? pr(t, 22.2, 23.2) : 1;
+    white.style.opacity = 1 - pr(t, 2.6, 3.6);
+    // html: zoom 1 → 5
+    const z = 1 + 4 * pr(t, 0.6, 3);
+    const hx = -14 * z, hy = -6 * z, hw = 400 - 40 * z, hh = 300 - 24 * z, hr = 2 * Q * z;
+    for (const e of [H, hOut]) { box(e, hx, hy, hw, hh); e.style.borderRadius = hr + 'px'; }
+    const g = pr(t, 4.6, 7.4), p = pr(t, 9.6, 12.4);
+    const gx = 9 * 96 / 25.4 * z * g, gy = 18 * z * g, ps = 72 * Q * z * p;
+    H.style.boxShadow = `${ps}px 0 0 0 ${t >= 9.6 ? mix('#ffd166', PINK, real) : 'transparent'},${gx}px ${gy}px 0 ${-2 * z}px ${t >= 4.2 ? GREEN : 'transparent'}`;
+    H.style.background = teach ? `rgb(240 138 75 / ${0.85 * (1 - real)})` : 'transparent';
+    hOut.style.opacity = win(t, 0.3, 22.2, 0.5);
+    // body: zoom 5 → 25, then its radius
+    const Z = 5 + 20 * pr(t, 14.8, 17.4);
+    const bx = -70 + 9.8 * Z, bw = 200 - 6 * Z, bh = 180 - 0.8 * Z, br = 2 * Q * 25 * pr(t, 19, 21.4);
+    for (const e of [B, bOut]) { box(e, bx, -30, bw, bh); e.style.borderRadius = br + 'px'; }
+    B.style.background = mix('#6c8cff', PINK, real);
+    B.style.opacity = pr(t, 14.2, 14.8);
+    bOut.style.opacity = win(t, 14.2, 22.2, 0.5);
+    tags.forEach((e) => {
+      const w = +e.dataset.w - 1;
+      e.style.opacity = w === step ? win(t, +caps[w].dataset.t + 0.3, +caps[w + 1].dataset.t, 0.4) : 0;
+    });
+    let txt = '';
+    if (step === 0) txt = `zoom ${num(z, 2)} · html ${num(hw, 0)} × ${num(hh, 0)} ${fr ? 'en' : 'at'} (${num(hx, 0)}, ${num(hy, 0)})`;
+    else if (step === 1) txt = `${fr ? 'ombre verte : décalage' : 'green shadow: offset'} ${num(gx, 2)} ${num(gy, 0)} · ${fr ? 'étalement' : 'spread'} −10`;
+    else if (step === 2) txt = `${fr ? 'ombre rose : décalage' : 'pink shadow: offset'} ${num(ps, 2)} 0`;
+    else if (step === 3) txt = `zoom ${num(Z, 1)} · body ${num(bw, 0)} × ${num(bh, 0)} ${fr ? 'en' : 'at'} (${num(bx, 0)}, −30)`;
+    else if (step === 4) txt = `${fr ? 'rayon' : 'radius'} ${num(br, 2)} px → ${num(Math.min(br, 25), 2)} px`;
+    else txt = end;
+    live.textContent = txt;
+  };
+};
+</script>
+</figure>
