@@ -1,0 +1,107 @@
+<figure class="anim t1005" data-duration="25" data-scene="t1005" data-wide="-20 -20 580 370" data-off-label="-16 306" style="--bg:#f7cb71">
+<style>
+.t1005{--t1005-ink:#14171c}
+.t1005 .scene i{position:absolute;box-sizing:border-box}
+.t1005 .t1005-h,.t1005 .t1005-g-h{left:240px;top:90px;width:120px;height:120px}
+.t1005 .t1005-h{border:0 dotted #d16161;border-block:0}
+.t1005 .t1005-bb,.t1005 .t1005-g-b{left:59px;top:66px;width:482px;height:168px}
+.t1005 .t1005-sv,.t1005 .t1005-sh,.t1005 .t1005-v,.t1005 .t1005-hz{background:#d16161}
+.t1005 .t1005-v{left:96px;top:116px;width:7px;height:68px}
+.t1005 .t1005-hz{left:66px;top:146px;width:68px;height:7px}
+.t1005 .t1005-g{border:2px dashed var(--t1005-ink);pointer-events:none}
+.t1005 .t1005-lab{z-index:53;font:600 12px/1.25 ui-monospace,SFMono-Regular,Menlo,monospace;color:#fff;background:var(--t1005-ink);padding:2px 5px;border-radius:3px;white-space:nowrap;pointer-events:none}
+.t1005[data-view="wide"] .t1005-lab{font-size:16px}
+.t1005 .t1005-l-h{left:240px;top:216px}
+.t1005 .t1005-l-b{left:300px;top:240px}
+.t1005[data-view="canvas"] .t1005-l-b{left:200px;top:40px}
+.t1005 .t1005-l-f{left:6px;top:6px}
+</style>
+<div class="anim-col">
+<div class="stage" role="img" aria-label="{% if include.lang == "fr" %}Animation : la boîte de html, ses bordures pointillées qui donnent quatre disques, la gauche passée en bleu, puis un signe plus géant, épaissi par un contour de texte{% else %}Animation: html's box, its dotted borders that make four discs, the left one turned blue, then a giant plus sign, thickened by a text stroke{% endif %}">
+<div class="scene">
+<i class="t1005-bb"></i>
+<i class="t1005-h"></i>
+<i class="t1005-sv"></i>
+<i class="t1005-sh"></i>
+<i class="t1005-v"></i>
+<i class="t1005-hz"></i>
+<i class="t1005-g t1005-g-h"></i>
+<i class="t1005-g t1005-g-b"></i>
+<b class="t1005-lab t1005-l-h">html 120 × 120</b>
+<b class="t1005-lab t1005-l-b">body 482 × 168</b>
+<b class="t1005-lab t1005-l-f">"+" · 145px</b>
+</div>
+</div>
+<div class="legend"><span><i style="--c:#d16161"></i>{% if include.lang == "fr" %}le glyphe + (couleur du texte){% else %}the + glyph (text color){% endif %}</span><span><i style="--c:#1f8a7a"></i>{% if include.lang == "fr" %}contour de texte, 55q{% else %}text stroke, 55q{% endif %}</span><span><i style="--c:#d7a991"></i>{% if include.lang == "fr" %}boîte du body, transparente{% else %}body box, see-through{% endif %}</span></div>
+</div>
+<div class="anim-side">
+<pre class="code" aria-hidden="true"><span data-on="5" data-tone="2">+</span>&lt;style>&amp;{<span data-on="1">background:#f7cb71</span>;<span data-on="2">border-inline:53Q dotted</span>;<span data-on="3">border-left-color:4d52d0</span>;<span data-on="1">margin:90 40 90 240</span>;<span data-on="2 5">color:d16161</span>;*{<span data-on="6" data-tone="2">-webkit-text-stroke:55q</span>;<span data-on="4" data-tone="2">margin:-24-231</span>;<span data-on="5" data-tone="2">font:909%a</span></pre>
+<div class="now" aria-live="polite">
+<div class="caps">
+{%- if include.lang == "fr" %}
+<div class="cap" data-t="0" data-step="html : une boîte de 120×120"><h3>1. html : une boîte de 120×120</h3><p><code>&amp;</code>, c'est <code>html</code>. Son fond jaune part sur tout le canevas. <code>margin:90 40 90 240</code> en fait une boîte de 120×120 en (240, 90) : mode quirks oblige, sa hauteur vaut 300 − 90 − 90.</p></div>
+<div class="cap" data-t="3.5" data-step="Des bordures en pointillés : 4 disques"><h3>2. Des bordures en pointillés : 4 disques</h3><p><code>border-inline:53Q dotted</code> : une bordure à gauche et à droite, de 53Q (dessinée sur 50px), en pointillés. Des points de 50px sont des disques de 50px : deux par côté, avec 20px d'écart. Sans couleur, ils prennent <code>color:d16161</code>.</p></div>
+<div class="cap" data-t="7" data-step="border-left-color : le bleu"><h3>3. border-left-color : le bleu</h3><p><code>border-left-color:4d52d0</code> passe la bordure de gauche en bleu : les deux disques de gauche.</p></div>
+<div class="cap" data-t="10.5" data-step="body : une grande ligne"><h3>4. body : une grande ligne</h3><p>Le <code>body</code> part de la boîte de contenu de <code>html</code> (20px de large) et <code>margin:-24-231</code> l'élargit : 482×168, à partir de (59, 66). Il sort du canevas à droite, jusqu'à x=541. Il ne sert qu'à porter une ligne de texte.</p></div>
+<div class="cap" data-t="14" data-step="Le signe + en 145px"><h3>5. Le signe + en 145px</h3><p>Ce texte, c'est le <code>+</code> écrit avant <code>&lt;style></code>. <code>font:909%a</code> : 909 % de 16px, soit 145,4px, dans une police « a » qui n'existe pas, donc la police par défaut. Le signe plus est grand, mais ses traits restent fins.</p></div>
+<div class="cap" data-t="17.5" data-step="Le contour de texte épaissit"><h3>6. Le contour de texte épaissit</h3><p><code>-webkit-text-stroke:55q</code> trace un contour de 52px autour du glyphe, dans la couleur du texte. Il déborde de 26px de chaque côté : les traits passent à environ 60px, et les coins restent carrés.</p></div>
+<div class="cap" data-t="21" data-step="Au pixel près" data-live="163 caractères · 100 % identique"><h3>7. Au pixel près</h3><p>Une bordure en pointillés et un caractère : la manette en 163 caractères.</p></div>
+{%- else %}
+<div class="cap" data-t="0" data-step="html: a 120×120 box"><h3>1. html: a 120×120 box</h3><p><code>&amp;</code> is <code>html</code>. Its yellow background spreads to the whole canvas. <code>margin:90 40 90 240</code> makes it a 120×120 box at (240, 90): in quirks mode, its height is 300 − 90 − 90.</p></div>
+<div class="cap" data-t="3.5" data-step="Dotted borders: 4 discs"><h3>2. Dotted borders: 4 discs</h3><p><code>border-inline:53Q dotted</code>: a left and a right border, 53Q wide (drawn as 50px), dotted. 50px dots are 50px discs: two per side, with a 20px gap. With no color, they take <code>color:d16161</code>.</p></div>
+<div class="cap" data-t="7" data-step="border-left-color: the blue"><h3>3. border-left-color: the blue</h3><p><code>border-left-color:4d52d0</code> turns the left border blue: the two discs on the left.</p></div>
+<div class="cap" data-t="10.5" data-step="body: a wide line"><h3>4. body: a wide line</h3><p><code>body</code> starts from <code>html</code>'s content box (20px wide), and <code>margin:-24-231</code> widens it: 482×168, from (59, 66). It runs off the canvas on the right, up to x=541. Its only job is to hold one line of text.</p></div>
+<div class="cap" data-t="14" data-step="The + sign at 145px"><h3>5. The + sign at 145px</h3><p>That text is the <code>+</code> written before <code>&lt;style></code>. <code>font:909%a</code>: 909% of 16px, so 145.4px, in a font called “a” that does not exist, so the default font. The plus sign is big, but its strokes are still thin.</p></div>
+<div class="cap" data-t="17.5" data-step="The text stroke thickens it"><h3>6. The text stroke thickens it</h3><p><code>-webkit-text-stroke:55q</code> draws a 52px outline around the glyph, in the text color. It spills 26px on each side: the strokes grow to about 60px, and the corners stay square.</p></div>
+<div class="cap" data-t="21" data-step="Pixel-perfect" data-live="163 characters · 100% match"><h3>7. Pixel-perfect</h3><p>One dotted border and one character: the gamepad in 163 characters.</p></div>
+{%- endif %}
+</div>
+<div class="live"></div>
+</div>
+</div>
+<script>
+(window.AnimScenes = window.AnimScenes || {}).t1005 = (fig) => {
+  const fr = document.documentElement.lang === 'fr';
+  const $ = (s) => fig.querySelector(s);
+  const $$ = (s) => [...fig.querySelectorAll(s)];
+  const h = $('.t1005-h'), bb = $('.t1005-bb'), sv = $('.t1005-sv'), sh = $('.t1005-sh'), v = $('.t1005-v'), hz = $('.t1005-hz'), live = $('.live');
+  const end = $$('.cap').pop().dataset.live;
+  const ease = (x) => (x < 0.5 ? 4 * x * x * x : 1 - Math.pow(-2 * x + 2, 3) / 2);
+  const pr = (t, a, c) => ease(Math.min(1, Math.max(0, (t - a) / (c - a))));
+  const mix = (a, c, k) => `rgb(${[0, 1, 2].map((i) => Math.round(a[i] + (c[i] - a[i]) * k)).join(' ')})`;
+  const CORAL = [209, 97, 97], BLUE = [77, 82, 208], STROKE = [31, 138, 122];
+  const n = (v, d = 0) => v.toFixed(d).replace('.', fr ? ',' : '.');
+  const c = fr ? ' :' : ':';
+  return (t, step) => {
+    const teach = fig.dataset.teach === '1';
+    const real = teach ? pr(t, 21, 21.8) : 1;
+    const show = (sel, a, z) => $$(sel).forEach((e) => { e.style.opacity = pr(t, a, a + 0.6) * (1 - pr(t, z - 0.4, z)); });
+    // Dotted borders: the dots grow with the border width (the browser fits a whole number of round dots).
+    const bw = Math.round(50 * pr(t, 3.8, 6.2));
+    h.style.borderInlineWidth = `${bw}px`;
+    h.style.borderLeftColor = mix(CORAL, BLUE, pr(t, 7.3, 8.3));
+    // body's see-through box, tinted with teaching colors only.
+    bb.style.background = `rgb(140 90 220 / ${teach ? 0.3 * pr(t, 10.8, 11.5) * (1 - real) : 0})`;
+    // The + glyph (as drawn on the judge: two thin bars), then the 26px of stroke on each side.
+    const g = pr(t, 14.3, 15.3);
+    [v, hz].forEach((e) => { e.style.opacity = g; });
+    const s = 26 * pr(t, 17.8, 20);
+    const sc = mix(STROKE, CORAL, real);
+    sv.style.cssText = `left:${96 - s}px;top:${116 - s}px;width:${7 + 2 * s}px;height:${68 + 2 * s}px;background:${sc};opacity:${s > 0 ? 1 : 0}`;
+    sh.style.cssText = `left:${66 - s}px;top:${146 - s}px;width:${68 + 2 * s}px;height:${7 + 2 * s}px;background:${sc};opacity:${s > 0 ? 1 : 0}`;
+    show('.t1005-g-h', 0.3, 7); show('.t1005-l-h', 0.3, 3.5);
+    show('.t1005-g-b', 10.8, 17.5); show('.t1005-l-b', 10.8, 14);
+    show('.t1005-l-f', 14.3, 17.5);
+    let txt = '';
+    if (step === 0) txt = `html${c} 120 × 120 ${fr ? 'en' : 'at'} (240, 90)`;
+    else if (step === 1) txt = `border-inline${c} ${bw} px dotted`;
+    else if (step === 2) txt = `border-left-color${c} #4d52d0`;
+    else if (step === 3) txt = `body${c} 482 × 168 ${fr ? 'en' : 'at'} (59, 66) · x 59 → 541`;
+    else if (step === 4) txt = `font-size${c} 909% × 16 = ${n(145.44, 2)} px`.replace('909%', fr ? '909 %' : '909%');
+    else if (step === 5) txt = `${fr ? 'contour' : 'stroke'}${c} 2 × ${n(s, 1)} px · ${fr ? 'traits' : 'arms'} ${n(7 + 2 * s)} px`;
+    else txt = end;
+    live.textContent = txt;
+  };
+};
+</script>
+</figure>
