@@ -1,0 +1,105 @@
+<figure class="anim t1022" data-duration="25" data-scene="t1022" data-wide="-50 -40 500 380" style="--bg:#30acce">
+<style>
+.t1022{--sky:#30acce;--teal:#173c46;--hd:#7b4fbf;--bd:#173c46;--h1d:#e8743b;--h6d:#ffd23f;--ln:#24302f}
+.t1022 .t1022-html{left:-50px;top:-40px;width:500px;height:380px}
+.t1022 .t1022-ho{left:95px;top:10px;width:265px;height:280px;box-sizing:border-box;border:1.5px dashed #fff;opacity:0}
+.t1022 .t1022-b{left:190px;top:30px;width:130px;height:240px;opacity:0}
+.t1022 .t1022-bo{left:190px;top:30px;width:130px;height:240px;box-sizing:border-box;border:1.5px dashed #fff;opacity:0}
+.t1022 .t1022-h{left:210px;width:110px;height:110px;opacity:0}
+.t1022 .t1022-h1{top:30px;font:700 32px Times,serif}
+.t1022 .t1022-h6{top:160px;font:700 10.72px Times,serif}
+.t1022 .t1022-hbox{left:210px;width:110px;height:110px;box-sizing:border-box;border:1.5px dashed var(--ln);background:rgb(255 255 255 / .35);opacity:0}
+.t1022 .t1022-c{border-radius:50%;box-sizing:border-box;border:2px dashed var(--h1d);opacity:0;z-index:3}
+.t1022 .t1022-c1{left:170.4px;top:120.4px;width:59.2px;height:59.2px}
+.t1022 .t1022-c6{left:189.6px;top:139.6px;width:20.8px;height:20.8px;border-color:var(--h6d)}
+.t1022 .t1022-lab{font:10.5px/1.25 ui-monospace,SFMono-Regular,Menlo,monospace;color:#24302f;background:rgb(255 255 255 / .85);padding:1px 4px;border-radius:2px;white-space:nowrap;pointer-events:none;opacity:0;z-index:5}
+.t1022 .t1022-lab b{font-weight:600}
+</style>
+<div class="anim-col">
+<div class="stage" role="img" aria-label="{% if include.lang == "fr" %}Animation : le dégradé de html sur le canevas, le body uni, puis les fenêtres blanches du h1 et du h6, chacune avec le même disque fixe à sa taille{% else %}Animation: html's gradient on the canvas, the plain body, then the white windows of h1 and h6, each with the same fixed disc at its own size{% endif %}">
+<div class="scene">
+<div class="t1022-html"></div>
+<div class="t1022-ho"></div>
+<div class="t1022-b"></div>
+<div class="t1022-bo"></div>
+<div class="t1022-h t1022-h1"></div>
+<div class="t1022-h t1022-h6"></div>
+<div class="t1022-hbox t1022-hb1" style="top:30px"></div>
+<div class="t1022-hbox t1022-hb6" style="top:160px"></div>
+<div class="t1022-c t1022-c1"></div>
+<div class="t1022-c t1022-c6"></div>
+<div class="t1022-lab t1022-l1" style="left:99px;top:14px"><b>html</b> · margin:10 40 10 95</div>
+<div class="t1022-lab t1022-l2" style="left:194px;top:276px"><b>body</b> 130 × 240 · --c:{% if include.lang == "fr" %} vide{% else %} empty{% endif %}</div>
+<div class="t1022-lab t1022-l3" style="left:214px;top:80px"><b>h1</b> 110 × 110</div>
+<div class="t1022-lab t1022-l3b" style="left:214px;top:210px"><b>h6</b> 110 × 110</div>
+<div class="t1022-lab t1022-l4" style="left:236px;top:100px">h1 · .8lh ≈ {% if include.lang == "fr" %}29,6{% else %}29.6{% endif %}px</div>
+<div class="t1022-lab t1022-l5" style="left:236px;top:176px">h6 · .8lh ≈ {% if include.lang == "fr" %}10,4{% else %}10.4{% endif %}px</div>
+</div>
+</div>
+<div class="legend"><span><i style="--c:var(--hd)"></i>{% if include.lang == "fr" %}disque de html (repli 8mm){% else %}html's disc (8mm fallback){% endif %}</span><span><i style="--c:var(--bd)"></i>{% if include.lang == "fr" %}body (--c vide){% else %}body (empty --c){% endif %}</span><span><i style="--c:var(--h1d)"></i>{% if include.lang == "fr" %}disque du h1 (.8lh){% else %}h1's disc (.8lh){% endif %}</span><span><i style="--c:var(--h6d)"></i>{% if include.lang == "fr" %}disque du h6, trop petit{% else %}h6's disc, too small{% endif %}</span></div>
+</div>
+<div class="anim-side">
+<pre class="code" aria-hidden="true"><span data-on="3">&lt;h1>&lt;h6></span>&lt;style>*{background:<span data-on="1 2 4 5">radial-gradient(1Q,#173c46 var(--c,</span><span data-on="1">8mm,#30acce</span><span data-on="1 2 4 5">))fixed</span>;<span data-on="1 2">margin:10 40 10 95</span>;*{<span data-on="2" data-tone="2">--c:</span>;*{<span data-on="3" data-tone="2">margin:20;padding:55</span>;<span data-on="4 5" data-tone="2">--c:.8lh,#fff</span></pre>
+<div class="now">
+<div class="caps">
+{%- if include.lang == "fr" %}
+<div class="cap" data-t="0" data-step="html : le repli de la variable"><h3>1. html : le repli de la variable</h3><p><code>*</code> donne à tous le même fond. <code>html</code> n'a pas de <code>--c</code>, donc <code>var()</code> prend son repli : <code>#173c46 8mm,#30acce</code>. Un disque sombre de 8mm (30,2px), du bleu ciel autour. <code>fixed</code> le centre sur la fenêtre, en (200, 150). Ce fond part sur le canevas, pas dans la boîte de <code>html</code>.</p></div>
+<div class="cap" data-t="4.5" data-step="body : --c vide, un aplat"><h3>2. body : --c vide, un aplat</h3><p>Sur <code>body</code>, <code>--c:</code> est défini mais vide : <code>var()</code> ne prend pas le repli, il ne met rien. Il reste <code>radial-gradient(1Q,#173c46)</code>, un seul arrêt, donc un aplat sombre. Ses marges en font une boîte de 130×240 en (190, 30).</p></div>
+<div class="cap" data-t="8.5" data-step="h1 et h6 : padding:55"><h3>3. h1 et h6 : padding:55</h3><p>Les petits-enfants, <code>h1</code> et <code>h6</code>, prennent <code>margin:20;padding:55</code>. Vides, sans place pour du contenu, ils font 110×110. Le <code>h1</code> part de (210, 30) et finit pile au bord droit du <code>body</code> ; le <code>h6</code> suit 20px plus bas.</p></div>
+<div class="cap" data-t="12.5" data-step="h1 : le même disque, fixe"><h3>4. h1 : le même disque, fixe</h3><p>Pour eux, <code>--c:.8lh,#fff</code> : disque de 0,8 hauteur de ligne, blanc autour. Grâce à <code>fixed</code>, le disque reste centré sur (200, 150), comme celui du canevas. Avec la police de 32px du <code>h1</code>, <code>.8lh</code> fait 29,6px : il mord le coin du carré blanc.</p></div>
+<div class="cap" data-t="16.5" data-step="h6 : un disque trop petit"><h3>5. h6 : un disque trop petit</h3><p>Le <code>h6</code>, en (210, 160), a une police de 10,7px : <code>.8lh</code> ne fait que 10,4px. Son coin est à 14px du centre : le disque ne l'atteint pas, le carré reste tout blanc. Entre les deux carrés, le <code>body</code> fait la barre.</p></div>
+<div class="cap" data-t="21" data-step="Au pixel près" data-live="144 caractères · 100 % identique"><h3>6. Au pixel près</h3><p>Un seul <code>background</code>, trois valeurs de variable : l'image complète en 144 caractères.</p></div>
+{%- else %}
+<div class="cap" data-t="0" data-step="html: the variable's fallback"><h3>1. html: the variable's fallback</h3><p><code>*</code> gives everyone the same background. <code>html</code> has no <code>--c</code>, so <code>var()</code> uses its fallback: <code>#173c46 8mm,#30acce</code>. A dark 8mm (30.2px) disc, sky blue around it. <code>fixed</code> centers it on the viewport, at (200, 150). This background goes to the canvas, not into <code>html</code>'s box.</p></div>
+<div class="cap" data-t="4.5" data-step="body: empty --c, a flat color"><h3>2. body: empty --c, a flat color</h3><p>On <code>body</code>, <code>--c:</code> is set but empty: <code>var()</code> does not use the fallback, it puts in nothing. What is left is <code>radial-gradient(1Q,#173c46)</code>, one stop, so a flat dark fill. Its margins make it a 130×240 box at (190, 30).</p></div>
+<div class="cap" data-t="8.5" data-step="h1 and h6: padding:55"><h3>3. h1 and h6: padding:55</h3><p>The grandchildren, <code>h1</code> and <code>h6</code>, get <code>margin:20;padding:55</code>. Empty, with no room left for content, they are 110×110. The <code>h1</code> starts at (210, 30) and ends right at the <code>body</code>'s right edge; the <code>h6</code> comes 20px lower.</p></div>
+<div class="cap" data-t="12.5" data-step="h1: the same disc, fixed"><h3>4. h1: the same disc, fixed</h3><p>For them, <code>--c:.8lh,#fff</code>: a disc of 0.8 line heights, white around it. Thanks to <code>fixed</code>, the disc stays centered on (200, 150), like the canvas one. With the <code>h1</code>'s 32px font, <code>.8lh</code> is 29.6px: it bites the corner of the white square.</p></div>
+<div class="cap" data-t="16.5" data-step="h6: a disc too small"><h3>5. h6: a disc too small</h3><p>The <code>h6</code>, at (210, 160), has a 10.7px font: <code>.8lh</code> is only 10.4px. Its corner is 14px from the center: the disc does not reach it, and the square stays all white. Between the two squares, the <code>body</code> makes the bar.</p></div>
+<div class="cap" data-t="21" data-step="Pixel-perfect" data-live="144 characters · 100% match"><h3>6. Pixel-perfect</h3><p>One <code>background</code>, three values of one variable: the whole picture in 144 characters.</p></div>
+{%- endif %}
+</div>
+<div class="live"></div>
+</div>
+</div>
+<script>
+(window.AnimScenes = window.AnimScenes || {}).t1022 = (fig) => {
+  const fr = document.documentElement.lang === 'fr';
+  const $ = (s) => fig.querySelector(s);
+  const H = $('.t1022-html'), ho = $('.t1022-ho'), B = $('.t1022-b'), bo = $('.t1022-bo'), h1 = $('.t1022-h1'), h6 = $('.t1022-h6'), hb1 = $('.t1022-hb1'), hb6 = $('.t1022-hb6'), c1 = $('.t1022-c1'), c6 = $('.t1022-c6'), live = $('.live');
+  const lab = ['1', '2', '3', '3b', '4', '5'].map((i) => $('.t1022-l' + i));
+  const ease = (x) => (x < 0.5 ? 4 * x * x * x : 1 - Math.pow(-2 * x + 2, 3) / 2);
+  const pr = (t, a, b) => ease(Math.min(1, Math.max(0, (t - a) / (b - a))));
+  const c = fr ? ' :' : ':', sp = fr ? ' ; ' : ', ';
+  const L = fr ? { none: 'absent → repli', empty: 'vide', r: 'rayon', ctr: 'centre', far: 'coin à 14 px : hors de portée', bite: 'coin à 14 px : mordu', end: '144 caractères · 100 % identique' }
+    : { none: 'not set → fallback', empty: 'empty', r: 'radius', ctr: 'center', far: 'corner 14 px away: out of reach', bite: 'corner 14 px away: bitten', end: '144 characters · 100% match' };
+  return (t, step) => {
+    const teach = fig.dataset.teach === '1' && step < 5;
+    const col = (v) => (teach ? `var(${v})` : 'var(--teal)');
+    H.style.background = `radial-gradient(1Q at 250px 190px,${col('--hd')} 8mm,var(--sky))`;
+    H.style.opacity = pr(t, 0.2, 1.2);
+    ho.style.opacity = step === 0 ? pr(t, 1, 1.6) : 0;
+    B.style.opacity = pr(t, 4.9, 5.9);
+    B.style.background = col('--bd');
+    bo.style.opacity = step === 1 ? 1 : 0;
+    const box = pr(t, 8.9, 9.9);
+    hb1.style.opacity = hb6.style.opacity = step === 2 ? box : 0;
+    h1.style.opacity = pr(t, 12.9, 13.9);
+    h1.style.background = `radial-gradient(1Q at -10px 120px,${col('--h1d')} .8lh,#fff)`;
+    h6.style.opacity = pr(t, 16.9, 17.9);
+    h6.style.background = `radial-gradient(1Q at -10px -10px,${teach ? 'var(--h6d)' : 'var(--teal)'} .8lh,#fff)`;
+    c1.style.opacity = step === 3 ? pr(t, 13.4, 14.2) : 0;
+    c6.style.opacity = step === 4 ? pr(t, 17.4, 18.2) : 0;
+    const show = [step === 0, step === 1, step === 2, step === 2, step === 3, step === 4];
+    lab.forEach((l, i) => { l.style.opacity = show[i] ? 1 : 0; });
+    let txt = '';
+    if (step === 0) txt = `html · --c${c} ${L.none} · ${L.r} 8mm = 30.2 px · ${L.ctr} (200${sp}150)`;
+    else if (step === 1) txt = `body · --c${c} ${L.empty} → radial-gradient(1Q,#173c46)`;
+    else if (step === 2) txt = `h1 (210${sp}30) · h6 (210${sp}160) · margin 20 + padding 55 × 2 = 130`;
+    else if (step === 3) txt = `h1 · .8lh = 29.6 px · ${L.bite}`;
+    else if (step === 4) txt = `h6 · .8lh = 10.4 px · ${L.far}`;
+    else txt = L.end;
+    live.textContent = fr ? txt.replace(/(\d)\.(\d)/g, '$1,$2') : txt;
+  };
+};
+</script>
+</figure>
