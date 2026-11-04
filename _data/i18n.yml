@@ -11,6 +11,7 @@ en:
   home_title: The shortest CSS, explained.
   home_intro: Every day, <a href="https://cssbattle.dev/daily" rel="noopener">CSS Battle</a> publishes a target image. Players race to reproduce it, pixel for pixel, in as few characters as possible. Each post here takes one day's winning solution apart, with an animation that rebuilds the image step by step. I also built and maintain <a href="https://chromewebstore.google.com/detail/css-battle-toolbox/emdpbenabkkocjldgifjkciijdmcflin" rel="noopener">CSS Battle Toolbox</a>, a Chrome extension that adds tools right into the battle page, to minify your code, overlay the target or a grid, and find shorter units and colors.
   daily_target: Daily target
+  news: News
   top_by: Top solution by
   characters: Characters
   characters_lower: characters
@@ -32,6 +33,7 @@ fr:
   home_title: Le CSS le plus court, expliqué.
   home_intro: Chaque jour, <a href="https://cssbattle.dev/daily" rel="noopener">CSS Battle</a> publie une image cible. Les joueurs s'affrontent pour la reproduire au pixel près, avec le moins de caractères possible. Chaque article décortique la solution gagnante d'un jour, avec une animation qui reconstruit l'image étape par étape. J'ai aussi créé et je maintiens <a href="https://chromewebstore.google.com/detail/css-battle-toolbox/emdpbenabkkocjldgifjkciijdmcflin" rel="noopener">CSS Battle Toolbox</a>, une extension Chrome qui ajoute des outils directement dans la page de la battle, pour minifier son code, superposer la cible ou une grille, et trouver des unités et des couleurs plus courtes.
   daily_target: Cible du jour
+  news: Actualité
   top_by: Top solution de
   characters: Caractères
   characters_lower: caractères

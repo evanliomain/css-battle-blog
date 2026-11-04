@@ -10,12 +10,12 @@ layout: default
 <ul class="cards">
 {% for post in posts %}
   <li class="card">
-    <div class="cover"><img src="{{ post.target | relative_url }}" alt="" width="400" height="300" loading="lazy"></div>
+    <div class="cover"><img src="{{ post.cover | default: post.target | relative_url }}" alt="" width="400" height="300" loading="lazy"></div>
     <div class="body">
-      <p class="kicker"><time datetime="{{ post.date | date_to_xmlschema }}">{% include date.html date=post.date lang=page.lang %}</time> · {{ post.chars }} {{ t.characters_lower }}</p>
+      <p class="kicker"><time datetime="{{ post.date | date_to_xmlschema }}">{% include date.html date=post.date lang=page.lang %}</time> · {% if post.chars %}{{ post.chars }} {{ t.characters_lower }}{% else %}{{ post.kicker | default: t.news }}{% endif %}</p>
       <h2><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h2>
       <p>{{ post.excerpt | strip_html | truncatewords: 32 }}</p>
-      {% include player-card.html id=post.player %}
+      {% if post.player %}{% include player-card.html id=post.player %}{% endif %}
     </div>
   </li>
 {% endfor %}

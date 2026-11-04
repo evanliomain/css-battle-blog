@@ -72,6 +72,10 @@ code: |
 
 Then add `{% include animations/<date>.html lang=page.lang %}` in the body. Posts are about the top 1 solution only.
 
+## Writing a news post
+
+A post that is not about a daily target (a CSS Battle Toolbox release, for example) uses `layout: article` instead of the default `post` layout. It needs no `target`, `player` or `chars`: give it a `cover` (a 4:3 image, shown on the home card) and a `kicker` (the label above the title, "News" by default). Put its images in `assets/<topic>/`, and show them with `<figure class="shot">`, or two side by side in `<div class="shots">`. See `_posts/en/2026-11-04-css-battle-toolbox-2-0.md`.
+
 ## Local preview
 
 ```sh

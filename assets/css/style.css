@@ -123,6 +123,15 @@ pre.solution { margin-top: 1.5rem; white-space: pre-wrap; word-break: break-all;
 .post th, .post td { border-bottom: 1px solid var(--line); padding: .45rem .5rem; text-align: left; }
 .anim { margin: 2rem 0; }
 
+/* Article (news posts, _layouts/article.html) */
+.shot { margin: 1.5rem 0; }
+.shot img { display: block; margin: 0 auto; border-radius: 8px; border: 1px solid var(--line); }
+.shot figcaption { margin-top: .5rem; color: var(--muted); font-size: .85rem; text-align: center; }
+.shots { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1rem; align-items: start; margin: 1.5rem 0; }
+.shots .shot { margin: 0; }
+@media (max-width: 560px) { .shots { grid-template-columns: 1fr; } }
+.article td { overflow-wrap: anywhere; }
+
 /* Animation player (assets/js/anim-player.js) */
 .anim-controls {
   max-width: 400px; margin: .8rem auto 0;
