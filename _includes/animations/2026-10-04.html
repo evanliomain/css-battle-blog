@@ -1,0 +1,110 @@
+<figure class="anim t1004" data-duration="25" data-scene="t1004" data-wide="-50 -40 500 380" style="--bg:#4c7a6f">
+<style>
+.t1004{--mark:#ffd23f}
+.t1004 .scene i{position:absolute;box-sizing:border-box}
+.t1004 .t1004-h,.t1004 .t1004-g-h{left:130px;top:175px;width:140px;height:20px}
+.t1004 .t1004-b,.t1004 .t1004-bg,.t1004 .t1004-g-b,.t1004 .t1004-g-e{left:130px;top:105px;width:140px;height:60px}
+.t1004 .t1004-g{border:2px dashed var(--mark);pointer-events:none}
+.t1004 .t1004-g-e{border-radius:50%}
+.t1004 .t1004-lab{z-index:53;font:600 12px/1.25 ui-monospace,SFMono-Regular,Menlo,monospace;color:#14171c;background:var(--mark);padding:2px 5px;border-radius:3px;white-space:nowrap;pointer-events:none}
+.t1004 .t1004-l-c{left:6px;top:6px}
+.t1004 .t1004-l-h{left:130px;top:201px}
+.t1004 .t1004-l-b{left:130px;top:80px}
+.t1004 .t1004-l-e{left:130px;top:201px}
+</style>
+<div class="anim-col">
+<div class="stage" role="img" aria-label="{% if include.lang == "fr" %}Animation : le fond du body sur le canevas, les deux ombres de html (pain du bas, steak), puis les mêmes ombres sur le body, découpées en dôme par clip-path{% else %}Animation: body's background on the canvas, html's two shadows (bottom bun, patty), then the same shadows on body, cut into a dome by clip-path{% endif %}">
+<div class="scene">
+<i class="t1004-h"></i>
+<i class="t1004-bg"></i>
+<i class="t1004-b"></i>
+<i class="t1004-g t1004-g-h"></i>
+<i class="t1004-g t1004-g-b"></i>
+<i class="t1004-g t1004-g-e"></i>
+<b class="t1004-lab t1004-l-c">{% if include.lang == "fr" %}fond du body → canevas{% else %}body's background → canvas{% endif %}</b>
+<b class="t1004-lab t1004-l-h">html 140 × 20</b>
+<b class="t1004-lab t1004-l-b">body 140 × 60</b>
+<b class="t1004-lab t1004-l-e">ellipse() · 70 × 30</b>
+</div>
+</div>
+<div class="legend"><span><i style="--c:#f0a040"></i>{% if include.lang == "fr" %}ombre inset de html{% else %}html inset shadow{% endif %}</span><span><i style="--c:#ffe9a8"></i>{% if include.lang == "fr" %}ombre externe de html{% else %}html outer shadow{% endif %}</span><span><i style="--c:#7cc0ff"></i>{% if include.lang == "fr" %}ombre inset du body{% else %}body inset shadow{% endif %}</span><span><i style="--c:#d3b6ff"></i>{% if include.lang == "fr" %}ombre externe du body{% else %}body outer shadow{% endif %}</span><span><i style="--c:#94afa9"></i>{% if include.lang == "fr" %}boîte du body, transparente{% else %}body box, see-through{% endif %}</span></div>
+</div>
+<div class="anim-side">
+<pre class="code" aria-hidden="true">&lt;style>*{<span data-on="2">margin:175 130 105</span>;box-shadow:<span data-on="3 6">inset 0 32q#D6BA72</span>,<span data-on="4 6">0-32q#D9D9D9</span>;*{<span data-on="1" data-tone="2">background:#4C7A6F</span>;<span data-on="5" data-tone="2">margin:-70 0 30</span>;<span data-on="7" data-tone="2">clip-path:ellipse(</span></pre>
+<div class="now" aria-live="polite">
+<div class="caps">
+{%- if include.lang == "fr" %}
+<div class="cap" data-t="0" data-step="Le fond du body sur le canevas"><h3>1. Le fond du body sur le canevas</h3><p>Seul <code>* *</code> pose un fond, donc <code>html</code> n'en a pas. Dans ce cas, le fond du <code>body</code> remonte sur tout le canevas, et la boîte du <code>body</code> n'en garde aucun.</p></div>
+<div class="cap" data-t="3" data-step="html : une bande de 140×20"><h3>2. html : une bande de 140×20</h3><p><code>margin:175 130 105</code> : en mode quirks, <code>html</code> fait 300 − 175 − 105 = 20px de haut et 140px de large, en (130, 175). Sa boîte ne peint rien : seules ses ombres vont se voir.</p></div>
+<div class="cap" data-t="6" data-step="inset 0 32q : le pain du bas"><h3>3. inset 0 32q : le pain du bas</h3><p>Une ombre intérieure décalée vers le bas colore une bande du haut de la boîte, de la hauteur du décalage. 32q font 30,2px, plus que les 20px de la boîte : elle est remplie de doré. C'est le pain du bas.</p></div>
+<div class="cap" data-t="9" data-step="0-32q : le steak"><h3>4. 0-32q : le steak</h3><p>L'ombre extérieure <code>0-32q</code> est une copie de la boîte, remontée de 30,2px. Elle sort entièrement de <code>html</code> : la bande grise du steak, de y≈145 à 165.</p></div>
+<div class="cap" data-t="12" data-step="body : 140×60, transparent"><h3>5. body : 140×60, transparent</h3><p><code>margin:-70 0 30</code> fait remonter le <code>body</code> de 70px au-dessus de la boîte de <code>html</code>. En mode quirks, il s'étire sur 20 + 70 − 30 = 60px : une boîte de 140×60 en (130, 105). Sans fond à elle, elle est transparente.</p></div>
+<div class="cap" data-t="15" data-step="body : les mêmes ombres"><h3>6. body : les mêmes ombres</h3><p><code>*</code> donne aussi les deux ombres au <code>body</code>. L'ombre intérieure dorée remplit les 30,2px du haut de sa boîte ; la grise ressort au-dessus.</p></div>
+<div class="cap" data-t="18" data-step="clip-path:ellipse() : le dôme"><h3>7. clip-path:ellipse() : le dôme</h3><p><code>ellipse()</code> sans argument : une ellipse centrée qui touche les bords, 70px sur 30px de rayon. Elle coupe l'ombre grise, arrondit la bande dorée en dôme, et sa moitié basse, vide, laisse voir le steak.</p></div>
+<div class="cap" data-t="21" data-step="Au pixel près" data-live="126 caractères · 100 % identique"><h3>8. Au pixel près</h3><p>Deux boîtes, deux ombres chacune : le hamburger en 126 caractères.</p></div>
+{%- else %}
+<div class="cap" data-t="0" data-step="body's background on the canvas"><h3>1. body's background on the canvas</h3><p>Only <code>* *</code> sets a background, so <code>html</code> has none. In that case, <code>body</code>'s background moves up to cover the whole canvas, and <code>body</code>'s own box keeps none.</p></div>
+<div class="cap" data-t="3" data-step="html: a 140×20 strip"><h3>2. html: a 140×20 strip</h3><p><code>margin:175 130 105</code>: in quirks mode, <code>html</code> is 300 − 175 − 105 = 20px tall and 140px wide, at (130, 175). Its box paints nothing: only its shadows will show.</p></div>
+<div class="cap" data-t="6" data-step="inset 0 32q: the bottom bun"><h3>3. inset 0 32q: the bottom bun</h3><p>An inset shadow moved down colors a strip at the top of the box, as tall as the offset. 32q is 30.2px, more than the box's 20px, so the box is filled with gold. That is the bottom bun.</p></div>
+<div class="cap" data-t="9" data-step="0-32q: the patty"><h3>4. 0-32q: the patty</h3><p>The outer shadow <code>0-32q</code> is a copy of the box, moved up 30.2px. It lands fully outside <code>html</code>: the grey patty, from y≈145 to 165.</p></div>
+<div class="cap" data-t="12" data-step="body: 140×60, see-through"><h3>5. body: 140×60, see-through</h3><p><code>margin:-70 0 30</code> pulls <code>body</code> 70px above <code>html</code>'s box. In quirks mode it stretches to 20 + 70 − 30 = 60px: a 140×60 box at (130, 105). With no background of its own, it is see-through.</p></div>
+<div class="cap" data-t="15" data-step="body: the same shadows"><h3>6. body: the same shadows</h3><p><code>*</code> gives <code>body</code> the two shadows too. The gold inset shadow fills the top 30.2px of its box; the grey one comes out above it.</p></div>
+<div class="cap" data-t="18" data-step="clip-path:ellipse(): the dome"><h3>7. clip-path:ellipse(): the dome</h3><p><code>ellipse()</code> with no arguments: a centered ellipse that touches the sides, with 70px and 30px radii. It cuts off the grey shadow, rounds the gold band into a dome, and its empty lower half lets the patty show.</p></div>
+<div class="cap" data-t="21" data-step="Pixel-perfect" data-live="126 characters · 100% match"><h3>8. Pixel-perfect</h3><p>Two boxes, two shadows each: the burger in 126 characters.</p></div>
+{%- endif %}
+</div>
+<div class="live"></div>
+</div>
+</div>
+<script>
+(window.AnimScenes = window.AnimScenes || {}).t1004 = (fig) => {
+  const fr = document.documentElement.lang === 'fr';
+  const $ = (s) => fig.querySelector(s);
+  const $$ = (s) => [...fig.querySelectorAll(s)];
+  const h = $('.t1004-h'), b = $('.t1004-b'), bg = $('.t1004-bg'), live = $('.live');
+  const end = $$('.cap').pop().dataset.live;
+  const ease = (x) => (x < 0.5 ? 4 * x * x * x : 1 - Math.pow(-2 * x + 2, 3) / 2);
+  const pr = (t, a, c) => ease(Math.min(1, Math.max(0, (t - a) / (c - a))));
+  const mix = (a, c, k) => `rgb(${[0, 1, 2].map((i) => Math.round(a[i] + (c[i] - a[i]) * k)).join(' ')})`;
+  const GOLD = [214, 186, 114], GREY = [217, 217, 217];
+  const T = { hi: [240, 160, 64], ho: [255, 233, 168], bi: [124, 192, 255], bo: [211, 182, 255] };
+  const Q = 30.2362; // 32q
+  const sh = (i, o, ci, co) => `inset 0 ${Q * i}px ${ci},0 ${-Q * o}px ${co}`;
+  const n = (v, d = 1) => v.toFixed(d).replace('.', fr ? ',' : '.');
+  const c = fr ? ' :' : ':';
+  return (t, step) => {
+    const teach = fig.dataset.teach === '1';
+    const real = teach ? pr(t, 21, 21.8) : 1;
+    const show = (sel, a, z) => $$(sel).forEach((e) => { e.style.opacity = pr(t, a, a + 0.6) * (1 - pr(t, z - 0.4, z)); });
+    const hi = pr(t, 6.3, 8.3), ho = pr(t, 9.3, 11.3);
+    h.style.boxShadow = sh(hi, ho, mix(T.hi, GOLD, real), mix(T.ho, GREY, real));
+    const bi = pr(t, 15.3, 17.3), bo = pr(t, 15.8, 17.8);
+    const bsh = sh(bi, bo, mix(T.bi, GOLD, real), mix(T.bo, GREY, real));
+    b.style.boxShadow = bsh;
+    // The see-through body box, tinted with teaching colors only.
+    b.style.background = teach ? `rgb(255 255 255 / ${0.4 * pr(t, 12.3, 13) * (1 - real)})` : 'none';
+    // clip-path: from an ellipse that covers everything to ellipse() (70 × 30).
+    const e = pr(t, 18.3, 20.3);
+    const rx = 200 - 130 * e, ry = 95 - 65 * e;
+    b.style.clipPath = e >= 1 ? 'ellipse()' : t >= 18 ? `ellipse(${rx}px ${ry}px)` : 'none';
+    // What the clip cuts away, kept as a ghost in teaching colors.
+    bg.style.boxShadow = bsh;
+    bg.style.opacity = teach && t >= 18 ? 0.35 * (1 - real) : 0;
+    show('.t1004-l-c', 0.3, 3);
+    show('.t1004-g-h', 3.3, 6); show('.t1004-l-h', 3.3, 6);
+    show('.t1004-g-b', 12.3, 18); show('.t1004-l-b', 12.3, 18);
+    show('.t1004-g-e', 20.3, 21); show('.t1004-l-e', 18.3, 21);
+    let txt = '';
+    if (step === 0) txt = `${fr ? 'canevas' : 'canvas'}${c} #4C7A6F (${fr ? 'fond du body' : "body's background"})`;
+    else if (step === 1) txt = `html${c} 140 × 20 ${fr ? 'en' : 'at'} (130, 175)`;
+    else if (step === 2) txt = `inset${c} ${fr ? 'décalage' : 'offset'} ${n(Q * hi)} px · ${fr ? 'boîte' : 'box'} 20 px`;
+    else if (step === 3) txt = `${fr ? 'décalage' : 'offset'}${c} −${n(Q * ho)} px · y ${n(175 - Q * ho)} → ${n(195 - Q * ho)}`;
+    else if (step === 4) txt = `body${c} 140 × 60 ${fr ? 'en' : 'at'} (130, 105)`;
+    else if (step === 5) txt = `inset ${n(Q * bi)} px · ${fr ? 'externe' : 'outer'} −${n(Q * bo)} px`;
+    else if (step === 6) txt = `ellipse${c} ${fr ? 'rayons' : 'radii'} ${n(rx, 0)} × ${n(ry, 0)} px`;
+    else txt = end;
+    live.textContent = txt;
+  };
+};
+</script>
+</figure>
