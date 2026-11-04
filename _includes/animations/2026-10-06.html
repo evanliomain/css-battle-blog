@@ -1,0 +1,120 @@
+<figure class="anim t1006" data-duration="24" data-scene="t1006" data-wide="-40 -100 480 500" style="--bg:#e98f6b">
+<style>
+.t1006 .hg{left:0;top:0;width:400px;height:300px}
+.t1006 .band{left:100px;top:110px;width:200px;height:80px}
+.t1006 .g{pointer-events:none;border:2px dashed #1d2827;box-shadow:0 0 0 1px rgb(255 255 255 / .55),inset 0 0 0 1px rgb(255 255 255 / .55)}
+.t1006 .ell{border-radius:50%}
+.t1006 .rule{pointer-events:none;height:0;border-top:1.5px solid #1d2827;box-shadow:0 0 0 1px rgb(255 255 255 / .55)}
+.t1006 .legend i{box-shadow:0 0 0 1px rgb(0 0 0 / .2)}
+.t1006 .lab{pointer-events:none;font:10.5px/1.2 ui-monospace,SFMono-Regular,Menlo,monospace;color:#24302f;background:rgb(255 255 255 / .82);padding:1px 4px;border-radius:2px;white-space:nowrap}
+</style>
+<div class="anim-col">
+<div class="stage" role="img" aria-label="{% if include.lang == "fr" %}Animation : le dégradé de html dessine le disque et l'anneau, puis le même dégradé, lu avec d'autres unités dans la bande du body, dessine les deux barres{% else %}Animation: html's gradient draws the disc and the ring, then the same gradient, read with other units inside body's band, draws the two bars{% endif %}">
+<div class="scene">
+<div class="hg"></div>
+<div class="band"></div>
+<div class="g ell e36" style="left:164px;top:114px;width:72px;height:72px"></div>
+<div class="rule r-x" style="left:200px;top:150px;width:36px"></div>
+<div class="rule r-80" style="left:120px;top:142px;width:80px"></div>
+<div class="rule r-100" style="left:100px;top:162px;width:100px"></div>
+<div class="g bbox"></div>
+<div class="g ell eb"></div>
+<div class="g ell e30" style="left:170px;top:-250px;width:60px;height:800px"></div>
+<div class="g ell e50" style="left:150px;top:-516.7px;width:100px;height:1333.3px"></div>
+<div class="lab l1" style="left:240px;top:118px">html · 9% 2lh = 36 × 36</div>
+<div class="lab l80" style="left:118px;top:124px">5em = 80px</div>
+<div class="lab l100" style="left:100px;top:166px">278% × 36 ≈ 100px</div>
+<div class="lab l3" style="left:100px;top:94px">body · 200 × 80</div>
+<div class="lab l4" style="left:224px;top:28px">9% 2lh = 18 × 240</div>
+<div class="lab l5" style="left:256px;top:196px">5em = 30 · 278% ≈ 50</div>
+</div>
+</div>
+<div class="legend"><span><i style="--c:#8b4646"></i><i style="--c:#fff"></i><i style="--c:#e98f6b"></i>{% if include.lang == "fr" %}dégradé de html{% else %}html's gradient{% endif %}</span><span><i style="--c:#33518c"></i><i style="--c:#ffe27a"></i><i style="--c:#3e8e86"></i>{% if include.lang == "fr" %}dégradé du body (mêmes couleurs en vrai){% else %}body's gradient (same colors in reality){% endif %}</span></div>
+</div>
+<div class="anim-side">
+<pre class="code" aria-hidden="true">&lt;style>*{*{<span data-on="3" data-tone="2">margin:110 100</span>;<span data-on="4" data-tone="2">font:6px/20''</span>}background:radial-gradient(<span data-on="1 4">9%2lh</span>,<span data-on="2 5">#8B4646 5em</span>,<span data-on="2 5">#FFF 0 278%</span>,<span data-on="2">#E98F6B</span></pre>
+<div class="now" aria-live="polite">
+<div class="caps">
+{%- if include.lang == "fr" %}
+<div class="cap" data-t="0" data-step="html : un cercle de 36px"><h3>1. html : un cercle de 36px</h3><p><code>*</code> donne le dégradé à <code>html</code>. Sa taille, <code>9%2lh</code> : 9 % de 400px = 36px en largeur, et 2 × 18px = 36px en hauteur. Avec la police par défaut, <code>1lh</code> vaut 18px ici : l'ellipse est un cercle.</p></div>
+<div class="cap" data-t="4" data-step="Le disque et l'anneau"><h3>2. Le disque et l'anneau</h3><p>Les arrêts : brun jusqu'à <code>5em</code> (80px, à 16px le em), blanc jusqu'à 278 % du rayon (≈ 100px), saumon au-delà. Le fond de <code>html</code> couvre tout le canevas : disque, anneau et fond sont faits.</p></div>
+<div class="cap" data-t="9" data-step="body : une bande de 200 × 80"><h3>3. body : une bande de 200 × 80</h3><p><code>*{*{…}}</code> vise les descendants de <code>html</code> : seul <code>body</code> se voit. <code>margin:110 100</code> en fait une bande de 200 × 80 en (100, 110) ; en mode quirks, sa hauteur est 300 − 2 × 110.</p></div>
+<div class="cap" data-t="13" data-step="font : un autre em, un autre lh"><h3>4. font : un autre em, un autre lh</h3><p><code>font:6px/20''</code> change les unités du <code>body</code> : 1em = 6px et 1lh = 20 × 6 = 120px. Le même <code>9%2lh</code> donne une ellipse de 18 × 240 : très fine, très haute. Elle sort du canevas en haut et en bas.</p></div>
+<div class="cap" data-t="17" data-step="Le même dégradé, étiré"><h3>5. Le même dégradé, étiré</h3><p>Le même dégradé, peint seulement dans la bande : brun jusqu'à 30px, blanc jusqu'à ≈ 50px, saumon au-delà. Ses ellipses font 60 × 800 et 100 × 1333 : sur 80px de haut, leurs bords sont droits. Deux barres blanches, et l'anneau coupé à gauche et à droite.</p></div>
+<div class="cap" data-t="20.5" data-step="Résultat" data-live="104 caractères · 100 % identique"><h3>6. Résultat : 104 caractères</h3><p>Dans les vraies couleurs, le brun de la bande se fond dans le disque. Un seul dégradé, lu avec deux jeux d'unités : l'image entière en 104 caractères.</p></div>
+{%- else %}
+<div class="cap" data-t="0" data-step="html: a 36px circle"><h3>1. html: a 36px circle</h3><p><code>*</code> gives the gradient to <code>html</code>. Its size, <code>9%2lh</code>: 9% of 400px = 36px across, and 2 × 18px = 36px down. With the default font, <code>1lh</code> is 18px here, so the ellipse is a circle.</p></div>
+<div class="cap" data-t="4" data-step="The disc and the ring"><h3>2. The disc and the ring</h3><p>The stops: brown up to <code>5em</code> (80px, at 16px per em), white up to 278% of the radius (≈ 100px), salmon beyond. <code>html</code>'s background covers the whole canvas: disc, ring and background are done.</p></div>
+<div class="cap" data-t="9" data-step="body: a 200 × 80 band"><h3>3. body: a 200 × 80 band</h3><p><code>*{*{…}}</code> matches <code>html</code>'s descendants, and only <code>body</code> shows. <code>margin:110 100</code> makes it a 200 × 80 band at (100, 110); in quirks mode its height is 300 − 2 × 110.</p></div>
+<div class="cap" data-t="13" data-step="font: a new em, a new lh"><h3>4. font: a new em, a new lh</h3><p><code>font:6px/20''</code> changes <code>body</code>'s units: 1em = 6px and 1lh = 20 × 6 = 120px. The same <code>9%2lh</code> now gives an 18 × 240 ellipse: very thin, very tall. It runs off the canvas at the top and the bottom.</p></div>
+<div class="cap" data-t="17" data-step="Same gradient, stretched"><h3>5. Same gradient, stretched</h3><p>The same gradient, painted only inside the band: brown up to 30px, white up to ≈ 50px, salmon beyond. Its ellipses are 60 × 800 and 100 × 1333: over 80px of height, their edges are straight. Two white bars, and the ring cut on the left and the right.</p></div>
+<div class="cap" data-t="20.5" data-step="Result" data-live="104 characters · 100% match"><h3>6. Result: 104 characters</h3><p>In the real colors, the band's brown blends into the disc. One gradient, read with two sets of units: the whole picture in 104 characters.</p></div>
+{%- endif %}
+</div>
+<div class="live"></div>
+</div>
+</div>
+<script>
+(window.AnimScenes = window.AnimScenes || {}).t1006 = (fig) => {
+  const fr = document.documentElement.lang === 'fr';
+  const $ = (s) => fig.querySelector(s);
+  const HG = $('.hg'), BAND = $('.band'), BBOX = $('.bbox'), EB = $('.eb'), live = $('.live');
+  const G = { e36: $('.e36'), rx: $('.r-x'), r80: $('.r-80'), r100: $('.r-100'), e30: $('.e30'), e50: $('.e50') };
+  const LB = { l1: $('.l1'), l80: $('.l80'), l100: $('.l100'), l3: $('.l3'), l4: $('.l4'), l5: $('.l5') };
+  const caps = [...fig.querySelectorAll('.caps .cap')];
+  const ease = (x) => (x < 0.5 ? 4 * x * x * x : 1 - Math.pow(-2 * x + 2, 3) / 2);
+  const pr = (t, a, b) => ease(Math.min(1, Math.max(0, (t - a) / (b - a))));
+  const lerp = (a, b, m) => a + (b - a) * m;
+  const n = (v, d = 0) => v.toFixed(d).replace('.', fr ? ',' : '.');
+  const c = fr ? ' :' : ':';
+  // Show a guide during [a, b] (fade in at a, out at b).
+  const win = (t, a, b) => Math.min(pr(t, a, a + 0.6), 1 - pr(t, b - 0.5, b));
+  return (t, step) => {
+    const teach = fig.dataset.teach === '1';
+    const end = 20.5;
+    // html's gradient: the stops grow to 80 and 278% (100.08px), then the exact official value.
+    const g = pr(t, 4.4, 7);
+    HG.style.background = g >= 1
+      ? 'radial-gradient(36px 36px,#8B4646 80px,#FFF 0 278%,#E98F6B)'
+      : `radial-gradient(36px 36px,#8B4646 ${80 * g}px,#FFF 0 ${100.08 * g}px,#E98F6B)`;
+    HG.style.opacity = pr(t, 4, 4.4);
+    // body's gradient: shown from step 5, in teaching colors until the result.
+    const b = pr(t, 17.4, 19.6);
+    const real = !teach || t >= end;
+    const [c1, c2, c3] = real ? ['#8B4646', '#FFF', '#E98F6B'] : ['#33518c', '#ffe27a', '#3e8e86'];
+    BAND.style.background = b >= 1
+      ? `radial-gradient(18px 240px,${c1} 30px,${c2} 0 278%,${c3})`
+      : `radial-gradient(18px 240px,${c1} ${30 * b}px,${c2} 0 ${50.04 * b}px,${c3})`;
+    BAND.style.opacity = pr(t, 17, 17.4);
+    // body's box: margin 8 → 110 100.
+    const m = pr(t, 9.6, 11.8);
+    const bx = lerp(8, 100, m), by = lerp(8, 110, m);
+    Object.assign(BBOX.style, { left: bx + 'px', top: by + 'px', width: 400 - 2 * bx + 'px', height: 300 - 2 * by + 'px', opacity: win(t, 9.2, end) });
+    // body's gradient size: 36 × 36 (html units) → 18 × 240 (body units).
+    const f = pr(t, 13.6, 15.8);
+    const rx = lerp(36, 18, f), ry = lerp(36, 240, f);
+    Object.assign(EB.style, { left: 200 - rx + 'px', top: 150 - ry + 'px', width: 2 * rx + 'px', height: 2 * ry + 'px', opacity: win(t, 13, 17.8) });
+    G.e36.style.opacity = win(t, 0.3, 6.6);
+    G.rx.style.opacity = win(t, 0.3, 4.2);
+    G.r80.style.opacity = win(t, 4.4, 9);
+    G.r100.style.opacity = win(t, 5.4, 9);
+    G.e30.style.opacity = win(t, 17.8, end);
+    G.e50.style.opacity = win(t, 18.6, end);
+    LB.l1.style.opacity = win(t, 0.6, 4.2);
+    LB.l80.style.opacity = win(t, 4.8, 9);
+    LB.l100.style.opacity = win(t, 5.8, 9);
+    LB.l3.style.opacity = win(t, 11.8, 13);
+    LB.l4.style.opacity = win(t, 15.6, 17);
+    LB.l5.style.opacity = win(t, 19, end);
+    let txt = '';
+    if (step === 0) txt = `html${c} 9% × 400 = 36px · 2lh = 2 × 18 = 36px`;
+    else if (step === 1) txt = `5em → ${n(80 * g)}px · 278% → ${n(100.08 * g, 1)}px`;
+    else if (step === 2) txt = `body${c} x ${n(bx)} → ${n(400 - bx)}, y ${n(by)} → ${n(300 - by)} (${n(400 - 2 * bx)} × ${n(300 - 2 * by)})`;
+    else if (step === 3) txt = `1em = 6px · 1lh = 120px · ${n(rx)} × ${n(ry)}`;
+    else if (step === 4) txt = `5em → ${n(30 * b)}px · 278% → ${n(50.04 * b, 1)}px`;
+    else txt = caps[step].dataset.live || '';
+    live.textContent = txt;
+  };
+};
+</script>
+</figure>
