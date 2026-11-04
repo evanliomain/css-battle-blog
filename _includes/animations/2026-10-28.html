@@ -1,0 +1,105 @@
+<figure class="anim t1028" data-duration="24" data-scene="t1028" data-wide="-50 -40 500 380" style="--bg:#f6f1bb">
+<style>
+.t1028{--txt:#4a5c5a;--box:#e0785c;--copy:#8a3fb0}
+.t1028 .t1028-white{left:0;top:0;width:400px;height:300px;background:#fff}
+.t1028 .t1028-tint{left:0;top:0;width:400px;height:300px;background:#dc04}
+.t1028 .t1028-h{left:140px;top:80px;width:120px;height:140px;outline-offset:-2px}
+.t1028 .t1028-hole{left:140px;top:80px;width:120px;height:140px;outline-offset:-2px;pointer-events:none}
+.t1028 .t1028-b{left:180px;top:80px;width:80px;height:80px;outline-offset:-2px}
+.t1028 .t1028-lab{font:10.5px/1.2 ui-monospace,SFMono-Regular,Menlo,monospace;color:var(--txt);white-space:nowrap;pointer-events:none}
+.t1028 .t1028-lab b{font-weight:600;color:#24302f}
+</style>
+<div class="anim-col">
+<div class="stage" role="img" aria-label="{% if include.lang == "fr" %}Animation : le fond de html teinte le canevas, ses rayons trop grands font une goutte, son ombre intérieure la remplit sauf une morsure, puis font:0 change le body en quart de disque foncé{% else %}Animation: html's background tints the canvas, its oversized radii make a drop, its inset shadow fills it except for a bite, then font:0 turns body into a dark quarter disc{% endif %}">
+<div class="scene">
+<div class="t1028-white"></div>
+<div class="t1028-tint"></div>
+<div class="t1028-h"></div>
+<div class="t1028-b"></div>
+<div class="t1028-hole"></div>
+<div class="t1028-lab t1028-lab-mix" style="left:8px;top:8px">#dc04 + {% if include.lang == "fr" %}blanc{% else %}white{% endif %} = <b>#f6f1bb</b></div>
+<div class="t1028-lab t1028-lab-h" style="left:140px;top:52px"><b>html</b><br>120 × 140</div>
+<div class="t1028-lab t1028-lab-b" style="left:180px;top:52px"><b>body</b><br>80 × 80</div>
+</div>
+</div>
+<div class="legend"><span><i style="--c:var(--box)"></i>{% if include.lang == "fr" %}boîte de html, sans fond à elle{% else %}html box, no background of its own{% endif %}</span><span><i style="--c:var(--copy)"></i>{% if include.lang == "fr" %}copie décalée de 5pc −9ch : pas d'ombre dessous{% else %}copy moved by 5pc −9ch: no shadow under it{% endif %}</span><span><i style="--c:#30acce"></i>{% if include.lang == "fr" %}ombre de html{% else %}html's shadow{% endif %}</span><span><i style="--c:#1d5260"></i>{% if include.lang == "fr" %}ombre du body{% else %}body's shadow{% endif %}</span></div>
+</div>
+<div class="anim-side">
+<pre class="code" aria-hidden="true">&lt;style>*{<span data-on="1">background:#dc04</span>;<span data-on="3 5">box-shadow:inset 5pc -9ch</span>;<span data-on="3">color:30ACCE</span>;<span data-on="1">margin:80 140</span>;<span data-on="2 5">border-radius:12em 5pc 9em 9em</span>;*{<span data-on="4" data-tone="2">color:1D5260;margin:0 0 60 40</span>;<span data-on="5" data-tone="2">font:0"</span></pre>
+<div class="now" aria-live="polite">
+<div class="caps">
+{%- if include.lang == "fr" %}
+<div class="cap" data-t="0" data-step="Le canevas jaune pâle"><h3>1. Le canevas jaune pâle</h3><p><code>*</code> touche d'abord <code>html</code>. Son fond <code>#dc04</code>, un jaune transparent, part sur tout le canevas : sur le blanc de la page, il donne le jaune pâle de la cible. <code>margin:80 140</code> laisse une boîte de 120×140.</p></div>
+<div class="cap" data-t="3.5" data-step="Des rayons trop grands"><h3>2. Des rayons trop grands</h3><p><code>12em 5pc 9em 9em</code>, c'est 192, 80, 144 et 144px : trop pour une boîte de 120×140. Chrome réduit les quatre du même facteur (×0,417) : 80, 33, 60, 60. Une goutte.</p></div>
+<div class="cap" data-t="7.5" data-step="L'ombre intérieure et sa morsure"><h3>3. L'ombre intérieure et sa morsure</h3><p>La boîte n'a pas de fond à elle. <code>inset 5pc -9ch</code> la remplit de <code>color</code> (30ACCE), sauf là où reste une copie de la goutte décalée de 80px à droite et 72px vers le haut (9ch = 72px) : une morsure en haut à droite.</p></div>
+<div class="cap" data-t="12" data-step="body : la même règle, en foncé"><h3>4. body : la même règle, en foncé</h3><p><code>*</code> touche aussi <code>body</code>. <code>margin:0 0 60 40</code> en fait une boîte de 80×80 en (180, 80), et <code>color:1D5260</code> fonce son ombre. Avec la police normale, ses rayons donnent un carré arrondi, rempli par l'ombre.</p></div>
+<div class="cap" data-t="15.5" data-step="font:0 : il ne reste que 5pc"><h3>5. font:0 : il ne reste que 5pc</h3><p><code>font:0"</code> met la taille de police à 0 : chaque <code>em</code> et chaque <code>ch</code> vaut 0. Les rayons deviennent <code>0 80px 0 0</code> : un quart de disque. L'ombre devient <code>inset 80px 0</code> et remplit toujours la boîte.</p></div>
+<div class="cap" data-t="20" data-step="Résultat" data-live="149 caractères · 100 % identique"><h3>6. Résultat : 149 caractères</h3><p>Une règle pour deux éléments : la goutte, sa morsure et le quart de disque, au pixel près.</p></div>
+{%- else %}
+<div class="cap" data-t="0" data-step="The pale yellow canvas"><h3>1. The pale yellow canvas</h3><p><code>*</code> matches <code>html</code> first. Its background <code>#dc04</code>, a see-through yellow, goes to the whole canvas: over the white page, it gives the target's pale yellow. <code>margin:80 140</code> leaves a 120×140 box.</p></div>
+<div class="cap" data-t="3.5" data-step="Radii too big"><h3>2. Radii too big</h3><p><code>12em 5pc 9em 9em</code> is 192, 80, 144 and 144px: too much for a 120×140 box. Chrome shrinks all four by the same factor (×0.417): 80, 33, 60, 60. A drop.</p></div>
+<div class="cap" data-t="7.5" data-step="The inset shadow and its bite"><h3>3. The inset shadow and its bite</h3><p>The box has no background of its own. <code>inset 5pc -9ch</code> fills it with <code>color</code> (30ACCE), except where a copy of the drop still sits, moved 80px right and 72px up (9ch = 72px): a bite at the top right.</p></div>
+<div class="cap" data-t="12" data-step="body: same rule, dark"><h3>4. body: same rule, dark</h3><p><code>*</code> also matches <code>body</code>. <code>margin:0 0 60 40</code> makes it an 80×80 box at (180, 80), and <code>color:1D5260</code> darkens its shadow. With the normal font, its radii give a rounded square, filled by the shadow.</p></div>
+<div class="cap" data-t="15.5" data-step="font:0: only 5pc is left"><h3>5. font:0: only 5pc is left</h3><p><code>font:0"</code> sets the font size to 0: every <code>em</code> and every <code>ch</code> is now 0. The radii become <code>0 80px 0 0</code>: a quarter disc. The shadow becomes <code>inset 80px 0</code> and still fills the box.</p></div>
+<div class="cap" data-t="20" data-step="Result" data-live="149 characters · 100% match"><h3>6. Result: 149 characters</h3><p>One rule for two elements: the drop, its bite and the quarter disc, pixel-perfect.</p></div>
+{%- endif %}
+</div>
+<div class="live"></div>
+</div>
+</div>
+<script>
+(window.AnimScenes = window.AnimScenes || {}).t1028 = (fig) => {
+  const fr = document.documentElement.lang === 'fr';
+  const $ = (s) => fig.querySelector(s);
+  const tint = $('.t1028-tint'), H = $('.t1028-h'), hole = $('.t1028-hole'), B = $('.t1028-b');
+  const labMix = $('.t1028-lab-mix'), labH = $('.t1028-lab-h'), labB = $('.t1028-lab-b'), live = $('.live');
+  const caps = [...fig.querySelectorAll('.caps .cap')];
+  const ease = (x) => (x < 0.5 ? 4 * x * x * x : 1 - Math.pow(-2 * x + 2, 3) / 2);
+  const pr = (t, a, b) => ease(Math.min(1, Math.max(0, (t - a) / (b - a))));
+  const n = (v, d = 0) => { const s = Math.abs(v).toFixed(d).replace('.', fr ? ',' : '.'); return v < 0 && /[1-9]/.test(s) ? '−' + s : s; };
+  const NOM = [192, 80, 144, 144];
+  const L = fr ? { c: ' :', r: 'rayons', s: 'ombre', f: 'taille de police' } : { c: ':', r: 'radii', s: 'shadow', f: 'font size' };
+  return (t, step) => {
+    const teach = fig.dataset.teach === '1';
+    const g = 1 - pr(t, 20, 21);
+    const dash = (c, a) => (a > 0.01 ? `2px dashed ${c.replace(')', ` / ${a})`)}` : 'none');
+    tint.style.opacity = pr(t, 0.4, 2);
+    // html: the box, its radii (the browser shrinks them), its inset shadow
+    const k = pr(t, 4, 6.5);
+    const nom = NOM.map((v) => v * k);
+    const f = k ? Math.min(1, 120 / (nom[0] + nom[1]), 140 / (nom[1] + nom[2]), 120 / (nom[2] + nom[3]), 140 / (nom[3] + nom[0])) : 1;
+    const rad = nom.map((v) => `${v}px`).join(' ');
+    const off = pr(t, 8.2, 10.8);
+    const shOn = t >= 7.5;
+    H.style.opacity = pr(t, 0.8, 1.8);
+    H.style.borderRadius = rad;
+    H.style.background = teach ? `rgb(224 120 92 / ${0.45 * (1 - pr(t, 7.6, 8.2))})` : 'none';
+    H.style.boxShadow = shOn ? `inset ${80 * off}px ${-72 * off}px #30acce` : 'none';
+    H.style.outline = dash('rgb(74 92 90)', g * (t < 12 ? 1 : 1 - pr(t, 12, 12.8)));
+    hole.style.borderRadius = rad;
+    hole.style.transform = `translate(${80 * off}px,${-72 * off}px)`;
+    const ha = pr(t, 7.6, 8.2) * (1 - pr(t, 11.4, 12));
+    hole.style.opacity = ha;
+    hole.style.outline = dash('rgb(138 63 176)', 1);
+    hole.style.background = teach ? 'rgb(138 63 176 / .42)' : 'none';
+    // body: same rules, font-size 16 → 0
+    const fs = 16 * (1 - pr(t, 16, 18.5));
+    B.style.opacity = pr(t, 12.2, 13);
+    B.style.borderRadius = `${12 * fs}px 80px ${9 * fs}px ${9 * fs}px`;
+    B.style.boxShadow = `inset 80px ${-4.5 * fs}px #1d5260`;
+    B.style.outline = dash('rgb(74 92 90)', g);
+    labMix.style.opacity = pr(t, 0.6, 1.6) * (1 - pr(t, 3.3, 3.8));
+    labH.style.opacity = pr(t, 1, 2) * (1 - pr(t, 11.6, 12.2));
+    labB.style.opacity = pr(t, 12.4, 13.2) * g;
+    let txt = '';
+    if (step === 0) txt = `html${L.c} x 140 → 260, y 80 → 220`;
+    else if (step === 1) txt = `${L.r}${L.c} ${nom.map((v) => n(v)).join(' ')} px × ${n(f, 3)} → ${nom.map((v) => n(v * f)).join(' ')} px`;
+    else if (step === 2) txt = `${L.s}${L.c} inset ${n(80 * off)}px ${n(-72 * off)}px`;
+    else if (step === 3) txt = `body${L.c} x 180 → 260, y 80 → 160 · ${L.r} 192 80 144 144 × 0${fr ? ',' : '.'}238`;
+    else if (step === 4) txt = `${L.f}${L.c} ${n(fs, 1)}px · ${L.r} ${n(12 * fs)} 80 ${n(9 * fs)} ${n(9 * fs)} · inset 80px ${n(-4.5 * fs)}px`;
+    else txt = caps[step] ? caps[step].dataset.live || '' : '';
+    live.textContent = txt;
+  };
+};
+</script>
+</figure>
