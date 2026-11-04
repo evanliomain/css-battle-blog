@@ -1,0 +1,22 @@
+---
+layout: default
+---
+{%- assign t = site.data.i18n[page.lang] -%}
+{%- assign posts = site.posts | where: "lang", page.lang | sort: "date" | reverse -%}
+<section class="intro">
+  <h1>{{ t.home_title }}</h1>
+  <p>{{ t.home_intro }}</p>
+</section>
+<ul class="cards">
+{% for post in posts %}
+  <li class="card">
+    <div class="cover"><img src="{{ post.target | relative_url }}" alt="" width="400" height="300" loading="lazy"></div>
+    <div class="body">
+      <p class="kicker"><time datetime="{{ post.date | date_to_xmlschema }}">{% include date.html date=post.date lang=page.lang %}</time> · {{ post.chars }} {{ t.characters_lower }}</p>
+      <h2><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h2>
+      <p>{{ post.excerpt | strip_html | truncatewords: 32 }}</p>
+      {% include player-card.html id=post.player %}
+    </div>
+  </li>
+{% endfor %}
+</ul>

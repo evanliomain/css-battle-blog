@@ -1,0 +1,20 @@
+{%- assign t = site.data.i18n[include.lang] -%}
+{%- assign posts = site.posts | where: "lang", include.lang | sort: "date" | reverse -%}
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="{{ include.lang }}">
+  <title>{{ t.site_title | xml_escape }}</title>
+  <link href="{{ t.feed | absolute_url }}" rel="self"/>
+  <link href="{{ t.home | absolute_url }}"/>
+  <id>{{ t.home | absolute_url }}</id>
+  <updated>{{ site.time | date_to_xmlschema }}</updated>
+  <author><name>{{ site.author | xml_escape }}</name></author>
+  {%- for post in posts limit: 20 %}
+  <entry>
+    <title>{{ post.title | xml_escape }}</title>
+    <link href="{{ post.url | absolute_url }}"/>
+    <id>{{ post.url | absolute_url }}</id>
+    <updated>{{ post.date | date_to_xmlschema }}</updated>
+    <summary>{{ post.excerpt | strip_html | strip | xml_escape }}</summary>
+  </entry>
+  {%- endfor %}
+</feed>

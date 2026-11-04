@@ -1,0 +1,5 @@
+{%- assign p = site.data.players[include.id] -%}
+<a class="player" href="https://cssbattle.dev/player/{{ include.id }}" rel="noopener">
+  <img class="avatar" src="{{ p.avatar | relative_url }}" alt="" width="56" height="56" loading="lazy">
+  <span class="who"><span class="name">{{ p.name | default: include.id }}</span><span class="id">@{{ include.id }}</span></span>
+</a>

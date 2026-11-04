@@ -1,0 +1,23 @@
+title: CSS Battle Top Solutions
+description: Daily CSS Battle targets, the shortest solution, and an animation that shows how it works.
+url: https://evanliomain.github.io
+baseurl: /css-battle-blog
+lang: en
+languages: [en, fr]
+author: Evan Liomain
+permalink: /:year/:month/:day/:title/
+markdown: kramdown
+kramdown:
+  input: GFM
+  hard_wrap: false
+plugins:
+  - jekyll-seo-tag
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock
+defaults:
+  - scope: { path: "_posts/en" }
+    values: { lang: en, layout: post }
+  - scope: { path: "_posts/fr" }
+    values: { lang: fr, layout: post }

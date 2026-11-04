@@ -1,0 +1,50 @@
+<!doctype html>
+{%- assign lang = page.lang | default: "en" -%}
+{%- assign t = site.data.i18n[lang] -%}
+{%- assign alts = "" | split: "" -%}
+{%- if page.ref -%}{%- assign alts = site.posts | concat: site.pages | where: "ref", page.ref -%}{%- endif %}
+<html lang="{{ lang }}">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
+<link rel="icon" href="{{ '/assets/icon.svg' | relative_url }}" type="image/svg+xml">
+<link rel="apple-touch-icon" href="{{ '/assets/apple-touch-icon.png' | relative_url }}">
+<link rel="alternate" type="application/atom+xml" title="{{ t.site_title }}" href="{{ t.feed | relative_url }}">
+{%- for a in alts %}
+<link rel="alternate" hreflang="{{ a.lang }}" href="{{ a.url | absolute_url }}">
+{%- endfor %}
+{% seo title=false %}
+<title>{% if page.title %}{{ page.title }} | {% endif %}{{ t.site_title }}</title>
+</head>
+<body>
+<header class="site">
+  <a class="brand" href="{{ t.home | relative_url }}"><img class="logo" src="{{ '/assets/icon.svg' | relative_url }}" alt="" width="32" height="32">{{ t.site_title }}</a>
+  <nav>
+    <a href="{{ t.feed | relative_url }}">RSS</a>
+    <a href="https://cssbattle.dev/daily" rel="noopener">{{ t.play_daily }}</a>
+    <select class="lang-select" aria-label="{{ t.language }}" autocomplete="off" onchange="location.href=this.value">
+    {%- for l in site.languages -%}
+      {%- assign alt = alts | where: "lang", l | first -%}
+      {%- assign li = site.data.i18n[l] %}
+      <option value="{% if alt %}{{ alt.url | relative_url }}{% else %}{{ li.home | relative_url }}{% endif %}" lang="{{ l }}"{% if l == lang %} selected{% endif %}>{{ li.flag }} {{ li.name }}</option>
+    {%- endfor %}
+    </select>
+    <noscript>
+    {%- for l in site.languages -%}{%- unless l == lang -%}{%- assign alt = alts | where: "lang", l | first -%}
+      <a href="{% if alt %}{{ alt.url | relative_url }}{% else %}{{ site.data.i18n[l].home | relative_url }}{% endif %}" hreflang="{{ l }}" lang="{{ l }}">{{ site.data.i18n[l].flag }} {{ site.data.i18n[l].name }}</a>
+    {%- endunless -%}{%- endfor %}
+    </noscript>
+  </nav>
+</header>
+<main>
+{{ content }}
+</main>
+<footer class="site">
+  <p>{{ t.footer }}</p>
+</footer>
+{%- if jekyll.environment == "production" %}
+<script data-goatcounter="https://css-battle-blog.goatcounter.com/count" async src="https://gc.zgo.at/count.js"></script>
+{%- endif %}
+</body>
+</html>

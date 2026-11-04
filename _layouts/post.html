@@ -1,0 +1,27 @@
+---
+layout: default
+---
+{%- assign t = site.data.i18n[page.lang] -%}
+<article class="post">
+  <p class="kicker">{{ t.daily_target }} · <time datetime="{{ page.date | date_to_xmlschema }}">{% include date.html date=page.date lang=page.lang %}</time></p>
+  <h1>{{ page.title }}</h1>
+  <div class="hero">
+    <figure class="target">
+      <img src="{{ page.target | relative_url }}" alt="{{ t.target_of }} {% include date.html date=page.date lang=page.lang %}" width="400" height="300">
+      {% if page.colors %}<figcaption>{% for c in page.colors %}<span class="swatch" style="--c:{{ c }}"></span><code>{{ c }}</code>{% endfor %}</figcaption>{% endif %}
+    </figure>
+    <aside class="facts">
+      <p class="label">{{ t.top_by }}</p>
+      {% include player-card.html id=page.player %}
+      <dl>
+        <div><dt>{{ t.characters }}</dt><dd>{{ page.chars }}</dd></div>
+        <div><dt>{{ t.score }}</dt><dd>{{ page.score }}</dd></div>
+        <div><dt>{{ t.match }}</dt><dd>{{ page.match }}%</dd></div>
+      </dl>
+      {% if page.target_url %}<a class="play" href="{{ page.target_url }}" rel="noopener">{{ t.open_target }}</a>{% endif %}
+    </aside>
+  </div>
+  <pre class="solution"><code>{{ page.code | rstrip | escape }}</code></pre>
+  {{ content }}
+</article>
+<script src="{{ '/assets/js/anim-player.js' | relative_url }}" defer></script>

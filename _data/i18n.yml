@@ -1,0 +1,43 @@
+# Interface strings, one block per language. Languages are listed in _config.yml (languages).
+en:
+  short: EN
+  flag: 🇬🇧
+  name: English
+  home: /
+  feed: /feed.xml
+  site_title: CSS Battle Top Solutions
+  play_daily: Play the daily
+  footer: Not affiliated with CSS Battle. Solutions belong to their authors, targets to <a href="https://cssbattle.dev" rel="noopener">cssbattle.dev</a>.
+  home_title: The shortest CSS, explained.
+  home_intro: Every day, <a href="https://cssbattle.dev/daily" rel="noopener">CSS Battle</a> publishes a target image. Players race to reproduce it, pixel for pixel, in as few characters as possible. Each post here takes one day's winning solution apart, with an animation that rebuilds the image step by step.
+  daily_target: Daily target
+  top_by: Top solution by
+  characters: Characters
+  characters_lower: characters
+  score: Score
+  match: Match
+  open_target: Open the target on cssbattle.dev →
+  target_of: Target of
+  language: Language
+  months: [January, February, March, April, May, June, July, August, September, October, November, December]
+fr:
+  short: FR
+  flag: 🇫🇷
+  name: Français
+  home: /fr/
+  feed: /fr/feed.xml
+  site_title: Top solutions CSS Battle
+  play_daily: Jouer le défi du jour
+  footer: Sans lien avec CSS Battle. Les solutions appartiennent à leurs auteurs, les cibles à <a href="https://cssbattle.dev" rel="noopener">cssbattle.dev</a>.
+  home_title: Le CSS le plus court, expliqué.
+  home_intro: Chaque jour, <a href="https://cssbattle.dev/daily" rel="noopener">CSS Battle</a> publie une image cible. Les joueurs s'affrontent pour la reproduire au pixel près, avec le moins de caractères possible. Chaque article décortique la solution gagnante d'un jour, avec une animation qui reconstruit l'image étape par étape.
+  daily_target: Cible du jour
+  top_by: Top solution de
+  characters: Caractères
+  characters_lower: caractères
+  score: Score
+  match: Match
+  open_target: Ouvrir la cible sur cssbattle.dev →
+  target_of: Cible du
+  language: Langue
+  months: [janvier, février, mars, avril, mai, juin, juillet, août, septembre, octobre, novembre, décembre]
