@@ -1,0 +1,165 @@
+<figure class="anim t1023" data-duration="28" data-scene="t1023" data-wide="0 -120 400 640" style="--bg:#ce4830">
+<style>
+.t1023{--y:#edf4b0;--r:#ce4830;--mark:#1b1f24;--tb:#2f5fc4;--tl:#2e8b57}
+.t1023 .t1023-bg{left:0;top:-120px;width:400px;height:640px;background-repeat:repeat;background-size:400px 300px}
+.t1023 .t1023-seam{left:0;width:400px;height:0;border-top:2px dashed var(--mark);opacity:0}
+.t1023 .t1023-cross{width:12px;height:12px;margin:-6px 0 0 -6px;background:linear-gradient(var(--mark) 0 0) 50%/2px 100% no-repeat,linear-gradient(var(--mark) 0 0) 50%/100% 2px no-repeat;opacity:0}
+.t1023 .t1023-ray{height:0;border-top:2px solid var(--mark);opacity:0}
+.t1023 .t1023-body{left:190px;top:125px;width:20px;height:9175px;opacity:0}
+.t1023 .t1023-line{left:190px;top:125px;width:20px;height:18px;background:var(--tl);opacity:0}
+.t1023 .t1023-box{box-sizing:border-box;border:1.5px dashed var(--mark);opacity:0}
+.t1023 .t1023-bar{height:20px;background:var(--y);opacity:0}
+.t1023 .t1023-dot{left:190px;top:125px;font:16px "Times New Roman",Times,serif;line-height:normal;color:#000;opacity:0}
+.t1023 .t1023-ring{left:181px;top:128px;width:20px;height:20px;box-sizing:border-box;border:2px solid var(--mark);border-radius:50%;opacity:0}
+.t1023 .t1023-lab{z-index:53;font:10.5px/1.25 ui-monospace,SFMono-Regular,Menlo,monospace;color:#24302f;background:rgb(255 255 255 / .85);padding:1px 4px;border-radius:2px;white-space:nowrap;pointer-events:none;opacity:0}
+.t1023 .t1023-lab b{font-weight:600}
+</style>
+<div class="anim-col">
+<div class="stage" role="img" aria-label="{% if include.lang == "fr" %}Construction animée de la cible : le disque du dégradé de html, la tuile décalée qui le coupe net, le body en fente rouge, puis les deux titres en barres{% else %}Animated build of the target: the disc of html's gradient, the shifted tile that cuts it flat, body as the red slit, then the two headings as bars{% endif %}">
+<div class="scene">
+<i class="t1023-bg"></i>
+<i class="t1023-seam t1023-s0"></i>
+<i class="t1023-seam t1023-s1"></i>
+<i class="t1023-seam t1023-s2"></i>
+<i class="t1023-cross"></i>
+<i class="t1023-ray" style="width:80px"></i>
+<i class="t1023-body"></i>
+<i class="t1023-line"></i>
+<span class="t1023-dot">.</span>
+<i class="t1023-bar t1023-h1"></i>
+<i class="t1023-bar t1023-h4"></i>
+<i class="t1023-box t1023-bbox"></i>
+<i class="t1023-box t1023-h1box"></i>
+<i class="t1023-box t1023-h4box"></i>
+<i class="t1023-ring"></i>
+<b class="t1023-lab t1023-l-html" style="left:6px;top:6px"><b>html</b> · {% if include.lang == "fr" %}tuile 400 × 300{% else %}400 × 300 tile{% endif %}</b>
+<b class="t1023-lab t1023-l-ctr" style="left:116px;top:256px">50% 83.3% → (200, 250)</b>
+<b class="t1023-lab t1023-l-ray" style="left:214px;top:230px">5pc = 80px</b>
+<b class="t1023-lab t1023-l-hint" style="left:6px;top:6px"></b>
+<b class="t1023-lab t1023-l-up" style="left:6px;top:-110px">{% if include.lang == "fr" %}<b>copie du dessus</b> · son disque se voit{% else %}<b>copy above</b> · its disc shows{% endif %}</b>
+<b class="t1023-lab t1023-l-cut" style="left:6px;top:191px">{% if include.lang == "fr" %}bord de la tuile · y = 185,2{% else %}tile edge · y = 185.2{% endif %}</b>
+<b class="t1023-lab t1023-l-dn" style="left:6px;top:330px">{% if include.lang == "fr" %}<b>tuile déplacée</b> · son disque, centré à y ≈ 435{% else %}<b>moved tile</b> · its disc, centered at y ≈ 435{% endif %}</b>
+<b class="t1023-lab t1023-l-body" style="left:216px;top:126px"><b>body</b> · 20 × 9175</b>
+<b class="t1023-lab t1023-l-body2" style="left:216px;top:312px"><b>body</b> → y = 9300<br>{% if include.lang == "fr" %}son disque : y ≈ 7950{% else %}its disc: y ≈ 7950{% endif %}</b>
+<b class="t1023-lab t1023-l-h1" style="left:256px;top:192px"><b>h1</b> · 32px<br>−2.7ex ≈ −40</b>
+<b class="t1023-lab t1023-l-h4" style="left:236px;top:224px"><b>h4</b> · 16px<br>−2.7ex ≈ −20</b>
+<b class="t1023-lab t1023-l-dot" style="left:256px;top:118px">{% if include.lang == "fr" %}« . » : une ligne<br>de 18px{% else %}“.”: an 18px<br>line of text{% endif %}</b>
+<b class="t1023-lab t1023-l-nodot" style="left:256px;top:118px">{% if include.lang == "fr" %}sans « . » : les<br>marges fusionnent{% else %}no “.”: the<br>margins collapse{% endif %}</b>
+</div>
+</div>
+<div class="legend"><span><i style="--c:var(--tb)"></i>{% if include.lang == "fr" %}body (rouge en vrai){% else %}body (red in reality){% endif %}</span><span><i style="--c:var(--tl)"></i>{% if include.lang == "fr" %}ligne du « . »{% else %}line of the “.”{% endif %}</span><span><i style="--c:var(--mark)"></i>{% if include.lang == "fr" %}bords des tuiles (tirets){% else %}tile edges (dashed){% endif %}</span></div>
+</div>
+<div class="anim-side">
+<pre class="code" aria-hidden="true"><span data-on="6">.</span><span data-on="5">&lt;h1>&lt;h4></span>&lt;style>*{background:<span data-on="1">radial-gradient(1Q at 50%83.3%,#edf4b0,</span><span data-on="2">5pc,</span><span data-on="1">#ce4830)</span><span data-on="3">0 196Q</span>;*{<span data-on="4" data-tone="2">margin:125 190-9e3</span>;*{<span data-on="5">margin:</span><span data-on="5 6">52</span><span data-on="5">-2.7ex -42;height:20</span></pre>
+<div class="now" aria-live="polite">
+<div class="caps">
+{%- if include.lang == "fr" %}
+<div class="cap" data-t="0" data-step="Le dégradé de html : un disque"><h3>1. Le dégradé de html : un disque</h3><p>Le fond de <code>html</code> part sur tout le canevas, et sa tuile fait 400 × 300. Le dégradé est un disque jaune de 5pc (80px) de rayon, centré en <code>50% 83.3%</code>, soit (200, 250). Tout le reste est rouge.</p></div>
+<div class="cap" data-t="4.5" data-step="5pc : un repère de transition"><h3>2. 5pc : un repère de transition</h3><p>Le <code>5pc</code> seul entre les deux couleurs est un repère de transition (le milieu du fondu). Le rouge n'a pas de position : il ne peut pas venir avant le repère, donc il se cale aussi à 80px. Repère et couleur au même endroit, le fondu disparaît : le bord est net.</p></div>
+<div class="cap" data-t="8.5" data-step="0 196Q : la tuile coupe le disque"><h3>3. 0 196Q : la tuile coupe le disque</h3><p><code>0 196Q</code> fait descendre la tuile de 185px. Le fond se répète : la copie du dessus amène son disque, centré à y ≈ 135, et son bord bas coupe le disque net à y ≈ 185. Le disque de la tuile déplacée sort du canevas (vue large).</p></div>
+<div class="cap" data-t="12.5" data-step="body : la fente rouge"><h3>4. body : la fente rouge</h3><p>Le <code>body</code> reçoit le même fond. <code>margin:125 190-9e3</code> le réduit à 20px de large en x = 190, et la marge basse de −9000 le rend haut de 9175px (mode quirks). Son disque tombe environ 7 600px plus bas : dans le canevas, il est tout rouge. C'est la fente, en bleu ici pour qu'on la voie en entier.</p></div>
+<div class="cap" data-t="16.5" data-step="h1 et h4 : les barres"><h3>5. h1 et h4 : les barres</h3><p><code>h1</code> et <code>h4</code> sont dans le <code>body</code>, mais leurs marges latérales négatives (<code>-2.7ex</code>) les élargissent. <code>ex</code> suit la police : 32px pour le h1, 16px pour le h4. Une seule marge donne donc 100px et 60px de large. Leur tuile tient dans le disque : elles sont jaunes.</p></div>
+<div class="cap" data-t="20.5" data-step="Le « . » tient les barres"><h3>6. Le « . » tient les barres</h3><p>Le <code>.</code> du début crée une ligne de texte de 18px en haut du <code>body</code>. Sans elle, la marge de 52px du <code>h1</code> fusionnerait avec celle du <code>body</code> et les barres remonteraient de 70px. Le point lui-même ne fait que quelques pixels noirs dans la fente.</p></div>
+<div class="cap" data-t="24.5" data-step="Résultat" data-live="139 caractères · 100 % identique"><h3>7. Résultat : 139 caractères</h3><p>Dans les vraies couleurs : un dégradé, quatre boîtes, et le bord d'une tuile pour couper l'ampoule.</p></div>
+{%- else %}
+<div class="cap" data-t="0" data-step="html’s gradient: one disc"><h3>1. html’s gradient: one disc</h3><p>The background of <code>html</code> goes to the whole canvas, and its tile is 400 × 300. The gradient is a yellow disc with a 5pc (80px) radius, centered at <code>50% 83.3%</code>, so (200, 250). Everything else is red.</p></div>
+<div class="cap" data-t="4.5" data-step="5pc: a color hint"><h3>2. 5pc: a color hint</h3><p>The lone <code>5pc</code> between the two colors is a color hint (the middle of the blend). The red has no position: it can't come before the hint, so it moves to 80px too. Hint and color in the same place leave no blend at all: the edge is sharp.</p></div>
+<div class="cap" data-t="8.5" data-step="0 196Q: the tile cuts the disc"><h3>3. 0 196Q: the tile cuts the disc</h3><p><code>0 196Q</code> slides the tile 185px down. Backgrounds repeat, so the copy above brings in its disc, centered at y ≈ 135, and its bottom edge cuts the disc flat at y ≈ 185. The moved tile's own disc leaves the canvas (wide view).</p></div>
+<div class="cap" data-t="12.5" data-step="body: the red slit"><h3>4. body: the red slit</h3><p>The <code>body</code> gets the same background. <code>margin:125 190-9e3</code> makes it 20px wide at x = 190, and the −9000 bottom margin makes it 9175px tall (quirks mode). Its disc lands about 7,600px down: on the canvas it is all red. That is the slit, in blue here so you can see all of it.</p></div>
+<div class="cap" data-t="16.5" data-step="h1 and h4: the bars"><h3>5. h1 and h4: the bars</h3><p><code>h1</code> and <code>h4</code> sit in the <code>body</code>, but negative side margins (<code>-2.7ex</code>) make them wider. <code>ex</code> follows the font: 32px for the h1, 16px for the h4. One margin gives 100px and 60px. Their tile fits inside the disc, so they are yellow.</p></div>
+<div class="cap" data-t="20.5" data-step="The “.” holds the bars down"><h3>6. The “.” holds the bars down</h3><p>The leading <code>.</code> makes an 18px line of text at the top of the <code>body</code>. Without it, the h1's 52px margin would collapse into the body's, and the bars would move up 70px. The dot itself is only a few black pixels in the slit.</p></div>
+<div class="cap" data-t="24.5" data-step="Result" data-live="139 characters · 100% match"><h3>7. Result: 139 characters</h3><p>In the real colors: one gradient, four boxes, and the edge of a tile to cut the bulb.</p></div>
+{%- endif %}
+</div>
+<div class="live"></div>
+</div>
+</div>
+<script>
+(window.AnimScenes = window.AnimScenes || {}).t1023 = (fig) => {
+  const fr = document.documentElement.lang === 'fr';
+  const $ = (s) => fig.querySelector('.t1023-' + s);
+  const live = fig.querySelector('.live');
+  const caps = [...fig.querySelectorAll('.caps .cap')];
+  const ease = (x) => (x < 0.5 ? 4 * x * x * x : 1 - Math.pow(-2 * x + 2, 3) / 2);
+  const pr = (t, a, b) => ease(Math.min(1, Math.max(0, (t - a) / (b - a))));
+  const win = (t, a, b, c, d) => Math.min(pr(t, a, b), 1 - pr(t, c, d));
+  const lerp = (a, b, m) => a + (b - a) * m;
+  const num = (v, d = 1) => v.toFixed(d).replace('.', fr ? ',' : '.');
+  const Y = '#edf4b0', R = '#ce4830', SHIFT = 196 * 96 / 101.6;
+  const el = {};
+  ['bg', 's0', 's1', 's2', 'cross', 'ray', 'body', 'line', 'dot', 'h1', 'h4', 'bbox', 'h1box', 'h4box', 'ring', 'l-html', 'l-ctr', 'l-ray', 'l-hint', 'l-up', 'l-cut', 'l-dn', 'l-body', 'l-body2', 'l-h1', 'l-h4', 'l-dot', 'l-nodot'].forEach((k) => { el[k] = $(k); });
+  const box = (e, x, y, w, h) => { Object.assign(e.style, { left: x + 'px', top: y + 'px', width: w + 'px', height: h + 'px' }); };
+  const mix = (a, b, m) => {
+    const p = (c) => [1, 3, 5].map((i) => parseInt(c.slice(i, i + 2), 16));
+    const A = p(a), B = p(b);
+    return `rgb(${A.map((v, i) => Math.round(lerp(v, B[i], m))).join(',')})`;
+  };
+  return (t, step) => {
+    const teach = fig.dataset.teach === '1';
+    const fin = pr(t, 24.6, 25.6);
+    const guide = 1 - fin;
+    // 1-2: the disc, then the color hint sweep
+    const hintBump = Math.sin(Math.PI * Math.min(1, Math.max(0, (t - 5) / 3)));
+    const hint = 80 - 62 * hintBump;
+    const shift = SHIFT * pr(t, 9, 12);
+    // .t1023-bg starts at y = -120: the tile grid starts at 120 px inside it
+    el.bg.style.backgroundImage = `radial-gradient(circle at 200px 249.9px,${Y},${hint}px,${R} 80px)`;
+    el.bg.style.backgroundPosition = `0 ${120 + shift}px`;
+    el.bg.style.opacity = pr(t, 0.3, 1.3);
+    el.cross.style.left = '200px';
+    el.cross.style.top = 250 + shift + 'px';
+    el.ray.style.left = '200px';
+    el.ray.style.top = 249 + shift + 'px';
+    el.cross.style.opacity = el.ray.style.opacity = Math.min(pr(t, 1, 1.6), guide);
+    el['l-html'].style.opacity = win(t, 0.6, 1.2, 4.2, 4.5);
+    el['l-ctr'].style.opacity = win(t, 1, 1.6, 8, 8.5);
+    el['l-ray'].style.opacity = win(t, 1.6, 2.2, 8, 8.5);
+    el['l-hint'].style.opacity = win(t, 4.6, 5, 8.2, 8.5);
+    el['l-hint'].textContent = (fr ? 'repère : ' : 'hint: ') + Math.round(hint) + 'px';
+    // 3: slide the tile; the seams are the tile edges
+    [el.s0, el.s1, el.s2].forEach((s, i) => { s.style.top = (shift - 300 + 300 * i - 1) + 'px'; });
+    const seams = Math.min(pr(t, 8.6, 9), guide);
+    el.s0.style.opacity = el.s1.style.opacity = el.s2.style.opacity = seams;
+    el['l-up'].style.top = (shift - 300 + 6) + 'px';
+    el['l-cut'].style.top = (shift + 6) + 'px';
+    el['l-up'].style.opacity = el['l-dn'].style.opacity = el['l-cut'].style.opacity = win(t, 9.4, 9.8, 12.2, 12.5);
+    // 4: body, a 20 × 9175 box, in teaching blue (red in reality)
+    const b = pr(t, 13, 14.6);
+    box(el.bbox, lerp(0, 190, b), lerp(0, 125, b), lerp(400, 20, b), lerp(300, 9175, b));
+    el.bbox.style.opacity = win(t, 12.6, 13, 16.2, 16.5);
+    el.body.style.opacity = pr(t, 14.6, 15.4);
+    el.body.style.background = teach ? mix('#2f5fc4', R, fin) : R;
+    el['l-body'].style.opacity = el['l-body2'].style.opacity = win(t, 12.6, 13, 16.2, 16.5);
+    // 5: the bars widen; 6: what the dot does
+    const g = pr(t, 17, 19);
+    const up = win(t, 21.6, 22.4, 23, 23.8) * 70;
+    const w1 = lerp(20, 99.56, g), w4 = lerp(20, 59.78, g);
+    box(el.h1, 200 - w1 / 2, 195 - up, w1, 20);
+    box(el.h4, 200 - w4 / 2, 225 - up, w4, 20);
+    box(el.h1box, 200 - w1 / 2, 195 - up, w1, 20);
+    box(el.h4box, 200 - w4 / 2, 225 - up, w4, 20);
+    el.h1.style.opacity = el.h4.style.opacity = pr(t, 16.6, 17);
+    el.h1box.style.opacity = el.h4box.style.opacity = Math.max(win(t, 16.6, 17, 19.6, 20), win(t, 21.4, 21.6, 23.8, 24));
+    el['l-h1'].style.opacity = el['l-h4'].style.opacity = win(t, 17, 17.4, 20.2, 20.5);
+    el['l-h1'].style.top = 192 - up + 'px';
+    el['l-h4'].style.top = 224 - up + 'px';
+    const lineOn = win(t, 20.6, 21, 23.8, 24.1);
+    el.line.style.opacity = teach ? lineOn * (1 - win(t, 21.6, 21.8, 23.4, 23.6)) : 0;
+    el.dot.style.opacity = Math.min(pr(t, 14.6, 15.4), 1 - win(t, 21.6, 22, 23.4, 23.8));
+    el.ring.style.opacity = Math.min(lineOn, 1 - win(t, 21.6, 21.8, 23.4, 23.6));
+    el['l-dot'].style.opacity = Math.min(lineOn, 1 - win(t, 21.6, 21.8, 23.4, 23.6));
+    el['l-nodot'].style.opacity = win(t, 21.6, 21.8, 23.4, 23.6);
+    // live line
+    let txt = '';
+    if (step === 0) txt = fr ? 'centre (200, 250) · rayon 5pc = 80 px' : 'center (200, 250) · radius 5pc = 80 px';
+    else if (step === 1) txt = (fr ? 'repère du fondu : ' : 'color hint: ') + Math.round(hint) + ' px · ' + (fr ? 'rouge : 80 px' : 'red: 80 px');
+    else if (step === 2) txt = (fr ? 'décalage de la tuile : 0 ' : 'tile offset: 0 ') + num(shift) + ' px · ' + (fr ? 'coupe à y = ' : 'cut at y = ') + num(shift);
+    else if (step === 3) txt = fr ? 'body : x 190 → 210, y 125 → 9300' : 'body: x 190 → 210, y 125 → 9300';
+    else if (step === 4) txt = (fr ? 'largeurs : h1 ' : 'widths: h1 ') + num(w1) + ' px · h4 ' + num(w4) + ' px';
+    else if (step === 5) txt = up > 1 ? (fr ? 'sans « . » : haut du h1 = 125 (marges fusionnées)' : 'no “.”: h1 top = 125 (margins collapsed)') : (fr ? 'haut du h1 : 125 + 18 + 52 = 195' : 'h1 top: 125 + 18 + 52 = 195');
+    else txt = caps[step] ? caps[step].dataset.live || '' : '';
+    live.textContent = txt;
+  };
+};
+</script>
+</figure>
