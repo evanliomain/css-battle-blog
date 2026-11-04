@@ -1,0 +1,94 @@
+<figure class="anim t1017" data-duration="24" data-scene="t1017" data-wide="-50 -40 500 380" style="--bg:#73493a">
+<style>
+.t1017{--cream:#fef9ce;--sage:#a6ba86;--mg:#7fb4d6;--gap:#f08a4b}
+.t1017 .t1017-mg{left:0;top:0;width:400px;height:300px;box-sizing:border-box;border:solid var(--mg);border-width:65px 59px;opacity:0}
+.t1017 .t1017-ghost{left:59px;top:65px;width:282px;height:170px;box-sizing:border-box;border:1.5px dashed #fef9ce;opacity:0}
+.t1017 .t1017-b{left:59px;top:65px;width:282px;height:170px;background:var(--cream);opacity:0}
+.t1017 .t1017-b>*{position:absolute;top:0;height:50px}
+.t1017 .t1017-d1{left:0;width:100px}
+.t1017 .t1017-gp{left:100px;width:82px}
+.t1017 .t1017-d2{left:182px;width:100px}
+.t1017 .t1017-top{left:0;width:282px;display:grid;place-items:center;font:600 13px/1 ui-monospace,SFMono-Regular,Menlo,monospace;color:#24302f}
+.t1017 .t1017-lab{font:10.5px/1.25 ui-monospace,SFMono-Regular,Menlo,monospace;color:#24302f;background:rgb(255 255 255 / .82);padding:1px 4px;border-radius:2px;white-space:nowrap;pointer-events:none;opacity:0;z-index:5}
+.t1017 .t1017-lab b{font-weight:600}
+</style>
+<div class="anim-col">
+<div class="stage" role="img" aria-label="{% if include.lang == "fr" %}Animation : le canevas brun, la carte crème du body, sa bordure haute en tirets, puis scale:.6-1 qui la rétrécit et la retourne{% else %}Animation: the brown canvas, body's cream card, its dashed top border, then scale:.6-1 shrinking and flipping it{% endif %}">
+<div class="scene">
+<div class="t1017-mg"></div>
+<div class="t1017-ghost"></div>
+<div class="t1017-b"><div class="t1017-d1"></div><div class="t1017-gp"></div><div class="t1017-d2"></div><div class="t1017-top">border-top</div></div>
+<div class="t1017-lab t1017-lh" style="left:8px;top:8px"><b>html</b> · #73493A · 400 × 300</div>
+<div class="t1017-lab t1017-lm1" style="left:184px;top:24px">margin 65</div>
+<div class="t1017-lab t1017-lm2" style="left:4px;top:144px">59</div>
+<div class="t1017-lab t1017-lb" style="left:153px;top:182px"><b>body</b> 282 × 170</div>
+<div class="t1017-lab t1017-ld" style="left:150px;top:122px">100 | 82 | 100</div>
+<div class="t1017-lab t1017-ls" style="left:150px;top:122px"></div>
+</div>
+</div>
+<div class="legend"><span><i style="--c:var(--mg)"></i>{% if include.lang == "fr" %}marges du body{% else %}body margins{% endif %}</span><span><i style="--c:var(--cream)"></i>{% if include.lang == "fr" %}fond du body{% else %}body background{% endif %}</span><span><i style="--c:var(--sage)"></i>{% if include.lang == "fr" %}tirets de la bordure{% else %}border dashes{% endif %}</span><span><i style="--c:var(--gap)"></i>{% if include.lang == "fr" %}trou entre les tirets (crème en vrai){% else %}gap between the dashes (cream in reality){% endif %}</span></div>
+</div>
+<div class="anim-side">
+<pre class="code" aria-hidden="true">&lt;style>&amp;{<span data-on="1">background:#73493A</span>;*{<span data-on="2" data-tone="2">background:#FEF9CE;margin:65 59</span>;<span data-on="3" data-tone="2">border-top:53q dashed#A6BA86</span>;<span data-on="4 5" data-tone="2">scale:</span><span data-on="4" data-tone="2">.6</span><span data-on="5" data-tone="2">-1</span></pre>
+<div class="now">
+<div class="caps">
+{%- if include.lang == "fr" %}
+<div class="cap" data-t="0" data-step="Le canevas brun"><h3>1. Le canevas brun</h3><p><code>&amp;</code> seul, c'est <code>html</code>. Son fond brun s'étend à tout le canevas.</p></div>
+<div class="cap" data-t="3" data-step="body : une carte crème"><h3>2. body : une carte crème</h3><p><code>*</code> imbriqué vise les enfants de <code>html</code> ; seul <code>body</code> s'affiche. <code>margin:65 59</code> lui laisse 400 − 2 × 59 = 282px de large. En mode quirks, il s'étire sur la hauteur de la page moins ses marges : 300 − 130 = 170px. Une carte crème de 282 × 170 en (59, 65).</p></div>
+<div class="cap" data-t="7" data-step="Une bordure en tirets"><h3>3. Une bordure en tirets</h3><p><code>border-top:53q dashed</code> : une bordure de 50px (53q fait 50,08px, arrondi au pixel). Chrome met un tiret entier à chaque bout, long de deux fois l'épaisseur, soit 100px, et étire le trou entre les deux : 100 | 82 | 100. Dans le trou, on voit le fond crème du <code>body</code>.</p></div>
+<div class="cap" data-t="12" data-step="scale:.6 : on rétrécit"><h3>4. scale:.6 : on rétrécit</h3><p><code>scale:.6</code> en largeur, autour du centre (x = 200) : 282px deviennent 169,2px, et les tirets 60 | 49,2 | 60. Les deux coins verts et la bande crème du milieu de la cible.</p></div>
+<div class="cap" data-t="16.5" data-step="-1 : on retourne"><h3>5. -1 : on retourne</h3><p>Le <code>-1</code> en hauteur retourne la carte autour de son centre (y = 150) : la bordure du haut passe en bas, de y 185 à 235. <code>.6-1</code> coûte autant de caractères que <code>.6 1</code>, et <code>border-top</code> 3 de moins que <code>border-bottom</code>.</p></div>
+<div class="cap" data-t="20.5" data-step="Au pixel près" data-live="101 caractères · 100 % identique"><h3>6. Au pixel près</h3><p>Une boîte, une bordure en tirets, un <code>scale</code> : la cible en 101 caractères.</p></div>
+{%- else %}
+<div class="cap" data-t="0" data-step="The brown canvas"><h3>1. The brown canvas</h3><p><code>&amp;</code> alone is <code>html</code>. Its brown background spreads to the whole canvas.</p></div>
+<div class="cap" data-t="3" data-step="body: a cream card"><h3>2. body: a cream card</h3><p>The nested <code>*</code> matches <code>html</code>'s children; only <code>body</code> shows. <code>margin:65 59</code> leaves it 400 − 2 × 59 = 282px wide. In quirks mode it stretches to the page height minus its margins: 300 − 130 = 170px. A 282 × 170 cream card at (59, 65).</p></div>
+<div class="cap" data-t="7" data-step="A dashed border"><h3>3. A dashed border</h3><p><code>border-top:53q dashed</code>: a 50px border (53q is 50.08px, rounded to the pixel). Chrome puts a whole dash at each end, twice the width long, so 100px, and stretches the gap between them: 100 | 82 | 100. Through the gap, you see the <code>body</code>'s cream background.</p></div>
+<div class="cap" data-t="12" data-step="scale:.6: shrink"><h3>4. scale:.6: shrink</h3><p><code>scale:.6</code> across, around the center (x = 200): 282px become 169.2px, and the dashes 60 | 49.2 | 60. Those are the target's two green corners and the cream strip between them.</p></div>
+<div class="cap" data-t="16.5" data-step="-1: flip"><h3>5. -1: flip</h3><p>The <code>-1</code> on the height flips the card around its center (y = 150): the top border goes to the bottom, from y 185 to 235. <code>.6-1</code> costs as many characters as <code>.6 1</code>, and <code>border-top</code> is 3 shorter than <code>border-bottom</code>.</p></div>
+<div class="cap" data-t="20.5" data-step="Pixel-perfect" data-live="101 characters · 100% match"><h3>6. Pixel-perfect</h3><p>One box, one dashed border, one <code>scale</code>: the target in 101 characters.</p></div>
+{%- endif %}
+</div>
+<div class="live"></div>
+</div>
+</div>
+<script>
+(window.AnimScenes = window.AnimScenes || {}).t1017 = (fig) => {
+  const fr = document.documentElement.lang === 'fr';
+  const $ = (s) => fig.querySelector(s);
+  const mg = $('.t1017-mg'), ghost = $('.t1017-ghost'), B = $('.t1017-b'), d1 = $('.t1017-d1'), d2 = $('.t1017-d2'), gp = $('.t1017-gp'), top = $('.t1017-top');
+  const lh = $('.t1017-lh'), lm1 = $('.t1017-lm1'), lm2 = $('.t1017-lm2'), lb = $('.t1017-lb'), ld = $('.t1017-ld'), ls = $('.t1017-ls'), live = $('.live');
+  const ease = (x) => (x < 0.5 ? 4 * x * x * x : 1 - Math.pow(-2 * x + 2, 3) / 2);
+  const pr = (t, a, b) => ease(Math.min(1, Math.max(0, (t - a) / (b - a))));
+  const n = (v, d = 1) => (+v.toFixed(d)).toString().replace('.', fr ? ',' : '.');
+  const c = fr ? ' :' : ':';
+  const L = fr ? { w: 'largeur', y: 'échelle en hauteur', end: '101 caractères · 100 % identique' } : { w: 'width', y: 'vertical scale', end: '101 characters · 100% match' };
+  return (t, step) => {
+    const teach = fig.dataset.teach === '1' && step < 5;
+    const body = pr(t, 3.3, 4.3), dash = pr(t, 7.3, 8.5), sx = 1 - 0.4 * pr(t, 12.5, 14.5), sy = 1 - 2 * pr(t, 17, 19.2);
+    B.style.opacity = body;
+    B.style.scale = `${sx} ${sy}`;
+    d1.style.background = d2.style.background = 'var(--sage)';
+    d1.style.opacity = d2.style.opacity = gp.style.opacity = dash;
+    gp.style.background = teach ? 'var(--gap)' : 'transparent';
+    top.style.opacity = step < 5 ? dash : 0;
+    mg.style.opacity = teach ? 0.75 * body * (step < 2 ? 1 : 1 - pr(t, 7, 8)) : 0;
+    ghost.style.opacity = step === 3 || step === 4 ? 0.8 * pr(t, 12, 12.4) : 0;
+    lh.style.opacity = step === 0 ? pr(t, 0.4, 1.2) : 0;
+    lm1.style.opacity = lm2.style.opacity = step === 1 ? body : 0;
+    lb.style.opacity = step === 1 || step === 2 ? body : 0;
+    ld.style.opacity = step === 2 ? dash : 0;
+    ls.style.opacity = step === 3 || step === 4 ? 1 : 0;
+    ls.textContent = `${n(100 * sx)} | ${n(82 * sx)} | ${n(100 * sx)}`;
+    const y1 = 150 - 85 * sy, y2 = 150 - 35 * sy;
+    let txt = '';
+    if (step === 0) txt = `html${c} 400 × 300 · #73493A`;
+    else if (step === 1) txt = `body${c} x 59 → 341, y 65 → 235 · 282 × 170`;
+    else if (step === 2) txt = `border-top${c} 50 px · 100 | 82 | 100`;
+    else if (step === 3) txt = `${L.w}${c} 282 × ${n(sx, 2)} = ${n(282 * sx)} px · x ${n(200 - 141 * sx)} → ${n(200 + 141 * sx)}`;
+    else if (step === 4) txt = `${L.y}${c} ${n(sy, 2)} · border-top${c} y ${n(Math.min(y1, y2))} → ${n(Math.max(y1, y2))}`;
+    else txt = L.end;
+    live.textContent = txt;
+  };
+};
+</script>
+</figure>
