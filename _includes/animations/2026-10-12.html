@@ -1,0 +1,117 @@
+<figure class="anim t1012" data-duration="28" data-scene="t1012" data-wide="-30 -200 460 610" style="--bg:#84b9c7">
+<style>
+.t1012{--mark:#1b1f24;--hc:#ecd5e4;--hd:#1d5260;--bc:#ecd5e4;--bd:#1d5260}
+.t1012 .scene>*{box-sizing:border-box}
+.t1012 .blank{left:-30px;top:-200px;width:460px;height:610px;background:#eef0f2}
+.t1012 .tile{left:120px;width:864px;height:260px;border:2px dashed var(--mark)}
+.t1012 .disc{width:60px;height:60px}
+.t1012 .h-disc{left:120px;background:radial-gradient(circle at 0 0,var(--hd) 60px,#0000 0)}
+.t1012 .h{left:90px;top:20px;width:220px;height:260px;border:0 solid var(--hc);border-width:0 30px}
+.t1012 .h-out{left:90px;top:20px;width:220px;height:260px;outline:2px dashed var(--mark);outline-offset:-1px}
+.t1012 .h>*,.t1012 .b>*{position:absolute;box-sizing:border-box}
+.t1012 .b{left:-30px;top:0;width:220px;height:260px;border:0 solid var(--bc);border-width:0 30px;outline:2px dashed var(--mark);outline-offset:-1px}
+.t1012 .b-disc{left:0;top:53Q;width:60px;height:60px;background:radial-gradient(circle at 0 0,var(--bd) 60px,#0000 0)}
+.t1012 .b-col{left:0;top:0;width:160px;height:260px;background:#84b9c7;outline:2px dashed var(--mark);outline-offset:-1px}
+.t1012 .tag{z-index:60;font:600 12px/1 ui-monospace,SFMono-Regular,Menlo,monospace;color:#fff;background:var(--mark);padding:3px 5px;border-radius:3px;white-space:nowrap}
+.t1012[data-view="wide"] .tag{font-size:15px}
+.t1012[data-view="canvas"] .tag.w{display:none}
+</style>
+<div class="anim-col">
+<div class="stage" role="img" aria-label="{% if include.lang == "fr" %}Animation : html et ses deux bordures roses, le fond du canevas avec un quart de disque, html tourné de 90°, puis le body tourné de 180° en tout, avec le même fond et le second quart de disque{% else %}Animation: html and its two pink borders, the canvas background with one quarter disc, html turned 90°, then body turned 180° in all, with the same background and the second quarter disc{% endif %}">
+<div class="scene">
+<div class="blank"></div>
+<div class="tile" style="top:calc(20px + 53Q - 260px)"></div><div class="tile" style="top:calc(20px + 53Q)"></div><div class="tile" style="top:calc(20px + 53Q + 260px)"></div>
+<div class="disc h-disc" style="top:calc(20px + 53Q - 260px)"></div><div class="disc h-disc" style="top:calc(20px + 53Q)"></div><div class="disc h-disc" style="top:calc(20px + 53Q + 260px)"></div>
+<div class="h"><div class="b"><div class="b-disc"></div><div class="b-col"></div></div></div>
+<div class="h-out"></div>
+<b class="tag" data-w="1" style="left:124px;top:26px">html · 220 × 260</b>
+<b class="tag" data-w="1" style="left:124px;top:250px">border-inline: 32Q → 30px</b>
+<b class="tag" data-w="2" style="left:8px;top:8px">{% if include.lang == "fr" %}canevas : text ignoré{% else %}canvas: text ignored{% endif %}</b>
+<b class="tag" data-w="3" style="left:8px;top:8px">0 53Q → (120, 70) · 9in = 864px</b>
+<b class="tag w" data-w="3" style="left:186px;top:-186px">{% if include.lang == "fr" %}copie : y = −190{% else %}copy: y = −190{% endif %}</b>
+<b class="tag w" data-w="3" style="left:186px;top:334px">{% if include.lang == "fr" %}copie : y = 330{% else %}copy: y = 330{% endif %}</b>
+<b class="tag" data-w="4" style="left:8px;top:8px">html · rotate:90deg</b>
+<b class="tag" data-w="5" style="left:8px;top:8px">body · margin:0-30 → 220 × 260</b>
+<b class="tag" data-w="5" style="left:8px;top:34px">90° + 90° = 180°</b>
+<b class="tag" data-w="6" style="left:8px;top:8px">{% if include.lang == "fr" %}même fond, tourné : (280, 230){% else %}same background, turned: (280, 230){% endif %}</b>
+<b class="tag" data-w="6" data-a="21.3" data-b="23.3" style="left:8px;top:34px">{% if include.lang == "fr" %}sans text, le bleu cacherait tout{% else %}without text, the blue would hide it all{% endif %}</b>
+</div>
+</div>
+<div class="legend"><span><i style="--c:#e07b39"></i>{% if include.lang == "fr" %}html : bordures, quart de disque{% else %}html: borders, quarter disc{% endif %}</span><span><i style="--c:#7c4dcc"></i>{% if include.lang == "fr" %}body : bordures, quart de disque{% else %}body: borders, quarter disc{% endif %}</span></div>
+</div>
+<div class="anim-side">
+<pre class="code" aria-hidden="true">&lt;style>*{<span data-on="1">margin:20 90</span>;<span data-on="1">border-inline:32Q solid#ecd5e4</span>;<span data-on="4 5">rotate:90deg</span>;<span data-on="5" data-tone="2">*{margin:0-30}</span>background:<span data-on="3 6">0 53Q/9in radial-gradient(1Q at 0 0,#1d5260 60px,#0000)</span>,<span data-on="2 6">text#84b9c7</span></pre>
+<div class="now" aria-live="polite">
+<div class="caps">
+{%- if include.lang == "fr" %}
+<div class="cap" data-t="0" data-step="html et ses deux bordures"><h3>1. html et ses deux bordures</h3><p><code>margin:20 90</code> : <code>html</code> fait 220 × 260 en (90, 20) ; en mode quirks, sa hauteur vaut 300 − 2 × 20. <code>border-inline</code> lui met une bordure rose à gauche et à droite : 32Q, arrondis à 30px.</p></div>
+<div class="cap" data-t="4" data-step="Le canevas ignore text"><h3>2. Le canevas ignore text</h3><p>Le fond de <code>html</code> part sur le canevas. Le dernier calque, <code>text#84b9c7</code>, découpe la couleur selon le texte, mais le canevas ignore ce découpage : il est tout bleu-gris.</p></div>
+<div class="cap" data-t="7.5" data-step="Un quart de disque"><h3>3. Un quart de disque</h3><p>Le premier calque se place sur la boîte de <code>html</code> : tuile de 9in (864px) à 53Q (≈ 50px) sous son bord de padding, donc en (120, 70). Le cercle de 60px est centré sur le coin de la tuile : seul son quart bas-droit est dedans. La tuile se répète tous les 260px : les autres copies tombent hors du canevas.</p></div>
+<div class="cap" data-t="11.5" data-step="html tourne de 90°"><h3>4. html tourne de 90°</h3><p><code>rotate:90deg</code> tourne <code>html</code> autour de son centre (200, 150) : ses bordures deviennent les barres horizontales. Le fond du canevas, lui, ne tourne pas : le quart de disque reste en place.</p></div>
+<div class="cap" data-t="15.5" data-step="body : 90° de plus"><h3>5. body : 90° de plus</h3><p><code>margin:0-30</code> élargit le <code>body</code> sur les bordures de <code>html</code> : 220 × 260 lui aussi, avec les mêmes bordures. Il tourne de 90° dans le repère de <code>html</code>, déjà tourné : 180° en tout, et ses bordures redeviennent verticales.</p></div>
+<div class="cap" data-t="20" data-step="Le même fond, retourné"><h3>6. Le même fond, retourné</h3><p>Le <code>body</code> a le même fond. Son quart de disque, placé sur sa boîte, est retourné avec lui : centré en (280, 230), tourné vers le haut à gauche. Sa couleur reste découpée au texte, et il n'y a pas de texte : elle ne cache pas le premier quart.</p></div>
+<div class="cap" data-t="24" data-step="Résultat" data-live="158 caractères · 100 % identique"><h3>7. Résultat : 158 caractères</h3><p>Un fond, deux boîtes tournées : la symétrie de la cible.</p></div>
+{%- else %}
+<div class="cap" data-t="0" data-step="html and its two borders"><h3>1. html and its two borders</h3><p><code>margin:20 90</code>: <code>html</code> is 220 × 260 at (90, 20); in quirks mode its height is 300 − 2 × 20. <code>border-inline</code> gives it a pink border on the left and the right: 32Q, rounded to 30px.</p></div>
+<div class="cap" data-t="4" data-step="The canvas ignores text"><h3>2. The canvas ignores text</h3><p><code>html</code>'s background goes to the canvas. The last layer, <code>text#84b9c7</code>, clips the color to the text, but the canvas ignores that clip: it is all blue-grey.</p></div>
+<div class="cap" data-t="7.5" data-step="A quarter disc"><h3>3. A quarter disc</h3><p>The first layer is placed on <code>html</code>'s box: a 9in (864px) tile, 53Q (≈ 50px) below its padding edge, so at (120, 70). The 60px circle is centered on the tile's corner: only its bottom-right quarter is inside. The tile repeats every 260px: the other copies land off the canvas.</p></div>
+<div class="cap" data-t="11.5" data-step="html turns 90°"><h3>4. html turns 90°</h3><p><code>rotate:90deg</code> turns <code>html</code> around its center (200, 150): its borders become the horizontal bars. The canvas background does not turn: the quarter disc stays put.</p></div>
+<div class="cap" data-t="15.5" data-step="body: 90° more"><h3>5. body: 90° more</h3><p><code>margin:0-30</code> widens <code>body</code> over <code>html</code>'s borders: 220 × 260 too, with the same borders. It turns 90° inside <code>html</code>'s already turned frame: 180° in all, so its borders are vertical again.</p></div>
+<div class="cap" data-t="20" data-step="Same background, flipped"><h3>6. Same background, flipped</h3><p><code>body</code> has the same background. Its quarter disc, placed on its own box, is turned with it: centered at (280, 230), facing up-left. Its color is still clipped to the text, and there is no text: it does not hide the first quarter.</p></div>
+<div class="cap" data-t="24" data-step="Result" data-live="158 characters · 100% match"><h3>7. Result: 158 characters</h3><p>One background, two turned boxes: the target's symmetry.</p></div>
+{%- endif %}
+</div>
+<div class="live"></div>
+</div>
+</div>
+<script>
+(window.AnimScenes = window.AnimScenes || {}).t1012 = (fig) => {
+  const fr = document.documentElement.lang === 'fr';
+  const $ = (s) => fig.querySelector(s), $$ = (s) => [...fig.querySelectorAll(s)];
+  const live = $('.live'), end = $('.cap[data-live]').dataset.live, caps = $$('.cap');
+  const blank = $('.blank'), tiles = $$('.tile'), hDiscs = $$('.h-disc'), H = $('.h'), hOut = $('.h-out'), B = $('.b'), bDisc = $('.b-disc'), bCol = $('.b-col');
+  const tags = $$('.tag[data-w]');
+  const ease = (x) => (x < 0.5 ? 4 * x * x * x : 1 - Math.pow(-2 * x + 2, 3) / 2);
+  const pr = (t, a, b) => ease(Math.min(1, Math.max(0, (t - a) / (b - a))));
+  const win = (t, a, b, f = 0.5) => Math.min(pr(t, a, a + f), 1 - pr(t, b - f, b));
+  const hex = (h) => [1, 3, 5].map((i) => parseInt(h.slice(i, i + 2), 16));
+  const mix = (a, b, m) => `rgb(${hex(a).map((v, i) => Math.round(v + (hex(b)[i] - v) * m)).join(',')})`;
+  const PINK = '#ecd5e4', NAVY = '#1d5260', HC = '#e07b39', BC = '#7c4dcc';
+  const num = (v, d = 0) => v.toFixed(d).replace('.', fr ? ',' : '.');
+  return (t, step) => {
+    const teach = fig.dataset.teach === '1';
+    const real = teach ? pr(t, 24.2, 25.2) : 1;
+    fig.style.setProperty('--hc', mix(HC, PINK, real));
+    fig.style.setProperty('--hd', mix(HC, NAVY, real));
+    fig.style.setProperty('--bc', mix(BC, PINK, real));
+    fig.style.setProperty('--bd', mix(BC, NAVY, real));
+    blank.style.opacity = 1 - pr(t, 4.2, 5.2);
+    H.style.opacity = pr(t, 0.2, 1);
+    hOut.style.opacity = win(t, 0.2, 11.5, 0.5);
+    tiles.forEach((e) => { e.style.opacity = win(t, 7.8, 11.5, 0.5); });
+    hDiscs.forEach((e) => { e.style.opacity = pr(t, 8.4, 9.2); });
+    const a1 = 90 * pr(t, 12, 14.5), a2 = 90 * pr(t, 17, 19.5);
+    H.style.rotate = a1 + 'deg';
+    B.style.rotate = a2 + 'deg';
+    B.style.opacity = pr(t, 15.7, 16.4);
+    B.style.outlineColor = `rgb(27 31 36 / ${win(t, 15.7, 24, 0.5)})`;
+    bDisc.style.opacity = pr(t, 20.3, 21);
+    bCol.style.opacity = 0.92 * win(t, 21.3, 23.3, 0.4);
+    tags.forEach((g) => {
+      const w = +g.dataset.w - 1;
+      const a = g.dataset.a ? +g.dataset.a : +caps[w].dataset.t + 0.3, b = g.dataset.b ? +g.dataset.b : +caps[w + 1].dataset.t;
+      g.style.opacity = w === step ? win(t, a, b, 0.4) : 0;
+    });
+    let txt = '';
+    if (step === 0) txt = fr ? 'html : 220 × 260 en (90, 20) · bordures 32Q → 30px' : 'html: 220 × 260 at (90, 20) · borders 32Q → 30px';
+    else if (step === 1) txt = fr ? 'canevas : #84b9c7 partout (découpage au texte ignoré)' : 'canvas: #84b9c7 everywhere (text clip ignored)';
+    else if (step === 2) txt = fr ? 'tuile 864 × 260 en (120, 70,1) · copies en y = −189,9 et 330,1' : 'tile 864 × 260 at (120, 70.1) · copies at y = −189.9 and 330.1';
+    else if (step === 3) txt = `html${fr ? ' :' : ':'} rotate ${num(a1)}°`;
+    else if (step === 4) txt = `body${fr ? ' :' : ':'} 90° + ${num(a2)}° = ${num(90 + a2)}°`;
+    else if (step === 5) txt = fr ? 'quart de disque du body : centre (280, 229,9)' : "body's quarter disc: center (280, 229.9)";
+    else txt = end;
+    live.textContent = txt;
+  };
+};
+</script>
+</figure>
