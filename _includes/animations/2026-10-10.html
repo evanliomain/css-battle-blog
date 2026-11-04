@@ -1,0 +1,162 @@
+<figure class="anim t1010" data-duration="30" data-scene="t1010" data-wide="-630 -60 1670 440" data-off-label="-626 -56" style="--bg:#042f38">
+<style>
+.t1010 .white{left:0;top:0;width:400px;height:300px;background:#fff}
+.t1010 .h{left:170px;top:85px;width:70px;height:130px}
+.t1010 .b{left:-610px;top:140px;width:1630px;height:20px}
+.t1010 .hfull{left:170px;top:85px;width:70px;height:130px;background:conic-gradient(#d9d9d9 50%,#bfa148 0)}
+.t1010 .pc{background:#bfa148}
+.t1010 .pc.gr{background:#d9d9d9}
+.t1010 .g{pointer-events:none;border:2px dashed #ffd23f;box-sizing:border-box}
+.t1010 .vl{pointer-events:none;width:0;border-left:2px dashed #14171c}
+.t1010 .hl{pointer-events:none;height:0;border-top:2px dashed #14171c}
+.t1010 .ov{pointer-events:none}
+.t1010 .gap{background:rgb(255 93 143 / .8)}
+.t1010 .cor{background:#9d7be0}
+.t1010 .legend i{box-shadow:0 0 0 1px rgb(0 0 0 / .2)}
+.t1010 .legend .t1010-dash{background:none;border:1.5px dashed #c9a227;box-shadow:none;box-sizing:border-box}
+.t1010 .lab{pointer-events:none;transform-origin:0 0;font:10.5px/1.2 ui-monospace,SFMono-Regular,Menlo,monospace;color:#24302f;background:rgb(255 255 255 / .88);padding:1px 4px;border-radius:2px;white-space:nowrap;z-index:53}
+@media (min-width:701px){.t1010{container-type:inline-size}.t1010 .anim-col{grid-template-columns:minmax(0,1fr)}.t1010[data-view="wide"] .stage{width:100cqw}.t1010[data-view="wide"] .anim-side{margin-top:calc(100cqw * 440 / 1670 + 14px)}}
+</style>
+<div class="anim-col">
+<div class="stage" role="img" aria-label="{% if include.lang == "fr" %}Animation : le border-image de html ne garde que ses quatre coins, puis celui du body, une bande de 1630px, répète deux tuiles avec un espace au milieu du canevas{% else %}Animation: html's border-image keeps only its four corners, then body's, a 1630px band, repeats two tiles with a gap in the middle of the canvas{% endif %}">
+<div class="scene">
+<div class="white"></div>
+<div class="hfull"></div>
+<div class="vl hs" style="left:190px;top:85px;height:130px"></div>
+<div class="vl hs" style="left:218px;top:85px;height:130px"></div>
+<div class="hl hs" style="left:170px;top:94px;width:70px"></div>
+<div class="hl hs" style="left:170px;top:204px;width:70px"></div>
+<div class="pc p1"></div>
+<div class="pc gr p2"></div>
+<div class="pc p3"></div>
+<div class="pc gr p4"></div>
+<div class="h"></div>
+<div class="b"></div>
+<div class="ov cor c1" style="left:-610px;top:140px;width:118.2px;height:10px"></div>
+<div class="ov cor c2" style="left:-610px;top:150px;width:118.2px;height:10px"></div>
+<div class="ov cor c3" style="left:901.8px;top:140px;width:118.2px;height:10px"></div>
+<div class="ov cor c4" style="left:901.8px;top:150px;width:118.2px;height:10px"></div>
+<div class="ov gap g1" style="left:-491.8px;top:140px;width:29.9px;height:20px"></div>
+<div class="ov gap g2" style="left:190.1px;top:140px;width:29.9px;height:20px"></div>
+<div class="ov gap g3" style="left:871.9px;top:140px;width:29.9px;height:20px"></div>
+<div class="g e1" style="left:190.3px;top:85px;width:29.4px;height:40px"></div>
+<div class="g e1" style="left:190.3px;top:175px;width:29.4px;height:40px"></div>
+<div class="g e1" style="left:170px;top:125px;width:20.3px;height:50px"></div>
+<div class="g e1" style="left:219.7px;top:125px;width:20.3px;height:50px"></div>
+<div class="g hbox"></div>
+<div class="g bbox"></div>
+<div class="g mid" style="left:188.1px;top:136px;width:33.9px;height:28px"></div>
+<div class="lab la1" data-c="6 6" data-w="-620 20">{% if include.lang == "fr" %}fond du body → canevas{% else %}body's background → canvas{% endif %}</div>
+<div class="lab la2" data-c="6 6" data-w="-620 20">html · 70 × 130</div>
+<div class="lab la3" data-c="6 6" data-w="-620 20">{% if include.lang == "fr" %}tranches 10 · 30 % = 21px{% else %}slices 10 · 30% = 21px{% endif %}</div>
+<div class="lab la4" data-c="6 6" data-w="-620 20">5ch 29% → 20 × 40</div>
+<div class="lab la4b" data-c="6 283" data-w="-620 200">{% if include.lang == "fr" %}bords : aucune tuile ne tient{% else %}edges: no tile fits{% endif %}</div>
+<div class="lab la5" data-c="6 6" data-w="-620 20">body · 1630 × 20</div>
+<div class="lab la5b" data-c="6 283" data-w="-620 200">40 + 40 > 20 → ×¼</div>
+<div class="lab la6" data-c="6 6" data-w="-620 20">{% if include.lang == "fr" %}tuiles 652 · espaces 30{% else %}tiles 652 · gaps 30{% endif %}</div>
+<div class="lab la6b" data-c="6 283" data-w="-620 200">{% if include.lang == "fr" %}coins 118 × 10{% else %}corners 118 × 10{% endif %}</div>
+<div class="lab la7" data-c="246 118" data-w="-620 20">{% if include.lang == "fr" %}espace : x 190 → 220{% else %}gap: x 190 → 220{% endif %}</div>
+</div>
+</div>
+<div class="legend"><span><i style="--c:#bfa148"></i><i style="--c:#d9d9d9"></i>{% if include.lang == "fr" %}le dégradé (moitié gauche, moitié droite){% else %}the gradient (left half, right half){% endif %}</span><span><i style="--c:#9d7be0"></i>{% if include.lang == "fr" %}coins du body (doré et gris en vrai){% else %}body's corners (gold and grey in reality){% endif %}</span><span><i style="--c:#ff5d8f"></i>{% if include.lang == "fr" %}espaces de space (vides en vrai){% else %}space's gaps (empty in reality){% endif %}</span><span><i class="t1010-dash"></i>{% if include.lang == "fr" %}boîtes et bords vides{% else %}boxes and empty edges{% endif %}</span></div>
+</div>
+<div class="anim-side">
+<pre class="code" aria-hidden="true">&lt;style>*{<span data-on="2">margin:85 40%85 170</span>;border-image:<span data-on="3">conic-gradient(#d9d9d9 50%,#bfa148 0)</span><span data-on="3">10 30%</span>/<span data-on="5" data-tone="2"><span data-on="4">5ch 29%</span></span><span data-on="6 7" data-tone="2"><span data-on="4">space</span></span>;*{<span data-on="1" data-tone="2">background:#042f38</span>;<span data-on="5" data-tone="2">margin:55-780</span></pre>
+<div class="now" aria-live="polite">
+<div class="caps">
+{%- if include.lang == "fr" %}
+<div class="cap" data-t="0" data-step="Le fond du body sur le canevas"><h3>1. Le fond du body sur le canevas</h3><p><code>html</code> n'a pas de fond : celui du <code>body</code>, <code>#042f38</code>, est donc peint sur tout le canevas.</p></div>
+<div class="cap" data-t="3" data-step="html : une boîte de 70 × 130"><h3>2. html : une boîte de 70 × 130</h3><p><code>margin:85 40%85 170</code> : 40 % de 400px = 160px à droite, 170px à gauche, il reste 70px de large. En mode quirks, la hauteur vaut 300 − 2 × 85 = 130.</p></div>
+<div class="cap" data-t="6" data-step="Un dégradé découpé en neuf"><h3>3. Un dégradé découpé en neuf</h3><p>Le <code>conic-gradient</code> part du haut et tourne : la moitié droite est grise, la gauche dorée. Il couvre la boîte (70 × 130), et <code>10 30%</code> le découpe : 10px en haut et en bas, 21px à gauche et à droite.</p></div>
+<div class="cap" data-t="10" data-step="Seuls les coins restent"><h3>4. Seuls les coins restent</h3><p><code>/5ch 29%</code> fixe la taille des bords : 40px en haut et en bas, ≈ 20px sur les côtés. Les coins deviennent des rectangles de 20 × 40. Avec <code>space</code>, une tuile de bord trop grande pour sa place n'est pas dessinée, et sans <code>fill</code> le milieu non plus.</p></div>
+<div class="cap" data-t="14" data-step="body : une bande de 1630px"><h3>5. body : une bande de 1630px</h3><p><code>margin:55-780</code> : 55px en haut et en bas, −780px sur les côtés. Le <code>body</code> devient une bande de 1630 × 20 qui déborde de 610px de chaque côté. Ses bords de 40px ne tiennent pas dans 20px : tous sont réduits au quart.</p></div>
+<div class="cap" data-t="18" data-step="space : deux tuiles, trois espaces"><h3>6. space : deux tuiles, trois espaces</h3><p>Les coins font 118 × 10, hors du canevas. Le morceau du haut, doré puis gris, fait 652px de large. Il en tient deux sur 1394px ; <code>space</code> répartit les 90px qui restent en trois espaces de 30px. Le bord du bas fait pareil, juste dessous.</p></div>
+<div class="cap" data-t="23" data-step="L'espace du milieu"><h3>7. L'espace du milieu</h3><p>Sur le canevas : la fin grise de la 1re tuile, l'espace du milieu de x=190 à 220, puis le début doré de la 2e. Les couleurs s'échangent d'un côté à l'autre.</p></div>
+<div class="cap" data-t="26" data-step="Résultat" data-live="133 caractères · 100 % identique"><h3>8. Résultat : 133 caractères</h3><p>Un seul <code>border-image</code>, lu sur deux boîtes : les coins sur le petit <code>html</code>, les bords sur le large <code>body</code>. L'image complète en 133 caractères.</p></div>
+{%- else %}
+<div class="cap" data-t="0" data-step="body's background on the canvas"><h3>1. body's background on the canvas</h3><p><code>html</code> has no background, so <code>body</code>'s, <code>#042f38</code>, is painted on the whole canvas.</p></div>
+<div class="cap" data-t="3" data-step="html: a 70 × 130 box"><h3>2. html: a 70 × 130 box</h3><p><code>margin:85 40%85 170</code>: 40% of 400px = 160px on the right, 170px on the left, which leaves 70px of width. In quirks mode the height is 300 − 2 × 85 = 130.</p></div>
+<div class="cap" data-t="6" data-step="A gradient cut in nine"><h3>3. A gradient cut in nine</h3><p>The <code>conic-gradient</code> starts at the top and turns: the right half is grey, the left half gold. It covers the box (70 × 130), and <code>10 30%</code> slices it: 10px at the top and bottom, 21px on the left and right.</p></div>
+<div class="cap" data-t="10" data-step="Only the corners stay"><h3>4. Only the corners stay</h3><p><code>/5ch 29%</code> sets the border sizes: 40px at the top and bottom, ≈ 20px on the sides. The corners become 20 × 40 rectangles. With <code>space</code>, an edge tile too big for its room is not drawn, and with no <code>fill</code>, neither is the middle.</p></div>
+<div class="cap" data-t="14" data-step="body: a 1630px band"><h3>5. body: a 1630px band</h3><p><code>margin:55-780</code>: 55px at the top and bottom, −780px on the sides. <code>body</code> becomes a 1630 × 20 band that sticks out 610px on each side. Its 40px borders don't fit in 20px, so all of them are cut to a quarter.</p></div>
+<div class="cap" data-t="18" data-step="space: two tiles, three gaps"><h3>6. space: two tiles, three gaps</h3><p>The corners are 118 × 10, off the canvas. The top piece, gold then grey, is 652px wide. Two fit in 1394px; <code>space</code> splits the 90px left into three 30px gaps. The bottom edge does the same, right below.</p></div>
+<div class="cap" data-t="23" data-step="The middle gap"><h3>7. The middle gap</h3><p>On the canvas: the grey end of tile 1, the middle gap from x=190 to 220, then the gold start of tile 2. The colors swap from one side to the other.</p></div>
+<div class="cap" data-t="26" data-step="Result" data-live="133 characters · 100% match"><h3>8. Result: 133 characters</h3><p>One <code>border-image</code>, read on two boxes: the corners on the small <code>html</code>, the edges on the wide <code>body</code>. The whole picture in 133 characters.</p></div>
+{%- endif %}
+</div>
+<div class="live"></div>
+</div>
+</div>
+<script>
+(window.AnimScenes = window.AnimScenes || {}).t1010 = (fig) => {
+  const fr = document.documentElement.lang === 'fr';
+  const $ = (s) => fig.querySelector(s);
+  const $$ = (s) => [...fig.querySelectorAll(s)];
+  const WHITE = $('.white'), HF = $('.hfull'), H = $('.h'), B = $('.b'), HBOX = $('.hbox'), BBOX = $('.bbox'), MID = $('.mid'), live = $('.live');
+  const HS = $$('.hs'), E1 = $$('.e1'), COR = $$('.cor'), GAP = $$('.gap');
+  const P = [1, 2, 3, 4].map((i) => $('.p' + i));
+  const labs = $$('.lab');
+  const caps = $$('.caps .cap');
+  const ease = (x) => (x < 0.5 ? 4 * x * x * x : 1 - Math.pow(-2 * x + 2, 3) / 2);
+  const pr = (t, a, b) => ease(Math.min(1, Math.max(0, (t - a) / (b - a))));
+  const lerp = (a, b, m) => a + (b - a) * m;
+  const n = (v, d = 0) => v.toFixed(d).replace('.', fr ? ',' : '.').replace('-', '−');
+  const c = fr ? ' :' : ':';
+  const win = (t, a, b) => Math.min(pr(t, a, a + 0.6), 1 - pr(t, b - 0.5, b));
+  const place = (el, x, y, w, h) => Object.assign(el.style, { left: x + 'px', top: y + 'px', width: w + 'px', height: h + 'px' });
+  const BI = 'conic-gradient(#d9d9d9 50%,#bfa148 0)10 30%/40px 29% space';
+  // Label windows, in the order of the .lab elements.
+  const LW = [[0.4, 3], [5, 6], [6.4, 10], [11.6, 14], [12, 14], [15, 18], [16, 18], [19.6, 23], [19.6, 23], [23.4, 26]];
+  // Corner pieces: from their slice (21 × 10) to their border area (20.3 × 40).
+  const PS = [[170, 85, 170, 85], [219, 85, 219.7, 85], [170, 205, 170, 175], [219, 205, 219.7, 175]];
+  return (t, step) => {
+    const teach = fig.dataset.teach === '1';
+    const real = !teach || t >= 26;
+    const wide = fig.dataset.view === 'wide';
+    WHITE.style.opacity = 1 - pr(t, 0.6, 2.4);
+    // html: the canvas → 70 × 130 at (170, 85).
+    const m = pr(t, 3.4, 5.4);
+    const hx = lerp(0, 170, m), hy = lerp(0, 85, m), hw = lerp(400, 70, m), hh = lerp(300, 130, m);
+    place(HBOX, hx, hy, hw, hh);
+    HBOX.style.opacity = win(t, 3.2, 14.4);
+    HF.style.opacity = Math.min(pr(t, 6.2, 7), 1 - pr(t, 10.4, 11.4));
+    HS.forEach((e) => { e.style.opacity = win(t, 7, 11.4); });
+    const k = pr(t, 10.4, 12);
+    P.forEach((e, i) => {
+      const [x0, y0, x1, y1] = PS[i];
+      place(e, lerp(x0, x1, k), lerp(y0, y1, k), lerp(21, 20.3, k), lerp(10, 40, k));
+      e.style.opacity = t >= 10.4 && t < 12.6 ? 1 : 0;
+    });
+    H.style.borderImage = t >= 12.6 ? BI : 'none';
+    E1.forEach((e) => { e.style.opacity = win(t, 12, 14.2); });
+    // body: html's box → the 1630 × 20 band at (−610, 140).
+    const q = pr(t, 14.4, 16.6);
+    const bx = lerp(170, -610, q), by = lerp(85, 140, q), bw = lerp(70, 1630, q), bh = lerp(130, 20, q);
+    place(BBOX, bx, by, bw, bh);
+    BBOX.style.opacity = win(t, 14.2, 19.6);
+    B.style.borderImage = t >= 18.2 ? BI : 'none';
+    B.style.opacity = pr(t, 18.2, 18.9);
+    COR.forEach((e) => { e.style.opacity = real ? 0 : pr(t, 19, 19.6); });
+    GAP.forEach((e) => { e.style.opacity = real ? 0 : pr(t, 19.4, 20); });
+    MID.style.opacity = win(t, 23.2, 26);
+    labs.forEach((e, i) => {
+      const [x, y] = (wide ? e.dataset.w : e.dataset.c).split(' ');
+      e.style.left = x + 'px';
+      e.style.top = y + 'px';
+      e.style.transform = wide ? 'scale(var(--k))' : '';
+      e.style.opacity = win(t, LW[i][0], LW[i][1]);
+    });
+    let txt = '';
+    if (step === 0) txt = fr ? 'fond du body #042f38 → canevas' : "body's background #042f38 → canvas";
+    else if (step === 1) txt = `html${c} x ${n(hx)} → ${n(hx + hw)}, y ${n(hy)} → ${n(hy + hh)}`;
+    else if (step === 2) txt = fr ? 'tranches : 10px · 30 % × 70 = 21px' : 'slices: 10px · 30% × 70 = 21px';
+    else if (step === 3) txt = fr ? 'bords : 5ch = 40px · 29 % × 70 = 20,3px' : 'borders: 5ch = 40px · 29% × 70 = 20.3px';
+    else if (step === 4) txt = `body${c} x ${n(bx)} → ${n(bx + bw)}, y ${n(by)} → ${n(by + bh)}`;
+    else if (step === 5) txt = '1630 − 2 × 118 = 1394 = 2 × 652 + 3 × 30';
+    else if (step === 6) txt = fr ? 'espace : x 190 → 220' : 'gap: x 190 → 220';
+    else txt = caps[step].dataset.live || '';
+    live.textContent = txt;
+  };
+};
+</script>
+</figure>
