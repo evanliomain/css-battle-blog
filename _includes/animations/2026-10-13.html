@@ -1,0 +1,102 @@
+<figure class="anim t1013" data-duration="24" data-scene="t1013" data-wide="0 0 400 360" style="--bg:#173c46">
+<style>
+.t1013{--mark:#ffd23f;--hs:#a27848;--bs:#a27848}
+.t1013 .scene>*{box-sizing:border-box}
+.t1013 .white{left:0;top:0;width:400px;height:360px;background:#fff}
+.t1013 .cv{left:0;top:0;width:400px;height:360px;background-position:20px 40px;background-size:360px 300px}
+.t1013 .h{left:20px;top:40px;width:360px;height:300px}
+.t1013 .h-out{left:20px;top:40px;width:360px;height:300px;outline:2px dashed var(--mark);outline-offset:-1px}
+.t1013 .b{left:185px;top:40px;width:30px;height:70px;background:#bc37}
+.t1013 .b-out{left:185px;top:40px;width:30px;height:70px;outline:2px dashed var(--mark);outline-offset:-1px}
+.t1013 .tag{z-index:60;font:600 12px/1 ui-monospace,SFMono-Regular,Menlo,monospace;color:#14171c;background:var(--mark);padding:3px 5px;border-radius:3px;white-space:nowrap}
+.t1013[data-view="wide"] .tag{font-size:13px}
+</style>
+<div class="anim-col">
+<div class="stage" role="img" aria-label="{% if include.lang == "fr" %}Animation : la boîte de html qui dépasse sous le canevas, l'ellipse du dégradé sur le canevas, le cadre en ombre inset, puis le body en tige{% else %}Animation: html's box hanging below the canvas, the gradient's ellipse on the canvas, the inset shadow frame, then body as the stem{% endif %}">
+<div class="scene">
+<div class="white"></div>
+<div class="cv"></div>
+<div class="h"></div>
+<div class="b"></div>
+<div class="h-out"></div>
+<div class="b-out"></div>
+<b class="tag" data-w="1" style="left:26px;top:46px">html · margin:40 20-40 → 360 × 300</b>
+<b class="tag" data-w="1" style="left:120px;top:324px">{% if include.lang == "fr" %}y 300 → 340 : sous le canevas{% else %}y 300 → 340: below the canvas{% endif %}</b>
+<b class="tag" data-w="2" style="left:26px;top:46px">{% if include.lang == "fr" %}tuile = boîte de html · centre (200, 190){% else %}tile = html's box · center (200, 190){% endif %}</b>
+<b class="tag" data-w="2" style="left:26px;top:72px">7Q 4Q → 7:4 · 35vw = 140px</b>
+<b class="tag" data-w="3" style="left:26px;top:46px">#bc37 + #fff ≈ #dfe7a0</b>
+<b class="tag" data-w="4" style="left:56px;top:76px">inset 0 0 0 32Q = {% if include.lang == "fr" %}30,24px{% else %}30.24px{% endif %}</b>
+<b class="tag" data-w="4" style="left:120px;top:324px">{% if include.lang == "fr" %}côté du bas : hors du canevas{% else %}bottom side: off the canvas{% endif %}</b>
+<b class="tag" data-w="5" style="left:220px;top:76px">margin:0 165 230</b>
+<b class="tag" data-w="5" style="left:220px;top:102px">30 × 70 · {% if include.lang == "fr" %}30,24{% else %}30.24{% endif %} &gt; 15</b>
+</div>
+</div>
+<div class="legend"><span><i style="--c:#ff8a3d"></i>{% if include.lang == "fr" %}ombre inset de html{% else %}html's inset shadow{% endif %}</span><span><i style="--c:#c3a6ff"></i>{% if include.lang == "fr" %}ombre inset du body{% else %}body's inset shadow{% endif %}</span></div>
+</div>
+<div class="anim-side">
+<pre class="code" aria-hidden="true">&lt;style>*{<span data-on="1">margin:40 20-40</span>;<span data-on="4 5">box-shadow:inset 0 0 0 32Q#a27848</span>;<span data-on="5" data-tone="2">*{margin:0 165 230}</span><span data-on="2">background:radial-gradient(7Q 4Q,</span><span data-on="2 3">#bc37</span><span data-on="2"> 35vw,#173c46</span></pre>
+<div class="now" aria-live="polite">
+<div class="caps">
+{%- if include.lang == "fr" %}
+<div class="cap" data-t="0" data-step="La boîte de html"><h3>1. La boîte de html</h3><p><code>*</code> touche d'abord <code>html</code>. <code>margin:40 20-40</code> pose sa boîte en (20, 40), sur 360px de large. En mode quirks, <code>html</code> fait la hauteur de la page moins ses marges : 300 − 40 + 40 = 300px. Ses 40 derniers pixels pendent sous le canevas.</p></div>
+<div class="cap" data-t="3.6" data-step="Le dégradé sur le canevas"><h3>2. Le dégradé sur le canevas</h3><p>Le fond de <code>html</code> est peint sur tout le canevas, mais sa tuile reste la boîte de <code>html</code> : l'ellipse est centrée en (200, 190). <code>7Q 4Q</code> sont des rayons minuscules, ils ne fixent que la forme 7:4. L'arrêt à <code>35vw</code> (140px) fixe la taille : 280 × 160.</p></div>
+<div class="cap" data-t="8.4" data-step="#bc37 sur du blanc"><h3>3. #bc37 sur du blanc</h3><p><code>#bc37</code> est un olive transparent (47 %). Derrière le canevas, la page est blanche, et le mélange donne le jaune pâle, à peu près <code>#dfe7a0</code>. Autour de l'ellipse : <code>#173c46</code>, opaque.</p></div>
+<div class="cap" data-t="11.4" data-step="L'ombre inset : le cadre"><h3>4. L'ombre inset : le cadre</h3><p><code>box-shadow:inset 0 0 0 32Q</code> peint une bande de 30,24px à l'intérieur de la boîte de <code>html</code>. Le côté du bas tombe sous le canevas (y 310 à 340) : il reste un Π.</p></div>
+<div class="cap" data-t="15" data-step="body : la tige"><h3>5. body : la tige</h3><p>Le <code>*</code> imbriqué donne au <code>body</code> <code>margin:0 165 230</code> : 30px de large, 300 − 230 = 70px de haut. Il reçoit le même dégradé (ici un <code>#bc37</code> uni, tout est dans l'ellipse) et la même ombre, qui remplit en entier une boîte de 30px de large : la tige.</p></div>
+<div class="cap" data-t="19.2" data-step="Résultat" data-live="129 caractères · 100 % identique"><h3>6. Résultat : 129 caractères</h3><p>Une ombre, un dégradé, deux boîtes.</p></div>
+{%- else %}
+<div class="cap" data-t="0" data-step="html’s box"><h3>1. html's box</h3><p><code>*</code> matches <code>html</code> first. <code>margin:40 20-40</code> puts its box at (20, 40), 360px wide. In quirks mode, <code>html</code> is as tall as the page minus its margins: 300 − 40 + 40 = 300px. Its last 40px hang below the canvas.</p></div>
+<div class="cap" data-t="3.6" data-step="The gradient on the canvas"><h3>2. The gradient on the canvas</h3><p><code>html</code>'s background is painted on the whole canvas, but its tile is still <code>html</code>'s box: the ellipse is centered at (200, 190). <code>7Q 4Q</code> are tiny radii that only set the 7:4 shape. The stop at <code>35vw</code> (140px) sets the size: 280 × 160.</p></div>
+<div class="cap" data-t="8.4" data-step="#bc37 over white"><h3>3. #bc37 over white</h3><p><code>#bc37</code> is a see-through olive (47%). Behind the canvas the page is white, and the mix gives the pale yellow, about <code>#dfe7a0</code>. Around the ellipse: <code>#173c46</code>, opaque.</p></div>
+<div class="cap" data-t="11.4" data-step="Inset shadow: the frame"><h3>4. Inset shadow: the frame</h3><p><code>box-shadow:inset 0 0 0 32Q</code> paints a 30.24px band inside <code>html</code>'s box. The bottom side lands below the canvas (y 310 to 340), so a Π is left.</p></div>
+<div class="cap" data-t="15" data-step="body: the stem"><h3>5. body: the stem</h3><p>The nested <code>*</code> gives <code>body</code> <code>margin:0 165 230</code>: 30px wide, 300 − 230 = 70px tall. It gets the same gradient (a flat <code>#bc37</code> here, all inside the ellipse) and the same shadow, which fills a 30px-wide box completely: the stem.</p></div>
+<div class="cap" data-t="19.2" data-step="Result" data-live="129 characters · 100% match"><h3>6. Result: 129 characters</h3><p>One shadow, one gradient, two boxes.</p></div>
+{%- endif %}
+</div>
+<div class="live"></div>
+</div>
+</div>
+<script>
+(window.AnimScenes = window.AnimScenes || {}).t1013 = (fig) => {
+  const fr = document.documentElement.lang === 'fr';
+  const $ = (s) => fig.querySelector(s), $$ = (s) => [...fig.querySelectorAll(s)];
+  const live = $('.live'), end = $('.cap[data-live]').dataset.live, caps = $$('.cap');
+  const cv = $('.cv'), H = $('.h'), B = $('.b'), hOut = $('.h-out'), bOut = $('.b-out');
+  const tags = $$('.tag[data-w]');
+  const ease = (x) => (x < 0.5 ? 4 * x * x * x : 1 - Math.pow(-2 * x + 2, 3) / 2);
+  const pr = (t, a, b) => ease(Math.min(1, Math.max(0, (t - a) / (b - a))));
+  const win = (t, a, b, f = 0.5) => Math.min(pr(t, a, a + f), 1 - pr(t, b - f, b));
+  const hex = (h) => [1, 3, 5].map((i) => parseInt(h.slice(i, i + 2), 16));
+  const mix = (a, b, m) => `rgb(${hex(a).map((v, i) => Math.round(v + (hex(b)[i] - v) * m)).join(',')})`;
+  const num = (v, d = 1) => v.toFixed(d).replace('.', fr ? ',' : '.');
+  const S = 32 * 96 / 101.6, R0 = 7 * 96 / 101.6;
+  return (t, step) => {
+    const teach = fig.dataset.teach === '1';
+    const real = teach ? pr(t, 19.4, 20.4) : 1;
+    // the canvas gradient: radius grows from 7Q to 140px, the olive goes from opaque to 47%
+    const r = Math.exp(Math.log(R0) + (Math.log(140) - Math.log(R0)) * pr(t, 4.2, 7.6));
+    const a = 1 - (1 - 0x77 / 255) * pr(t, 8.9, 10.2);
+    cv.style.backgroundImage = `radial-gradient(7Q 4Q,rgb(187 204 51 / ${a}) ${r}px,#173c46 0)`;
+    cv.style.opacity = pr(t, 3.7, 4.2);
+    const hs = S * pr(t, 11.8, 13.6), bs = S * pr(t, 16.6, 18);
+    H.style.boxShadow = `inset 0 0 0 ${hs}px ${mix('#ff8a3d', '#a27848', real)}`;
+    B.style.boxShadow = `inset 0 0 0 ${bs}px ${mix('#c3a6ff', '#a27848', real)}`;
+    B.style.opacity = pr(t, 15.4, 16);
+    hOut.style.opacity = win(t, 0.3, 19.4, 0.5);
+    bOut.style.opacity = win(t, 15.3, 19.4, 0.5);
+    tags.forEach((g) => {
+      const w = +g.dataset.w - 1;
+      g.style.opacity = w === step ? win(t, +caps[w].dataset.t + 0.3, +caps[w + 1].dataset.t, 0.4) : 0;
+    });
+    let txt = '';
+    if (step === 0) txt = fr ? 'html : 360 × 300 en (20, 40) · bas en y = 340' : 'html: 360 × 300 at (20, 40) · bottom at y = 340';
+    else if (step === 1) txt = `${fr ? 'rayons' : 'radii'} ${num(r)} × ${num(r * 4 / 7)} px → ${num(2 * r, 0)} × ${num(2 * r * 4 / 7, 0)}`;
+    else if (step === 2) txt = `${fr ? 'opacité' : 'opacity'} ${Math.round(a * 100)}${fr ? ' %' : '%'} · ${fr ? 'sur du blanc' : 'over white'}`;
+    else if (step === 3) txt = `${fr ? 'bande' : 'band'} ${num(hs, 2)} px`;
+    else if (step === 4) txt = `body${fr ? ' :' : ':'} 30 × 70 · ${fr ? 'bande' : 'band'} ${num(bs, 2)} px`;
+    else txt = end;
+    live.textContent = txt;
+  };
+};
+</script>
+</figure>
