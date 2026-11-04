@@ -1,0 +1,119 @@
+<figure class="anim t1001" data-duration="25" data-scene="t1001" data-wide="-125 -135 650 570" style="--bg:#444">
+<style>
+.t1001{--mark:#ffd23f}
+.t1001 .scene i{position:absolute;box-sizing:border-box}
+.t1001 .t1001-hb{left:-117px;top:-127px;width:634px;height:554px;border:0 solid #7dcb61;border-radius:192px}
+.t1001 .t1001-bd{left:125px;top:195px;width:150px;height:50px;border:solid #ccc5;border-width:20px 55px}
+.t1001 .t1001-p{left:25px;top:-5px;width:350px;height:250px;border:100px solid #fffc;border-radius:192px}
+.t1001 .t1001-im{top:-75px;width:200px;height:200px;border:100px solid #fffc;border-radius:192px}
+.t1001 .t1001-i1{left:25px}
+.t1001 .t1001-i2{left:-75px}
+.t1001 .t1001-g{border:2px dashed var(--mark);pointer-events:none}
+.t1001 .canvas-edge{outline-color:#fffa}
+.t1001 .t1001-g-h{border-width:3px;left:-117px;top:-127px;width:634px;height:554px;border-radius:192px}
+.t1001 .t1001-g-b{left:125px;top:195px;width:150px;height:50px}
+.t1001 .t1001-g-p{left:25px;top:-5px;width:350px;height:250px}
+.t1001 .t1001-g-c{left:79.8px;top:70px;width:240.4px;height:100px}
+.t1001 .t1001-lab{z-index:53;font:600 12px/1.25 ui-monospace,SFMono-Regular,Menlo,monospace;color:#14171c;background:var(--mark);padding:2px 5px;border-radius:3px;white-space:nowrap;pointer-events:none}
+.t1001[data-view="wide"] .t1001-lab{font-size:19px}
+.t1001 .t1001-l-h{left:-100px;top:-112px}
+.t1001[data-view="canvas"] .t1001-l-h{left:6px;top:6px}
+.t1001 .t1001-l-b{left:125px;top:252px}
+.t1001 .t1001-l-p{left:30px;top:252px}
+.t1001 .t1001-l-i{left:30px;top:252px}
+.t1001 .t1001-l-c{left:80px;top:176px}
+</style>
+<div class="anim-col">
+<div class="stage" role="img" aria-label="{% if include.lang == "fr" %}Animation : la bordure verte arrondie de html, l'étiquette du body, l'anneau du p, les deux bobines réduites, puis la découpe de la fenêtre{% else %}Animation: html's rounded green border, body's label, the p's ring, the two shrunk reels, then the window cut{% endif %}">
+<div class="scene">
+<i class="t1001-hb"></i>
+<i class="t1001-bd"></i>
+<i class="t1001-p"><i class="t1001-im t1001-i1"></i><i class="t1001-im t1001-i2"></i></i>
+<i class="t1001-g t1001-g-h"></i>
+<i class="t1001-g t1001-g-b"></i>
+<i class="t1001-g t1001-g-p"></i>
+<i class="t1001-g t1001-g-c"></i>
+<b class="t1001-lab t1001-l-h">{% if include.lang == "fr" %}boîte html 634 × 554{% else %}html box 634 × 554{% endif %}</b>
+<b class="t1001-lab t1001-l-b">body 150 × 50</b>
+<b class="t1001-lab t1001-l-p">p 350 × 250</b>
+<b class="t1001-lab t1001-l-i">img 200 × 200 · scale:.2</b>
+<b class="t1001-lab t1001-l-c">inset(30% 58Q)</b>
+</div>
+</div>
+<div class="legend"><span><i style="--c:#7dcb61"></i>{% if include.lang == "fr" %}bordure de html{% else %}html border{% endif %}</span><span><i style="--c:#f0a830"></i>{% if include.lang == "fr" %}bordure du body{% else %}body border{% endif %}</span><span><i style="--c:#4f8ff0"></i>{% if include.lang == "fr" %}bordure du p{% else %}p border{% endif %}</span><span><i style="--c:#e8559a"></i>{% if include.lang == "fr" %}les deux img{% else %}the two img{% endif %}</span></div>
+</div>
+<div class="anim-side">
+<pre class="code" aria-hidden="true"><span data-on="4">&lt;p></span><span data-on="5" data-tone="2">&lt;img>&lt;img></span>&lt;style>&amp;,p,img{<span data-on="2 4 5">border-radius:2in</span>;<span data-on="4 5">margin:-220-155;border:25vw solid#fffc</span>}&amp;{<span data-on="1">background:#444</span>;<span data-on="2">border:193Q solid#7dcb61</span>;<span data-on="1">margin:-127-117</span>;*{<span data-on="3" data-tone="2">border:solid#ccc5;border-width:20 55;margin:140 60 0</span>;p{*{<span data-on="5" data-tone="2">scale:.2;margin:-75-325-75 25</span>}<span data-on="6">clip-path:inset(30%58Q</span></pre>
+<div class="now" aria-live="polite">
+<div class="caps">
+{%- if include.lang == "fr" %}
+<div class="cap" data-t="0" data-step="html dépasse du canevas"><h3>1. html dépasse du canevas</h3><p><code>&amp;</code>, c'est <code>html</code>. Avec <code>margin:-127-117</code>, sa boîte fait 634×554 et déborde de tous les côtés (en pointillés, à voir en vue large). Son fond <code>#444</code> est celui de la racine : il couvre tout le canevas.</p></div>
+<div class="cap" data-t="3.5" data-step="La bordure verte, arrondie"><h3>2. La bordure verte, arrondie</h3><p><code>border:193Q</code> (182px) peint le vert. L'arrondi de 2in (192px) vient de la première règle. À l'intérieur il reste 192 − 182 = 10px : les coins de la cassette, de 270×190.</p></div>
+<div class="cap" data-t="7" data-step="body : l'étiquette"><h3>3. body : l'étiquette</h3><p><code>*</code> dans <code>&amp;</code> vise le <code>body</code>. Avec <code>margin:140 60 0</code>, il fait 150×50 en bas de la cassette. Sa bordure <code>#ccc5</code> de 20 et 55px donne l'étiquette, le trou de 40×10 au milieu donne la fente.</p></div>
+<div class="cap" data-t="10.5" data-step="p : un grand anneau"><h3>4. p : un grand anneau</h3><p>Le <code>p</code> garde la première règle : <code>margin:-220-155</code> le fait déborder (350×250) et <code>border:25vw</code> (100px) le remplit de <code>#fffc</code>. L'arrondi de 2in, trop grand, est ramené à 125px : il reste un trou en pilule de 150×50.</p></div>
+<div class="cap" data-t="14" data-step="Les deux bobines"><h3>5. Les deux bobines</h3><p>Les deux <code>img</code> sans source font 0×0 : leur bordure de 100px en fait des disques de 200px. Les marges <code>-325</code> et <code>25</code> les placent à x=250 puis x=150, et <code>scale:.2</code> les réduit à 40px.</p></div>
+<div class="cap" data-t="17.5" data-step="clip-path : la fenêtre"><h3>6. clip-path : la fenêtre</h3><p><code>clip-path:inset(30%58Q)</code> coupe 75px en haut et en bas, 58Q (≈55px) sur les côtés. Il ne reste que la fenêtre de 240×100, avec les bobines.</p></div>
+<div class="cap" data-t="21" data-step="Au pixel près" data-live="255 caractères · 100 % identique"><h3>7. Au pixel près</h3><p>Quatre éléments, presque une seule règle : la cassette en 255 caractères.</p></div>
+{%- else %}
+<div class="cap" data-t="0" data-step="html overflows the canvas"><h3>1. html overflows the canvas</h3><p><code>&amp;</code> is <code>html</code>. With <code>margin:-127-117</code>, its box is 634×554 and sticks out on every side (dashed, see the wide view). Its <code>#444</code> background is the root background: it covers the whole canvas.</p></div>
+<div class="cap" data-t="3.5" data-step="The rounded green border"><h3>2. The rounded green border</h3><p><code>border:193Q</code> (182px) paints the green. The 2in (192px) radius comes from the first rule. Inside, 192 − 182 = 10px are left: the corners of the 270×190 cassette.</p></div>
+<div class="cap" data-t="7" data-step="body: the label"><h3>3. body: the label</h3><p><code>*</code> inside <code>&amp;</code> matches <code>body</code>. With <code>margin:140 60 0</code>, it is 150×50 at the bottom of the cassette. Its 20px and 55px <code>#ccc5</code> border is the label, the 40×10 hole in the middle is the slot.</p></div>
+<div class="cap" data-t="10.5" data-step="p: a big ring"><h3>4. p: a big ring</h3><p>The <code>p</code> keeps the first rule: <code>margin:-220-155</code> makes it 350×250 and <code>border:25vw</code> (100px) fills it with <code>#fffc</code>. The 2in radius is too big and gets scaled down to 125px, which leaves a 150×50 pill-shaped hole.</p></div>
+<div class="cap" data-t="14" data-step="The two reels"><h3>5. The two reels</h3><p>The two <code>img</code> have no source, so they are 0×0: their 100px border makes them 200px discs. The <code>-325</code> and <code>25</code> margins put them at x=250, then x=150, and <code>scale:.2</code> shrinks them to 40px.</p></div>
+<div class="cap" data-t="17.5" data-step="clip-path: the window"><h3>6. clip-path: the window</h3><p><code>clip-path:inset(30%58Q)</code> cuts 75px off the top and bottom and 58Q (≈55px) off the sides. Only the 240×100 window is left, with the reels.</p></div>
+<div class="cap" data-t="21" data-step="Pixel-perfect" data-live="255 characters · 100% match"><h3>7. Pixel-perfect</h3><p>Four elements, nearly one rule: the cassette in 255 characters.</p></div>
+{%- endif %}
+</div>
+<div class="live"></div>
+</div>
+</div>
+<script>
+(window.AnimScenes = window.AnimScenes || {}).t1001 = (fig) => {
+  const fr = document.documentElement.lang === 'fr';
+  const $ = (s) => fig.querySelector(s);
+  const $$ = (s) => [...fig.querySelectorAll(s)];
+  const hb = $('.t1001-hb'), bd = $('.t1001-bd'), p = $('.t1001-p'), ims = $$('.t1001-im'), live = $('.live');
+  const G = { h: $('.t1001-g-h'), b: $('.t1001-g-b'), p: $('.t1001-g-p'), c: $('.t1001-g-c') };
+  const Lb = { h: $('.t1001-l-h'), b: $('.t1001-l-b'), p: $('.t1001-l-p'), i: $('.t1001-l-i'), c: $('.t1001-l-c') };
+  const end = $$('.cap').pop().dataset.live;
+  const ease = (x) => (x < 0.5 ? 4 * x * x * x : 1 - Math.pow(-2 * x + 2, 3) / 2);
+  const pr = (t, a, b) => ease(Math.min(1, Math.max(0, (t - a) / (b - a))));
+  const mix = (a, b, m) => `rgb(${[0, 1, 2].map((i) => Math.round(a[i] + (b[i] - a[i]) * m)).join(' ')} / ${(a[3] + (b[3] - a[3]) * m).toFixed(3)})`;
+  const REAL = { b: [204, 204, 204, 1 / 3], w: [255, 255, 255, 0.8] };
+  const TEACH = { b: [240, 168, 48, 1], p: [79, 143, 240, 1], i: [232, 85, 154, 1] };
+  const n = (v, d = 0) => v.toFixed(d).replace('.', fr ? ',' : '.');
+  return (t, step) => {
+    const real = fig.dataset.teach === '1' ? pr(t, 21, 21.8) : 1;
+    const bw = 182 * pr(t, 3.8, 6.2);
+    hb.style.borderWidth = `${bw}px`;
+    bd.style.opacity = pr(t, 7.2, 8);
+    bd.style.borderColor = mix(TEACH.b, REAL.b, real);
+    p.style.borderColor = mix(TEACH.p, REAL.w, real);
+    p.style.opacity = pr(t, 10.7, 11.6);
+    const sc = 1 - 0.8 * pr(t, 15.2, 16.8);
+    ims.forEach((im) => {
+      im.style.opacity = pr(t, 14.2, 14.9);
+      im.style.scale = sc;
+      im.style.borderColor = mix(TEACH.i, REAL.w, real);
+    });
+    const c = pr(t, 18, 19.8);
+    p.style.clipPath = c > 0 ? `inset(${30 * c}% ${54.8032 * c}px)` : 'none';
+    const on = (e, a, b, k = 1) => { e.style.opacity = pr(t, a, a + 0.6) * (1 - pr(t, b - 0.4, b)) * k; };
+    on(G.h, 0.3, 3.5); on(Lb.h, 0.3, 3.5);
+    on(G.b, 7.2, 10.5); on(Lb.b, 7.2, 10.5);
+    on(G.p, 10.7, 14); on(Lb.p, 10.7, 14);
+    on(Lb.i, 14.2, 17.5);
+    on(G.c, 17.7, 21); on(Lb.c, 17.7, 21);
+    let txt = '';
+    if (step === 0) txt = `html${fr ? ' :' : ':'} x −117 → 517, y −127 → 427`;
+    else if (step === 1) txt = `border${fr ? ' :' : ':'} ${n(bw)} px · ${fr ? 'rayon intérieur' : 'inner radius'} 192 − ${n(bw)} = ${n(192 - bw)} px`;
+    else if (step === 2) txt = `body${fr ? ' :' : ':'} 150 × 50 ${fr ? 'en' : 'at'} (125, 195) · ${fr ? 'fente' : 'slot'} 40 × 10`;
+    else if (step === 3) txt = `p${fr ? ' :' : ':'} 350 × 250 ${fr ? 'en' : 'at'} (25, −5) · ${fr ? 'rayon' : 'radius'} 192 → 125 px`;
+    else if (step === 4) txt = `scale${fr ? ' :' : ':'} ${n(sc, 2)} · 200 px → ${n(200 * sc)} px`;
+    else if (step === 5) txt = `clip-path${fr ? ' :' : ':'} inset(${n(75 * c)}px ${n(54.8 * c, 1)}px) · ${n(350 - 109.6 * c, 1)} × ${n(250 - 150 * c)}`;
+    else txt = end;
+    live.textContent = txt;
+  };
+};
+</script>
+</figure>
