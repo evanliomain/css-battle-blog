@@ -1,0 +1,105 @@
+<figure class="anim t1029" data-duration="30" data-scene="t1029" data-wide="-460 -390 880 710" style="--bg:#444f52">
+<style>
+.t1029{--beige:#e9c282;--red:#e8564a;--blue:#6fa3c9}
+.t1029 .t1029-h{left:40px;top:110px;width:320px;height:160px}
+.t1029 .t1029-hbox{left:40px;top:110px;width:320px;height:160px;outline:2px dashed #ffd23f;outline-offset:-2px;pointer-events:none}
+.t1029 .t1029-bbox{left:40px;top:-50px;width:320px;height:320px;outline:2px dashed var(--red);outline-offset:-2px;pointer-events:none}
+.t1029 .t1029-dot{left:195px;top:105px;width:10px;height:10px;border-radius:50%;background:#ffd23f}
+.t1029 .t1029-b{left:40px;top:-50px;width:320px;height:320px;outline:480px double}
+.t1029 .t1029-lab{font:10.5px/1.2 ui-monospace,SFMono-Regular,Menlo,monospace;color:#24302f;background:rgb(255 255 255 / .8);padding:1px 3px;border-radius:2px;white-space:nowrap;pointer-events:none;z-index:53}
+.t1029 .t1029-lab b{font-weight:600}
+.t1029[data-view="wide"] .t1029-lab{font-size:24px}
+</style>
+<div class="anim-col">
+<div class="stage" role="img" aria-label="{% if include.lang == "fr" %}Animation : le canevas sombre, le stade de html découpé par son outline double géant, puis le body réduit par scale en un carré et ses U{% else %}Animation: the dark canvas, html's stadium cut out by its giant double outline, then body scaled down to a square and its U shapes{% endif %}">
+<div class="scene">
+<div class="t1029-h"></div>
+<div class="t1029-hbox"></div>
+<div class="t1029-bbox"></div>
+<div class="t1029-b"></div>
+<div class="t1029-dot"></div>
+<div class="t1029-lab t1029-lab-h" style="left:40px;top:107px;translate:0 -100%"><b>html</b> · 320 × 160</div>
+<div class="t1029-lab t1029-lab-o" style="left:-116px;top:184px">{% if include.lang == "fr" %}trait 160{% else %}line 160{% endif %}</div>
+<div class="t1029-lab t1029-lab-o" style="left:-276px;top:184px">{% if include.lang == "fr" %}vide 160{% else %}gap 160{% endif %}</div>
+<div class="t1029-lab t1029-lab-o" style="left:-436px;top:184px">{% if include.lang == "fr" %}trait 160{% else %}line 160{% endif %}</div>
+<div class="t1029-lab t1029-lab-b" style="left:44px;top:6px"><b>body</b> · 320 × 320</div>
+<div class="t1029-lab t1029-lab-s" style="left:8px;top:6px"><b>body</b> · 40 × 40</div>
+</div>
+</div>
+<div class="legend"><span><i style="--c:var(--beige)"></i>{% if include.lang == "fr" %}outline de html : trait 160, vide 160, trait 160{% else %}html's outline: line 160, gap 160, line 160{% endif %}</span><span><i style="--c:var(--blue)"></i>{% if include.lang == "fr" %}fond du body (ardoise en vrai){% else %}body's background (slate in reality){% endif %}</span><span><i style="--c:var(--red)"></i>{% if include.lang == "fr" %}outline du body (beige en vrai){% else %}body's outline (beige in reality){% endif %}</span></div>
+</div>
+<div class="anim-side">
+<pre class="code" aria-hidden="true">&lt;style>*{<span data-on="1">background:#444F52</span>;<span data-on="3 4 7">outline:5in double#E9C282</span>}&amp;{<span data-on="1">margin:110 40 30</span>;<span data-on="2">border-radius:9in</span>;*{<span data-on="5" data-tone="2">margin:-50%0 0</span>;<span data-on="6" data-tone="2">scale:.125</span></pre>
+<div class="now" aria-live="polite">
+<div class="caps">
+{%- if include.lang == "fr" %}
+<div class="cap" data-t="0" data-step="Le canevas sombre"><h3>1. Le canevas sombre</h3><p><code>*</code> touche <code>html</code> : son fond ardoise part sur tout le canevas. <code>margin:110 40 30</code> et le mode quirks (la hauteur de <code>html</code> remplit la page moins ses marges) donnent une boîte de 320×160.</p></div>
+<div class="cap" data-t="3.5" data-step="9in : un stade"><h3>2. 9in : un stade</h3><p><code>border-radius:9in</code>, c'est 864px. Bien trop : Chrome réduit les rayons jusqu'à la moitié de la hauteur, 80px. La boîte devient un stade.</p></div>
+<div class="cap" data-t="7" data-step="Un outline de 480px"><h3>3. Un outline de 480px</h3><p><code>*</code> donne aussi à <code>html</code> un <code>outline:5in double</code> beige. Il suit les coins arrondis. Son trait intérieur fait 160px et couvre tout le canevas autour du stade : le stade, c'est le canevas sombre qui reste.</p></div>
+<div class="cap" data-t="11" data-step="Hors du canevas : le double"><h3>4. Hors du canevas : le double</h3><p>En vue large : un <code>double</code> de 480px, c'est un trait de 160, un vide de 160 et un trait de 160. Seul le premier trait touche le canevas, le reste tombe dehors.</p></div>
+<div class="cap" data-t="16" data-step="body : un carré de 320"><h3>5. body : un carré de 320</h3><p><code>body</code> a 320px de large. <code>margin:-50%0 0</code> : une marge en % se calcule sur la largeur, donc −160px. Le mode quirks lui donne 160 + 160 = 320px de haut : un carré de 320 centré sur (200, 110), le bord haut du stade. Il dépasse de 50px au-dessus du canevas.</p></div>
+<div class="cap" data-t="19.5" data-step="scale:.125"><h3>6. scale:.125</h3><p><code>scale:.125</code> réduit le carré à 40×40, autour de son centre, et son outline à 60px : trait de 20, vide de 20, trait de 20. <code>scale</code> lui donne aussi sa propre couche, peinte par-dessus l'outline de <code>html</code>.</p></div>
+<div class="cap" data-t="23.5" data-step="Le vide laisse voir dessous"><h3>7. Le vide laisse voir dessous</h3><p>Avec les couleurs pédagogiques, l'outline du <code>body</code> est en rouge. Au-dessus du stade, ses traits beiges se perdent dans le beige. Dans le stade, ils font deux U beiges, et le vide transparent du milieu laisse voir le canevas sombre : le U foncé.</p></div>
+<div class="cap" data-t="26.5" data-step="Résultat" data-live="118 caractères · 100 % identique"><h3>8. Résultat : 118 caractères</h3><p>Un fond, un outline, deux boîtes : l'image complète, au pixel près.</p></div>
+{%- else %}
+<div class="cap" data-t="0" data-step="The dark canvas"><h3>1. The dark canvas</h3><p><code>*</code> matches <code>html</code>: its slate background goes to the whole canvas. <code>margin:110 40 30</code> and quirks mode (the height of <code>html</code> fills the page minus its margins) make a 320×160 box.</p></div>
+<div class="cap" data-t="3.5" data-step="9in: a stadium"><h3>2. 9in: a stadium</h3><p><code>border-radius:9in</code> is 864px. Far too much: Chrome shrinks the radii down to half the height, 80px. The box becomes a stadium.</p></div>
+<div class="cap" data-t="7" data-step="A 480px outline"><h3>3. A 480px outline</h3><p><code>*</code> also gives <code>html</code> a beige <code>outline:5in double</code>. It follows the rounded corners. Its inner line is 160px wide and covers the whole canvas around the stadium: the stadium is the dark canvas that is left.</p></div>
+<div class="cap" data-t="11" data-step="Outside the canvas: the double"><h3>4. Outside the canvas: the double</h3><p>In wide view: a 480px <code>double</code> is a 160 line, a 160 gap and a 160 line. Only the first line touches the canvas; the rest falls outside.</p></div>
+<div class="cap" data-t="16" data-step="body: a 320 square"><h3>5. body: a 320 square</h3><p><code>body</code> is 320px wide. <code>margin:-50%0 0</code>: a % margin is taken from the width, so −160px. Quirks mode makes it 160 + 160 = 320px tall: a 320 square centered on (200, 110), the top edge of the stadium. It sticks out 50px above the canvas.</p></div>
+<div class="cap" data-t="19.5" data-step="scale:.125"><h3>6. scale:.125</h3><p><code>scale:.125</code> shrinks the square to 40×40, around its center, and its outline to 60px: a 20 line, a 20 gap, a 20 line. <code>scale</code> also gives it its own layer, painted over <code>html</code>'s outline.</p></div>
+<div class="cap" data-t="23.5" data-step="The gap shows what is below"><h3>7. The gap shows what is below</h3><p>With teaching colors, the outline of <code>body</code> is red. Above the stadium, its beige lines disappear on the beige. Inside the stadium, they make two beige U shapes, and the see-through gap in the middle shows the dark canvas: the dark U.</p></div>
+<div class="cap" data-t="26.5" data-step="Result" data-live="118 characters · 100% match"><h3>8. Result: 118 characters</h3><p>One background, one outline, two boxes: the whole picture, pixel-perfect.</p></div>
+{%- endif %}
+</div>
+<div class="live"></div>
+</div>
+</div>
+<script>
+(window.AnimScenes = window.AnimScenes || {}).t1029 = (fig) => {
+  const fr = document.documentElement.lang === 'fr';
+  const $ = (s) => fig.querySelector(s);
+  const H = $('.t1029-h'), hbox = $('.t1029-hbox'), bbox = $('.t1029-bbox'), dot = $('.t1029-dot'), B = $('.t1029-b');
+  const labH = $('.t1029-lab-h'), labO = [...fig.querySelectorAll('.t1029-lab-o')], labB = $('.t1029-lab-b'), labS = $('.t1029-lab-s'), live = $('.live');
+  const caps = [...fig.querySelectorAll('.caps .cap')];
+  const ease = (x) => (x < 0.5 ? 4 * x * x * x : 1 - Math.pow(-2 * x + 2, 3) / 2);
+  const pr = (t, a, b) => ease(Math.min(1, Math.max(0, (t - a) / (b - a))));
+  const n = (v, d = 0) => v.toFixed(d).replace('.', fr ? ',' : '.');
+  const L = fr ? { c: ' :', l: 'trait', g: 'vide' } : { c: ':', l: 'line', g: 'gap' };
+  return (t, step) => {
+    const teach = fig.dataset.teach === '1';
+    const g = 1 - pr(t, 26.5, 27.3);
+    // html: radius 0 → 9in (used: at most 80), then the outline grows to 480px
+    const r = 864 * pr(t, 4, 6.2);
+    const ow = 480 * pr(t, 7.4, 10);
+    H.style.borderRadius = `${r}px`;
+    H.style.outline = ow > 0.5 ? `${ow}px double #e9c282` : 'none';
+    hbox.style.borderRadius = `${r}px`;
+    hbox.style.opacity = pr(t, 0.5, 1.5) * (1 - pr(t, 15.5, 16.2));
+    labH.style.opacity = pr(t, 0.5, 1.5) * (1 - pr(t, 15.5, 16.2));
+    labO.forEach((e) => { e.style.opacity = pr(t, 11.3, 12) * (1 - pr(t, 15.5, 16.2)); });
+    // body: the 320 square, then scale .5 → .125
+    const box = pr(t, 16.2, 17) * (1 - pr(t, 22.6, 23.3));
+    bbox.style.opacity = box;
+    dot.style.opacity = box;
+    labB.style.opacity = pr(t, 16.4, 17.2) * (1 - pr(t, 19.4, 19.9));
+    const s = 0.5 - 0.375 * pr(t, 20, 22.6);
+    B.style.opacity = pr(t, 19.6, 20.2);
+    B.style.scale = s;
+    B.style.background = teach && g > 0 ? 'var(--blue)' : '#444f52';
+    B.style.outlineColor = teach && g > 0 ? 'var(--red)' : '#e9c282';
+    labS.style.opacity = pr(t, 22.6, 23.3) * g;
+    let txt = '';
+    if (step === 0) txt = `html${L.c} x 40 → 360, y 110 → 270 · 320 × 160`;
+    else if (step === 1) txt = `border-radius${L.c} ${n(r)}px → ${n(Math.min(r, 80))}px`;
+    else if (step === 2) txt = `outline${L.c} ${n(ow)}px double`;
+    else if (step === 3) txt = `480px = ${L.l} 160 + ${L.g} 160 + ${L.l} 160`;
+    else if (step === 4) txt = `body${L.c} 320 × 320 · margin-top −50% = −160px`;
+    else if (step === 5) txt = `scale${L.c} ${n(s, 3)} → ${n(320 * s)} × ${n(320 * s)} · outline ${n(480 * s)}px`;
+    else if (step === 6) txt = `outline body${L.c} 60px = ${L.l} 20 + ${L.g} 20 + ${L.l} 20`;
+    else txt = caps[step] ? caps[step].dataset.live || '' : '';
+    live.textContent = txt;
+  };
+};
+</script>
+</figure>
