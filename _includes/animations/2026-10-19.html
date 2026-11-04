@@ -1,0 +1,89 @@
+<figure class="anim t1019" data-duration="24" data-scene="t1019" data-wide="-70 -70 540 440" style="--bg:#7e6293" data-off-label="6 330">
+<style>
+.t1019{--sand:#e8ba79;--plum:#7e6293;--hb:#4fb3a9;--dc:#ff6f61;--ar:#ffd23f}
+.t1019 .t1019-bg{left:-70px;top:-70px;width:540px;height:440px}
+.t1019 .t1019-flat{left:-70px;top:-70px;width:540px;height:440px;background:var(--plum)}
+.t1019 .t1019-grid{left:-70px;top:-70px;width:540px;height:440px;opacity:0}
+.t1019 .t1019-area{left:44px;top:0;width:312px;height:300px;box-sizing:border-box;border:2px dashed var(--ar);opacity:0}
+.t1019 .t1019-html{left:24px;top:-20px;width:352px;height:340px;box-sizing:border-box;border:20px solid var(--sand);opacity:0}
+.t1019 .t1019-body{left:80px;top:70px;width:240px;height:160px;box-sizing:border-box;border:20px solid var(--sand);opacity:0}
+.t1019 .t1019-lab{font:10.5px/1.25 ui-monospace,SFMono-Regular,Menlo,monospace;color:#24302f;background:rgb(255 255 255 / .85);padding:1px 4px;border-radius:2px;white-space:nowrap;pointer-events:none;opacity:0;z-index:5}
+.t1019 .t1019-lab b{font-weight:600}
+</style>
+<div class="anim-col">
+<div class="stage" role="img" aria-label="{% if include.lang == "fr" %}Animation : la bordure de html dépasse du canevas, celle du body fait le cadre, puis le fond du body, passé au canevas, glisse pour mettre un disque sur chaque coin{% else %}Animation: html's border runs off the canvas, body's border is the frame, then body's background, handed to the canvas, slides to put a disc on each corner{% endif %}">
+<div class="scene">
+<div class="t1019-bg"></div>
+<div class="t1019-flat"></div>
+<div class="t1019-grid"></div>
+<div class="t1019-html"></div>
+<div class="t1019-body"></div>
+<div class="t1019-area"></div>
+<div class="t1019-lab t1019-l1" style="left:50px;top:6px"><b>html</b> 352 × 340 · y −20 → 320</div>
+<div class="t1019-lab t1019-l2" style="left:106px;top:96px"><b>body</b> 240 × 160</div>
+<div class="t1019-lab t1019-l3" style="left:50px;top:6px">{% if include.lang == "fr" %}zone du fond : boîte de html, 312 × 300{% else %}background area: html's box, 312 × 300{% endif %}</div>
+<div class="t1019-lab t1019-l4" style="left:106px;top:96px">{% if include.lang == "fr" %}tuile 25pc × auto = 400 × 300{% else %}tile 25pc × auto = 400 × 300{% endif %}</div>
+<div class="t1019-lab t1019-l5" style="left:106px;top:96px">x 277% × (312 − 400)<br>y 50vh = 150px</div>
+</div>
+</div>
+<div class="legend"><span><i style="--c:var(--hb)"></i>{% if include.lang == "fr" %}bordure de html (sable en vrai){% else %}html border (sand in reality){% endif %}</span><span><i style="--c:var(--sand)"></i>{% if include.lang == "fr" %}bordure de body{% else %}body border{% endif %}</span><span><i style="--c:var(--dc)"></i>{% if include.lang == "fr" %}disque #D93A (sable en vrai){% else %}#D93A disc (sand in reality){% endif %}</span><span><i style="--c:var(--ar)"></i>{% if include.lang == "fr" %}zone du fond (boîte de html){% else %}background area (html's box){% endif %}</span><span><i style="--c:#fff"></i>{% if include.lang == "fr" %}bords des tuiles{% else %}tile edges{% endif %}</span></div>
+</div>
+<div class="anim-side">
+<pre class="code" aria-hidden="true">&lt;style>*{<span data-on="1 2">border:5vw solid#E8BA79</span>;<span data-on="1">margin:-5%24</span>;*{<span data-on="2" data-tone="2">margin:70 36</span>;<span data-on="3" data-tone="2">background:radial-gradient(1q,#D93A 60px,#7E6293)</span><span data-on="4" data-tone="2">277%50vh</span><span data-on="3" data-tone="2">/25pc</span></pre>
+<div class="now">
+<div class="caps">
+{%- if include.lang == "fr" %}
+<div class="cap" data-t="0" data-step="html dépasse en haut et en bas"><h3>1. html dépasse en haut et en bas</h3><p><code>*</code> donne à <code>html</code> une bordure de 5vw (20px). <code>margin:-5%24</code> : −5 % de la largeur, c'est −20px. En mode quirks, <code>html</code> remplit la hauteur moins ses marges : 300 + 40 = 340px, de y=−20 à 320. Les bords haut et bas sortent du canevas ; restent deux barres.</p></div>
+<div class="cap" data-t="5" data-step="body : le cadre"><h3>2. body : le cadre</h3><p>Le <code>*</code> imbriqué vise <code>body</code> (<code>head</code> reste caché). Il a la même bordure, et <code>margin:70 36</code> en fait une boîte de 240×160 en (80, 70) : sa bordure de 20px est le cadre.</p></div>
+<div class="cap" data-t="9" data-step="Le fond part au canevas"><h3>3. Le fond part au canevas</h3><p>Seul <code>body</code> a un fond. <code>html</code> n'en a pas, donc ce fond passe au canevas, calé sur la boîte de <code>html</code> (312×300 sous la bordure), et n'est pas peint dans <code>body</code>. Tuile de 400×300, cercle de 60px au centre : <code>1q</code> rend l'arrêt final net.</p></div>
+<div class="cap" data-t="13" data-step="277%50vh : un disque par coin"><h3>4. 277%50vh : un disque par coin</h3><p><code>277%</code> se calcule sur 312 − 400 = −88px : la tuile part 243,8px à gauche. <code>50vh</code> la descend de 150px. Les centres des cercles tombent sur les quatre coins, et la grille se répète tous les 400×300 : un quart de disque par coin. Les barres de <code>html</code> passent par-dessus.</p></div>
+<div class="cap" data-t="19.5" data-step="Au pixel près" data-live="123 caractères · 100 % identique"><h3>5. Au pixel près</h3><p>Deux bordures et un fond qui change de boîte : l'image complète en 123 caractères. Sur le blanc de la page, <code>#D93A</code> donne presque le sable du cadre.</p></div>
+{%- else %}
+<div class="cap" data-t="0" data-step="html runs off the top and bottom"><h3>1. html runs off the top and bottom</h3><p><code>*</code> gives <code>html</code> a 5vw (20px) border. <code>margin:-5%24</code>: −5% of the width is −20px. In quirks mode, <code>html</code> fills the height minus its margins: 300 + 40 = 340px, from y=−20 to 320. The top and bottom edges leave the canvas; two bars are left.</p></div>
+<div class="cap" data-t="5" data-step="body: the frame"><h3>2. body: the frame</h3><p>The nested <code>*</code> matches <code>body</code> (<code>head</code> stays hidden). It has the same border, and <code>margin:70 36</code> makes it a 240×160 box at (80, 70): its 20px border is the frame.</p></div>
+<div class="cap" data-t="9" data-step="The background goes to the canvas"><h3>3. The background goes to the canvas</h3><p>Only <code>body</code> has a background. <code>html</code> has none, so that background goes to the canvas, laid out on <code>html</code>'s box (312×300 inside the border), and is not painted in <code>body</code>. A 400×300 tile, a 60px circle in the middle: <code>1q</code> makes the last stop sharp.</p></div>
+<div class="cap" data-t="13" data-step="277%50vh: a disc per corner"><h3>4. 277%50vh: a disc per corner</h3><p><code>277%</code> works on 312 − 400 = −88px: the tile moves 243.8px left. <code>50vh</code> moves it 150px down. The circle centers land on the four corners, and the grid repeats every 400×300: a quarter disc per corner. <code>html</code>'s bars are painted on top.</p></div>
+<div class="cap" data-t="19.5" data-step="Pixel-perfect" data-live="123 characters · 100% match"><h3>5. Pixel-perfect</h3><p>Two borders and a background that changes boxes: the whole picture in 123 characters. Over the white page, <code>#D93A</code> comes out almost as the frame's sand.</p></div>
+{%- endif %}
+</div>
+<div class="live"></div>
+</div>
+</div>
+<script>
+(window.AnimScenes = window.AnimScenes || {}).t1019 = (fig) => {
+  const fr = document.documentElement.lang === 'fr';
+  const $ = (s) => fig.querySelector(s);
+  const bg = $('.t1019-bg'), flat = $('.t1019-flat'), grid = $('.t1019-grid'), area = $('.t1019-area'), H = $('.t1019-html'), B = $('.t1019-body'), live = $('.live');
+  const lab = [1, 2, 3, 4, 5].map((i) => $('.t1019-l' + i));
+  const ease = (x) => (x < 0.5 ? 4 * x * x * x : 1 - Math.pow(-2 * x + 2, 3) / 2);
+  const pr = (t, a, b) => ease(Math.min(1, Math.max(0, (t - a) / (b - a))));
+  const n = (v) => (+v.toFixed(1)).toString().replace('.', fr ? ',' : '.').replace('-', '−');
+  const c = fr ? ' :' : ':', sp = fr ? ' ; ' : ', ';
+  const L = fr ? { tile: 'tuile', ctr: 'centres des disques', end: '123 caractères · 100 % identique' } : { tile: 'tile', ctr: 'disc centers', end: '123 characters · 100% match' };
+  return (t, step) => {
+    const teach = fig.dataset.teach === '1' && step < 4;
+    const k = pr(t, 13.6, 16.6);
+    const ox = 44 - 243.8 * k, oy = 150 * k;
+    const pos = `${ox + 70}px ${oy + 70}px`;
+    bg.style.background = `radial-gradient(1q,${teach ? 'var(--dc)' : '#D93A'} 60px,#7E6293) ${pos}/400px 300px,#fff`;
+    flat.style.opacity = 1 - pr(t, 9.4, 10.6);
+    const g = 'rgb(255 255 255 / .9)';
+    grid.style.background = `linear-gradient(90deg,${g} 1.5px,#0000 0) ${pos}/400px 300px,linear-gradient(${g} 1.5px,#0000 0) ${pos}/400px 300px`;
+    grid.style.opacity = step === 2 || step === 3 ? pr(t, 9.6, 10.4) : 0;
+    area.style.opacity = step === 2 || step === 3 ? pr(t, 9.2, 9.8) : 0;
+    H.style.opacity = pr(t, 0.3, 1.3);
+    H.style.borderColor = teach ? 'var(--hb)' : 'var(--sand)';
+    B.style.opacity = pr(t, 5.3, 6.3);
+    const show = [step === 0, step === 1, step === 2, step === 2 && t >= 11, step === 3];
+    lab.forEach((l, i) => { l.style.opacity = show[i] ? 1 : 0; });
+    let txt = '';
+    if (step === 0) txt = `html${c} x 24 → 376, y −20 → 320 · border 20 px`;
+    else if (step === 1) txt = `body${c} x 80 → 320, y 70 → 230`;
+    else if (step === 2) txt = `${L.tile}${c} (44${sp}0) · 400 × 300 · ${fr ? 'disque' : 'disc'} (244${sp}150) r 60`;
+    else if (step === 3) txt = `${L.tile}${c} (${n(ox)}${sp}${n(oy)}) · ${L.ctr}${c} x ${n(ox + 200)}${sp}${n(ox + 600)} · y ${n(oy - 150)}${sp}${n(oy + 150)}`;
+    else txt = L.end;
+    live.textContent = txt;
+  };
+};
+</script>
+</figure>
