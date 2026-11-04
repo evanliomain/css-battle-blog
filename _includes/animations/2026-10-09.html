@@ -1,0 +1,111 @@
+<figure class="anim t1009" data-duration="26" data-scene="t1009" data-wide="-50 -40 500 380" style="--bg:#fff">
+<style>
+.t1009 .sky{left:0;top:0;width:400px;height:300px;background:#1bd2}
+.t1009 .h{font-size:8px}
+.t1009 .b{font-size:4px}
+.t1009 .box{pointer-events:none;border:2px dashed #1d2827;box-sizing:border-box}
+.t1009 .legend i{box-shadow:0 0 0 1px rgb(0 0 0 / .2)}
+.t1009 .legend .t1009-dash{background:none;border:1.5px dashed #1d2827;box-shadow:none;box-sizing:border-box}
+.t1009 .lab{pointer-events:none;font:10.5px/1.2 ui-monospace,SFMono-Regular,Menlo,monospace;color:#24302f;background:rgb(255 255 255 / .85);padding:1px 4px;border-radius:2px;white-space:nowrap}
+</style>
+<div class="anim-col">
+<div class="stage" role="img" aria-label="{% if include.lang == "fr" %}Animation : le fond du body part sur le canevas, puis les trois ombres de html dessinent les mèches et les trois mêmes ombres du body dessinent les corps des bougies{% else %}Animation: body's background goes to the canvas, then html's three shadows draw the wicks and body's same three shadows draw the candle bodies{% endif %}">
+<div class="scene">
+<div class="sky"></div>
+<div class="h"></div>
+<div class="b"></div>
+<div class="box hbox"></div>
+<div class="box bbox"></div>
+<div class="lab l1" style="left:6px;top:6px">#1bd2 + #fff = #dff6fb</div>
+<div class="lab l2" style="left:6px;top:6px">html · 10 × 170 · 1em = 8px</div>
+<div class="lab l3" style="left:100px;top:46px">78Q ≈ 73.7px →</div>
+<div class="lab l4" style="left:250px;top:40px">±5em = ±40px</div>
+<div class="lab l5" style="left:6px;top:6px">body · 50 × 130 · 1em = 4px</div>
+<div class="lab l6" style="left:266px;top:44px">±5em = ±20px</div>
+</div>
+</div>
+<div class="legend"><span><i class="t1009-dash"></i>{% if include.lang == "fr" %}boîtes de html et body (transparentes){% else %}html and body boxes (transparent){% endif %}</span><span><i style="--c:#4dcb60"></i><i style="--c:#d07b5f"></i><i style="--c:#f2b33d"></i>{% if include.lang == "fr" %}ombres de html : 78Q, +5em, −5em{% else %}html's shadows: 78Q, +5em, −5em{% endif %}</span><span><i style="--c:#2b8a3e"></i><i style="--c:#a5462c"></i><i style="--c:#b7791f"></i>{% if include.lang == "fr" %}ombres du body (vert et orange en vrai){% else %}body's shadows (green and orange in reality){% endif %}</span></div>
+</div>
+<div class="anim-side">
+<pre class="code" aria-hidden="true">&lt;style>*{<span data-on="2">margin:65 76%65 86</span>;<span data-on="4 6">color:D07B5F</span>;box-shadow:<span data-on="6" data-tone="2"><span data-on="3">78Q 0#4dcb60</span></span>,<span data-on="6" data-tone="2"><span data-on="4">9pc 5em,9pc -5em</span></span>;<span data-on="5" data-tone="2"><span data-on="2">font:50%a</span></span>;*{<span data-on="1" data-tone="2">background:#1bd2</span>;<span data-on="5" data-tone="2">margin:20-20</span></pre>
+<div class="now" aria-live="polite">
+<div class="caps">
+{%- if include.lang == "fr" %}
+<div class="cap" data-t="0" data-step="Le fond du body sur le canevas"><h3>1. Le fond du body sur le canevas</h3><p><code>html</code> n'a pas de fond : celui du <code>body</code>, <code>#1bd2</code>, part donc sur tout le canevas. C'est un bleu à 13 % d'opacité sur le blanc de la page, ce qui donne le bleu très pâle de la cible.</p></div>
+<div class="cap" data-t="3" data-step="html : une boîte de 10 × 170"><h3>2. html : une boîte de 10 × 170</h3><p><code>margin:65 76%65 86</code> : 76 % de 400px font 304px à droite, il reste 10px de large en x=86. En mode quirks, la hauteur vaut 300 − 2 × 65 = 170. La boîte est transparente. <code>font:50%a</code> : 1em = 8px.</p></div>
+<div class="cap" data-t="7" data-step="78Q 0 : la mèche verte"><h3>3. 78Q 0 : la mèche verte</h3><p>La première ombre décale une copie de la boîte de 78Q (≈ 73,7px) vers la droite, en vert : la mèche verte de 10 × 170.</p></div>
+<div class="cap" data-t="10.5" data-step="9pc ±5em : la mèche orange"><h3>4. 9pc ±5em : la mèche orange</h3><p>Les deux autres n'ont pas de couleur : elles prennent <code>color</code>, l'orange. Décalées de 9pc (144px) et de ±5em (±40px), elles se chevauchent en une mèche de 10 × 250.</p></div>
+<div class="cap" data-t="14.5" data-step="body : 50 × 130, 1em = 4px"><h3>5. body : 50 × 130, 1em = 4px</h3><p><code>body</code> est dans <code>html</code>. <code>margin:20-20</code> l'élargit de 20px de chaque côté et le raccourcit de 20px en haut et en bas : 50 × 130 en (66, 85). <code>font:50%</code> se cumule : 1em = 4px.</p></div>
+<div class="cap" data-t="18" data-step="Les mêmes ombres : les corps"><h3>6. Les mêmes ombres : les corps</h3><p><code>body</code> a la même liste d'ombres. 78Q pose le corps vert ; 9pc et ±5em, qui ne valent plus que ±20px, posent deux copies orange qui se chevauchent en 50 × 170. Peintes après celles de <code>html</code>, elles cachent le milieu des mèches.</p></div>
+<div class="cap" data-t="22" data-step="Résultat" data-live="123 caractères · 100 % identique"><h3>7. Résultat : 123 caractères</h3><p>Dans les vraies couleurs, les ombres de même couleur se fondent. Deux boîtes transparentes, une liste de trois ombres : les deux bougies en 123 caractères.</p></div>
+{%- else %}
+<div class="cap" data-t="0" data-step="body's background on the canvas"><h3>1. body's background on the canvas</h3><p><code>html</code> has no background, so <code>body</code>'s, <code>#1bd2</code>, goes to the whole canvas. It is a blue at 13% opacity over the white page, which gives the target's very pale blue.</p></div>
+<div class="cap" data-t="3" data-step="html: a 10 × 170 box"><h3>2. html: a 10 × 170 box</h3><p><code>margin:65 76%65 86</code>: 76% of 400px is 304px on the right, which leaves 10px of width at x=86. In quirks mode, the height is 300 − 2 × 65 = 170. The box is transparent. <code>font:50%a</code>: 1em = 8px.</p></div>
+<div class="cap" data-t="7" data-step="78Q 0: the green wick"><h3>3. 78Q 0: the green wick</h3><p>The first shadow moves a copy of the box 78Q (≈ 73.7px) to the right, in green: the 10 × 170 green wick.</p></div>
+<div class="cap" data-t="10.5" data-step="9pc ±5em: the orange wick"><h3>4. 9pc ±5em: the orange wick</h3><p>The other two have no color, so they take <code>color</code>, the orange. Moved by 9pc (144px) and ±5em (±40px), they overlap into a 10 × 250 wick.</p></div>
+<div class="cap" data-t="14.5" data-step="body: 50 × 130, 1em = 4px"><h3>5. body: 50 × 130, 1em = 4px</h3><p><code>body</code> sits inside <code>html</code>. <code>margin:20-20</code> widens it by 20px on each side and shortens it by 20px at the top and bottom: 50 × 130 at (66, 85). <code>font:50%</code> stacks up: 1em = 4px.</p></div>
+<div class="cap" data-t="18" data-step="Same shadows: the bodies"><h3>6. Same shadows: the bodies</h3><p><code>body</code> has the same shadow list. 78Q places the green body; 9pc and ±5em, now only ±20px, place two orange copies that overlap into 50 × 170. Painted after <code>html</code>'s, they hide the middle of the wicks.</p></div>
+<div class="cap" data-t="22" data-step="Result" data-live="123 characters · 100% match"><h3>7. Result: 123 characters</h3><p>In the real colors, shadows of the same color blend. Two see-through boxes, one list of three shadows: both candles in 123 characters.</p></div>
+{%- endif %}
+</div>
+<div class="live"></div>
+</div>
+</div>
+<script>
+(window.AnimScenes = window.AnimScenes || {}).t1009 = (fig) => {
+  const fr = document.documentElement.lang === 'fr';
+  const $ = (s) => fig.querySelector(s);
+  const SKY = $('.sky'), H = $('.h'), B = $('.b'), HBOX = $('.hbox'), BBOX = $('.bbox'), live = $('.live');
+  const LB = [1, 2, 3, 4, 5, 6].map((i) => $('.l' + i));
+  const caps = [...fig.querySelectorAll('.caps .cap')];
+  const ease = (x) => (x < 0.5 ? 4 * x * x * x : 1 - Math.pow(-2 * x + 2, 3) / 2);
+  const pr = (t, a, b) => ease(Math.min(1, Math.max(0, (t - a) / (b - a))));
+  const lerp = (a, b, m) => a + (b - a) * m;
+  const n = (v, d = 0) => v.toFixed(d).replace('.', fr ? ',' : '.');
+  const c = fr ? ' :' : ':';
+  const win = (t, a, b) => Math.min(pr(t, a, a + 0.6), 1 - pr(t, b - 0.5, b));
+  const Q = 96 / 101.6;
+  const place = (el, x, y, w, h) => Object.assign(el.style, { left: x + 'px', top: y + 'px', width: w + 'px', height: h + 'px' });
+  // The official list, or the offsets scaled by g (green) and o (orange), in the given colors.
+  const shadows = (g, o, [c1, c2, c3]) => (g >= 1 && o >= 1
+    ? `78Q 0 ${c1},9pc 5em ${c2},9pc -5em ${c3}`
+    : `${78 * g}Q 0 ${c1},${9 * o}pc ${5 * o}em ${c2},${9 * o}pc ${-5 * o}em ${c3}`);
+  return (t, step) => {
+    const teach = fig.dataset.teach === '1';
+    const real = !teach || t >= 22;
+    SKY.style.opacity = pr(t, 0.4, 2);
+    // html: the full canvas → 10 × 170 at (86, 65).
+    const m = pr(t, 3.4, 5.6);
+    const hx = lerp(0, 86, m), hy = lerp(0, 65, m), hw = lerp(400, 10, m), hh = lerp(300, 170, m);
+    place(H, hx, hy, hw, hh);
+    place(HBOX, hx, hy, hw, hh);
+    HBOX.style.opacity = win(t, 3.2, 22);
+    H.style.background = real ? 'none' : 'rgb(29 40 39 / .12)';
+    const hg = pr(t, 7.4, 9.4), ho = pr(t, 10.9, 13);
+    H.style.boxShadow = shadows(hg, ho, real ? ['#4dcb60', '#D07B5F', '#D07B5F'] : ['#4dcb60', '#d07b5f', '#f2b33d']);
+    H.style.opacity = t >= 3.4 ? 1 : 0;
+    // body: html's box → 50 × 130 at (66, 85).
+    const k = pr(t, 14.9, 16.8);
+    const bx = lerp(86, 66, k), by = lerp(65, 85, k), bw = lerp(10, 50, k), bh = lerp(170, 130, k);
+    place(B, bx, by, bw, bh);
+    place(BBOX, bx, by, bw, bh);
+    BBOX.style.opacity = win(t, 14.6, 22);
+    B.style.background = real ? 'none' : 'rgb(29 40 39 / .12)';
+    const bp = pr(t, 18.4, 20.6);
+    B.style.boxShadow = shadows(bp, bp, real ? ['#4dcb60', '#D07B5F', '#D07B5F'] : ['#2b8a3e', '#a5462c', '#b7791f']);
+    B.style.opacity = t >= 14.9 ? 1 : 0;
+    const W = [[0.4, 3], [3.6, 7], [8.6, 10.5], [12.2, 14.5], [15.6, 18], [19.6, 22]];
+    LB.forEach((e, i) => { e.style.opacity = win(t, W[i][0], W[i][1]); });
+    let txt = '';
+    if (step === 0) txt = fr ? '#1bd2 = #11bbdd à 13 % · sur #fff → #dff6fb' : '#1bd2 = #11bbdd at 13% · over #fff → #dff6fb';
+    else if (step === 1) txt = `html${c} x ${n(hx)} → ${n(hx + hw)}, y ${n(hy)} → ${n(hy + hh)}`;
+    else if (step === 2) txt = `78Q 0 → ${n(78 * Q * hg, 1)}px 0`;
+    else if (step === 3) txt = `9pc ±5em → ${n(144 * ho, 1)}px ±${n(40 * ho, 1)}px`;
+    else if (step === 4) txt = `body${c} x ${n(bx)} → ${n(bx + bw)}, y ${n(by)} → ${n(by + bh)}`;
+    else if (step === 5) txt = `78Q 0 → ${n(78 * Q * bp, 1)}px · 9pc ±5em → ${n(144 * bp, 1)}px ±${n(20 * bp, 1)}px`;
+    else txt = caps[step].dataset.live || '';
+    live.textContent = txt;
+  };
+};
+</script>
+</figure>
