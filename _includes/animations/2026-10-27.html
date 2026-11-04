@@ -1,0 +1,108 @@
+<figure class="anim t1027" data-duration="24" data-scene="t1027" data-wide="-90 -70 580 440" style="--bg:#ffffff">
+<style>
+.t1027{--plum:#72374d;--tint:#cfe3ff;--corner:#e8902a}
+.t1027 .t1027-html{left:140px;top:120px;width:120px;height:120px;outline:0 solid var(--plum)}
+.t1027 .t1027-box{left:140px;top:120px;width:120px;height:120px;box-sizing:border-box;border:1.5px dashed #14171c;opacity:0}
+.t1027 .t1027-cn{width:60px;height:60px;box-sizing:border-box;border:2px dashed var(--corner);opacity:0}
+.t1027 .t1027-lab{z-index:53;font:10.5px/1.25 ui-monospace,SFMono-Regular,Menlo,monospace;color:#24302f;background:rgb(255 255 255 / .85);padding:1px 4px;border-radius:2px;white-space:nowrap;pointer-events:none;opacity:0}
+.t1027 .t1027-lab b{font-weight:600}
+</style>
+<div class="anim-col">
+<div class="stage" role="img" aria-label="{% if include.lang == "fr" %}Construction animée de la cible : la boîte de html, son outline géant couleur prune, ses rayons, puis corner-shape qui biseaute deux coins et creuse une encoche{% else %}Animated build of the target: html's box, its huge plum outline, its radii, then corner-shape bevelling two corners and cutting a notch{% endif %}">
+<div class="scene">
+<i class="t1027-html"></i>
+<i class="t1027-box"></i>
+<i class="t1027-cn" style="left:200px;top:120px"></i>
+<i class="t1027-cn" style="left:200px;top:180px"></i>
+<i class="t1027-cn" style="left:140px;top:180px"></i>
+<b class="t1027-lab t1027-l-m" style="left:6px;top:6px">margin:30%35%60 → 120 / 140 / 60</b>
+<b class="t1027-lab t1027-l-sz" style="left:6px;top:24px">{% if include.lang == "fr" %}<b>html</b> : 120 × 120 en (140, 120){% else %}<b>html</b>: 120 × 120 at (140, 120){% endif %}</b>
+<b class="t1027-lab t1027-l-o" style="left:6px;top:6px">outline:9in = 864px</b>
+<b class="t1027-lab t1027-l-far" style="left:-84px;top:-64px">{% if include.lang == "fr" %}l'outline va de x = −724 à 1124, de y = −744 à 1104{% else %}the outline runs from x = −724 to 1124, y = −744 to 1104{% endif %}</b>
+<b class="t1027-lab t1027-l-r" style="left:6px;top:6px">border-radius:0 50%50% → 0 / 60 / 60 / 60</b>
+<b class="t1027-lab t1027-l-cs" style="left:6px;top:6px">corner-shape:notch bevel</b>
+<b class="t1027-lab t1027-c-tl" style="left:70px;top:100px">notch · 0</b>
+<b class="t1027-lab t1027-c-tr" style="left:264px;top:126px">bevel</b>
+<b class="t1027-lab t1027-c-br" style="left:264px;top:200px">notch</b>
+<b class="t1027-lab t1027-c-bl" style="left:96px;top:220px">bevel</b>
+</div>
+</div>
+<div class="legend"><span><i style="--c:var(--plum)"></i>outline</span><span><i style="--c:var(--tint)"></i>{% if include.lang == "fr" %}boîte de html (sans fond en vrai){% else %}html's box (no background in reality){% endif %}</span><span><i style="--c:var(--corner)"></i>{% if include.lang == "fr" %}zones des coins, rayon 60px{% else %}corner areas, 60px radius{% endif %}</span></div>
+</div>
+<div class="anim-side">
+<pre class="code" aria-hidden="true">&lt;style>&amp;{<span data-on="1">margin:30%35%60</span>;<span data-on="2">outline:9in solid#72374D</span>;<span data-on="3">border-radius:0 50%50%</span>;<span data-on="4 5">corner-shape:</span><span data-on="5" data-tone="2">notch</span> <span data-on="4" data-tone="2">bevel</span></pre>
+<div class="now" aria-live="polite">
+<div class="caps">
+{%- if include.lang == "fr" %}
+<div class="cap" data-t="0" data-step="html : une boîte blanche"><h3>1. html : une boîte blanche</h3><p><code>&amp;</code>, c'est <code>html</code>. Il n'a pas de fond : le canevas reste blanc. <code>margin:30%35%60</code> donne 120px en haut (30 % de la largeur), 140px sur les côtés et 60px en bas. En mode quirks, il remplit le reste : 120 × 120 en (140, 120). Sa boîte est teintée en bleu ici pour qu'on la voie.</p></div>
+<div class="cap" data-t="4" data-step="outline:9in : le fond prune"><h3>2. outline:9in : le fond prune</h3><p><code>outline:9in</code> trace un contour de 864px tout autour de la boîte. Il déborde du canevas de tous les côtés (vue large) : le fond prune est un outline, et la forme blanche est le canevas qui reste visible au milieu.</p></div>
+<div class="cap" data-t="8.5" data-step="border-radius : trois coins de 60px"><h3>3. border-radius : trois coins de 60px</h3><p><code>border-radius:0 50%50%</code> : 0 en haut à gauche, 50 % (60px) pour les trois autres coins. L'outline suit la forme de la boîte : pour l'instant, trois coins ronds.</p></div>
+<div class="cap" data-t="13" data-step="corner-shape : deux biseaux"><h3>4. corner-shape : deux biseaux</h3><p><code>corner-shape:notch bevel</code> se répète comme <code>border-radius</code> : <code>notch</code> pour haut-gauche et bas-droit, <code>bevel</code> pour haut-droit et bas-gauche. <code>bevel</code> remplace l'arrondi par une ligne droite : deux biais de 60px.</p></div>
+<div class="cap" data-t="17" data-step="corner-shape : l'encoche"><h3>5. corner-shape : l'encoche</h3><p><code>notch</code> creuse le coin en carré : une encoche de 60 × 60 en bas à droite. En haut à gauche, le rayon vaut 0 : le <code>notch</code> n'y fait rien, le coin reste droit. L'outline suit le tout.</p></div>
+<div class="cap" data-t="21.5" data-step="Résultat" data-live="97 caractères · 100 % identique"><h3>6. Résultat : 97 caractères</h3><p>Dans les vraies couleurs : une seule boîte, quatre déclarations. Le blanc est le canevas, le prune est l'outline.</p></div>
+{%- else %}
+<div class="cap" data-t="0" data-step="html: a white box"><h3>1. html: a white box</h3><p><code>&amp;</code> is <code>html</code>. It has no background, so the canvas stays white. <code>margin:30%35%60</code> gives 120px at the top (30% of the width), 140px on the sides and 60px at the bottom. In quirks mode it fills the rest: 120 × 120 at (140, 120). Its box is tinted blue here so you can see it.</p></div>
+<div class="cap" data-t="4" data-step="outline:9in: the plum background"><h3>2. outline:9in: the plum background</h3><p><code>outline:9in</code> draws an 864px outline all around the box. It runs past the canvas on every side (wide view): the plum background is an outline, and the white shape is the canvas left visible in the middle.</p></div>
+<div class="cap" data-t="8.5" data-step="border-radius: three 60px corners"><h3>3. border-radius: three 60px corners</h3><p><code>border-radius:0 50%50%</code>: 0 at the top left, 50% (60px) for the other three corners. The outline follows the shape of the box: for now, three round corners.</p></div>
+<div class="cap" data-t="13" data-step="corner-shape: two bevels"><h3>4. corner-shape: two bevels</h3><p><code>corner-shape:notch bevel</code> repeats like <code>border-radius</code>: <code>notch</code> for top left and bottom right, <code>bevel</code> for top right and bottom left. <code>bevel</code> turns the curve into a straight line: two 60px slants.</p></div>
+<div class="cap" data-t="17" data-step="corner-shape: the notch"><h3>5. corner-shape: the notch</h3><p><code>notch</code> cuts the corner as a square: a 60 × 60 notch at the bottom right. At the top left the radius is 0, so the <code>notch</code> does nothing there and the corner stays square. The outline follows it all.</p></div>
+<div class="cap" data-t="21.5" data-step="Result" data-live="97 characters · 100% match"><h3>6. Result: 97 characters</h3><p>In the real colors: one box, four declarations. The white is the canvas, the plum is the outline.</p></div>
+{%- endif %}
+</div>
+<div class="live"></div>
+</div>
+</div>
+<script>
+(window.AnimScenes = window.AnimScenes || {}).t1027 = (fig) => {
+  const fr = document.documentElement.lang === 'fr';
+  const $ = (s) => fig.querySelector('.t1027-' + s);
+  const live = fig.querySelector('.live');
+  const caps = [...fig.querySelectorAll('.caps .cap')];
+  const H = $('html'), corners = [...fig.querySelectorAll('.t1027-cn')];
+  const ease = (x) => (x < 0.5 ? 4 * x * x * x : 1 - Math.pow(-2 * x + 2, 3) / 2);
+  const pr = (t, a, b) => ease(Math.min(1, Math.max(0, (t - a) / (b - a))));
+  const win = (t, a, b, c, d) => Math.min(pr(t, a, b), 1 - pr(t, c, d));
+  const op = (s, v) => { $(s).style.opacity = v; };
+  const num = (v, d = 2) => v.toFixed(d).replace('.', fr ? ',' : '.');
+  return (t, step) => {
+    const teach = fig.dataset.teach === '1';
+    const fin = pr(t, 21.6, 22.6);
+    // html's box: tinted when teaching (no background in reality)
+    H.style.background = teach && fin < 1 ? `color-mix(in srgb,#cfe3ff ${100 - 100 * fin}%,transparent)` : '';
+    op('box', win(t, 0.4, 1, 7.6, 8));
+    op('l-m', win(t, 0.6, 1, 3.6, 4));
+    op('l-sz', win(t, 1.4, 1.8, 3.6, 4));
+    // 2: the outline grows past the canvas edges, then to 864px
+    const ow = 240 * pr(t, 4.6, 7.4) + 624 * pr(t, 7.4, 8);
+    H.style.outlineWidth = ow + 'px';
+    op('l-o', win(t, 4.2, 4.6, 8.1, 8.4));
+    op('l-far', win(t, 7.8, 8.2, 12.6, 13));
+    // 3: radii, with the three corner areas
+    const r = 60 * pr(t, 9, 11.5);
+    H.style.borderRadius = `0 ${r}px ${r}px`;
+    op('l-r', win(t, 8.6, 9, 12.6, 13));
+    const cn = teach ? win(t, 8.8, 9.2, 21, 21.4) : 0;
+    corners.forEach((c) => { c.style.opacity = cn; });
+    // 4-5: corner shapes, through superellipse(): round = 1, bevel = 0, notch = -infinity
+    const bev = 1 - pr(t, 13.6, 16);
+    const n = pr(t, 17.6, 20);
+    const notch = n >= 1 ? 'notch' : `superellipse(${(1 - 12 * n * n).toFixed(3)})`;
+    const bv = bev <= 0 ? 'bevel' : `superellipse(${bev.toFixed(3)})`;
+    H.style.cornerShape = t < 13.6 ? '' : `${notch} ${bv} ${notch} ${bv}`;
+    op('l-cs', win(t, 13.2, 13.6, 21, 21.4));
+    op('c-tr', win(t, 13.6, 14, 21, 21.4));
+    op('c-bl', win(t, 13.6, 14, 21, 21.4));
+    op('c-br', win(t, 17.2, 17.6, 21, 21.4));
+    op('c-tl', win(t, 17.2, 17.6, 21, 21.4));
+    let txt = '';
+    if (step === 0) txt = fr ? 'html : 120 × 120 en (140, 120)' : 'html: 120 × 120 at (140, 120)';
+    else if (step === 1) txt = `outline: ${Math.round(ow)} px` + (ow > 863.9 ? ' = 9in' : '');
+    else if (step === 2) txt = `border-radius: 0 ${Math.round(r)} ${Math.round(r)} ${Math.round(r)} px`;
+    else if (step === 3) txt = (fr ? 'haut-droit, bas-gauche : superellipse(' : 'top right, bottom left: superellipse(') + num(Math.max(0, bev)) + ')' + (bev <= 0 ? ' = bevel' : '');
+    else if (step === 4) txt = (fr ? 'bas-droit : superellipse(' : 'bottom right: superellipse(') + (n >= 1 ? '−∞) = notch' : num(1 - 12 * n * n).replace('-', '−') + ')');
+    else txt = caps[step] ? caps[step].dataset.live || '' : '';
+    live.textContent = txt;
+  };
+};
+</script>
+</figure>
