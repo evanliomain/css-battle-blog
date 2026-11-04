@@ -1,0 +1,104 @@
+<figure class="anim t1021" data-duration="26" data-scene="t1021" data-wide="-30 -30 480 360" style="--bg:#e9d97d">
+<style>
+.t1021{--yel:#e9d97d;--teal:#173c46;--bd:#f29bc4;--sh:#3a7bd5;--bu:#e8743b;--ln:#24302f}
+.t1021 .t1021-cam,.t1021 .t1021-g{left:0;top:0;width:400px;height:300px;transform-origin:200px 150px}
+.t1021 .t1021-g>*{position:absolute;box-sizing:border-box}
+.t1021 .t1021-ring{left:179px;top:129px;width:42px;height:42px;border-radius:50%;border:11px double var(--teal);opacity:0}
+.t1021 .t1021-ho{left:179px;top:129px;width:42px;height:42px;border-radius:50%;border:.6px dashed var(--ln);opacity:0}
+.t1021 .t1021-b{left:154px;top:150px;width:44px;height:21px;opacity:0}
+.t1021 .t1021-bo{left:154px;top:150px;width:44px;height:21px;border:.6px dashed var(--ln);opacity:0}
+.t1021 .t1021-so{left:158px;top:150px;width:44px;height:21px;border:.6px dashed var(--sh);opacity:0}
+.t1021 .t1021-bu{left:194px;top:144px;width:12px;height:12px;border-radius:50%;opacity:0}
+.t1021 .t1021-lab{font:10.5px/1.25 ui-monospace,SFMono-Regular,Menlo,monospace;color:#24302f;background:rgb(255 255 255 / .85);padding:1px 4px;border-radius:2px;white-space:nowrap;pointer-events:none;opacity:0;z-index:5}
+.t1021 .t1021-lab b{font-weight:600}
+</style>
+<div class="anim-col">
+<div class="stage" role="img" aria-label="{% if include.lang == "fr" %}Animation : un petit rond html à bordure double, le body qui cache un quart, son ombre en barre, la puce du li en disque, puis scale:-5 qui agrandit et retourne le tout{% else %}Animation: a small round html with a double border, the body hiding a quarter, its shadow as the bar, the li's bullet as the disc, then scale:-5 growing and flipping it all{% endif %}">
+<div class="scene">
+<div class="t1021-cam"><div class="t1021-g">
+<div class="t1021-ring"></div>
+<div class="t1021-b"></div>
+<div class="t1021-bu"></div>
+<div class="t1021-ho"></div>
+<div class="t1021-bo"></div>
+<div class="t1021-so"></div>
+</div></div>
+<div class="t1021-lab t1021-lv" style="left:330px;top:8px">{% if include.lang == "fr" %}loupe ×3{% else %}zoom ×3{% endif %}</div>
+<div class="t1021-lab t1021-l1" style="left:8px;top:8px"><b>html</b> · margin:129 179 → 42 × 42</div>
+<div class="t1021-lab t1021-l2" style="left:8px;top:8px">3mm → 11px = 4 + 3 + 4</div>
+<div class="t1021-lab t1021-l3" style="left:8px;top:8px"><b>body</b> · margin:10 12-11-36 → 44 × 21</div>
+<div class="t1021-lab t1021-l4" style="left:8px;top:8px">box-shadow:4px 0</div>
+<div class="t1021-lab t1021-l5" style="left:8px;top:8px">&lt;dd> +40px → li · x 194 · 45q/0 Courier</div>
+<div class="t1021-lab t1021-l6" style="left:8px;top:8px">scale:-5 = ×5 + {% if include.lang == "fr" %}demi-tour{% else %}half turn{% endif %}</div>
+</div>
+</div>
+<div class="legend"><span><i style="--c:var(--teal)"></i>{% if include.lang == "fr" %}bordure double de html{% else %}html's double border{% endif %}</span><span><i style="--c:var(--bd)"></i>{% if include.lang == "fr" %}body (jaune en vrai){% else %}body (yellow in reality){% endif %}</span><span><i style="--c:var(--sh)"></i>{% if include.lang == "fr" %}ombre du body (sarcelle en vrai){% else %}body's shadow (teal in reality){% endif %}</span><span><i style="--c:var(--bu)"></i>{% if include.lang == "fr" %}puce du li (sarcelle en vrai){% else %}li's bullet (teal in reality){% endif %}</span></div>
+</div>
+<div class="anim-side">
+<pre class="code" aria-hidden="true"><span data-on="5" data-tone="2">&lt;dd>&lt;li></span>&lt;style><span data-on="1">*{background:#E9D97D;color:173C46}</span>&amp;{<span data-on="1">border-radius:50%;margin:129 179</span>;<span data-on="2">border:3mm double</span>;<span data-on="6">scale:-5</span>;<span data-on="3" data-tone="2">>*{margin:10 12-11-36</span>;<span data-on="4" data-tone="2">box-shadow:4px 0</span>;<span data-on="5" data-tone="2">font:45q/0 Courier</span></pre>
+<div class="now">
+<div class="caps">
+{%- if include.lang == "fr" %}
+<div class="cap" data-t="0" data-step="html : un rond de 42px"><h3>1. html : un rond de 42px</h3><p><code>&amp;</code>, c'est <code>html</code>. Avec <code>margin:129 179</code> et le mode quirks (hauteur = 300 − 258), il fait 42×42 au centre ; <code>border-radius:50%</code> le rend rond. Son fond jaune part sur tout le canevas. <code>color:173C46</code>, sans <code>#</code>, colore bordure, ombre et puce. Le dessin est petit : on le regarde à la loupe ×3.</p></div>
+<div class="cap" data-t="3.1" data-step="3mm double : deux anneaux"><h3>2. 3mm double : deux anneaux</h3><p><code>3mm</code> font 11,3px, tracés en 11px. Une bordure <code>double</code> les partage : un trait de 4px, un vide de 3px, un trait de 4px. Sur une boîte ronde : deux anneaux fins, de rayon 21 à 17 et de 14 à 10.</p></div>
+<div class="cap" data-t="6.8" data-step="body : le cache"><h3>3. body : le cache</h3><p><code>&amp;>*</code> vise <code>head</code> (caché) et <code>body</code>. <code>margin:10 12-11-36</code> en fait une boîte de 44px de large en x=154, et en mode quirks 20 − 10 + 11 = 21px de haut en y=150. Jaune par <code>*</code>, elle cache le quart bas-gauche des anneaux.</p></div>
+<div class="cap" data-t="10.4" data-step="4px 0 : la barre"><h3>4. 4px 0 : la barre</h3><p><code>box-shadow:4px 0</code> pousse une copie du <code>body</code> de 4px à droite. Une ombre extérieure n'est pas peinte sous sa propre boîte : seule une bande de 4×21 dépasse, de x=198 à 202, dans la couleur du texte. C'est la barre.</p></div>
+<div class="cap" data-t="13.5" data-step="La puce du li : le disque"><h3>5. La puce du li : le disque</h3><p>Le <code>&lt;dd></code> décale son contenu de 40px par défaut : le <code>&lt;li></code> commence en x=194. <code>font:45q/0 Courier</code> : police de 42,5px, ligne de hauteur 0 en y=150. La puce du <code>li</code>, un disque de la couleur du texte, se peint par-dessus le reste : sur CSS Battle, 12px de large, centrée en (200, 150).</p></div>
+<div class="cap" data-t="16.6" data-step="scale:-5 : ×5 et demi-tour"><h3>6. scale:-5 : ×5 et demi-tour</h3><p>On quitte la loupe. <code>scale:-5</code> agrandit <code>html</code> et tout son contenu ×5 autour de son centre (200, 150), et le signe moins le retourne d'un demi-tour. Anneaux de 105 à 85 et de 70 à 50, cache en haut à droite (il dépasse du canevas jusqu'à x=430), barre de 20px vers le haut, disque de 60px. Le canevas ne bouge pas.</p></div>
+<div class="cap" data-t="21.8" data-step="Au pixel près" data-live="168 caractères · 100 % identique"><h3>7. Au pixel près</h3><p>Un dessin à 1/5, agrandi et retourné : l'image complète en 168 caractères.</p></div>
+{%- else %}
+<div class="cap" data-t="0" data-step="html: a 42px dot"><h3>1. html: a 42px dot</h3><p><code>&amp;</code> is <code>html</code>. With <code>margin:129 179</code> and quirks mode (height = 300 − 258), it is 42×42 in the middle; <code>border-radius:50%</code> makes it round. Its yellow background spreads to the canvas. <code>color:173C46</code>, with no <code>#</code>, colors the border, the shadow and the bullet. The drawing is small: here it is zoomed ×3.</p></div>
+<div class="cap" data-t="3.1" data-step="3mm double: two rings"><h3>2. 3mm double: two rings</h3><p><code>3mm</code> is 11.3px, drawn as 11px. A <code>double</code> border splits it: a 4px line, a 3px gap, a 4px line. On a round box: two thin rings, radius 21 to 17 and 14 to 10.</p></div>
+<div class="cap" data-t="6.8" data-step="body: the cover"><h3>3. body: the cover</h3><p><code>&amp;>*</code> matches <code>head</code> (hidden) and <code>body</code>. <code>margin:10 12-11-36</code> makes it 44px wide at x=154, and in quirks mode 20 − 10 + 11 = 21px tall at y=150. Yellow from <code>*</code>, it covers the bottom-left quarter of the rings.</p></div>
+<div class="cap" data-t="10.4" data-step="4px 0: the bar"><h3>4. 4px 0: the bar</h3><p><code>box-shadow:4px 0</code> pushes a copy of the <code>body</code> 4px to the right. An outer shadow is not painted under its own box: only a 4×21 strip sticks out, from x=198 to 202, in the text color. That is the bar.</p></div>
+<div class="cap" data-t="13.5" data-step="The li's bullet: the disc"><h3>5. The li's bullet: the disc</h3><p>The <code>&lt;dd></code> indents its content by 40px by default: the <code>&lt;li></code> starts at x=194. <code>font:45q/0 Courier</code>: a 42.5px font, a line of height 0 at y=150. The <code>li</code>'s bullet, a disc in the text color, is painted over the rest: on CSS Battle, 12px wide, centered at (200, 150).</p></div>
+<div class="cap" data-t="16.6" data-step="scale:-5: ×5 and a half turn"><h3>6. scale:-5: ×5 and a half turn</h3><p>The zoom goes away. <code>scale:-5</code> grows <code>html</code> and everything in it ×5 around its center (200, 150), and the minus sign flips it by a half turn. Rings from 105 to 85 and 70 to 50, the cover at the top right (it runs off the canvas, to x=430), a 20px bar going up, a 60px disc. The canvas does not move.</p></div>
+<div class="cap" data-t="21.8" data-step="Pixel-perfect" data-live="168 characters · 100% match"><h3>7. Pixel-perfect</h3><p>A drawing at 1/5 scale, grown and flipped: the whole picture in 168 characters.</p></div>
+{%- endif %}
+</div>
+<div class="live"></div>
+</div>
+</div>
+<script>
+(window.AnimScenes = window.AnimScenes || {}).t1021 = (fig) => {
+  const fr = document.documentElement.lang === 'fr';
+  const $ = (s) => fig.querySelector(s);
+  const cam = $('.t1021-cam'), g = $('.t1021-g'), ring = $('.t1021-ring'), B = $('.t1021-b'), bu = $('.t1021-bu'), ho = $('.t1021-ho'), bo = $('.t1021-bo'), so = $('.t1021-so'), live = $('.live');
+  const lv = $('.t1021-lv'), lab = [1, 2, 3, 4, 5, 6].map((i) => $('.t1021-l' + i));
+  const ease = (x) => (x < 0.5 ? 4 * x * x * x : 1 - Math.pow(-2 * x + 2, 3) / 2);
+  const pr = (t, a, b) => ease(Math.min(1, Math.max(0, (t - a) / (b - a))));
+  const n = (v) => (+v.toFixed(1)).toString().replace('.', fr ? ',' : '.').replace('-', '−');
+  const c = fr ? ' :' : ':';
+  const L = fr ? { bar: 'barre', bu: 'puce', at: 'en', end: '168 caractères · 100 % identique' } : { bar: 'bar', bu: 'bullet', at: 'at', end: '168 characters · 100% match' };
+  return (t, step) => {
+    const teach = fig.dataset.teach === '1' && step < 6;
+    const zoom = 3 - 2 * pr(t, 16.9, 17.8), k = pr(t, 18, 20.8);
+    cam.style.transform = `scale(${zoom})`;
+    g.style.transform = k < 1 ? `rotate(${180 * k}deg) scale(${1 + 4 * k})` : 'scale(-5)';
+    lv.style.opacity = zoom > 1.01 ? 1 : 0;
+    ring.style.opacity = pr(t, 0.3, 1);
+    ring.style.borderStyle = t >= 3.4 ? 'double' : 'solid';
+    ring.style.borderColor = t >= 3.4 ? 'var(--teal)' : 'transparent';
+    ho.style.opacity = step < 2 ? pr(t, 0.3, 1) : 0;
+    const sh = pr(t, 10.8, 12.2);
+    B.style.opacity = pr(t, 7.1, 7.9);
+    B.style.background = teach ? 'var(--bd)' : 'var(--yel)';
+    B.style.boxShadow = step >= 3 ? `${4 * sh}px 0 ${teach ? 'var(--sh)' : 'var(--teal)'}` : 'none';
+    bo.style.opacity = step === 2 || step === 3 ? 1 : 0;
+    so.style.opacity = teach && step === 3 ? sh : 0;
+    bu.style.opacity = pr(t, 13.9, 14.7);
+    bu.style.background = teach ? 'var(--bu)' : 'var(--teal)';
+    lab.forEach((l, i) => { l.style.opacity = step === i ? 1 : 0; });
+    let txt = '';
+    if (step === 0) txt = `html${c} 42 × 42 · x 179 → 221 · y 129 → 171`;
+    else if (step === 1) txt = `border${c} 3mm = 11.3 → 11 px · 4 | 3 | 4`;
+    else if (step === 2) txt = `body${c} x 154 → 198 · y 150 → 171 · 44 × 21`;
+    else if (step === 3) txt = `box-shadow${c} ${n(4 * sh)} px 0 · ${L.bar} x 198 → ${n(198 + 4 * sh)}`;
+    else if (step === 4) txt = `${L.bu}${c} 12 px ${L.at} (200${fr ? ' ; ' : ', '}150)`;
+    else if (step === 5) txt = `scale${c} ×${n(1 + 4 * k)} · ${Math.round(180 * k)}°${k >= 1 ? ' = scale(−5)' : ''}`;
+    else txt = L.end;
+    live.textContent = fr ? txt.replace(/(\d)\.(\d)/g, '$1,$2') : txt;
+  };
+};
+</script>
+</figure>
