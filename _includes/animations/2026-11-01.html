@@ -1,0 +1,104 @@
+<figure class="anim t1101" data-duration="26" data-scene="t1101" data-wide="-40 -50 480 400" style="--bg:#fff">
+<style>
+.t1101{--brown:#6d4630;--yel:#ffd23f;--pill:#e86a92;--c1:#f2a65a;--c2:#7cc4e8}
+.t1101 .t1101-h{left:0;top:-30px;width:400px;height:360px;box-sizing:border-box;border:0 solid var(--brown)}
+.t1101 .t1101-hbox{left:0;top:-30px;width:400px;height:360px;outline:2px dashed var(--yel);outline-offset:-2px;pointer-events:none}
+.t1101 .t1101-win{left:170px;top:140px;width:60px;height:20px;outline:2px dashed #e8564a;outline-offset:1px;pointer-events:none}
+.t1101 .t1101-bl{left:160px;top:150px;width:80px;height:0;border-top:3px dashed var(--yel);margin-top:-1.5px}
+.t1101 .t1101-bl::before,.t1101 .t1101-bl::after{content:"";position:absolute;top:-11.5px;height:20px;border-left:3px solid var(--yel)}
+.t1101 .t1101-bl::before{left:0}
+.t1101 .t1101-bl::after{right:0}
+.t1101 .t1101-pill{left:160px;top:61px;width:40px;height:178px;box-sizing:border-box;border:20px solid #fff;border-radius:39.685px}
+.t1101 .t1101-hk{top:70px;width:50px;height:160px;box-sizing:border-box;border:20px solid #fff}
+.t1101 .t1101-hk1{left:160px;border-left:0;border-radius:0 39.685px 39.685px 0}
+.t1101 .t1101-hk2{left:190px;border-right:0;border-radius:39.685px 0 0 39.685px}
+.t1101 .t1101-lab{font:10.5px/1.2 ui-monospace,SFMono-Regular,Menlo,monospace;color:#24302f;background:rgb(255 255 255 / .85);padding:1px 3px;border-radius:2px;white-space:nowrap;pointer-events:none;z-index:53}
+.t1101 .t1101-lab b{font-weight:600}
+.t1101[data-view="wide"] .t1101-lab{font-size:13px}
+</style>
+<div class="anim-col">
+<div class="stage" role="img" aria-label="{% if include.lang == "fr" %}Animation : la bordure brune de html laisse une fenêtre blanche, la barre du milieu ; le body fait 80px de large ; le a, une seule pilule dans le Chrome actuel, devient deux crochets sur CSS Battle (dessinés ici d'après la cible){% else %}Animation: html's brown border leaves a white window, the middle bar; body is 80px wide; the a, a single pill in today's Chrome, becomes two hooks on CSS Battle (drawn here from the target){% endif %}">
+<div class="scene">
+<div class="t1101-h"></div>
+<div class="t1101-hbox"></div>
+<div class="t1101-win"></div>
+<div class="t1101-bl"></div>
+<div class="t1101-pill"></div>
+<div class="t1101-hk t1101-hk1"></div>
+<div class="t1101-hk t1101-hk2"></div>
+<div class="t1101-lab t1101-lab-h" style="left:6px;top:-26px"><b>html</b> · 400 × 360 · border 180q = 170px</div>
+<div class="t1101-lab t1101-lab-w" style="left:236px;top:142px">60 × 20</div>
+<div class="t1101-lab t1101-lab-b" style="left:246px;top:142px"><b>body</b> · 80 × 0</div>
+<div class="t1101-lab t1101-lab-p" style="left:206px;top:64px">Chrome 156 · 40 × 178</div>
+<div class="t1101-lab t1101-lab-k" style="left:8px;top:8px">{% if include.lang == "fr" %}CSS Battle · dessinés d'après la cible{% else %}CSS Battle · drawn from the target{% endif %}</div>
+</div>
+</div>
+<div class="legend"><span><i style="--c:var(--brown)"></i>{% if include.lang == "fr" %}bordure de html (170px){% else %}html's border (170px){% endif %}</span><span><i style="--c:var(--yel)"></i>{% if include.lang == "fr" %}body : 80px de large, 0 de haut{% else %}body: 80px wide, 0 tall{% endif %}</span><span><i style="--c:var(--pill)"></i>{% if include.lang == "fr" %}le a dans Chrome 156 : une pilule (blanche en vrai){% else %}the a in Chrome 156: one pill (white in reality){% endif %}</span><span><i style="--c:var(--c1)"></i>{% if include.lang == "fr" %}crochet « ) » sur CSS Battle (blanc en vrai){% else %}“)” hook on CSS Battle (white in reality){% endif %}</span><span><i style="--c:var(--c2)"></i>{% if include.lang == "fr" %}crochet « ( » (blanc en vrai){% else %}“(” hook (white in reality){% endif %}</span></div>
+</div>
+<div class="anim-side">
+<pre class="code" aria-hidden="true"> <span data-on="4 5">&lt;a></span>   &lt;style>a{<span data-on="4 5">border:5vw solid#fff;border-radius:42Q</span>}&amp;{>*{<span data-on="3" data-tone="2">margin:10-10</span>}<span data-on="2">border:180q solid#6D4630;margin:-30 0</span>;<span data-on="4 5">font:127q/0'Serif</span></pre>
+<div class="now" aria-live="polite">
+<div class="caps">
+{%- if include.lang == "fr" %}
+<div class="cap" data-t="0" data-step="Un canevas blanc"><h3>1. Un canevas blanc</h3><p>Aucun élément n'a de fond : le canevas reste blanc. Tout le brun de la cible vient d'une bordure.</p></div>
+<div class="cap" data-t="2.5" data-step="html : une bordure de 170px"><h3>2. html : une bordure de 170px</h3><p><code>&amp;</code> est <code>html</code>. <code>border:180q</code> (170px) brune sur les quatre côtés, et <code>margin:-30 0</code> : en mode quirks, sa boîte fait 400×360, en (0, −30), et dépasse de 30px en haut et en bas. Il ne reste au milieu que sa zone de contenu, 60×20 en (170, 140), où le canevas blanc se voit : la barre du milieu.</p></div>
+<div class="cap" data-t="8" data-step="body : 80px de large"><h3>3. body : 80px de large</h3><p><code>&amp;{>*{…}}</code> vise les enfants de <code>html</code>. <code>margin:10-10</code> donne au <code>body</code> 60 + 20 = 80px de large, de x = 160 à 240, et une hauteur nulle, à y = 150.</p></div>
+<div class="cap" data-t="12" data-step="Le a, dans le Chrome actuel"><h3>4. Le a, dans le Chrome actuel</h3><p>Le <code>&lt;a></code> est en ligne et ne contient que des espaces. Bordure blanche de 20px (<code>5vw</code>), coins de 42Q (≈ 40px), police <code>Serif</code> de 127q (120px), interligne 0. Dans Chrome 156, il donne une seule pilule de 40×178 : pas la cible.</p></div>
+<div class="cap" data-t="17" data-step="Sur CSS Battle : deux crochets"><h3>5. Sur CSS Battle : deux crochets</h3><p>Sur CSS Battle, le même code donne deux crochets de 50×160 qui se chevauchent sur le pied : « ) » de x = 160 à 210, « ( » de 190 à 240. Même trait de 20px, même rayon de 40px que le <code>&lt;a></code>. Je n'ai pas pu reproduire comment le Chrome du juge, plus ancien, y arrive : ils sont dessinés ici d'après la cible.</p></div>
+<div class="cap" data-t="22" data-step="100 % sur CSS Battle" data-live="128 caractères · 100 % sur CSS Battle"><h3>6. 100 % sur CSS Battle</h3><p>Une bordure pour le fond et la barre, un lien plein d'espaces pour les crochets : 100 % sur CSS Battle, en 128 caractères. Les crochets restent dessinés d'après la cible.</p></div>
+{%- else %}
+<div class="cap" data-t="0" data-step="A white canvas"><h3>1. A white canvas</h3><p>No element has a background: the canvas stays white. All the brown of the target comes from a border.</p></div>
+<div class="cap" data-t="2.5" data-step="html: a 170px border"><h3>2. html: a 170px border</h3><p><code>&amp;</code> is <code>html</code>. A brown <code>border:180q</code> (170px) on all four sides, and <code>margin:-30 0</code>: in quirks mode its box is 400×360, at (0, −30), sticking out 30px at the top and bottom. All that is left in the middle is its content area, 60×20 at (170, 140), where the white canvas shows: the middle bar.</p></div>
+<div class="cap" data-t="8" data-step="body: 80px wide"><h3>3. body: 80px wide</h3><p><code>&amp;{>*{…}}</code> matches the children of <code>html</code>. <code>margin:10-10</code> makes the <code>body</code> 60 + 20 = 80px wide, from x = 160 to 240, with no height, at y = 150.</p></div>
+<div class="cap" data-t="12" data-step="The a, in today's Chrome"><h3>4. The a, in today's Chrome</h3><p>The <code>&lt;a></code> is inline and holds only spaces. A 20px white border (<code>5vw</code>), 42Q corners (≈ 40px), a 127q (120px) <code>Serif</code> font, line height 0. In Chrome 156, it draws one 40×178 pill: not the target.</p></div>
+<div class="cap" data-t="17" data-step="On CSS Battle: two hooks"><h3>5. On CSS Battle: two hooks</h3><p>On CSS Battle, the same code gives two 50×160 hooks overlapping on the stem: “)” from x = 160 to 210, “(” from 190 to 240. Same 20px stroke, same 40px radius as the <code>&lt;a></code>. I could not reproduce how the judge's older Chrome gets there: they are drawn here from the target.</p></div>
+<div class="cap" data-t="22" data-step="100% on CSS Battle" data-live="128 characters · 100% on CSS Battle"><h3>6. 100% on CSS Battle</h3><p>A border for the background and the bar, a link full of spaces for the hooks: 100% on CSS Battle, in 128 characters. The hooks are still drawn from the target.</p></div>
+{%- endif %}
+</div>
+<div class="live"></div>
+</div>
+</div>
+<script>
+(window.AnimScenes = window.AnimScenes || {}).t1101 = (fig) => {
+  const fr = document.documentElement.lang === 'fr';
+  const $ = (s) => fig.querySelector(s);
+  const H = $('.t1101-h'), hbox = $('.t1101-hbox'), win = $('.t1101-win'), bl = $('.t1101-bl'), pill = $('.t1101-pill'), hk1 = $('.t1101-hk1'), hk2 = $('.t1101-hk2');
+  const lab = (k) => $('.t1101-lab-' + k), live = $('.live');
+  const caps = [...fig.querySelectorAll('.caps .cap')];
+  const ease = (x) => (x < 0.5 ? 4 * x * x * x : 1 - Math.pow(-2 * x + 2, 3) / 2);
+  const pr = (t, a, b) => ease(Math.min(1, Math.max(0, (t - a) / (b - a))));
+  const win2 = (t, a, b, f = 0.6) => pr(t, a, a + f) * (1 - pr(t, b - f, b));
+  const L = fr
+    ? { c: ' :', nb: 'html, body, a : aucun fond', cont: 'contenu', ok: "d'après la cible" }
+    : { c: ':', nb: 'html, body, a: no background', cont: 'content', ok: 'from the target' };
+  return (t, step) => {
+    const teach = fig.dataset.teach === '1';
+    const real = !teach || t >= 22;
+    const w = 170 * pr(t, 3, 6.5);
+    H.style.borderWidth = `${w}px`;
+    hbox.style.opacity = win2(t, 2.7, 8);
+    lab('h').style.opacity = win2(t, 2.9, 8);
+    win.style.opacity = win2(t, 6.4, 8.2);
+    lab('w').style.opacity = win2(t, 6.4, 8);
+    bl.style.opacity = win2(t, 8.2, 17);
+    lab('b').style.opacity = win2(t, 8.4, 12);
+    pill.style.opacity = win2(t, 12.3, 18.2);
+    pill.style.borderColor = real ? '#fff' : 'var(--pill)';
+    lab('p').style.opacity = win2(t, 12.5, 17.4);
+    hk1.style.opacity = pr(t, 17.4, 18.2);
+    hk2.style.opacity = pr(t, 18, 18.8);
+    hk1.style.borderColor = real ? '#fff' : 'var(--c1)';
+    hk2.style.borderColor = real ? '#fff' : 'var(--c2)';
+    lab('k').style.opacity = win2(t, 18, 22);
+    let txt = '';
+    if (step === 0) txt = L.nb;
+    else if (step === 1) txt = `border${L.c} ${Math.round(w)}px · ${L.cont} ${Math.round(400 - 2 * w)} × ${Math.round(360 - 2 * w)}`;
+    else if (step === 2) txt = `body${L.c} x 160 → 240, y 150 · 80 × 0`;
+    else if (step === 3) txt = `a (Chrome 156)${L.c} 40 × 178 ${fr ? 'en' : 'at'} (160, 61)`;
+    else if (step === 4) txt = fr ? `« ) » x 160 → 210 · « ( » x 190 → 240 · 50 × 160 (${L.ok})` : `“)” x 160 → 210 · “(” x 190 → 240 · 50 × 160 (${L.ok})`;
+    else txt = caps[step] ? caps[step].dataset.live || '' : '';
+    live.textContent = txt;
+  };
+};
+</script>
+</figure>
