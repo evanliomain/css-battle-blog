@@ -1,0 +1,127 @@
+<figure class="anim t1025" data-duration="29" data-scene="t1025" data-wide="-50 -40 500 380" style="--bg:#809e97">
+<style>
+.t1025{--dark:#36443b;--tb:#b9d3cc;--tp:#c4553a;--mark:#fef3c7}
+.t1025 .t1025-html{left:50px;top:60px;width:300px;height:180px;box-sizing:border-box;border:33q solid var(--dark);opacity:0}
+.t1025 .t1025-body{left:-1px;top:9px;width:402px;height:282px;box-sizing:border-box;border:33q solid var(--dark);background:#809e97;opacity:0}
+.t1025 .t1025-p{position:absolute;box-sizing:border-box;left:139px;top:101px;width:62px;height:62px;border:33q solid var(--dark);background:#809e97;opacity:0}
+.t1025 .t1025-box{box-sizing:border-box;border:1.5px dashed var(--mark);opacity:0}
+.t1025 svg{left:0;top:0;width:400px;height:300px;overflow:visible}
+.t1025 polygon{fill:none;stroke:var(--mark);stroke-width:1.5;stroke-dasharray:5 4;opacity:0}
+.t1025 .t1025-lab{z-index:53;font:10.5px/1.25 ui-monospace,SFMono-Regular,Menlo,monospace;color:#24302f;background:rgb(255 255 255 / .85);padding:1px 4px;border-radius:2px;white-space:nowrap;pointer-events:none;opacity:0}
+.t1025 .t1025-lab b{font-weight:600}
+</style>
+<div class="anim-col">
+<div class="stage" role="img" aria-label="{% if include.lang == "fr" %}Construction animée de la cible : le cadre de html, le body taillé en grand triangle couleur fond, puis le p agrandi et taillé en triangle sombre{% else %}Animated build of the target: html's frame, body cut into a big background-colored triangle, then the p, scaled up and cut into a dark triangle{% endif %}">
+<div class="scene">
+<i class="t1025-html"></i>
+<div class="t1025-body"><i class="t1025-p"></i></div>
+<i class="t1025-box t1025-hbox" style="left:50px;top:60px;width:300px;height:180px"></i>
+<i class="t1025-box t1025-bbox"></i>
+<i class="t1025-box t1025-pbox"></i>
+<svg viewBox="0 0 400 300" aria-hidden="true"><polygon class="t1025-tb"/><polygon class="t1025-tp"/></svg>
+<b class="t1025-lab t1025-l-html" style="left:54px;top:244px"><b>html</b> · margin:60 50 → 300 × 180 · 33q ≈ 31px</b>
+<b class="t1025-lab t1025-l-body" style="left:40px;top:44px"><b>body</b> · margin:-82 → 402 × 282</b>
+<b class="t1025-lab t1025-l-clip" style="left:40px;top:44px">polygon(50%57%,68%89%,32%89%)</b>
+<b class="t1025-lab t1025-l-notch" style="left:282px;top:244px">{% if include.lang == "fr" %}l'encoche{% else %}the notch{% endif %}</b>
+<b class="t1025-lab t1025-l-p" style="left:40px;top:44px"><b>p</b> · margin:101 139-140 → 62 × 62</b>
+<b class="t1025-lab t1025-l-sc" style="left:40px;top:44px">scale:5.5 4 → 341 × 248</b>
+<b class="t1025-lab t1025-l-pc" style="left:40px;top:44px">{% if include.lang == "fr" %}même polygon sur le p{% else %}same polygon on the p{% endif %}</b>
+<b class="t1025-lab t1025-l-cut" style="left:270px;top:264px">{% if include.lang == "fr" %}coupé à y = 260{% else %}cut at y = 260{% endif %}</b>
+</div>
+</div>
+<div class="legend"><span><i style="--c:var(--dark)"></i>{% if include.lang == "fr" %}bordure de html{% else %}html's border{% endif %}</span><span><i style="--c:var(--tb)"></i>{% if include.lang == "fr" %}fond du body (couleur du fond en vrai){% else %}body's background (background color in reality){% endif %}</span><span><i style="--c:var(--tp)"></i>{% if include.lang == "fr" %}bordure du p (sombre en vrai){% else %}p's border (dark in reality){% endif %}</span></div>
+</div>
+<div class="anim-side">
+<pre class="code" aria-hidden="true"><span data-on="4">&lt;p></span>&lt;STYLE>*{<span data-on="1">background:#809E97</span>;<span data-on="1">border:33q solid#36443B</span>;<span data-on="1">margin:60 50</span>;*{<span data-on="2" data-tone="2">margin:-82</span>;*{<span data-on="4">margin:101 139-140</span>;<span data-on="5">scale:5.5 4</span>}<span data-on="3 6" data-tone="2">clip-path:polygon(50%57%,68%89%,32%89%</span></pre>
+<div class="now" aria-live="polite">
+<div class="caps">
+{%- if include.lang == "fr" %}
+<div class="cap" data-t="0" data-step="html : le cadre"><h3>1. html : le cadre</h3><p><code>*</code> touche d'abord <code>html</code>. Son fond part sur le canevas. <code>margin:60 50</code> et le mode quirks en font une boîte de 300 × 180, et sa bordure de <code>33q</code> (31px) est le cadre.</p></div>
+<div class="cap" data-t="4" data-step="body : une grande boîte"><h3>2. body : une grande boîte</h3><p>Le <code>body</code> reçoit le même fond et la même bordure. <code>margin:-82</code> le fait déborder de 82px autour du contenu de <code>html</code> : 402 × 282 en (−1, 9), un pixel de plus que le canevas de chaque côté. Peint par-dessus, il cache le cadre. Ici en vert plus clair pour qu'on le voie.</p></div>
+<div class="cap" data-t="8.5" data-step="clip-path : un triangle couleur fond"><h3>3. clip-path : un triangle couleur fond</h3><p><code>clip-path</code> ne garde du <code>body</code> qu'un triangle, en pourcentages de sa boîte : pointe en (200, 170), base à y = 260. Ce triangle tombe dans le fond du body, couleur fond. Sur la barre du bas du cadre, il fait l'encoche.</p></div>
+<div class="cap" data-t="13.5" data-step="Le p : rien que de la bordure"><h3>4. Le p : rien que de la bordure</h3><p>Le <code>&lt;p></code> est dans le <code>body</code>. <code>margin:101 139-140</code> ne lui laisse aucune largeur : il fait 62 × 62, rien que ses bordures sombres (en corail ici). Il est déjà recoupé par le triangle de son parent.</p></div>
+<div class="cap" data-t="17.5" data-step="scale:5.5 4"><h3>5. scale:5.5 4</h3><p><code>scale:5.5 4</code> l'agrandit autour de son centre (200, 172) : 341 × 248. Il couvre tout le triangle du body, qui prend la couleur de sa bordure.</p></div>
+<div class="cap" data-t="21.5" data-step="Le même polygon sur le p"><h3>6. Le même polygon sur le p</h3><p>Le <code>p</code> a le même <code>clip-path</code>, sur sa propre boîte : un triangle un peu plus petit et plus bas (pointe à y = 189). Sa base, à y = 269, est recoupée par celle du body à y = 260. Entre les deux triangles, la bande couleur fond reste : c'est l'encoche.</p></div>
+<div class="cap" data-t="26" data-step="Résultat" data-live="152 caractères · 100 % identique"><h3>7. Résultat : 152 caractères</h3><p>Dans les vraies couleurs : trois boîtes, une seule règle de découpe. Le body est couleur fond, le p sombre comme le cadre.</p></div>
+{%- else %}
+<div class="cap" data-t="0" data-step="html: the frame"><h3>1. html: the frame</h3><p><code>*</code> matches <code>html</code> first. Its background goes to the canvas. <code>margin:60 50</code> and quirks mode make it a 300 × 180 box, and its <code>33q</code> border (31px) is the frame.</p></div>
+<div class="cap" data-t="4" data-step="body: one big box"><h3>2. body: one big box</h3><p>The <code>body</code> gets the same background and the same border. <code>margin:-82</code> makes it stick out 82px around <code>html</code>'s content: 402 × 282 at (−1, 9), one pixel wider than the canvas on each side. Painted on top, it hides the frame. Shown in a lighter green here so you can see it.</p></div>
+<div class="cap" data-t="8.5" data-step="clip-path: a background-colored triangle"><h3>3. clip-path: a background-colored triangle</h3><p><code>clip-path</code> keeps only a triangle of the <code>body</code>, in percentages of its box: apex at (200, 170), base at y = 260. That triangle falls on the body's background, which is the background color. Over the frame's bottom bar, it makes the notch.</p></div>
+<div class="cap" data-t="13.5" data-step="The p: nothing but border"><h3>4. The p: nothing but border</h3><p>The <code>&lt;p></code> is inside the <code>body</code>. <code>margin:101 139-140</code> leaves it no width: it is 62 × 62, nothing but its dark borders (coral here). It is already clipped by its parent's triangle.</p></div>
+<div class="cap" data-t="17.5" data-step="scale:5.5 4"><h3>5. scale:5.5 4</h3><p><code>scale:5.5 4</code> blows it up around its center (200, 172): 341 × 248. It covers the whole body triangle, which takes the color of its border.</p></div>
+<div class="cap" data-t="21.5" data-step="The same polygon on the p"><h3>6. The same polygon on the p</h3><p>The <code>p</code> has the same <code>clip-path</code>, on its own box: a slightly smaller, lower triangle (apex at y = 189). Its base, at y = 269, is cut by the body's base at y = 260. Between the two triangles, a band of background color is left: that is the notch.</p></div>
+<div class="cap" data-t="26" data-step="Result" data-live="152 characters · 100% match"><h3>7. Result: 152 characters</h3><p>In the real colors: three boxes, one clipping rule. The body is background-colored, the p dark like the frame.</p></div>
+{%- endif %}
+</div>
+<div class="live"></div>
+</div>
+</div>
+<script>
+(window.AnimScenes = window.AnimScenes || {}).t1025 = (fig) => {
+  const fr = document.documentElement.lang === 'fr';
+  const $ = (s) => fig.querySelector('.t1025-' + s);
+  const live = fig.querySelector('.live');
+  const caps = [...fig.querySelectorAll('.caps .cap')];
+  const ease = (x) => (x < 0.5 ? 4 * x * x * x : 1 - Math.pow(-2 * x + 2, 3) / 2);
+  const pr = (t, a, b) => ease(Math.min(1, Math.max(0, (t - a) / (b - a))));
+  const win = (t, a, b, c, d) => Math.min(pr(t, a, b), 1 - pr(t, c, d));
+  const lerp = (a, b, m) => a + (b - a) * m;
+  const num = (v, d = 1) => v.toFixed(d).replace('.', fr ? ',' : '.');
+  const el = {};
+  ['html', 'body', 'p', 'hbox', 'bbox', 'pbox', 'tb', 'tp', 'l-html', 'l-body', 'l-clip', 'l-notch', 'l-p', 'l-sc', 'l-pc', 'l-cut'].forEach((k) => { el[k] = $(k); });
+  const op = (k, v) => { el[k].style.opacity = v; };
+  // a rectangle (0 0,100% 0,100% 100%,0 100%) folding into the triangle (apex doubled)
+  const RECT = [[0, 0], [100, 0], [100, 100], [0, 100]];
+  const TRI = [[50, 57], [50, 57], [68, 89], [32, 89]];
+  const poly = (m) => `polygon(${RECT.map((r, i) => `${lerp(r[0], TRI[i][0], m)}% ${lerp(r[1], TRI[i][1], m)}%`).join(',')})`;
+  const pts = (x, y, w, h) => TRI.slice(1).concat([TRI[0]]).map(([a, b]) => `${x + w * a / 100},${y + h * b / 100}`).join(' ');
+  el.tb.setAttribute('points', pts(-1, 9, 402, 282));
+  el.tp.setAttribute('points', pts(29.5, 48, 341, 248));
+  return (t, step) => {
+    const teach = fig.dataset.teach === '1';
+    const fin = pr(t, 26.2, 27.4);
+    const mix = (c, real) => (teach && fin < 1 ? `color-mix(in srgb,${real} ${100 * fin}%,${c})` : real);
+    // 1: html
+    op('html', pr(t, 0.4, 1.2));
+    op('hbox', win(t, 0.4, 0.8, 3.6, 4));
+    op('l-html', win(t, 0.6, 1, 3.6, 4));
+    // 2: body, a light tint for its background when teaching
+    const b = pr(t, 4.4, 6);
+    Object.assign(el.bbox.style, { left: lerp(81, -1, b) + 'px', top: lerp(91, 9, b) + 'px', width: lerp(238, 402, b) + 'px', height: lerp(118, 282, b) + 'px' });
+    op('bbox', win(t, 4.1, 4.4, 8.2, 8.5));
+    op('body', pr(t, 6, 6.8));
+    op('l-body', win(t, 4.2, 4.6, 8.2, 8.5));
+    el.body.style.background = mix('#b9d3cc', '#809e97');
+    el.body.style.clipPath = poly(pr(t, 9, 11));
+    op('tb', Math.min(pr(t, 11, 11.4), 1 - pr(t, 25.6, 26)));
+    op('l-clip', win(t, 8.6, 9, 13.2, 13.5));
+    op('l-notch', win(t, 11.4, 11.8, 13.2, 13.5));
+    // 4: the p, all border (coral when teaching)
+    el.p.style.borderColor = mix('#c4553a', '#36443b');
+    op('p', pr(t, 14, 14.6));
+    const s = pr(t, 18, 20.4);
+    const sx = lerp(1, 5.5, s), sy = lerp(1, 4, s);
+    el.p.style.scale = `${sx} ${sy}`;
+    const pw = 62 * sx, ph = 62 * sy;
+    Object.assign(el.pbox.style, { left: (200 - pw / 2) + 'px', top: (172 - ph / 2) + 'px', width: pw + 'px', height: ph + 'px' });
+    op('pbox', win(t, 13.8, 14.2, 21.2, 21.5));
+    op('l-p', win(t, 13.8, 14.2, 17.2, 17.5));
+    op('l-sc', win(t, 17.6, 18, 21.2, 21.5));
+    // 6: the same polygon on the p
+    el.p.style.clipPath = poly(pr(t, 22, 24));
+    op('tp', win(t, 24, 24.4, 25.6, 26));
+    op('l-pc', win(t, 21.6, 22, 25.6, 26));
+    op('l-cut', win(t, 24, 24.4, 25.6, 26));
+    let txt = '';
+    if (step === 0) txt = fr ? 'html : 300 × 180 en (50, 60) · bordure 33q ≈ 31,2 px' : 'html: 300 × 180 at (50, 60) · border 33q ≈ 31.2 px';
+    else if (step === 1) txt = fr ? 'body : 402 × 282 en (−1, 9)' : 'body: 402 × 282 at (−1, 9)';
+    else if (step === 2) txt = fr ? 'triangle du body : (200, 170) · (272, 260) · (128, 260)' : 'body triangle: (200, 170) · (272, 260) · (128, 260)';
+    else if (step === 3) txt = fr ? 'p : 62 × 62 en (169, 141)' : 'p: 62 × 62 at (169, 141)';
+    else if (step === 4) txt = `scale ${num(sx, 2)} ${num(sy, 2)} → ${num(pw)} × ${num(ph)}`;
+    else if (step === 5) txt = fr ? 'triangle du p : pointe y ≈ 189 · base y ≈ 269, coupée à 260' : 'p triangle: apex y ≈ 189 · base y ≈ 269, cut at 260';
+    else txt = caps[step] ? caps[step].dataset.live || '' : '';
+    live.textContent = txt;
+  };
+};
+</script>
+</figure>
