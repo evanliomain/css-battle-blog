@@ -1,0 +1,99 @@
+<figure class="anim t1031" data-duration="34" data-scene="t1031" data-wide="-60 -170 560 630" style="--bg:#62306d">
+<style>
+.t1031{--yel:#f7ec7d;--ch:#f28c38;--cb:#4fc3d9}
+.t1031 .t1031-ring{left:0;top:0;width:400px;height:300px;background:radial-gradient(1q,#62306d 53q,#f7ec7d 0 80px,#62306d)}
+.t1031 .t1031-h{left:88px;top:-76px;width:30px;height:165px}
+.t1031 .t1031-b{left:176px;top:-152px;width:142px;height:30px}
+.t1031 .t1031-box{outline:2px dashed #fff;outline-offset:-2px;pointer-events:none}
+.t1031 .t1031-sq{left:120px;top:70px;width:160px;height:160px;outline:2px dashed #fff;outline-offset:-2px;pointer-events:none}
+.t1031 .t1031-lab{font:10.5px/1.2 ui-monospace,SFMono-Regular,Menlo,monospace;color:#24302f;background:rgb(255 255 255 / .85);padding:1px 3px;border-radius:2px;white-space:nowrap;pointer-events:none;z-index:53}
+.t1031 .t1031-lab b{font-weight:600}
+.t1031[data-view="wide"] .t1031-lab{font-size:16px}
+</style>
+<div class="anim-col">
+<div class="stage" role="img" aria-label="{% if include.lang == "fr" %}Animation : l'anneau en dégradé fixé sur le canevas, puis deux boîtes invisibles hors du canevas, html et body, dont les trois mêmes ombres dessinent les quatre barres{% else %}Animation: the ring as a fixed gradient on the canvas, then two invisible boxes off the canvas, html and body, whose three shared shadows draw the four bars{% endif %}">
+<div class="scene">
+<div class="t1031-ring"></div>
+<div class="t1031-h"></div>
+<div class="t1031-b"></div>
+<div class="t1031-box t1031-hbox" style="left:88px;top:-76px;width:30px;height:165px"></div>
+<div class="t1031-box t1031-bbox" style="left:176px;top:-152px;width:142px;height:30px"></div>
+<div class="t1031-sq"></div>
+<div class="t1031-lab t1031-lab-g" style="left:8px;top:8px">53q ≈ 50px · 5em = 80px · fixed</div>
+<div class="t1031-lab t1031-lab-h" style="left:122px;top:4px"><b>html</b> · 30 × 165</div>
+<div class="t1031-lab t1031-lab-b" style="left:322px;top:-150px"><b>body</b> · 142 × 30</div>
+</div>
+</div>
+<div class="legend"><span><i style="--c:var(--ch)"></i>{% if include.lang == "fr" %}html et ses ombres (jaunes en vrai){% else %}html and its shadows (yellow in reality){% endif %}</span><span><i style="--c:var(--cb)"></i>{% if include.lang == "fr" %}body et ses ombres (jaunes en vrai){% else %}body and its shadows (yellow in reality){% endif %}</span><span><i style="--c:var(--yel)"></i>{% if include.lang == "fr" %}l'anneau : le dégradé fixé{% else %}the ring: the fixed gradient{% endif %}</span></div>
+</div>
+<div class="anim-side">
+<pre class="code" aria-hidden="true">&lt;style>*{<span data-on="2 3">margin:-76-200 211 88</span>;box-shadow:<span data-on="4">8vw 74vh</span>,<span data-on="5">54vh 4em</span>,<span data-on="6">-42vh 88vw</span>;<span data-on="4 5 6">color:f7ec7d</span>;<span data-on="1">background:radial-gradient(1q,#62306d 53q,#f7ec7d 0 5em,#62306d)fixed</span>}&amp;{<span data-on="2">width:30</span></pre>
+<div class="now" aria-live="polite">
+<div class="caps">
+{%- if include.lang == "fr" %}
+<div class="cap" data-t="0" data-step="L'anneau, fixé sur le canevas"><h3>1. L'anneau, fixé sur le canevas</h3><p>Le fond de <code>html</code> part sur le canevas : un cercle prune jusqu'à 53q (50px), jaune jusqu'à 5em (80px), prune au-delà. <code>fixed</code> le cale sur la fenêtre de 400×300 : l'anneau tombe pile au centre, quelle que soit la boîte de <code>html</code>.</p></div>
+<div class="cap" data-t="4" data-step="html : une boîte hors champ"><h3>2. html : une boîte hors champ</h3><p><code>&amp;{width:30}</code> et <code>margin:-76…88</code> placent <code>html</code> en (88, −76). En mode quirks, sa hauteur remplit la fenêtre moins ses marges : 300 + 76 − 211 = 165. Une boîte de 30×165 qui dépasse en haut (vue large), et invisible : son fond est sur le canevas.</p></div>
+<div class="cap" data-t="9" data-step="body : encore plus haut"><h3>3. body : encore plus haut</h3><p><code>body</code> reçoit les mêmes marges, dans la boîte de <code>html</code>. Largeur : 30 − 88 + 200 = 142. Hauteur, toujours par le mode quirks : 165 + 76 − 211 = 30. Une boîte de 142×30 en (176, −152), tout entière au-dessus du canevas.</p></div>
+<div class="cap" data-t="14" data-step="Ombre 1 : deux barres"><h3>4. Ombre 1 : deux barres</h3><p>Les deux boîtes ont les mêmes trois ombres, de la couleur de <code>color</code>. La première, <code>8vw 74vh</code> (32px, 222px) : copie de <code>html</code> → la barre verticale en bas à gauche ; copie de <code>body</code> → la barre horizontale en haut à droite.</p></div>
+<div class="cap" data-t="18.5" data-step="Ombre 2 : une barre"><h3>5. Ombre 2 : une barre</h3><p><code>54vh 4em</code> (162px, 64px) : la copie de <code>html</code> fait la barre verticale en haut à droite. Celle de <code>body</code> tombe hors du canevas.</p></div>
+<div class="cap" data-t="23" data-step="Ombre 3 : la dernière barre"><h3>6. Ombre 3 : la dernière barre</h3><p><code>-42vh 88vw</code> (−126px, 352px) : cette fois, c'est la copie de <code>body</code> qui sert, la barre horizontale en bas à gauche. Celle de <code>html</code> sort du canevas.</p></div>
+<div class="cap" data-t="27.5" data-step="Les coins carrés"><h3>7. Les coins carrés</h3><p>Les barres vont jusqu'à l'axe de l'anneau : là où elles se croisent, elles bouchent les coins haut-droit et bas-gauche du carré qui l'entoure. Ce qui tombe sur l'anneau est jaune sur jaune. L'anneau reste un simple dégradé.</p></div>
+<div class="cap" data-t="30" data-step="Résultat" data-live="164 caractères · 100 % identique"><h3>8. Résultat : 164 caractères</h3><p>Un dégradé, deux boîtes invisibles, trois ombres : l'image complète, au pixel près.</p></div>
+{%- else %}
+<div class="cap" data-t="0" data-step="The ring, fixed on the canvas"><h3>1. The ring, fixed on the canvas</h3><p>The background of <code>html</code> goes to the canvas: a circle, plum up to 53q (50px), yellow up to 5em (80px), plum beyond. <code>fixed</code> pins it to the 400×300 window: the ring lands right in the middle, whatever the box of <code>html</code>.</p></div>
+<div class="cap" data-t="4" data-step="html: a box off the frame"><h3>2. html: a box off the frame</h3><p><code>&amp;{width:30}</code> and <code>margin:-76…88</code> place <code>html</code> at (88, −76). In quirks mode, its height fills the window minus its margins: 300 + 76 − 211 = 165. A 30×165 box that sticks out at the top (wide view), and invisible: its background is on the canvas.</p></div>
+<div class="cap" data-t="9" data-step="body: even higher"><h3>3. body: even higher</h3><p><code>body</code> gets the same margins, inside the box of <code>html</code>. Width: 30 − 88 + 200 = 142. Height, again by quirks mode: 165 + 76 − 211 = 30. A 142×30 box at (176, −152), entirely above the canvas.</p></div>
+<div class="cap" data-t="14" data-step="Shadow 1: two bars"><h3>4. Shadow 1: two bars</h3><p>Both boxes have the same three shadows, in the color of <code>color</code>. The first one, <code>8vw 74vh</code> (32px, 222px): the copy of <code>html</code> → the vertical bar at the bottom left; the copy of <code>body</code> → the horizontal bar at the top right.</p></div>
+<div class="cap" data-t="18.5" data-step="Shadow 2: one bar"><h3>5. Shadow 2: one bar</h3><p><code>54vh 4em</code> (162px, 64px): the copy of <code>html</code> makes the vertical bar at the top right. The one of <code>body</code> lands outside the canvas.</p></div>
+<div class="cap" data-t="23" data-step="Shadow 3: the last bar"><h3>6. Shadow 3: the last bar</h3><p><code>-42vh 88vw</code> (−126px, 352px): this time the copy of <code>body</code> is the useful one, the horizontal bar at the bottom left. The one of <code>html</code> leaves the canvas.</p></div>
+<div class="cap" data-t="27.5" data-step="The square corners"><h3>7. The square corners</h3><p>The bars run to the axis of the ring: where they cross, they fill the top right and bottom left corners of the square around it. What lands on the ring is yellow on yellow. The ring stays a plain gradient.</p></div>
+<div class="cap" data-t="30" data-step="Result" data-live="164 characters · 100% match"><h3>8. Result: 164 characters</h3><p>One gradient, two invisible boxes, three shadows: the whole picture, pixel-perfect.</p></div>
+{%- endif %}
+</div>
+<div class="live"></div>
+</div>
+</div>
+<script>
+(window.AnimScenes = window.AnimScenes || {}).t1031 = (fig) => {
+  const fr = document.documentElement.lang === 'fr';
+  const $ = (s) => fig.querySelector(s);
+  const ring = $('.t1031-ring'), H = $('.t1031-h'), B = $('.t1031-b'), hbox = $('.t1031-hbox'), bbox = $('.t1031-bbox'), sq = $('.t1031-sq');
+  const labG = $('.t1031-lab-g'), labH = $('.t1031-lab-h'), labB = $('.t1031-lab-b'), live = $('.live');
+  const caps = [...fig.querySelectorAll('.caps .cap')];
+  const ease = (x) => (x < 0.5 ? 4 * x * x * x : 1 - Math.pow(-2 * x + 2, 3) / 2);
+  const pr = (t, a, b) => ease(Math.min(1, Math.max(0, (t - a) / (b - a))));
+  const n = (v) => { const s = Math.abs(Math.round(v)).toString(); return v < -0.5 ? '−' + s : s; };
+  const SH = [[32, 222, 14.4, 16.8], [162, 64, 18.9, 21.3], [-126, 352, 23.4, 25.8]];
+  const POS = { html: [88, -76], body: [176, -152] };
+  const L = fr ? { c: ' :', s: 'ombre', at: 'en' } : { c: ':', s: 'shadow', at: 'at' };
+  return (t, step) => {
+    const teach = fig.dataset.teach === '1';
+    const g = 1 - pr(t, 30, 31);
+    ring.style.opacity = pr(t, 0.2, 1.4);
+    const k = SH.map(([, , a, b]) => pr(t, a, b));
+    const sh = (c) => SH.map(([x, y], i) => `${x * k[i]}px ${y * k[i]}px ${c}`).join(',');
+    const ch = teach && g > 0 ? 'var(--ch)' : 'var(--yel)';
+    const cb = teach && g > 0 ? 'var(--cb)' : 'var(--yel)';
+    H.style.boxShadow = sh(ch);
+    B.style.boxShadow = sh(cb);
+    H.style.background = teach ? `rgb(242 140 56 / ${0.4 * pr(t, 4.2, 5) * g})` : 'none';
+    B.style.background = teach ? `rgb(79 195 217 / ${0.4 * pr(t, 9.2, 10) * g})` : 'none';
+    hbox.style.opacity = pr(t, 4.2, 5) * g;
+    bbox.style.opacity = pr(t, 9.2, 10) * g;
+    sq.style.opacity = pr(t, 27.7, 28.4) * g;
+    labG.style.opacity = pr(t, 0.6, 1.4) * (1 - pr(t, 3.6, 4));
+    labH.style.opacity = pr(t, 4.4, 5.2) * (1 - pr(t, 13.6, 14));
+    labB.style.opacity = pr(t, 9.4, 10.2) * (1 - pr(t, 13.6, 14));
+    const copy = (p, i) => `(${n(p[0] + SH[i][0] * k[i])}, ${n(p[1] + SH[i][1] * k[i])})`;
+    let txt = '';
+    if (step === 0) txt = `radial-gradient${L.c} 50px · 80px · ${fr ? 'centre' : 'center'} (200, 150)`;
+    else if (step === 1) txt = `html${L.c} 30 × 165 ${L.at} (88, −76) · 300 + 76 − 211 = 165`;
+    else if (step === 2) txt = `body${L.c} 142 × 30 ${L.at} (176, −152) · 165 + 76 − 211 = 30`;
+    else if (step >= 3 && step <= 5) { const i = step - 3; txt = `${L.s} ${i + 1}${L.c} html → ${copy(POS.html, i)} · body → ${copy(POS.body, i)}`; }
+    else if (step === 6) txt = fr ? 'carré autour de l\'anneau : (120, 70) → (280, 230)' : 'square around the ring: (120, 70) → (280, 230)';
+    else txt = caps[step] ? caps[step].dataset.live || '' : '';
+    live.textContent = txt;
+  };
+};
+</script>
+</figure>
