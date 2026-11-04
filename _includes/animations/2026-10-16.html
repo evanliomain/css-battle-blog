@@ -1,0 +1,112 @@
+<figure class="anim t1016" data-duration="27" data-scene="t1016" data-wide="-15 -125 430 430" style="--bg:#f3ead2">
+<style>
+.t1016{--mark:#1b1f24}
+.t1016 .scene>*{box-sizing:border-box}
+.t1016 .h{left:205px;top:0;width:20px;height:60px}
+.t1016 .b{left:175px;top:-50px;width:20px;height:110px}
+.t1016 .d{left:175px;top:-50px;width:20px;height:18px;font:16px/18px serif;color:#4c455b}
+.t1016 .h3{left:90px;top:-117px;width:220px;height:110px}
+.t1016 .o{outline:2px dashed var(--mark);outline-offset:-1px}
+.t1016 .tag{z-index:60;font:600 12px/1 ui-monospace,SFMono-Regular,Menlo,monospace;color:#fff;background:var(--mark);padding:3px 5px;border-radius:3px;white-space:nowrap}
+.t1016[data-view="wide"] .tag{font-size:14px}
+</style>
+<div class="anim-col">
+<div class="stage" role="img" aria-label="{% if include.lang == "fr" %}Animation : la boîte de html et ses trois barres roses, le body et ses trois barres violettes, puis le h3 au-dessus du canevas dont l'ombre descend en demi-disque{% else %}Animation: html's box and its three pink bars, body and its three violet bars, then the h3 above the canvas whose shadow drops as the half disc{% endif %}">
+<div class="scene">
+<div class="h"></div>
+<div class="b"></div>
+<div class="d">.</div>
+<div class="h3"></div>
+<div class="h o"></div>
+<div class="b o"></div>
+<div class="d o"></div>
+<div class="h3 o"></div>
+<b class="tag" data-w="1" style="left:8px;top:100px">html · margin:0 175 60%205</b>
+<b class="tag" data-w="1" style="left:8px;top:126px">60% × 400 = 240 · 300 − 240 = 60</b>
+<b class="tag" data-w="2" style="left:8px;top:262px">90Q ≈ 85px · 20ch = 160px</b>
+<b class="tag" data-w="3" style="left:8px;top:262px">body · 20 × 110 · (175, −50)</b>
+<b class="tag" data-w="4" style="left:200px;top:-48px">"." · {% if include.lang == "fr" %}ligne de 18px{% else %}18px line{% endif %}</b>
+<b class="tag" data-w="4" style="left:8px;top:262px">h3 · 220 × 110 · (90, −117)</b>
+<b class="tag" data-w="5" style="left:8px;top:236px">h3 · 1.17em = {% if include.lang == "fr" %}18,72{% else %}18.72{% endif %}px</b>
+<b class="tag" data-w="5" style="left:8px;top:262px">20ch ≈ 187px → y 70</b>
+</div>
+</div>
+<div class="legend"><span><i style="--c:#e8b84a"></i>{% if include.lang == "fr" %}les boîtes (crème en vrai){% else %}the boxes (cream in reality){% endif %}</span><span><i style="--c:#2b8cbf"></i>{% if include.lang == "fr" %}ombres du h3 (violettes en vrai){% else %}h3's shadows (violet in reality){% endif %}</span></div>
+</div>
+<div class="anim-side">
+<pre class="code" aria-hidden="true"><span data-on="4">.&lt;h3></span>&lt;style>*{<span data-on="1">background:#f3ead2</span>;<span data-on="1">margin:0 175 60%205</span>;<span data-on="2 3 5">box-shadow:90Q 0,-90Q 0,0 20ch</span>;<span data-on="2">color:D96C7B</span>;*{<span data-on="3" data-tone="2">margin:-50 30 85-30;color:4C455B</span>;*{<span data-on="4">padding:55 110;margin:-85;border-radius:0 0 2in 2in</span></pre>
+<div class="now" aria-live="polite">
+<div class="caps">
+{%- if include.lang == "fr" %}
+<div class="cap" data-t="0" data-step="html : une boîte de 20 × 60"><h3>1. html : une boîte de 20 × 60</h3><p><code>*</code> touche d'abord <code>html</code>. Dans <code>margin:0 175 60%205</code>, la marge basse vaut 60 % de la largeur : 240px. En mode quirks, <code>html</code> fait la hauteur de la page moins ses marges : 300 − 240 = 60. Une boîte de 20 × 60 en (205, 0). Son fond crème part sur tout le canevas : la boîte elle-même ne se voit pas.</p></div>
+<div class="cap" data-t="3.5" data-step="Les ombres de html : barres roses"><h3>2. Les ombres de html : barres roses</h3><p>Trois ombres, de la couleur de <code>color</code> (<code>D96C7B</code>, sans <code>#</code> en mode quirks) : <code>90Q 0</code> et <code>-90Q 0</code> copient la boîte à 85px à droite et à gauche, <code>0 20ch</code> à 160px plus bas (un ch fait 8px ici). Les trois barres roses.</p></div>
+<div class="cap" data-t="8" data-step="body : barres violettes"><h3>3. body : barres violettes</h3><p>Le <code>*</code> imbriqué donne au <code>body</code> <code>margin:-50 30 85-30</code> et <code>color:4C455B</code> : une boîte de 20 × 110 en (175, −50), qui finit en y = 60 comme <code>html</code>. Les mêmes trois ombres, en violet : deux barres en haut, qui partent d'au-dessus du canevas, et une en bas.</p></div>
+<div class="cap" data-t="13" data-step="Le point et le h3"><h3>4. Le point et le h3</h3><p>Le <code>.</code> avant <code>&lt;h3></code> est une ligne de texte de 18px, en haut du <code>body</code>, au-dessus du canevas. Le <code>h3</code> vient dessous, avec <code>margin:-85</code> et <code>padding:55 110</code> : une boîte vide de 220 × 110 en (90, −117), dont les coins du bas sont arrondis par 2in (ramenés à 110px). Un demi-disque, hors du canevas.</p></div>
+<div class="cap" data-t="17.5" data-step="Les ombres du h3 : le demi-disque"><h3>5. Les ombres du h3 : le demi-disque</h3><p>Même liste d'ombres, mais le <code>h3</code> a une police plus grande (1,17em, soit 18,72px) : <code>20ch</code> y fait environ 187px. Le demi-disque descend en y = 70, en violet, par-dessus les tiges. Ses deux copies sur les côtés restent au-dessus du canevas.</p></div>
+<div class="cap" data-t="22" data-step="Résultat" data-live="185 caractères · 100 % identique"><h3>6. Résultat : 185 caractères</h3><p>Trois boîtes, une liste d'ombres : la prise.</p></div>
+{%- else %}
+<div class="cap" data-t="0" data-step="html: a 20 × 60 box"><h3>1. html: a 20 × 60 box</h3><p><code>*</code> matches <code>html</code> first. In <code>margin:0 175 60%205</code>, the bottom margin is 60% of the width: 240px. In quirks mode <code>html</code> is as tall as the page minus its margins: 300 − 240 = 60. A 20 × 60 box at (205, 0). Its cream background goes to the whole canvas: the box itself does not show.</p></div>
+<div class="cap" data-t="3.5" data-step="html’s shadows: pink bars"><h3>2. html's shadows: pink bars</h3><p>Three shadows in the <code>color</code> (<code>D96C7B</code>, no <code>#</code> needed in quirks mode): <code>90Q 0</code> and <code>-90Q 0</code> copy the box 85px right and left, <code>0 20ch</code> 160px down (a ch is 8px here). The three pink bars.</p></div>
+<div class="cap" data-t="8" data-step="body: violet bars"><h3>3. body: violet bars</h3><p>The nested <code>*</code> gives <code>body</code> <code>margin:-50 30 85-30</code> and <code>color:4C455B</code>: a 20 × 110 box at (175, −50), ending at y = 60 like <code>html</code>. The same three shadows, in violet: two bars at the top, starting above the canvas, and one at the bottom.</p></div>
+<div class="cap" data-t="13" data-step="The dot and the h3"><h3>4. The dot and the h3</h3><p>The <code>.</code> before <code>&lt;h3></code> is an 18px line of text at the top of <code>body</code>, above the canvas. The <code>h3</code> comes under it, with <code>margin:-85</code> and <code>padding:55 110</code>: an empty 220 × 110 box at (90, −117), its bottom corners rounded by 2in (cut down to 110px). A half disc, off the canvas.</p></div>
+<div class="cap" data-t="17.5" data-step="h3’s shadows: the half disc"><h3>5. h3's shadows: the half disc</h3><p>Same shadow list, but the <code>h3</code> has a bigger font (1.17em, 18.72px), so its <code>20ch</code> is about 187px. The half disc drops to y = 70, in violet, over the stems. Its two side copies stay above the canvas.</p></div>
+<div class="cap" data-t="22" data-step="Result" data-live="185 characters · 100% match"><h3>6. Result: 185 characters</h3><p>Three boxes, one shadow list: the plug.</p></div>
+{%- endif %}
+</div>
+<div class="live"></div>
+</div>
+</div>
+<script>
+(window.AnimScenes = window.AnimScenes || {}).t1016 = (fig) => {
+  const fr = document.documentElement.lang === 'fr';
+  const $ = (s) => fig.querySelector(s), $$ = (s) => [...fig.querySelectorAll(s)];
+  const live = $('.live'), end = $('.cap[data-live]').dataset.live, caps = $$('.cap');
+  const [H, B, D, H3] = ['.h', '.b', '.d', '.h3'].map((s) => $(s + ':not(.o)'));
+  const [oH, oB, oD, oH3] = ['.h', '.b', '.d', '.h3'].map((s) => $(s + '.o'));
+  const tags = $$('.tag[data-w]');
+  const ease = (x) => (x < 0.5 ? 4 * x * x * x : 1 - Math.pow(-2 * x + 2, 3) / 2);
+  const pr = (t, a, b) => ease(Math.min(1, Math.max(0, (t - a) / (b - a))));
+  const win = (t, a, b, f = 0.5) => Math.min(pr(t, a, a + f), 1 - pr(t, b - f, b));
+  const hex = (h) => [1, 3, 5].map((i) => parseInt(h.slice(i, i + 2), 16));
+  const mix = (a, b, m) => `rgb(${hex(a).map((v, i) => Math.round(v + (hex(b)[i] - v) * m)).join(',')})`;
+  const num = (v, d = 1) => (Math.abs(v) < 0.005 ? 0 : v).toFixed(d).replace('.', fr ? ',' : '.');
+  const X = 90 * 96 / 101.6, CREAM = '#f3ead2', PINK = '#d96c7b', VIOLET = '#4c455b', GOLD = '#e8b84a';
+  const sh = (k, dy, col) => `${X * k[0]}px 0 ${col},${-X * k[1]}px 0 ${col},0 ${dy * k[2]}px ${col}`;
+  const ks = (a) => [0, 1, 2].map((i) => pr(t0, a + 0.8 * i, a + 0.8 * i + 1.2));
+  let t0 = 0;
+  return (t, step) => {
+    t0 = t;
+    const teach = fig.dataset.teach === '1';
+    const real = teach ? pr(t, 22.2, 23.2) : 1;
+    const box = mix(GOLD, CREAM, real);
+    H.style.background = B.style.background = H3.style.background = box;
+    H.style.opacity = pr(t, 0.3, 0.9);
+    const kh = ks(4), kb = ks(9.4), k3 = ks(18);
+    H.style.boxShadow = t >= 3.8 ? sh(kh, 160, PINK) : 'none';
+    B.style.opacity = pr(t, 8.3, 8.9);
+    B.style.boxShadow = t >= 9.2 ? sh(kb, 160, VIOLET) : 'none';
+    D.style.opacity = pr(t, 13.3, 13.8);
+    H3.style.opacity = pr(t, 14, 14.6);
+    H3.style.borderRadius = `0 0 ${192 * pr(t, 15, 16.8)}px ${192 * pr(t, 15, 16.8)}px`;
+    oH3.style.borderRadius = H3.style.borderRadius;
+    H3.style.boxShadow = t >= 17.8 ? sh(k3, 187.1, mix('#2b8cbf', VIOLET, real)) : 'none';
+    oH.style.opacity = win(t, 0.3, 22.2, 0.5);
+    oB.style.opacity = win(t, 8.3, 22.2, 0.5);
+    oD.style.opacity = win(t, 13.3, 22.2, 0.5);
+    oH3.style.opacity = win(t, 14, 22.2, 0.5);
+    tags.forEach((e) => {
+      const w = +e.dataset.w - 1;
+      e.style.opacity = w === step ? win(t, +caps[w].dataset.t + 0.3, +caps[w + 1].dataset.t, 0.4) : 0;
+    });
+    let txt = '';
+    if (step === 0) txt = fr ? 'html : 20 × 60 en (205, 0)' : 'html: 20 × 60 at (205, 0)';
+    else if (step === 1) txt = `${fr ? 'décalages' : 'offsets'} ${num(X * kh[0])} · −${num(X * kh[1])} · 0 ${num(160 * kh[2])} px`;
+    else if (step === 2) txt = `body${fr ? ' :' : ':'} ${fr ? 'décalages' : 'offsets'} ${num(X * kb[0])} · −${num(X * kb[1])} · 0 ${num(160 * kb[2])} px`;
+    else if (step === 3) txt = `h3${fr ? ' :' : ':'} 220 × 110 ${fr ? 'en' : 'at'} (90, −117) · ${fr ? 'rayon' : 'radius'} 2in = 192 → 110px`;
+    else if (step === 4) txt = `h3${fr ? ' :' : ':'} 0 20ch = 0 ${num(187.1 * k3[2])} px → y ${num(-117 + 187.1 * k3[2])}`;
+    else txt = end;
+    live.textContent = txt;
+  };
+};
+</script>
+</figure>
