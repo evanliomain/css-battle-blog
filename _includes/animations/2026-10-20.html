@@ -1,0 +1,105 @@
+<figure class="anim t1020" data-duration="26" data-scene="t1020" data-wide="-50 -40 500 380" style="--bg:#f0f0f3">
+<style>
+.t1020{--grey:#f0f0f3;--blue:#42a8e4;--sm:#3bb3a0;--bd:#ffd66b;--op:#f29bc4;--os:#1f4f86;--ln:#24302f}
+.t1020 .t1020-h{left:190px;top:140px;width:20px;height:20px;border-radius:50%}
+.t1020 .t1020-ho{left:190px;top:140px;width:20px;height:20px;border-radius:50%;box-sizing:border-box;border:1.5px dashed var(--ln);opacity:0;z-index:3}
+.t1020 .t1020-b{left:160px;top:100px;width:80px;height:100px;background:var(--grey);opacity:0}
+.t1020 .t1020-bo{left:160px;top:100px;width:80px;height:100px;box-sizing:border-box;border:1.5px dashed var(--ln);opacity:0;z-index:3}
+.t1020 .t1020-o{left:160px;top:100px;width:80px;height:20.19px;background:var(--grey);opacity:0}
+.t1020 .t1020-oo{left:160px;top:100px;width:80px;height:20.19px;box-sizing:border-box;border:1.5px dashed var(--ln);opacity:0;z-index:3}
+.t1020 .t1020-lab{font:10.5px/1.25 ui-monospace,SFMono-Regular,Menlo,monospace;color:#24302f;background:rgb(255 255 255 / .85);padding:1px 4px;border-radius:2px;white-space:nowrap;pointer-events:none;opacity:0;z-index:5}
+.t1020 .t1020-lab b{font-weight:600}
+</style>
+<div class="anim-col">
+<div class="stage" role="img" aria-label="{% if include.lang == "fr" %}Animation : un petit rond html porte trois ombres rondes, le body couleur du fond fait le bloc du S, et les deux ombres de l'option creusent ses encoches{% else %}Animation: a tiny round html carries three round shadows, the background-colored body is the block of the S, and the option's two shadows carve its notches{% endif %}">
+<div class="scene">
+<div class="t1020-h"></div>
+<div class="t1020-b"></div>
+<div class="t1020-o"></div>
+<div class="t1020-ho"></div>
+<div class="t1020-bo"></div>
+<div class="t1020-oo"></div>
+<div class="t1020-lab t1020-l1" style="left:8px;top:8px"><b>html</b> · margin:35% 190 → 20 × 20</div>
+<div class="t1020-lab t1020-l2" style="left:8px;top:8px">0 0 0 79Q · r = 10 + {% if include.lang == "fr" %}74,6{% else %}74.6{% endif %}</div>
+<div class="t1020-lab t1020-l3" style="left:8px;top:8px">±53Q ±53Q 0 5ch · r = 10 + 40</div>
+<div class="t1020-lab t1020-lh" style="left:214px;top:143px">{% if include.lang == "fr" %}← trou sous html{% else %}← hole under html{% endif %}</div>
+<div class="t1020-lab t1020-l4" style="left:8px;top:8px"><b>body</b> · margin:-40 -30 → 80 × 100</div>
+<div class="t1020-lab t1020-l5" style="left:8px;top:8px"><b>option</b> 80 × 20 · 5vw 5vw</div>
+<div class="t1020-lab t1020-l6" style="left:8px;top:8px">-5vw 64Q → {% if include.lang == "fr" %}(−20 ; 60,5){% else %}(−20, 60.5){% endif %}</div>
+</div>
+</div>
+<div class="legend"><span><i style="--c:var(--blue)"></i>{% if include.lang == "fr" %}grand disque{% else %}big disc{% endif %}</span><span><i style="--c:var(--sm)"></i>{% if include.lang == "fr" %}petits disques (bleus en vrai){% else %}small discs (blue in reality){% endif %}</span><span><i style="--c:var(--bd)"></i>{% if include.lang == "fr" %}body (gris en vrai){% else %}body (grey in reality){% endif %}</span><span><i style="--c:var(--op)"></i>{% if include.lang == "fr" %}option (gris en vrai){% else %}option (grey in reality){% endif %}</span><span><i style="--c:var(--os)"></i>{% if include.lang == "fr" %}ombres de l'option (bleues en vrai){% else %}option's shadows (blue in reality){% endif %}</span></div>
+</div>
+<div class="anim-side">
+<pre class="code" aria-hidden="true"><span data-on="5" data-tone="2">&lt;option></span>&lt;style><span data-on="1 4">*{background:#f0f0f3}</span>&amp;{<span data-on="1">margin:35%190;border-radius:50%</span>;<span data-on="2">color:42A8E4</span>;box-shadow:<span data-on="3">53Q 53Q 0 5ch,-53Q -53Q 0 5ch</span>,<span data-on="2">0 0 0 79Q</span>;<span data-on="4" data-tone="2">>*{margin:-40-30</span>;*{box-shadow:<span data-on="5" data-tone="2">5vw 5vw</span>,<span data-on="6" data-tone="2">-5vw 64Q</span></pre>
+<div class="now">
+<div class="caps">
+{%- if include.lang == "fr" %}
+<div class="cap" data-t="0" data-step="html : un rond de 20px"><h3>1. html : un rond de 20px</h3><p><code>&amp;</code>, c'est <code>html</code>. <code>margin:35%190</code> : 35 % de la largeur font 140px en haut et en bas, 190px sur les côtés. En mode quirks, il garde la hauteur de la page moins ses marges : 20px. <code>border-radius:50%</code> en fait un rond de 20px. Son fond gris part sur tout le canevas.</p></div>
+<div class="cap" data-t="3.1" data-step="0 0 0 79Q : le grand disque"><h3>2. 0 0 0 79Q : le grand disque</h3><p>Les ombres sans couleur prennent <code>color</code> : le bleu, écrit sans <code>#</code>. Une ombre suit l'arrondi de sa boîte : un étalement de 79Q (74,6px) donne un disque de 10 + 74,6 = 84,6px de rayon.</p></div>
+<div class="cap" data-t="6.8" data-step="±53Q 0 5ch : les deux petits"><h3>3. ±53Q 0 5ch : les deux petits</h3><p><code>5ch</code> vaut 40px (un <code>0</code> fait 8px en police de 16px) : deux disques de 50px de rayon, décalés de 53Q (50,1px) en diagonale. Une ombre extérieure n'est jamais peinte sous sa propre boîte : il reste un trou de 20px au centre.</p></div>
+<div class="cap" data-t="10.9" data-step="body : le bloc du S"><h3>4. body : le bloc du S</h3><p><code>&amp;>*</code> vise <code>head</code> (caché) et <code>body</code>. Avec <code>margin:-40-30</code>, il déborde de <code>html</code> : 20 + 60 = 80px de large, et en mode quirks 20 + 80 = 100px de haut. Gris comme le fond, il cache le trou.</p></div>
+<div class="cap" data-t="14.6" data-step="option : l'encoche du haut"><h3>5. option : l'encoche du haut</h3><p>L'<code>&lt;option></code> est dans <code>body</code> : 80px de large, 20px de haut par défaut, gris sur gris. Son ombre <code>5vw 5vw</code> (20, 20) donne un bloc bleu de 80×20 ; dans le <code>body</code>, c'est l'encoche du haut. Le reste tombe sur le grand disque, bleu sur bleu.</p></div>
+<div class="cap" data-t="18.2" data-step="-5vw 64Q : l'encoche du bas"><h3>6. -5vw 64Q : l'encoche du bas</h3><p><code>-5vw 64Q</code> décale la seconde ombre de 20px à gauche et 60,5px vers le bas : l'encoche du bas, ouverte à gauche. Ce qui sort du <code>body</code> se perd encore dans le bleu.</p></div>
+<div class="cap" data-t="21.8" data-step="Au pixel près" data-live="180 caractères · 100 % identique"><h3>7. Au pixel près</h3><p>Cinq ombres et deux boîtes couleur fond : l'image complète en 180 caractères.</p></div>
+{%- else %}
+<div class="cap" data-t="0" data-step="html: a 20px dot"><h3>1. html: a 20px dot</h3><p><code>&amp;</code> is <code>html</code>. <code>margin:35%190</code>: 35% of the width is 140px at the top and bottom, 190px on the sides. In quirks mode it keeps the page height minus its margins: 20px. <code>border-radius:50%</code> makes it a 20px dot. Its grey background spreads to the whole canvas.</p></div>
+<div class="cap" data-t="3.1" data-step="0 0 0 79Q: the big disc"><h3>2. 0 0 0 79Q: the big disc</h3><p>Shadows with no color take <code>color</code>: the blue, written with no <code>#</code>. A shadow follows its box's rounding: a 79Q (74.6px) spread gives a disc of 10 + 74.6 = 84.6px radius.</p></div>
+<div class="cap" data-t="6.8" data-step="±53Q 0 5ch: the two small ones"><h3>3. ±53Q 0 5ch: the two small ones</h3><p><code>5ch</code> is 40px (a <code>0</code> is 8px wide in a 16px font): two discs of 50px radius, moved 53Q (50.1px) diagonally. An outer shadow is never painted under its own box: a 20px hole is left in the middle.</p></div>
+<div class="cap" data-t="10.9" data-step="body: the block of the S"><h3>4. body: the block of the S</h3><p><code>&amp;>*</code> matches <code>head</code> (hidden) and <code>body</code>. With <code>margin:-40-30</code> it spills out of <code>html</code>: 20 + 60 = 80px wide, and in quirks mode 20 + 80 = 100px tall. Grey like the background, it hides the hole.</p></div>
+<div class="cap" data-t="14.6" data-step="option: the top notch"><h3>5. option: the top notch</h3><p>The <code>&lt;option></code> sits in <code>body</code>: 80px wide, 20px tall by default, grey on grey. Its <code>5vw 5vw</code> shadow (20, 20) is an 80×20 blue block; inside the <code>body</code>, it is the top notch. The rest lands on the big disc, blue on blue.</p></div>
+<div class="cap" data-t="18.2" data-step="-5vw 64Q: the bottom notch"><h3>6. -5vw 64Q: the bottom notch</h3><p><code>-5vw 64Q</code> moves the second shadow 20px left and 60.5px down: the bottom notch, open to the left. What sticks out of the <code>body</code> is lost in the blue again.</p></div>
+<div class="cap" data-t="21.8" data-step="Pixel-perfect" data-live="180 characters · 100% match"><h3>7. Pixel-perfect</h3><p>Five shadows and two background-colored boxes: the whole picture in 180 characters.</p></div>
+{%- endif %}
+</div>
+<div class="live"></div>
+</div>
+</div>
+<script>
+(window.AnimScenes = window.AnimScenes || {}).t1020 = (fig) => {
+  const fr = document.documentElement.lang === 'fr';
+  const $ = (s) => fig.querySelector(s);
+  const H = $('.t1020-h'), B = $('.t1020-b'), O = $('.t1020-o'), ho = $('.t1020-ho'), bo = $('.t1020-bo'), oo = $('.t1020-oo'), live = $('.live');
+  const lab = ['1', '2', '3', 'h', '4', '5', '6'].map((i) => $('.t1020-l' + i));
+  const ease = (x) => (x < 0.5 ? 4 * x * x * x : 1 - Math.pow(-2 * x + 2, 3) / 2);
+  const pr = (t, a, b) => ease(Math.min(1, Math.max(0, (t - a) / (b - a))));
+  const n = (v) => (+v.toFixed(1)).toString().replace('.', fr ? ',' : '.').replace('-', '−');
+  const c = fr ? ' :' : ':', sp = fr ? ' ; ' : ', ';
+  const Q = 96 / 101.6, D = 53 * Q, SP = 79 * Q, OY = 64 * Q;
+  const L = fr ? { r: 'rayon', off: 'décalage', sh: 'ombre', end: '180 caractères · 100 % identique' } : { r: 'radius', off: 'offset', sh: 'shadow', end: '180 characters · 100% match' };
+  return (t, step) => {
+    const teach = fig.dataset.teach === '1' && step < 6;
+    const big = pr(t, 3.5, 5.5), sm = pr(t, 7.2, 9.2), bg = pr(t, 11.3, 13.3), o1 = pr(t, 15.2, 16.8), o2 = pr(t, 18.6, 20.2);
+    const blue = 'var(--blue)', smc = teach ? 'var(--sm)' : blue, osc = teach ? 'var(--os)' : blue;
+    const smOn = t >= 7.2, bigOn = t >= 3.5;
+    H.style.boxShadow = [
+      `${D * sm}px ${D * sm}px 0 ${40 * sm}px ${smOn ? smc : 'transparent'}`,
+      `${-D * sm}px ${-D * sm}px 0 ${40 * sm}px ${smOn ? smc : 'transparent'}`,
+      `0 0 0 ${SP * big}px ${bigOn ? blue : 'transparent'}`,
+    ].join(',');
+    ho.style.opacity = step < 3 ? pr(t, 0.3, 1.1) : step === 3 ? 1 - bg : 0;
+    // body grows out of the html box
+    B.style.opacity = step >= 3 ? 1 : 0;
+    B.style.left = `${190 - 30 * bg}px`; B.style.top = `${140 - 40 * bg}px`;
+    B.style.width = `${20 + 60 * bg}px`; B.style.height = `${20 + 80 * bg}px`;
+    B.style.background = teach ? 'var(--bd)' : 'var(--grey)';
+    bo.style.opacity = step === 3 || step === 4 ? bg : 0;
+    O.style.opacity = step >= 4 ? 1 : 0;
+    O.style.background = teach ? 'var(--op)' : 'var(--grey)';
+    O.style.boxShadow = step >= 4 ? `${20 * o1}px ${20 * o1}px ${osc},${-20 * o2}px ${OY * o2}px ${step >= 5 ? osc : 'transparent'}` : 'none';
+    oo.style.opacity = step === 4 || step === 5 ? pr(t, 14.6, 15.2) : 0;
+    const show = [step === 0, step === 1, step === 2, step === 2 && t >= 9.4, step === 3, step === 4, step === 5];
+    lab.forEach((l, i) => { l.style.opacity = show[i] ? 1 : 0; });
+    let txt = '';
+    if (step === 0) txt = `html${c} 20 × 20 (190${sp}140) · ${L.r} 10`;
+    else if (step === 1) txt = `${L.r}${c} 10 + ${n(SP * big)} = ${n(10 + SP * big)} px`;
+    else if (step === 2) txt = `${L.off}${c} ±${n(D * sm)} px · ${L.r} 10 + ${n(40 * sm)} = ${n(10 + 40 * sm)} px`;
+    else if (step === 3) txt = `body${c} ${n(20 + 60 * bg)} × ${n(20 + 80 * bg)} · x ${n(190 - 30 * bg)} · y ${n(140 - 40 * bg)}`;
+    else if (step === 4) txt = `${L.sh} 1${c} (${n(20 * o1)}${sp}${n(20 * o1)}) → x 180 → 260, y 120 → 140`;
+    else if (step === 5) txt = `${L.sh} 2${c} (${n(-20 * o2)}${sp}${n(OY * o2)}) → x 140 → 220, y 160.5 → 180.7`;
+    else txt = L.end;
+    live.textContent = fr ? txt.replace(/(\d)\.(\d)/g, '$1,$2') : txt;
+  };
+};
+</script>
+</figure>
