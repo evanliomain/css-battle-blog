@@ -1,0 +1,117 @@
+<figure class="anim t1103" data-duration="21" data-scene="t1103" data-wide="0 0 400 600" style="--bg:#eed9d9">
+<style>
+.t1103{--vert:#668884;--txt:#4a5c5a;--cut:#cf5f4b}
+@media (prefers-color-scheme:dark){.t1103{--cut:#e8806b}}
+.t1103 .h{left:140px;top:270px;width:120px;height:290px}
+.t1103 .b{left:204px;top:54px;width:48px;height:46px}
+.t1103 .h-box{pointer-events:none;left:140px;top:270px;width:120px;height:290px;border:1.5px dashed var(--txt)}
+.t1103 .lab{font:10.5px/1.2 ui-monospace,SFMono-Regular,Menlo,monospace;color:var(--txt);white-space:nowrap;pointer-events:none}
+.t1103 .lab b{font-weight:600;color:#24302f}
+</style>
+<div class="anim-col">
+<div class="stage" role="img" aria-label="{% if include.lang == "fr" %}Animation : les ombres de html dessinent la colonne, celles du body tourné en 3D creusent les encoches{% else %}Animation: html's shadows draw the column, the 3D-rotated body's shadows carve the notches{% endif %}">
+<div class="scene">
+<div class="h"></div>
+<div class="b"></div>
+<div class="h-box"></div>
+<div class="lab lab-h" style="left:144px;top:276px"><b>{% if include.lang == "fr" %}boîte html{% else %}html box{% endif %}</b><br>120 × 290</div>
+<div class="lab lab-b" style="left:262px;top:58px"><b>body</b><br>48 × 46</div>
+</div>
+</div>
+<div class="legend"><span><i style="--c:var(--vert)"></i>{% if include.lang == "fr" %}ombres de html{% else %}html shadows{% endif %}</span><span><i style="--c:var(--cut)"></i>{% if include.lang == "fr" %}body et ses ombres (couleur du fond en vrai){% else %}body and its shadows (background color in reality){% endif %}</span></div>
+</div>
+<div class="anim-side">
+<pre class="code" aria-hidden="true">&lt;style>*{background:#EED9D9;color:668884;<span data-k="hm">margin:270 140-260</span>;box-shadow:<span data-k="s1">0-5vw</span>,<span data-k="s2">0-291q 0-37q</span>,<span data-k="s3">0 89q</span>,<span data-k="s4">88q 97q</span>;*{<span data-k="bm">margin:-216 8 460 64;color:EED9D9</span>;<span data-k="rot">rotate:6-1 7 1rad</span></pre>
+<div class="now" aria-live="polite">
+<div class="caps">
+{%- if include.lang == "fr" %}
+<div class="cap" data-t="0" data-step="html descend sous le socle"><h3>1. html descend sous le socle</h3><p><code>margin:270 140-260</code>. En mode quirks, la hauteur de <code>html</code> vaut 300 − 270 + 260 = 290 : sa boîte (120 × 290) commence juste sous le socle et sort du canevas. Son fond part sur le canevas, donc la boîte elle-même est invisible. Ses 4 ombres sont encore cachées dessous : une ombre extérieure n'est jamais peinte sous sa propre boîte.</p></div>
+<div class="cap" data-t="2" data-step="0-5vw : le socle"><h3>2. 0-5vw : le socle</h3><p>L'ombre monte de 20px (5vw). Seule la bande qui dépasse au-dessus de la boîte se voit : c'est le socle de 120 × 20.</p></div>
+<div class="cap" data-t="3.6" data-step="0-291q 0-37q : la colonne"><h3>3. 0-291q 0-37q : la colonne</h3><p>Un étalement de −37q (−35px) réduit l'ombre à 50 × 220. Elle monte de 291q (275px) et sort au-dessus de la boîte, pile sur le socle : c'est la colonne.</p></div>
+<div class="cap" data-t="6.2" data-step="0 89q, 88q 97q : rangées dessous"><h3>4. 0 89q et 88q 97q : rangées sous la boîte</h3><p>Ces deux ombres descendent. Ce qui dépasse de la boîte tombe hors du canevas : sur <code>html</code>, elles ne servent à rien. Elles sont là pour le <code>body</code>.</p></div>
+<div class="cap" data-t="8.6" data-step="Le body, couleur du fond"><h3>5. Le body, couleur du fond</h3><p>Le <code>body</code> reçoit les mêmes règles par <code>*</code> : même fond, mêmes ombres. <code>margin:-216 8 460 64</code> en fait une boîte de 48 × 46 en (204, 54), et <code>color:EED9D9</code> passe ses ombres dans la couleur du fond. Ici en corail pour qu'on la voie.</p></div>
+<div class="cap" data-t="10.2" data-step="rotate:6-1 7 1rad"><h3>6. rotate:6-1 7 1rad</h3><p>Une rotation de 1 rad (57°) autour de l'axe 3D (6, −1, 7), qui passe par le centre de la boîte. Sans perspective, elle est aplatie à l'écran : le rectangle devient un parallélogramme aux bords penchés. La partie posée sur la colonne creuse l'encoche du haut.</p></div>
+<div class="cap" data-t="13.2" data-step="Les mêmes ombres, tournées"><h3>7. Les mêmes ombres, dans le repère tourné</h3><p>Les décalages des ombres suivent la rotation du <code>body</code>. <code>0-5vw</code> atterrit à côté de la colonne, sur le fond ; <code>0-291q 0-37q</code> disparaît (−35px d'étalement sur 48 × 46) ; <code>0 89q</code> creuse l'encoche de gauche, et <code>88q 97q</code> celle d'en bas à droite.</p></div>
+<div class="cap" data-t="17.6" data-step="Résultat"><h3>8. Résultat : 157 caractères</h3><p>Dans les vraies couleurs, les parallélogrammes se fondent dans le fond : il ne reste que les trois encoches. Quatre ombres dessinent tout, et celles qui ne servent pas se cachent sous la boîte de <code>html</code> ou disparaissent.</p></div>
+{%- else %}
+<div class="cap" data-t="0" data-step="html drops below the base"><h3>1. html drops below the base</h3><p><code>margin:270 140-260</code>. In quirks mode, the height of <code>html</code> is 300 − 270 + 260 = 290: its box (120 × 290) starts just under the base and runs off the canvas. Its background goes to the canvas, so the box itself is invisible. Its 4 shadows are still hidden underneath: an outer shadow is never painted under its own box.</p></div>
+<div class="cap" data-t="2" data-step="0-5vw: the base"><h3>2. 0-5vw: the base</h3><p>The shadow moves up 20px (5vw). Only the strip that sticks out above the box shows: that is the 120 × 20 base.</p></div>
+<div class="cap" data-t="3.6" data-step="0-291q 0-37q: the column"><h3>3. 0-291q 0-37q: the column</h3><p>A spread of −37q (−35px) shrinks the shadow to 50 × 220. It moves up 291q (275px) and comes out above the box, right on top of the base: that is the column.</p></div>
+<div class="cap" data-t="6.2" data-step="0 89q, 88q 97q: parked"><h3>4. 0 89q and 88q 97q: parked under the box</h3><p>These two shadows move down. Whatever sticks out of the box lands outside the canvas: on <code>html</code> they do nothing. They are there for the <code>body</code>.</p></div>
+<div class="cap" data-t="8.6" data-step="The body, in the background color"><h3>5. The body, in the background color</h3><p>The <code>body</code> gets the same rules through <code>*</code>: same background, same shadows. <code>margin:-216 8 460 64</code> makes it a 48 × 46 box at (204, 54), and <code>color:EED9D9</code> turns its shadows into the background color. Shown in coral here so you can see it.</p></div>
+<div class="cap" data-t="10.2" data-step="rotate:6-1 7 1rad"><h3>6. rotate:6-1 7 1rad</h3><p>A 1 rad (57°) rotation around the 3D axis (6, −1, 7), through the center of the box. With no perspective, it is flattened on screen: the rectangle becomes a parallelogram with slanted edges. The part lying on the column carves the top notch.</p></div>
+<div class="cap" data-t="13.2" data-step="The same shadows, rotated"><h3>7. The same shadows, in the rotated frame</h3><p>The shadow offsets follow the rotation of the <code>body</code>. <code>0-5vw</code> lands next to the column, on the background; <code>0-291q 0-37q</code> vanishes (a −35px spread on 48 × 46); <code>0 89q</code> carves the left notch, and <code>88q 97q</code> the bottom right one.</p></div>
+<div class="cap" data-t="17.6" data-step="Result"><h3>8. Result: 157 characters</h3><p>In the real colors, the parallelograms blend into the background: only the three notches remain. Four shadows draw everything, and the ones that are not needed hide under the <code>html</code> box or vanish.</p></div>
+{%- endif %}
+</div>
+<div class="live"></div>
+</div>
+</div>
+<script>
+(window.AnimScenes = window.AnimScenes || {}).t1103 = (fig, refresh) => {
+  const fr = document.documentElement.lang === 'fr';
+  const $ = (s) => fig.querySelector(s);
+  const H = $('.h'), B = $('.b'), hbox = $('.h-box');
+  const labH = $('.lab-h'), labB = $('.lab-b'), live = $('.live');
+  const codeSpans = [...fig.querySelectorAll('.code span[data-k]')];
+  const Q = 96 / 101.6;
+  const GREEN = '#668884', FOND = [238, 217, 217];
+  const HS = [[0, -20, 0], [0, -291 * Q, -37 * Q], [0, 89 * Q, 0], [88 * Q, 97 * Q, 0]];
+  const W = { hbox: [0.2, 1.4], h: [[2, 3.6], [3.6, 6.2], [6.2, 7.4], [7.4, 8.6]], body: [8.6, 10], rot: [10.2, 13.2], b: [[13.2, 14.3], [14.3, 15], [15, 16.3], [16.3, 17.6]], fin: [17.8, 19.4] };
+  const ease = (x) => (x < 0.5 ? 4 * x * x * x : 1 - Math.pow(-2 * x + 2, 3) / 2);
+  const pr = (t, [a, b]) => ease(Math.min(1, Math.max(0, (t - a) / (b - a))));
+  const lerp = (a, b, m) => a + (b - a) * m;
+  const num = (v) => (Math.abs(v) < 0.005 ? 0 : v).toFixed(1).replace('.', fr ? ',' : '.');
+  const cutRGB = () => {
+    const m = getComputedStyle(fig).getPropertyValue('--cut').trim().match(/^#?([0-9a-f]{2})([0-9a-f]{2})([0-9a-f]{2})$/i);
+    return m ? [1, 2, 3].map((i) => parseInt(m[i], 16)) : [207, 95, 75];
+  };
+  const L = fr
+    ? { c: ' :', off: 'décalage', spread: 'étalement', frame: 'repère du body', end: '157 caractères · 100 % identique' }
+    : { c: ':', off: 'offset', spread: 'spread', frame: 'body frame', end: '157 characters · 100% match' };
+  let t = 0, si = 0;
+  return (time, step) => {
+    t = time; si = Math.max(0, step);
+    const hp = W.h.map((w) => pr(t, w));
+    H.style.boxShadow = HS.map(([x, y, s], i) => `${x * hp[i]}px ${y * hp[i]}px 0 ${s}px ${GREEN}`).join(',');
+    const fin = pr(t, W.fin);
+    const real = fig.dataset.teach === '1' ? fin : 1;
+    const c = cutRGB().map((v, i) => Math.round(lerp(v, FOND[i], real)));
+    const col = `rgb(${c.join(',')})`;
+    const bp = W.b.map((w) => pr(t, w));
+    const ang = pr(t, W.rot);
+    B.style.opacity = pr(t, W.body);
+    B.style.background = col;
+    B.style.rotate = `6 -1 7 ${ang}rad`;
+    B.style.boxShadow = HS.map(([x, y, s], i) => `${x * bp[i]}px ${y * bp[i]}px 0 ${s}px ${col}`).join(',');
+    B.style.outline = real < 1 ? `1.5px dashed rgb(74 92 90 / ${1 - real})` : 'none';
+    const guide = 1 - real;
+    hbox.style.opacity = pr(t, W.hbox) * guide;
+    labH.style.opacity = pr(t, W.hbox) * guide;
+    labB.style.opacity = pr(t, W.body) * guide;
+    const hl = {};
+    if (si === 0) hl.hm = 'on';
+    if (si === 1) hl.s1 = 'on';
+    if (si === 2) hl.s2 = 'on';
+    if (si === 3) { hl.s3 = 'on'; hl.s4 = 'on'; }
+    if (si === 4) hl.bm = 'on2';
+    if (si === 5) hl.rot = 'on2';
+    let k = W.b.findIndex(([, b]) => t < b);
+    if (k < 0) k = 3;
+    if (si === 6) hl['s' + (k + 1)] = 'on2';
+    codeSpans.forEach((sp) => { sp.className = hl[sp.dataset.k] || ''; });
+    const names = ['0-5vw', '0-291q 0-37q', '0 89q', '88q 97q'];
+    let txt = '';
+    if (si === 0) txt = `html${L.c} x 140 → 260, y 270 → 560`;
+    else if (si === 1) txt = `${L.off}${L.c} 0 ${num(-20 * hp[0])} px`;
+    else if (si === 2) txt = `${L.off}${L.c} 0 ${num(HS[1][1] * hp[1])} px · ${L.spread} −35 px`;
+    else if (si === 3) txt = `0 89q → 0 ${num(HS[2][1] * hp[2])} px · 88q 97q → ${num(HS[3][0] * hp[3])} ${num(HS[3][1] * hp[3])} px`;
+    else if (si === 4) txt = `body${L.c} x 204 → 252, y 54 → 100`;
+    else if (si === 5) txt = `angle${L.c} ${ang.toFixed(2).replace('.', fr ? ',' : '.')} rad (${Math.round(ang * 180 / Math.PI)}°)`;
+    else if (si === 6) txt = `${names[k]} → ${num(HS[k][0] * bp[k])} ${num(HS[k][1] * bp[k])} px (${L.frame})`;
+    else txt = L.end;
+    live.textContent = txt;
+  };
+};
+</script>
+</figure>
