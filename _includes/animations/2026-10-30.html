@@ -1,0 +1,112 @@
+<figure class="anim t1030" data-duration="30" data-scene="t1030" data-wide="-200 -20 800 1140" style="--bg:#cbcc58">
+<style>
+.t1030{--bf:#cbcc58;--br:#394257;--tf:#cbcc58;--tr:#394257;--gb:#24302f;--gt:#24302f}
+.t1030[data-teach="1"]:not([data-step="6"]){--bf:#eaa36f;--br:#8c5bb5;--tf:#7ec4c1;--tr:#d9483b;--gb:#8c5bb5;--gt:#d9483b}
+.t1030 .t1030-h{left:0;top:0;width:400px;height:1100px;background:radial-gradient(400px,#cbcc58 85%,#394257 0 100%,#cbcc58)}
+.t1030 .t1030-b{left:170px;top:130px;width:60px;height:1440px;background:radial-gradient(400px,var(--bf) 85%,var(--br) 0 100%,var(--bf))}
+.t1030 .t1030-t{left:180px;top:130px;width:40px;height:1440px;background:radial-gradient(800px,var(--tf) 85%,var(--tr) 0 100%,var(--tf))}
+.t1030 .t1030-box{outline:3px dashed var(--c);outline-offset:-3px;pointer-events:none}
+.t1030 .t1030-ring{border:3px dashed var(--c);border-radius:50%;pointer-events:none}
+.t1030 .t1030-dot{width:12px;height:12px;margin:-6px 0 0 -6px;border-radius:50%;background:var(--c);pointer-events:none}
+.t1030 .t1030-lab{font:10.5px/1.2 ui-monospace,SFMono-Regular,Menlo,monospace;color:#24302f;background:rgb(255 255 255 / .8);padding:1px 3px;border-radius:2px;white-space:nowrap;pointer-events:none;z-index:53}
+.t1030 .t1030-lab b{font-weight:600}
+.t1030[data-view="wide"] .t1030-lab{font-size:22px}
+.t1030 .t1030-l{translate:-100% 0}
+</style>
+<div class="anim-col">
+<div class="stage" role="img" aria-label="{% if include.lang == "fr" %}Animation : le même dégradé radial sur html, body et h1, chacun centré sur sa propre boîte, bien sous le canevas ; le body fait la fente, le h1 le carré{% else %}Animation: the same radial gradient on html, body and h1, each centered on its own box, far below the canvas; body makes the slit, h1 the square{% endif %}">
+<div class="scene">
+<div class="t1030-h"></div>
+<div class="t1030-b"></div>
+<div class="t1030-t"></div>
+<div class="t1030-box t1030-gh" style="--c:#24302f;left:0;top:0;width:400px;height:1100px"></div>
+<div class="t1030-ring t1030-gh" style="--c:#24302f;left:-200px;top:150px;width:800px;height:800px"></div>
+<div class="t1030-ring t1030-gh" style="--c:#24302f;left:-140px;top:210px;width:680px;height:680px"></div>
+<div class="t1030-dot t1030-gh" style="--c:#24302f;left:200px;top:550px"></div>
+<div class="t1030-box t1030-gb" style="--c:var(--gb);left:170px;top:130px;width:60px;height:1440px"></div>
+<div class="t1030-ring t1030-gb" style="--c:var(--gb);left:-200px;top:450px;width:800px;height:800px"></div>
+<div class="t1030-ring t1030-gb" style="--c:var(--gb);left:-140px;top:510px;width:680px;height:680px"></div>
+<div class="t1030-box t1030-gt" style="--c:var(--gt);left:180px;top:130px;width:40px;height:1440px"></div>
+<div class="t1030-ring t1030-gt" style="--c:var(--gt);left:-600px;top:50px;width:1600px;height:1600px"></div>
+<div class="t1030-ring t1030-gt" style="--c:var(--gt);left:-480px;top:170px;width:1360px;height:1360px"></div>
+<div class="t1030-dot t1030-gc" style="--c:#24302f;left:200px;top:850px"></div>
+<div class="t1030-lab t1030-lab-g" style="left:8px;top:8px"><b>html</b> · 25em = 400px · 85% = 340px</div>
+<div class="t1030-lab t1030-lab-h" style="left:8px;top:1066px"><b>html</b> · 400 × 1100</div>
+<div class="t1030-lab t1030-lab-hc" style="left:212px;top:538px">(200, 550)</div>
+<div class="t1030-lab t1030-lab-b" style="left:240px;top:960px"><b>body</b> · 60 × 1440</div>
+<div class="t1030-lab t1030-lab-bc" style="left:212px;top:838px">(200, 850)</div>
+<div class="t1030-lab t1030-lab-t" style="left:240px;top:700px"><b>h1</b> · 25em = 800px</div>
+<div class="t1030-lab t1030-lab-y t1030-l" style="left:174px;top:124px">{% if include.lang == "fr" %}y 130 : haut du h1{% else %}y 130: top of h1{% endif %}</div>
+<div class="t1030-lab t1030-lab-y t1030-l" style="left:174px;top:162px">{% if include.lang == "fr" %}y 170 : r = 680{% else %}y 170: r = 680{% endif %}</div>
+</div>
+</div>
+<div class="legend"><span><i style="--c:#394257"></i>{% if include.lang == "fr" %}anneau de html, centre (200, 550){% else %}html's ring, center (200, 550){% endif %}</span><span><i style="--c:#eaa36f"></i>{% if include.lang == "fr" %}dégradé du body (olive en vrai){% else %}body's gradient (olive in reality){% endif %}</span><span><i style="--c:#8c5bb5"></i>{% if include.lang == "fr" %}anneau du body (ardoise en vrai){% else %}body's ring (slate in reality){% endif %}</span><span><i style="--c:#7ec4c1"></i>{% if include.lang == "fr" %}dégradé du h1 (olive en vrai){% else %}h1's gradient (olive in reality){% endif %}</span><span><i style="--c:#d9483b"></i>{% if include.lang == "fr" %}anneau du h1 (ardoise en vrai){% else %}h1's ring (slate in reality){% endif %}</span></div>
+</div>
+<div class="anim-side">
+<pre class="code" aria-hidden="true"><span data-on="4">&lt;h1></span>&lt;style>*{*{<span data-on="2 3" data-tone="2">margin:0 170-470;height:1440</span>;*{<span data-on="2 4 5" data-tone="2">margin:130 10</span>}}<span data-on="1 3 4">background:radial-gradient(25em,#cbcc58 85%,#394257 0 100%,#cbcc58</span></pre>
+<div class="now" aria-live="polite">
+<div class="caps">
+{%- if include.lang == "fr" %}
+<div class="cap" data-t="0" data-step="Un anneau sur le canevas"><h3>1. Un anneau sur le canevas</h3><p><code>*</code> donne à chaque élément le même fond : un cercle de <code>25em</code>, olive jusqu'à 85 %, ardoise jusqu'à 100 %, olive au-delà. Sur <code>html</code> (police de 16px), c'est un anneau de 340 à 400px de rayon, qui part sur le canevas.</p></div>
+<div class="cap" data-t="4" data-step="html fait 1100px de haut"><h3>2. html fait 1100px de haut</h3><p>En vue large : <code>html</code> n'a pas de hauteur, il enveloppe ses enfants. 130 (la marge du <code>h1</code>, qui traverse <code>body</code>) + 1440 − 470 = 1100px. Le dégradé se centre sur sa boîte : (200, 550). Seul le haut de l'anneau entre dans le canevas.</p></div>
+<div class="cap" data-t="9.6" data-step="body : la fente"><h3>3. body : la fente</h3><p><code>* *</code> vise <code>body</code> : <code>margin:0 170-470</code> et <code>height:1440</code> en font une bande de 60×1440 en (170, 130). Son propre anneau se centre en (200, 850), bien sous le canevas. Dans le canevas, tout est à plus de 400px du centre : de l'olive, la fente.</p></div>
+<div class="cap" data-t="15" data-step="h1 : un anneau deux fois plus grand"><h3>4. h1 : un anneau deux fois plus grand</h3><p><code>* * *</code> vise le <code>h1</code> : <code>margin:130 10</code>, une bande de 40×1440 en (180, 130). Sa police par défaut est de 32px, donc <code>25em</code> fait 800px : un anneau de 680 à 800px, centré lui aussi en (200, 850).</p></div>
+<div class="cap" data-t="20.5" data-step="Le carré"><h3>5. Le carré</h3><p>La bande ardoise du <code>h1</code> monte jusqu'à y = 50, mais sa boîte commence à y = 130 : le haut du carré est coupé net. Le bas suit le rayon de 680px, à y = 170 ; sur 40px de large, l'arc ne s'écarte que de 0,29px.</p></div>
+<div class="cap" data-t="25" data-step="Résultat" data-live="127 caractères · 100 % identique"><h3>6. Résultat : 127 caractères</h3><p>Un seul dégradé, trois éléments, trois échelles : l'image complète, au pixel près.</p></div>
+{%- else %}
+<div class="cap" data-t="0" data-step="A ring on the canvas"><h3>1. A ring on the canvas</h3><p><code>*</code> gives every element the same background: a <code>25em</code> circle, olive up to 85%, slate up to 100%, olive beyond. On <code>html</code> (16px font), that is a ring from 340 to 400px, and it goes to the canvas.</p></div>
+<div class="cap" data-t="4" data-step="html is 1100px tall"><h3>2. html is 1100px tall</h3><p>In wide view: <code>html</code> has no height, it wraps its children. 130 (the <code>h1</code>'s margin, which passes through <code>body</code>) + 1440 − 470 = 1100px. The gradient is centered on its box: (200, 550). Only the top of the ring reaches the canvas.</p></div>
+<div class="cap" data-t="9.6" data-step="body: the slit"><h3>3. body: the slit</h3><p><code>* *</code> matches <code>body</code>: <code>margin:0 170-470</code> and <code>height:1440</code> make it a 60×1440 strip at (170, 130). Its own ring is centered at (200, 850), far below the canvas. Inside the canvas, everything is more than 400px from that center: plain olive, the slit.</p></div>
+<div class="cap" data-t="15" data-step="h1: a ring twice as big"><h3>4. h1: a ring twice as big</h3><p><code>* * *</code> matches the <code>h1</code>: <code>margin:130 10</code>, a 40×1440 strip at (180, 130). Its default font is 32px, so <code>25em</code> is 800px: a ring from 680 to 800px, also centered at (200, 850).</p></div>
+<div class="cap" data-t="20.5" data-step="The square"><h3>5. The square</h3><p>The <code>h1</code>'s slate band goes up to y = 50, but its box starts at y = 130: the top of the square is cut flat. The bottom follows the 680px radius, at y = 170; over 40px, the arc is only 0.29px off a straight line.</p></div>
+<div class="cap" data-t="25" data-step="Result" data-live="127 characters · 100% match"><h3>6. Result: 127 characters</h3><p>One gradient, three elements, three scales: the whole picture, pixel-perfect.</p></div>
+{%- endif %}
+</div>
+<div class="live"></div>
+</div>
+</div>
+<script>
+(window.AnimScenes = window.AnimScenes || {}).t1030 = (fig) => {
+  const fr = document.documentElement.lang === 'fr';
+  const $ = (s) => fig.querySelector(s);
+  const $$ = (s) => [...fig.querySelectorAll(s)];
+  const H = $('.t1030-h'), B = $('.t1030-b'), T = $('.t1030-t'), live = $('.live');
+  const gh = $$('.t1030-gh'), gb = $$('.t1030-gb'), gt = $$('.t1030-gt'), gc = $('.t1030-gc');
+  const lab = (k) => $$('.t1030-lab-' + k);
+  const caps = $$('.caps .cap');
+  const ease = (x) => (x < 0.5 ? 4 * x * x * x : 1 - Math.pow(-2 * x + 2, 3) / 2);
+  const pr = (t, a, b) => ease(Math.min(1, Math.max(0, (t - a) / (b - a))));
+  const win = (t, a, b, f = 0.6) => pr(t, a, a + f) * (1 - pr(t, b - f, b));
+  const op = (els, v) => els.forEach((e) => { e.style.opacity = v; });
+  const n = (v, d = 0) => v.toFixed(d).replace('.', fr ? ',' : '.');
+  const L = fr ? { c: ' :', ctr: 'centre', sag: "flèche de l'arc sur 40px" } : { c: ':', ctr: 'center', sag: 'arc sag over 40px' };
+  return (t, step) => {
+    H.style.opacity = pr(t, 0.2, 1.4);
+    const bg = pr(t, 10, 12.5), tg = pr(t, 15.4, 17.9);
+    B.style.clipPath = `inset(0 0 ${100 * (1 - bg)}% 0)`;
+    B.style.opacity = bg > 0 ? 1 : 0;
+    T.style.clipPath = `inset(0 0 ${100 * (1 - tg)}% 0)`;
+    T.style.opacity = tg > 0 ? 1 : 0;
+    op(gh, win(t, 4.2, 9.6));
+    op(gb, win(t, 9.8, 15));
+    op(gt, win(t, 15.2, 20.5));
+    gc.style.opacity = win(t, 9.8, 20.5);
+    op(lab('g'), win(t, 0.6, 4));
+    op(lab('h'), win(t, 4.4, 9.6));
+    op(lab('hc'), win(t, 4.4, 9.6));
+    op(lab('b'), win(t, 10.2, 15));
+    op(lab('bc'), win(t, 10.2, 20.5));
+    op(lab('t'), win(t, 15.6, 20.5));
+    op(lab('y'), win(t, 20.8, 25));
+    let txt = '';
+    if (step === 0) txt = `html${L.c} 25em = 400px · 85% = 340px`;
+    else if (step === 1) txt = `html${L.c} 130 + 1440 − 470 = 1100px · ${L.ctr} (200, 550)`;
+    else if (step === 2) txt = `body${L.c} 60 × 1440 · ${L.ctr} (200, 850) · y ${n(130 + 1440 * bg)}`;
+    else if (step === 3) txt = `h1${L.c} 32px · 25em = 800px · 85% = 680px · y ${n(130 + 1440 * tg)}`;
+    else if (step === 4) txt = `${L.sag}${L.c} 680 − √(680² − 20²) = ${n(680 - Math.sqrt(680 * 680 - 400), 2)}px`;
+    else txt = caps[step] ? caps[step].dataset.live || '' : '';
+    live.textContent = txt;
+  };
+};
+</script>
+</figure>
