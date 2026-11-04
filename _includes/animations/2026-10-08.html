@@ -1,0 +1,118 @@
+<figure class="anim t1008" data-duration="26" data-scene="t1008" data-wide="0 -150 400 600" style="--bg:#fff">
+<style>
+.t1008 .back{left:0;top:-150px;width:400px;height:600px;background:#6d727a}
+.t1008 .tile{left:0;width:400px;height:300px}
+.t1008 .l1{left:0;top:0;width:400px;height:300px}
+.t1008 .body{left:190px;top:190px;width:20px;height:50px;background:#444}
+.t1008 .g{pointer-events:none;border:2px dashed #1d2827;box-shadow:0 0 0 1px rgb(255 255 255 / .55),inset 0 0 0 1px rgb(255 255 255 / .55)}
+.t1008 .seam{pointer-events:none;left:0;width:400px;height:0;border-top:2px dashed #1d2827;box-shadow:0 0 0 1px rgb(255 255 255 / .6)}
+.t1008 .legend i{box-shadow:0 0 0 1px rgb(0 0 0 / .2)}
+.t1008 .lab{pointer-events:none;font:10.5px/1.2 ui-monospace,SFMono-Regular,Menlo,monospace;color:#24302f;background:rgb(255 255 255 / .85);padding:1px 4px;border-radius:2px;white-space:nowrap}
+.t1008 .code .nb{display:inline-block;min-width:1ch;outline:1px dashed currentColor;outline-offset:-1px}
+</style>
+<div class="anim-col">
+<div class="stage" role="img" aria-label="{% if include.lang == "fr" %}Animation : le calque du fond avec son cercle bleu, décalé de moitié et répété, le disque orange par-dessus, puis le body en bâton gris{% else %}Animation: the bottom layer with its blue circle, slid halfway down and repeated, the orange disc on top, then body as the grey stick{% endif %}">
+<div class="scene">
+<div class="back"></div>
+<div class="tile ta"></div>
+<div class="tile tb"></div>
+<div class="tile tc"></div>
+<div class="l1"></div>
+<div class="body"></div>
+<div class="g hbox" style="left:0;top:0;width:400px;height:300px"></div>
+<div class="seam"></div>
+<div class="g bbox"></div>
+<div class="lab l1a" style="left:6px;top:6px">{% if include.lang == "fr" %}calque 2 · 1in en 50% 95%{% else %}layer 2 · 1in at 50% 95%{% endif %}</div>
+<div class="lab l2a" style="left:6px;top:6px">#9959 + #fff = #c2c299</div>
+<div class="lab lta">{% if include.lang == "fr" %}copie (répétition){% else %}copy (repeat){% endif %}</div>
+<div class="lab ltb">{% if include.lang == "fr" %}la tuile{% else %}the tile{% endif %}</div>
+<div class="lab l3" style="left:296px;top:132px">0 50vh ↓ 150px</div>
+<div class="lab l4" style="left:254px;top:212px">53Q ≈ 50px</div>
+<div class="lab lb"></div>
+<div class="lab lh" style="left:6px;top:6px">html · 400 × 300</div>
+</div>
+</div>
+<div class="legend"><span><i style="--c:#535fb1"></i><i style="--c:#c2c299"></i>{% if include.lang == "fr" %}calque 2, la tuile{% else %}layer 2, the tile{% endif %}</span><span><i style="--c:#2a9d8f"></i><i style="--c:#e0a4ad"></i>{% if include.lang == "fr" %}ses copies (mêmes couleurs en vrai){% else %}its copies (same colors in reality){% endif %}</span><span><i style="--c:#d07b5f"></i>{% if include.lang == "fr" %}calque 1{% else %}layer 1{% endif %}</span><span><i style="--c:#444"></i>body</span></div>
+</div>
+<div class="anim-side">
+<pre class="code" aria-hidden="true"><span class="nb" data-on="5" data-tone="2" title="U+00A0">&nbsp;</span>&lt;style>&amp;{background:<span data-on="4">radial-gradient(1Q,#d07b5f 53Q,#0000)</span>,<span data-on="1 2">radial-gradient(1in at 50%95%,#535fb1 90Q,<span data-on="2" data-tone="2">#9959</span> 89%)</span><span data-on="3">0 50vh</span>;<span data-on="5" data-tone="2">*{margin:190 190 60;background:#444</span></pre>
+<div class="now" aria-live="polite">
+<div class="caps">
+{%- if include.lang == "fr" %}
+<div class="cap" data-t="0" data-step="Calque 2 : cercle bleu, olive transparent"><h3>1. Calque 2 : cercle bleu, olive transparent</h3><p><code>&amp;</code>, c'est <code>html</code>. Son <code>background</code> a deux calques, et le dernier est peint en premier : un cercle de 1in en <code>50% 95%</code>, bleu jusqu'à 90Q (85px), puis <code>#9959</code>, un olive à 60 % d'opacité. Ici sur du gris, pour voir la transparence.</p></div>
+<div class="cap" data-t="4.16" data-step="Canevas blanc : le beige"><h3>2. Canevas blanc : le beige</h3><p>Derrière tout ça, le canevas est blanc. Un olive à 60 % sur du blanc donne le beige de la cible : <code>#9959</code> tient en 5 caractères, le <code>#c2c299</code> opaque en prendrait 7.</p></div>
+<div class="cap" data-t="7.8" data-step="0 50vh : décaler et couper"><h3>3. 0 50vh : décaler et couper</h3><p><code>0 50vh</code> fait descendre le calque de 150px. Un fond se répète par défaut : une copie arrive par le haut, et son bord bas coupe son cercle net à y=150. Le cercle de la tuile elle-même part hors du canevas.</p></div>
+<div class="cap" data-t="13" data-step="Calque 1 : le disque orange"><h3>4. Calque 1 : le disque orange</h3><p>Le premier calque passe par-dessus : un disque orange de 53Q (50px) au centre. <code>#0000</code> n'a pas de position, il se colle donc à 53Q et le bord reste net.</p></div>
+<div class="cap" data-t="16.64" data-step="body : le bâton"><h3>5. body : le bâton</h3><p><code>*</code> dans <code>&amp;</code> vise les éléments sous <code>html</code> ; seul <code>body</code> se voit. Il prend <code>margin:190 190 60</code> et, étiré sur la hauteur de la page, finit en 20×50 : le bâton gris. L'espace insécable du début du code est du texte dans <code>body</code> : il garde <code>html</code> à 400 × 300.</p></div>
+<div class="cap" data-t="21.84" data-step="Résultat" data-live="153 caractères · 100 % identique"><h3>6. Résultat : 153 caractères</h3><p>Dans les vraies couleurs, la copie et la tuile sont pareilles. Deux dégradés et une boîte : l'image complète en 153 caractères.</p></div>
+{%- else %}
+<div class="cap" data-t="0" data-step="Layer 2: blue circle, see-through olive"><h3>1. Layer 2: blue circle, see-through olive</h3><p><code>&amp;</code> is <code>html</code>. Its <code>background</code> has two layers, and the last one is painted first: a 1in circle at <code>50% 95%</code>, blue up to 90Q (85px), then <code>#9959</code>, an olive at 60% opacity. Shown on grey here, so you can see through it.</p></div>
+<div class="cap" data-t="4.16" data-step="White canvas: the beige"><h3>2. White canvas: the beige</h3><p>Behind everything, the canvas is white. A 60% olive over white gives the target's beige: <code>#9959</code> takes 5 characters, the opaque <code>#c2c299</code> would take 7.</p></div>
+<div class="cap" data-t="7.8" data-step="0 50vh: slide and cut"><h3>3. 0 50vh: slide and cut</h3><p><code>0 50vh</code> slides the layer 150px down. Backgrounds repeat by default, so a copy comes in from above, and its bottom edge cuts its circle flat at y=150. The tile's own circle moves off the canvas.</p></div>
+<div class="cap" data-t="13" data-step="Layer 1: the orange disc"><h3>4. Layer 1: the orange disc</h3><p>The first layer goes on top: an orange disc of 53Q (50px) in the middle. <code>#0000</code> has no position, so it snaps to 53Q and the edge stays sharp.</p></div>
+<div class="cap" data-t="16.64" data-step="body: the stick"><h3>5. body: the stick</h3><p><code>*</code> inside <code>&amp;</code> matches the elements under <code>html</code>; only <code>body</code> shows. It takes <code>margin:190 190 60</code> and, stretched to the page height, ends up 20×50: the grey stick. The non-breaking space at the start of the code is text inside <code>body</code>: it keeps <code>html</code> at 400 × 300.</p></div>
+<div class="cap" data-t="21.84" data-step="Result" data-live="153 characters · 100% match"><h3>6. Result: 153 characters</h3><p>In the real colors, the copy and the tile look the same. Two gradients and one box: the whole picture in 153 characters.</p></div>
+{%- endif %}
+</div>
+<div class="live"></div>
+</div>
+</div>
+<script>
+(window.AnimScenes = window.AnimScenes || {}).t1008 = (fig) => {
+  const fr = document.documentElement.lang === 'fr';
+  const $ = (s) => fig.querySelector(s);
+  const BACK = $('.back'), TA = $('.ta'), TB = $('.tb'), TC = $('.tc'), L1 = $('.l1'), BODY = $('.body');
+  const HBOX = $('.hbox'), SEAM = $('.seam'), BBOX = $('.bbox'), live = $('.live');
+  const LB = { l1a: $('.l1a'), l2a: $('.l2a'), lta: $('.lta'), ltb: $('.ltb'), l3: $('.l3'), l4: $('.l4'), lb: $('.lb'), lh: $('.lh') };
+  const caps = [...fig.querySelectorAll('.caps .cap')];
+  const ease = (x) => (x < 0.5 ? 4 * x * x * x : 1 - Math.pow(-2 * x + 2, 3) / 2);
+  const pr = (t, a, b) => ease(Math.min(1, Math.max(0, (t - a) / (b - a))));
+  const lerp = (a, b, m) => a + (b - a) * m;
+  const n = (v, d = 0) => v.toFixed(d).replace('.', fr ? ',' : '.');
+  const c = fr ? ' :' : ':';
+  const win = (t, a, b) => Math.min(pr(t, a, a + 0.6), 1 - pr(t, b - 0.5, b));
+  const grad = (blue, olive) => `radial-gradient(1in at 50%95%,${blue} 90Q,${olive} 89%)`;
+  return (t, step) => {
+    const teach = fig.dataset.teach === '1';
+    const real = !teach || t >= 21.84;
+    // Layer 2: the tile (TB) and its copies above (TA) and below (TC), slid by 0 → 150px.
+    const s = 150 * pr(t, 8.4, 10.8);
+    TA.style.top = -300 + s + 'px';
+    TB.style.top = s + 'px';
+    TC.style.top = 300 + s + 'px';
+    TB.style.background = grad('#535fb1', '#9959');
+    TA.style.background = TC.style.background = real ? grad('#535fb1', '#9959') : grad('#2a9d8f', '#c0607099');
+    BACK.style.opacity = 1 - pr(t, 4.6, 6.2);
+    // Layer 1: the disc grows to 53Q, then the exact official value.
+    const r = pr(t, 13.4, 14.8);
+    L1.style.background = r >= 1 ? 'radial-gradient(1Q,#d07b5f 53Q,#0000)' : `radial-gradient(1Q,#d07b5f ${50.08 * r}px,#0000)`;
+    L1.style.opacity = r > 0 ? 1 : 0;
+    // body: margin 8 → 190 190 60.
+    const m = pr(t, 17.2, 19.2);
+    const bx = lerp(8, 190, m), by = lerp(8, 190, m), bb = lerp(8, 60, m);
+    Object.assign(BBOX.style, { left: bx + 'px', top: by + 'px', width: 400 - 2 * bx + 'px', height: 300 - by - bb + 'px', opacity: win(t, 16.8, 21.84) });
+    BODY.style.opacity = pr(t, 19.2, 19.8);
+    Object.assign(LB.lb.style, { left: m < 1 ? '12px' : '214px', top: m < 1 ? '268px' : '222px', opacity: win(t, 17, 21.84) });
+    LB.lb.textContent = m < 1 ? `body${c} margin ${n(bx)} ${n(bx)} ${n(bb)}` : 'body · 20 × 50';
+    HBOX.style.opacity = Math.max(win(t, 0.2, 3.6), win(t, 19.6, 21.84));
+    LB.lh.style.opacity = win(t, 19.8, 21.84);
+    SEAM.style.top = s + 'px';
+    SEAM.style.opacity = Math.max(win(t, 7.8, 13), win(t, 0.4, 7.8) * 0.5);
+    LB.l1a.style.opacity = win(t, 0.6, 3.6);
+    LB.l2a.style.opacity = win(t, 6, 7.8);
+    LB.lta.style.cssText = `left:6px;top:${-144 + s}px;opacity:${win(t, 0.6, 13)}`;
+    LB.ltb.style.cssText = `left:6px;top:${6 + s}px;opacity:${win(t, 8, 13)}`;
+    LB.l3.style.opacity = win(t, 10.4, 13);
+    LB.l4.style.opacity = win(t, 14.8, 16.64);
+    let txt = '';
+    if (step === 0) txt = fr ? 'calque 2 : 1in = 96px en (200, 285) · bleu → 90Q ≈ 85px' : 'layer 2: 1in = 96px at (200, 285) · blue → 90Q ≈ 85px';
+    else if (step === 1) txt = fr ? '#9959 = #999955 à 60 % · sur #fff → #c2c299' : '#9959 = #999955 at 60% · over #fff → #c2c299';
+    else if (step === 2) txt = `background-position${c} 0 ${n(s)}px`;
+    else if (step === 3) txt = `53Q → ${n(50.08 * r, 1)}px`;
+    else if (step === 4) txt = `body${c} x ${n(bx)} → ${n(400 - bx)}, y ${n(by)} → ${n(300 - bb)} · html 400 × 300`;
+    else txt = caps[step].dataset.live || '';
+    live.textContent = txt;
+  };
+};
+</script>
+</figure>
