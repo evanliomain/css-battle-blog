@@ -1,0 +1,128 @@
+<figure class="anim t1024" data-duration="30" data-scene="t1024" data-wide="-80 -30 560 360" style="--bg:#5065ab">
+<style>
+.t1024{--cream:#ddbd;--tb:#f08a6c;--tp:#7fd18b;--mark:#fef3c7}
+.t1024 .t1024-frame{left:60px;top:100px;width:280px;height:100px;box-sizing:border-box;border:20px solid var(--cream);border-radius:9q;opacity:0}
+.t1024 .t1024-pill{position:absolute;width:20px;box-sizing:border-box;border:10px solid var(--cream);border-radius:9q;background:#5065ab;opacity:0}
+.t1024 .t1024-tall{top:70px;height:160px}
+.t1024 .t1024-short{top:130px;height:40px}
+.t1024 .t1024-grp{left:0;top:0;width:400px;height:300px;opacity:0}
+.t1024 .t1024-grp>.t1024-pill{opacity:1}
+.t1024 .t1024-box{box-sizing:border-box;border:1.5px dashed var(--mark);opacity:0}
+.t1024 .t1024-axis{top:-30px;height:360px;width:0;border-left:2px dashed var(--mark);opacity:0}
+.t1024 .t1024-lab{z-index:53;font:10.5px/1.25 ui-monospace,SFMono-Regular,Menlo,monospace;color:#24302f;background:rgb(255 255 255 / .85);padding:1px 4px;border-radius:2px;white-space:nowrap;pointer-events:none;opacity:0}
+.t1024 .t1024-lab b{font-weight:600}
+</style>
+<div class="anim-col">
+<div class="stage" role="img" aria-label="{% if include.lang == "fr" %}Construction animée de la cible : le cadre de html, le body en grande pilule, le p posé hors du canevas, puis les deux reflets qui ramènent les pilules dans le cadre{% else %}Animated build of the target: html's frame, body as the tall pill, the p placed outside the canvas, then the two reflections that bring the pills into the picture{% endif %}">
+<div class="scene">
+<i class="t1024-frame"></i>
+<i class="t1024-pill t1024-tall t1024-body" style="left:360px"></i>
+<i class="t1024-pill t1024-short t1024-p" style="left:440px"></i>
+<div class="t1024-grp t1024-gp" style="transform-origin:280px 0"><i class="t1024-pill t1024-short t1024-cp" style="left:440px"></i></div>
+<div class="t1024-grp t1024-gb" style="transform-origin:200px 0"><i class="t1024-pill t1024-tall t1024-cb" style="left:360px"></i><i class="t1024-pill t1024-short t1024-cp" style="left:440px"></i><i class="t1024-pill t1024-short t1024-cp" style="left:100px"></i></div>
+<i class="t1024-box t1024-hbox" style="left:60px;top:100px;width:280px;height:100px"></i>
+<i class="t1024-box t1024-bbox"></i>
+<i class="t1024-box t1024-pbox" style="left:440px;top:130px;width:20px;height:40px"></i>
+<i class="t1024-axis t1024-ax-p" style="left:279px"></i>
+<i class="t1024-axis t1024-ax-b" style="left:199px"></i>
+<b class="t1024-lab t1024-l-html" style="left:64px;top:206px"><b>html</b> · 280 × 100 · margin:25%60</b>
+<b class="t1024-lab t1024-l-col" style="left:64px;top:206px">#DDBD · {% if include.lang == "fr" %}rayon 9q ≈ 8,5px{% else %}radius 9q ≈ 8.5px{% endif %}</b>
+<b class="t1024-lab t1024-l-body" style="left:200px;top:236px"><b>body</b> · x 360 · 20 × 160</b>
+<b class="t1024-lab t1024-l-p" style="left:404px;top:176px"><b>p</b> · x 440<br>20 × 40</b>
+<b class="t1024-lab t1024-l-mp" style="right:124px;top:236px">{% if include.lang == "fr" %}miroir du p : x = 280{% else %}p’s mirror: x = 280{% endif %}</b>
+<b class="t1024-lab t1024-l-mb" style="left:204px;top:236px">{% if include.lang == "fr" %}miroir du body : x = 200{% else %}body’s mirror: x = 200{% endif %}</b>
+<b class="t1024-lab t1024-l-gone" style="right:404px;top:176px">{% if include.lang == "fr" %}copie du p<br>x = −60{% else %}copy of p<br>x = −60{% endif %}</b>
+</div>
+</div>
+<div class="legend"><span><i style="--c:#cacdb9"></i>{% if include.lang == "fr" %}bordure de html{% else %}html's border{% endif %}</span><span><i style="--c:var(--tb)"></i>{% if include.lang == "fr" %}body et ses copies{% else %}body and its copies{% endif %}</span><span><i style="--c:var(--tp)"></i>{% if include.lang == "fr" %}p et ses copies{% else %}p and its copies{% endif %}</span></div>
+</div>
+<div class="anim-side">
+<pre class="code" aria-hidden="true"><span data-on="4">&lt;p></span>   &lt;style>*{<span data-on="1">margin:25%60</span>;<span data-on="1">border:2.5ch solid</span><span data-on="2">#DDBD</span>;<span data-on="2">border-radius:9q</span>;<span data-on="1">background:#5065AB</span>;<span data-on="4">p{margin:50 70}</span>*{<span data-on="3" data-tone="2">margin:-50 280</span>;<span data-on="5 6">-webkit-box-reflect:left 80vw</span>;<span data-on="3" data-tone="2">font:9q'</span></pre>
+<div class="now" aria-live="polite">
+<div class="caps">
+{%- if include.lang == "fr" %}
+<div class="cap" data-t="0" data-step="html : le cadre"><h3>1. html : le cadre</h3><p><code>*</code> touche d'abord <code>html</code>. Son fond bleu part sur le canevas. <code>margin:25%60</code> : 25 % de la largeur, soit 100px en haut et en bas, et 60px sur les côtés. En mode quirks, il remplit le reste : une boîte de 280 × 100. Sa bordure de <code>2.5ch</code> fait 20px (1ch = 8px à 16px) : c'est le cadre.</p></div>
+<div class="cap" data-t="4.5" data-step="#DDBD sur du bleu"><h3>2. #DDBD sur du bleu</h3><p><code>#DDBD</code> est un beige à 87 % d'opacité. Peint sur le bleu, il donne le beige de la cible, environ <code>#cacdb9</code> : 5 caractères au lieu de 7. Le rayon <code>9q</code> (8,5px) arrondit l'extérieur, et la bordure, plus épaisse, laisse les coins intérieurs carrés.</p></div>
+<div class="cap" data-t="9" data-step="body : la grande pilule"><h3>3. body : la grande pilule</h3><p>La règle imbriquée touche le <code>body</code>. Ses marges de 280 ne laissent aucune largeur : il se pose en x = 360, avec 0px de contenu. <code>font:9q'</code> réduit la police à 8,5px, donc <code>2.5ch</code> n'y fait plus que 10px : deux bordures collées, 20px de large. Les marges de −50 et le mode quirks lui donnent 160px de haut.</p></div>
+<div class="cap" data-t="13.5" data-step="Le p, hors du canevas"><h3>4. Le p, hors du canevas</h3><p>Le <code>&lt;p></code> est dans le <code>body</code>. <code>p{margin:50 70}</code>, plus précis que <code>*</code>, le pose 70px à droite du body : en x = 440, hors du canevas (vue large). Il fait 20 × 40.</p></div>
+<div class="cap" data-t="18" data-step="Le reflet du p"><h3>5. Le reflet du p</h3><p>Le <code>p</code> a aussi <code>-webkit-box-reflect:left 80vw</code> : une image miroir à sa gauche, 320px plus loin. Le miroir passe en x = 440 − 160 = 280 : le reflet tombe en x = 100, dans le cadre. Première petite pilule.</p></div>
+<div class="cap" data-t="22" data-step="Le reflet du body"><h3>6. Le reflet du body</h3><p>Le <code>body</code> a le même reflet, miroir en x = 360 − 160 = 200. Il recopie le body (grande pilule en x = 20) et tout ce qu'il contient, reflet du <code>p</code> compris : la seconde petite pilule tombe en x = 280. La copie du p part en x = −60, hors du canevas.</p></div>
+<div class="cap" data-t="27" data-step="Résultat" data-live="158 caractères · 100 % identique"><h3>7. Résultat : 158 caractères</h3><p>Dans les vraies couleurs : trois boîtes et deux reflets, dont un reflet de reflet.</p></div>
+{%- else %}
+<div class="cap" data-t="0" data-step="html: the frame"><h3>1. html: the frame</h3><p><code>*</code> matches <code>html</code> first. Its blue background goes to the canvas. <code>margin:25%60</code>: 25% of the width, so 100px at the top and bottom, and 60px on the sides. In quirks mode it fills the rest: a 280 × 100 box. Its <code>2.5ch</code> border is 20px (1ch = 8px at 16px): that is the frame.</p></div>
+<div class="cap" data-t="4.5" data-step="#DDBD over blue"><h3>2. #DDBD over blue</h3><p><code>#DDBD</code> is a beige at 87% opacity. Painted over the blue, it gives the target's beige, about <code>#cacdb9</code>: 5 characters instead of 7. The <code>9q</code> radius (8.5px) rounds the outside, and the thicker border keeps the inner corners square.</p></div>
+<div class="cap" data-t="9" data-step="body: the tall pill"><h3>3. body: the tall pill</h3><p>The nested rule matches the <code>body</code>. Its 280 margins leave no width: it sits at x = 360 with 0px of content. <code>font:9q'</code> sets the font to 8.5px, so <code>2.5ch</code> is only 10px there: two borders side by side, 20px wide. The −50 margins and quirks mode make it 160px tall.</p></div>
+<div class="cap" data-t="13.5" data-step="The p, off the canvas"><h3>4. The p, off the canvas</h3><p>The <code>&lt;p></code> is inside the <code>body</code>. <code>p{margin:50 70}</code>, more specific than <code>*</code>, puts it 70px right of the body: at x = 440, outside the canvas (wide view). It is 20 × 40.</p></div>
+<div class="cap" data-t="18" data-step="The p’s reflection"><h3>5. The p’s reflection</h3><p>The <code>p</code> also has <code>-webkit-box-reflect:left 80vw</code>: a mirror image on its left, 320px away. The mirror line is at x = 440 − 160 = 280, so the reflection lands at x = 100, inside the frame. First small pill.</p></div>
+<div class="cap" data-t="22" data-step="The body’s reflection"><h3>6. The body’s reflection</h3><p>The <code>body</code> has the same reflection, mirrored at x = 360 − 160 = 200. It copies the body (tall pill at x = 20) and everything in it, the <code>p</code>'s reflection included: the second small pill lands at x = 280. The copy of the p goes to x = −60, off the canvas.</p></div>
+<div class="cap" data-t="27" data-step="Result" data-live="158 characters · 100% match"><h3>7. Result: 158 characters</h3><p>In the real colors: three boxes and two reflections, one of them a reflection of a reflection.</p></div>
+{%- endif %}
+</div>
+<div class="live"></div>
+</div>
+</div>
+<script>
+(window.AnimScenes = window.AnimScenes || {}).t1024 = (fig) => {
+  const fr = document.documentElement.lang === 'fr';
+  const $ = (s) => fig.querySelector('.t1024-' + s);
+  const live = fig.querySelector('.live');
+  const caps = [...fig.querySelectorAll('.caps .cap')];
+  const ease = (x) => (x < 0.5 ? 4 * x * x * x : 1 - Math.pow(-2 * x + 2, 3) / 2);
+  const pr = (t, a, b) => ease(Math.min(1, Math.max(0, (t - a) / (b - a))));
+  const win = (t, a, b, c, d) => Math.min(pr(t, a, b), 1 - pr(t, c, d));
+  const lerp = (a, b, m) => a + (b - a) * m;
+  const el = {};
+  ['frame', 'body', 'p', 'gp', 'gb', 'hbox', 'bbox', 'pbox', 'ax-p', 'ax-b', 'l-html', 'l-col', 'l-body', 'l-p', 'l-mp', 'l-mb', 'l-gone'].forEach((k) => { el[k] = $(k); });
+  const cb = [...fig.querySelectorAll('.t1024-cb')], cp = [...fig.querySelectorAll('.t1024-cp')];
+  const op = (k, v) => { el[k].style.opacity = v; };
+  return (t, step) => {
+    const teach = fig.dataset.teach === '1';
+    const fin = pr(t, 27.2, 28.4);
+    const guide = 1 - fin;
+    // teaching colors: body and its copies coral, p and its copies green; real: #DDBD everywhere
+    const tc = (c) => (teach && fin < 1 ? `color-mix(in srgb,#ddbd ${100 * fin}%,${c})` : '#ddbd');
+    el.body.style.borderColor = cb[0].style.borderColor = tc('#f08a6c');
+    [el.p, ...cp].forEach((e) => { e.style.borderColor = tc('#7fd18b'); });
+    // 1-2: html's frame, opaque #ddb first, then its real see-through color
+    op('frame', pr(t, 0.6, 1.6));
+    const a = pr(t, 5, 6.5);
+    el.frame.style.borderColor = a < 1 ? `color-mix(in srgb,#ddb ${100 - 100 * a}%,#ddbd)` : '';
+    op('hbox', win(t, 0.3, 0.8, 4.2, 4.5));
+    op('l-html', win(t, 0.6, 1.1, 4.2, 4.5));
+    op('l-col', win(t, 4.6, 5, 8.6, 9));
+    // 3: body
+    const b = pr(t, 9.4, 11);
+    Object.assign(el.bbox.style, { left: lerp(80, 360, b) + 'px', top: lerp(120, 70, b) + 'px', width: lerp(240, 20, b) + 'px', height: lerp(60, 160, b) + 'px' });
+    op('bbox', win(t, 9.1, 9.4, 12.8, 13.3));
+    op('body', pr(t, 11, 11.8));
+    op('l-body', win(t, 9.1, 9.5, 13.1, 13.4));
+    // 4: the p, off the canvas
+    op('pbox', win(t, 14, 14.4, 17.6, 18));
+    op('p', pr(t, 14.4, 15.2));
+    op('l-p', win(t, 14.2, 14.6, 21.6, 22));
+    // 5: p's reflection folds over the mirror at x = 280
+    const rp = pr(t, 18.8, 20.6);
+    el.gp.style.transform = `scaleX(${1 - 2 * rp})`;
+    op('gp', pr(t, 18.4, 18.8));
+    op('ax-p', Math.min(pr(t, 18.2, 18.6), 1 - pr(t, 21.6, 22), guide));
+    op('l-mp', win(t, 18.2, 18.6, 21.6, 22));
+    // 6: body's reflection folds over x = 200 and copies body, p and p's reflection
+    const rb = pr(t, 22.8, 24.8);
+    el.gb.style.transform = `scaleX(${1 - 2 * rb})`;
+    op('gb', pr(t, 22.4, 22.8));
+    op('ax-b', Math.min(pr(t, 22.2, 22.6), guide));
+    op('l-mb', win(t, 22.2, 22.6, 26.6, 27));
+    op('l-gone', win(t, 24.8, 25.2, 26.6, 27));
+    let txt = '';
+    if (step === 0) txt = fr ? 'html : 280 × 100 en (60, 100) · bordure 2.5ch = 20 px' : 'html: 280 × 100 at (60, 100) · border 2.5ch = 20 px';
+    else if (step === 1) txt = fr ? `#DDBD = #DDDDBB à 87 % → ≈ #cacdb9 sur le bleu` : '#DDBD = #DDDDBB at 87% → ≈ #cacdb9 over the blue';
+    else if (step === 2) txt = fr ? 'body : x 360 → 380, y 70 → 230 · 2.5ch = 10 px' : 'body: x 360 → 380, y 70 → 230 · 2.5ch = 10 px';
+    else if (step === 3) txt = fr ? 'p : x 440 → 460, y 130 → 170' : 'p: x 440 → 460, y 130 → 170';
+    else if (step === 4) txt = (fr ? 'miroir x = 280 · copie du p : x ' : 'mirror x = 280 · copy of the p: x ') + Math.round(lerp(440, 100, rp));
+    else if (step === 5) txt = (fr ? 'miroir x = 200 · ' : 'mirror x = 200 · ') + `360 → ${Math.round(lerp(360, 20, rb))} · 440 → ${Math.round(lerp(440, -60, rb))} · 100 → ${Math.round(lerp(100, 280, rb))}`.replace(/-/g, '−');
+    else txt = caps[step] ? caps[step].dataset.live || '' : '';
+    live.textContent = txt;
+  };
+};
+</script>
+</figure>

@@ -33,3 +33,6 @@ koda_pig:
 kieron:
   name: "Kieron"
   avatar: /assets/avatars/kieron.webp
+levito:
+  name: "Veit Lehmann"
+  avatar: /assets/avatars/levito.webp
