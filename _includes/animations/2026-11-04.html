@@ -1,0 +1,129 @@
+<figure class="anim t1104" data-duration="23" data-scene="t1104" data-wide="-50 -10 580 500" data-off-label="-46 462" style="--bg:#2f5a76">
+<style>
+.t1104{--t1104-coral:#de6b67;--t1104-blue:#2f5a76;--t1104-body:#c3a6ff;--t1104-img:#f2c14e;--t1104-cut:#5b8fb3;--t1104-marg:rgb(255 214 102 / .2)}
+.t1104 .t1104-m{background:var(--t1104-marg);outline:1px dashed rgb(255 214 102 / .7);outline-offset:-1px}
+.t1104 .t1104-bar{left:30px;top:230px;width:340px;height:20px;background:var(--t1104-coral)}
+.t1104 .t1104-hbox{left:30px;top:230px;width:340px;height:20px;outline:2px dashed #fff;outline-offset:2px;pointer-events:none}
+.t1104 .t1104-box{box-sizing:border-box;border:0 solid var(--t1104-coral);border-bottom:0;background:transparent}
+.t1104 .t1104-pen{width:0;top:150px;height:110px;border-left:2px dashed #fff;pointer-events:none}
+.t1104 .zlab{color:#fff;background:rgb(20 40 55 / .85);padding:1px 5px;border-radius:3px}
+.t1104 .legend .t1104-mk{background:var(--t1104-marg);box-shadow:inset 0 0 0 1px rgb(255 214 102 / .9)}
+</style>
+<div class="anim-col">
+<div class="stage" role="img" aria-label="{% if include.lang == "fr" %}Animation : zoom 5 sur html, réduit à une barre, puis le body remonté par une marge de −70 % et deux img échangées par une marge droite négative forment les trois arches{% else %}Animation: html zoomed 5 times and reduced to a bar, then the body lifted by a −70% margin and two swapped imgs make the three arches{% endif %}">
+<div class="scene">
+<div class="t1104-m t1104-mt" style="left:0;top:0;width:400px;height:230px"></div>
+<div class="t1104-m t1104-mb" style="left:0;top:250px;width:400px;height:230px"></div>
+<div class="t1104-m t1104-ml" style="left:0;top:230px;width:30px;height:20px"></div>
+<div class="t1104-m t1104-mr" style="left:370px;top:230px;width:30px;height:20px"></div>
+<div class="t1104-bar"></div>
+<div class="t1104-box t1104-body"></div>
+<div class="t1104-box t1104-img t1104-i1"></div>
+<div class="t1104-box t1104-img t1104-i2"></div>
+<div class="t1104-hbox"></div>
+<div class="t1104-pen"></div>
+<span class="zlab t1104-l-zoom" style="left:8px;top:8px">zoom:5 · margin 46 → 230 px</span>
+<span class="zlab t1104-l-mb" style="left:8px;top:310px">{% if include.lang == "fr" %}marge du bas de html : 230 px{% else %}html's bottom margin: 230 px{% endif %}</span>
+<span class="zlab t1104-l-html" style="left:30px;top:206px">html · 340 × 20</span>
+<span class="zlab t1104-l-body" style="left:242px;top:44px">body · 70 × 210</span>
+<span class="zlab t1104-l-img" style="left:270px;top:136px">img · 70 × 90</span>
+<span class="zlab t1104-l-pen" style="left:150px;top:136px">margin-right −73 × 5 = −365 px</span>
+</div>
+</div>
+<div class="legend"><span><i style="--c:var(--t1104-coral)"></i>{% if include.lang == "fr" %}bordure du haut de html : la barre{% else %}html's top border: the bar{% endif %}</span><span><i style="--c:var(--t1104-body)"></i>{% if include.lang == "fr" %}bordures du body (corail en vrai){% else %}body's borders (coral in reality){% endif %}</span><span><i style="--c:var(--t1104-img)"></i>{% if include.lang == "fr" %}bordures des img (corail en vrai){% else %}img borders (coral in reality){% endif %}</span><span><i style="--c:var(--t1104-cut)"></i>{% if include.lang == "fr" %}fonds qui recouvrent la barre (bleu en vrai){% else %}backgrounds covering the bar (blue in reality){% endif %}</span><span><i class="t1104-mk"></i>{% if include.lang == "fr" %}marges de html, × 5{% else %}html's margins, × 5{% endif %}</span></div>
+</div>
+<div class="anim-side">
+<pre class="code" aria-hidden="true"><span data-on="5 6" data-tone="2">&lt;img>&lt;img></span>&lt;style>*{<span data-on="1 4 7">background:#2F5A76</span>;<span data-on="2 4 5">border:solid#DE6B67;border-width:4 4 0</span>}&amp;{<span data-on="1 2">zoom:5;margin:46 6</span>;*{<span data-on="3" data-tone="2">margin:-70%23 0</span>;<span data-on="4 7" data-tone="2">border-radius:9q 9q 0 0</span>;*{<span data-on="5" data-tone="2">margin:20</span><span data-on="5 6" data-tone="2">-73</span><span data-on="5" data-tone="2"> 0 17</span>;<span data-on="5" data-tone="2">padding:7 3</span></pre>
+<div class="now" aria-live="polite">
+<div class="caps">
+{%- if include.lang == "fr" %}
+<div class="cap" data-t="0" data-step="zoom:5, tout × 5"><h3>1. zoom:5 : tout est multiplié par 5</h3><p><code>&amp;</code>, c'est <code>html</code>. <code>zoom:5</code> agrandit 5 fois tout ce qu'il contient : chaque pixel CSS en couvre 5 à l'écran. Le code peut donc écrire de petits nombres. <code>margin:46 6</code> donne des marges de 230px en haut et en bas, 30px à gauche et à droite. Le fond bleu de <code>html</code> part sur tout le canevas.</p></div>
+<div class="cap" data-t="3" data-step="html : rien qu'une bordure"><h3>2. html n'a pas de hauteur : il reste sa bordure</h3><p>En mode quirks, <code>html</code> remplit la fenêtre moins ses marges : 300 / 5 − 2 × 46 = −32px, donc 0. Il ne reste que sa bordure du haut, <code>4</code> × 5 = 20px : une barre corail de 340 × 20 en (30, 230). C'est la ligne du bas. Ses bordures de côté, de 20 × 20, se fondent dedans.</p></div>
+<div class="cap" data-t="6" data-step="body : margin -70%"><h3>3. body remonté par margin:-70%</h3><p>Une marge en % se calcule sur la largeur du parent, ici 60px CSS (340 / 5 − 2 × 4). <code>-70%</code> vaut −42px : le <code>body</code> remonte de 210px à l'écran. En mode quirks, il remplit la hauteur de <code>html</code> moins ses marges : 0 − (−42) = 42px, soit 210px. <code>23</code> à gauche et à droite le réduit à 14px, soit 70px de large.</p></div>
+<div class="cap" data-t="9.5" data-step="Bordure et 9q : la grande arche"><h3>4. Bordure et border-radius : la grande arche</h3><p>Le <code>body</code> reçoit les mêmes bordures : 20px en haut et sur les côtés, rien en bas. <code>border-radius:9q 9q 0 0</code> fait 8,5px CSS, plus que la moitié de ses 14px : le navigateur réduit les rayons, et le haut devient un demi-cercle. Son fond bleu recouvre la barre entre ses deux pieds.</p></div>
+<div class="cap" data-t="12.5" data-step="Deux img vides, 70 × 90"><h3>5. Deux &lt;img> vides de 70 × 90</h3><p>Une <code>&lt;img></code> sans image ne mesure rien, mais elle garde ses bordures et son <code>padding:7 3</code> : 14 × 18px CSS, soit 70 × 90. Ce sont des éléments en ligne, posés sur la ligne du <code>body</code>. <code>margin:20</code> en haut les descend à y = 160. La première commence 17px CSS (85px) après le bord du <code>body</code> : x = 270.</p></div>
+<div class="cap" data-t="15" data-step="-73 : la 2e passe à gauche"><h3>6. Marge droite de −73 : la seconde passe à gauche</h3><p>Sans elle, la seconde <code>&lt;img></code> suivrait la première, hors du canevas en x = 425. Sa marge droite de −73px CSS (−365px) ramène le curseur de la ligne de 340 à −25. Avec ses 85px de marge gauche, la seconde se pose en x = 60 : pile le symétrique de la première autour de x = 200.</p></div>
+<div class="cap" data-t="18" data-step="Les mêmes arrondis"><h3>7. Les mêmes arrondis, en petit</h3><p>Les <code>&lt;img></code> sont aussi des descendants de <code>html</code> : elles reçoivent le même <code>border-radius:9q 9q 0 0</code>. Avec 14px de large, elles ont aussi un demi-cercle en haut. Leur fond bleu recouvre la barre entre leurs pieds.</p></div>
+<div class="cap" data-t="20.5" data-step="Résultat" data-live="171 caractères · 100 % identique"><h3>8. Résultat : 171 caractères</h3><p>Une barre, trois arches. Une seule règle de bordure sert aux quatre éléments, et <code>zoom:5</code> garde tous les nombres courts.</p></div>
+{%- else %}
+<div class="cap" data-t="0" data-step="zoom:5, everything × 5"><h3>1. zoom:5: everything times 5</h3><p><code>&amp;</code> is <code>html</code>. <code>zoom:5</code> makes everything in it 5 times bigger: each CSS pixel covers 5 on screen. So the code can use small numbers. <code>margin:46 6</code> gives margins of 230px at the top and bottom, 30px on the left and right. The blue background of <code>html</code> goes to the whole canvas.</p></div>
+<div class="cap" data-t="3" data-step="html: just a border"><h3>2. html has no height: only its border is left</h3><p>In quirks mode, <code>html</code> fills the window minus its margins: 300 / 5 − 2 × 46 = −32px, so 0. Only its top border is left, <code>4</code> × 5 = 20px: a 340 × 20 coral bar at (30, 230). That is the bottom line. Its 20 × 20 side borders blend into it.</p></div>
+<div class="cap" data-t="6" data-step="body: margin -70%"><h3>3. body lifted by margin:-70%</h3><p>A margin in % is a share of the parent's width, here 60 CSS px (340 / 5 − 2 × 4). <code>-70%</code> is −42px: the <code>body</code> moves up 210px on screen. In quirks mode it fills the height of <code>html</code> minus its margins: 0 − (−42) = 42px, which is 210px. <code>23</code> on the left and right narrows it to 14px, 70px wide.</p></div>
+<div class="cap" data-t="9.5" data-step="Border and 9q: the tall arch"><h3>4. Border and border-radius: the tall arch</h3><p>The <code>body</code> gets the same borders: 20px at the top and on the sides, none at the bottom. <code>border-radius:9q 9q 0 0</code> is 8.5 CSS px, more than half of its 14px: the browser scales the radii down, and the top becomes a half circle. Its blue background covers the bar between its two legs.</p></div>
+<div class="cap" data-t="12.5" data-step="Two empty imgs, 70 × 90"><h3>5. Two empty &lt;img>, 70 × 90</h3><p>An <code>&lt;img></code> with no image has no size, but it keeps its borders and its <code>padding:7 3</code>: 14 × 18 CSS px, so 70 × 90. They are inline elements, sitting on the <code>body</code>'s line. <code>margin:20</code> at the top moves them down to y = 160. The first one starts 17 CSS px (85px) after the edge of the <code>body</code>: x = 270.</p></div>
+<div class="cap" data-t="15" data-step="-73: the 2nd goes left"><h3>6. A −73 right margin: the second one goes left</h3><p>Without it, the second <code>&lt;img></code> would follow the first, off the canvas at x = 425. Its right margin of −73 CSS px (−365px) takes the line's pen back from 340 to −25. With its 85px left margin, the second one lands at x = 60: the exact mirror of the first around x = 200.</p></div>
+<div class="cap" data-t="18" data-step="The same rounding"><h3>7. The same rounding, smaller</h3><p>The <code>&lt;img></code> are descendants of <code>html</code> too: they get the same <code>border-radius:9q 9q 0 0</code>. At 14px wide, they also get a half circle on top. Their blue background covers the bar between their legs.</p></div>
+<div class="cap" data-t="20.5" data-step="Result" data-live="171 characters · 100% match"><h3>8. Result: 171 characters</h3><p>One bar, three arches. A single border rule serves all four elements, and <code>zoom:5</code> keeps every number short.</p></div>
+{%- endif %}
+</div>
+<div class="live"></div>
+</div>
+</div>
+<script>
+(window.AnimScenes = window.AnimScenes || {}).t1104 = (fig) => {
+  const fr = document.documentElement.lang === 'fr';
+  const $ = (s) => fig.querySelector(s);
+  const $$ = (s) => [...fig.querySelectorAll(s)];
+  const M = $$('.t1104-m'), BAR = $('.t1104-bar'), HBOX = $('.t1104-hbox'), BODY = $('.t1104-body'), I1 = $('.t1104-i1'), I2 = $('.t1104-i2'), PEN = $('.t1104-pen'), live = $('.live');
+  const LZ = $('.t1104-l-zoom'), LMB = $('.t1104-l-mb'), LH = $('.t1104-l-html'), LB = $('.t1104-l-body'), LI = $('.t1104-l-img'), LP = $('.t1104-l-pen');
+  const W = { zoom: [0.3, 1.8], bar: [3.2, 4.4], body: [6.3, 8.6], arch: [9.8, 11.4], imgs: [12.8, 14], swap: [15.3, 17.4], round: [18.2, 19.6], fin: [20.6, 21.6] };
+  const ease = (x) => (x < 0.5 ? 4 * x * x * x : 1 - Math.pow(-2 * x + 2, 3) / 2);
+  const pr = (t, [a, b]) => ease(Math.min(1, Math.max(0, (t - a) / (b - a))));
+  const lerp = (a, b, m) => a + (b - a) * m;
+  const win = (t, a, b) => Math.min(pr(t, [a, a + 0.5]), 1 - pr(t, [b - 0.4, b]));
+  const n = (v) => String(Math.round(v)).replace('-', '−');
+  const c = fr ? ' :' : ':';
+  const place = (el, x, y, w, h) => Object.assign(el.style, { left: `${x}px`, top: `${y}px`, width: `${w}px`, height: `${h}px` });
+  return (t, step) => {
+    const teach = fig.dataset.teach === '1';
+    const real = !teach || t >= W.fin[0];
+    const col = (v) => (real ? `var(--t1104-${v === 'cut' ? 'blue' : 'coral'})` : `var(--t1104-${v})`);
+    // 1. margins (teaching), 2. the bar
+    M.forEach((e) => { e.style.opacity = teach ? win(t, W.zoom[0], W.bar[1] + 1.2) * (real ? 0 : 1) : 0; });
+    LZ.style.opacity = win(t, 0.3, 3);
+    LMB.style.opacity = win(t, 0.3, 5.8) * (fig.dataset.view === 'wide' ? 1 : 0);
+    BAR.style.opacity = pr(t, W.bar);
+    HBOX.style.opacity = win(t, W.bar[0], 5.8);
+    LH.style.opacity = win(t, W.bar[0], 5.8);
+    // 3. body: from html's empty content box (50, 250, 300 × 0) to (165, 40, 70 × 210); 4. its border and radius
+    const b = pr(t, W.body), a = pr(t, W.arch);
+    const bx = lerp(50, 165, b), by = lerp(250, 40, b), bw = lerp(300, 70, b), bh = lerp(0, 210, b);
+    place(BODY, bx, by, bw, bh);
+    BODY.style.opacity = t >= W.body[0] ? 1 : 0;
+    BODY.style.outline = a < 1 && !real ? '2px dashed var(--t1104-body)' : a < 1 ? '2px dashed rgb(255 255 255 / .8)' : 'none';
+    BODY.style.outlineOffset = '-1px';
+    BODY.style.borderWidth = `${20 * a}px ${20 * a}px 0`;
+    BODY.style.borderColor = col('body');
+    BODY.style.background = a > 0 ? col('cut') : 'transparent';
+    BODY.style.borderRadius = `${35 * a}px ${35 * a}px 0 0`;
+    LB.style.opacity = win(t, W.body[0], 12.4);
+    // 5. the imgs, 6. the second one swaps to the left, 7. rounding
+    const im = pr(t, W.imgs), sw = pr(t, W.swap), rd = pr(t, W.round);
+    const x2 = lerp(425, 60, sw);
+    place(I1, 270, 160, 70, 90);
+    place(I2, x2, 160, 70, 90);
+    [I1, I2].forEach((e) => {
+      e.style.opacity = im;
+      e.style.borderWidth = '20px 20px 0';
+      e.style.borderColor = col('img');
+      e.style.background = rd > 0 ? col('cut') : 'transparent';
+      e.style.borderRadius = `${35 * rd}px ${35 * rd}px 0 0`;
+    });
+    LI.style.opacity = win(t, W.imgs[0], 15);
+    PEN.style.left = `${lerp(340, -25, Math.min(1, sw / 0.6))}px`;
+    PEN.style.opacity = win(t, W.swap[0] - 0.2, W.round[0]);
+    LP.style.opacity = win(t, W.swap[0] - 0.2, W.round[0]);
+    let txt = '';
+    if (step === 0) txt = `zoom 5${c} margin 46 6 → 230 px, 30 px`;
+    else if (step === 1) txt = `html${c} x 30 → 370, y 230 → 250`;
+    else if (step === 2) txt = `body${c} x ${n(bx)} → ${n(bx + bw)}, y ${n(by)} → ${n(by + bh)}`;
+    else if (step === 3) txt = `border-radius${c} 9q = 8,5 px × 5 = 42,5 → 35 px`.replace(/,/g, fr ? ',' : '.');
+    else if (step === 4) txt = `img${c} 70 × 90 ${fr ? 'en' : 'at'} (270, 160)`;
+    else if (step === 5) txt = `img 2${c} x ${n(x2)} → ${n(x2 + 70)}`;
+    else if (step === 6) txt = `img${c} x 60 → 130, 270 → 340 · body${c} x 165 → 235`;
+    else txt = $$('.caps .cap')[7].dataset.live || '';
+    live.textContent = txt;
+  };
+};
+</script>
+</figure>
