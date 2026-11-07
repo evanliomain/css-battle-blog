@@ -1,0 +1,142 @@
+<figure class="anim t1106" data-duration="25" data-scene="t1106" data-wide="-20 -80 460 420" data-off-label="-16 -76" style="--bg:#e88e6c">
+<style>
+.t1106{--t1106-brown:#8b4646;--t1106-sal:#e98f6b;--t1106-teach:#2fc4d8;--t1106-dash:rgb(45 18 18 / .8)}
+.t1106 .t1106-grp{transform-origin:120px 120px}
+.t1106 .t1106-grp > *{position:absolute}
+.t1106 .t1106-b{background:var(--t1106-brown)}
+.t1106 .t1106-box{left:0;top:0;width:240px;height:240px;box-sizing:border-box;border:2px dashed var(--t1106-dash);pointer-events:none}
+.t1106 .t1106-cp{width:240px;height:240px;box-sizing:border-box;border:2px dotted var(--t1106-brown);pointer-events:none}
+.t1106 .t1106-ctr{width:6px;height:6px;margin:-3px 0 0 -3px;border-radius:50%;background:var(--t1106-dash);left:255.39px;top:94.61px}
+.t1106 .zlab{color:#fff;background:rgb(45 18 18 / .85);padding:1px 5px;border-radius:3px}
+.t1106 .legend .t1106-mk{background:transparent;box-shadow:inset 0 0 0 1.5px currentColor}
+</style>
+<div class="anim-col">
+<div class="stage" role="img" aria-label="{% if include.lang == "fr" %}Animation : html et body reçoivent la même liste d'ombres, une brune décalée de 40px et une couleur fond décalée de 10px par-dessus ; chacune dessine une équerre, et le scale:-1 du body retourne la seconde, qui croise la première{% else %}Animation: html and body get the same shadow list, a brown one moved 40px and a background-colored one moved 10px on top; each draws an L, and the body's scale:-1 turns the second one around so it crosses the first{% endif %}">
+<div class="scene">
+<div class="t1106-grp t1106-hg" style="left:25px;top:85px;width:240px;height:240px">
+<div class="t1106-cp"></div>
+<div class="t1106-b t1106-bt"></div>
+<div class="t1106-b t1106-br"></div>
+<div class="t1106-st"></div>
+<div class="t1106-sr"></div>
+<div class="t1106-box"></div>
+</div>
+<div class="t1106-grp t1106-bg" style="width:240px;height:240px">
+<div class="t1106-cp"></div>
+<div class="t1106-b t1106-bt"></div>
+<div class="t1106-b t1106-br"></div>
+<div class="t1106-st"></div>
+<div class="t1106-sr"></div>
+<div class="t1106-box"></div>
+</div>
+<div class="t1106-ctr"></div>
+<span class="zlab t1106-l-bg" style="left:8px;top:8px">#d52a {% if include.lang == "fr" %}sur le blanc{% else %}over white{% endif %} → #e88e6c</span>
+<span class="zlab t1106-l-html" style="left:31px;top:95px">html · 240 × 240 · margin 85 135 −25 25</span>
+<span class="zlab t1106-l-br" style="left:150px;top:26px">5ch −5ch · +40, −40</span>
+<span class="zlab t1106-l-sal" style="left:40px;top:92px">11q −11q · 10.39 px</span>
+<span class="zlab t1106-l-body" style="left:141px;top:-20px">body · 240 × 240 · margin −110.39</span>
+<span class="zlab t1106-l-pct" style="left:141px;top:4px">46% × 240 = 110.39</span>
+<span class="zlab t1106-l-up" style="left:200px;top:-60px">{% if include.lang == "fr" %}même liste d'ombres{% else %}same shadow list{% endif %}</span>
+<span class="zlab t1106-l-rot" style="left:150px;top:140px">scale:-1 = 180°</span>
+</div>
+</div>
+<div class="legend"><span><i style="--c:var(--t1106-brown)"></i>{% if include.lang == "fr" %}ombres 5ch -5ch{% else %}5ch -5ch shadows{% endif %}</span><span><i style="--c:var(--t1106-teach)"></i>{% if include.lang == "fr" %}ombres 11q -11q (couleur du fond en vrai){% else %}11q -11q shadows (background color in reality){% endif %}</span><span><i class="t1106-mk"></i>{% if include.lang == "fr" %}boîtes de html et du body{% else %}html and body boxes{% endif %}</span></div>
+</div>
+<div class="anim-side">
+<pre class="code" aria-hidden="true">&lt;style>*{<span data-on="1">margin:85 135-25 25</span>;box-shadow:<span data-on="3 5 6">11q -11q#e98f6b</span>,<span data-on="2 5 6">5ch -5ch#8b4646</span>;*{<span data-on="1" data-tone="2">background:#d52a</span>;<span data-on="4" data-tone="2">margin:-46%-46%46%46%</span>;<span data-on="6" data-tone="2">scale:-1</span></pre>
+<div class="now" aria-live="polite">
+<div class="caps">
+{%- if include.lang == "fr" %}
+<div class="cap" data-t="0" data-step="html : 240 × 240"><h3>1. html : une boîte de 240 × 240</h3><p><code>*</code> vise <code>html</code> et le <code>body</code>. Sur <code>html</code>, <code>margin:85 135-25 25</code> laisse 400 − 135 − 25 = 240px de large. En mode quirks, <code>html</code> remplit la fenêtre moins ses marges haute et basse : 300 − 85 + 25 = 240px de haut. Il déborde de 25px sous le canevas. Le fond <code>#d52a</code> du <code>body</code> part sur le canevas : #dd5522 à 67 % sur du blanc, soit #e88e6c.</p></div>
+<div class="cap" data-t="3.5" data-step="5ch -5ch : une équerre brune"><h3>2. Une ombre décalée de 40px : une équerre brune</h3><p><code>5ch -5ch #8b4646</code> est une copie de la boîte, 40px plus à droite et 40px plus haut (ici 1ch = 8px). Une ombre externe ne se peint jamais sous sa boîte, et <code>html</code> est transparent : seule la partie de la copie hors de la boîte se voit. C'est une équerre de 40px d'épaisseur.</p></div>
+<div class="cap" data-t="7" data-step="11q -11q par-dessus"><h3>3. Une ombre couleur fond par-dessus</h3><p>La première ombre de la liste se peint au-dessus. <code>11q -11q</code> décale une copie de 10,39px (1q = 0,945px), dans la couleur du canevas. Elle mange les 10,39px intérieurs de l'équerre brune, qui ne fait plus que 30px d'épaisseur. Sa propre équerre a la couleur du fond : on ne la voit pas.</p></div>
+<div class="cap" data-t="10.5" data-step="body : marges en %"><h3>4. body : des marges en %</h3><p>Le <code>*{…}</code> imbriqué vise les descendants, dont le <code>body</code>. Une marge en % se calcule sur la largeur du parent, même en haut et en bas : 46 % de 240 = 110,39px. Avec <code>-46% -46% 46% 46%</code>, le <code>body</code> part de 110,39px vers la droite et vers le haut, et garde 240 × 240. Son centre (255,4 ; 94,6) est presque le symétrique de celui de <code>html</code> (145 ; 205) autour du centre du canevas.</p></div>
+<div class="cap" data-t="14" data-step="Les mêmes ombres sur le body"><h3>5. Les mêmes ombres sur le body</h3><p>Le <code>*</code> du dehors vise aussi le <code>body</code> : il reçoit la même liste d'ombres. Telle quelle, son équerre partirait en haut à droite, presque toute hors du canevas (voir la vue large). Son fond est passé au canevas : la boîte elle-même est transparente.</p></div>
+<div class="cap" data-t="17.5" data-step="scale:-1 : un demi-tour"><h3>6. scale:-1 : un demi-tour</h3><p><code>scale:-1</code> retourne le <code>body</code> dans les deux sens autour de son centre : c'est un demi-tour. La boîte retombe sur elle-même, mais les ombres pointent maintenant à gauche et en bas. Le <code>body</code> se peint après <code>html</code> : ses bandes couleur fond coupent l'équerre de <code>html</code> aux deux croisements, et ses barres brunes passent dessus.</p></div>
+<div class="cap" data-t="21.5" data-step="Résultat" data-live="121 caractères · 100 % identique"><h3>7. Résultat : 121 caractères</h3><p>Deux boîtes, une seule liste d'ombres, et un demi-tour pour la seconde équerre.</p></div>
+{%- else %}
+<div class="cap" data-t="0" data-step="html: 240 × 240"><h3>1. html: a 240 × 240 box</h3><p><code>*</code> matches <code>html</code> and the <code>body</code>. On <code>html</code>, <code>margin:85 135-25 25</code> leaves 400 − 135 − 25 = 240px of width. In quirks mode, <code>html</code> fills the window minus its top and bottom margins: 300 − 85 + 25 = 240px tall. It runs 25px below the canvas. The <code>body</code>'s <code>#d52a</code> background goes to the canvas: #dd5522 at 67% over white, which gives #e88e6c.</p></div>
+<div class="cap" data-t="3.5" data-step="5ch -5ch: a brown L"><h3>2. A shadow moved 40px: a brown L</h3><p><code>5ch -5ch #8b4646</code> is a copy of the box, 40px to the right and 40px up (here 1ch = 8px). An outer shadow is never painted under its own box, and <code>html</code> is transparent: only the part of the copy outside the box shows. It is an L, 40px thick.</p></div>
+<div class="cap" data-t="7" data-step="11q -11q on top"><h3>3. A background-colored shadow on top</h3><p>The first shadow in the list is painted on top. <code>11q -11q</code> moves a copy by 10.39px (1q = 0.945px), in the canvas color. It eats the inner 10.39px of the brown L, which is now 30px thick. Its own L has the background color: it can't be seen.</p></div>
+<div class="cap" data-t="10.5" data-step="body: % margins"><h3>4. body: margins in %</h3><p>The nested <code>*{…}</code> matches the descendants, the <code>body</code> among them. A margin in % is computed from the parent's width, even at the top and bottom: 46% of 240 = 110.39px. With <code>-46% -46% 46% 46%</code>, the <code>body</code> moves 110.39px right and 110.39px up, and stays 240 × 240. Its centre (255.4, 94.6) is almost the mirror of <code>html</code>'s (145, 205) around the canvas centre.</p></div>
+<div class="cap" data-t="14" data-step="Same shadows on the body"><h3>5. The same shadows on the body</h3><p>The outer <code>*</code> matches the <code>body</code> too: it gets the same shadow list. As it is, its L would go up and right, almost all off the canvas (see the wide view). Its background went to the canvas, so the box itself is transparent.</p></div>
+<div class="cap" data-t="17.5" data-step="scale:-1: a half turn"><h3>6. scale:-1: a half turn</h3><p><code>scale:-1</code> flips the <code>body</code> both ways around its centre: that is a half turn. The box lands on itself, but the shadows now point left and down. The <code>body</code> is painted after <code>html</code>: its background-colored strips cut <code>html</code>'s L at the two crossings, and its brown bars run over it.</p></div>
+<div class="cap" data-t="21.5" data-step="Result" data-live="121 characters · 100% match"><h3>7. Result: 121 characters</h3><p>Two boxes, one shadow list, and a half turn for the second L.</p></div>
+{%- endif %}
+</div>
+<div class="live"></div>
+</div>
+</div>
+<script>
+(window.AnimScenes = window.AnimScenes || {}).t1106 = (fig) => {
+  const fr = document.documentElement.lang === 'fr';
+  const $ = (s) => fig.querySelector(s);
+  const $$ = (s) => [...fig.querySelectorAll(s)];
+  const HG = $('.t1106-hg'), BG = $('.t1106-bg'), CTR = $('.t1106-ctr'), live = $('.live');
+  const L = (k) => $(`.t1106-l-${k}`);
+  const W = { html: [0.3, 1.5], br: [3.7, 5.2], sal: [7.2, 8.6], body: [10.7, 12.4], bsh: [14.2, 15.6], flip: [17.7, 19.7], fin: [21.6, 22.4] };
+  const ease = (x) => (x < 0.5 ? 4 * x * x * x : 1 - Math.pow(-2 * x + 2, 3) / 2);
+  const pr = (t, [a, b]) => ease(Math.min(1, Math.max(0, (t - a) / (b - a))));
+  const lerp = (a, b, m) => a + (b - a) * m;
+  const win = (t, a, b) => Math.min(pr(t, [a, a + 0.5]), 1 - pr(t, [b - 0.4, b]));
+  const f1 = (v) => { const s = (Math.round(v * 10) / 10).toFixed(1).replace(/\.0$/, ''); return (fr ? s.replace('.', ',') : s).replace('-', '−'); };
+  const c = fr ? ' :' : ':';
+  const place = (el, x, y, w, h) => Object.assign(el.style, { left: `${x}px`, top: `${y}px`, width: `${Math.max(0, w)}px`, height: `${Math.max(0, h)}px` });
+  // An outer shadow moved (d, −d), minus its own 240 × 240 box: a bar above, a bar on the right.
+  const shadow = (g, k, d, show) => {
+    const top = g.querySelector(`.t1106-${k}t`), right = g.querySelector(`.t1106-${k}r`);
+    place(top, d, -d, 240, d);
+    place(right, 240, 0, d, 240 - d);
+    top.style.opacity = right.style.opacity = show;
+  };
+  return (t, step) => {
+    const teach = fig.dataset.teach === '1';
+    const real = !teach || t >= W.fin[0];
+    const sal = real ? 'var(--t1106-sal)' : 'var(--t1106-teach)';
+    const guides = t < W.fin[0] ? 1 : 0;
+    $$('.t1106-st, .t1106-sr').forEach((e) => { e.style.background = sal; });
+    // 1. html box, 2. brown shadow sliding out, 3. background-colored shadow on top
+    const hb = pr(t, W.html), dB = 40 * pr(t, W.br), dS = 10.39 * pr(t, W.sal);
+    HG.querySelector('.t1106-box').style.opacity = hb * guides;
+    shadow(HG, 'b', dB, t >= W.br[0] ? 1 : 0);
+    shadow(HG, 's', dS, t >= W.sal[0] ? 1 : 0);
+    const hcp = HG.querySelector('.t1106-cp');
+    place(hcp, dB, -dB, 240, 240);
+    hcp.style.opacity = teach ? win(t, W.br[0], W.sal[0]) : 0;
+    L('bg').style.opacity = win(t, 0.3, 3.2);
+    L('html').style.opacity = win(t, W.html[0], W.sal[0]);
+    L('br').style.opacity = win(t, W.br[0], W.sal[0]);
+    L('sal').style.opacity = win(t, W.sal[0], W.body[0]);
+    // 4. body: from html's place to 110.39px right and up
+    const m = pr(t, W.body);
+    const bx = lerp(25, 135.39, m), by = lerp(85, -25.39, m);
+    BG.style.left = `${bx}px`;
+    BG.style.top = `${by}px`;
+    BG.querySelector('.t1106-box').style.opacity = (t >= W.body[0] ? 1 : 0) * guides;
+    L('body').style.opacity = win(t, W.body[1] - 0.3, W.flip[1]);
+    L('pct').style.opacity = win(t, W.body[0], W.bsh[0]);
+    // 5. the same shadows on the body, 6. half turn
+    const bs = pr(t, W.bsh);
+    shadow(BG, 'b', 40, bs);
+    shadow(BG, 's', 10.39, bs);
+    const bcp = BG.querySelector('.t1106-cp');
+    place(bcp, 40, -40, 240, 240);
+    bcp.style.opacity = teach ? bs * (1 - pr(t, [W.flip[0], W.flip[0] + 0.4])) : 0;
+    L('up').style.opacity = win(t, W.bsh[0], W.flip[0]);
+    const rot = 180 * pr(t, W.flip);
+    BG.style.transform = `rotate(${rot}deg)`;
+    CTR.style.opacity = win(t, W.flip[0] - 0.3, W.fin[0]);
+    L('rot').style.opacity = win(t, W.flip[0] - 0.3, W.fin[0]);
+    let txt = '';
+    if (step === 0) txt = `html${c} x 25 → 265, y 85 → 325`;
+    else if (step === 1) txt = `${fr ? 'équerre' : 'L'}${c} x 65 → 305, y 45 → 285 · ${fr ? 'décalage' : 'offset'} ${f1(dB)}`;
+    else if (step === 2) txt = `${fr ? 'barres' : 'bars'}${c} 40 − 10,39 = 29,61`.replace(/,/g, fr ? ',' : '.');
+    else if (step === 3) txt = `body${c} x ${f1(bx)} → ${f1(bx + 240)}, y ${f1(by)} → ${f1(by + 240)}`;
+    else if (step === 4) txt = `${fr ? 'équerre du body' : "body's L"}${c} x 175,4 → 415,4, y −65,4 → 174,6`.replace(/,(\d)/g, fr ? ',$1' : '.$1');
+    else if (step === 5) txt = `${fr ? 'demi-tour' : 'half turn'}${c} ${Math.round(rot)}°`;
+    else txt = $$('.caps .cap')[6].dataset.live || '';
+    live.textContent = txt;
+  };
+};
+</script>
+</figure>
