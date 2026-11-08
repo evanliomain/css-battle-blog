@@ -75,6 +75,7 @@ Le `body` se peint après `html`, et son ombre couvre les deux équerres du haut
 - Un seul `border-image` sur `*` dessine huit équerres : quatre par élément. Quatre se voient, deux en pieds et deux en carrés.
 - `1e3` fait 3 caractères. Toute tranche au moins aussi grande que l'image donne le même résultat, et `100%` en fait 4.
 - `64Q` vaut 60,47px en 3 caractères.
+- L'ombre peut encore perdre un caractère : `0-53q` au lieu de `0-50px`. 53 quarts de millimètre font 50,08px : la bande commence 0,08px plus haut, et le site donne toujours 100 %. Cela fait 148 caractères.
 - La largeur après `/` dessine la bordure d'image sans aucun `border`.
 - `#0000` est transparent en 5 caractères. `#000 0` fait commencer le noir là où finit le transparent.
 - L'ombre fait deux choses : elle dessine la bande, et elle réduit les équerres de `html` à des carrés.

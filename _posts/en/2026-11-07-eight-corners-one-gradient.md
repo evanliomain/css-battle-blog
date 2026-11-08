@@ -75,6 +75,7 @@ The `body` is painted after `html`, and its shadow covers `html`'s two upper Ls 
 - One `border-image` on `*` draws eight Ls: four per element. Four of them show, two as feet and two as squares.
 - `1e3` is 3 characters. Any slice at least as big as the image gives the same result, and `100%` is 4 characters.
 - `64Q` is 60.47px in 3 characters.
+- The shadow can lose one more character: `0-53q` instead of `0-50px`. 53 quarter-millimetres are 50.08px, so the band starts 0.08px higher, and the site still gives 100%. That makes 148 characters.
 - The width after `/` draws the border image without any `border`.
 - `#0000` is transparent in 5 characters. `#000 0` starts the black where the transparent part ends.
 - The shadow does two jobs: it draws the band, and it cuts `html`'s Ls down to squares.
