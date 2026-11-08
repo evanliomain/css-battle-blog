@@ -1,0 +1,125 @@
+<figure class="anim t1107" data-duration="22" data-scene="t1107" data-wide="-10 -10 420 460" data-off-label="-6 -6" style="--bg:#469e6c">
+<style>
+.t1107{--t1107-ink:#000;--t1107-cream:#f2f1e0;--t1107-html:#8f6bff;--t1107-body:#ff9a3c;--t1107-dash:rgb(255 255 255 / .85)}
+.t1107 .t1107-l{background:conic-gradient(at 33% 83%,transparent 25%,var(--t1107-c,#000) 0)}
+.t1107 .t1107-img{background:conic-gradient(at 33% 83%,transparent 25%,#000 0),repeating-conic-gradient(#fff 0 25%,#d9d9d9 0 50%) 0 0/16px 16px;box-shadow:0 0 0 2px var(--t1107-dash)}
+.t1107 .t1107-box{box-sizing:border-box;border:2px dashed var(--t1107-dash);pointer-events:none}
+.t1107 .t1107-band{background:var(--t1107-cream)}
+.t1107 .zlab{color:#fff;background:rgb(10 40 25 / .85);padding:1px 5px;border-radius:3px}
+.t1107 .legend .t1107-mk{background:transparent;box-shadow:inset 0 0 0 1.5px currentColor}
+</style>
+<div class="anim-col">
+<div class="stage" role="img" aria-label="{% if include.lang == "fr" %}Animation : un dégradé conique dessine une équerre noire, le border-image en met une copie dans chacun des quatre coins de html et du body, puis l'ombre crème du body forme la bande et cache le bas des équerres de html{% else %}Animation: a conic gradient draws a black L, the border-image puts a copy in each of the four corners of html and the body, then the body's cream shadow makes the band and hides the bottom of html's Ls{% endif %}">
+<div class="scene">
+<div class="t1107-box t1107-hbox" style="left:110px;top:105px;width:180px;height:325px"></div>
+<div class="t1107-img" style="left:140px;top:150px;width:120px;height:120px"></div>
+<div class="t1107-l t1107-hc"></div>
+<div class="t1107-l t1107-hc"></div>
+<div class="t1107-l t1107-hc"></div>
+<div class="t1107-l t1107-hc"></div>
+<div class="t1107-box t1107-bbox"></div>
+<div class="t1107-band" style="left:50px;width:300px"></div>
+<div class="t1107-l t1107-bc"></div>
+<div class="t1107-l t1107-bc"></div>
+<div class="t1107-l t1107-bc"></div>
+<div class="t1107-l t1107-bc"></div>
+<span class="zlab t1107-l-html" style="left:114px;top:110px">html · 180 × 325</span>
+<span class="zlab t1107-l-img" style="left:140px;top:132px">conic-gradient(at 33% 83%…)</span>
+<span class="zlab t1107-l-q" style="left:140px;top:276px">{% if include.lang == "fr" %}#0000 : quart haut-droit{% else %}#0000: top-right quarter{% endif %}</span>
+<span class="zlab t1107-l-slice" style="left:113px;top:200px">1e3 → 100% · 64Q = 60.47 px</span>
+<span class="zlab t1107-l-body" style="left:113px;top:245px">body · 300 × 185 · margin 70 −60</span>
+<span class="zlab t1107-l-band" style="left:120px;top:182px">box-shadow 0 −50px</span>
+</div>
+</div>
+<div class="legend"><span><i style="--c:var(--t1107-html)"></i>{% if include.lang == "fr" %}coins de html (noirs en vrai){% else %}html's corners (black in reality){% endif %}</span><span><i style="--c:var(--t1107-body)"></i>{% if include.lang == "fr" %}coins du body (noirs en vrai){% else %}the body's corners (black in reality){% endif %}</span><span><i class="t1107-mk"></i>{% if include.lang == "fr" %}boîtes et coins{% else %}boxes and corners{% endif %}</span></div>
+</div>
+<div class="anim-side">
+<pre class="code" aria-hidden="true">&lt;style>*{<span data-on="2 3 4">border-image:conic-gradient(at 33%83%,#0000 25%,#000 0)</span><span data-on="3" data-tone="2">1e3/64Q</span>;<span data-on="1">margin:105 110-130;background:#469e6c</span>;*{<span data-on="4" data-tone="2">margin:70-60</span>;<span data-on="5" data-tone="2">box-shadow:0-50px#f2f1e0</span></pre>
+<div class="now" aria-live="polite">
+<div class="caps">
+{%- if include.lang == "fr" %}
+<div class="cap" data-t="0" data-step="html : 180 × 325"><h3>1. html : une boîte de 180 × 325</h3><p><code>*</code> vise <code>html</code> et le <code>body</code>. Sur <code>html</code>, <code>margin:105 110-130</code> laisse 400 − 2 × 110 = 180px de large. En mode quirks, <code>html</code> remplit la fenêtre moins ses marges haute et basse : 300 − 105 + 130 = 325px. Il descend jusqu'en y = 430, loin sous le canevas. Son fond <code>#469e6c</code> part sur tout le canevas.</p></div>
+<div class="cap" data-t="3.5" data-step="Un conique : une équerre"><h3>2. Un dégradé conique : une équerre</h3><p>Le dégradé tourne autour d'un point à 33 % du bord gauche et 83 % du haut, en partant vers le haut. Son premier quart, du haut vers la droite, est transparent (<code>#0000</code>) ; le reste est noir. Tout ce qui est à gauche du point ou sous lui est noir : une équerre, avec une barre de 33 % de large et une de 17 % de haut.</p></div>
+<div class="cap" data-t="7" data-step="1e3 : l'image dans 4 coins"><h3>3. Une tranche de 1e3 : l'image entière dans chaque coin</h3><p><code>1e3</code> découpe des tranches de 1000px, plus grandes que l'image : elles valent 100 %. Chaque coin reçoit l'image entière, et les bords et le centre restent vides. <code>/64Q</code> donne 60,47px à chaque coin, même sans bordure. Quatre équerres de 60,47px, avec des barres de 20 et de 10. Celles du bas de <code>html</code> sont hors du canevas.</p></div>
+<div class="cap" data-t="11" data-step="body : les pieds"><h3>4. body : deux pieds</h3><p>Le <code>*{…}</code> imbriqué vise le <code>body</code>. <code>margin:70-60</code> l'élargit de 60px de chaque côté (300px) et le réduit de 70px en haut et en bas : 185px, de y = 175 à 360. Le <code>*</code> du dehors lui donne aussi le <code>border-image</code> : quatre équerres de plus. Les deux du haut sont les pieds ; celles du bas commencent en y = 299,5 et ne se voient pas.</p></div>
+<div class="cap" data-t="15.5" data-step="Ombre du body : la bande"><h3>5. L'ombre du body : la bande crème</h3><p><code>0 -50px</code> remonte une copie du <code>body</code> de 50px. Une ombre externe ne se voit pas sous sa boîte : il reste une bande de 300 × 50 au-dessus, de y = 125 à 175. Le <code>body</code> se peint après <code>html</code> : la bande cache le bas des deux équerres de <code>html</code>. Il en reste deux carrés de 20 × 20.</p></div>
+<div class="cap" data-t="19.5" data-step="Résultat" data-live="149 caractères · 100 % identique"><h3>6. Résultat : 149 caractères</h3><p>Huit équerres pour un seul dégradé : quatre se voient, deux en pieds, deux en carrés.</p></div>
+{%- else %}
+<div class="cap" data-t="0" data-step="html: 180 × 325"><h3>1. html: a 180 × 325 box</h3><p><code>*</code> matches <code>html</code> and the <code>body</code>. On <code>html</code>, <code>margin:105 110-130</code> leaves 400 − 2 × 110 = 180px of width. In quirks mode, <code>html</code> fills the window minus its top and bottom margins: 300 − 105 + 130 = 325px. It goes down to y = 430, far below the canvas. Its <code>#469e6c</code> background goes to the whole canvas.</p></div>
+<div class="cap" data-t="3.5" data-step="A conic: an L"><h3>2. A conic gradient: an L</h3><p>The gradient turns around a point 33% from the left edge and 83% from the top, starting upwards. Its first quarter, from up to right, is transparent (<code>#0000</code>); the rest is black. Everything left of the point or below it is black: an L, with a bar 33% wide and a bar 17% tall.</p></div>
+<div class="cap" data-t="7" data-step="1e3: the image in 4 corners"><h3>3. A 1e3 slice: the whole image in each corner</h3><p><code>1e3</code> cuts 1000px slices, bigger than the image: they count as 100%. Each corner gets the whole image, and the edges and the centre stay empty. <code>/64Q</code> makes each corner 60.47px, even without a border. Four Ls of 60.47px, with bars of 20 and 10. The two at the bottom of <code>html</code> are off the canvas.</p></div>
+<div class="cap" data-t="11" data-step="body: the feet"><h3>4. body: two feet</h3><p>The nested <code>*{…}</code> matches the <code>body</code>. <code>margin:70-60</code> widens it by 60px on each side (300px) and takes 70px off the top and the bottom: 185px, from y = 175 to 360. The outer <code>*</code> gives it the <code>border-image</code> too: four more Ls. The two at the top are the feet; the bottom ones start at y = 299.5 and don't show.</p></div>
+<div class="cap" data-t="15.5" data-step="body's shadow: the band"><h3>5. The body's shadow: the cream band</h3><p><code>0 -50px</code> moves a copy of the <code>body</code> 50px up. An outer shadow doesn't show under its box: a 300 × 50 band is left above it, from y = 125 to 175. The <code>body</code> is painted after <code>html</code>: the band hides the bottom of <code>html</code>'s two Ls. Two 20 × 20 squares are left.</p></div>
+<div class="cap" data-t="19.5" data-step="Result" data-live="149 characters · 100% match"><h3>6. Result: 149 characters</h3><p>Eight Ls from one gradient: four show, two as feet, two as squares.</p></div>
+{%- endif %}
+</div>
+<div class="live"></div>
+</div>
+</div>
+<script>
+(window.AnimScenes = window.AnimScenes || {}).t1107 = (fig) => {
+  const fr = document.documentElement.lang === 'fr';
+  const $ = (s) => fig.querySelector(s);
+  const $$ = (s) => [...fig.querySelectorAll(s)];
+  const HB = $('.t1107-hbox'), IMG = $('.t1107-img'), HC = $$('.t1107-hc'), BB = $('.t1107-bbox'), BAND = $('.t1107-band'), BC = $$('.t1107-bc'), live = $('.live');
+  const L = (k) => $(`.t1107-l-${k}`);
+  const S = 60.47;
+  const HCOR = [[110, 105], [229.53, 105], [110, 369.53], [229.53, 369.53]];
+  const BCOR = [[50, 175], [289.53, 175], [50, 299.53], [289.53, 299.53]];
+  const W = { html: [0.3, 1.5], img: [3.7, 5], slice: [7.4, 9.2], body: [11.2, 12.8], bcor: [13, 14], band: [15.7, 17.2], fin: [19.6, 20.4] };
+  const ease = (x) => (x < 0.5 ? 4 * x * x * x : 1 - Math.pow(-2 * x + 2, 3) / 2);
+  const pr = (t, [a, b]) => ease(Math.min(1, Math.max(0, (t - a) / (b - a))));
+  const lerp = (a, b, m) => a + (b - a) * m;
+  const win = (t, a, b) => Math.min(pr(t, [a, a + 0.5]), 1 - pr(t, [b - 0.4, b]));
+  const f1 = (v) => { const s = (Math.round(v * 10) / 10).toFixed(1).replace(/\.0$/, ''); return (fr ? s.replace('.', ',') : s).replace('-', '−'); };
+  const c = fr ? ' :' : ':';
+  const place = (el, x, y, w, h) => Object.assign(el.style, { left: `${x}px`, top: `${y}px`, width: `${Math.max(0, w)}px`, height: `${Math.max(0, h)}px` });
+  return (t, step) => {
+    const teach = fig.dataset.teach === '1';
+    const real = !teach || t >= W.fin[0];
+    const guides = t < W.fin[0] ? 1 : 0;
+    const tile = teach && !real ? '1px dotted rgb(255 255 255 / .8)' : 'none';
+    // 1. html box
+    HB.style.opacity = pr(t, W.html) * guides;
+    L('html').style.opacity = win(t, W.html[0], W.img[0]);
+    // 2. the image, 3. copied into html's four corners
+    const im = pr(t, W.img), sl = pr(t, W.slice);
+    IMG.style.opacity = im * (1 - pr(t, [W.slice[0], W.slice[0] + 0.6]));
+    L('img').style.opacity = win(t, W.img[0], W.slice[0] + 0.4);
+    L('q').style.opacity = win(t, W.img[0] + 0.4, W.slice[0]);
+    HC.forEach((e, i) => {
+      place(e, lerp(140, HCOR[i][0], sl), lerp(150, HCOR[i][1], sl), lerp(120, S, sl), lerp(120, S, sl));
+      e.style.opacity = t >= W.slice[0] ? 1 : 0;
+      e.style.setProperty('--t1107-c', real ? 'var(--t1107-ink)' : 'var(--t1107-html)');
+      e.style.outline = tile;
+    });
+    L('slice').style.opacity = win(t, W.slice[0], W.body[0]);
+    // 4. body: from html's box to 300 × 185 at (50, 175), then its own four corners
+    const b = pr(t, W.body), bc = pr(t, W.bcor);
+    const bx = lerp(110, 50, b), by = lerp(105, 175, b), bw = lerp(180, 300, b), bh = lerp(325, 185, b);
+    place(BB, bx, by, bw, bh);
+    BB.style.opacity = (t >= W.body[0] ? 1 : 0) * guides;
+    BC.forEach((e, i) => {
+      place(e, BCOR[i][0], BCOR[i][1], S, S);
+      e.style.opacity = bc;
+      e.style.setProperty('--t1107-c', real ? 'var(--t1107-ink)' : 'var(--t1107-body)');
+      e.style.outline = tile;
+    });
+    L('body').style.opacity = win(t, W.body[0], W.band[0]);
+    // 5. the body's shadow, moved 50px up: only the part above the box shows
+    const d = 50 * pr(t, W.band);
+    place(BAND, 50, 175 - d, 300, d);
+    BAND.style.opacity = t >= W.band[0] ? 1 : 0;
+    L('band').style.opacity = win(t, W.band[0], W.fin[0]);
+    let txt = '';
+    if (step === 0) txt = `html${c} x 110 → 290, y 105 → 430`;
+    else if (step === 1) txt = `${fr ? 'équerre' : 'L'}${c} 33 % × 17 %`.replace(/ %/g, fr ? ' %' : '%');
+    else if (step === 2) txt = `${fr ? 'coins de html' : "html's corners"}${c} x 110 ${fr ? 'et' : 'and'} ${f1(229.53)}, y 105 ${fr ? 'et' : 'and'} ${f1(369.53)}`;
+    else if (step === 3) txt = `body${c} x ${f1(bx)} → ${f1(bx + bw)}, y ${f1(by)} → ${f1(by + bh)}`;
+    else if (step === 4) txt = `${fr ? 'bande' : 'band'}${c} y ${f1(175 - d)} → 175`;
+    else txt = $$('.caps .cap')[5].dataset.live || '';
+    live.textContent = txt;
+  };
+};
+</script>
+</figure>
