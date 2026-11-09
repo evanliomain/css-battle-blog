@@ -1,0 +1,106 @@
+<figure class="anim t0921" data-duration="24" data-scene="t0921" data-wide="-40 -30 480 360" data-off-label="-36 -26" style="--bg:#1d025e">
+<style>
+.t0921{--t0921-d:#1d025e;--t0921-t:#469dba;--t0921-dash:rgb(230 240 255 / .8)}
+.t0921 .t0921-can{position:absolute;inset:0}
+.t0921 .t0921-p{position:absolute;left:50px;width:300px;height:20px}
+.t0921 .t0921-o{position:absolute;box-sizing:border-box;border:1.5px dashed var(--t0921-dash);pointer-events:none}
+.t0921 .t0921-c{position:absolute;box-sizing:border-box;border:1.5px dashed var(--t0921-dash);border-radius:50%;pointer-events:none}
+.t0921 .zlab{color:#fff;background:rgb(15 5 45 / .9);padding:1px 5px;border-radius:3px}
+.t0921 .legend .t0921-mk{background:transparent;box-shadow:inset 0 0 0 1.5px currentColor}
+</style>
+<div class="anim-col">
+<div class="stage" role="img" aria-label="{% if include.lang == "fr" %}Animation : le dégradé du body, passé au canevas, dessine un anneau centré sur le bord droit de sa tuile ; décalé de 291Q, son demi-anneau gauche fait le C de l'euro ; deux paragraphes d'une espace insécable, en police de 32px, ont le même dégradé, deux fois plus grand en em : il y dessine les deux barres{% else %}Animation: the body's gradient, moved to the canvas, draws a ring centred on its tile's right edge; shifted by 291Q, its left half ring is the C of the euro sign; two paragraphs holding one no-break space, in a 32px font, have the same gradient, twice as big in em: it draws the two bars there{% endif %}">
+<div class="scene">
+<div class="t0921-can"></div>
+<div class="t0921-p" data-p="0" style="top:120px"></div>
+<div class="t0921-p" data-p="1" style="top:160px"></div>
+<div class="t0921-o" data-o="body" style="left:25px;top:120px;width:350px;height:265px"></div>
+<div class="t0921-o" data-o="p" style="left:50px;top:120px;width:300px;height:20px"></div>
+<div class="t0921-o" data-o="p" style="left:50px;top:160px;width:300px;height:20px"></div>
+<div class="t0921-c" data-c="80"></div>
+<div class="t0921-c" data-c="200"></div>
+<span class="zlab t0921-l-r" style="left:12px;top:12px">5pc = 80 · 6.25em = {% if include.lang == "fr" %}6,25{% else %}6.25{% endif %} × 16 = 100</span>
+<span class="zlab t0921-l-x" style="left:12px;top:12px">291Q = {% if include.lang == "fr" %}274,96{% else %}274.96{% endif %}px</span>
+<span class="zlab t0921-l-m" style="left:12px;top:12px">30% × 400 = 120 · 30% × 350 = 105</span>
+<span class="zlab t0921-l-f" style="left:12px;top:36px">font:8vw/5vw → 32px / 20px</span>
+<span class="zlab t0921-l-e" style="left:12px;top:12px">6.25em = {% if include.lang == "fr" %}6,25{% else %}6.25{% endif %} × 32 = 200</span>
+<span class="zlab t0921-l-c" style="left:12px;top:12px">{% if include.lang == "fr" %}centre{% else %}centre{% endif %} x = 50 + {% if include.lang == "fr" %}274,96 = 324,96{% else %}274.96 = 324.96{% endif %}</span>
+</div>
+</div>
+<div class="legend"><span><i style="--c:var(--t0921-t)"></i>{% if include.lang == "fr" %}couleur claire du dégradé{% else %}light color of the gradient{% endif %}</span><span><i class="t0921-mk"></i>{% if include.lang == "fr" %}boîtes, cercles de 80 et 200{% else %}boxes, 80 and 200 circles{% endif %}</span></div>
+</div>
+<div class="anim-side">
+<pre class="code" aria-hidden="true"><span data-on="3">&lt;p>&amp;nbsp;&lt;p>&amp;nbsp;</span>&lt;style>* *{background:<span data-on="1 4" data-tone="2">radial-gradient(1Q at right,#1d025e,5pc,#469dba 0 6.25em,#1d025e)</span><span data-on="2 5">291Q</span>;<span data-on="3">margin:30%25-85</span>;*{<span data-on="3 4" data-tone="2">font:8vw/5vw"</span></pre>
+<div class="now" aria-live="polite">
+<div class="caps">
+{%- if include.lang == "fr" %}
+<div class="cap" data-t="0" data-step="Un anneau, centré à droite"><h3>1. Un anneau, centré à droite</h3><p><code>* *</code> vise tout sauf <code>html</code>, qui n'a donc pas de fond : celui du <code>body</code> passe au canevas, en une tuile de 400 × 300. Le cercle est centré <code>at right</code>, au milieu du bord droit. Foncé jusqu'à <code>5pc</code> (80px, le repère de transition), clair de 80 à <code>6.25em</code> (100px), foncé après : un anneau, dont seule la moitié gauche tombe dans la tuile.</p></div>
+<div class="cap" data-t="4" data-step="291Q : le C"><h3>2. <code>291Q</code> : le C de l'euro</h3><p><code>291Q</code> décale la tuile de 274,96px vers la droite. La tuile répétée à sa gauche finit en x = 274,96 : son demi-anneau y est centré, de y = 50 à 250. C'est le C de l'euro.</p></div>
+<div class="cap" data-t="8" data-step="Deux p d'une espace insécable"><h3>3. Deux <code>p</code> d'une espace insécable</h3><p><code>margin:30%25-85</code> : le <code>body</code> commence en y = 120 (30 % de 400). Chaque <code>p</code> contient une espace insécable : une ligne, haute de <code>5vw</code> = 20px. Sa marge de 30 % de 350 = 105 fusionne avec celle du <code>body</code>, puis −85 + 105 = 20 sépare les deux : des bandes de 300 × 20 en y = 120 et 160.</p></div>
+<div class="cap" data-t="12" data-step="Le même dégradé, en 32px"><h3>4. Le même dégradé, en 32px</h3><p>Les <code>p</code> ont aussi ce fond, mais leur police fait <code>8vw</code> = 32px : <code>6.25em</code> vaut 200px. Le clair va maintenant de 80 à 200px du centre. Le reste est foncé, comme le fond : les <code>p</code> ne cachent rien.</p></div>
+<div class="cap" data-t="16" data-step="Deux barres"><h3>5. Deux barres</h3><p>Dans chaque <code>p</code>, la tuile de 300 × 20 est décalée de 274,96 : le centre du cercle est en x = 50 + 274,96 = 324,96. Le clair, entre 80 et 200px à sa gauche, va de x = 124,96 à 244,96 : les deux barres de l'euro.</p></div>
+<div class="cap" data-t="20" data-step="Résultat" data-live="131 caractères · 100 % identique"><h3>6. Résultat : 131 caractères</h3><p>Un seul dégradé : en 16px, un anneau sur le canevas ; en 32px, deux barres dans les <code>p</code>.</p></div>
+{%- else %}
+<div class="cap" data-t="0" data-step="A ring, centred on the right"><h3>1. A ring, centred on the right</h3><p><code>* *</code> matches everything but <code>html</code>, which has no background: the <code>body</code>'s goes to the canvas, in one 400 × 300 tile. The circle is centred <code>at right</code>, halfway down the right edge. Dark up to <code>5pc</code> (80px, the transition hint), light from 80 to <code>6.25em</code> (100px), dark after: a ring, and only its left half falls in the tile.</p></div>
+<div class="cap" data-t="4" data-step="291Q: the C"><h3>2. <code>291Q</code>: the C of the euro</h3><p><code>291Q</code> moves the tile 274.96px to the right. The tile repeated on its left ends at x = 274.96: its half ring is centred there, from y = 50 to 250. That is the C of the euro sign.</p></div>
+<div class="cap" data-t="8" data-step="Two p with a no-break space"><h3>3. Two <code>p</code> with a no-break space</h3><p><code>margin:30%25-85</code>: the <code>body</code> starts at y = 120 (30% of 400). Each <code>p</code> holds a no-break space: one line, <code>5vw</code> = 20px tall. Its margin of 30% of 350 = 105 merges with the <code>body</code>'s, then −85 + 105 = 20 separates the two: 300 × 20 strips at y = 120 and 160.</p></div>
+<div class="cap" data-t="12" data-step="The same gradient, at 32px"><h3>4. The same gradient, at 32px</h3><p>The <code>p</code> have this background too, but their font is <code>8vw</code> = 32px: <code>6.25em</code> is 200px. The light color now runs from 80 to 200px from the centre. The rest is dark, like the background: the <code>p</code> hide nothing.</p></div>
+<div class="cap" data-t="16" data-step="Two bars"><h3>5. Two bars</h3><p>In each <code>p</code>, the 300 × 20 tile is moved by 274.96: the centre of the circle is at x = 50 + 274.96 = 324.96. The light part, 80 to 200px to its left, runs from x = 124.96 to 244.96: the two bars of the euro sign.</p></div>
+<div class="cap" data-t="20" data-step="Result" data-live="131 characters · 100% match"><h3>6. Result: 131 characters</h3><p>One gradient: at 16px, a ring on the canvas; at 32px, two bars in the <code>p</code>.</p></div>
+{%- endif %}
+</div>
+<div class="live"></div>
+</div>
+</div>
+<script>
+(window.AnimScenes = window.AnimScenes || {}).t0921 = (fig) => {
+  const fr = document.documentElement.lang === 'fr';
+  const $ = (s) => fig.querySelector(s);
+  const $$ = (s) => [...fig.querySelectorAll(s)];
+  const can = $('.t0921-can'), P = $$('.t0921-p'), oB = $('[data-o="body"]'), oP = $$('[data-o="p"]'), C = $$('.t0921-c'), live = $('.live');
+  const L = (k) => $(`.t0921-l-${k}`);
+  const W = { r: [0.3, 1.8], x: [4.2, 6.2], m: [8.2, 9.8], e: [12.2, 14.2], c: [16.2, 17.8], fin: [20.1, 20.9] };
+  const ease = (x) => (x < 0.5 ? 4 * x * x * x : 1 - Math.pow(-2 * x + 2, 3) / 2);
+  const pr = (t, [a, b]) => ease(Math.min(1, Math.max(0, (t - a) / (b - a))));
+  const lerp = (a, b, m) => a + (b - a) * m;
+  const win = (t, a, b) => Math.min(pr(t, [a, a + 0.5]), 1 - pr(t, [b - 0.4, b]));
+  const f1 = (v) => { const s = (Math.round(v * 100) / 100).toFixed(2).replace(/\.?0+$/, ''); return (fr ? s.replace('.', ',') : s).replace('-', '−'); };
+  const c = fr ? ' :' : ':';
+  const grad = (inner, outer) => `radial-gradient(circle 0.945px at right, var(--t0921-d) ${inner}px, var(--t0921-t) 0 ${outer}px, var(--t0921-d))`;
+  return (t, step) => {
+    const guides = t < W.fin[0] ? 1 : 0;
+    const r = pr(t, W.r), x = pr(t, W.x), m = pr(t, W.m), e = pr(t, W.e), k = pr(t, W.c);
+    // 1-2. the canvas: a ring of 80 → 100 around the tile's right edge, then shifted by 291Q
+    can.style.background = `${grad(80 * r, 100 * r)} ${274.96 * x}px 50% / 400px 300px`;
+    L('r').style.opacity = win(t, W.r[0], W.x[0] - 0.2);
+    L('x').style.opacity = win(t, W.x[0], W.m[0] - 0.2);
+    // 3. body and the two p
+    oB.style.opacity = m * (step === 2 ? 1 : 0) * guides;
+    oP.forEach((o) => { o.style.opacity = m * (step >= 2 && step <= 4 ? 1 : 0) * guides; });
+    L('m').style.opacity = win(t, W.m[0], W.e[0] - 0.2);
+    L('f').style.opacity = win(t, W.m[0], W.e[0] - 0.2);
+    // 4. the p get the same gradient, with 6.25em = 200px
+    P.forEach((p) => {
+      p.style.opacity = e > 0 ? 1 : 0;
+      p.style.background = `${grad(80, lerp(100, 200, e))} 274.96px 50%`;
+    });
+    L('e').style.opacity = win(t, W.e[0], W.c[0] - 0.2);
+    // 5. circles of 80 and 200 around (324.96, 150)
+    C.forEach((el) => {
+      const rr = +el.dataset.c;
+      Object.assign(el.style, { left: `${324.96 - rr}px`, top: `${150 - rr}px`, width: `${2 * rr}px`, height: `${2 * rr}px` });
+      el.style.opacity = k * (step === 4 ? 1 : 0) * guides;
+    });
+    L('c').style.opacity = win(t, W.c[0], W.fin[0]);
+    let txt = '';
+    if (step === 0) txt = `${fr ? 'anneau' : 'ring'}${c} ${f1(80 * r)} → ${f1(100 * r)}`;
+    else if (step === 1) txt = `${fr ? 'centre' : 'centre'}${c} x = ${f1(274.96 * x)}`;
+    else if (step === 2) txt = `p${c} y 120 → 140 · 160 → 180`;
+    else if (step === 3) txt = `6.25em${c} ${f1(lerp(100, 200, e))}px`.replace('6.25', fr ? '6,25' : '6.25');
+    else if (step === 4) txt = `${fr ? 'barres' : 'bars'}${c} x ${f1(124.96)} → ${f1(244.96)}`;
+    else txt = $$('.caps .cap')[5].dataset.live || '';
+    live.textContent = txt;
+  };
+};
+</script>
+</figure>
