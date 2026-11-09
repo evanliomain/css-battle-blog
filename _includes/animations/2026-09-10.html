@@ -1,0 +1,79 @@
+<figure class="anim t0910" data-duration="16" data-scene="t0910" data-wide="-40 -30 480 360" data-off-label="-36 -26" style="--bg:#fff">
+<style>
+.t0910{--t0910-d:#333;--t0910-w:#fff;--t0910-t:#f2a0b8;--t0910-dash:rgb(40 40 40 / .6)}
+.t0910 .t0910-html{position:absolute;left:150px;top:70px;width:100px;height:160px;border-radius:50px 50px 0 0}
+.t0910 .t0910-body{position:absolute;left:180px;top:195px;width:40px;height:30px;border-radius:20px 20px 0 0}
+.t0910 .t0910-o{position:absolute;box-sizing:border-box;border:1.5px dashed var(--t0910-dash);pointer-events:none}
+.t0910 .zlab{color:#fff;background:rgb(30 30 30 / .9);padding:1px 5px;border-radius:3px}
+</style>
+<div class="anim-col">
+<div class="stage" role="img" aria-label="{% if include.lang == "fr" %}Animation : html, arrondi en haut, a une ombre intérieure de 20px : un anneau en U renversé ; le body, petite boîte pleine, grandit quatre fois en se retournant : le corps du cadenas, arrondi en bas ; son ombre blanche, retournée avec lui, efface le bas du montant gauche{% else %}Animation: html, rounded at the top, has a 20px inset shadow: an upside-down U; the body, a small solid box, grows four times while flipping: the lock's body, rounded at the bottom; its white shadow, flipped with it, erases the bottom of the left leg{% endif %}">
+<div class="scene">
+<div class="t0910-html"></div>
+<div class="t0910-body"></div>
+<div class="t0910-o" data-o="html" style="left:150px;top:70px;width:100px;height:160px;border-radius:50px 50px 0 0"></div>
+<span class="zlab t0910-l-h" style="left:12px;top:12px">100 × 160 · 1in → 50 · 5vw = 20</span>
+<span class="zlab t0910-l-b" style="left:12px;top:12px">body · margin:125 30 5 → 40 × 30</span>
+<span class="zlab t0910-l-s" style="left:12px;top:12px">scale:-4 · 5vw 8q → −80, −{% if include.lang == "fr" %}30,24{% else %}30.24{% endif %}</span>
+</div>
+</div>
+<div class="legend"><span><i style="--c:var(--t0910-d)"></i>{% if include.lang == "fr" %}ombres intérieures{% else %}inset shadows{% endif %}</span><span><i style="--c:var(--t0910-t)"></i>{% if include.lang == "fr" %}ombre du body (blanche en vrai){% else %}the body's shadow (white in reality){% endif %}</span></div>
+</div>
+<div class="anim-side">
+<pre class="code" aria-hidden="true"><span data-on="2">&amp;nbsp;</span>&lt;style>*{<span data-on="1">margin:70 150;border-radius:1in 1in 0 0</span>;box-shadow:<span data-on="1 2" data-tone="2">inset 0 0 0 5vw#333</span>,<span data-on="3" data-tone="2">5vw 8q#FFF</span>;*{<span data-on="2">margin:125 30 5</span>;<span data-on="3" data-tone="2">scale:-4</span></pre>
+<div class="now" aria-live="polite">
+<div class="caps">
+{%- if include.lang == "fr" %}
+<div class="cap" data-t="0" data-step="html : l'anse"><h3>1. <code>html</code> : l'anse</h3><p><code>margin:70 150</code> fait de <code>html</code> une boîte de 100 × 160, de y = 70 à 230 en mode quirks. <code>border-radius:1in 1in 0 0</code> (96px, réduits à 50) arrondit le haut en demi-cercle. Sans fond, la boîte ne montre que son ombre intérieure de <code>5vw</code> = 20px, gris foncé : un U renversé, l'anse du cadenas.</p></div>
+<div class="cap" data-t="4" data-step="Le body : une petite boîte"><h3>2. Le <code>body</code> : une petite boîte</h3><p>L'espace insécable du début ouvre le <code>body</code> et lui donne une ligne. <code>*</code> imbriqué lui donne <code>margin:125 30 5</code> : 40 × 30, en (180 ; 195). Il reçoit aussi le rayon et les ombres de <code>*</code> : son ombre intérieure de 20 le remplit, ses coins du haut s'arrondissent de 20.</p></div>
+<div class="cap" data-t="8" data-step="scale:-4 : le corps"><h3>3. <code>scale:-4</code> : le corps</h3><p><code>scale:-4</code> agrandit le <code>body</code> quatre fois et le retourne autour de son centre, (200 ; 210) : 160 × 120, de x = 120 à 280 et de y = 150 à 270, avec les coins arrondis en bas, 80px : le corps du cadenas. Son ombre blanche <code>5vw 8q</code> se retourne aussi : 80 à gauche et 30,24 plus haut. Elle efface le montant gauche de l'anse sous y = 119,76.</p></div>
+<div class="cap" data-t="12" data-step="Résultat" data-live="118 caractères · 100 % identique"><h3>4. Résultat : 118 caractères</h3><p>Deux boîtes, la même règle : l'anse sur <code>html</code>, le corps sur le <code>body</code> retourné, et une ombre blanche pour ouvrir l'anse.</p></div>
+{%- else %}
+<div class="cap" data-t="0" data-step="html: the shackle"><h3>1. <code>html</code>: the shackle</h3><p><code>margin:70 150</code> makes <code>html</code> a 100 × 160 box, from y = 70 to 230 in quirks mode. <code>border-radius:1in 1in 0 0</code> (96px, scaled down to 50) rounds the top into a half circle. With no background, the box only shows its <code>5vw</code> = 20px dark grey inset shadow: an upside-down U, the lock's shackle.</p></div>
+<div class="cap" data-t="4" data-step="The body: a small box"><h3>2. The <code>body</code>: a small box</h3><p>The no-break space at the start opens the <code>body</code> and gives it a line. The nested <code>*</code> gives it <code>margin:125 30 5</code>: 40 × 30, at (180, 195). It also gets the radius and the shadows from <code>*</code>: its 20 inset shadow fills it, and its top corners are rounded by 20.</p></div>
+<div class="cap" data-t="8" data-step="scale:-4: the body of the lock"><h3>3. <code>scale:-4</code>: the body of the lock</h3><p><code>scale:-4</code> makes the <code>body</code> four times bigger and flips it around its centre, (200, 210): 160 × 120, from x = 120 to 280 and y = 150 to 270, with its round corners now at the bottom, 80px: the body of the lock. Its white <code>5vw 8q</code> shadow flips too: 80 left and 30.24 up. It erases the shackle's left leg below y = 119.76.</p></div>
+<div class="cap" data-t="12" data-step="Result" data-live="118 characters · 100% match"><h3>4. Result: 118 characters</h3><p>Two boxes, one rule: the shackle on <code>html</code>, the lock's body on the flipped <code>body</code>, and a white shadow to open the shackle.</p></div>
+{%- endif %}
+</div>
+<div class="live"></div>
+</div>
+</div>
+<script>
+(window.AnimScenes = window.AnimScenes || {}).t0910 = (fig) => {
+  const fr = document.documentElement.lang === 'fr';
+  const $ = (s) => fig.querySelector(s);
+  const $$ = (s) => [...fig.querySelectorAll(s)];
+  const H = $('.t0910-html'), B = $('.t0910-body'), oH = $('[data-o="html"]'), live = $('.live');
+  const L = (k) => $(`.t0910-l-${k}`);
+  const W = { h: [0.3, 1.8], b: [4.2, 5.6], s: [8.2, 10.2], fin: [12.1, 12.9] };
+  const ease = (x) => (x < 0.5 ? 4 * x * x * x : 1 - Math.pow(-2 * x + 2, 3) / 2);
+  const pr = (t, [a, b]) => ease(Math.min(1, Math.max(0, (t - a) / (b - a))));
+  const lerp = (a, b, m) => a + (b - a) * m;
+  const win = (t, a, b) => Math.min(pr(t, [a, a + 0.5]), 1 - pr(t, [b - 0.4, b]));
+  const f1 = (v) => { const s = (Math.round(v * 100) / 100).toFixed(2).replace(/\.?0+$/, ''); return (fr ? s.replace('.', ',') : s).replace('-', '−'); };
+  const c = fr ? ' :' : ':';
+  return (t, step) => {
+    const teach = fig.dataset.teach === '1';
+    const real = !teach || t >= W.fin[0];
+    const guides = t < W.fin[0] ? 1 : 0;
+    const h = pr(t, W.h), b = pr(t, W.b), s = pr(t, W.s);
+    H.style.boxShadow = `inset 0 0 0 ${20 * h}px var(--t0910-d)`;
+    oH.style.opacity = (step === 0 ? 1 : 0) * guides;
+    // the body: its own shadows; scale:-4 = grow ×4 and turn half a turn
+    const w = real ? 'var(--t0910-w)' : 'var(--t0910-t)';
+    B.style.opacity = b;
+    B.style.boxShadow = `inset 0 0 0 20px var(--t0910-d), 20px 7.56px ${w}`;
+    B.style.transform = `rotate(${180 * s}deg) scale(${lerp(1, 4, s)})`;
+    L('h').style.opacity = win(t, W.h[0], W.b[0] - 0.2);
+    L('b').style.opacity = win(t, W.b[0], W.s[0] - 0.2);
+    L('s').style.opacity = win(t, W.s[0], W.fin[0]);
+    let txt = '';
+    if (step === 0) txt = `html${c} x 150 → 250, y 70 → 230`;
+    else if (step === 1) txt = `body${c} x 180 → 220, y 195 → 225`;
+    else if (step === 2) txt = `scale${c} ${f1(lerp(1, 4, s))} · ${f1(180 * s)}°`;
+    else txt = $$('.caps .cap')[3].dataset.live || '';
+    live.textContent = txt;
+  };
+};
+</script>
+</figure>
