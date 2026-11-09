@@ -1,0 +1,86 @@
+<figure class="anim t0907" data-duration="20" data-scene="t0907" data-wide="-40 -30 480 360" data-off-label="-36 -26" style="--bg:#84b9ef">
+<style>
+.t0907{--t0907-l:#84b9ef;--t0907-w:#fff;--t0907-d:#2f6193;--t0907-dash:rgb(20 40 70 / .7)}
+.t0907 .t0907-can{position:absolute;left:0;top:0;width:400px;height:300px}
+.t0907 .t0907-body{position:absolute;left:140px;top:50px;width:120px;height:200px}
+.t0907 .t0907-o{position:absolute;box-sizing:border-box;border:1.5px dashed var(--t0907-dash);pointer-events:none}
+.t0907 .zlab{color:#fff;background:rgb(20 35 60 / .9);padding:1px 5px;border-radius:3px}
+</style>
+<div class="anim-col">
+<div class="stage" role="img" aria-label="{% if include.lang == "fr" %}Animation : un dégradé radial centré au bas de sa tuile de 240px dessine un demi-disque blanc ; décalée, la tuile en place deux sur le canevas ; dans le body, une variable glisse une virgule qui remonte le centre en haut de la tuile et change la couleur : un demi-disque bleu foncé, tête en bas{% else %}Animation: a radial gradient centred at the bottom of its 240px tile draws a white half disc; moved, the tile puts two of them on the canvas; in the body, a variable slips in a comma that moves the centre to the top of the tile and changes the color: a dark blue half disc, upside down{% endif %}">
+<div class="scene">
+<div class="t0907-can"></div>
+<div class="t0907-body"></div>
+<div class="t0907-o" data-o="tile" style="width:240px;height:300px"></div>
+<div class="t0907-o" data-o="body" style="left:140px;top:50px;width:120px;height:200px"></div>
+<span class="zlab t0907-l-a" style="left:12px;top:244px">60vw = 240 · at 28.5% 100% · 53q = {% if include.lang == "fr" %}50,08{% else %}50.08{% endif %}</span>
+<span class="zlab t0907-l-p" style="left:12px;top:244px">7% × (400 − 240) = {% if include.lang == "fr" %}11,2{% else %}11.2{% endif %} · 503q = {% if include.lang == "fr" %}475,3{% else %}475.3{% endif %}</span>
+<span class="zlab t0907-l-r" style="left:12px;top:244px">--r:0,#2F6193 → at 28.5% 0,#2F6193 53q</span>
+<span class="zlab t0907-l-b" style="left:12px;top:244px">7% × (120 − 240) = −{% if include.lang == "fr" %}8,4{% else %}8.4{% endif %}</span>
+</div>
+</div>
+<div class="legend"><span><i style="--c:var(--t0907-w)"></i>{% if include.lang == "fr" %}disque de html{% else %}html's disc{% endif %}</span><span><i style="--c:var(--t0907-d)"></i>{% if include.lang == "fr" %}disque du body{% else %}the body's disc{% endif %}</span></div>
+</div>
+<div class="anim-side">
+<pre class="code" aria-hidden="true">&lt;style>*{*{<span data-on="3">margin:50 140</span>;<span data-on="3" data-tone="2">--r:0,#2F6193</span>}background:<span data-on="1 3" data-tone="2">radial-gradient(1q at 28.5%var(--r,100%,#fff)53q,#84B9EF)</span><span data-on="2 4">7%503q</span><span data-on="1">/60vw</span></pre>
+<div class="now" aria-live="polite">
+<div class="caps">
+{%- if include.lang == "fr" %}
+<div class="cap" data-t="0" data-step="Un demi-disque dans une tuile"><h3>1. Un demi-disque dans une tuile</h3><p>Le fond de <code>html</code> va au canevas. <code>/60vw</code> donne une tuile de 240px de large, toute la hauteur. Sans <code>--r</code>, <code>var(--r,100%,#fff)</code> prend sa valeur de repli, <code>100%,#fff</code> : le dégradé lit <code>at 28.5% 100%,#fff 53q,#84B9EF</code>. Un disque blanc de rayon 50,08, centré au bas de la tuile : seule sa moitié haute y tombe.</p></div>
+<div class="cap" data-t="4" data-step="7%503q : deux demi-disques"><h3>2. <code>7%503q</code> : deux demi-disques</h3><p><code>7%</code> place la tuile à 7 % de la place libre : 7 % × (400 − 240) = 11,2. <code>503q</code> (475,3) la descend ; elle se répète tous les 300, donc ses bords tombent en y = 175,3. Les centres sont en x = 11,2 + 68,4 = 79,6 et 319,6 : deux demi-disques blancs.</p></div>
+<div class="cap" data-t="8" data-step="Une virgule dans une variable"><h3>3. Une virgule dans une variable</h3><p><code>*</code> imbriqué donne au <code>body</code> <code>margin:50 140</code> (120 × 200) et <code>--r:0,#2F6193</code>. La variable contient une virgule : le dégradé du <code>body</code> lit <code>at 28.5% 0,#2F6193 53q,#84B9EF</code>. Le centre monte en haut de la tuile, et le disque devient bleu foncé.</p></div>
+<div class="cap" data-t="12" data-step="Le demi-disque du milieu"><h3>4. Le demi-disque du milieu</h3><p>La tuile du <code>body</code> fait 240 × 200. <code>7%</code> de (120 − 240) = −8,4 : le centre tombe en x = 140 − 8,4 + 68,4 = 200. <code>503q</code>, répété tous les 200, met un haut de tuile en y = 125,3. Seule la moitié basse du disque y tombe : le demi-disque bleu, tête en bas, entre les deux blancs.</p></div>
+<div class="cap" data-t="16" data-step="Résultat" data-live="118 caractères · 100 % identique"><h3>5. Résultat : 118 caractères</h3><p>Un seul dégradé, et une variable qui change à la fois son centre et sa couleur.</p></div>
+{%- else %}
+<div class="cap" data-t="0" data-step="A half disc in a tile"><h3>1. A half disc in a tile</h3><p><code>html</code>'s background goes to the canvas. <code>/60vw</code> makes a tile 240px wide, full height. With no <code>--r</code>, <code>var(--r,100%,#fff)</code> uses its fallback, <code>100%,#fff</code>: the gradient reads <code>at 28.5% 100%,#fff 53q,#84B9EF</code>. A white disc of radius 50.08, centred at the bottom of the tile: only its top half falls inside.</p></div>
+<div class="cap" data-t="4" data-step="7%503q: two half discs"><h3>2. <code>7%503q</code>: two half discs</h3><p><code>7%</code> puts the tile at 7% of the free space: 7% × (400 − 240) = 11.2. <code>503q</code> (475.3) moves it down; it repeats every 300, so tile edges fall at y = 175.3. The centres are at x = 11.2 + 68.4 = 79.6 and 319.6: two white half discs.</p></div>
+<div class="cap" data-t="8" data-step="A comma in a variable"><h3>3. A comma in a variable</h3><p>The nested <code>*</code> gives the <code>body</code> <code>margin:50 140</code> (120 × 200) and <code>--r:0,#2F6193</code>. The variable holds a comma: the <code>body</code>'s gradient reads <code>at 28.5% 0,#2F6193 53q,#84B9EF</code>. The centre moves to the top of the tile, and the disc turns dark blue.</p></div>
+<div class="cap" data-t="12" data-step="The middle half disc"><h3>4. The middle half disc</h3><p>The <code>body</code>'s tile is 240 × 200. <code>7%</code> of (120 − 240) = −8.4: the centre lands at x = 140 − 8.4 + 68.4 = 200. <code>503q</code>, repeated every 200, puts a tile top at y = 125.3. Only the bottom half of the disc falls there: the dark blue half disc, upside down, between the two white ones.</p></div>
+<div class="cap" data-t="16" data-step="Result" data-live="118 characters · 100% match"><h3>5. Result: 118 characters</h3><p>One gradient, and a variable that changes both its centre and its color.</p></div>
+{%- endif %}
+</div>
+<div class="live"></div>
+</div>
+</div>
+<script>
+(window.AnimScenes = window.AnimScenes || {}).t0907 = (fig) => {
+  const fr = document.documentElement.lang === 'fr';
+  const $ = (s) => fig.querySelector(s);
+  const $$ = (s) => [...fig.querySelectorAll(s)];
+  const CAN = $('.t0907-can'), B = $('.t0907-body'), oT = $('[data-o="tile"]'), oB = $('[data-o="body"]'), live = $('.live');
+  const L = (k) => $(`.t0907-l-${k}`);
+  const W = { a: [0.3, 1.8], p: [4.2, 6], r: [8.2, 9.6], b: [12.2, 14], fin: [16.1, 16.9] };
+  const ease = (x) => (x < 0.5 ? 4 * x * x * x : 1 - Math.pow(-2 * x + 2, 3) / 2);
+  const pr = (t, [a, b]) => ease(Math.min(1, Math.max(0, (t - a) / (b - a))));
+  const lerp = (a, b, m) => a + (b - a) * m;
+  const win = (t, a, b) => Math.min(pr(t, [a, a + 0.5]), 1 - pr(t, [b - 0.4, b]));
+  const f1 = (v) => { const s = (Math.round(v * 100) / 100).toFixed(2).replace(/\.?0+$/, ''); return (fr ? s.replace('.', ',') : s).replace('-', '−'); };
+  const c = fr ? ' :' : ':';
+  const g = (at, col, r) => `radial-gradient(circle 0.945px at ${at}, ${col} ${r}px, var(--t0907-l))`;
+  return (t, step) => {
+    const guides = t < W.fin[0] ? 1 : 0;
+    const a = pr(t, W.a), p = pr(t, W.p), r = pr(t, W.r), b = pr(t, W.b);
+    // html's tile: 240 × 300; its edges end up at x = 11.2 (+240) and y = 175.28 (475.28 − 300)
+    const tx = lerp(0, 11.2, p), ty = lerp(0, 175.28, p);
+    CAN.style.background = `${g('28.5% 100%', 'var(--t0907-w)', 50.08 * a)} ${tx}px ${ty}px / 240px 300px`;
+    Object.assign(oT.style, { left: `${tx}px`, top: `${ty - (p > 0.5 ? 300 : 0)}px` });
+    oT.style.opacity = (step <= 1 ? a : 0) * guides;
+    // body: its tile, 240 × 200, at −8.4 and 75.28 (475.28 − 400)
+    B.style.opacity = r;
+    B.style.background = `${g('28.5% 0', 'var(--t0907-d)', 50.08)} ${lerp(0, -8.4, b)}px ${lerp(0, 75.28, b)}px / 240px 200px`;
+    oB.style.opacity = (step === 2 || step === 3 ? r : 0) * guides;
+    L('a').style.opacity = win(t, W.a[0], W.p[0] - 0.2);
+    L('p').style.opacity = win(t, W.p[0], W.r[0] - 0.2);
+    L('r').style.opacity = win(t, W.r[0], W.b[0] - 0.2);
+    L('b').style.opacity = win(t, W.b[0], W.fin[0]);
+    let txt = '';
+    if (step === 0) txt = `${fr ? 'rayon' : 'radius'}${c} ${f1(50.08 * a)}`;
+    else if (step === 1) txt = `${fr ? 'tuile' : 'tile'}${c} x ${f1(tx)}, y ${f1(ty)}`;
+    else if (step === 2) txt = `body${c} x 140 → 260, y 50 → 250`;
+    else if (step === 3) txt = `${fr ? 'centre' : 'centre'}${c} x ${f1(lerp(208.4, 200, b))}, y ${f1(lerp(50, 125.28, b))}`;
+    else txt = $$('.caps .cap')[4].dataset.live || '';
+    live.textContent = txt;
+  };
+};
+</script>
+</figure>
