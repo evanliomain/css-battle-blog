@@ -1,0 +1,103 @@
+<figure class="anim t0913" data-duration="20" data-scene="t0913" data-wide="-40 -30 480 360" data-off-label="-36 -26" style="--bg:#fff">
+<style>
+.t0913{--t0913-d:#391b1b;--t0913-p:#7253bc;--t0913-b:#e0782a;--t0913-dash:rgb(60 40 40 / .7)}
+.t0913 .t0913-l{position:absolute;inset:0}
+.t0913 .t0913-pole{position:absolute;left:130px;width:20px;background:var(--t0913-d)}
+.t0913 .t0913-o{position:absolute;box-sizing:border-box;border:1.5px dashed var(--t0913-dash);pointer-events:none}
+.t0913 .zlab{color:#fff;background:rgb(40 25 25 / .9);padding:1px 5px;border-radius:3px}
+</style>
+<div class="anim-col">
+<div class="stage" role="img" aria-label="{% if include.lang == "fr" %}Animation : html, réduit de moitié, n'est qu'un cadre brun de 20px ; corner-shape:notch découpe deux coins en marche : la forme du drapeau ; son outline violet de 9cm suit cette forme et couvre tout le reste ; le body, réduit deux fois, fait le mât{% else %}Animation: html, scaled by half, is only a 20px brown frame; corner-shape:notch cuts two corners into steps: the shape of the flag; its 9cm purple outline follows that shape and covers everything else; the body, scaled twice, makes the pole{% endif %}">
+<div class="scene">
+<div class="t0913-l" data-l="out"></div>
+<div class="t0913-l" data-l="frame"></div>
+<div class="t0913-l" data-l="in" style="background:#fff"></div>
+<div class="t0913-pole"></div>
+<div class="t0913-o" data-o="html"></div>
+<span class="zlab t0913-l-s" style="left:12px;top:12px">280 × 240 · scale:.5 → 140 × 120</span>
+<span class="zlab t0913-l-n" style="left:12px;top:12px">43% × 280 = {% if include.lang == "fr" %}120,4{% else %}120.4{% endif %} · 5ch = 40 → × .5</span>
+<span class="zlab t0913-l-o" style="left:12px;top:12px">outline:9cm = 340px</span>
+<span class="zlab t0913-l-b" style="left:180px;top:12px">body · 80 × 920 → × .25</span>
+</div>
+</div>
+<div class="legend"><span><i style="--c:var(--t0913-d)"></i>{% if include.lang == "fr" %}bordure{% else %}border{% endif %}</span><span><i style="--c:var(--t0913-p)"></i>outline</span><span><i style="--c:var(--t0913-b)"></i>{% if include.lang == "fr" %}body (brun en vrai){% else %}body (brown in reality){% endif %}</span></div>
+</div>
+<div class="anim-side">
+<pre class="code" aria-hidden="true">&lt;style>*{<span data-on="1 4">border:5ch solid#391B1B</span>;<span data-on="1 4" data-tone="2">scale:.5</span>;<span data-on="4">margin:-290 250-470-60</span>}&amp;{<span data-on="1">margin:-15 60 75</span>;<span data-on="2" data-tone="2">corner-shape:notch;border-radius:0 43%/5ch</span>;<span data-on="3" data-tone="2">outline:9cm solid#7253BC</span></pre>
+<div class="now" aria-live="polite">
+<div class="caps">
+{%- if include.lang == "fr" %}
+<div class="cap" data-t="0" data-step="html, réduit de moitié"><h3>1. <code>html</code>, réduit de moitié</h3><p><code>margin:-15 60 75</code> donne à <code>html</code> 400 − 120 = 280 de large et, en mode quirks, 300 + 15 − 75 = 240 de haut. Sa bordure de <code>5ch</code> fait 40px. <code>scale:.5</code> le réduit de moitié autour de son centre, (200 ; 105) : un cadre brun de 140 × 120, de x = 130 à 270 et de y = 45 à 165, épais de 20px.</p></div>
+<div class="cap" data-t="4" data-step="corner-shape:notch : deux marches"><h3>2. <code>corner-shape:notch</code> : deux marches</h3><p><code>border-radius:0 43%/5ch</code> donne aux coins haut droit et bas gauche un « rayon » de 43 % de 280 = 120,4 en largeur et 40 en hauteur. <code>corner-shape:notch</code> les découpe en marche, à angle droit, au lieu de les arrondir : 60,2 × 20 à l'écran. La bordure suit la découpe, dedans comme dehors : la forme du drapeau.</p></div>
+<div class="cap" data-t="8" data-step="L'outline couvre le reste"><h3>3. L'<code>outline</code> couvre le reste</h3><p><code>outline:9cm</code> trace autour de <code>html</code> un contour violet de 340px, qui suit lui aussi les coins découpés. Il couvre tout le canevas hors du drapeau. Dedans, <code>html</code> n'a pas de fond : le canevas reste blanc.</p></div>
+<div class="cap" data-t="12" data-step="Le body : le mât"><h3>4. Le <code>body</code> : le mât</h3><p>Le <code>body</code> prend <code>margin:-290 250-470-60</code> : ses marges de côté ne lui laissent aucune largeur, il n'est que sa bordure, 80 de large. En mode quirks, les marges de −290 et −470 l'étirent à 920 de haut. Réduit deux fois (<code>scale:.5</code> dans <code>html</code> réduit), il fait 20 × 230 à l'écran : le mât, de y = 35 à 265, sur le bord gauche du drapeau.</p></div>
+<div class="cap" data-t="16" data-step="Résultat" data-live="151 caractères · 100 % identique"><h3>5. Résultat : 151 caractères</h3><p>Une bordure découpée par <code>corner-shape</code>, un <code>outline</code> pour le fond, et le <code>body</code> pour le mât.</p></div>
+{%- else %}
+<div class="cap" data-t="0" data-step="html, scaled by half"><h3>1. <code>html</code>, scaled by half</h3><p><code>margin:-15 60 75</code> makes <code>html</code> 400 − 120 = 280 wide and, in quirks mode, 300 + 15 − 75 = 240 tall. Its <code>5ch</code> border is 40px. <code>scale:.5</code> halves it around its centre, (200, 105): a 140 × 120 brown frame, from x = 130 to 270 and y = 45 to 165, 20px thick.</p></div>
+<div class="cap" data-t="4" data-step="corner-shape:notch: two steps"><h3>2. <code>corner-shape:notch</code>: two steps</h3><p><code>border-radius:0 43%/5ch</code> gives the top-right and bottom-left corners a "radius" of 43% of 280 = 120.4 wide and 40 tall. <code>corner-shape:notch</code> cuts them as a square step instead of rounding them: 60.2 × 20 on screen. The border follows the cut, inside and out: the shape of the flag.</p></div>
+<div class="cap" data-t="8" data-step="The outline covers the rest"><h3>3. The <code>outline</code> covers the rest</h3><p><code>outline:9cm</code> draws a 340px purple outline around <code>html</code>, which also follows the cut corners. It covers the whole canvas outside the flag. Inside, <code>html</code> has no background: the canvas stays white.</p></div>
+<div class="cap" data-t="12" data-step="The body: the pole"><h3>4. The <code>body</code>: the pole</h3><p>The <code>body</code> gets <code>margin:-290 250-470-60</code>: its side margins leave it no width, so it is only its border, 80 wide. In quirks mode, the −290 and −470 margins stretch it to 920 tall. Scaled twice (<code>scale:.5</code> inside a scaled <code>html</code>), it is 20 × 230 on screen: the pole, from y = 35 to 265, along the flag's left edge.</p></div>
+<div class="cap" data-t="16" data-step="Result" data-live="151 characters · 100% match"><h3>5. Result: 151 characters</h3><p>One border cut by <code>corner-shape</code>, an <code>outline</code> for the background, and the <code>body</code> for the pole.</p></div>
+{%- endif %}
+</div>
+<div class="live"></div>
+</div>
+</div>
+<script>
+(window.AnimScenes = window.AnimScenes || {}).t0913 = (fig) => {
+  const fr = document.documentElement.lang === 'fr';
+  const $ = (s) => fig.querySelector(s);
+  const $$ = (s) => [...fig.querySelectorAll(s)];
+  const OUT = $('[data-l="out"]'), FR = $('[data-l="frame"]'), IN = $('[data-l="in"]'), POLE = $('.t0913-pole'), oH = $('[data-o="html"]'), live = $('.live');
+  const L = (k) => $(`.t0913-l-${k}`);
+  const W = { s: [0.3, 1.8], n: [4.2, 5.8], o: [8.2, 9.6], b: [12.2, 13.8], fin: [16.1, 16.9] };
+  const ease = (x) => (x < 0.5 ? 4 * x * x * x : 1 - Math.pow(-2 * x + 2, 3) / 2);
+  const pr = (t, [a, b]) => ease(Math.min(1, Math.max(0, (t - a) / (b - a))));
+  const lerp = (a, b, m) => a + (b - a) * m;
+  const win = (t, a, b) => Math.min(pr(t, [a, a + 0.5]), 1 - pr(t, [b - 0.4, b]));
+  const f1 = (v) => { const s = (Math.round(v * 100) / 100).toFixed(2).replace(/\.?0+$/, ''); return (fr ? s.replace('.', ',') : s).replace('-', '−'); };
+  const c = fr ? ' :' : ':';
+  // outer contour of the notched box (x0..x1, y0..y1), notches nw × nh at top-right and bottom-left
+  const shape = (x0, y0, x1, y1, nw, nh) => [[x0, y0], [x1 - nw, y0], [x1 - nw, y0 + nh], [x1, y0 + nh], [x1, y1], [x0 + nw, y1], [x0 + nw, y1 - nh], [x0, y1 - nh]];
+  const poly = (pts) => pts.map(([x, y]) => `${x}px ${y}px`).join(',');
+  return (t, step) => {
+    const teach = fig.dataset.teach === '1';
+    const real = !teach || t >= W.fin[0];
+    const guides = t < W.fin[0] ? 1 : 0;
+    const s = pr(t, W.s), n = pr(t, W.n), o = pr(t, W.o), b = pr(t, W.b);
+    // 1. html box: from its layout size (280 × 240 at 60, −15) to half size around (200, 105)
+    const k = lerp(1, 0.5, s);
+    const x0 = 200 - 140 * k, x1 = 200 + 140 * k, y0 = 105 - 120 * k, y1 = 105 + 120 * k, bw = 40 * k;
+    const nw = 120.4 * k * n, nh = 40 * k * n;
+    const outer = shape(x0, y0, x1, y1, nw, nh);
+    // inner contour: every edge moved inwards by the border width
+    const inner = shape(x0 + bw, y0 + bw, x1 - bw, y1 - bw, nw, nh);
+    FR.style.background = 'var(--t0913-d)';
+    FR.style.clipPath = `polygon(${poly(outer)})`;
+    IN.style.clipPath = `polygon(${poly(inner)})`;
+    Object.assign(oH.style, { left: `${x0}px`, top: `${y0}px`, width: `${x1 - x0}px`, height: `${y1 - y0}px` });
+    oH.style.opacity = (step <= 1 ? 1 : 0) * guides;
+    // 3. outline: everything outside the outer contour
+    OUT.style.background = 'var(--t0913-p)';
+    OUT.style.opacity = o;
+    OUT.style.clipPath = `polygon(evenodd, -500px -500px, 900px -500px, 900px 900px, -500px 900px, -500px -500px, ${poly(outer)}, ${outer[0][0]}px ${outer[0][1]}px)`;
+    // 4. body: the pole
+    POLE.style.opacity = b > 0 ? 1 : 0;
+    POLE.style.top = `${lerp(150, 35, b)}px`;
+    POLE.style.height = `${230 * b}px`;
+    POLE.style.background = real ? 'var(--t0913-d)' : 'var(--t0913-b)';
+    L('s').style.opacity = win(t, W.s[0], W.n[0] - 0.2);
+    L('n').style.opacity = win(t, W.n[0], W.o[0] - 0.2);
+    L('o').style.opacity = win(t, W.o[0], W.b[0] - 0.2);
+    L('b').style.opacity = win(t, W.b[0], W.fin[0]);
+    let txt = '';
+    if (step === 0) txt = `html${c} ${f1(x1 - x0)} × ${f1(y1 - y0)}`;
+    else if (step === 1) txt = `${fr ? 'marches' : 'steps'}${c} ${f1(nw)} × ${f1(nh)}`;
+    else if (step === 2) txt = `outline${c} 340px`;
+    else if (step === 3) txt = `${fr ? 'mât' : 'pole'}${c} y ${f1(lerp(150, 35, b))} → ${f1(lerp(150, 265, b))}`;
+    else txt = $$('.caps .cap')[4].dataset.live || '';
+    live.textContent = txt;
+  };
+};
+</script>
+</figure>
