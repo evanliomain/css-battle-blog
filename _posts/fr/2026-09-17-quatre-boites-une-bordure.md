@@ -15,7 +15,7 @@ code: |
   <p><h1><style>*{margin:40 135;border:.63em solid#333;background:#7EC3E8;*{margin:20;*{margin:-85}p{zoom:10;margin:-14-7.5 16.5;border-color:#0000#0000#333
 ---
 
-La cible du 17 septembre est un temple gris foncé sur bleu clair : un toit en triangle, quatre fines colonnes, et un large socle. La solution de levito donne à tous les éléments la même bordure foncée. `html` et le `body` sont deux cadres, et leurs côtés sont les quatre colonnes. Un `<h1>` vide, avec sa police plus grande, est une bordure plus épaisse : le socle. Un `<p>` zoomé dix fois n'a que sa bordure basse colorée, qui est un triangle : le toit.
+La cible du 17 septembre est un temple gris foncé sur bleu clair : un toit en triangle, quatre fines colonnes, et un large socle. La solution de Veit Lehmann donne à tous les éléments la même bordure foncée. `html` et le `body` sont deux cadres, et leurs côtés sont les quatre colonnes. Un `<h1>` vide, avec sa police plus grande, est une bordure plus épaisse : le socle. Un `<p>` zoomé dix fois n'a que sa bordure basse colorée, qui est un triangle : le toit.
 
 Cochez **Couleurs pédagogiques** pour voir quelle boîte dessine quelle partie.
 

@@ -15,7 +15,7 @@ code: |
   <p><h1><style>*{margin:40 135;border:.63em solid#333;background:#7EC3E8;*{margin:20;*{margin:-85}p{zoom:10;margin:-14-7.5 16.5;border-color:#0000#0000#333
 ---
 
-The September 17 target is a dark grey temple on light blue: a triangular roof, four thin columns, and a wide base. levito's solution gives every element the same dark border. `html` and the `body` are two frames, and their sides are the four columns. An empty `<h1>`, with its bigger font, is a thicker border: the base. A `<p>` zoomed ten times has only its bottom border colored, which is a triangle: the roof.
+The September 17 target is a dark grey temple on light blue: a triangular roof, four thin columns, and a wide base. Veit Lehmann's solution gives every element the same dark border. `html` and the `body` are two frames, and their sides are the four columns. An empty `<h1>`, with its bigger font, is a thicker border: the base. A `<p>` zoomed ten times has only its bottom border colored, which is a triangle: the roof.
 
 Use **Teaching colors** to see which box draws which part.
 
