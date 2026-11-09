@@ -1,0 +1,118 @@
+<figure class="anim t0927" data-duration="24" data-scene="t0927" data-wide="-40 -30 480 360" data-off-label="-36 -26" style="--bg:#d5a06c">
+<style>
+.t0927{--t0927-tan:#d5a06c;--t0927-navy:#1e2c5c;--t0927-halo:#f4dc7a;--t0927-dash:rgb(30 30 60 / .75)}
+.t0927 .t0927-e{position:absolute;box-sizing:border-box;background:var(--t0927-tan)}
+.t0927 .t0927-o{position:absolute;box-sizing:border-box;border:1.5px dashed var(--t0927-dash);pointer-events:none}
+.t0927 .zlab{color:#fff;background:rgb(20 25 50 / .85);padding:1px 5px;border-radius:3px}
+.t0927 .legend .t0927-mk{background:transparent;box-shadow:inset 0 0 0 1.5px currentColor}
+</style>
+<div class="anim-col">
+<div class="stage" role="img" aria-label="{% if include.lang == "fr" %}Animation : cinq images vides se rangent sur deux lignes ; arrondies, elles projettent un anneau bleu nuit et un halo couleur fond, et le halo de la grande image coupe les oreilles ; les deux dernières, en police réduite et sans hauteur de ligne, deviennent deux barres qui tournent de 45 degrés pour faire les pieds du réveil{% else %}Animation: five empty images line up on two lines; rounded, they cast a navy ring and a background-colored halo, and the big image's halo cuts the ears; the last two, with a smaller font and no line height, become two bars that turn 45 degrees to make the alarm clock's feet{% endif %}">
+<div class="scene">
+<div class="t0927-e" data-e="0"></div>
+<div class="t0927-e" data-e="1"></div>
+<div class="t0927-e" data-e="2"></div>
+<div class="t0927-e" data-e="3"></div>
+<div class="t0927-e" data-e="4"></div>
+<div class="t0927-o" data-o="0"></div>
+<div class="t0927-o" data-o="1"></div>
+<div class="t0927-o" data-o="2"></div>
+<div class="t0927-o" data-o="3"></div>
+<div class="t0927-o" data-o="4"></div>
+<span class="zlab t0927-l-m" style="left:12px;top:12px">margin:52 −22 −52 122</span>
+<span class="zlab t0927-l-p" style="left:12px;top:252px">padding:10 .56lh → {% if include.lang == "fr" %}20,16{% else %}20.16{% endif %} × 20</span>
+<span class="zlab t0927-l-a" style="left:12px;top:276px">[a] padding:70 → 140 × 140</span>
+<span class="zlab t0927-l-r" style="left:12px;top:252px">9lh = 9 × 18 = 162px</span>
+<span class="zlab t0927-l-n" style="left:12px;top:276px">1.25em = {% if include.lang == "fr" %}1,25{% else %}1.25{% endif %} × 16 = 20px</span>
+<span class="zlab t0927-l-h" style="left:12px;top:276px">1.7lh = {% if include.lang == "fr" %}1,7{% else %}1.7{% endif %} × 18 = {% if include.lang == "fr" %}30,6{% else %}30.6{% endif %}px</span>
+<span class="zlab t0927-l-f" style="left:12px;top:12px">font:50%/0 → 1em = 8px · 1lh = 0</span>
+<span class="zlab t0927-l-t" style="left:12px;top:12px">rotate:−45deg · rotate:45deg</span>
+</div>
+</div>
+<div class="legend"><span><i style="--c:var(--t0927-navy)"></i>{% if include.lang == "fr" %}première ombre{% else %}first shadow{% endif %}</span><span><i style="--c:var(--t0927-halo)"></i>{% if include.lang == "fr" %}seconde ombre (couleur du fond en vrai){% else %}second shadow (background color in reality){% endif %}</span><span><i class="t0927-mk"></i>{% if include.lang == "fr" %}boîtes des img{% else %}img boxes{% endif %}</span></div>
+</div>
+<div class="anim-side">
+<pre class="code" aria-hidden="true"><span data-on="1">&lt;img>&lt;img>&lt;img a>&lt;img>&lt;img></span>&lt;style>*{background:#D5A06C;*>*{box-shadow:<span data-on="2" data-tone="2">0 0 0 1.25em#1E2C5C</span>,<span data-on="3" data-tone="2">0 0 0 1.7lh#D5A06C</span>;<span data-on="1">margin:52-22-52 122</span>;<span data-on="2">border-radius:9lh</span>;<span data-on="1">padding:10 .56lh</span>}<span data-on="1">[a]{padding:70</span>;~*{<span data-on="5" data-tone="2">rotate:-45deg;+*{rotate:45deg}</span><span data-on="4">margin:0-111-80 5</span>;<span data-on="4" data-tone="2">font:50%/0"</span></pre>
+<div class="now" aria-live="polite">
+<div class="caps">
+{%- if include.lang == "fr" %}
+<div class="cap" data-t="0" data-step="Cinq images sur deux lignes"><h3>1. Cinq images vides sur deux lignes</h3><p>Une <code>&lt;img></code> sans source n'affiche rien : c'est une boîte en ligne. <code>*>*</code> imbriqué vise les enfants du <code>body</code>. <code>padding:10 .56lh</code> leur donne 20,16 × 20. Avec <code>margin:52-22-52 122</code>, chaque image avance de 20,16 − 22 + 122 : les oreilles en x = 130 et 250,16. La troisième, <code>[a]</code>, a <code>padding:70</code> : 140 × 140, elle ne tient plus et passe à la ligne, en (130 ; 80).</p></div>
+<div class="cap" data-t="4" data-step="Des ronds et un anneau"><h3>2. Des ronds et un anneau bleu nuit</h3><p><code>lh</code> vaut la hauteur de ligne : 18px pour la police par défaut. <code>border-radius:9lh</code> (162px) arrondit chaque boîte en rond. La première ombre, sans décalage, s'étale de <code>1.25em</code> = 20px : un anneau bleu nuit de 20px autour de chaque rond, le reste garde la couleur du fond.</p></div>
+<div class="cap" data-t="8" data-step="Le halo coupe les oreilles"><h3>3. Le halo coupe les oreilles</h3><p>La seconde ombre s'étale de <code>1.7lh</code> = 30,6px, couleur du fond, sous la première : un halo de 10,6px autour de chaque anneau. Le grand rond est peint après les oreilles : son halo les recouvre en partie. Les oreilles deviennent deux arcs, séparés du réveil.</p></div>
+<div class="cap" data-t="12" data-step="font:50%/0 : deux barres"><h3>4. <code>font:50%/0</code> : deux barres</h3><p>Les deux dernières images (<code>~*</code> après <code>[a]</code>) ont une police de 8px et une hauteur de ligne de 0. Alors <code>1.25em</code> = 10px, et tout ce qui est en <code>lh</code> vaut 0 : pas de rayon, pas de halo, pas de padding sur les côtés. Chaque boîte fait 0 × 20 et son ombre la grossit en une barre de 20 × 40. <code>margin:0-111-80 5</code> les place en x = 253 et 147, centrées en y = 238.</p></div>
+<div class="cap" data-t="16" data-step="Un huitième de tour chacune"><h3>5. Un huitième de tour chacune</h3><p><code>rotate:-45deg</code> penche la première barre vers la droite, <code>+*{rotate:45deg}</code> penche la seconde vers la gauche. Elles tournent autour de leur centre : ce sont les pieds du réveil, qui touchent l'anneau.</p></div>
+<div class="cap" data-t="20" data-step="Résultat" data-live="241 caractères · 100 % identique"><h3>6. Résultat : 241 caractères</h3><p>Cinq images vides, deux ombres pour tous les ronds, et une police réduite pour les pieds.</p></div>
+{%- else %}
+<div class="cap" data-t="0" data-step="Five images on two lines"><h3>1. Five empty images on two lines</h3><p>An <code>&lt;img></code> with no source shows nothing: it is an inline box. The nested <code>*>*</code> matches the <code>body</code>'s children. <code>padding:10 .56lh</code> makes them 20.16 × 20. With <code>margin:52-22-52 122</code>, each image moves on by 20.16 − 22 + 122: the ears land at x = 130 and 250.16. The third one, <code>[a]</code>, has <code>padding:70</code>: at 140 × 140 it no longer fits, and wraps to (130, 80).</p></div>
+<div class="cap" data-t="4" data-step="Circles and a ring"><h3>2. Circles and a navy ring</h3><p><code>lh</code> is the line height: 18px for the default font. <code>border-radius:9lh</code> (162px) rounds each box into a circle. The first shadow, with no offset, spreads <code>1.25em</code> = 20px: a 20px navy ring around each circle, which keeps the background color inside.</p></div>
+<div class="cap" data-t="8" data-step="The halo cuts the ears"><h3>3. The halo cuts the ears</h3><p>The second shadow spreads <code>1.7lh</code> = 30.6px, in the background color, under the first one: a 10.6px halo around each ring. The big circle is painted after the ears, so its halo covers part of them. The ears become two arcs, apart from the clock.</p></div>
+<div class="cap" data-t="12" data-step="font:50%/0: two bars"><h3>4. <code>font:50%/0</code>: two bars</h3><p>The last two images (<code>~*</code> after <code>[a]</code>) get an 8px font and a line height of 0. So <code>1.25em</code> = 10px, and everything in <code>lh</code> is 0: no radius, no halo, no side padding. Each box is 0 × 20, and its shadow grows it into a 20 × 40 bar. <code>margin:0-111-80 5</code> puts them at x = 253 and 147, centred at y = 238.</p></div>
+<div class="cap" data-t="16" data-step="An eighth of a turn each"><h3>5. An eighth of a turn each</h3><p><code>rotate:-45deg</code> tilts the first bar to the right, and <code>+*{rotate:45deg}</code> tilts the second one to the left. They turn around their centre: they are the clock's feet, touching the ring.</p></div>
+<div class="cap" data-t="20" data-step="Result" data-live="241 characters · 100% match"><h3>6. Result: 241 characters</h3><p>Five empty images, two shadows for every circle, and a smaller font for the feet.</p></div>
+{%- endif %}
+</div>
+<div class="live"></div>
+</div>
+</div>
+<script>
+(window.AnimScenes = window.AnimScenes || {}).t0927 = (fig) => {
+  const fr = document.documentElement.lang === 'fr';
+  const $ = (s) => fig.querySelector(s);
+  const $$ = (s) => [...fig.querySelectorAll(s)];
+  const E = $$('.t0927-e'), O = $$('.t0927-o'), live = $('.live');
+  const L = (k) => $(`.t0927-l-${k}`);
+  const W = { box: [0.3, 1.8], ring: [4.2, 6], halo: [8.2, 10], legs: [12.2, 14], rot: [16.2, 18], fin: [20.1, 20.9] };
+  const ease = (x) => (x < 0.5 ? 4 * x * x * x : 1 - Math.pow(-2 * x + 2, 3) / 2);
+  const pr = (t, [a, b]) => ease(Math.min(1, Math.max(0, (t - a) / (b - a))));
+  const lerp = (a, b, m) => a + (b - a) * m;
+  const win = (t, a, b) => Math.min(pr(t, [a, a + 0.5]), 1 - pr(t, [b - 0.4, b]));
+  const f1 = (v) => { const s = (Math.round(v * 100) / 100).toFixed(2).replace(/\.?0+$/, ''); return (fr ? s.replace('.', ',') : s).replace('-', '−'); };
+  const c = fr ? ' :' : ':';
+  const place = (el, x, y, w, h) => Object.assign(el.style, { left: `${x}px`, top: `${y}px`, width: `${Math.max(0, w)}px`, height: `${Math.max(0, h)}px` });
+  // offset boxes of the five images (canvas pixels)
+  const boxes = [[130, 60, 20.16, 20], [250.16, 60, 20.16, 20], [130, 80, 140, 140], [253, 228, 0, 20], [147, 228, 0, 20]];
+  return (t, step) => {
+    const teach = fig.dataset.teach === '1';
+    const real = !teach || t >= W.fin[0];
+    const guides = t < W.fin[0] ? 1 : 0;
+    const b = pr(t, W.box), r = pr(t, W.ring), h = pr(t, W.halo), g = pr(t, W.legs), o = pr(t, W.rot);
+    const halo = real ? 'var(--t0927-tan)' : 'var(--t0927-halo)';
+    E.forEach((el, i) => {
+      const [x, y, w, hh] = boxes[i];
+      place(el, x, y, w, hh);
+      if (i < 3) {
+        el.style.opacity = b;
+        el.style.borderRadius = `${162 * r}px`;
+        el.style.boxShadow = `0 0 0 ${20 * r}px var(--t0927-navy), 0 0 0 ${20 * r + 10.6 * h}px ${halo}`;
+        el.style.rotate = '0deg';
+      } else {
+        el.style.opacity = g > 0 ? 1 : 0;
+        el.style.borderRadius = '0';
+        el.style.boxShadow = `0 0 0 ${10 * g}px var(--t0927-navy)`;
+        el.style.rotate = `${(i === 3 ? -45 : 45) * o}deg`;
+      }
+      const ob = O[i];
+      place(ob, x, y, Math.max(w, 1.5), hh);
+      ob.style.rotate = el.style.rotate;
+      ob.style.opacity = (i < 3 ? b * (step <= 2 ? 1 : 0) : (g > 0 && step >= 3 && step <= 4 ? 1 : 0)) * guides;
+    });
+    L('m').style.opacity = win(t, W.box[0], W.ring[0] - 0.2);
+    L('p').style.opacity = win(t, W.box[0], W.ring[0] - 0.2);
+    L('a').style.opacity = win(t, W.box[0], W.ring[0] - 0.2);
+    L('r').style.opacity = win(t, W.ring[0], W.halo[0] - 0.2);
+    L('n').style.opacity = win(t, W.ring[0], W.halo[0] - 0.2);
+    L('h').style.opacity = win(t, W.halo[0], W.legs[0]);
+    L('f').style.opacity = win(t, W.legs[0], W.rot[0]);
+    L('t').style.opacity = win(t, W.rot[0], W.fin[0]);
+    let txt = '';
+    if (step === 0) txt = `x${c} 130 · 130 + ${f1(20.16 - 22 + 122)} = ${f1(250.16)} · ${fr ? 'ligne 2' : 'line 2'}${c} 130`;
+    else if (step === 1) txt = `${fr ? 'anneau' : 'ring'}${c} ${f1(70)} → ${f1(70 + 20 * r)}px`;
+    else if (step === 2) txt = `${fr ? 'halo' : 'halo'}${c} ${f1(90)} → ${f1(90 + 10.6 * h)}px`;
+    else if (step === 3) txt = `${fr ? 'barres' : 'bars'}${c} ${f1(20 * g)} × ${f1(20 + 20 * g)}`;
+    else if (step === 4) txt = `rotate${c} ${f1(-45 * o)}° · ${f1(45 * o)}°`;
+    else txt = $$('.caps .cap')[5].dataset.live || '';
+    live.textContent = txt;
+  };
+};
+</script>
+</figure>
