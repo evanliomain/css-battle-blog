@@ -1,0 +1,95 @@
+<figure class="anim t0914" data-duration="20" data-scene="t0914" data-wide="-40 -30 480 360" data-off-label="-36 -26" style="--bg:#f8b140">
+<style>
+.t0914{--t0914-b:#465792;--t0914-o:#f8b140;--t0914-t:#7a4fc0;--t0914-dash:rgb(40 30 10 / .7)}
+.t0914 .t0914-e{position:absolute;left:160px;top:135px;width:80px;height:30px;background:var(--t0914-b)}
+.t0914 .t0914-img{position:absolute;left:16px;top:-9px;width:368px;height:318px;background:radial-gradient(#0000 76.54px,var(--t0914-b) 0 41%,#0000 0);pointer-events:none}
+.t0914 .t0914-o{position:absolute;box-sizing:border-box;border:1.5px dashed var(--t0914-dash);pointer-events:none}
+.t0914 .t0914-c{position:absolute;left:105px;top:55px;width:190px;height:190px;border-radius:50%;box-sizing:border-box;border:1.5px dashed var(--t0914-dash);pointer-events:none}
+.t0914 .zlab{color:#fff;background:rgb(40 30 60 / .9);padding:1px 5px;border-radius:3px}
+</style>
+<div class="anim-col">
+<div class="stage" role="img" aria-label="{% if include.lang == "fr" %}Animation : offset:ray(0deg) centre le body et le p et les tourne d'un quart de tour à chaque niveau : une croix ; leur border-image, un anneau en dégradé débordant de 144px, n'est peinte que sur les bords haut et bas, écrasée en petits anneaux ; un clip-path en cercle de 95px coupe chaque anneau en deux : quatre arcs{% else %}Animation: offset:ray(0deg) centres the body and the p and turns them a quarter turn at each level: a cross; their border-image, a gradient ring overflowing by 144px, is only painted on the top and bottom edges, squeezed into small rings; a 95px circle clip-path cuts each ring in half: four arcs{% endif %}">
+<div class="scene">
+<div class="t0914-img"></div>
+<div class="t0914-e" data-e="body"></div>
+<div class="t0914-e" data-e="p"></div>
+<div class="t0914-o" data-o="area" style="left:16px;top:-9px;width:368px;height:318px"></div>
+<div class="t0914-c"></div>
+<span class="zlab t0914-l-r" style="left:12px;top:12px">offset:ray(0deg) → {% if include.lang == "fr" %}centré{% else %}centred{% endif %}, −90° {% if include.lang == "fr" %}par niveau{% else %}per level{% endif %}</span>
+<span class="zlab t0914-l-a" style="left:12px;top:12px">9pc = 144 → 368 × 318 · 81q = {% if include.lang == "fr" %}76,5{% else %}76.5{% endif %} · 41%</span>
+<span class="zlab t0914-l-s" style="left:12px;top:12px">98% 0 / 131q = {% if include.lang == "fr" %}123,8{% else %}123.8{% endif %}</span>
+<span class="zlab t0914-l-c" style="left:12px;top:12px">clip-path:circle(95px)</span>
+</div>
+</div>
+<div class="legend"><span><i style="--c:var(--t0914-b)"></i>{% if include.lang == "fr" %}fond et border-image{% else %}background and border-image{% endif %}</span><span><i style="--c:var(--t0914-t)"></i>{% if include.lang == "fr" %}ceux du p (bleus en vrai){% else %}the p's (blue in reality){% endif %}</span></div>
+</div>
+<div class="anim-side">
+<pre class="code" aria-hidden="true"><span data-on="1">&lt;p></span>&lt;style>*{background:#F8B140;<span data-on="1" data-tone="2">offset:ray(0deg)</span>;*{<span data-on="1">width:80;height:30;background:#465792</span>;<span data-on="2 3" data-tone="2">border-image:radial-gradient(#0000 81q,#465792 0 41%,#0000 0)</span><span data-on="3">98%0/131q</span><span data-on="2">/9pc</span>;<span data-on="4" data-tone="2">clip-path:circle(95px</span></pre>
+<div class="now" aria-live="polite">
+<div class="caps">
+{%- if include.lang == "fr" %}
+<div class="cap" data-t="0" data-step="offset : une croix"><h3>1. <code>offset</code> : une croix</h3><p><code>offset:ray(0deg)</code> pose chaque élément sur un rayon tracé vers le haut, depuis le centre de son parent, à la distance 0 : l'élément est centré. Il tourne pour suivre le rayon : −90°. <code>html</code> tourne de −90°, le <code>body</code> de −90° de plus (180° en tout) et le <code>p</code> encore de −90° (un quart de tour au total). Le <code>body</code> et le <code>p</code> font 80 × 30, bleus : une barre couchée et une barre debout, centrées en (200 ; 150).</p></div>
+<div class="cap" data-t="4" data-step="Un anneau dans une grande zone"><h3>2. Un anneau dans une grande zone</h3><p>Le <code>body</code> et le <code>p</code> ont une <code>border-image</code>. Le débord <code>9pc</code> (144px) agrandit sa zone à 80 + 288 = 368 sur 30 + 288 = 318. L'image est un dégradé radial à la taille de cette zone : transparent jusqu'à <code>81q</code> (76,5px), bleu jusqu'à 41 %, transparent ensuite. Un grand anneau, un peu aplati.</p></div>
+<div class="cap" data-t="8" data-step="Découpé : deux petits anneaux"><h3>3. Découpé : deux petits anneaux</h3><p><code>98%0</code> découpe l'image à 98 % du haut et du bas, et à 0 des côtés. Les coins et les côtés n'ont plus d'image, le milieu non plus. Restent les morceaux du haut et du bas : chacun, presque toute l'image, est écrasé dans une bande de 120,4 × 123,8 (<code>131q</code> de large). L'anneau y devient petit, d'un rayon d'environ 25 à 35, centré à 95,9 du centre de l'élément. Le <code>body</code> en met un en haut et un en bas, le <code>p</code>, debout, à gauche et à droite.</p></div>
+<div class="cap" data-t="12" data-step="clip-path : des demi-anneaux"><h3>4. <code>clip-path</code> : des demi-anneaux</h3><p><code>clip-path:circle(95px)</code> ne garde de chaque élément que ce qui est à moins de 95px de son centre. Les petits anneaux sont centrés à 95,9 : la coupe passe presque par leur milieu. Il ne reste que leur moitié tournée vers la croix : quatre arcs.</p></div>
+<div class="cap" data-t="16" data-step="Résultat" data-live="184 caractères · 100 % identique"><h3>5. Résultat : 184 caractères</h3><p>Deux éléments centrés et tournés par <code>offset</code>, une <code>border-image</code> pour les anneaux, un cercle pour les couper.</p></div>
+{%- else %}
+<div class="cap" data-t="0" data-step="offset: a cross"><h3>1. <code>offset</code>: a cross</h3><p><code>offset:ray(0deg)</code> puts each element on a ray drawn upwards from the centre of its parent, at distance 0: the element is centred. It turns to follow the ray: −90°. <code>html</code> turns by −90°, the <code>body</code> by another −90° (180° in all) and the <code>p</code> by −90° more (a quarter turn in all). The <code>body</code> and the <code>p</code> are 80 × 30 and blue: one lying bar and one standing bar, centred at (200, 150).</p></div>
+<div class="cap" data-t="4" data-step="A ring in a big area"><h3>2. A ring in a big area</h3><p>The <code>body</code> and the <code>p</code> have a <code>border-image</code>. The <code>9pc</code> outset (144px) grows its area to 80 + 288 = 368 by 30 + 288 = 318. The image is a radial gradient the size of that area: transparent up to <code>81q</code> (76.5px), blue up to 41%, transparent after. A big ring, slightly flattened.</p></div>
+<div class="cap" data-t="8" data-step="Cut: two small rings"><h3>3. Cut: two small rings</h3><p><code>98%0</code> cuts the image 98% from the top and the bottom, and 0 from the sides. The corners and sides get no image, neither does the middle. The top and bottom pieces are left: each one, almost the whole image, is squeezed into a 120.4 × 123.8 strip (<code>131q</code> wide). The ring becomes small there, radius about 25 to 35, centred 95.9 from the element's centre. The <code>body</code> puts one at the top and one at the bottom; the <code>p</code>, standing up, on the left and the right.</p></div>
+<div class="cap" data-t="12" data-step="clip-path: half rings"><h3>4. <code>clip-path</code>: half rings</h3><p><code>clip-path:circle(95px)</code> keeps only what is less than 95px from each element's centre. The small rings are centred at 95.9: the cut goes almost through their middle. Only the half facing the cross is left: four arcs.</p></div>
+<div class="cap" data-t="16" data-step="Result" data-live="184 characters · 100% match"><h3>5. Result: 184 characters</h3><p>Two elements centred and turned by <code>offset</code>, one <code>border-image</code> for the rings, one circle to cut them.</p></div>
+{%- endif %}
+</div>
+<div class="live"></div>
+</div>
+</div>
+<script>
+(window.AnimScenes = window.AnimScenes || {}).t0914 = (fig) => {
+  const fr = document.documentElement.lang === 'fr';
+  const $ = (s) => fig.querySelector(s);
+  const $$ = (s) => [...fig.querySelectorAll(s)];
+  const B = $('[data-e="body"]'), P = $('[data-e="p"]'), IMG = $('.t0914-img'), oA = $('[data-o="area"]'), C = $('.t0914-c'), live = $('.live');
+  const L = (k) => $(`.t0914-l-${k}`);
+  const W = { r: [0.3, 2], a: [4.2, 5.6], s: [8.2, 9.8], c: [12.2, 14], fin: [16.1, 16.9] };
+  const ease = (x) => (x < 0.5 ? 4 * x * x * x : 1 - Math.pow(-2 * x + 2, 3) / 2);
+  const pr = (t, [a, b]) => ease(Math.min(1, Math.max(0, (t - a) / (b - a))));
+  const lerp = (a, b, m) => a + (b - a) * m;
+  const win = (t, a, b) => Math.min(pr(t, [a, a + 0.5]), 1 - pr(t, [b - 0.4, b]));
+  const f1 = (v) => { const s = (Math.round(v * 100) / 100).toFixed(2).replace(/\.?0+$/, ''); return (fr ? s.replace('.', ',') : s).replace('-', '−'); };
+  const c = fr ? ' :' : ':';
+  const BI = (col) => `radial-gradient(#0000 76.54px, ${col} 0 41%, #0000 0) 98% 0 / 123.8px / 144px`;
+  return (t, step) => {
+    const teach = fig.dataset.teach === '1';
+    const real = !teach || t >= W.fin[0];
+    const guides = t < W.fin[0] ? 1 : 0;
+    const r = pr(t, W.r), a = pr(t, W.a), s = pr(t, W.s), k = pr(t, W.c);
+    B.style.rotate = `${-180 * r}deg`;
+    P.style.rotate = `${-270 * r}deg`;
+    P.style.background = real ? 'var(--t0914-b)' : 'var(--t0914-t)';
+    // 2. the whole gradient image, in the body's border-image area
+    IMG.style.opacity = a * (1 - s) * 0.85;
+    oA.style.opacity = a * (step === 1 || step === 2 ? 1 : 0) * guides;
+    // 3. the border-image itself: top and bottom pieces only
+    B.style.borderImage = s > 0 ? BI('var(--t0914-b)') : 'none';
+    P.style.borderImage = s > 0 ? BI(real ? 'var(--t0914-b)' : 'var(--t0914-t)') : 'none';
+    B.style.opacity = 1; P.style.opacity = 1;
+    // 4. clip-path: from a big circle to 95px
+    const cr = k > 0 ? lerp(260, 95, k) : null;
+    B.style.clipPath = P.style.clipPath = cr === null ? 'none' : `circle(${cr}px)`;
+    C.style.opacity = (step === 3 ? k : 0) * guides;
+    L('r').style.opacity = win(t, W.r[0], W.a[0] - 0.2);
+    L('a').style.opacity = win(t, W.a[0], W.s[0] - 0.2);
+    L('s').style.opacity = win(t, W.s[0], W.c[0] - 0.2);
+    L('c').style.opacity = win(t, W.c[0], W.fin[0]);
+    let txt = '';
+    if (step === 0) txt = `body${c} ${f1(-180 * r)}° · p${c} ${f1(-270 * r)}°`;
+    else if (step === 1) txt = `${fr ? 'zone' : 'area'}${c} 368 × 318`;
+    else if (step === 2) txt = `${fr ? 'anneaux' : 'rings'}${c} ${fr ? 'centre à' : 'centre at'} ${f1(95.9)}`;
+    else if (step === 3) txt = `circle${c} ${f1(lerp(260, 95, k))}px`;
+    else txt = $$('.caps .cap')[4].dataset.live || '';
+    live.textContent = txt;
+  };
+};
+</script>
+</figure>
