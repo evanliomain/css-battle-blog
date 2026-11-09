@@ -1,0 +1,108 @@
+<figure class="anim t0930" data-duration="22" data-scene="t0930" data-wide="-40 -30 480 360" data-off-label="-36 -26" style="--bg:#f8f5f1">
+<style>
+.t0930{--t0930-blue:#4355cc;--t0930-pink:#fcc9e3;--t0930-cream:#f8f5f1;--t0930-tb:#1f9e8a;--t0930-tp:#e8892b;--t0930-tbg:#cfe8c4;--t0930-dash:rgb(30 35 80 / .75)}
+.t0930 .t0930-bx{position:absolute;box-sizing:border-box;border:10px solid var(--t0930-blue)}
+.t0930 .t0930-h{left:120px;top:60px;width:160px;height:180px;border-radius:0 0 80px 80px}
+.t0930 .t0930-b{background:var(--t0930-pink);border-radius:0 0 80px 80px}
+.t0930 .t0930-p{border-top-width:0}
+.t0930 .t0930-ctr{position:absolute;width:6px;height:6px;margin:-3px 0 0 -3px;border-radius:50%;background:var(--t0930-dash);left:200px;top:160px}
+.t0930 .zlab{color:#fff;background:rgb(30 35 80 / .85);padding:1px 5px;border-radius:3px}
+</style>
+<div class="anim-col">
+<div class="stage" role="img" aria-label="{% if include.lang == "fr" %}Animation : trois boîtes empilées avec la même bordure bleue de 10px et des coins bas arrondis ; html dessine le contour du U, le body rose le remplit, et un paragraphe couleur fond, sans bordure haute, creuse l'intérieur et laisse deux petits carrés en haut{% else %}Animation: three stacked boxes with the same 10px blue border and round bottom corners; html draws the U's outline, the pink body fills it, and a background-colored paragraph with no top border hollows the inside and leaves two small squares at the top{% endif %}">
+<div class="scene">
+<div class="t0930-bx t0930-h"></div>
+<div class="t0930-bx t0930-b"></div>
+<div class="t0930-bx t0930-p"></div>
+<div class="t0930-ctr"></div>
+<span class="zlab t0930-l-bg" style="left:8px;top:8px">html: #F8F5F1 → {% if include.lang == "fr" %}canevas{% else %}canvas{% endif %}</span>
+<span class="zlab t0930-l-html" style="left:130px;top:248px">html · 160 × 180</span>
+<span class="zlab t0930-l-r" style="left:286px;top:200px">5pc = 80px</span>
+<span class="zlab t0930-l-body" style="left:130px;top:248px">body · 160 × 150</span>
+<span class="zlab t0930-l-bm" style="left:130px;top:272px">margin 20 −10 −10</span>
+<span class="zlab t0930-l-p" style="left:8px;top:40px">p · 100 × 150</span>
+<span class="zlab t0930-l-pm" style="left:8px;top:64px">margin −40 20</span>
+<span class="zlab t0930-l-rp" style="left:206px;top:166px">80 × 100/160 = 50</span>
+</div>
+</div>
+<div class="legend"><span><i style="--c:var(--t0930-blue)"></i>{% if include.lang == "fr" %}bordure de html{% else %}html's border{% endif %}</span><span><i style="--c:var(--t0930-tb)"></i>{% if include.lang == "fr" %}bordure du body (bleue en vrai){% else %}body's border (blue in reality){% endif %}</span><span><i style="--c:var(--t0930-tp)"></i>{% if include.lang == "fr" %}bordure du p (bleue en vrai){% else %}p's border (blue in reality){% endif %}</span><span><i style="--c:var(--t0930-tbg)"></i>{% if include.lang == "fr" %}fond du p (crème en vrai){% else %}p's background (cream in reality){% endif %}</span></div>
+</div>
+<div class="anim-side">
+<pre class="code" aria-hidden="true"><span data-on="3">&lt;p></span>&lt;style>*{<span data-on="1 5">background:#F8F5F1</span>;<span data-on="1 2 3">border:10px solid#4355CC</span>;<span data-on="1">margin:60 120</span>;<span data-on="1 4">border-radius:0 0 5pc 5pc</span>;+*{<span data-on="2" data-tone="2">background:#FCC9E3</span>;<span data-on="2" data-tone="2">margin:20-10-10</span>;p{<span data-on="3">height:140</span>;<span data-on="3">margin:-40 20</span>;<span data-on="3">border-top:0</span></pre>
+<div class="now" aria-live="polite">
+<div class="caps">
+{%- if include.lang == "fr" %}
+<div class="cap" data-t="0" data-step="html : le contour du U"><h3>1. html : le contour du U</h3><p><code>*</code> vise tous les éléments. Sur <code>html</code>, <code>margin:60 120</code> laisse 400 − 240 = 160px de large et, en mode quirks, 300 − 120 = 180px de haut. La bordure bleue de 10px et ses coins bas de <code>5pc</code> (80px, la moitié de la largeur) dessinent un U fermé. Le fond crème de <code>html</code> part sur tout le canevas.</p></div>
+<div class="cap" data-t="3.5" data-step="body : le U rose"><h3>2. body : le U rose</h3><p><code>+*</code> devient <code>* + *</code> : un élément qui suit un frère. Le <code>body</code> suit <code>head</code>. Il remplit le contenu de <code>html</code> (140 × 160) moins ses marges : <code>margin:20-10-10</code> le descend de 20px et l'élargit de 10px de chaque côté. Il fait 160 × 150, de y = 90 à 240 : même bas que <code>html</code>, même bordure, fond rose. Sa bordure haute est la barre sous les deux carrés.</p></div>
+<div class="cap" data-t="7" data-step="p : une boîte crème"><h3>3. p : une boîte crème sans bordure haute</h3><p>Le <code>&lt;p></code> du début est la 3ᵉ boîte, visée par <code>* + * p</code>. Il est vide, donc <code>height:140</code> lui donne sa hauteur. <code>margin:-40 20</code> le remonte de 40px au-dessus du contenu du <code>body</code> (y = 60) et le resserre de 20px de chaque côté : 100px de large, de x = 150 à 250. <code>border-top:0</code> retire sa barre du haut ; ses côtés sont les bords intérieurs des branches.</p></div>
+<div class="cap" data-t="10.5" data-step="Rayon réduit à 50"><h3>4. Un rayon trop grand est réduit</h3><p>Le <code>p</code> a lui aussi des coins bas de 80px, mais il ne fait que 100px de large : 80 + 80 dépasse. Le navigateur réduit alors les deux rayons dans le même rapport, 100/160, ce qui donne 50px. Le bas du <code>p</code> devient un demi-cercle de rayon 50, centré en (200 ; 160), comme le U du <code>body</code> (rayon 80).</p></div>
+<div class="cap" data-t="14" data-step="Le p creuse le U"><h3>5. Le p, peint en dernier, creuse le U</h3><p>Le <code>p</code> est peint après <code>html</code> et le <code>body</code>. Son fond crème couvre le milieu du U et les barres du haut entre les deux branches. Il reste en haut de chaque branche un carré crème de 20px, cerné par la bordure de <code>html</code>, celle du <code>body</code> et le côté du <code>p</code>. Plus bas, la bande rose fait 20px de large.</p></div>
+<div class="cap" data-t="18" data-step="Résultat" data-live="173 caractères · 100 % identique"><h3>6. Résultat : 173 caractères</h3><p>Trois boîtes, une seule bordure et un seul rayon écrits pour toutes.</p></div>
+{%- else %}
+<div class="cap" data-t="0" data-step="html: the U's outline"><h3>1. html: the U's outline</h3><p><code>*</code> matches every element. On <code>html</code>, <code>margin:60 120</code> leaves 400 − 240 = 160px of width and, in quirks mode, 300 − 120 = 180px of height. The 10px blue border and its <code>5pc</code> bottom corners (80px, half the width) draw a closed U. <code>html</code>'s cream background goes to the whole canvas.</p></div>
+<div class="cap" data-t="3.5" data-step="body: the pink U"><h3>2. body: the pink U</h3><p><code>+*</code> becomes <code>* + *</code>: an element that follows a sibling. The <code>body</code> follows <code>head</code>. It fills <code>html</code>'s content (140 × 160) minus its margins: <code>margin:20-10-10</code> moves it down 20px and widens it by 10px on each side. It is 160 × 150, from y = 90 to 240: same bottom as <code>html</code>, same border, pink background. Its top border is the bar under the two squares.</p></div>
+<div class="cap" data-t="7" data-step="p: a cream box"><h3>3. p: a cream box with no top border</h3><p>The <code>&lt;p></code> at the start is the 3rd box, matched by <code>* + * p</code>. It is empty, so <code>height:140</code> gives it its height. <code>margin:-40 20</code> lifts it 40px above the <code>body</code>'s content (y = 60) and narrows it by 20px on each side: 100px wide, from x = 150 to 250. <code>border-top:0</code> removes its top bar; its sides are the inner edges of the arms.</p></div>
+<div class="cap" data-t="10.5" data-step="Radius shrunk to 50"><h3>4. A radius that is too big shrinks</h3><p>The <code>p</code> also has 80px bottom corners, but it is only 100px wide: 80 + 80 is too much. The browser then shrinks both radii by the same ratio, 100/160, which gives 50px. The bottom of the <code>p</code> becomes a half circle of radius 50, centred on (200, 160), like the <code>body</code>'s U (radius 80).</p></div>
+<div class="cap" data-t="14" data-step="The p hollows the U"><h3>5. The p, painted last, hollows the U</h3><p>The <code>p</code> is painted after <code>html</code> and the <code>body</code>. Its cream background covers the middle of the U and the top bars between the two arms. At the top of each arm, a 20px cream square remains, framed by <code>html</code>'s border, the <code>body</code>'s border and the side of the <code>p</code>. Lower down, the pink band is 20px wide.</p></div>
+<div class="cap" data-t="18" data-step="Result" data-live="173 characters · 100% match"><h3>6. Result: 173 characters</h3><p>Three boxes, with one border and one radius written for all of them.</p></div>
+{%- endif %}
+</div>
+<div class="live"></div>
+</div>
+</div>
+<script>
+(window.AnimScenes = window.AnimScenes || {}).t0930 = (fig) => {
+  const fr = document.documentElement.lang === 'fr';
+  const $ = (s) => fig.querySelector(s);
+  const $$ = (s) => [...fig.querySelectorAll(s)];
+  const H = $('.t0930-h'), B = $('.t0930-b'), P = $('.t0930-p'), CTR = $('.t0930-ctr'), live = $('.live');
+  const L = (k) => $(`.t0930-l-${k}`);
+  const W = { html: [0.3, 1.6], body: [3.7, 5.9], p: [7.2, 9.4], rad: [10.7, 12.4], cov: [14.2, 15.4], fin: [18.1, 18.9] };
+  const ease = (x) => (x < 0.5 ? 4 * x * x * x : 1 - Math.pow(-2 * x + 2, 3) / 2);
+  const pr = (t, [a, b]) => ease(Math.min(1, Math.max(0, (t - a) / (b - a))));
+  const lerp = (a, b, m) => a + (b - a) * m;
+  const win = (t, a, b) => Math.min(pr(t, [a, a + 0.5]), 1 - pr(t, [b - 0.4, b]));
+  const f1 = (v) => { const s = (Math.round(v * 10) / 10).toFixed(1).replace(/\.0$/, ''); return (fr ? s.replace('.', ',') : s).replace('-', '−'); };
+  const c = fr ? ' :' : ':';
+  const place = (el, x, y, w, h) => Object.assign(el.style, { left: `${x}px`, top: `${y}px`, width: `${Math.max(0, w)}px`, height: `${Math.max(0, h)}px` });
+  return (t, step) => {
+    const teach = fig.dataset.teach === '1';
+    const real = !teach || t >= W.fin[0];
+    // 1. html: border and round bottom corners appear
+    H.style.opacity = pr(t, W.html);
+    L('bg').style.opacity = win(t, 0.3, 3.2);
+    L('html').style.opacity = win(t, W.html[0], W.body[0]);
+    L('r').style.opacity = win(t, W.html[0], W.body[0]);
+    // 2. body: from html's content box (130, 70, 140 × 160) to (120, 90, 160 × 150)
+    const m = pr(t, W.body);
+    place(B, lerp(130, 120, m), lerp(70, 90, m), lerp(140, 160, m), lerp(160, 150, m));
+    B.style.opacity = t >= W.body[0] ? 1 : 0;
+    B.style.borderColor = real ? 'var(--t0930-blue)' : 'var(--t0930-tb)';
+    L('body').style.opacity = win(t, W.body[0], W.p[0]);
+    L('bm').style.opacity = win(t, W.body[0], W.p[0]);
+    // 3. p: from the body's content box (130, 100, 140 wide) to (150, 60, 100 × 150)
+    const n = pr(t, W.p);
+    const px = lerp(130, 150, n), py = lerp(100, 60, n), pw = lerp(140, 100, n);
+    place(P, px, py, pw, 150);
+    P.style.opacity = t >= W.p[0] ? 1 : 0;
+    P.style.borderColor = real ? 'var(--t0930-blue)' : 'var(--t0930-tp)';
+    P.style.background = real ? 'var(--t0930-cream)' : 'var(--t0930-tbg)';
+    // 4. radius: drawn square at first, then 50 (80 scaled by 100/160)
+    const r = 50 * pr(t, W.rad);
+    P.style.borderRadius = `0 0 ${r}px ${r}px`;
+    L('p').style.opacity = win(t, W.p[0], W.rad[0]);
+    L('pm').style.opacity = win(t, W.p[0], W.rad[0]);
+    L('rp').style.opacity = win(t, W.rad[0], W.cov[0]);
+    CTR.style.opacity = win(t, W.rad[0], W.cov[0]);
+    let txt = '';
+    if (step === 0) txt = `html${c} x 120 → 280, y 60 → 240`;
+    else if (step === 1) txt = `body${c} x ${f1(lerp(130, 120, m))} → ${f1(lerp(270, 280, m))}, y ${f1(lerp(70, 90, m))} → ${f1(lerp(230, 240, m))}`;
+    else if (step === 2) txt = `p${c} x ${f1(px)} → ${f1(px + pw)}, y ${f1(py)} → ${f1(py + 150)}`;
+    else if (step === 3) txt = `${fr ? 'rayon du p' : "p's radius"}${c} ${f1(r)}px`;
+    else if (step === 4) txt = `${fr ? 'carrés' : 'squares'}${c} x 130 → 150, 250 → 270 · y 70 → 90`;
+    else txt = $$('.caps .cap')[5].dataset.live || '';
+    live.textContent = txt;
+  };
+};
+</script>
+</figure>
