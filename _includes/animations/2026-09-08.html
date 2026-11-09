@@ -1,0 +1,87 @@
+<figure class="anim t0908" data-duration="20" data-scene="t0908" data-wide="-40 -30 480 360" data-off-label="-36 -26" style="--bg:#333">
+<style>
+.t0908{--t0908-d:#333;--t0908-y:#f1d36f;--t0908-t:#e0782a;--t0908-dash:rgb(255 240 200 / .8)}
+.t0908 .t0908-sh{position:absolute;left:80px;top:75px;width:240px;height:150px;border-radius:10.8px}
+.t0908 .t0908-body{position:absolute;left:140px;top:50px;width:120px;height:148px;border-radius:10.8px;background:var(--t0908-d)}
+.t0908 .t0908-p{position:absolute;left:170px;top:120px;width:60px;height:59.53px;border-radius:35.7px;background:var(--t0908-d)}
+.t0908 .t0908-o{position:absolute;box-sizing:border-box;border:1.5px dashed var(--t0908-dash);pointer-events:none}
+.t0908 .zlab{color:#fff;background:rgb(20 20 20 / .9);padding:1px 5px;border-radius:3px}
+</style>
+<div class="anim-col">
+<div class="stage" role="img" aria-label="{% if include.lang == "fr" %}Animation : le fond gris foncé de html va au canevas, et son ombre jaune immense couvre tout sauf sa boîte arrondie : le boîtier de l'appareil photo ; le body dépasse au-dessus : le viseur ; un paragraphe d'un point, à la hauteur de ligne fixée, devient un disque, et son ombre jaune de 20px fait l'objectif{% else %}Animation: html's dark grey background goes to the canvas, and its huge yellow shadow covers everything but its rounded box: the camera body; the body sticks out above: the viewfinder; a paragraph holding a dot, with a set line height, becomes a disc, and its 20px yellow shadow makes the lens{% endif %}">
+<div class="scene">
+<div class="t0908-sh"></div>
+<div class="t0908-body"></div>
+<div class="t0908-p"></div>
+<div class="t0908-o" data-o="html" style="left:80px;top:75px;width:240px;height:150px"></div>
+<span class="zlab t0908-l-h" style="left:12px;top:12px">margin:75 80 · .6lh = {% if include.lang == "fr" %}10,8{% else %}10.8{% endif %} · 63em = 1008</span>
+<span class="zlab t0908-l-b" style="left:12px;top:244px">body · margin:−25 60</span>
+<span class="zlab t0908-l-p" style="left:12px;top:244px">2%/63q → {% if include.lang == "fr" %}59,53{% else %}59.53{% endif %} · .6lh = {% if include.lang == "fr" %}35,7{% else %}35.7{% endif %}</span>
+<span class="zlab t0908-l-r" style="left:12px;top:244px">63em = 63 × {% if include.lang == "fr" %}0,32 = 20,16{% else %}0.32 = 20.16{% endif %}</span>
+</div>
+</div>
+<div class="legend"><span><i style="--c:var(--t0908-y)"></i>{% if include.lang == "fr" %}ombres jaunes{% else %}yellow shadows{% endif %}</span><span><i style="--c:var(--t0908-t)"></i>{% if include.lang == "fr" %}ombre du p (jaune en vrai){% else %}the p's shadow (yellow in reality){% endif %}</span></div>
+</div>
+<div class="anim-side">
+<pre class="code" aria-hidden="true"><span data-on="3">.&lt;p>.</span>&lt;style>*{<span data-on="1 2 3">background:#333</span>;<span data-on="2">margin:-25 60</span>;<span data-on="1 2 3">border-radius:.6lh</span>}&amp;,p{<span data-on="1 4" data-tone="2">box-shadow:0 0 0 63em#F1D36F</span>;<span data-on="1">margin:75 80</span>}p{<span data-on="3">margin:52 30</span>;<span data-on="3 4" data-tone="2">font:2%/63q"</span></pre>
+<div class="now" aria-live="polite">
+<div class="caps">
+{%- if include.lang == "fr" %}
+<div class="cap" data-t="0" data-step="html : le boîtier"><h3>1. <code>html</code> : le boîtier</h3><p><code>&amp;,p</code> donne à <code>html</code> <code>margin:75 80</code> : 240 × 150, de x = 80 à 320 et de y = 75 à 225 en mode quirks. Son fond gris foncé va au canevas. Son ombre étalée de <code>63em</code> (1008px) peint tout en jaune, sauf sous sa boîte, aux coins arrondis de <code>.6lh</code> (10,8) : le boîtier de l'appareil.</p></div>
+<div class="cap" data-t="4" data-step="Le body : le viseur"><h3>2. Le <code>body</code> : le viseur</h3><p>Le <code>body</code> garde <code>margin:-25 60</code> de <code>*</code> : de x = 140 à 260, et il commence 25 au-dessus de <code>html</code>, en y = 50. Gris foncé, aux mêmes coins de 10,8, il dépasse du boîtier : le viseur.</p></div>
+<div class="cap" data-t="8" data-step="Le p : un disque"><h3>3. Le <code>p</code> : un disque</h3><p>Le point avant <code>&lt;p></code> donne une ligne de 18 au <code>body</code>. <code>margin:52 30</code> place le <code>p</code> de x = 170 à 230, en y = 18 + 50 + 52 = 120. Son point lui donne une ligne, haute de <code>63q</code> = 59,53. Son rayon <code>.6lh</code> fait 35,7, plus que la moitié : un disque gris de 60 × 59,53.</p></div>
+<div class="cap" data-t="12" data-step="Son ombre : l'objectif"><h3>4. Son ombre : l'objectif</h3><p>Le <code>p</code> a aussi l'ombre de <code>&amp;,p</code>, mais <code>em</code> suit sa police : <code>2%</code> de 16 = 0,32px (Chrome affiche son texte en 6px au moins, mais <code>em</code> garde 0,32). <code>63em</code> = 20,16 : un anneau jaune de 20px autour du disque, l'objectif.</p></div>
+<div class="cap" data-t="16" data-step="Résultat" data-live="136 caractères · 100 % identique"><h3>5. Résultat : 136 caractères</h3><p>Une seule ombre, deux tailles : 1008px pour le fond, 20px pour l'objectif.</p></div>
+{%- else %}
+<div class="cap" data-t="0" data-step="html: the camera body"><h3>1. <code>html</code>: the camera body</h3><p><code>&amp;,p</code> gives <code>html</code> <code>margin:75 80</code>: 240 × 150, from x = 80 to 320 and y = 75 to 225 in quirks mode. Its dark grey background goes to the canvas. Its shadow, spread by <code>63em</code> (1008px), paints everything yellow except under its box, with <code>.6lh</code> (10.8) round corners: the camera body.</p></div>
+<div class="cap" data-t="4" data-step="The body: the viewfinder"><h3>2. The <code>body</code>: the viewfinder</h3><p>The <code>body</code> keeps <code>margin:-25 60</code> from <code>*</code>: from x = 140 to 260, and it starts 25 above <code>html</code>, at y = 50. Dark grey, with the same 10.8 corners, it sticks out of the camera body: the viewfinder.</p></div>
+<div class="cap" data-t="8" data-step="The p: a disc"><h3>3. The <code>p</code>: a disc</h3><p>The dot before <code>&lt;p></code> gives the <code>body</code> an 18px line. <code>margin:52 30</code> puts the <code>p</code> from x = 170 to 230, at y = 50 + 18 + 52 = 120. Its own dot gives it one line, <code>63q</code> = 59.53 tall. Its <code>.6lh</code> radius is 35.7, more than half: a 60 × 59.53 grey disc.</p></div>
+<div class="cap" data-t="12" data-step="Its shadow: the lens"><h3>4. Its shadow: the lens</h3><p>The <code>p</code> also has the <code>&amp;,p</code> shadow, but <code>em</code> follows its font: <code>2%</code> of 16 = 0.32px (Chrome shows its text at 6px at least, but <code>em</code> stays 0.32). <code>63em</code> = 20.16: a 20px yellow ring around the disc, the lens.</p></div>
+<div class="cap" data-t="16" data-step="Result" data-live="136 characters · 100% match"><h3>5. Result: 136 characters</h3><p>One shadow, two sizes: 1008px for the background, 20px for the lens.</p></div>
+{%- endif %}
+</div>
+<div class="live"></div>
+</div>
+</div>
+<script>
+(window.AnimScenes = window.AnimScenes || {}).t0908 = (fig) => {
+  const fr = document.documentElement.lang === 'fr';
+  const $ = (s) => fig.querySelector(s);
+  const $$ = (s) => [...fig.querySelectorAll(s)];
+  const SH = $('.t0908-sh'), B = $('.t0908-body'), P = $('.t0908-p'), oH = $('[data-o="html"]'), live = $('.live');
+  const L = (k) => $(`.t0908-l-${k}`);
+  const W = { h: [0.3, 1.8], b: [4.2, 5.6], p: [8.2, 9.6], r: [12.2, 13.8], fin: [16.1, 16.9] };
+  const ease = (x) => (x < 0.5 ? 4 * x * x * x : 1 - Math.pow(-2 * x + 2, 3) / 2);
+  const pr = (t, [a, b]) => ease(Math.min(1, Math.max(0, (t - a) / (b - a))));
+  const lerp = (a, b, m) => a + (b - a) * m;
+  const win = (t, a, b) => Math.min(pr(t, [a, a + 0.5]), 1 - pr(t, [b - 0.4, b]));
+  const f1 = (v) => { const s = (Math.round(v * 100) / 100).toFixed(2).replace(/\.?0+$/, ''); return (fr ? s.replace('.', ',') : s).replace('-', '−'); };
+  const c = fr ? ' :' : ':';
+  return (t, step) => {
+    const teach = fig.dataset.teach === '1';
+    const real = !teach || t >= W.fin[0];
+    const guides = t < W.fin[0] ? 1 : 0;
+    const h = pr(t, W.h), b = pr(t, W.b), p = pr(t, W.p), r = pr(t, W.r);
+    // html's huge yellow shadow: painted outside its box only
+    SH.style.boxShadow = `0 0 0 ${lerp(0, 600, h)}px var(--t0908-y)`;
+    oH.style.opacity = (step === 0 ? 1 : 0) * guides;
+    B.style.opacity = b;
+    B.style.top = `${lerp(75, 50, b)}px`;
+    P.style.opacity = p;
+    P.style.borderRadius = `${35.7 * p}px`;
+    P.style.boxShadow = `0 0 0 ${20.16 * r}px ${real ? 'var(--t0908-y)' : 'var(--t0908-t)'}`;
+    L('h').style.opacity = win(t, W.h[0], W.b[0] - 0.2);
+    L('b').style.opacity = win(t, W.b[0], W.p[0] - 0.2);
+    L('p').style.opacity = win(t, W.p[0], W.r[0] - 0.2);
+    L('r').style.opacity = win(t, W.r[0], W.fin[0]);
+    let txt = '';
+    if (step === 0) txt = `html${c} x 80 → 320, y 75 → 225`;
+    else if (step === 1) txt = `body${c} y ${f1(lerp(75, 50, b))}`;
+    else if (step === 2) txt = `p${c} x 170 → 230, y 120 → ${f1(179.53)}`;
+    else if (step === 3) txt = `${fr ? 'anneau' : 'ring'}${c} ${f1(20.16 * r)}px`;
+    else txt = $$('.caps .cap')[4].dataset.live || '';
+    live.textContent = txt;
+  };
+};
+</script>
+</figure>
