@@ -1,0 +1,109 @@
+<figure class="anim t0926" data-duration="24" data-scene="t0926" data-wide="-40 -30 480 360" data-off-label="-36 -26" style="--bg:#747992">
+<style>
+.t0926{--t0926-gray:#747992;--t0926-pink:#eed9d9;--t0926-navy:#394257;--t0926-teach:#9fb3f0;--t0926-dash:rgb(255 255 255 / .8)}
+.t0926 .t0926-can{position:absolute;inset:0;background-repeat:repeat}
+.t0926 .t0926-body{position:absolute;left:100px;top:100px;width:200px;height:100px;background-repeat:repeat}
+.t0926 .t0926-p{position:absolute;left:120px;top:100px;width:160px;background:var(--t0926-navy)}
+.t0926 .t0926-o{position:absolute;box-sizing:border-box;border:1.5px dashed var(--t0926-dash);pointer-events:none}
+.t0926 .zlab{color:#fff;background:rgb(25 28 45 / .88);padding:1px 5px;border-radius:3px}
+.t0926 .legend .t0926-mk{background:transparent;box-shadow:inset 0 0 0 1.5px currentColor}
+</style>
+<div class="anim-col">
+<div class="stage" role="img" aria-label="{% if include.lang == "fr" %}Animation : un même dégradé radial sur html et sur body ; sur html, son cercle de 23ex couvre tout le canevas en bleu-gris ; sur le body, en police de 1q, le cercle rétrécit en deux petits ronds sur fond rose ; puis le paragraphe, réduit par zoom, garde une ligne grâce à une espace insécable et fait la bande bleu nuit{% else %}Animation: the same radial gradient on html and on body; on html, its 23ex circle covers the whole canvas in blue-gray; on the body, with a 1q font, the circle shrinks into two small dots on pink; then the paragraph, shrunk by zoom, keeps one line thanks to a no-break space and makes the navy band{% endif %}">
+<div class="scene">
+<div class="t0926-can"></div>
+<div class="t0926-body"></div>
+<div class="t0926-p"></div>
+<div class="t0926-o" data-o="html" style="left:50px;top:50px;width:300px;height:200px"></div>
+<div class="t0926-o" data-o="tile" style="top:45.28px;width:210px;height:200px"></div>
+<div class="t0926-o" data-o="tile" style="top:45.28px;width:210px;height:200px"></div>
+<div class="t0926-o" data-o="body" style="left:100px;top:100px;width:200px;height:100px"></div>
+<span class="zlab t0926-l-m" style="left:12px;top:12px">margin:50 → html 300 × 200</span>
+<span class="zlab t0926-l-x" style="left:12px;top:236px">23ex = 23 × {% if include.lang == "fr" %}7,18{% else %}7.18{% endif %} = 165px</span>
+<span class="zlab t0926-l-b" style="left:12px;top:12px">body 200 × 100 · 53q = {% if include.lang == "fr" %}50,08{% else %}50.08{% endif %}px</span>
+<span class="zlab t0926-l-f" style="left:12px;top:236px">font:1q → 23ex = {% if include.lang == "fr" %}9,7{% else %}9.7{% endif %}px</span>
+<span class="zlab t0926-l-p" style="left:12px;top:236px">166% × (200 − 140) = {% if include.lang == "fr" %}99,6{% else %}99.6{% endif %} · −5q = −{% if include.lang == "fr" %}4,72{% else %}4.72{% endif %}</span>
+<span class="zlab t0926-l-z" style="left:12px;top:236px">67 × 1q = {% if include.lang == "fr" %}63,3{% else %}63.3{% endif %}px · zoom:.4 → 25px</span>
+</div>
+</div>
+<div class="legend"><span><i style="--c:var(--t0926-teach)"></i>{% if include.lang == "fr" %}cercle du dégradé (bleu-gris en vrai){% else %}gradient circle (blue-gray in reality){% endif %}</span><span><i style="--c:var(--t0926-pink)"></i>{% if include.lang == "fr" %}hors du cercle{% else %}outside the circle{% endif %}</span><span><i class="t0926-mk"></i>{% if include.lang == "fr" %}boîtes et tuiles{% else %}boxes and tiles{% endif %}</span></div>
+</div>
+<div class="anim-side">
+<pre class="code" aria-hidden="true"><span data-on="5">&lt;p>&amp;nbsp;</span>&lt;style><span data-on="5" data-tone="2">p{zoom:.4;background:#394257}</span>*{background:<span data-on="1 3" data-tone="2">radial-gradient(1q,#747992 23ex,#EED9D9)</span><span data-on="4" data-tone="2">166%-5q</span><span data-on="1 4">/70%</span>;<span data-on="1 2">margin:50</span>;+*{<span data-on="2">border-radius:0 0 53q 53q</span>;<span data-on="3 5">font:1q/67'</span></pre>
+<div class="now" aria-live="polite">
+<div class="caps">
+{%- if include.lang == "fr" %}
+<div class="cap" data-t="0" data-step="Le dégradé de html"><h3>1. Le dégradé de html couvre tout</h3><p><code>*</code> donne à tous <code>margin:50</code> et le même dégradé. Le fond de <code>html</code> va au canevas, en tuiles de 70 % × 300 = 210px de large, toute la hauteur. Le cercle a un rayon de <code>1q</code>, mais le bleu-gris va jusqu'à <code>23ex</code> : 165px avec la police de 16px. Le cercle déborde de toute la tuile : le canevas est bleu-gris.</p></div>
+<div class="cap" data-t="4" data-step="Le body arrondi"><h3>2. Le body, arrondi en bas</h3><p><code>+*</code> imbriqué vise le <code>body</code>, juste après le <code>head</code>. Sa marge de 50 dans <code>html</code> le place en (100 ; 100), 200 × 100 en mode quirks. <code>border-radius:0 0 53q 53q</code> arrondit ses coins bas de 50,08px. Son fond est le même dégradé : bleu-gris aussi, pour l'instant.</p></div>
+<div class="cap" data-t="8" data-step="font:1q : le cercle rétrécit"><h3>3. <code>font:1q</code> : le cercle rétrécit</h3><p>Le <code>body</code> a une police de <code>1q</code> (0,94px). <code>ex</code> suit la police : <code>23ex</code> ne fait plus que 9,7px. Dans chaque tuile de 140 × 100, le bleu-gris n'est plus qu'un rond de rayon 9,7 au centre, et tout le reste prend la seconde couleur, le rose.</p></div>
+<div class="cap" data-t="12" data-step="166%-5q : deux ronds"><h3>4. <code>166%-5q</code> : deux ronds</h3><p>Une position en % se calcule sur la place libre : 166 % × (200 − 140) = 99,6px. <code>-5q</code> remonte la tuile de 4,72px. Le rond tombe en x = 269,6, et la tuile répétée à gauche met le second en x = 129,6, tous deux en y = 145,28.</p></div>
+<div class="cap" data-t="16" data-step="Le p et son espace insécable"><h3>5. Le <code>p</code> et son espace insécable</h3><p>Entre <code>&lt;p></code> et <code>&lt;style></code>, il y a une espace insécable : elle ne disparaît pas, le <code>p</code> garde une ligne. Il hérite de la police du <code>body</code> : hauteur de ligne 67 × 1q = 63,3px. <code>zoom:.4</code> réduit tout : une bande d'environ 25px, et des marges de 20px, de x = 120 à 280. <code>p{…}</code> bat <code>*</code> : fond bleu nuit.</p></div>
+<div class="cap" data-t="20" data-step="Résultat" data-live="155 caractères · 100 % identique"><h3>6. Résultat : 155 caractères</h3><p>Un seul dégradé pour le fond et les deux ronds, et un paragraphe d'une espace pour la bande.</p></div>
+{%- else %}
+<div class="cap" data-t="0" data-step="html's gradient"><h3>1. html's gradient covers everything</h3><p><code>*</code> gives everything <code>margin:50</code> and the same gradient. <code>html</code>'s background goes to the canvas, in tiles 70% × 300 = 210px wide, full height. The circle has a <code>1q</code> radius, but the blue-gray goes up to <code>23ex</code>: 165px with the 16px font. The circle overflows the whole tile: the canvas is blue-gray.</p></div>
+<div class="cap" data-t="4" data-step="The rounded body"><h3>2. The body, rounded at the bottom</h3><p>The nested <code>+*</code> matches the <code>body</code>, right after the <code>head</code>. Its 50px margin inside <code>html</code> puts it at (100, 100), 200 × 100 in quirks mode. <code>border-radius:0 0 53q 53q</code> rounds its bottom corners by 50.08px. Its background is the same gradient: blue-gray too, for now.</p></div>
+<div class="cap" data-t="8" data-step="font:1q: the circle shrinks"><h3>3. <code>font:1q</code>: the circle shrinks</h3><p>The <code>body</code> gets a <code>1q</code> font (0.94px). <code>ex</code> follows the font: <code>23ex</code> is now only 9.7px. In each 140 × 100 tile, the blue-gray is only a dot of radius 9.7 in the centre, and the rest gets the second color, pink.</p></div>
+<div class="cap" data-t="12" data-step="166%-5q: two dots"><h3>4. <code>166%-5q</code>: two dots</h3><p>A position in % uses the free space: 166% × (200 − 140) = 99.6px. <code>-5q</code> moves the tile 4.72px up. The dot lands at x = 269.6, and the tile repeated on the left puts the second one at x = 129.6, both at y = 145.28.</p></div>
+<div class="cap" data-t="16" data-step="The p and its no-break space"><h3>5. The <code>p</code> and its no-break space</h3><p>Between <code>&lt;p></code> and <code>&lt;style></code> sits a no-break space: it does not collapse, so the <code>p</code> keeps one line. It inherits the <code>body</code>'s font: line height 67 × 1q = 63.3px. <code>zoom:.4</code> shrinks everything: a band about 25px tall, with 20px margins, from x = 120 to 280. <code>p{…}</code> beats <code>*</code>: navy background.</p></div>
+<div class="cap" data-t="20" data-step="Result" data-live="155 characters · 100% match"><h3>6. Result: 155 characters</h3><p>One gradient for the background and both dots, and a one-space paragraph for the band.</p></div>
+{%- endif %}
+</div>
+<div class="live"></div>
+</div>
+</div>
+<script>
+(window.AnimScenes = window.AnimScenes || {}).t0926 = (fig) => {
+  const fr = document.documentElement.lang === 'fr';
+  const $ = (s) => fig.querySelector(s);
+  const $$ = (s) => [...fig.querySelectorAll(s)];
+  const can = $('.t0926-can'), body = $('.t0926-body'), p = $('.t0926-p'), live = $('.live');
+  const oHtml = $('[data-o="html"]'), oTiles = $$('[data-o="tile"]'), oBody = $('[data-o="body"]');
+  const L = (k) => $(`.t0926-l-${k}`);
+  const W = { html: [0.3, 1.8], body: [4.2, 6], font: [8.2, 10], pos: [12.2, 14], p: [16.2, 18], fin: [20.1, 20.9] };
+  const ease = (x) => (x < 0.5 ? 4 * x * x * x : 1 - Math.pow(-2 * x + 2, 3) / 2);
+  const pr = (t, [a, b]) => ease(Math.min(1, Math.max(0, (t - a) / (b - a))));
+  const lerp = (a, b, m) => a + (b - a) * m;
+  const win = (t, a, b) => Math.min(pr(t, [a, a + 0.5]), 1 - pr(t, [b - 0.4, b]));
+  const f1 = (v) => { const s = (Math.round(v * 100) / 100).toFixed(2).replace(/\.?0+$/, ''); return (fr ? s.replace('.', ',') : s).replace('-', '−'); };
+  const c = fr ? ' :' : ':';
+  const grad = (col, r) => `radial-gradient(circle 0.945px, ${col} ${r}px, var(--t0926-pink))`;
+  return (t, step) => {
+    const teach = fig.dataset.teach === '1';
+    const real = !teach || t >= W.fin[0];
+    const guides = t < W.fin[0] ? 1 : 0;
+    const col = real ? 'var(--t0926-gray)' : 'var(--t0926-teach)';
+    const h = pr(t, W.html), b = pr(t, W.body), f = pr(t, W.font), q = pr(t, W.pos), z = pr(t, W.p);
+    // 1. canvas: html's tiles (210 × 200 from x = 199.4, y = 45.28), circle of 165.13px
+    can.style.background = grad(h > 0 ? col : 'var(--t0926-gray)', 165.13);
+    can.style.backgroundSize = '210px 200px';
+    can.style.backgroundPosition = '199.4px 45.28px';
+    oHtml.style.opacity = h * (step === 0 ? 1 : 0) * guides;
+    oTiles.forEach((o, k) => { o.style.left = `${199.4 - 210 * k}px`; o.style.opacity = h * (step === 0 ? 1 : 0) * guides; });
+    L('m').style.opacity = win(t, W.html[0], W.body[0] - 0.2);
+    L('x').style.opacity = win(t, W.html[0], W.body[0] - 0.2);
+    // 2-4. body: radius, then 23ex from 165.13 to 9.7, then the position
+    body.style.opacity = b;
+    body.style.borderRadius = `0 0 ${50.08 * b}px ${50.08 * b}px`;
+    body.style.background = grad(col, lerp(165.13, 9.7, f));
+    body.style.backgroundSize = '140px 100px';
+    body.style.backgroundPosition = `${lerp(0, 99.6, q)}px ${lerp(0, -4.72, q)}px`;
+    oBody.style.opacity = b * (step >= 1 && step <= 4 ? 1 : 0) * guides;
+    L('b').style.opacity = win(t, W.body[0], W.font[0]);
+    L('f').style.opacity = win(t, W.font[0], W.pos[0]);
+    L('p').style.opacity = win(t, W.pos[0], W.p[0]);
+    // 5. the p: one line of 63.3px, zoomed by .4
+    p.style.height = `${25.12 * z}px`;
+    p.style.opacity = z > 0 ? 1 : 0;
+    L('z').style.opacity = win(t, W.p[0], W.fin[0]);
+    let txt = '';
+    if (step === 0) txt = `23ex${c} 165px · ${fr ? 'tuile' : 'tile'} 210 × 200`;
+    else if (step === 1) txt = `body${c} x 100 → 300, y 100 → 200 · ${fr ? 'rayon' : 'radius'} ${f1(50.08 * b)}`;
+    else if (step === 2) txt = `23ex${c} ${f1(lerp(165.13, 9.7, f))}px`;
+    else if (step === 3) txt = `${fr ? 'ronds' : 'dots'}${c} x ${f1(170 + 99.6 * q - (q > 0.3 ? 140 : 0))} · ${f1(170 + 99.6 * q + (q > 0.3 ? 0 : 140))}, y ${f1(150 - 4.72 * q)}`;
+    else if (step === 4) txt = `${fr ? 'bande' : 'band'}${c} x 120 → 280, y 100 → ${f1(100 + 25.12 * z)}`;
+    else txt = $$('.caps .cap')[5].dataset.live || '';
+    live.textContent = txt;
+  };
+};
+</script>
+</figure>
