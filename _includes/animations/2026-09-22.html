@@ -1,0 +1,102 @@
+<figure class="anim t0922" data-duration="24" data-scene="t0922" data-wide="-100 -45 600 390" data-off-label="-96 -41" style="--bg:#8e7b3b">
+<style>
+.t0922{--t0922-l:#8e7b3b;--t0922-d:#463c1d;--t0922-t:#e0782a;--t0922-dash:rgb(255 245 210 / .85)}
+.t0922 .t0922-can{position:absolute;inset:0}
+.t0922 .t0922-g{position:absolute;left:-30px;top:50px;width:215px;height:200px}
+.t0922 .t0922-g > *{position:absolute}
+.t0922 .t0922-bg{inset:0}
+.t0922 .t0922-sh{left:-30.24px;top:0;width:30.24px;height:200px}
+.t0922 .t0922-o{position:absolute;box-sizing:border-box;border:1.5px dashed var(--t0922-dash);pointer-events:none}
+.t0922 .zlab{color:#fff;background:rgb(40 32 10 / .88);padding:1px 5px;border-radius:3px}
+.t0922 .legend .t0922-mk{background:transparent;box-shadow:inset 0 0 0 1.5px currentColor}
+</style>
+<div class="anim-col">
+<div class="stage" role="img" aria-label="{% if include.lang == "fr" %}Animation : un dégradé radial centré au bord gauche de sa tuile dessine un demi-anneau ; sur html, la tuile placée en (215 ; 50) donne l'anneau du bas ; le body, à gauche, a le même dégradé ; scale:-1 le retourne, son demi-anneau devient celui du haut, et son ombre, passée à droite, fait la barre verticale{% else %}Animation: a radial gradient centred on the left edge of its tile draws a half ring; on html, the tile placed at (215, 50) gives the bottom ring; the body, on the left, has the same gradient; scale:-1 flips it, its half ring becomes the top one, and its shadow, now on the right, makes the vertical bar{% endif %}">
+<div class="scene">
+<div class="t0922-can"></div>
+<div class="t0922-g"><div class="t0922-sh"></div><div class="t0922-bg"></div><div class="t0922-o" style="inset:0"></div></div>
+<div class="t0922-o" data-o="tile" style="width:400px;height:300px"></div>
+<span class="zlab t0922-l-r" style="left:12px;top:12px">5ch = 40 · 53q = {% if include.lang == "fr" %}50,08{% else %}50.08{% endif %}</span>
+<span class="zlab t0922-l-p" style="left:12px;top:12px">215px 53q → x 215, y {% if include.lang == "fr" %}50,08{% else %}50.08{% endif %}</span>
+<span class="zlab t0922-l-b" style="left:200px;top:12px">margin:50 215 50 −30</span>
+<span class="zlab t0922-l-s" style="left:200px;top:12px">scale:-1</span>
+<span class="zlab t0922-l-h" style="left:200px;top:12px">−32q = −{% if include.lang == "fr" %}30,24{% else %}30.24{% endif %} → +{% if include.lang == "fr" %}30,24{% else %}30.24{% endif %}</span>
+</div>
+</div>
+<div class="legend"><span><i style="--c:var(--t0922-d)"></i>{% if include.lang == "fr" %}dégradé et ombre{% else %}gradient and shadow{% endif %}</span><span><i style="--c:var(--t0922-t)"></i>{% if include.lang == "fr" %}ceux du body (foncés en vrai){% else %}the body's (dark in reality){% endif %}</span><span><i class="t0922-mk"></i>{% if include.lang == "fr" %}tuile, boîte du body{% else %}tile, body box{% endif %}</span></div>
+</div>
+<div class="anim-side">
+<pre class="code" aria-hidden="true">&lt;style>*{background:<span data-on="1 3" data-tone="2">radial-gradient(1q at 0,#8E7B3B 5ch,#463C1D 0 53q,#8E7B3B)</span><span data-on="2">215px 53q</span>;*{<span data-on="4" data-tone="2">scale:-1</span>;<span data-on="3">margin:50 215 50-30</span>;<span data-on="5" data-tone="2">box-shadow:-32q 0#463C1D</span></pre>
+<div class="now" aria-live="polite">
+<div class="caps">
+{%- if include.lang == "fr" %}
+<div class="cap" data-t="0" data-step="Un demi-anneau dans une tuile"><h3>1. Un demi-anneau dans une tuile</h3><p>Le fond de <code>html</code> va au canevas, en une tuile de 400 × 300. <code>radial-gradient(1q at 0,…)</code> centre le dégradé à gauche de la tuile, à mi-hauteur. Clair jusqu'à <code>5ch</code> (40px), foncé jusqu'à <code>53q</code> (50,08px), clair ensuite : un anneau. Seule sa moitié droite tombe dans la tuile.</p></div>
+<div class="cap" data-t="4" data-step="215px 53q : l'anneau du bas"><h3>2. <code>215px 53q</code> : l'anneau du bas</h3><p>La tuile est décalée en (215 ; 50,08). Le centre de l'anneau passe en (215 ; 200,08) : un demi-anneau ouvert à gauche, de y = 150 à 250. Les tuiles répétées autour placent leurs anneaux hors du canevas.</p></div>
+<div class="cap" data-t="8" data-step="Le body et le même dégradé"><h3>3. Le <code>body</code> et le même dégradé</h3><p><code>*</code> imbriqué vise le <code>body</code>. <code>margin:50 215 50-30</code> : de x = −30 à 185, et en mode quirks 300 − 100 = 200 de haut. Son fond est le même dégradé, dans une tuile de 215 × 200 placée pareil : son demi-anneau est centré sur le bord gauche du <code>body</code>, presque hors du canevas.</p></div>
+<div class="cap" data-t="12" data-step="scale:-1 retourne le body"><h3>4. <code>scale:-1</code> retourne le <code>body</code></h3><p><code>scale:-1</code> retourne le <code>body</code> sur les deux axes autour de son centre : un demi-tour. Son demi-anneau passe sur son bord droit, en (185 ; 99,92), ouvert à droite : l'anneau du haut.</p></div>
+<div class="cap" data-t="16" data-step="L'ombre passe à droite"><h3>5. L'ombre passe à droite</h3><p><code>box-shadow:-32q 0</code> décale une copie de 30,24px vers la gauche, mais le <code>body</code> est retourné : elle part à droite. Une ombre ne se peint jamais sous sa boîte : il n'en reste que la bande de x = 185 à 215,24, sur toute la hauteur du <code>body</code>. C'est la barre verticale.</p></div>
+<div class="cap" data-t="20" data-step="Résultat" data-live="143 caractères · 100 % identique"><h3>6. Résultat : 143 caractères</h3><p>Un seul dégradé pour les deux demi-anneaux, retourné par <code>scale:-1</code>, et une ombre pour la barre.</p></div>
+{%- else %}
+<div class="cap" data-t="0" data-step="A half ring in a tile"><h3>1. A half ring in a tile</h3><p><code>html</code>'s background goes to the canvas, in one 400 × 300 tile. <code>radial-gradient(1q at 0,…)</code> centres the gradient on the left edge of the tile, halfway down. Light up to <code>5ch</code> (40px), dark up to <code>53q</code> (50.08px), light after that: a ring. Only its right half falls inside the tile.</p></div>
+<div class="cap" data-t="4" data-step="215px 53q: the bottom ring"><h3>2. <code>215px 53q</code>: the bottom ring</h3><p>The tile moves to (215, 50.08). The centre of the ring moves to (215, 200.08): a half ring open to the left, from y = 150 to 250. The repeated tiles around it put their rings off the canvas.</p></div>
+<div class="cap" data-t="8" data-step="The body and the same gradient"><h3>3. The <code>body</code> and the same gradient</h3><p>The nested <code>*</code> matches the <code>body</code>. <code>margin:50 215 50-30</code>: from x = −30 to 185, and in quirks mode 300 − 100 = 200 tall. Its background is the same gradient, in a 215 × 200 tile placed the same way: its half ring is centred on the <code>body</code>'s left edge, almost off the canvas.</p></div>
+<div class="cap" data-t="12" data-step="scale:-1 flips the body"><h3>4. <code>scale:-1</code> flips the <code>body</code></h3><p><code>scale:-1</code> flips the <code>body</code> on both axes around its centre: a half turn. Its half ring moves to its right edge, at (185, 99.92), open to the right: the top ring.</p></div>
+<div class="cap" data-t="16" data-step="The shadow moves right"><h3>5. The shadow moves right</h3><p><code>box-shadow:-32q 0</code> moves a copy 30.24px to the left, but the <code>body</code> is flipped: it goes right. A shadow is never painted under its box, so only the strip from x = 185 to 215.24 is left, as tall as the <code>body</code>. That is the vertical bar.</p></div>
+<div class="cap" data-t="20" data-step="Result" data-live="143 characters · 100% match"><h3>6. Result: 143 characters</h3><p>One gradient for both half rings, flipped by <code>scale:-1</code>, and one shadow for the bar.</p></div>
+{%- endif %}
+</div>
+<div class="live"></div>
+</div>
+</div>
+<script>
+(window.AnimScenes = window.AnimScenes || {}).t0922 = (fig) => {
+  const fr = document.documentElement.lang === 'fr';
+  const $ = (s) => fig.querySelector(s);
+  const $$ = (s) => [...fig.querySelectorAll(s)];
+  const can = $('.t0922-can'), G = $('.t0922-g'), BG = $('.t0922-bg'), SH = $('.t0922-sh'), oG = G.querySelector('.t0922-o'), oT = $('[data-o="tile"]'), live = $('.live');
+  const L = (k) => $(`.t0922-l-${k}`);
+  const W = { r: [0.3, 1.8], p: [4.2, 6], b: [8.2, 9.8], s: [12.2, 14.2], h: [16.2, 18], fin: [20.1, 20.9] };
+  const ease = (x) => (x < 0.5 ? 4 * x * x * x : 1 - Math.pow(-2 * x + 2, 3) / 2);
+  const pr = (t, [a, b]) => ease(Math.min(1, Math.max(0, (t - a) / (b - a))));
+  const lerp = (a, b, m) => a + (b - a) * m;
+  const win = (t, a, b) => Math.min(pr(t, [a, a + 0.5]), 1 - pr(t, [b - 0.4, b]));
+  const f1 = (v) => { const s = (Math.round(v * 100) / 100).toFixed(2).replace(/\.?0+$/, ''); return (fr ? s.replace('.', ',') : s).replace('-', '−'); };
+  const c = fr ? ' :' : ':';
+  const grad = (dark, r) => `radial-gradient(circle 0.945px at 0, var(--t0922-l) ${40 * r}px, ${dark} 0 ${50.08 * r}px, var(--t0922-l))`;
+  return (t, step) => {
+    const teach = fig.dataset.teach === '1';
+    const real = !teach || t >= W.fin[0];
+    const guides = t < W.fin[0] ? 1 : 0;
+    const r = pr(t, W.r), p = pr(t, W.p), b = pr(t, W.b), s = pr(t, W.s), h = pr(t, W.h);
+    // 1-2. html's tile: the ring grows, then the tile moves to (215, 50.08)
+    const tx = lerp(0, 215, p), ty = lerp(0, 50.08, p);
+    can.style.background = `${grad('var(--t0922-d)', r)} ${tx}px ${ty}px`;
+    Object.assign(oT.style, { left: `${tx}px`, top: `${ty}px` });
+    oT.style.opacity = (step <= 1 ? 1 : 0) * guides;
+    L('r').style.opacity = win(t, W.r[0], W.p[0] - 0.2);
+    L('p').style.opacity = win(t, W.p[0], W.b[0] - 0.2);
+    // 3-5. the body: same gradient, flipped, then its shadow
+    const dk = real ? 'var(--t0922-d)' : 'var(--t0922-t)';
+    G.style.opacity = b;
+    BG.style.background = `${grad(dk, 1)} 215px 50.08px`;
+    G.style.rotate = `${180 * s}deg`;
+    SH.style.background = dk;
+    SH.style.opacity = h > 0 ? 1 : 0;
+    SH.style.width = `${30.24 * h}px`;
+    SH.style.left = `${-30.24 * h}px`;
+    oG.style.opacity = guides;
+    L('b').style.opacity = win(t, W.b[0], W.s[0] - 0.2);
+    L('s').style.opacity = win(t, W.s[0], W.h[0] - 0.2);
+    L('h').style.opacity = win(t, W.h[0], W.fin[0]);
+    let txt = '';
+    if (step === 0) txt = `${fr ? 'anneau' : 'ring'}${c} ${f1(40 * r)} → ${f1(50.08 * r)}`;
+    else if (step === 1) txt = `${fr ? 'centre' : 'centre'}${c} (${f1(tx)} ; ${f1(150 + ty)})`.replace(' ;', fr ? ' ;' : ',');
+    else if (step === 2) txt = `body${c} x −30 → 185, y 50 → 250`;
+    else if (step === 3) txt = `scale${c} ${f1(1 - 2 * s)}`;
+    else if (step === 4) txt = `${fr ? 'barre' : 'bar'}${c} x 185 → ${f1(185 + 30.24 * h)}`;
+    else txt = $$('.caps .cap')[5].dataset.live || '';
+    live.textContent = txt;
+  };
+};
+</script>
+</figure>
