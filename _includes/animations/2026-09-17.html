@@ -1,0 +1,89 @@
+<figure class="anim t0917" data-duration="20" data-scene="t0917" data-wide="-40 -90 480 420" data-off-label="-36 -86" style="--bg:#7ec3e8">
+<style>
+.t0917{--t0917-d:#333;--t0917-l:#7ec3e8;--t0917-b:#e0782a;--t0917-h:#c0407a;--t0917-p:#6a4fc0;--t0917-pl:#b9def2;--t0917-dash:rgb(20 30 40 / .7)}
+.t0917 .t0917-e{position:absolute;box-sizing:border-box;border-style:solid;border-color:var(--t0917-d)}
+.t0917 .zlab{color:#fff;background:rgb(25 30 35 / .9);padding:1px 5px;border-radius:3px}
+.t0917 .t0917-o{position:absolute;box-sizing:border-box;border:1.5px dashed var(--t0917-dash);pointer-events:none}
+</style>
+<div class="anim-col">
+<div class="stage" role="img" aria-label="{% if include.lang == "fr" %}Animation : html et le body, encadrés de 10px de gris foncé, donnent quatre colonnes ; un h1 vide, en police double, n'est qu'une bordure de 20px : le socle ; un p zoomé dix fois n'a que sa bordure basse colorée, un triangle : le toit, et son fond bleu cache le haut des cadres{% else %}Animation: html and the body, framed with 10px of dark grey, give four columns; an empty h1, with a double font size, is only a 20px border: the base; a p zoomed ten times has only its bottom border colored, a triangle: the roof, and its blue background hides the top of the frames{% endif %}">
+<div class="scene">
+<div class="t0917-e" data-e="html" style="left:135px;top:40px;width:130px;height:220px"></div>
+<div class="t0917-e" data-e="body" style="left:165px;top:70px;width:70px;height:160px;border-width:10px"></div>
+<div class="t0917-e" data-e="p" style="left:100px;top:-60px;width:200px;height:200px;border-width:100px"></div>
+<div class="t0917-e" data-e="h1" style="left:90px;top:220px;width:220px;height:40px;border-width:20px"></div>
+<div class="t0917-o" data-o="p" style="left:100px;top:-60px;width:200px;height:200px"></div>
+<span class="zlab t0917-l-h" style="left:12px;top:272px">margin:40 135 · .63em = {% if include.lang == "fr" %}10,08{% else %}10.08{% endif %} → 10px</span>
+<span class="zlab t0917-l-b" style="left:12px;top:272px">body · margin:20</span>
+<span class="zlab t0917-l-1" style="left:12px;top:-62px">h1 · 32px · .63em = {% if include.lang == "fr" %}20,16{% else %}20.16{% endif %} → 20px · margin:−85</span>
+<span class="zlab t0917-l-p" style="left:12px;top:-62px">p · zoom:10 · 20 × 20 · border 10 → 100px</span>
+</div>
+</div>
+<div class="legend"><span><i style="--c:var(--t0917-d)"></i>{% if include.lang == "fr" %}bordure de html{% else %}html's border{% endif %}</span><span><i style="--c:var(--t0917-b)"></i>body</span><span><i style="--c:var(--t0917-h)"></i>h1</span><span><i style="--c:var(--t0917-p)"></i>{% if include.lang == "fr" %}p (gris foncé et bleu en vrai){% else %}p (dark grey and blue in reality){% endif %}</span></div>
+</div>
+<div class="anim-side">
+<pre class="code" aria-hidden="true"><span data-on="4">&lt;p></span><span data-on="3">&lt;h1></span>&lt;style>*{<span data-on="1">margin:40 135</span>;<span data-on="1 2 3 4">border:.63em solid#333</span>;<span data-on="2 4">background:#7EC3E8</span>;*{<span data-on="2">margin:20</span>;*{<span data-on="3">margin:-85</span>}p{<span data-on="4" data-tone="2">zoom:10</span>;<span data-on="4">margin:-14-7.5 16.5</span>;<span data-on="4" data-tone="2">border-color:#0000#0000#333</span></pre>
+<div class="now" aria-live="polite">
+<div class="caps">
+{%- if include.lang == "fr" %}
+<div class="cap" data-t="0" data-step="html : un cadre"><h3>1. <code>html</code> : un cadre</h3><p><code>*</code> donne à tous une bordure de <code>.63em</code> : 10,08px en police de 16px, arrondis à 10. <code>margin:40 135</code> fait de <code>html</code> une boîte de 130 de large et, en mode quirks, 300 − 80 = 220 de haut. Son cadre gris foncé va de x = 135 à 265 et de y = 40 à 260. Ses côtés seront les colonnes extérieures.</p></div>
+<div class="cap" data-t="4" data-step="Le body : un cadre plus petit"><h3>2. Le <code>body</code> : un cadre plus petit</h3><p><code>*</code> imbriqué donne au <code>body</code> <code>margin:20</code>. Dans les 110 de contenu de <code>html</code>, il fait 70 de large, de x = 165 à 235, et 160 de haut. Il a la même bordure, et un fond bleu. Ses côtés sont les colonnes intérieures.</p></div>
+<div class="cap" data-t="8" data-step="Le h1 : le socle"><h3>3. Le <code>h1</code> : le socle</h3><p>Le <code>h1</code> est un niveau plus bas : <code>margin:-85</code> l'élargit de 85 de chaque côté, de x = 90 à 310. Sa police fait 32px, donc <code>.63em</code> = 20,16, arrondis à 20. Vide, il n'est que sa bordure : 20 + 20 = 40 de haut, de y = 220 à 260. Il cache le bas des deux cadres.</p></div>
+<div class="cap" data-t="12" data-step="Le p zoomé : le toit"><h3>4. Le <code>p</code> zoomé : le toit</h3><p><code>zoom:10</code> agrandit le <code>p</code> dix fois. Vide, avec <code>margin:-14-7.5 16.5</code>, il fait 20 × 20, bordure de 10 comprise : 200 × 200 à l'écran, de y = −60 à 140. Seule sa bordure basse est colorée : avec un contenu de 0 × 0, c'est un triangle de pointe (200 ; 40). Son fond bleu cache le haut des cadres.</p></div>
+<div class="cap" data-t="16" data-step="Résultat" data-live="154 caractères · 100 % identique"><h3>5. Résultat : 154 caractères</h3><p>Quatre boîtes et une seule bordure : deux cadres pour les colonnes, un <code>h1</code> pour le socle, un <code>p</code> zoomé pour le toit.</p></div>
+{%- else %}
+<div class="cap" data-t="0" data-step="html: a frame"><h3>1. <code>html</code>: a frame</h3><p><code>*</code> gives everything a <code>.63em</code> border: 10.08px with a 16px font, rounded down to 10. <code>margin:40 135</code> makes <code>html</code> a box 130 wide and, in quirks mode, 300 − 80 = 220 tall. Its dark grey frame runs from x = 135 to 265 and y = 40 to 260. Its sides will be the outer columns.</p></div>
+<div class="cap" data-t="4" data-step="The body: a smaller frame"><h3>2. The <code>body</code>: a smaller frame</h3><p>The nested <code>*</code> gives the <code>body</code> <code>margin:20</code>. Inside <code>html</code>'s 110 of content, it is 70 wide, from x = 165 to 235, and 160 tall. It has the same border, and a blue background. Its sides are the inner columns.</p></div>
+<div class="cap" data-t="8" data-step="The h1: the base"><h3>3. The <code>h1</code>: the base</h3><p>The <code>h1</code> is one level deeper: <code>margin:-85</code> widens it by 85 on each side, from x = 90 to 310. Its font is 32px, so <code>.63em</code> is 20.16, rounded down to 20. Empty, it is only its border: 20 + 20 = 40 tall, from y = 220 to 260. It hides the bottom of both frames.</p></div>
+<div class="cap" data-t="12" data-step="The zoomed p: the roof"><h3>4. The zoomed <code>p</code>: the roof</h3><p><code>zoom:10</code> makes the <code>p</code> ten times bigger. Empty, with <code>margin:-14-7.5 16.5</code>, it is 20 × 20 including its 10 border: 200 × 200 on screen, from y = −60 to 140. Only its bottom border has a color: with 0 × 0 of content, that is a triangle with its tip at (200, 40). Its blue background hides the top of the frames.</p></div>
+<div class="cap" data-t="16" data-step="Result" data-live="154 characters · 100% match"><h3>5. Result: 154 characters</h3><p>Four boxes and one border: two frames for the columns, an <code>h1</code> for the base, a zoomed <code>p</code> for the roof.</p></div>
+{%- endif %}
+</div>
+<div class="live"></div>
+</div>
+</div>
+<script>
+(window.AnimScenes = window.AnimScenes || {}).t0917 = (fig) => {
+  const fr = document.documentElement.lang === 'fr';
+  const $ = (s) => fig.querySelector(s);
+  const $$ = (s) => [...fig.querySelectorAll(s)];
+  const H = $('[data-e="html"]'), B = $('[data-e="body"]'), P = $('[data-e="p"]'), H1 = $('[data-e="h1"]'), oP = $('[data-o="p"]'), live = $('.live');
+  const L = (k) => $(`.t0917-l-${k}`);
+  const W = { h: [0.3, 1.8], b: [4.2, 5.8], one: [8.2, 9.8], p: [12.2, 14], fin: [16.1, 16.9] };
+  const ease = (x) => (x < 0.5 ? 4 * x * x * x : 1 - Math.pow(-2 * x + 2, 3) / 2);
+  const pr = (t, [a, b]) => ease(Math.min(1, Math.max(0, (t - a) / (b - a))));
+  const win = (t, a, b) => Math.min(pr(t, [a, a + 0.5]), 1 - pr(t, [b - 0.4, b]));
+  const c = fr ? ' :' : ':';
+  return (t, step) => {
+    const teach = fig.dataset.teach === '1';
+    const real = !teach || t >= W.fin[0];
+    const guides = t < W.fin[0] ? 1 : 0;
+    const h = pr(t, W.h), b = pr(t, W.b), o = pr(t, W.one), p = pr(t, W.p);
+    H.style.borderWidth = `${10 * h}px`;
+    L('h').style.opacity = win(t, W.h[0], W.b[0] - 0.2);
+    B.style.opacity = b;
+    B.style.borderColor = real ? 'var(--t0917-d)' : 'var(--t0917-b)';
+    B.style.background = 'var(--t0917-l)';
+    L('b').style.opacity = win(t, W.b[0], W.one[0] - 0.2);
+    H1.style.opacity = o;
+    H1.style.borderColor = real ? 'var(--t0917-d)' : 'var(--t0917-h)';
+    L('1').style.opacity = win(t, W.one[0], W.p[0] - 0.2);
+    // the zoomed p grows from its centre (200, 40) to 200 × 200
+    P.style.opacity = p > 0 ? 1 : 0;
+    P.style.transform = `scale(${Math.max(0.001, p)})`;
+    P.style.transformOrigin = '50% 50%';
+    P.style.borderColor = `transparent transparent ${real ? 'var(--t0917-d)' : 'var(--t0917-p)'}`;
+    P.style.background = real ? 'var(--t0917-l)' : 'var(--t0917-pl)';
+    oP.style.opacity = p * (step === 3 ? 1 : 0) * guides;
+    L('p').style.opacity = win(t, W.p[0], W.fin[0]);
+    let txt = '';
+    if (step === 0) txt = `html${c} x 135 → 265, y 40 → 260`;
+    else if (step === 1) txt = `body${c} x 165 → 235, y 70 → 230`;
+    else if (step === 2) txt = `h1${c} x 90 → 310, y 220 → 260`;
+    else if (step === 3) txt = `${fr ? 'toit' : 'roof'}${c} (200 ; 40) → y 140`.replace(' ;', fr ? ' ;' : ',');
+    else txt = $$('.caps .cap')[4].dataset.live || '';
+    live.textContent = txt;
+  };
+};
+</script>
+</figure>
