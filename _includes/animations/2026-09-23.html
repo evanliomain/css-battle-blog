@@ -1,0 +1,115 @@
+<figure class="anim t0923" data-duration="24" data-scene="t0923" data-wide="-150 -180 700 720" data-off-label="-146 -176" style="--bg:#8e3b66">
+<style>
+.t0923{--t0923-bg:#8e3b66;--t0923-pink:#f5a7a7;--t0923-ghost:rgb(240 170 210 / .55);--t0923-win:#4a1834;--t0923-dash:rgb(255 230 240 / .85)}
+.t0923 .t0923-r{position:absolute;box-sizing:border-box}
+.t0923 .t0923-st{width:120px;height:200px;border-radius:60px}
+.t0923 .t0923-bx{width:20px;height:40px}
+.t0923 .t0923-o{position:absolute;box-sizing:border-box;border:2px dashed #fff;pointer-events:none}
+.t0923 .zlab{color:#fff;background:rgb(40 10 30 / .88);padding:1px 5px;border-radius:3px}
+.t0923 .legend .t0923-mk{background:transparent;box-shadow:inset 0 0 0 1.5px currentColor}
+</style>
+<div class="anim-col">
+<div class="stage" role="img" aria-label="{% if include.lang == "fr" %}Animation : html, en forme de stade, est placé sous le canevas ; sa première ombre, rose, remonte de 254px et fait la forme ; ses trois autres ombres restent sous le canevas ; le body, petit rectangle dans le haut de la forme, fait la fenêtre du haut, et ses ombres font la fenêtre du bas et les deux encoches, tandis que sa copie rose sort par le haut{% else %}Animation: html, shaped like a stadium, is placed below the canvas; its first shadow, pink, moves up 254px and makes the shape; its three other shadows stay below the canvas; the body, a small rectangle at the top of the shape, makes the top window, and its shadows make the bottom window and the two notches, while its pink copy leaves through the top{% endif %}">
+<div class="scene">
+<div class="t0923-r t0923-st" data-h="1"></div>
+<div class="t0923-r t0923-st" data-h="2"></div>
+<div class="t0923-r t0923-st" data-h="3"></div>
+<div class="t0923-r t0923-st" data-h="0"></div>
+<div class="t0923-r t0923-bx" data-b="0"></div>
+<div class="t0923-r t0923-bx" data-b="1"></div>
+<div class="t0923-r t0923-bx" data-b="2"></div>
+<div class="t0923-r t0923-bx" data-b="3"></div>
+<div class="t0923-r t0923-bx" data-b="body"></div>
+<div class="t0923-o t0923-st" data-o="html" style="left:140px;top:304px"></div>
+<span class="zlab t0923-l-m" style="left:12px;top:12px">margin:76% 140 −204 → y = 304</span>
+<span class="zlab t0923-l-q" style="left:12px;top:36px">300 − 304 + 204 = 200 · 5in → 60px</span>
+<span class="zlab t0923-l-p" style="left:12px;top:12px">−269q = −{% if include.lang == "fr" %}254,2{% else %}254.2{% endif %}px</span>
+<span class="zlab t0923-l-h" style="left:12px;top:12px">64q = {% if include.lang == "fr" %}60,47{% else %}60.47{% endif %} · ±53q = ±{% if include.lang == "fr" %}50,08{% else %}50.08{% endif %}</span>
+<span class="zlab t0923-l-h2" style="left:12px;top:36px">32q = {% if include.lang == "fr" %}30,24{% else %}30.24{% endif %}</span>
+<span class="zlab t0923-l-b" style="left:12px;top:12px">body · margin:−204 50 364 → 20 × 40</span>
+<span class="zlab t0923-l-s" style="left:12px;top:12px">{% if include.lang == "fr" %}les mêmes ombres sur le body{% else %}the same shadows on the body{% endif %}</span>
+</div>
+</div>
+<div class="legend"><span><i style="--c:var(--t0923-pink)"></i>{% if include.lang == "fr" %}première ombre{% else %}first shadow{% endif %}</span><span><i style="--c:var(--t0923-win)"></i>{% if include.lang == "fr" %}body et ses ombres (couleur du fond en vrai){% else %}body and its shadows (background color in reality){% endif %}</span><span><i style="--c:var(--t0923-ghost)"></i>{% if include.lang == "fr" %}autres ombres de html{% else %}html's other shadows{% endif %}</span><span><i class="t0923-mk"></i>{% if include.lang == "fr" %}boîte de html{% else %}html box{% endif %}</span></div>
+</div>
+<div class="anim-side">
+<pre class="code" aria-hidden="true">&lt;style>*{background:#8E3B66;color:8F3B66;<span data-on="4">margin:-204 50 364</span>;box-shadow:<span data-on="2 5" data-tone="2">0-269q#F5A7A7</span>,<span data-on="3 5" data-tone="2">0 64q,-53q 32q,53q 32q</span>}&amp;{<span data-on="1">border-radius:5in;margin:76%140-204</span></pre>
+<div class="now" aria-live="polite">
+<div class="caps">
+{%- if include.lang == "fr" %}
+<div class="cap" data-t="0" data-step="html, sous le canevas"><h3>1. html, sous le canevas</h3><p><code>&amp;</code> seul vise <code>html</code> et passe avant <code>*</code>. <code>margin:76%140-204</code> : 76 % de 400 = 304 en haut, 140 sur les côtés, −204 en bas. En mode quirks, <code>html</code> fait 300 − 304 + 204 = 200 de haut : une boîte de 120 × 200, de y = 304 à 504, sous le canevas. <code>border-radius:5in</code>, réduit à 60px, en fait un stade.</p></div>
+<div class="cap" data-t="4" data-step="La première ombre remonte"><h3>2. La première ombre remonte</h3><p>Le fond de <code>html</code> va au canevas, mais ses ombres restent attachées à sa boîte, avec ses coins ronds. <code>0-269q#F5A7A7</code> la remonte de 254,2px : un stade rose de y = 49,8 à 249,8. C'est la forme.</p></div>
+<div class="cap" data-t="8" data-step="Trois ombres hors du canevas"><h3>3. Trois ombres hors du canevas</h3><p>Les trois autres ombres n'ont pas de couleur : elles prennent <code>color:8F3B66</code>, à 1 près la couleur du fond. Sur <code>html</code>, elles se décalent de 60,47px vers le bas et de ±50,08px sur les côtés : elles tombent toutes sous le canevas, on ne les voit pas.</p></div>
+<div class="cap" data-t="12" data-step="Le body : la fenêtre du haut"><h3>4. Le body : la fenêtre du haut</h3><p>Le <code>body</code> prend <code>margin:-204 50 364</code> de <code>*</code>. Il fait 120 − 50 − 50 = 20 de large, et commence en 304 − 204 = 100. En mode quirks, il remplit <code>html</code> moins ses marges : 200 + 204 − 364 = 40. Son fond, la couleur de <code>*</code>, perce le stade de x = 190 à 210, de y = 100 à 140.</p></div>
+<div class="cap" data-t="16" data-step="Les mêmes ombres sur le body"><h3>5. Les mêmes ombres sur le body</h3><p>Le <code>body</code> a la même liste d'ombres. Cette fois, la rose sort par le haut du canevas, en y = −154. Les trois autres, couleur du fond, tombent sur le stade : 60,47px plus bas, la fenêtre du bas, et à ±50,08px sur les côtés, 30,24px plus bas, les deux encoches.</p></div>
+<div class="cap" data-t="20" data-step="Résultat" data-live="145 caractères · 100 % identique"><h3>6. Résultat : 145 caractères</h3><p>Une seule liste de quatre ombres : sur <code>html</code>, seule la rose tombe sur le canevas ; sur le <code>body</code>, seules les trois autres.</p></div>
+{%- else %}
+<div class="cap" data-t="0" data-step="html, below the canvas"><h3>1. html, below the canvas</h3><p>A lone <code>&amp;</code> matches <code>html</code> and wins over <code>*</code>. <code>margin:76%140-204</code>: 76% of 400 = 304 at the top, 140 on the sides, −204 at the bottom. In quirks mode, <code>html</code> is 300 − 304 + 204 = 200 tall: a 120 × 200 box, from y = 304 to 504, below the canvas. <code>border-radius:5in</code>, scaled down to 60px, makes it a stadium.</p></div>
+<div class="cap" data-t="4" data-step="The first shadow moves up"><h3>2. The first shadow moves up</h3><p><code>html</code>'s background goes to the canvas, but its shadows stay tied to its box, with its round corners. <code>0-269q#F5A7A7</code> moves one up by 254.2px: a pink stadium from y = 49.8 to 249.8. That is the shape.</p></div>
+<div class="cap" data-t="8" data-step="Three shadows off the canvas"><h3>3. Three shadows off the canvas</h3><p>The other three shadows have no color: they use <code>color:8F3B66</code>, 1 away from the background color. On <code>html</code>, they move 60.47px down and ±50.08px sideways: they all land below the canvas, out of sight.</p></div>
+<div class="cap" data-t="12" data-step="The body: the top window"><h3>4. The body: the top window</h3><p>The <code>body</code> gets <code>margin:-204 50 364</code> from <code>*</code>. It is 120 − 50 − 50 = 20 wide, and starts at 304 − 204 = 100. In quirks mode, it fills <code>html</code> minus its margins: 200 + 204 − 364 = 40. Its background, the color from <code>*</code>, cuts the stadium from x = 190 to 210, y = 100 to 140.</p></div>
+<div class="cap" data-t="16" data-step="The same shadows on the body"><h3>5. The same shadows on the body</h3><p>The <code>body</code> has the same shadow list. This time the pink one leaves through the top of the canvas, at y = −154. The other three, in the background color, land on the stadium: 60.47px lower, the bottom window, and ±50.08px sideways, 30.24px lower, the two notches.</p></div>
+<div class="cap" data-t="20" data-step="Result" data-live="145 characters · 100% match"><h3>6. Result: 145 characters</h3><p>One list of four shadows: on <code>html</code>, only the pink one reaches the canvas; on the <code>body</code>, only the other three.</p></div>
+{%- endif %}
+</div>
+<div class="live"></div>
+</div>
+</div>
+<script>
+(window.AnimScenes = window.AnimScenes || {}).t0923 = (fig) => {
+  const fr = document.documentElement.lang === 'fr';
+  const $ = (s) => fig.querySelector(s);
+  const $$ = (s) => [...fig.querySelectorAll(s)];
+  const Hs = [0, 1, 2, 3].map((k) => $(`[data-h="${k}"]`)), Bs = [0, 1, 2, 3].map((k) => $(`[data-b="${k}"]`));
+  const body = $('[data-b="body"]'), oH = $('[data-o="html"]'), live = $('.live');
+  const L = (k) => $(`.t0923-l-${k}`);
+  const W = { h: [0.3, 1.8], p: [4.2, 6.2], o: [8.2, 10], b: [12.2, 13.8], s: [16.2, 18.2], fin: [20.1, 20.9] };
+  const ease = (x) => (x < 0.5 ? 4 * x * x * x : 1 - Math.pow(-2 * x + 2, 3) / 2);
+  const pr = (t, [a, b]) => ease(Math.min(1, Math.max(0, (t - a) / (b - a))));
+  const win = (t, a, b) => Math.min(pr(t, [a, a + 0.5]), 1 - pr(t, [b - 0.4, b]));
+  const f1 = (v) => { const s = (Math.round(v * 100) / 100).toFixed(2).replace(/\.?0+$/, ''); return (fr ? s.replace('.', ',') : s).replace('-', '−'); };
+  const c = fr ? ' :' : ':';
+  // the shared shadow list: offsets in px
+  const OFF = [[0, -254.2], [0, 60.47], [-50.08, 30.24], [50.08, 30.24]];
+  const at = (el, x, y) => { el.style.left = `${x}px`; el.style.top = `${y}px`; };
+  return (t, step) => {
+    const teach = fig.dataset.teach === '1';
+    const real = !teach || t >= W.fin[0];
+    const guides = t < W.fin[0] ? 1 : 0;
+    const h = pr(t, W.h), p = pr(t, W.p), o = pr(t, W.o), b = pr(t, W.b), s = pr(t, W.s);
+    oH.style.opacity = h * guides;
+    // html (140, 304): the pink shadow, then the other three below the canvas
+    Hs.forEach((el, k) => {
+      const m = k === 0 ? p : o;
+      at(el, 140 + OFF[k][0] * m, 304 + OFF[k][1] * m);
+      el.style.background = k === 0 ? 'var(--t0923-pink)' : (real ? 'var(--t0923-bg)' : 'var(--t0923-ghost)');
+      el.style.opacity = m > 0 ? 1 : 0;
+    });
+    // body (190, 100): its background, then the same four shadows
+    at(body, 190, 100);
+    body.style.background = real ? 'var(--t0923-bg)' : 'var(--t0923-win)';
+    body.style.opacity = b;
+    Bs.forEach((el, k) => {
+      at(el, 190 + OFF[k][0] * s, 100 + OFF[k][1] * s);
+      el.style.background = k === 0 ? 'var(--t0923-pink)' : (real ? 'var(--t0923-bg)' : 'var(--t0923-win)');
+      el.style.opacity = s > 0 ? 1 : 0;
+    });
+    L('m').style.opacity = win(t, W.h[0], W.p[0] - 0.2);
+    L('q').style.opacity = win(t, W.h[0], W.p[0] - 0.2);
+    L('p').style.opacity = win(t, W.p[0], W.o[0] - 0.2);
+    L('h').style.opacity = win(t, W.o[0], W.b[0] - 0.2);
+    L('h2').style.opacity = win(t, W.o[0], W.b[0] - 0.2);
+    L('b').style.opacity = win(t, W.b[0], W.s[0] - 0.2);
+    L('s').style.opacity = win(t, W.s[0], W.fin[0]);
+    let txt = '';
+    if (step === 0) txt = `html${c} x 140 → 260, y 304 → 504`;
+    else if (step === 1) txt = `${fr ? 'stade' : 'stadium'}${c} y ${f1(304 - 254.2 * p)} → ${f1(504 - 254.2 * p)}`;
+    else if (step === 2) txt = `${fr ? 'ombres' : 'shadows'}${c} y ≥ ${f1(304 + 30.24 * o)}`;
+    else if (step === 3) txt = `body${c} x 190 → 210, y 100 → 140`;
+    else if (step === 4) txt = `${fr ? 'fenêtre du bas' : 'bottom window'}${c} y ${f1(100 + 60.47 * s)} → ${f1(140 + 60.47 * s)}`;
+    else txt = $$('.caps .cap')[5].dataset.live || '';
+    live.textContent = txt;
+  };
+};
+</script>
+</figure>
