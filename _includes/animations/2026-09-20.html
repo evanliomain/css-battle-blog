@@ -1,0 +1,92 @@
+<figure class="anim t0920" data-duration="20" data-scene="t0920" data-wide="-40 -30 480 360" data-off-label="-36 -26" style="--bg:#51a499">
+<style>
+.t0920{--t0920-y:#fee190;--t0920-b:#f08a4b;--t0920-h:#d9487f;--t0920-dash:rgb(20 50 45 / .8)}
+.t0920 .t0920-e{position:absolute;box-sizing:border-box;border-style:solid;border-color:var(--t0920-y)}
+.t0920 .t0920-o{position:absolute;box-sizing:border-box;border:1.5px dashed var(--t0920-dash);pointer-events:none}
+.t0920 .zlab{color:#fff;background:rgb(15 45 40 / .9);padding:1px 5px;border-radius:3px}
+.t0920 .legend .t0920-mk{background:transparent;box-shadow:inset 0 0 0 1.5px currentColor}
+</style>
+<div class="anim-col">
+<div class="stage" role="img" aria-label="{% if include.lang == "fr" %}Animation : avec zoom:10, html devient une boîte de 24 × 21 dont seules les bordures gauche et droite restent : deux montants ; le body, encadré de 4px de tous côtés, fait les deux barres ; un hr d'un pixel de haut, élargi par des marges négatives, ne garde que ses bordures gauche et droite : les deux pieds{% else %}Animation: with zoom:10, html becomes a 24 × 21 box that keeps only its left and right borders: two posts; the body, framed by 4px on every side, makes the two bars; a 1px tall hr, widened by negative margins, keeps only its left and right borders: the two feet{% endif %}">
+<div class="scene">
+<div class="t0920-e" data-e="html" style="left:80px;top:50px;width:240px;height:210px"></div>
+<div class="t0920-e" data-e="body" style="left:80px;top:70px;width:240px;height:160px;border-width:40px"></div>
+<div class="t0920-e" data-e="hr" style="left:60px;top:250px;width:280px;height:10px;border-width:0 40px"></div>
+<div class="t0920-o" data-o="html" style="left:80px;top:50px;width:240px;height:210px"></div>
+<div class="t0920-o" data-o="hr" style="left:60px;top:250px;width:280px;height:10px"></div>
+<span class="zlab t0920-l-z" style="left:12px;top:12px">zoom:10 → 40 × 30 · margin:5 8 → 24 × 21</span>
+<span class="zlab t0920-l-k" style="left:12px;top:12px">border-block:0</span>
+<span class="zlab t0920-l-b" style="left:12px;top:12px">body · margin:2 −4 3 · border:4px</span>
+<span class="zlab t0920-l-h" style="left:12px;top:12px">hr size=3 → 1 · margin:14 −6 −7</span>
+</div>
+</div>
+<div class="legend"><span><i style="--c:var(--t0920-y)"></i>{% if include.lang == "fr" %}bordures de html{% else %}html's borders{% endif %}</span><span><i style="--c:var(--t0920-b)"></i>{% if include.lang == "fr" %}du body (jaunes en vrai){% else %}the body's (yellow in reality){% endif %}</span><span><i style="--c:var(--t0920-h)"></i>{% if include.lang == "fr" %}du hr (jaunes en vrai){% else %}the hr's (yellow in reality){% endif %}</span><span><i class="t0920-mk"></i>{% if include.lang == "fr" %}boîtes{% else %}boxes{% endif %}</span></div>
+</div>
+<div class="anim-side">
+<pre class="code" aria-hidden="true"><span data-on="4">&lt;hr size=3></span>&lt;style>*{<span data-on="3">margin:2-4 3</span>;<span data-on="2 3 4">border:4px solid#FEE190</span>}&amp;,hr{<span data-on="2 4" data-tone="2">border-block:0</span>;<span data-on="4">margin:14-6-7</span>}&amp;{background:#51A499;<span data-on="1" data-tone="2">zoom:10</span>;<span data-on="1">margin:5 8</span></pre>
+<div class="now" aria-live="polite">
+<div class="caps">
+{%- if include.lang == "fr" %}
+<div class="cap" data-t="0" data-step="zoom:10 : une html de 24 × 21"><h3>1. <code>zoom:10</code> : une html de 24 × 21</h3><p><code>&amp;</code> seul vise <code>html</code>. <code>zoom:10</code> agrandit tout dix fois : le cadre ne fait plus que 40 × 30 pixels CSS. <code>margin:5 8</code> laisse à <code>html</code> 40 − 16 = 24 de large, en (8 ; 5). Sa hauteur, 21, vient de son contenu : on la verra à l'étape 4. À l'écran : de x = 80 à 320, de y = 50 à 260.</p></div>
+<div class="cap" data-t="4" data-step="border-block:0 : deux montants"><h3>2. <code>border-block:0</code> : deux montants</h3><p><code>*</code> donne à <code>html</code> une bordure jaune de 4 de tous côtés. <code>border-block:0</code> enlève celles du haut et du bas : il ne reste que la gauche et la droite, 40px de large à l'écran, de y = 50 à 260. Ce sont les deux montants.</p></div>
+<div class="cap" data-t="8" data-step="Le body : deux barres"><h3>3. Le <code>body</code> : deux barres</h3><p>Le <code>body</code> garde la bordure de 4 sur ses quatre côtés. <code>margin:2-4 3</code> : 2 en haut, −4 sur les côtés, qui l'élargissent jusque sous les montants, de x = 80 à 320. Ses bordures haute et basse sont les deux barres, de y = 70 à 110 et de 190 à 230. Son intérieur est vide : le fond passe au travers.</p></div>
+<div class="cap" data-t="12" data-step="Le hr : deux pieds"><h3>4. Le <code>hr</code> : deux pieds</h3><p><code>size=3</code> donne au <code>hr</code> 1 de haut. <code>&amp;,hr</code> lui enlève aussi ses bordures haute et basse ; <code>margin:14-6-7</code> l'élargit de 6 de chaque côté : ses bordures gauche et droite font les pieds, de x = 60 à 100 et de 300 à 340, en y = 250. Sa marge basse de −7 remonte la fin du <code>body</code> : 8 de contenu, d'où le trou de 80px, et <code>html</code> s'arrête en 5 + 2 + 16 + 3 = 26, soit 21 de haut.</p></div>
+<div class="cap" data-t="16" data-step="Résultat" data-live="130 caractères · 100 % identique"><h3>5. Résultat : 130 caractères</h3><p>Trois boîtes, une seule bordure : les côtés de <code>html</code>, le tour du <code>body</code>, les côtés du <code>hr</code>.</p></div>
+{%- else %}
+<div class="cap" data-t="0" data-step="zoom:10: a 24 × 21 html"><h3>1. <code>zoom:10</code>: a 24 × 21 html</h3><p>A lone <code>&amp;</code> matches <code>html</code>. <code>zoom:10</code> makes everything ten times bigger: the frame is only 40 × 30 CSS pixels. <code>margin:5 8</code> leaves <code>html</code> 40 − 16 = 24 wide, at (8, 5). Its height, 21, comes from its content: see step 4. On screen: from x = 80 to 320, y = 50 to 260.</p></div>
+<div class="cap" data-t="4" data-step="border-block:0: two posts"><h3>2. <code>border-block:0</code>: two posts</h3><p><code>*</code> gives <code>html</code> a 4 wide yellow border on every side. <code>border-block:0</code> removes the top and bottom ones: only the left and right are left, 40px wide on screen, from y = 50 to 260. Those are the two posts.</p></div>
+<div class="cap" data-t="8" data-step="The body: two bars"><h3>3. The <code>body</code>: two bars</h3><p>The <code>body</code> keeps the 4 wide border on all four sides. <code>margin:2-4 3</code>: 2 at the top, −4 on the sides, which widen it under the posts, from x = 80 to 320. Its top and bottom borders are the two bars, from y = 70 to 110 and 190 to 230. Its inside is empty: the background shows through.</p></div>
+<div class="cap" data-t="12" data-step="The hr: two feet"><h3>4. The <code>hr</code>: two feet</h3><p><code>size=3</code> makes the <code>hr</code> 1 tall. <code>&amp;,hr</code> removes its top and bottom borders too; <code>margin:14-6-7</code> widens it by 6 on each side: its left and right borders are the feet, from x = 60 to 100 and 300 to 340, at y = 250. Its −7 bottom margin pulls up the end of the <code>body</code>: 8 of content, hence the 80px hole, and <code>html</code> ends at 5 + 2 + 16 + 3 = 26, so it is 21 tall.</p></div>
+<div class="cap" data-t="16" data-step="Result" data-live="130 characters · 100% match"><h3>5. Result: 130 characters</h3><p>Three boxes, one border: the sides of <code>html</code>, all around the <code>body</code>, the sides of the <code>hr</code>.</p></div>
+{%- endif %}
+</div>
+<div class="live"></div>
+</div>
+</div>
+<script>
+(window.AnimScenes = window.AnimScenes || {}).t0920 = (fig) => {
+  const fr = document.documentElement.lang === 'fr';
+  const $ = (s) => fig.querySelector(s);
+  const $$ = (s) => [...fig.querySelectorAll(s)];
+  const H = $('[data-e="html"]'), B = $('[data-e="body"]'), R = $('[data-e="hr"]'), oH = $('[data-o="html"]'), oR = $('[data-o="hr"]'), live = $('.live');
+  const L = (k) => $(`.t0920-l-${k}`);
+  const W = { z: [0.3, 1.8], k: [4.2, 5.8], b: [8.2, 9.8], h: [12.2, 13.8], fin: [16.1, 16.9] };
+  const ease = (x) => (x < 0.5 ? 4 * x * x * x : 1 - Math.pow(-2 * x + 2, 3) / 2);
+  const pr = (t, [a, b]) => ease(Math.min(1, Math.max(0, (t - a) / (b - a))));
+  const lerp = (a, b, m) => a + (b - a) * m;
+  const win = (t, a, b) => Math.min(pr(t, [a, a + 0.5]), 1 - pr(t, [b - 0.4, b]));
+  const f1 = (v) => { const s = (Math.round(v * 100) / 100).toFixed(2).replace(/\.?0+$/, ''); return (fr ? s.replace('.', ',') : s).replace('-', '−'); };
+  const c = fr ? ' :' : ':';
+  return (t, step) => {
+    const teach = fig.dataset.teach === '1';
+    const real = !teach || t >= W.fin[0];
+    const guides = t < W.fin[0] ? 1 : 0;
+    const z = pr(t, W.z), k = pr(t, W.k), b = pr(t, W.b), h = pr(t, W.h);
+    // 1-2. html: a box with a 40px border on every side, then border-block:0
+    H.style.opacity = z;
+    H.style.borderWidth = `${40 * (1 - k)}px 40px`;
+    oH.style.opacity = z * (step <= 1 ? 1 : 0) * guides;
+    L('z').style.opacity = win(t, W.z[0], W.k[0] - 0.2);
+    L('k').style.opacity = win(t, W.k[0], W.b[0] - 0.2);
+    // 3. body: framed on all four sides
+    B.style.opacity = b;
+    B.style.borderColor = real ? 'var(--t0920-y)' : 'var(--t0920-b)';
+    L('b').style.opacity = win(t, W.b[0], W.h[0] - 0.2);
+    // 4. hr: two side borders, widened by its negative margins
+    R.style.opacity = h;
+    R.style.left = `${lerp(80, 60, h)}px`;
+    R.style.width = `${lerp(240, 280, h)}px`;
+    R.style.borderColor = real ? 'var(--t0920-y)' : 'var(--t0920-h)';
+    oR.style.opacity = h * guides;
+    L('h').style.opacity = win(t, W.h[0], W.fin[0]);
+    let txt = '';
+    if (step === 0) txt = `html${c} x 80 → 320, y 50 → 260`;
+    else if (step === 1) txt = `border-block${c} ${f1(40 * (1 - k))}px`;
+    else if (step === 2) txt = `${fr ? 'barres' : 'bars'}${c} y 70 → 110 · 190 → 230`;
+    else if (step === 3) txt = `${fr ? 'pieds' : 'feet'}${c} x ${f1(lerp(80, 60, h))} → ${f1(lerp(120, 100, h))} · ${f1(lerp(280, 300, h))} → ${f1(lerp(320, 340, h))}`;
+    else txt = $$('.caps .cap')[4].dataset.live || '';
+    live.textContent = txt;
+  };
+};
+</script>
+</figure>
