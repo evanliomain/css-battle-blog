@@ -1,0 +1,92 @@
+<figure class="anim t0911" data-duration="20" data-scene="t0911" data-wide="-40 -30 480 360" data-off-label="-36 -26" style="--bg:#ffd0bd">
+<style>
+.t0911{--t0911-b:#6b86e1;--t0911-k:#ffd0bd;--t0911-p:#e0782a;--t0911-y:#3aa05a;--t0911-dash:rgb(60 40 40 / .7)}
+.t0911 .t0911-html{position:absolute;left:150px;top:60px;width:100px;height:180px;box-sizing:border-box;border:20px solid var(--t0911-b);border-radius:50px;background:var(--t0911-k)}
+.t0911 .t0911-g{position:absolute;left:170px;top:140px;width:60px;height:20px}
+.t0911 .t0911-g > i{position:absolute;display:block;width:60px;height:20px}
+.t0911 .t0911-bar{position:absolute;left:170px;top:140px;width:60px;height:20px;background:var(--t0911-b)}
+.t0911 .t0911-o{position:absolute;box-sizing:border-box;border:1.5px dashed var(--t0911-dash);pointer-events:none}
+.t0911 .zlab{color:#fff;background:rgb(40 40 70 / .9);padding:1px 5px;border-radius:3px}
+</style>
+<div class="anim-col">
+<div class="stage" role="img" aria-label="{% if include.lang == "fr" %}Animation : html, avec une bordure bleue arrondie, est une pilule ; le body et le p, avec une hauteur de ligne nulle, se posent au milieu, et le p fait la barre centrale ; les deux ombres du p, retourné deux fois, partent à droite ; celles du body, retourné une fois, partent à gauche : quatre barres{% else %}Animation: html, with a rounded blue border, is a pill; the body and the p, with a zero line height, sit in the middle, and the p makes the middle bar; the two shadows of the p, flipped twice, go right; those of the body, flipped once, go left: four bars{% endif %}">
+<div class="scene">
+<div class="t0911-html"></div>
+<div class="t0911-g" data-g="b"><i data-r="0"></i><i data-r="1"></i></div>
+<div class="t0911-g" data-g="p"><i data-r="0"></i><i data-r="1"></i></div>
+<div class="t0911-bar"></div>
+<span class="zlab t0911-l-h" style="left:12px;top:12px">8.33lh = {% if include.lang == "fr" %}8,33{% else %}8.33{% endif %} × 18 = 150 · 2cap = 20</span>
+<span class="zlab t0911-l-p" style="left:12px;top:12px">font:8px/0 → 1lh = 0 · margin:60 0</span>
+<span class="zlab t0911-l-s" style="left:12px;top:12px">5pc −11q = 80, −{% if include.lang == "fr" %}10,39{% else %}10.39{% endif %} · 64q 32q = {% if include.lang == "fr" %}60,47, 30,24{% else %}60.47, 30.24{% endif %}</span>
+<span class="zlab t0911-l-f" style="left:12px;top:12px">body · scale:-1</span>
+</div>
+</div>
+<div class="legend"><span><i style="--c:var(--t0911-b)"></i>{% if include.lang == "fr" %}bordures et p{% else %}borders and p{% endif %}</span><span><i style="--c:var(--t0911-p)"></i>{% if include.lang == "fr" %}ombres du p{% else %}the p's shadows{% endif %}</span><span><i style="--c:var(--t0911-y)"></i>{% if include.lang == "fr" %}ombres du body (bleues en vrai){% else %}the body's shadows (blue in reality){% endif %}</span></div>
+</div>
+<div class="anim-side">
+<pre class="code" aria-hidden="true"><span data-on="2">&lt;p></span>&lt;style><span data-on="1 2">&amp;,p{border:solid 2cap;background:#FFD0BD;color:6B86E1;border-radius:5lh}</span>*{<span data-on="1 2">margin:60 8.33lh</span>;*{<span data-on="3 4" data-tone="2">box-shadow:5pc -11q,64q 32q</span>;<span data-on="4" data-tone="2">scale:-1</span>;<span data-on="2">font:8px/0'</span></pre>
+<div class="now" aria-live="polite">
+<div class="caps">
+{%- if include.lang == "fr" %}
+<div class="cap" data-t="0" data-step="html : une pilule"><h3>1. <code>html</code> : une pilule</h3><p><code>margin:60 8.33lh</code> : 60 en haut et en bas, et 8,33 hauteurs de ligne sur les côtés, 8,33 × 18 = 150. <code>html</code> va de x = 150 à 250 et, en mode quirks, de y = 60 à 240. <code>&amp;,p</code> lui donne une bordure de <code>2cap</code>, deux hauteurs de majuscule, 20px ici, couleur du texte <code>6B86E1</code>, et <code>border-radius:5lh</code> (90, réduit à 50) : une pilule.</p></div>
+<div class="cap" data-t="4" data-step="Le p : la barre du milieu"><h3>2. Le <code>p</code> : la barre du milieu</h3><p><code>*</code> imbriqué donne au <code>body</code> et au <code>p</code> <code>font:8px/0'</code> : une hauteur de ligne de 0, donc <code>8.33lh</code> vaut 0 et leur marge devient <code>60 0</code>. Ils font 60 de large, de x = 170 à 230, en y = 140. Le <code>p</code> est vide : il n'est que sa bordure, 10 + 10 = 20 de haut, bleue. Son rayon de <code>5lh</code> vaut 0 : la barre est carrée.</p></div>
+<div class="cap" data-t="8" data-step="Les ombres du p : à droite"><h3>3. Les ombres du <code>p</code> : à droite</h3><p>Le <code>body</code> et le <code>p</code> ont deux ombres bleues de leur taille : <code>5pc -11q</code> (80 à droite, 10,39 plus haut) et <code>64q 32q</code> (60,47 à droite, 30,24 plus bas). Le <code>p</code> est retourné par son <code>scale:-1</code>, puis encore par celui du <code>body</code> : il est à l'endroit, et ses ombres font les deux barres de droite.</p></div>
+<div class="cap" data-t="12" data-step="Celles du body : à gauche"><h3>4. Celles du <code>body</code> : à gauche</h3><p>Le <code>body</code> est au même endroit, avec les mêmes ombres, mais il n'est retourné qu'une fois : <code>scale:-1</code> fait un demi-tour autour de son centre, (200 ; 150). Ses ombres passent de l'autre côté : les deux barres de gauche, 80 à gauche et 10,39 plus bas, 60,47 à gauche et 30,24 plus haut.</p></div>
+<div class="cap" data-t="16" data-step="Résultat" data-live="151 caractères · 100 % identique"><h3>5. Résultat : 151 caractères</h3><p>Une pilule, une barre, et deux ombres écrites une fois, dessinées deux fois : à l'endroit et retournées.</p></div>
+{%- else %}
+<div class="cap" data-t="0" data-step="html: a pill"><h3>1. <code>html</code>: a pill</h3><p><code>margin:60 8.33lh</code>: 60 at the top and bottom, and 8.33 line heights on the sides, 8.33 × 18 = 150. <code>html</code> runs from x = 150 to 250 and, in quirks mode, from y = 60 to 240. <code>&amp;,p</code> gives it a <code>2cap</code> border, twice the height of a capital letter, 20px here, in the text color <code>6B86E1</code>, and <code>border-radius:5lh</code> (90, scaled down to 50): a pill.</p></div>
+<div class="cap" data-t="4" data-step="The p: the middle bar"><h3>2. The <code>p</code>: the middle bar</h3><p>The nested <code>*</code> gives the <code>body</code> and the <code>p</code> <code>font:8px/0'</code>: a line height of 0, so <code>8.33lh</code> is 0 and their margin becomes <code>60 0</code>. They are 60 wide, from x = 170 to 230, at y = 140. The <code>p</code> is empty: it is only its border, 10 + 10 = 20 tall, blue. Its <code>5lh</code> radius is 0: the bar is square.</p></div>
+<div class="cap" data-t="8" data-step="The p's shadows: right"><h3>3. The <code>p</code>'s shadows: right</h3><p>The <code>body</code> and the <code>p</code> have two blue shadows of their size: <code>5pc -11q</code> (80 right, 10.39 up) and <code>64q 32q</code> (60.47 right, 30.24 down). The <code>p</code> is flipped by its <code>scale:-1</code>, then again by the <code>body</code>'s: it is the right way round, and its shadows make the two bars on the right.</p></div>
+<div class="cap" data-t="12" data-step="The body's: left"><h3>4. The <code>body</code>'s: left</h3><p>The <code>body</code> sits in the same place, with the same shadows, but it is flipped only once: <code>scale:-1</code> turns it half a turn around its centre, (200, 150). Its shadows move to the other side: the two bars on the left, 80 left and 10.39 down, 60.47 left and 30.24 up.</p></div>
+<div class="cap" data-t="16" data-step="Result" data-live="151 characters · 100% match"><h3>5. Result: 151 characters</h3><p>A pill, a bar, and two shadows written once, drawn twice: the right way round and flipped.</p></div>
+{%- endif %}
+</div>
+<div class="live"></div>
+</div>
+</div>
+<script>
+(window.AnimScenes = window.AnimScenes || {}).t0911 = (fig) => {
+  const fr = document.documentElement.lang === 'fr';
+  const $ = (s) => fig.querySelector(s);
+  const $$ = (s) => [...fig.querySelectorAll(s)];
+  const H = $('.t0911-html'), BAR = $('.t0911-bar'), GB = $('[data-g="b"]'), GP = $('[data-g="p"]'), live = $('.live');
+  const L = (k) => $(`.t0911-l-${k}`);
+  const W = { h: [0.3, 1.8], p: [4.2, 5.6], s: [8.2, 9.8], f: [12.2, 14], fin: [16.1, 16.9] };
+  const ease = (x) => (x < 0.5 ? 4 * x * x * x : 1 - Math.pow(-2 * x + 2, 3) / 2);
+  const pr = (t, [a, b]) => ease(Math.min(1, Math.max(0, (t - a) / (b - a))));
+  const win = (t, a, b) => Math.min(pr(t, [a, a + 0.5]), 1 - pr(t, [b - 0.4, b]));
+  const f1 = (v) => { const s = (Math.round(v * 100) / 100).toFixed(2).replace(/\.?0+$/, ''); return (fr ? s.replace('.', ',') : s).replace('-', '−'); };
+  const c = fr ? ' :' : ':';
+  const OFF = [[80, -10.39], [60.47, 30.24]];
+  return (t, step) => {
+    const teach = fig.dataset.teach === '1';
+    const real = !teach || t >= W.fin[0];
+    const h = pr(t, W.h), p = pr(t, W.p), s = pr(t, W.s), f = pr(t, W.f);
+    H.style.opacity = h;
+    H.style.borderRadius = `${50 * h}px`;
+    BAR.style.opacity = p;
+    // shadows: slide out from the bar; the body's group then turns half a turn around (200, 150)
+    [[GP, 'var(--t0911-p)'], [GB, 'var(--t0911-y)']].forEach(([g, col], gi) => {
+      g.style.opacity = s > 0 ? 1 : 0;
+      g.querySelectorAll('i').forEach((el, k) => {
+        el.style.left = `${OFF[k][0] * s}px`;
+        el.style.top = `${OFF[k][1] * s}px`;
+        el.style.background = real ? 'var(--t0911-b)' : col;
+      });
+      if (gi === 1) g.style.rotate = `${180 * f}deg`;
+    });
+    L('h').style.opacity = win(t, W.h[0], W.p[0] - 0.2);
+    L('p').style.opacity = win(t, W.p[0], W.s[0] - 0.2);
+    L('s').style.opacity = win(t, W.s[0], W.f[0] - 0.2);
+    L('f').style.opacity = win(t, W.f[0], W.fin[0]);
+    let txt = '';
+    if (step === 0) txt = `html${c} x 150 → 250, y 60 → 240`;
+    else if (step === 1) txt = `p${c} x 170 → 230, y 140 → 160`;
+    else if (step === 2) txt = `${fr ? 'ombres' : 'shadows'}${c} x ${f1(170 + 80 * s)}, ${f1(170 + 60.47 * s)}`;
+    else if (step === 3) txt = `body${c} ${f1(180 * f)}°`;
+    else txt = $$('.caps .cap')[4].dataset.live || '';
+    live.textContent = txt;
+  };
+};
+</script>
+</figure>
