@@ -1,0 +1,86 @@
+<figure class="anim t0916" data-duration="20" data-scene="t0916" data-wide="-40 -30 480 360" data-off-label="-36 -26" style="--bg:#fae29e">
+<style>
+.t0916{--t0916-d:#743f3f;--t0916-y:#fae29e;--t0916-b:#e0782a;--t0916-h:#4f7fd0;--t0916-dash:rgb(60 30 30 / .75)}
+.t0916 .t0916-e{position:absolute;box-sizing:border-box;border-style:solid;border-color:var(--t0916-d);background:var(--t0916-y)}
+.t0916 .t0916-o{position:absolute;box-sizing:border-box;border:1.5px dashed var(--t0916-dash);pointer-events:none}
+.t0916 .zlab{color:#fff;background:rgb(50 25 25 / .9);padding:1px 5px;border-radius:3px}
+</style>
+<div class="anim-col">
+<div class="stage" role="img" aria-label="{% if include.lang == "fr" %}Animation : html, de 230 × 100, n'est que sa bordure de 50px, arrondie en haut : le corps de l'imprimante ; le body, zoomé à 0,2, a une bordure de 10px et un fond jaune : le bac ; le h2, plus haut, n'est qu'une bordure de 15px : la feuille{% else %}Animation: html, 230 × 100, is only its 50px border, rounded at the top: the printer's body; the body, zoomed to 0.2, has a 10px border and a yellow background: the tray; the h2, higher up, is only a 15px border: the sheet{% endif %}">
+<div class="scene">
+<div class="t0916-e" data-e="html" style="left:85px;top:100px;width:230px;height:100px"></div>
+<div class="t0916-e" data-e="body" style="left:140px;width:120px;border-width:10px"></div>
+<div class="t0916-e" data-e="h2" style="left:140px;width:120px;height:30px;border-width:15px"></div>
+<span class="zlab t0916-l-h" style="left:12px;top:12px">margin:25% 85 · 6.3ch = {% if include.lang == "fr" %}50,4{% else %}50.4{% endif %} → 50</span>
+<span class="zlab t0916-l-r" style="left:12px;top:12px">53q = {% if include.lang == "fr" %}50,08{% else %}50.08{% endif %}px</span>
+<span class="zlab t0916-l-b" style="left:12px;top:236px">zoom:.2 · 50 × .2 = 10 · 8% × 130 = {% if include.lang == "fr" %}10,4{% else %}10.4{% endif %}</span>
+<span class="zlab t0916-l-2" style="left:12px;top:12px">h2 · 24px · 6.3ch = 75 → × .2 = 15</span>
+</div>
+</div>
+<div class="legend"><span><i style="--c:var(--t0916-d)"></i>{% if include.lang == "fr" %}bordure de html{% else %}html's border{% endif %}</span><span><i style="--c:var(--t0916-b)"></i>{% if include.lang == "fr" %}du body (brun en vrai){% else %}the body's (brown in reality){% endif %}</span><span><i style="--c:var(--t0916-h)"></i>{% if include.lang == "fr" %}du h2 (brun en vrai){% else %}the h2's (brown in reality){% endif %}</span></div>
+</div>
+<div class="anim-side">
+<pre class="code" aria-hidden="true"><span data-on="4">&lt;h2></span>&lt;style>*{background:#FAE29E;<span data-on="1 3 4">border:solid 6.3ch#743F3F</span>;<span data-on="4">margin:-550-50</span>}&amp;{<span data-on="2" data-tone="2">border-radius:53q 53q 0 0</span>;<span data-on="1">margin:25%85</span>;>*{<span data-on="3" data-tone="2">zoom:.2</span>;<span data-on="3">margin:8%25-400</span></pre>
+<div class="now" aria-live="polite">
+<div class="caps">
+{%- if include.lang == "fr" %}
+<div class="cap" data-t="0" data-step="html : une bordure épaisse"><h3>1. <code>html</code> : une bordure épaisse</h3><p><code>*</code> donne à tous une bordure de <code>6.3ch</code> : 6,3 × 8 = 50,4px, arrondis à 50. <code>margin:25%85</code> : 25 % de 400 = 100 en haut et en bas, 85 sur les côtés. En mode quirks, <code>html</code> fait 230 × 100 : avec 50 de bordure partout, son contenu n'a plus de hauteur. Il est plein de brun, de x = 85 à 315 et de y = 100 à 200.</p></div>
+<div class="cap" data-t="4" data-step="Le haut arrondi"><h3>2. Le haut arrondi</h3><p><code>border-radius:53q 53q 0 0</code> arrondit les deux coins du haut de 50,08px : le corps de l'imprimante.</p></div>
+<div class="cap" data-t="8" data-step="Le body zoomé : le bac"><h3>3. Le <code>body</code> zoomé : le bac</h3><p><code>&amp;>*</code> vise le <code>body</code>. <code>zoom:.2</code> le réduit cinq fois : sa bordure de 50 n'en fait plus que 10. <code>margin:8%25-400</code> : 8 % des 130 de contenu de <code>html</code> = 10,4 en haut, 25 × 0,2 = 5 sur les côtés. Il va de x = 140 à 260, et en mode quirks, la marge basse de −400 (−80 à l'écran) lui donne 69,6 de haut. Son fond jaune fait l'intérieur du bac.</p></div>
+<div class="cap" data-t="12" data-step="Le h2 : la feuille"><h3>4. Le <code>h2</code> : la feuille</h3><p>Le <code>h2</code> garde <code>margin:-550-50</code> de <code>*</code>, mais zoomé à 0,2 par le <code>body</code> : −110 en haut, −10 sur les côtés. Sa police fait 24px, donc <code>6.3ch</code> = 75, soit 15 à l'écran. Vide, il n'est que sa bordure : 120 × 30, de y = 60 à 90 au-dessus de l'imprimante.</p></div>
+<div class="cap" data-t="16" data-step="Résultat" data-live="140 caractères · 100 % identique"><h3>5. Résultat : 140 caractères</h3><p>Une seule bordure, trois épaisseurs : 50 sur <code>html</code>, 10 sur le <code>body</code> zoomé, 15 sur le <code>h2</code>.</p></div>
+{%- else %}
+<div class="cap" data-t="0" data-step="html: a thick border"><h3>1. <code>html</code>: a thick border</h3><p><code>*</code> gives everything a <code>6.3ch</code> border: 6.3 × 8 = 50.4px, rounded down to 50. <code>margin:25%85</code>: 25% of 400 = 100 at the top and bottom, 85 on the sides. In quirks mode, <code>html</code> is 230 × 100: with 50 of border all around, its content has no height left. It is solid brown, from x = 85 to 315 and y = 100 to 200.</p></div>
+<div class="cap" data-t="4" data-step="The rounded top"><h3>2. The rounded top</h3><p><code>border-radius:53q 53q 0 0</code> rounds the two top corners by 50.08px: the body of the printer.</p></div>
+<div class="cap" data-t="8" data-step="The zoomed body: the tray"><h3>3. The zoomed <code>body</code>: the tray</h3><p><code>&amp;>*</code> matches the <code>body</code>. <code>zoom:.2</code> shrinks it five times: its 50 border is only 10. <code>margin:8%25-400</code>: 8% of <code>html</code>'s 130 of content = 10.4 at the top, 25 × 0.2 = 5 on the sides. It runs from x = 140 to 260, and in quirks mode the −400 bottom margin (−80 on screen) makes it 69.6 tall. Its yellow background is the inside of the tray.</p></div>
+<div class="cap" data-t="12" data-step="The h2: the sheet"><h3>4. The <code>h2</code>: the sheet</h3><p>The <code>h2</code> keeps <code>margin:-550-50</code> from <code>*</code>, but zoomed to 0.2 by the <code>body</code>: −110 at the top, −10 on the sides. Its font is 24px, so <code>6.3ch</code> is 75, 15 on screen. Empty, it is only its border: 120 × 30, from y = 60 to 90, above the printer.</p></div>
+<div class="cap" data-t="16" data-step="Result" data-live="140 characters · 100% match"><h3>5. Result: 140 characters</h3><p>One border, three thicknesses: 50 on <code>html</code>, 10 on the zoomed <code>body</code>, 15 on the <code>h2</code>.</p></div>
+{%- endif %}
+</div>
+<div class="live"></div>
+</div>
+</div>
+<script>
+(window.AnimScenes = window.AnimScenes || {}).t0916 = (fig) => {
+  const fr = document.documentElement.lang === 'fr';
+  const $ = (s) => fig.querySelector(s);
+  const $$ = (s) => [...fig.querySelectorAll(s)];
+  const H = $('[data-e="html"]'), B = $('[data-e="body"]'), H2 = $('[data-e="h2"]'), live = $('.live');
+  const L = (k) => $(`.t0916-l-${k}`);
+  const W = { h: [0.3, 1.8], r: [4.2, 5.8], b: [8.2, 9.8], two: [12.2, 13.8], fin: [16.1, 16.9] };
+  const ease = (x) => (x < 0.5 ? 4 * x * x * x : 1 - Math.pow(-2 * x + 2, 3) / 2);
+  const pr = (t, [a, b]) => ease(Math.min(1, Math.max(0, (t - a) / (b - a))));
+  const lerp = (a, b, m) => a + (b - a) * m;
+  const win = (t, a, b) => Math.min(pr(t, [a, a + 0.5]), 1 - pr(t, [b - 0.4, b]));
+  const f1 = (v) => { const s = (Math.round(v * 100) / 100).toFixed(2).replace(/\.?0+$/, ''); return (fr ? s.replace('.', ',') : s).replace('-', '−'); };
+  const c = fr ? ' :' : ':';
+  return (t, step) => {
+    const teach = fig.dataset.teach === '1';
+    const real = !teach || t >= W.fin[0];
+    const h = pr(t, W.h), r = pr(t, W.r), b = pr(t, W.b), o = pr(t, W.two);
+    H.style.borderWidth = `${50 * h}px`;
+    H.style.borderRadius = `${50.08 * r}px ${50.08 * r}px 0 0`;
+    L('h').style.opacity = win(t, W.h[0], W.r[0] - 0.2);
+    L('r').style.opacity = win(t, W.r[0], W.b[0] - 0.2);
+    // body: from html's content edge, down by 10.39, 69.61 tall
+    B.style.opacity = b;
+    B.style.top = '160.39px';
+    B.style.height = `${lerp(0, 69.61, b)}px`;
+    B.style.borderColor = real ? 'var(--t0916-d)' : 'var(--t0916-b)';
+    L('b').style.opacity = win(t, W.b[0], W.two[0] - 0.2);
+    // h2: rises from the body's content to 110 above it
+    H2.style.opacity = o > 0 ? 1 : 0;
+    H2.style.top = `${lerp(170.39, 60.39, o)}px`;
+    H2.style.borderColor = real ? 'var(--t0916-d)' : 'var(--t0916-h)';
+    L('2').style.opacity = win(t, W.two[0], W.fin[0]);
+    let txt = '';
+    if (step === 0) txt = `html${c} x 85 → 315, y 100 → 200`;
+    else if (step === 1) txt = `${fr ? 'rayon' : 'radius'}${c} ${f1(50.08 * r)}px`;
+    else if (step === 2) txt = `body${c} x 140 → 260, y ${f1(160.39)} → ${f1(160.39 + 69.61 * b)}`;
+    else if (step === 3) txt = `h2${c} y ${f1(lerp(170.39, 60.39, o))} → ${f1(lerp(200.39, 90.39, o))}`;
+    else txt = $$('.caps .cap')[4].dataset.live || '';
+    live.textContent = txt;
+  };
+};
+</script>
+</figure>
