@@ -1,0 +1,89 @@
+<figure class="anim t0903" data-duration="20" data-scene="t0903" data-wide="-40 -30 480 360" data-off-label="-36 -26" style="--bg:#3246de">
+<style>
+.t0903{--t0903-c:#dddeeb;--t0903-s:#7f8ae9;--t0903-t:#f0a040;--t0903-dash:rgb(255 255 255 / .8)}
+.t0903 .t0903-e{position:absolute;border-radius:50%}
+.t0903 .t0903-bar{position:absolute;left:170px;top:180px;width:79px;height:40px;border-radius:20px}
+.t0903 .t0903-o{position:absolute;box-sizing:border-box;border:1.5px dashed var(--t0903-dash);pointer-events:none}
+.t0903 .zlab{color:#fff;background:rgb(20 25 80 / .9);padding:1px 5px;border-radius:3px}
+</style>
+<div class="anim-col">
+<div class="stage" role="img" aria-label="{% if include.lang == "fr" %}Animation : html, un rond bleu sur bleu à gauche, projette trois ombres rondes : un grand lobe et un petit lobe gris clair, et un soleil bleu clair derrière ; le body, sans hauteur, n'a qu'une ombre étalée de 20px : la base plate du nuage{% else %}Animation: html, a blue circle on blue at the left, casts three round shadows: a big lobe and a small light grey lobe, and a light blue sun behind them; the body, with no height, only shows one shadow spread by 20px: the flat bottom of the cloud{% endif %}">
+<div class="scene">
+<div class="t0903-e" data-e="sun"></div>
+<div class="t0903-e" data-e="big"></div>
+<div class="t0903-e" data-e="small"></div>
+<div class="t0903-bar"></div>
+<div class="t0903-o" data-o="html" style="left:0;top:100px;width:100px;height:100px;border-radius:50%"></div>
+<div class="t0903-o" data-o="body" style="left:70px;top:199px;width:39px;height:2px"></div>
+<span class="zlab t0903-l-h" style="left:12px;top:12px">100 × 100 · 2in → r 50</span>
+<span class="zlab t0903-l-l" style="left:12px;top:12px">50vw = 200 · 30vw = 120 · 5vw = 20</span>
+<span class="zlab t0903-l-s" style="left:12px;top:12px">201q −32q 0 −11q = {% if include.lang == "fr" %}189,9 ; −30,2 ; −10,4{% else %}189.9, −30.2, −10.4{% endif %}</span>
+<span class="zlab t0903-l-b" style="left:12px;top:12px">body · margin:100 −9 0 70 → 39 × 0</span>
+</div>
+</div>
+<div class="legend"><span><i style="--c:var(--t0903-c)"></i>{% if include.lang == "fr" %}ombres gris clair{% else %}light grey shadows{% endif %}</span><span><i style="--c:var(--t0903-s)"></i>{% if include.lang == "fr" %}soleil{% else %}sun{% endif %}</span><span><i style="--c:var(--t0903-t)"></i>{% if include.lang == "fr" %}ombre du body (gris clair en vrai){% else %}the body's shadow (light grey in reality){% endif %}</span></div>
+</div>
+<div class="anim-side">
+<pre class="code" aria-hidden="true">&lt;style>*{background:#3246DE;color:DDDEEB;<span data-on="1">border-radius:2in;margin:25%75%25%0</span>;box-shadow:<span data-on="2" data-tone="2">50vw 5vw,30vw 0 0 5vw</span>,<span data-on="3" data-tone="2">201q -32q 0-11q#7F8AE9</span>;*{<span data-on="4">margin:100-9 0 70</span></pre>
+<div class="now" aria-live="polite">
+<div class="caps">
+{%- if include.lang == "fr" %}
+<div class="cap" data-t="0" data-step="html : un rond invisible"><h3>1. <code>html</code> : un rond invisible</h3><p><code>margin:25%75%25%0</code> : 100 en haut et en bas, 300 à droite, 0 à gauche. <code>html</code> fait 100 × 100, de x = 0 à 100 et de y = 100 à 200. <code>border-radius:2in</code>, bien trop grand, est réduit à 50 : un rond. Il est bleu sur le canevas bleu : on ne le voit pas.</p></div>
+<div class="cap" data-t="4" data-step="Deux ombres : les lobes"><h3>2. Deux ombres : les lobes</h3><p>Les ombres prennent la couleur du texte, <code>DDDEEB</code>, et la forme ronde de <code>html</code>. <code>50vw 5vw</code> décale un rond de 200 à droite et 20 plus bas : centré en (250 ; 170), rayon 50. <code>30vw 0 0 5vw</code> le décale de 120 et l'étale de 20 : centré en (170 ; 150), rayon 70. Les deux lobes du nuage.</p></div>
+<div class="cap" data-t="8" data-step="Une ombre derrière : le soleil"><h3>3. Une ombre derrière : le soleil</h3><p><code>201q -32q 0-11q#7F8AE9</code> décale un rond de 189,9 à droite et 30,2 plus haut, et le rétrécit de 10,4 : rayon 39,6, centré en (239,9 ; 119,8), bleu clair. La dernière ombre de la liste est peinte sous les autres : le soleil passe derrière le nuage.</p></div>
+<div class="cap" data-t="12" data-step="Le body : la base plate"><h3>4. Le <code>body</code> : la base plate</h3><p>Le <code>body</code> a les mêmes ombres. <code>margin:100-9 0 70</code> le met de x = 70 à 109, en y = 200, et en mode quirks il fait 0 de haut. Sans étalement, ses ombres sont vides ; avec −10,4, aussi. Seule la deuxième, étalée de 20, se voit : 79 × 40, de x = 170 à 249 et de y = 180 à 220, aux bouts ronds. C'est la base plate du nuage.</p></div>
+<div class="cap" data-t="16" data-step="Résultat" data-live="152 caractères · 100 % identique"><h3>5. Résultat : 152 caractères</h3><p>Trois ombres sur deux boîtes : deux lobes, un soleil et une base.</p></div>
+{%- else %}
+<div class="cap" data-t="0" data-step="html: an invisible circle"><h3>1. <code>html</code>: an invisible circle</h3><p><code>margin:25%75%25%0</code>: 100 at the top and bottom, 300 on the right, 0 on the left. <code>html</code> is 100 × 100, from x = 0 to 100 and y = 100 to 200. <code>border-radius:2in</code>, far too big, is scaled down to 50: a circle. It is blue on the blue canvas: it cannot be seen.</p></div>
+<div class="cap" data-t="4" data-step="Two shadows: the lobes"><h3>2. Two shadows: the lobes</h3><p>The shadows use the text color, <code>DDDEEB</code>, and <code>html</code>'s round shape. <code>50vw 5vw</code> moves a circle 200 right and 20 down: centred at (250, 170), radius 50. <code>30vw 0 0 5vw</code> moves it 120 and spreads it by 20: centred at (170, 150), radius 70. The two lobes of the cloud.</p></div>
+<div class="cap" data-t="8" data-step="A shadow behind: the sun"><h3>3. A shadow behind: the sun</h3><p><code>201q -32q 0-11q#7F8AE9</code> moves a circle 189.9 right and 30.2 up, and shrinks it by 10.4: radius 39.6, centred at (239.9, 119.8), light blue. The last shadow in the list is painted under the others: the sun goes behind the cloud.</p></div>
+<div class="cap" data-t="12" data-step="The body: the flat bottom"><h3>4. The <code>body</code>: the flat bottom</h3><p>The <code>body</code> has the same shadows. <code>margin:100-9 0 70</code> puts it from x = 70 to 109, at y = 200, and in quirks mode it is 0 tall. With no spread, its shadows are empty; with −10.4, too. Only the second one, spread by 20, shows: 79 × 40, from x = 170 to 249 and y = 180 to 220, with round ends. That is the flat bottom of the cloud.</p></div>
+<div class="cap" data-t="16" data-step="Result" data-live="152 characters · 100% match"><h3>5. Result: 152 characters</h3><p>Three shadows on two boxes: two lobes, a sun and a base.</p></div>
+{%- endif %}
+</div>
+<div class="live"></div>
+</div>
+</div>
+<script>
+(window.AnimScenes = window.AnimScenes || {}).t0903 = (fig) => {
+  const fr = document.documentElement.lang === 'fr';
+  const $ = (s) => fig.querySelector(s);
+  const $$ = (s) => [...fig.querySelectorAll(s)];
+  const E = (k) => $(`[data-e="${k}"]`), BAR = $('.t0903-bar'), oH = $('[data-o="html"]'), oB = $('[data-o="body"]'), live = $('.live');
+  const L = (k) => $(`.t0903-l-${k}`);
+  const W = { h: [0.3, 1.8], l: [4.2, 6], s: [8.2, 9.8], b: [12.2, 13.8], fin: [16.1, 16.9] };
+  const ease = (x) => (x < 0.5 ? 4 * x * x * x : 1 - Math.pow(-2 * x + 2, 3) / 2);
+  const pr = (t, [a, b]) => ease(Math.min(1, Math.max(0, (t - a) / (b - a))));
+  const lerp = (a, b, m) => a + (b - a) * m;
+  const win = (t, a, b) => Math.min(pr(t, [a, a + 0.5]), 1 - pr(t, [b - 0.4, b]));
+  const f1 = (v) => { const s = (Math.round(v * 100) / 100).toFixed(2).replace(/\.?0+$/, ''); return (fr ? s.replace('.', ',') : s).replace('-', '−'); };
+  const c = fr ? ' :' : ':';
+  const circ = (el, cx, cy, r, col, op) => Object.assign(el.style, { left: `${cx - r}px`, top: `${cy - r}px`, width: `${2 * r}px`, height: `${2 * r}px`, background: col, opacity: op });
+  return (t, step) => {
+    const teach = fig.dataset.teach === '1';
+    const real = !teach || t >= W.fin[0];
+    const guides = t < W.fin[0] ? 1 : 0;
+    const h = pr(t, W.h), l = pr(t, W.l), s = pr(t, W.s), b = pr(t, W.b);
+    // shadows slide out of html's circle, centre (50, 150)
+    circ(E('small'), lerp(50, 250, l), lerp(150, 170, l), 50, 'var(--t0903-c)', l > 0 ? 1 : 0);
+    circ(E('big'), lerp(50, 170, l), 150, lerp(50, 70, l), 'var(--t0903-c)', l > 0 ? 1 : 0);
+    circ(E('sun'), lerp(50, 239.92, s), lerp(150, 119.76, s), lerp(50, 39.61, s), 'var(--t0903-s)', s > 0 ? 1 : 0);
+    BAR.style.opacity = b;
+    BAR.style.background = real ? 'var(--t0903-c)' : 'var(--t0903-t)';
+    oH.style.opacity = (step === 0 ? h : step <= 2 ? 1 : 0) * guides;
+    oB.style.opacity = (step === 3 ? 1 : 0) * guides;
+    L('h').style.opacity = win(t, W.h[0], W.l[0] - 0.2);
+    L('l').style.opacity = win(t, W.l[0], W.s[0] - 0.2);
+    L('s').style.opacity = win(t, W.s[0], W.b[0] - 0.2);
+    L('b').style.opacity = win(t, W.b[0], W.fin[0]);
+    let txt = '';
+    if (step === 0) txt = `html${c} x 0 → 100, y 100 → 200`;
+    else if (step === 1) txt = `${fr ? 'lobes' : 'lobes'}${c} r 50, r ${f1(lerp(50, 70, l))}`;
+    else if (step === 2) txt = `${fr ? 'soleil' : 'sun'}${c} r ${f1(lerp(50, 39.61, s))}`;
+    else if (step === 3) txt = `${fr ? 'base' : 'base'}${c} x 170 → 249, y 180 → 220`;
+    else txt = $$('.caps .cap')[4].dataset.live || '';
+    live.textContent = txt;
+  };
+};
+</script>
+</figure>
