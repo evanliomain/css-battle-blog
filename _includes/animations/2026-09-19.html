@@ -1,0 +1,94 @@
+<figure class="anim t0919" data-duration="20" data-scene="t0919" data-wide="-40 -90 480 420" data-off-label="-36 -86" style="--bg:#485993">
+<style>
+.t0919{--t0919-b:#485993;--t0919-o:#ffa173;--t0919-dash:rgb(255 240 230 / .85)}
+.t0919 .t0919-l{position:absolute;box-sizing:border-box}
+.t0919 .t0919-disc{left:0;top:0;width:400px;height:300px;background:radial-gradient(circle 0.945px,var(--t0919-o),125px,#0000)}
+.t0919 .t0919-bi{left:0;top:0;width:400px;height:300px;border-image:radial-gradient(circle 0.945px,var(--t0919-o),125px,#0000) 110 25%/auto}
+.t0919 .t0919-body{left:4px;top:-71px;width:392px;height:291px;background:var(--t0919-b);border-image:radial-gradient(circle 0.945px,var(--t0919-o),125px,#0000) 110 25%/auto}
+.t0919 .t0919-o{position:absolute;box-sizing:border-box;border:1.5px dashed var(--t0919-dash);pointer-events:none}
+.t0919 .t0919-g{position:absolute;background:var(--t0919-dash);pointer-events:none}
+.t0919 .zlab{color:#fff;background:rgb(20 25 60 / .9);padding:1px 5px;border-radius:3px}
+.t0919 .legend .t0919-mk{background:transparent;box-shadow:inset 0 0 0 1.5px currentColor}
+</style>
+<div class="anim-col">
+<div class="stage" role="img" aria-label="{% if include.lang == "fr" %}Animation : un dégradé radial dessine un disque orange ; utilisé en border-image et découpé en neuf, il perd sa partie centrale, où le fond bleu de html fait le corps de l'enveloppe ; le body, plus haut, porte le même disque et le même trou ; un clip-path en losange n'en garde qu'une pointe : le rabat bleu et le V orange{% else %}Animation: a radial gradient draws an orange disc; used as a border-image and cut into nine, it loses its middle part, where html's blue background makes the body of the envelope; the body, higher up, carries the same disc and the same hole; a diamond clip-path keeps only one piece of it: the blue flap and the orange V{% endif %}">
+<div class="scene">
+<div class="t0919-l t0919-disc"></div>
+<div class="t0919-l t0919-bi"></div>
+<div class="t0919-g" data-g="v1" style="left:100px;top:0;width:1.5px;height:300px"></div>
+<div class="t0919-g" data-g="v2" style="left:300px;top:0;width:1.5px;height:300px"></div>
+<div class="t0919-g" data-g="h1" style="left:0;top:110px;width:400px;height:1.5px"></div>
+<div class="t0919-g" data-g="h2" style="left:0;top:190px;width:400px;height:1.5px"></div>
+<div class="t0919-l t0919-body"></div>
+<div class="t0919-o" data-o="body" style="left:4px;top:-71px;width:392px;height:291px"></div>
+<span class="zlab t0919-l-d" style="left:12px;top:12px">radial-gradient(1q,…,125px,#0000) → r = 125</span>
+<span class="zlab t0919-l-s" style="left:12px;top:12px">110 25%/auto → 110 · 25% × 400 = 100</span>
+<span class="zlab t0919-l-b" style="left:12px;top:244px">body · margin:−71 4 80 → 392 × 291</span>
+<span class="zlab t0919-l-c" style="left:12px;top:244px">polygon(50%45%,73%62%,50%244q,27%62%)</span>
+</div>
+</div>
+<div class="legend"><span><i style="--c:var(--t0919-o)"></i>{% if include.lang == "fr" %}disque du dégradé{% else %}gradient disc{% endif %}</span><span><i style="--c:var(--t0919-b)"></i>{% if include.lang == "fr" %}fonds bleus{% else %}blue backgrounds{% endif %}</span><span><i class="t0919-mk"></i>{% if include.lang == "fr" %}boîte du body, découpes{% else %}body box, slices{% endif %}</span></div>
+</div>
+<div class="anim-side">
+<pre class="code" aria-hidden="true">&lt;style>*{background:#485993;border-image:<span data-on="1" data-tone="2">radial-gradient(1q,#FFA173,125px,#0000)</span><span data-on="2">110 25%/auto</span>;*{<span data-on="3">margin:-71 4 80</span>;<span data-on="4" data-tone="2">clip-path:polygon(50%45%,73%62%,50%244q,27%62%</span></pre>
+<div class="now" aria-live="polite">
+<div class="caps">
+{%- if include.lang == "fr" %}
+<div class="cap" data-t="0" data-step="Un disque en dégradé"><h3>1. Un disque en dégradé</h3><p><code>*</code> donne à <code>html</code> un fond bleu et une <code>border-image</code>. Son image est un dégradé radial de rayon <code>1q</code>, mais ses arrêts vont plus loin : orange, un repère à <code>125px</code>, puis transparent, ramené lui aussi à 125px. C'est un disque orange net de rayon 125, au centre de la boîte de <code>html</code> : de x = 75 à 325, de y = 25 à 275.</p></div>
+<div class="cap" data-t="4" data-step="Découpé en neuf, sans le centre"><h3>2. Découpé en neuf, sans le centre</h3><p><code>110 25%</code> découpe l'image à 110px du haut et du bas, et à 25 % de 400 = 100px des côtés. <code>/auto</code> donne à la bordure la taille de ces morceaux. Les huit morceaux du tour sont peints, mais pas celui du milieu (il faudrait <code>fill</code>) : le fond bleu de <code>html</code> s'y voit, de x = 100 à 300 et de y = 110 à 190. C'est l'enveloppe.</p></div>
+<div class="cap" data-t="8" data-step="Le body, plus haut"><h3>3. Le <code>body</code>, plus haut</h3><p><code>*</code> imbriqué vise le <code>body</code>, qui a le même fond et la même <code>border-image</code>. <code>margin:-71 4 80</code> le place de x = 4 à 396 et de y = −71 à 220 (291 de haut en mode quirks). Son disque est centré en (200 ; 74,5), et son trou bleu va de y = 39 à 110. Pour l'instant, il cache le haut.</p></div>
+<div class="cap" data-t="12" data-step="Un losange de body"><h3>4. Un losange de <code>body</code></h3><p><code>clip-path:polygon(…)</code> ne garde du <code>body</code> qu'un losange, en % de sa boîte : (200 ; 60), (290,16 ; 109,42), (200 ; 159,6) avec <code>244q</code>, et (109,84 ; 109,42). Sa moitié haute tombe dans le trou bleu : le rabat. Sa moitié basse tombe dans le disque : le V orange sur l'enveloppe.</p></div>
+<div class="cap" data-t="16" data-step="Résultat" data-live="157 caractères · 100 % identique"><h3>5. Résultat : 157 caractères</h3><p>Une seule <code>border-image</code> sert deux fois : sur <code>html</code> pour le disque et l'enveloppe, sur le <code>body</code> découpé pour le rabat et le V.</p></div>
+{%- else %}
+<div class="cap" data-t="0" data-step="A gradient disc"><h3>1. A gradient disc</h3><p><code>*</code> gives <code>html</code> a blue background and a <code>border-image</code>. Its image is a radial gradient with a <code>1q</code> radius, but its stops go further: orange, a hint at <code>125px</code>, then transparent, pulled up to 125px too. That is a sharp orange disc of radius 125, in the centre of <code>html</code>'s box: from x = 75 to 325, y = 25 to 275.</p></div>
+<div class="cap" data-t="4" data-step="Cut in nine, no middle"><h3>2. Cut in nine, no middle</h3><p><code>110 25%</code> cuts the image 110px from the top and bottom, and 25% of 400 = 100px from the sides. <code>/auto</code> makes the border as wide as those pieces. The eight outer pieces are painted, but not the middle one (that would take <code>fill</code>): <code>html</code>'s blue background shows there, from x = 100 to 300 and y = 110 to 190. That is the envelope.</p></div>
+<div class="cap" data-t="8" data-step="The body, higher up"><h3>3. The <code>body</code>, higher up</h3><p>The nested <code>*</code> matches the <code>body</code>, which has the same background and the same <code>border-image</code>. <code>margin:-71 4 80</code> puts it from x = 4 to 396 and y = −71 to 220 (291 tall in quirks mode). Its disc is centred at (200, 74.5), and its blue hole runs from y = 39 to 110. For now, it hides the top.</p></div>
+<div class="cap" data-t="12" data-step="A diamond of body"><h3>4. A diamond of <code>body</code></h3><p><code>clip-path:polygon(…)</code> keeps only a diamond of the <code>body</code>, in % of its box: (200, 60), (290.16, 109.42), (200, 159.6) with <code>244q</code>, and (109.84, 109.42). Its top half falls in the blue hole: the flap. Its bottom half falls in the disc: the orange V on the envelope.</p></div>
+<div class="cap" data-t="16" data-step="Result" data-live="157 characters · 100% match"><h3>5. Result: 157 characters</h3><p>One <code>border-image</code> used twice: on <code>html</code> for the disc and the envelope, on the clipped <code>body</code> for the flap and the V.</p></div>
+{%- endif %}
+</div>
+<div class="live"></div>
+</div>
+</div>
+<script>
+(window.AnimScenes = window.AnimScenes || {}).t0919 = (fig) => {
+  const fr = document.documentElement.lang === 'fr';
+  const $ = (s) => fig.querySelector(s);
+  const $$ = (s) => [...fig.querySelectorAll(s)];
+  const D = $('.t0919-disc'), BI = $('.t0919-bi'), B = $('.t0919-body'), oB = $('[data-o="body"]'), G = $$('.t0919-g'), live = $('.live');
+  const L = (k) => $(`.t0919-l-${k}`);
+  const W = { d: [0.3, 1.8], s: [4.2, 5.8], b: [8.2, 9.6], c: [12.2, 14], fin: [16.1, 16.9] };
+  const ease = (x) => (x < 0.5 ? 4 * x * x * x : 1 - Math.pow(-2 * x + 2, 3) / 2);
+  const pr = (t, [a, b]) => ease(Math.min(1, Math.max(0, (t - a) / (b - a))));
+  const lerp = (a, b, m) => a + (b - a) * m;
+  const win = (t, a, b) => Math.min(pr(t, [a, a + 0.5]), 1 - pr(t, [b - 0.4, b]));
+  const f1 = (v) => { const s = (Math.round(v * 100) / 100).toFixed(2).replace(/\.?0+$/, ''); return (fr ? s.replace('.', ',') : s).replace('-', '−'); };
+  const c = fr ? ' :' : ':';
+  // rectangle corners → diamond points, in % of the body box (244q = 79.24%)
+  const FROM = [[0, 0], [100, 0], [100, 100], [0, 100]], TO = [[50, 45], [73, 62], [50, 79.24], [27, 62]];
+  return (t, step) => {
+    const guides = t < W.fin[0] ? 1 : 0;
+    const d = pr(t, W.d), s = pr(t, W.s), b = pr(t, W.b), k = pr(t, W.c);
+    // 1. the whole disc, then 2. the border-image without its middle
+    D.style.opacity = d * (1 - s);
+    BI.style.opacity = s;
+    G.forEach((g) => { g.style.opacity = s * (step === 1 ? 1 : 0) * guides; });
+    L('d').style.opacity = win(t, W.d[0], W.s[0] - 0.2);
+    L('s').style.opacity = win(t, W.s[0], W.b[0] - 0.2);
+    // 3. the body, same painting, then 4. clipped to a diamond
+    B.style.opacity = b;
+    B.style.clipPath = `polygon(${FROM.map((p, i) => `${lerp(p[0], TO[i][0], k)}% ${lerp(p[1], TO[i][1], k)}%`).join(',')})`;
+    oB.style.opacity = b * (step === 2 || step === 3 ? 1 : 0) * guides;
+    L('b').style.opacity = win(t, W.b[0], W.c[0] - 0.2);
+    L('c').style.opacity = win(t, W.c[0], W.fin[0]);
+    let txt = '';
+    if (step === 0) txt = `${fr ? 'disque' : 'disc'}${c} r = 125`;
+    else if (step === 1) txt = `${fr ? 'trou' : 'hole'}${c} x 100 → 300, y 110 → 190`;
+    else if (step === 2) txt = `body${c} x 4 → 396, y −71 → 220`;
+    else if (step === 3) txt = `${fr ? 'pointe du bas' : 'bottom point'}${c} y ${f1(lerp(220, 159.6, k))}`;
+    else txt = $$('.caps .cap')[4].dataset.live || '';
+    live.textContent = txt;
+  };
+};
+</script>
+</figure>
