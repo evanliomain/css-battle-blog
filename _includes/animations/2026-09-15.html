@@ -1,0 +1,89 @@
+<figure class="anim t0915" data-duration="20" data-scene="t0915" data-wide="-40 -30 480 360" data-off-label="-36 -26" style="--bg:#993576">
+<style>
+.t0915{--t0915-t:#5adab8;--t0915-l:#f0c85a;--t0915-dash:rgb(255 230 245 / .8)}
+.t0915 .t0915-i{position:absolute;width:110px;height:110px;background:var(--t0915-t)}
+.t0915 .t0915-p{position:absolute;left:8px;top:158px;width:384px;height:134px}
+.t0915 .t0915-o{position:absolute;box-sizing:border-box;border:1.5px dashed var(--t0915-dash);pointer-events:none}
+.t0915 .zlab{color:#fff;background:rgb(50 15 40 / .9);padding:1px 5px;border-radius:3px}
+.t0915 .legend .t0915-mk{background:transparent;box-shadow:inset 0 0 0 1.5px currentColor}
+</style>
+<div class="anim-col">
+<div class="stage" role="img" aria-label="{% if include.lang == "fr" %}Animation : quatre images vides de 110 × 110, en deux paires ; la première de chaque paire a trois coins ronds, une goutte ; la seconde, avec une variable vide, n'en a que deux, une feuille ; le paragraphe qui contient la seconde paire fait un demi-tour : un trèfle{% else %}Animation: four empty images, 110 × 110, in two pairs; the first of each pair has three round corners, a drop; the second, with an empty variable, has only two, a leaf; the paragraph that holds the second pair turns half a turn: a four-leaf clover{% endif %}">
+<div class="scene">
+<div class="t0915-i" data-i="0" style="left:80px;top:30px"></div>
+<div class="t0915-i" data-i="1" style="left:210px;top:30px"></div>
+<div class="t0915-p"><div class="t0915-i" data-i="2" style="left:72px;top:22px"></div><div class="t0915-i" data-i="3" style="left:202px;top:22px"></div><div class="t0915-o" style="inset:0"></div></div>
+<span class="zlab t0915-l-b" style="left:12px;top:12px">59q = {% if include.lang == "fr" %}55,75{% else %}55.75{% endif %} → 55 · 110 × 110 · −52 + 72 = 20</span>
+<span class="zlab t0915-l-r" style="left:12px;top:12px">64% × 110 = {% if include.lang == "fr" %}70,4{% else %}70.4{% endif %} · {% if include.lang == "fr" %}70,4 + 70,4 > 110 → 55{% else %}70.4 + 70.4 > 110 → 55{% endif %}</span>
+<span class="zlab t0915-l-v" style="left:12px;top:12px">--r: → 64% 0</span>
+<span class="zlab t0915-l-s" style="left:12px;top:12px">p{scale:-1}</span>
+</div>
+</div>
+<div class="legend"><span><i style="--c:var(--t0915-t)"></i>{% if include.lang == "fr" %}première de chaque paire{% else %}first of each pair{% endif %}</span><span><i style="--c:var(--t0915-l)"></i>{% if include.lang == "fr" %}seconde (même couleur en vrai){% else %}second (same color in reality){% endif %}</span><span><i class="t0915-mk"></i>{% if include.lang == "fr" %}boîte du p{% else %}p box{% endif %}</span></div>
+</div>
+<div class="anim-side">
+<pre class="code" aria-hidden="true"><span data-on="1">&lt;img>&lt;img>&lt;p>&lt;img>&lt;img></span>&lt;style>&amp;{background:#993576}<span data-on="4" data-tone="2">p{scale:-1}</span>img{<span data-on="1">margin:22-52 2 72;border:59q solid#5ADAB8</span>;<span data-on="2 3" data-tone="2">border-radius:64%var(--r,64%)0</span>;<span data-on="3" data-tone="2">+&amp;{--r:</span></pre>
+<div class="now" aria-live="polite">
+<div class="caps">
+{%- if include.lang == "fr" %}
+<div class="cap" data-t="0" data-step="Quatre images carrées"><h3>1. Quatre images carrées</h3><p>Une <code>&lt;img></code> sans source est une boîte vide. Sa bordure de <code>59q</code> (55,75px, arrondis à 55) en fait un carré plein de 110 × 110. <code>margin:22-52 2 72</code> les espace de 110 − 52 + 72 = 130 : x = 80 et 210, en y = 30. Les deux autres sont dans un <code>&lt;p></code>, sur la ligne suivante.</p></div>
+<div class="cap" data-t="4" data-step="Trois coins ronds : une goutte"><h3>2. Trois coins ronds : une goutte</h3><p><code>border-radius:64%var(--r,64%)0</code> : sans <code>--r</code>, ça donne <code>64% 64% 0</code>, trois coins ronds, le coin bas droit carré. 64 % de 110 = 70,4 ; deux coins de 70,4 sur un côté de 110 ne tiennent pas : Chrome les réduit à 55, des demi-cercles. C'est une goutte.</p></div>
+<div class="cap" data-t="8" data-step="Une variable vide : une feuille"><h3>3. Une variable vide : une feuille</h3><p><code>+&amp;</code> imbriqué vise une <code>img</code> qui suit une <code>img</code> : la seconde de chaque paire. <code>--r:</code>, sans valeur, est une variable vide : le rayon devient <code>64% 0</code>, deux coins ronds en diagonale, de 70,4 cette fois. C'est une feuille.</p></div>
+<div class="cap" data-t="12" data-step="Le p fait un demi-tour"><h3>4. Le <code>p</code> fait un demi-tour</h3><p><code>p{scale:-1}</code> retourne le <code>p</code> sur les deux axes autour de son centre, (200 ; 225) : un demi-tour. Sa goutte passe en bas à droite, sa feuille en bas à gauche, de y = 160 à 270. Les quatre formes font le trèfle.</p></div>
+<div class="cap" data-t="16" data-step="Résultat" data-live="146 caractères · 100 % identique"><h3>5. Résultat : 146 caractères</h3><p>Une seule règle <code>img</code>, une variable vide pour la feuille, et un demi-tour pour la seconde paire.</p></div>
+{%- else %}
+<div class="cap" data-t="0" data-step="Four square images"><h3>1. Four square images</h3><p>An <code>&lt;img></code> with no source is an empty box. Its <code>59q</code> border (55.75px, rounded down to 55) makes it a solid 110 × 110 square. <code>margin:22-52 2 72</code> spaces them 110 − 52 + 72 = 130 apart: x = 80 and 210, at y = 30. The other two are in a <code>&lt;p></code>, on the next line.</p></div>
+<div class="cap" data-t="4" data-step="Three round corners: a drop"><h3>2. Three round corners: a drop</h3><p><code>border-radius:64%var(--r,64%)0</code>: with no <code>--r</code>, that is <code>64% 64% 0</code>, three round corners and a square bottom-right one. 64% of 110 is 70.4; two 70.4 corners do not fit on a 110 side, so Chrome scales them to 55, half circles. That is a drop.</p></div>
+<div class="cap" data-t="8" data-step="An empty variable: a leaf"><h3>3. An empty variable: a leaf</h3><p>The nested <code>+&amp;</code> matches an <code>img</code> right after an <code>img</code>: the second of each pair. <code>--r:</code>, with no value, is an empty variable: the radius becomes <code>64% 0</code>, two round corners on a diagonal, 70.4 this time. That is a leaf.</p></div>
+<div class="cap" data-t="12" data-step="The p turns half a turn"><h3>4. The <code>p</code> turns half a turn</h3><p><code>p{scale:-1}</code> flips the <code>p</code> on both axes around its centre, (200, 225): a half turn. Its drop moves to the bottom right, its leaf to the bottom left, from y = 160 to 270. The four shapes make the clover.</p></div>
+<div class="cap" data-t="16" data-step="Result" data-live="146 characters · 100% match"><h3>5. Result: 146 characters</h3><p>One <code>img</code> rule, an empty variable for the leaf, and a half turn for the second pair.</p></div>
+{%- endif %}
+</div>
+<div class="live"></div>
+</div>
+</div>
+<script>
+(window.AnimScenes = window.AnimScenes || {}).t0915 = (fig) => {
+  const fr = document.documentElement.lang === 'fr';
+  const $ = (s) => fig.querySelector(s);
+  const $$ = (s) => [...fig.querySelectorAll(s)];
+  const I = [0, 1, 2, 3].map((k) => $(`[data-i="${k}"]`)), P = $('.t0915-p'), oP = P.querySelector('.t0915-o'), live = $('.live');
+  const L = (k) => $(`.t0915-l-${k}`);
+  const W = { b: [0.3, 1.8], r: [4.2, 5.8], v: [8.2, 9.8], s: [12.2, 14], fin: [16.1, 16.9] };
+  const ease = (x) => (x < 0.5 ? 4 * x * x * x : 1 - Math.pow(-2 * x + 2, 3) / 2);
+  const pr = (t, [a, b]) => ease(Math.min(1, Math.max(0, (t - a) / (b - a))));
+  const win = (t, a, b) => Math.min(pr(t, [a, a + 0.5]), 1 - pr(t, [b - 0.4, b]));
+  const f1 = (v) => { const s = (Math.round(v * 100) / 100).toFixed(2).replace(/\.?0+$/, ''); return (fr ? s.replace('.', ',') : s).replace('-', '−'); };
+  const c = fr ? ' :' : ':';
+  return (t, step) => {
+    const teach = fig.dataset.teach === '1';
+    const real = !teach || t >= W.fin[0];
+    const guides = t < W.fin[0] ? 1 : 0;
+    const b = pr(t, W.b), r = pr(t, W.r), v = pr(t, W.v), s = pr(t, W.s);
+    I.forEach((el, k) => {
+      el.style.opacity = b;
+      const second = k % 2 === 1;
+      // drop: 55 55 0 55 (scaled); leaf: 70.4 0 70.4 0 once --r is empty
+      const R = 55 * r;
+      el.style.borderRadius = second
+        ? `${R + (70.4 - R) * v}px ${R * (1 - v)}px ${70.4 * v}px ${R * (1 - v)}px`
+        : `${R}px ${R}px 0 ${R}px`;
+      el.style.background = second && !real && v > 0 ? 'var(--t0915-l)' : 'var(--t0915-t)';
+    });
+    P.style.rotate = `${180 * s}deg`;
+    oP.style.opacity = (step === 3 ? 1 : 0) * guides;
+    L('b').style.opacity = win(t, W.b[0], W.r[0] - 0.2);
+    L('r').style.opacity = win(t, W.r[0], W.v[0] - 0.2);
+    L('v').style.opacity = win(t, W.v[0], W.s[0] - 0.2);
+    L('s').style.opacity = win(t, W.s[0], W.fin[0]);
+    let txt = '';
+    if (step === 0) txt = `img${c} x 80, 210 · y 30, 180`;
+    else if (step === 1) txt = `${fr ? 'rayon' : 'radius'}${c} ${f1(55 * r)}`;
+    else if (step === 2) txt = `${fr ? 'feuille' : 'leaf'}${c} ${f1(55 + 15.4 * v)} 0 ${f1(70.4 * v)} 0`;
+    else if (step === 3) txt = `p${c} ${f1(180 * s)}°`;
+    else txt = $$('.caps .cap')[4].dataset.live || '';
+    live.textContent = txt;
+  };
+};
+</script>
+</figure>
