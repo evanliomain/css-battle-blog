@@ -1,0 +1,78 @@
+<figure class="anim t0905" data-duration="20" data-scene="t0905" data-wide="-40 -30 480 360" data-off-label="-36 -26" style="--bg:#fff">
+<style>
+.t0905{--t0905-o:#f8b140;--t0905-k:#000;--t0905-t:#e05a8a;--t0905-dash:rgb(40 40 40 / .7)}
+.t0905 .t0905-html{position:absolute;left:90px;top:40px;width:220px;height:220px;border-radius:59.5px}
+.t0905 .t0905-body{position:absolute;left:120px;top:110.39px;width:30px;height:79.22px}
+.t0905 .t0905-o{position:absolute;box-sizing:border-box;border:1.5px dashed var(--t0905-dash);pointer-events:none}
+.t0905 .zlab{color:#fff;background:rgb(30 30 30 / .9);padding:1px 5px;border-radius:3px}
+</style>
+<div class="anim-col">
+<div class="stage" role="img" aria-label="{% if include.lang == "fr" %}Animation : html, un carré arrondi, a une ombre intérieure noire : un cadre ; son ombre orange, étalée de 144px, couvre tout autour ; le body, petit rectangle à gauche, est rempli de noir par la même ombre intérieure, et son ombre orange, sans étalement car sa police est nulle, ouvre le cadre{% else %}Animation: html, a rounded square, has a black inset shadow: a frame; its orange shadow, spread by 144px, covers everything around; the body, a small rectangle on the left, is filled black by the same inset shadow, and its orange shadow, with no spread because its font is zero, opens the frame{% endif %}">
+<div class="scene">
+<div class="t0905-html"></div>
+<div class="t0905-body"></div>
+<div class="t0905-o" data-o="body" style="left:120px;top:110.39px;width:30px;height:79.22px"></div>
+<span class="zlab t0905-l-h" style="left:12px;top:12px">10% × 400 = 40 · 63q = {% if include.lang == "fr" %}59,5{% else %}59.5{% endif %} · inset 32q = {% if include.lang == "fr" %}30,24{% else %}30.24{% endif %}</span>
+<span class="zlab t0905-l-s" style="left:12px;top:12px">−32q 0 0 8lh → 8 × 18 = 144</span>
+<span class="zlab t0905-l-b" style="left:12px;top:12px">font:0 → 8lh = 0 · 32% × 220 = {% if include.lang == "fr" %}70,4{% else %}70.4{% endif %}</span>
+</div>
+</div>
+<div class="legend"><span><i style="--c:var(--t0905-k)"></i>{% if include.lang == "fr" %}ombres intérieures{% else %}inset shadows{% endif %}</span><span><i style="--c:var(--t0905-o)"></i>{% if include.lang == "fr" %}ombre orange de html{% else %}html's orange shadow{% endif %}</span><span><i style="--c:var(--t0905-t)"></i>{% if include.lang == "fr" %}celle du body (orange en vrai){% else %}the body's (orange in reality){% endif %}</span></div>
+</div>
+<div class="anim-side">
+<pre class="code" aria-hidden="true">&lt;style>&amp;{<span data-on="1">border-radius:63q</span>}*{box-shadow:<span data-on="1 3" data-tone="2">inset 0 0 0 32q</span>,<span data-on="2 4" data-tone="2">-32q 0 0 8lh#F8B140</span>;<span data-on="1">margin:10%90</span>;*{<span data-on="3">margin:32%160 32%30</span>;<span data-on="3 4" data-tone="2">font:0'</span></pre>
+<div class="now" aria-live="polite">
+<div class="caps">
+{%- if include.lang == "fr" %}
+<div class="cap" data-t="0" data-step="html : un cadre noir"><h3>1. <code>html</code> : un cadre noir</h3><p><code>margin:10%90</code> : 10 % de 400 = 40 en haut et en bas, 90 sur les côtés. <code>html</code> fait 220 × 220, de x = 90 à 310 et de y = 40 à 260. <code>border-radius:63q</code> arrondit ses coins de 59,5. Son ombre <code>inset 0 0 0 32q</code>, couleur du texte (noir), peint une bande de 30,24px le long du bord intérieur : un cadre.</p></div>
+<div class="cap" data-t="4" data-step="L'ombre orange couvre le reste"><h3>2. L'ombre orange couvre le reste</h3><p>La seconde ombre, <code>-32q 0 0 8lh</code>, est orange, décalée de 30,24 à gauche et étalée de <code>8lh</code> : 8 × 18 = 144px. Elle couvre tout le canevas, sauf sous la boîte de <code>html</code>, où une ombre ne se peint jamais. Dedans, le canevas reste blanc.</p></div>
+<div class="cap" data-t="8" data-step="Le body : un bloc noir"><h3>3. Le <code>body</code> : un bloc noir</h3><p><code>*</code> imbriqué donne au <code>body</code> <code>margin:32%160 32%30</code> : 32 % des 220 de <code>html</code> = 70,4 en haut, 30 à gauche, 160 à droite. Il va de x = 120 à 150 et de y = 110,4 à 189,6. Il a la même ombre intérieure de 30,24 : sur 30 de large, elle le remplit de noir.</p></div>
+<div class="cap" data-t="12" data-step="Sa police nulle ouvre le cadre"><h3>4. Sa police nulle ouvre le cadre</h3><p><code>font:0'</code> met la police du <code>body</code> à 0, et sa hauteur de ligne aussi : <code>8lh</code> vaut 0. Son ombre orange n'est plus étalée, juste décalée de 30,24 à gauche : un bloc orange de x = 89,8 à 119,8, posé sur le bord gauche du cadre. Le cadre s'ouvre.</p></div>
+<div class="cap" data-t="16" data-step="Résultat" data-live="118 caractères · 100 % identique"><h3>5. Résultat : 118 caractères</h3><p>Deux ombres pour deux boîtes : un cadre, un fond, un bloc et une ouverture.</p></div>
+{%- else %}
+<div class="cap" data-t="0" data-step="html: a black frame"><h3>1. <code>html</code>: a black frame</h3><p><code>margin:10%90</code>: 10% of 400 = 40 at the top and bottom, 90 on the sides. <code>html</code> is 220 × 220, from x = 90 to 310 and y = 40 to 260. <code>border-radius:63q</code> rounds its corners by 59.5. Its <code>inset 0 0 0 32q</code> shadow, in the text color (black), paints a 30.24px band along the inner edge: a frame.</p></div>
+<div class="cap" data-t="4" data-step="The orange shadow covers the rest"><h3>2. The orange shadow covers the rest</h3><p>The second shadow, <code>-32q 0 0 8lh</code>, is orange, moved 30.24 left and spread by <code>8lh</code>: 8 × 18 = 144px. It covers the whole canvas, except under <code>html</code>'s box, where a shadow is never painted. Inside, the canvas stays white.</p></div>
+<div class="cap" data-t="8" data-step="The body: a black block"><h3>3. The <code>body</code>: a black block</h3><p>The nested <code>*</code> gives the <code>body</code> <code>margin:32%160 32%30</code>: 32% of <code>html</code>'s 220 = 70.4 at the top, 30 on the left, 160 on the right. It runs from x = 120 to 150 and y = 110.4 to 189.6. It has the same 30.24 inset shadow: 30 wide, it is filled black.</p></div>
+<div class="cap" data-t="12" data-step="A zero font opens the frame"><h3>4. A zero font opens the frame</h3><p><code>font:0'</code> sets the <code>body</code>'s font to 0, and its line height too: <code>8lh</code> is 0. Its orange shadow has no spread, it is only moved 30.24 left: an orange block from x = 89.8 to 119.8, over the frame's left side. The frame opens.</p></div>
+<div class="cap" data-t="16" data-step="Result" data-live="118 characters · 100% match"><h3>5. Result: 118 characters</h3><p>Two shadows on two boxes: a frame, a background, a block and an opening.</p></div>
+{%- endif %}
+</div>
+<div class="live"></div>
+</div>
+</div>
+<script>
+(window.AnimScenes = window.AnimScenes || {}).t0905 = (fig) => {
+  const fr = document.documentElement.lang === 'fr';
+  const $ = (s) => fig.querySelector(s);
+  const $$ = (s) => [...fig.querySelectorAll(s)];
+  const H = $('.t0905-html'), B = $('.t0905-body'), oB = $('[data-o="body"]'), live = $('.live');
+  const L = (k) => $(`.t0905-l-${k}`);
+  const W = { h: [0.3, 1.8], s: [4.2, 5.8], b: [8.2, 9.6], o: [12.2, 13.8], fin: [16.1, 16.9] };
+  const ease = (x) => (x < 0.5 ? 4 * x * x * x : 1 - Math.pow(-2 * x + 2, 3) / 2);
+  const pr = (t, [a, b]) => ease(Math.min(1, Math.max(0, (t - a) / (b - a))));
+  const win = (t, a, b) => Math.min(pr(t, [a, a + 0.5]), 1 - pr(t, [b - 0.4, b]));
+  const f1 = (v) => { const s = (Math.round(v * 100) / 100).toFixed(2).replace(/\.?0+$/, ''); return (fr ? s.replace('.', ',') : s).replace('-', '−'); };
+  const c = fr ? ' :' : ':';
+  return (t, step) => {
+    const teach = fig.dataset.teach === '1';
+    const real = !teach || t >= W.fin[0];
+    const guides = t < W.fin[0] ? 1 : 0;
+    const h = pr(t, W.h), s = pr(t, W.s), b = pr(t, W.b), o = pr(t, W.o);
+    H.style.boxShadow = `inset 0 0 0 ${30.24 * h}px var(--t0905-k)` + (s > 0 ? `, ${-30.24 * s}px 0 0 ${144 * s}px var(--t0905-o)` : '');
+    B.style.opacity = b;
+    B.style.boxShadow = `inset 0 0 0 30.24px var(--t0905-k)` + (o > 0 ? `, ${-30.24 * o}px 0 0 0 ${real ? 'var(--t0905-o)' : 'var(--t0905-t)'}` : '');
+    oB.style.opacity = (step === 2 ? b : 0) * guides;
+    L('h').style.opacity = win(t, W.h[0], W.s[0] - 0.2);
+    L('s').style.opacity = win(t, W.s[0], W.b[0] - 0.2);
+    L('b').style.opacity = win(t, W.b[0], W.fin[0]);
+    let txt = '';
+    if (step === 0) txt = `${fr ? 'cadre' : 'frame'}${c} ${f1(30.24 * h)}px`;
+    else if (step === 1) txt = `${fr ? 'étalement' : 'spread'}${c} ${f1(144 * s)}px`;
+    else if (step === 2) txt = `body${c} x 120 → 150, y ${f1(110.39)} → ${f1(189.61)}`;
+    else if (step === 3) txt = `${fr ? 'ouverture' : 'opening'}${c} x ${f1(120 - 30.24 * o)} → ${f1(150 - 30.24 * o)}`;
+    else txt = $$('.caps .cap')[4].dataset.live || '';
+    live.textContent = txt;
+  };
+};
+</script>
+</figure>
