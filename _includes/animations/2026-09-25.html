@@ -1,0 +1,106 @@
+<figure class="anim t0925" data-duration="24" data-scene="t0925" data-wide="-40 -30 480 360" data-off-label="-36 -26" style="--bg:#9676cf">
+<style>
+.t0925{--t0925-purple:#9676cf;--t0925-dark:#7454b4;--t0925-cream:#fff8e1;--t0925-teach:#f0a040;--t0925-dash:rgb(40 20 80 / .8)}
+.t0925 .t0925-b{position:absolute;box-sizing:border-box;border-radius:28.35px}
+.t0925 .t0925-html{background:transparent}
+.t0925 .t0925-body{background:var(--t0925-purple)}
+.t0925 .t0925-dl{background:var(--t0925-purple);border:10px solid var(--t0925-dark)}
+.t0925 .t0925-o{position:absolute;box-sizing:border-box;border:1.5px dashed var(--t0925-dash);pointer-events:none}
+.t0925 .zlab{color:#fff;background:rgb(40 25 70 / .88);padding:1px 5px;border-radius:3px}
+.t0925 .legend .t0925-mk{background:transparent;box-shadow:inset 0 0 0 1.5px currentColor}
+</style>
+<div class="anim-col">
+<div class="stage" role="img" aria-label="{% if include.lang == "fr" %}Animation : avec zoom:5, html devient une petite boîte en haut, et son ombre crème couvre tout le canevas violet sauf elle : c'est la poignée ; le body violet fait la cuve ; un dl réduit à sa bordure et ses deux ombres fait le couvercle ; un second dl, allongé par un paragraphe vide, fait les trois lamelles{% else %}Animation: with zoom:5, html becomes a small box at the top, and its cream shadow covers the whole purple canvas except that box: the handle; the purple body is the can; a dl reduced to its border and two shadows is the lid; a second dl, stretched by an empty paragraph, makes the three slats{% endif %}">
+<div class="scene">
+<div class="t0925-b t0925-html" style="left:165px;top:40px;width:70px;height:40px"></div>
+<div class="t0925-b t0925-body" style="left:130px;top:60px;width:140px;height:200px"></div>
+<div class="t0925-b t0925-dl" data-dl="0" style="left:155px;top:60px;width:90px;height:20px"></div>
+<div class="t0925-b t0925-dl" data-dl="1" style="left:190px;top:110px;width:20px"></div>
+<div class="t0925-o" data-o="html" style="left:165px;top:40px;width:70px;height:40px"></div>
+<div class="t0925-o" data-o="body" style="left:130px;top:60px;width:140px;height:200px;border-radius:28.35px"></div>
+<span class="zlab t0925-l-z" style="left:12px;top:12px">zoom:5 · 400 / 5 − 33 − 33 = 14 → 70px</span>
+<span class="zlab t0925-l-m" style="left:12px;top:36px">margin:8 33 44 → 40 · 165 · 220</span>
+<span class="zlab t0925-l-s" style="left:12px;top:12px">9in = 864 → × 5</span>
+<span class="zlab t0925-l-b" style="left:12px;top:12px">margin:−4 −7 24 · 28 × 40 → 140 × 200</span>
+<span class="zlab t0925-l-d" style="left:12px;top:12px">2px → 10 · 6pt = 8 → 40px</span>
+<span class="zlab t0925-l-p" style="left:12px;top:12px">p{margin:−4 … 24} → 20 → 100px</span>
+</div>
+</div>
+<div class="legend"><span><i style="--c:var(--t0925-cream)"></i>{% if include.lang == "fr" %}ombre de html{% else %}html's shadow{% endif %}</span><span><i style="--c:var(--t0925-dark)"></i>{% if include.lang == "fr" %}bordures des dl{% else %}dl borders{% endif %}</span><span><i style="--c:var(--t0925-teach)"></i>{% if include.lang == "fr" %}ombres des dl (violet foncé en vrai){% else %}dl shadows (dark purple in reality){% endif %}</span><span><i class="t0925-mk"></i>{% if include.lang == "fr" %}boîtes{% else %}boxes{% endif %}</span></div>
+</div>
+<div class="anim-side">
+<pre class="code" aria-hidden="true"><span data-on="4">&lt;dl></span><span data-on="5">&lt;dl></span><span data-on="5">&lt;p></span>&lt;style>*{background:#9676CF;color:7454B4;border-radius:6q;<span data-on="3 5">margin:-4-7 24</span>}&amp;{<span data-on="1" data-tone="2">zoom:5</span>;<span data-on="1">margin:8 33 44</span>;<span data-on="2" data-tone="2">box-shadow:0 0 0 9in#FFF8E1</span>;dl{<span data-on="4 5">border:2px solid</span>;<span data-on="4 5" data-tone="2">box-shadow:6pt 0,-6pt 0</span>;<span data-on="4 5">margin:8 5-60</span></pre>
+<div class="now" aria-live="polite">
+<div class="caps">
+{%- if include.lang == "fr" %}
+<div class="cap" data-t="0" data-step="zoom:5 : une petite html"><h3>1. <code>zoom:5</code> : une petite html</h3><p><code>&amp;</code> seul vise <code>html</code>. <code>zoom:5</code> agrandit tout cinq fois : il ne reste que 400 / 5 = 80 sur 300 / 5 = 60 pixels CSS. <code>margin:8 33 44</code> laisse à <code>html</code> 80 − 33 − 33 = 14 de large et, en mode quirks, 60 − 8 − 44 = 8 de haut : une boîte de 70 × 40 à l'écran, en (165 ; 40).</p></div>
+<div class="cap" data-t="4" data-step="L'ombre crème : la poignée"><h3>2. L'ombre crème : la poignée</h3><p>Le fond violet de <code>html</code> va au canevas. Son ombre s'étale de <code>9in</code> (864px, × 5) en crème : elle couvre tout le canevas, sauf sous la boîte de <code>html</code>, où une ombre ne se peint jamais. Le violet n'y reste visible que dans un rectangle arrondi par <code>border-radius:6q</code> : la poignée du couvercle.</p></div>
+<div class="cap" data-t="8" data-step="Le body : la cuve"><h3>3. Le body : la cuve</h3><p>Le <code>body</code> reçoit <code>margin:-4-7 24</code> de <code>*</code>. Les marges de −7 sur les côtés l'élargissent : 14 + 7 + 7 = 28, soit 140px. En mode quirks, il fait la hauteur de la page moins ses marges : 60 + 4 − 24 = 40, soit 200px. De y = 60 à 260, violet, coins de 28,35px : la cuve.</p></div>
+<div class="cap" data-t="12" data-step="Le premier dl : le couvercle"><h3>4. Le premier <code>dl</code> : le couvercle</h3><p><code>margin:8 5-60</code> le met 5 à l'intérieur de chaque côté : 18 de large. Sa marge basse de −60 annule la hauteur de ce qu'il contient : il ne reste que sa bordure de 2 + 2, 20px à l'écran, de la couleur du texte <code>7454B4</code>. Ses ombres de <code>6pt</code> (8, soit 40px) de chaque côté l'allongent de x = 115 à 285.</p></div>
+<div class="cap" data-t="16" data-step="Le second dl : trois lamelles"><h3>5. Le second <code>dl</code> : trois lamelles</h3><p>Le second <code>dl</code>, dans le premier, a les mêmes règles : 18 − 4 − 10 = 4 de large (20px), en x = 190. Le <code>p</code> vide en lui a <code>margin:-4…24</code> : 20 de contenu, donc une barre de 24 (120px), de y = 110 à 230. Ses deux ombres de 40px font les lamelles de gauche et de droite.</p></div>
+<div class="cap" data-t="20" data-step="Résultat" data-live="193 caractères · 100 % identique"><h3>6. Résultat : 193 caractères</h3><p>Une ombre pour le fond et la poignée, le <code>body</code> pour la cuve, deux <code>dl</code> pour le couvercle et les lamelles.</p></div>
+{%- else %}
+<div class="cap" data-t="0" data-step="zoom:5: a small html"><h3>1. <code>zoom:5</code>: a small html</h3><p>A lone <code>&amp;</code> matches <code>html</code>. <code>zoom:5</code> makes everything five times bigger: only 400 / 5 = 80 by 300 / 5 = 60 CSS pixels are left. <code>margin:8 33 44</code> leaves <code>html</code> 80 − 33 − 33 = 14 wide and, in quirks mode, 60 − 8 − 44 = 8 tall: a 70 × 40 box on screen, at (165, 40).</p></div>
+<div class="cap" data-t="4" data-step="The cream shadow: the handle"><h3>2. The cream shadow: the handle</h3><p><code>html</code>'s purple background goes to the canvas. Its shadow spreads <code>9in</code> (864px, × 5) in cream: it covers the whole canvas, except under <code>html</code>'s box, where a shadow is never painted. The purple only shows in that box, rounded by <code>border-radius:6q</code>: the handle of the lid.</p></div>
+<div class="cap" data-t="8" data-step="The body: the can"><h3>3. The body: the can</h3><p>The <code>body</code> gets <code>margin:-4-7 24</code> from <code>*</code>. The −7 side margins make it wider: 14 + 7 + 7 = 28, so 140px. In quirks mode, it is the page height minus its margins: 60 + 4 − 24 = 40, so 200px. From y = 60 to 260, purple, with 28.35px corners: the can.</p></div>
+<div class="cap" data-t="12" data-step="The first dl: the lid"><h3>4. The first <code>dl</code>: the lid</h3><p><code>margin:8 5-60</code> puts it 5 inside each side: 18 wide. Its −60 bottom margin cancels the height of what it holds: only its 2 + 2 border is left, 20px on screen, in the text color <code>7454B4</code>. Its <code>6pt</code> shadows (8, so 40px) on each side stretch it from x = 115 to 285.</p></div>
+<div class="cap" data-t="16" data-step="The second dl: three slats"><h3>5. The second <code>dl</code>: three slats</h3><p>The second <code>dl</code>, inside the first one, gets the same rules: 18 − 4 − 10 = 4 wide (20px), at x = 190. The empty <code>p</code> inside it has <code>margin:-4…24</code>: 20 of content, so a 24 tall bar (120px), from y = 110 to 230. Its two 40px shadows make the left and right slats.</p></div>
+<div class="cap" data-t="20" data-step="Result" data-live="193 characters · 100% match"><h3>6. Result: 193 characters</h3><p>One shadow for the background and the handle, the <code>body</code> for the can, two <code>dl</code> for the lid and the slats.</p></div>
+{%- endif %}
+</div>
+<div class="live"></div>
+</div>
+</div>
+<script>
+(window.AnimScenes = window.AnimScenes || {}).t0925 = (fig) => {
+  const fr = document.documentElement.lang === 'fr';
+  const $ = (s) => fig.querySelector(s);
+  const $$ = (s) => [...fig.querySelectorAll(s)];
+  const H = $('.t0925-html'), B = $('.t0925-body'), D0 = $('[data-dl="0"]'), D1 = $('[data-dl="1"]'), live = $('.live');
+  const oH = $('[data-o="html"]'), oB = $('[data-o="body"]');
+  const L = (k) => $(`.t0925-l-${k}`);
+  const W = { html: [0.3, 1.8], sh: [4.2, 6], body: [8.2, 9.8], lid: [12.2, 14], slat: [16.2, 18], fin: [20.1, 20.9] };
+  const ease = (x) => (x < 0.5 ? 4 * x * x * x : 1 - Math.pow(-2 * x + 2, 3) / 2);
+  const pr = (t, [a, b]) => ease(Math.min(1, Math.max(0, (t - a) / (b - a))));
+  const lerp = (a, b, m) => a + (b - a) * m;
+  const win = (t, a, b) => Math.min(pr(t, [a, a + 0.5]), 1 - pr(t, [b - 0.4, b]));
+  const f1 = (v) => { const s = (Math.round(v * 100) / 100).toFixed(2).replace(/\.?0+$/, ''); return (fr ? s.replace('.', ',') : s).replace('-', '−'); };
+  const c = fr ? ' :' : ':';
+  return (t, step) => {
+    const teach = fig.dataset.teach === '1';
+    const real = !teach || t >= W.fin[0];
+    const guides = t < W.fin[0] ? 1 : 0;
+    const h = pr(t, W.html), s = pr(t, W.sh), b = pr(t, W.body), d = pr(t, W.lid), p = pr(t, W.slat);
+    const shc = real ? 'var(--t0925-dark)' : 'var(--t0925-teach)';
+    // 1-2. html: a 70 × 40 box, then its cream shadow covers everything else
+    H.style.boxShadow = `0 0 0 ${600 * s}px var(--t0925-cream)`;
+    Object.assign(oH.style, { left: `${lerp(0, 165, h)}px`, top: `${lerp(0, 40, h)}px`, width: `${lerp(400, 70, h)}px`, height: `${lerp(300, 40, h)}px` });
+    oH.style.opacity = (step <= 1 ? 1 : 0) * guides;
+    L('z').style.opacity = win(t, W.html[0], W.sh[0] - 0.2);
+    L('m').style.opacity = win(t, W.html[0], W.sh[0] - 0.2);
+    L('s').style.opacity = win(t, W.sh[0], W.body[0] - 0.2);
+    // 3. body: the can
+    B.style.opacity = b;
+    oB.style.opacity = b * (step === 2 ? 1 : 0) * guides;
+    L('b').style.opacity = win(t, W.body[0], W.lid[0]);
+    // 4. first dl: border only, then its two shadows
+    D0.style.opacity = d > 0 ? 1 : 0;
+    D0.style.boxShadow = `${40 * d}px 0 ${shc}, ${-40 * d}px 0 ${shc}`;
+    L('d').style.opacity = win(t, W.lid[0], W.slat[0]);
+    // 5. second dl: 4 tall, stretched to 24 by the p, then its shadows
+    D1.style.opacity = p > 0 ? 1 : 0;
+    D1.style.height = `${lerp(20, 120, p)}px`;
+    D1.style.boxShadow = `${40 * p}px 0 ${shc}, ${-40 * p}px 0 ${shc}`;
+    L('p').style.opacity = win(t, W.slat[0], W.fin[0]);
+    let txt = '';
+    if (step === 0) txt = `html${c} ${f1(lerp(400, 70, h))} × ${f1(lerp(300, 40, h))}`;
+    else if (step === 1) txt = `${fr ? 'ombre' : 'shadow'}${c} ${f1(864 * s)} × 5`;
+    else if (step === 2) txt = `body${c} x 130 → 270, y 60 → 260`;
+    else if (step === 3) txt = `${fr ? 'couvercle' : 'lid'}${c} x ${f1(155 - 40 * d)} → ${f1(245 + 40 * d)}`;
+    else if (step === 4) txt = `${fr ? 'lamelles' : 'slats'}${c} y 110 → ${f1(lerp(130, 230, p))}`;
+    else txt = $$('.caps .cap')[5].dataset.live || '';
+    live.textContent = txt;
+  };
+};
+</script>
+</figure>
