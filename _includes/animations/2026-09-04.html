@@ -1,0 +1,88 @@
+<figure class="anim t0904" data-duration="20" data-scene="t0904" data-wide="-40 -30 480 360" data-off-label="-36 -26" style="--bg:#4a9a86">
+<style>
+.t0904{--t0904-g:#4a9a86;--t0904-y:#edec84;--t0904-t:#f0a040;--t0904-dash:rgb(255 255 230 / .85)}
+.t0904 .t0904-p{position:absolute;left:90px;width:220px;height:20px}
+.t0904 .t0904-p > i{position:absolute;display:block;left:0;top:0;width:220px;height:20px}
+.t0904 .t0904-p > b{position:absolute;inset:0;background:var(--t0904-g)}
+.t0904 .t0904-p > u{position:absolute;inset:0;box-sizing:border-box;border:1.5px dashed var(--t0904-dash)}
+.t0904 .zlab{color:#fff;background:rgb(20 50 45 / .9);padding:1px 5px;border-radius:3px}
+</style>
+<div class="anim-col">
+<div class="stage" role="img" aria-label="{% if include.lang == "fr" %}Animation : trois paragraphes de 220 × 20, de la couleur du fond, espacés de 20 ; leurs ombres jaunes, au-dessus et au-dessous, font quatre barres ; une troisième ombre décalée à droite ne dépasse que de 20px : un petit carré ; le paragraphe du milieu, retourné, envoie le sien à gauche{% else %}Animation: three 220 × 20 paragraphs, the color of the background, 20 apart; their yellow shadows, above and below, make four bars; a third shadow moved to the right only sticks out by 20px: a small square; the middle paragraph, flipped, sends its square to the left{% endif %}">
+<div class="scene">
+<div class="t0904-p" data-p="0" style="top:100px"><i data-s="u"></i><i data-s="d"></i><i data-s="r"></i><b></b><u></u></div>
+<div class="t0904-p" data-p="1" style="top:140px"><i data-s="u"></i><i data-s="d"></i><i data-s="r"></i><b></b><u></u></div>
+<div class="t0904-p" data-p="2" style="top:180px"><i data-s="u"></i><i data-s="d"></i><i data-s="r"></i><b></b><u></u></div>
+<span class="zlab t0904-l-m" style="left:12px;top:12px">margin:50 30 −30 · 50 − 30 = 20</span>
+<span class="zlab t0904-l-v" style="left:12px;top:12px">0 5vw, 0 −5vw → ±20</span>
+<span class="zlab t0904-l-r" style="left:12px;top:12px">5vw 0 → +20</span>
+<span class="zlab t0904-l-a" style="left:12px;top:12px">[a]{scale:-1}</span>
+</div>
+</div>
+<div class="legend"><span><i style="--c:var(--t0904-y)"></i>{% if include.lang == "fr" %}ombres des p{% else %}the p's shadows{% endif %}</span><span><i style="--c:var(--t0904-t)"></i>{% if include.lang == "fr" %}ombre de droite (jaune en vrai){% else %}right shadow (yellow in reality){% endif %}</span></div>
+</div>
+<div class="anim-side">
+<pre class="code" aria-hidden="true"><span data-on="1">&lt;p></span><span data-on="1 4">&lt;p a></span><span data-on="1">&lt;p></span>&lt;style>*{background:#4a9a86;<span data-on="1">margin:50 30-30</span>;p{<span data-on="1">height:20</span>;color:EDEC84;box-shadow:<span data-on="2" data-tone="2">0 5vw,0-5vw</span>,<span data-on="3" data-tone="2">5vw 0</span>}<span data-on="4" data-tone="2">[a]{scale:-1</span></pre>
+<div class="now" aria-live="polite">
+<div class="caps">
+{%- if include.lang == "fr" %}
+<div class="cap" data-t="0" data-step="Trois p invisibles"><h3>1. Trois <code>p</code> invisibles</h3><p><code>*</code> donne à tout le fond vert et <code>margin:50 30-30</code>. <code>html</code> commence en (30 ; 50), le <code>body</code> en (60 ; 100), et les <code>p</code> vont de x = 90 à 310, hauts de <code>20</code>. Entre deux <code>p</code>, la marge basse de −30 et la marge haute de 50 fusionnent en 50 − 30 = 20 : ils sont en y = 100, 140 et 180. Verts sur vert, on ne les voit pas.</p></div>
+<div class="cap" data-t="4" data-step="Ombres en haut et en bas"><h3>2. Ombres en haut et en bas</h3><p>Chaque <code>p</code> a des ombres de la couleur du texte, <code>EDEC84</code> (un hex sans <code>#</code>, permis en mode quirks). <code>0 5vw</code> et <code>0-5vw</code> font des copies 20px plus bas et plus haut. Elles se rejoignent entre les <code>p</code> : quatre barres jaunes, en y = 80, 120, 160 et 200.</p></div>
+<div class="cap" data-t="8" data-step="Une ombre à droite : un carré"><h3>3. Une ombre à droite : un carré</h3><p><code>5vw 0</code> décale une troisième copie de 20px à droite. Une ombre ne se peint jamais sous sa boîte : seuls ses 20 derniers pixels dépassent, de x = 310 à 330. Chaque <code>p</code> a donc un petit carré jaune à droite, à sa hauteur.</p></div>
+<div class="cap" data-t="12" data-step="Le p du milieu, retourné"><h3>4. Le <code>p</code> du milieu, retourné</h3><p><code>&lt;p a></code> est visé par <code>[a]</code> : <code>scale:-1</code> le retourne autour de son centre, (200 ; 150). Ses ombres du haut et du bas s'échangent, sans rien changer, mais son carré passe à gauche : de x = 70 à 90.</p></div>
+<div class="cap" data-t="16" data-step="Résultat" data-live="121 caractères · 100 % identique"><h3>5. Résultat : 121 caractères</h3><p>Trois <code>p</code> invisibles, trois ombres chacun, et un retournement.</p></div>
+{%- else %}
+<div class="cap" data-t="0" data-step="Three invisible p"><h3>1. Three invisible <code>p</code></h3><p><code>*</code> gives everything the green background and <code>margin:50 30-30</code>. <code>html</code> starts at (30, 50), the <code>body</code> at (60, 100), and the <code>p</code> run from x = 90 to 310, <code>20</code> tall. Between two <code>p</code>, the −30 bottom margin and the 50 top margin merge into 50 − 30 = 20: they sit at y = 100, 140 and 180. Green on green, they cannot be seen.</p></div>
+<div class="cap" data-t="4" data-step="Shadows above and below"><h3>2. Shadows above and below</h3><p>Each <code>p</code> has shadows in the text color, <code>EDEC84</code> (a hex with no <code>#</code>, allowed in quirks mode). <code>0 5vw</code> and <code>0-5vw</code> make copies 20px lower and higher. They meet between the <code>p</code>: four yellow bars, at y = 80, 120, 160 and 200.</p></div>
+<div class="cap" data-t="8" data-step="A shadow on the right: a square"><h3>3. A shadow on the right: a square</h3><p><code>5vw 0</code> moves a third copy 20px right. A shadow is never painted under its box: only its last 20 pixels stick out, from x = 310 to 330. So each <code>p</code> has a small yellow square on its right, at its height.</p></div>
+<div class="cap" data-t="12" data-step="The middle p, flipped"><h3>4. The middle <code>p</code>, flipped</h3><p><code>&lt;p a></code> is matched by <code>[a]</code>: <code>scale:-1</code> flips it around its centre, (200, 150). Its top and bottom shadows swap places, which changes nothing, but its square moves to the left: from x = 70 to 90.</p></div>
+<div class="cap" data-t="16" data-step="Result" data-live="121 characters · 100% match"><h3>5. Result: 121 characters</h3><p>Three invisible <code>p</code>, three shadows each, and one flip.</p></div>
+{%- endif %}
+</div>
+<div class="live"></div>
+</div>
+</div>
+<script>
+(window.AnimScenes = window.AnimScenes || {}).t0904 = (fig) => {
+  const fr = document.documentElement.lang === 'fr';
+  const $ = (s) => fig.querySelector(s);
+  const $$ = (s) => [...fig.querySelectorAll(s)];
+  const P = $$('.t0904-p'), live = $('.live');
+  const L = (k) => $(`.t0904-l-${k}`);
+  const W = { m: [0.3, 1.8], v: [4.2, 5.8], r: [8.2, 9.8], a: [12.2, 14], fin: [16.1, 16.9] };
+  const ease = (x) => (x < 0.5 ? 4 * x * x * x : 1 - Math.pow(-2 * x + 2, 3) / 2);
+  const pr = (t, [a, b]) => ease(Math.min(1, Math.max(0, (t - a) / (b - a))));
+  const win = (t, a, b) => Math.min(pr(t, [a, a + 0.5]), 1 - pr(t, [b - 0.4, b]));
+  const f1 = (v) => { const s = (Math.round(v * 100) / 100).toFixed(2).replace(/\.?0+$/, ''); return (fr ? s.replace('.', ',') : s).replace('-', '−'); };
+  const c = fr ? ' :' : ':';
+  return (t, step) => {
+    const teach = fig.dataset.teach === '1';
+    const real = !teach || t >= W.fin[0];
+    const guides = t < W.fin[0] ? 1 : 0;
+    const m = pr(t, W.m), v = pr(t, W.v), r = pr(t, W.r), a = pr(t, W.a);
+    P.forEach((p, k) => {
+      const [u, d, rt] = p.querySelectorAll('i');
+      u.style.top = `${-20 * v}px`; d.style.top = `${20 * v}px`;
+      u.style.background = d.style.background = 'var(--t0904-y)';
+      u.style.opacity = d.style.opacity = v > 0 ? 1 : 0;
+      rt.style.left = `${20 * r}px`;
+      rt.style.background = real ? 'var(--t0904-y)' : 'var(--t0904-t)';
+      rt.style.opacity = r > 0 ? 1 : 0;
+      p.querySelector('u').style.opacity = m * guides;
+      if (k === 1) p.style.rotate = `${180 * a}deg`;
+    });
+    L('m').style.opacity = win(t, W.m[0], W.v[0] - 0.2);
+    L('v').style.opacity = win(t, W.v[0], W.r[0] - 0.2);
+    L('r').style.opacity = win(t, W.r[0], W.a[0] - 0.2);
+    L('a').style.opacity = win(t, W.a[0], W.fin[0]);
+    let txt = '';
+    if (step === 0) txt = `p${c} y 100, 140, 180`;
+    else if (step === 1) txt = `${fr ? 'barres' : 'bars'}${c} y 80, 120, 160, 200`;
+    else if (step === 2) txt = `${fr ? 'carrés' : 'squares'}${c} x 310 → ${f1(310 + 20 * r)}`;
+    else if (step === 3) txt = `p a${c} ${f1(180 * a)}°`;
+    else txt = $$('.caps .cap')[4].dataset.live || '';
+    live.textContent = txt;
+  };
+};
+</script>
+</figure>
