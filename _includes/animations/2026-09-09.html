@@ -1,0 +1,95 @@
+<figure class="anim t0909" data-duration="16" data-scene="t0909" data-wide="-40 -30 480 400" data-off-label="-36 -26" style="--bg:#fff">
+<style>
+.t0909{--t0909-b:#3090c0;--t0909-d:#3b3f58;--t0909-h:#e0782a;--t0909-dash:rgb(20 30 50 / .75)}
+.t0909 .t0909-can{position:absolute;left:0;top:0;width:400px;height:300px;background:var(--t0909-b)}
+.t0909 .t0909-s{position:absolute}
+.t0909 .t0909-o{position:absolute;box-sizing:border-box;border:1.5px dashed var(--t0909-dash);pointer-events:none}
+.t0909 .zlab{color:#fff;background:rgb(20 25 45 / .9);padding:1px 5px;border-radius:3px}
+</style>
+<div class="anim-col">
+<div class="stage" role="img" aria-label="{% if include.lang == "fr" %}Animation : le fond du body, bleu, passe au canevas ; html, une boîte vide au milieu, projette trois ombres dont seuls dépassent des traits fins à gauche, à droite et en bas ; le body, plus haut, projette les mêmes ombres, mais ses lh et ch sont bien plus grands : trois carrés{% else %}Animation: the body's blue background moves to the canvas; html, an empty box in the middle, casts three shadows of which only thin lines stick out on the left, the right and the bottom; the body, higher up, casts the same shadows, but its lh and ch are much bigger: three squares{% endif %}">
+<div class="scene">
+<div class="t0909-can"></div>
+<div class="t0909-s" data-s="h0"></div>
+<div class="t0909-s" data-s="h1"></div>
+<div class="t0909-s" data-s="h2"></div>
+<div class="t0909-s" data-s="b0"></div>
+<div class="t0909-s" data-s="b1"></div>
+<div class="t0909-s" data-s="b2"></div>
+<div class="t0909-o" data-o="html" style="left:115px;top:90px;width:170px;height:120px"></div>
+<div class="t0909-o" data-o="body" style="left:165px;top:30px;width:70px;height:90px"></div>
+<span class="zlab t0909-l-c" style="left:12px;top:12px">#28be → {% if include.lang == "fr" %}canevas{% else %}canvas{% endif %}</span>
+<span class="zlab t0909-l-h" style="left:12px;top:12px">.56lh = {% if include.lang == "fr" %}10,08{% else %}10.08{% endif %} · 11Q = {% if include.lang == "fr" %}10,39{% else %}10.39{% endif %} · 33ch = 264</span>
+<span class="zlab t0909-l-b" style="left:12px;top:276px">9q/19 → lh = {% if include.lang == "fr" %}161,5{% else %}161.5{% endif %} · ch = {% if include.lang == "fr" %}4,25{% else %}4.25{% endif %}</span>
+</div>
+</div>
+<div class="legend"><span><i style="--c:var(--t0909-h)"></i>{% if include.lang == "fr" %}ombres de html (gris foncé en vrai){% else %}html's shadows (dark grey in reality){% endif %}</span><span><i style="--c:var(--t0909-d)"></i>{% if include.lang == "fr" %}ombres du body{% else %}the body's shadows{% endif %}</span></div>
+</div>
+<div class="anim-side">
+<pre class="code" aria-hidden="true">&lt;style>*{<span data-on="2">margin:90 115</span>;color:3B3F58;<span data-on="2 3" data-tone="2">box-shadow:.56lh 11Q,-.56lh 11Q,0 33ch</span>;*{<span data-on="1" data-tone="2">background:#28be</span>;<span data-on="3">margin:-60 50 90</span>;<span data-on="3">font:9q/19"</span></pre>
+<div class="now" aria-live="polite">
+<div class="caps">
+{%- if include.lang == "fr" %}
+<div class="cap" data-t="0" data-step="Le fond du body, sur le canevas"><h3>1. Le fond du <code>body</code>, sur le canevas</h3><p>Seul le <code>body</code> (via <code>*</code> imbriqué) a un fond : <code>#28be</code>, un bleu un peu transparent. <code>html</code> n'en a pas : c'est alors le fond du <code>body</code> qui peint tout le canevas, sur du blanc. Le <code>body</code> lui-même ne le peint plus.</p></div>
+<div class="cap" data-t="4" data-step="Les ombres de html : des traits"><h3>2. Les ombres de <code>html</code> : des traits</h3><p><code>margin:90 115</code> : <code>html</code> va de x = 115 à 285 et de y = 90 à 210. Ses ombres, couleur du texte <code>3B3F58</code> : <code>.56lh 11Q</code> (10,08 à droite, 10,39 plus bas), la même à gauche, et <code>0 33ch</code> (264 plus bas, hors du canevas). Une ombre ne se peint jamais sous sa boîte : il n'en dépasse que des traits de 10px, à gauche, à droite et en bas.</p></div>
+<div class="cap" data-t="8" data-step="Les mêmes ombres sur le body"><h3>3. Les mêmes ombres sur le <code>body</code></h3><p>Le <code>body</code> a les mêmes ombres. <code>margin:-60 50 90</code> le place de x = 165 à 235 et de y = 30 à 120. Sa police <code>9q/19</code> fait 8,5px avec une hauteur de ligne de 19 × 8,5 = 161,5 : <code>.56lh</code> vaut 90,44, et <code>33ch</code> = 33 × 4,25 = 140,25. Ses ombres de 70 × 90 font les deux carrés du haut, à ±90,44, et celui du bas, de y = 170,25 à 260,25.</p></div>
+<div class="cap" data-t="12" data-step="Résultat" data-live="122 caractères · 100 % identique"><h3>4. Résultat : 122 caractères</h3><p>Une liste de trois ombres, deux tailles d'unités : des traits pour <code>html</code>, des carrés pour le <code>body</code>.</p></div>
+{%- else %}
+<div class="cap" data-t="0" data-step="The body's background, on the canvas"><h3>1. The <code>body</code>'s background, on the canvas</h3><p>Only the <code>body</code> (through the nested <code>*</code>) has a background: <code>#28be</code>, a slightly transparent blue. <code>html</code> has none, so the <code>body</code>'s background paints the whole canvas, over white. The <code>body</code> itself no longer paints it.</p></div>
+<div class="cap" data-t="4" data-step="html's shadows: lines"><h3>2. <code>html</code>'s shadows: lines</h3><p><code>margin:90 115</code>: <code>html</code> runs from x = 115 to 285 and y = 90 to 210. Its shadows, in the text color <code>3B3F58</code>: <code>.56lh 11Q</code> (10.08 right, 10.39 down), the same to the left, and <code>0 33ch</code> (264 down, off the canvas). A shadow is never painted under its box: only 10px lines stick out, on the left, the right and the bottom.</p></div>
+<div class="cap" data-t="8" data-step="The same shadows on the body"><h3>3. The same shadows on the <code>body</code></h3><p>The <code>body</code> has the same shadows. <code>margin:-60 50 90</code> puts it from x = 165 to 235 and y = 30 to 120. Its <code>9q/19</code> font is 8.5px with a line height of 19 × 8.5 = 161.5: <code>.56lh</code> is 90.44, and <code>33ch</code> = 33 × 4.25 = 140.25. Its 70 × 90 shadows make the two top squares, at ±90.44, and the bottom one, from y = 170.25 to 260.25.</p></div>
+<div class="cap" data-t="12" data-step="Result" data-live="122 characters · 100% match"><h3>4. Result: 122 characters</h3><p>One list of three shadows, two sizes of units: lines for <code>html</code>, squares for the <code>body</code>.</p></div>
+{%- endif %}
+</div>
+<div class="live"></div>
+</div>
+</div>
+<script>
+(window.AnimScenes = window.AnimScenes || {}).t0909 = (fig) => {
+  const fr = document.documentElement.lang === 'fr';
+  const $ = (s) => fig.querySelector(s);
+  const $$ = (s) => [...fig.querySelectorAll(s)];
+  const CAN = $('.t0909-can'), oH = $('[data-o="html"]'), oB = $('[data-o="body"]'), live = $('.live');
+  const S = (k) => $(`[data-s="${k}"]`);
+  const L = (k) => $(`.t0909-l-${k}`);
+  const W = { c: [0.3, 1.6], h: [4.2, 5.8], b: [8.2, 9.8], fin: [12.1, 12.9] };
+  const ease = (x) => (x < 0.5 ? 4 * x * x * x : 1 - Math.pow(-2 * x + 2, 3) / 2);
+  const pr = (t, [a, b]) => ease(Math.min(1, Math.max(0, (t - a) / (b - a))));
+  const win = (t, a, b) => Math.min(pr(t, [a, a + 0.5]), 1 - pr(t, [b - 0.4, b]));
+  const f1 = (v) => { const s = (Math.round(v * 100) / 100).toFixed(2).replace(/\.?0+$/, ''); return (fr ? s.replace('.', ',') : s).replace('-', '−'); };
+  const c = fr ? ' :' : ':';
+  const HB = [115, 90, 170, 120], BB = [165, 30, 70, 90];
+  const HO = [[10.08, 10.39], [-10.08, 10.39], [0, 264]], BO = [[90.44, 10.39], [-90.44, 10.39], [0, 140.25]];
+  // a shadow is cut out under its own box
+  const clipOut = (el, x, y, [bx, by, bw, bh]) => {
+    const hx = bx - x, hy = by - y;
+    el.style.clipPath = `polygon(evenodd, -900px -900px, 900px -900px, 900px 900px, -900px 900px, -900px -900px, ${hx}px ${hy}px, ${hx + bw}px ${hy}px, ${hx + bw}px ${hy + bh}px, ${hx}px ${hy + bh}px, ${hx}px ${hy}px)`;
+  };
+  return (t, step) => {
+    const teach = fig.dataset.teach === '1';
+    const real = !teach || t >= W.fin[0];
+    const guides = t < W.fin[0] ? 1 : 0;
+    const cc = pr(t, W.c), h = pr(t, W.h), b = pr(t, W.b);
+    CAN.style.opacity = cc;
+    [['h', HB, HO, h, real ? 'var(--t0909-d)' : 'var(--t0909-h)'], ['b', BB, BO, b, 'var(--t0909-d)']].forEach(([p, box, off, m, col]) => {
+      off.forEach(([dx, dy], k) => {
+        const el = S(p + k), x = box[0] + dx * m, y = box[1] + dy * m;
+        Object.assign(el.style, { left: `${x}px`, top: `${y}px`, width: `${box[2]}px`, height: `${box[3]}px`, background: col, opacity: m > 0 ? 1 : 0 });
+        clipOut(el, x, y, box);
+      });
+    });
+    oH.style.opacity = (step === 1 ? 1 : 0) * guides;
+    oB.style.opacity = (step === 2 ? 1 : 0) * guides;
+    L('c').style.opacity = win(t, W.c[0], W.h[0] - 0.2);
+    L('h').style.opacity = win(t, W.h[0], W.b[0] - 0.2);
+    L('b').style.opacity = win(t, W.b[0], W.fin[0]);
+    let txt = '';
+    if (step === 0) txt = `${fr ? 'canevas' : 'canvas'}${c} #28be`;
+    else if (step === 1) txt = `${fr ? 'traits' : 'lines'}${c} x 105 → 115, 285 → 295, y 210 → ${f1(220.39)}`;
+    else if (step === 2) txt = `${fr ? 'carrés' : 'squares'}${c} x ${f1(74.56)}, ${f1(255.44)}, 165`;
+    else txt = $$('.caps .cap')[3].dataset.live || '';
+    live.textContent = txt;
+  };
+};
+</script>
+</figure>
