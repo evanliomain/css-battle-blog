@@ -1,0 +1,127 @@
+<figure class="anim t0928" data-duration="24" data-scene="t0928" data-wide="-40 -30 480 360" data-off-label="-36 -26" style="--bg:#fff">
+<style>
+.t0928{--t0928-ink:#000;--t0928-sh:#2f6fdf;--t0928-wh:#f39c33;--t0928-dash:rgb(40 40 40 / .7)}
+.t0928 .t0928-html{position:absolute;box-sizing:border-box;border:30px solid var(--t0928-ink)}
+.t0928 .t0928-body{position:absolute;box-sizing:border-box;border:2px dashed #d0342c;pointer-events:none}
+.t0928 .t0928-s{position:absolute;width:90px;height:30px}
+.t0928 .t0928-g{position:absolute;width:90px;height:30px;box-sizing:border-box;border:1.5px dashed var(--t0928-dash);pointer-events:none}
+.t0928 .zlab{color:#fff;background:rgb(20 20 20 / .85);padding:1px 5px;border-radius:3px}
+.t0928 .legend .t0928-mk{background:transparent;box-shadow:inset 0 0 0 1.5px #d0342c}
+</style>
+<div class="anim-col">
+<div class="stage" role="img" aria-label="{% if include.lang == "fr" %}Animation : la bordure noire de html, arrondie à gauche, dessine la panse et la haste d'un q ; le body, placé sous la panse par des marges négatives, projette quatre ombres : deux tirets à gauche, une ombre blanche qui ouvre la panse et une ombre noire qui fait le pied ; chaque ombre est rognée sous la boîte du body{% else %}Animation: html's black border, rounded on the left, draws the bowl and stem of a q; the body, placed under the bowl by negative margins, casts four shadows: two dashes on the left, a white shadow that opens the bowl and a black shadow that makes the foot; each shadow is clipped under the body's box{% endif %}">
+<div class="scene">
+<div class="t0928-html"></div>
+<div class="t0928-s" data-s="d1"></div>
+<div class="t0928-s" data-s="d2"></div>
+<div class="t0928-s" data-s="ft"></div>
+<div class="t0928-s" data-s="wh"></div>
+<div class="t0928-g" data-g="d1"></div>
+<div class="t0928-g" data-g="d2"></div>
+<div class="t0928-g" data-g="ft"></div>
+<div class="t0928-g" data-g="wh"></div>
+<div class="t0928-body"></div>
+<span class="zlab t0928-l-m" style="left:16px;top:16px">margin:70 50 50% 240</span>
+<span class="zlab t0928-l-b" style="left:16px;top:40px">8mm = {% if include.lang == "fr" %}30,24{% else %}30.24{% endif %} → 30px</span>
+<span class="zlab t0928-l-r1" style="left:16px;top:16px">70% × 110 = 77 · 55% × 160 = 88</span>
+<span class="zlab t0928-l-r2" style="left:16px;top:40px">88 + 88 > 160 → × {% if include.lang == "fr" %}0,91{% else %}0.91{% endif %} → 70 / 80</span>
+<span class="zlab t0928-l-bm" style="left:16px;top:252px">margin:100 10 −130 −50</span>
+<span class="zlab t0928-l-d1" style="left:16px;top:96px">−50vw = −200 · −69q = −{% if include.lang == "fr" %}65,2{% else %}65.2{% endif %}</span>
+<span class="zlab t0928-l-d2" style="left:96px;top:176px">−95q = −{% if include.lang == "fr" %}89,77{% else %}89.77{% endif %}</span>
+<span class="zlab t0928-l-w" style="left:150px;top:252px">11q = {% if include.lang == "fr" %}10,39{% else %}10.39{% endif %} · 74q = {% if include.lang == "fr" %}69,92{% else %}69.92{% endif %}</span>
+</div>
+</div>
+<div class="legend"><span><i style="--c:var(--t0928-ink)"></i>{% if include.lang == "fr" %}bordure de html{% else %}html border{% endif %}</span><span><i class="t0928-mk"></i>{% if include.lang == "fr" %}boîte du body{% else %}body box{% endif %}</span><span><i style="--c:var(--t0928-sh)"></i>{% if include.lang == "fr" %}ombres noires{% else %}black shadows{% endif %}</span><span><i style="--c:var(--t0928-wh)"></i>{% if include.lang == "fr" %}ombre blanche{% else %}white shadow{% endif %}</span></div>
+</div>
+<div class="anim-side">
+<pre class="code" aria-hidden="true">&lt;style>&amp;{<span data-on="1">margin:70 50 50%240</span>;<span data-on="1">border:8mm solid</span>;<span data-on="2" data-tone="2">border-radius:70%0 0 70%/55%</span>;*{<span data-on="3">margin:100 10-130-50</span>;box-shadow:<span data-on="5" data-tone="2">11q 0#fff,74q 0</span>,<span data-on="4" data-tone="2">-50vw -69q,-95q -69q</span></pre>
+<div class="now" aria-live="polite">
+<div class="caps">
+{%- if include.lang == "fr" %}
+<div class="cap" data-t="0" data-step="La bordure de html"><h3>1. La bordure de html</h3><p><code>&amp;</code> seul vise <code>html</code>. <code>margin:70 50 50%240</code> le place en (240 ; 70), large de 400 − 240 − 50 = 110px. Sa bordure de <code>8mm</code> (30,24px) est arrondie à 30px, noire par défaut. Sa hauteur, 160px, vient du <code>body</code> : on la verra à l'étape 3.</p></div>
+<div class="cap" data-t="4" data-step="Le rayon trop grand"><h3>2. Un rayon trop grand, réduit</h3><p>Seuls les coins gauches sont arrondis : 70 % de 110 = 77px en largeur, 55 % de 160 = 88px en hauteur. Deux coins de 88 sur un côté de 160 ne tiennent pas : Chrome réduit tous les rayons de 160 / 176, soit 70 × 80. Le côté gauche devient une demi-ellipse : la panse du q, et la bordure de droite fait la haste.</p></div>
+<div class="cap" data-t="8" data-step="Le body sous la panse"><h3>3. Le body sous la panse</h3><p><code>*</code> imbriqué vise le <code>body</code>. <code>margin:100 10-130-50</code> le descend à y = 200 et le décale de 50px à gauche : x de 220 à 310. Le bas de 50 % (200px) ne laisse aucune place à <code>html</code> : le <code>body</code>, qui remplit <code>html</code> en mode quirks, fait 0 − 100 + 130 = 30px. Le contenu de <code>html</code> s'arrête au haut du <code>body</code> : 30 + 100 + 30 = 160px.</p></div>
+<div class="cap" data-t="12" data-step="Deux ombres : les tirets"><h3>4. Deux ombres : les tirets</h3><p>Le <code>body</code> n'a pas de fond, mais ses ombres sont pleines, noires par défaut. <code>-50vw -69q</code> décale une copie de 200px à gauche et 65,2px vers le haut : un tiret de x = 20 à 110. <code>-95q -69q</code> (89,77px) donne le second, de 130,23 à 220,23.</p></div>
+<div class="cap" data-t="16" data-step="Rognées sous le body"><h3>5. Rognées sous le body</h3><p>Une ombre extérieure ne se peint jamais sous la boîte qui la projette. <code>74q 0</code> (69,92px) pousse une ombre noire jusqu'à x = 379,92 : on n'en voit que la partie à droite du <code>body</code>, le pied. <code>11q 0#fff</code> (10,39px), en premier donc au-dessus, ne dépasse que de x = 310 à 320,39 : une fente blanche qui ouvre la panse.</p></div>
+<div class="cap" data-t="20" data-step="Résultat" data-live="145 caractères · 100 % identique"><h3>6. Résultat : 145 caractères</h3><p>Une bordure arrondie pour le q, quatre ombres pour les tirets, la fente et le pied.</p></div>
+{%- else %}
+<div class="cap" data-t="0" data-step="html's border"><h3>1. html's border</h3><p>A lone <code>&amp;</code> matches <code>html</code>. <code>margin:70 50 50%240</code> puts it at (240, 70), 400 − 240 − 50 = 110px wide. Its <code>8mm</code> border (30.24px) is rounded down to 30px, black by default. Its height, 160px, comes from the <code>body</code>: see step 3.</p></div>
+<div class="cap" data-t="4" data-step="A radius too big"><h3>2. A radius too big, scaled down</h3><p>Only the left corners are rounded: 70% of 110 = 77px wide, 55% of 160 = 88px tall. Two 88px corners do not fit on a 160px side, so Chrome scales every radius by 160 / 176: 70 × 80. The left side becomes a half-ellipse, the bowl of the q, and the right border is the stem.</p></div>
+<div class="cap" data-t="8" data-step="The body under the bowl"><h3>3. The body under the bowl</h3><p>The nested <code>*</code> matches the <code>body</code>. <code>margin:100 10-130-50</code> moves it down to y = 200 and 50px to the left: x from 220 to 310. The 50% bottom margin (200px) leaves <code>html</code> no room, so the <code>body</code>, which fills <code>html</code> in quirks mode, is 0 − 100 + 130 = 30px tall. <code>html</code>'s content stops at the top of the <code>body</code>: 30 + 100 + 30 = 160px.</p></div>
+<div class="cap" data-t="12" data-step="Two shadows: the dashes"><h3>4. Two shadows: the dashes</h3><p>The <code>body</code> has no background, but its shadows are solid, black by default. <code>-50vw -69q</code> moves a copy 200px left and 65.2px up: a dash from x = 20 to 110. <code>-95q -69q</code> (89.77px) gives the second one, from 130.23 to 220.23.</p></div>
+<div class="cap" data-t="16" data-step="Clipped under the body"><h3>5. Clipped under the body</h3><p>An outer shadow is never painted under the box that casts it. <code>74q 0</code> (69.92px) pushes a black shadow to x = 379.92: only the part right of the <code>body</code> shows, the foot. <code>11q 0#fff</code> (10.39px) comes first, so it is on top, and only sticks out from x = 310 to 320.39: a white slit that opens the bowl.</p></div>
+<div class="cap" data-t="20" data-step="Result" data-live="145 characters · 100% match"><h3>6. Result: 145 characters</h3><p>One rounded border for the q, four shadows for the dashes, the slit and the foot.</p></div>
+{%- endif %}
+</div>
+<div class="live"></div>
+</div>
+</div>
+<script>
+(window.AnimScenes = window.AnimScenes || {}).t0928 = (fig) => {
+  const fr = document.documentElement.lang === 'fr';
+  const $ = (s) => fig.querySelector(s);
+  const $$ = (s) => [...fig.querySelectorAll(s)];
+  const H = $('.t0928-html'), B = $('.t0928-body'), live = $('.live');
+  const S = (k) => $(`[data-s="${k}"]`), G = (k) => $(`[data-g="${k}"]`);
+  const L = (k) => $(`.t0928-l-${k}`);
+  const W = { html: [0.3, 1.8], r: [4.2, 6], body: [8.2, 9.8], dash: [12.2, 14], foot: [16.2, 18], fin: [20.1, 20.9] };
+  const ease = (x) => (x < 0.5 ? 4 * x * x * x : 1 - Math.pow(-2 * x + 2, 3) / 2);
+  const pr = (t, [a, b]) => ease(Math.min(1, Math.max(0, (t - a) / (b - a))));
+  const lerp = (a, b, m) => a + (b - a) * m;
+  const win = (t, a, b) => Math.min(pr(t, [a, a + 0.5]), 1 - pr(t, [b - 0.4, b]));
+  const f1 = (v) => { const s = (Math.round(v * 100) / 100).toFixed(2).replace(/\.?0+$/, ''); return (fr ? s.replace('.', ',') : s).replace('-', '−'); };
+  const c = fr ? ' :' : ':';
+  const place = (el, x, y, w, h) => Object.assign(el.style, { left: `${x}px`, top: `${y}px`, width: `${Math.max(0, w)}px`, height: `${Math.max(0, h)}px` });
+  // an outer shadow is clipped under the body box (220, 200, 90 × 30)
+  const clipOut = (el, x, y) => {
+    const hx = 220 - x, hy = 200 - y;
+    el.style.clipPath = `polygon(evenodd, -900px -900px, 900px -900px, 900px 900px, -900px 900px, -900px -900px, ${hx}px ${hy}px, ${hx + 90}px ${hy}px, ${hx + 90}px ${hy + 30}px, ${hx}px ${hy + 30}px, ${hx}px ${hy}px)`;
+  };
+  const shadows = { d1: [-200, -65.2], d2: [-89.77, -65.2], ft: [69.92, 0], wh: [10.39, 0] };
+  return (t, step) => {
+    const teach = fig.dataset.teach === '1';
+    const real = !teach || t >= W.fin[0];
+    const guides = t < W.fin[0] ? 1 : 0;
+    // 1. html box: from the whole canvas to its margins
+    const h = pr(t, W.html), r = pr(t, W.r);
+    place(H, lerp(0, 240, h), lerp(0, 70, h), lerp(400, 110, h), lerp(300, 160, h));
+    H.style.opacity = Math.min(1, h * 3);
+    // 2. radius 77/88 scaled down to 70/80
+    H.style.borderRadius = `${lerp(0, 70, r)}px 0 0 ${lerp(0, 70, r)}px / ${lerp(0, 80, r)}px`;
+    L('m').style.opacity = win(t, W.html[0], W.r[0] - 0.2);
+    L('b').style.opacity = win(t, W.html[0], W.r[0] - 0.2);
+    L('r1').style.opacity = win(t, W.r[0], W.body[0] - 0.2);
+    L('r2').style.opacity = win(t, W.r[0], W.body[0] - 0.2);
+    // 3. body box: from html's content box to its margins
+    const b = pr(t, W.body);
+    place(B, lerp(270, 220, b), lerp(100, 200, b), lerp(50, 90, b), lerp(0, 30, b));
+    B.style.opacity = Math.min(1, b * 4) * guides;
+    L('bm').style.opacity = win(t, W.body[0], W.dash[0]);
+    // 4-5. shadows slide out of the body box; the part under it is never painted
+    const d = pr(t, W.dash), f = pr(t, W.foot);
+    for (const [k, [dx, dy]] of Object.entries(shadows)) {
+      const m = k === 'd1' || k === 'd2' ? d : f;
+      const x = 220 + dx * m, y = 200 + dy * m;
+      const el = S(k), g = G(k);
+      place(el, x, y, 90, 30);
+      clipOut(el, x, y);
+      el.style.opacity = m > 0 ? 1 : 0;
+      el.style.background = k === 'wh' ? (real ? '#fff' : 'var(--t0928-wh)') : (real ? 'var(--t0928-ink)' : 'var(--t0928-sh)');
+      place(g, x, y, 90, 30);
+      g.style.opacity = (m > 0 ? 1 : 0) * guides * (step === 3 || step === 4 ? 1 : 0);
+    }
+    L('d1').style.opacity = win(t, W.dash[0], W.foot[0]);
+    L('d2').style.opacity = win(t, W.dash[0], W.foot[0]);
+    L('w').style.opacity = win(t, W.foot[0], W.fin[0]);
+    let txt = '';
+    if (step === 0) txt = `html${c} x ${f1(lerp(0, 240, h))} → ${f1(lerp(400, 350, h))}, y ${f1(lerp(0, 70, h))} → ${f1(lerp(300, 230, h))}`;
+    else if (step === 1) txt = `${fr ? 'rayons' : 'radii'}${c} ${f1(lerp(0, 70, r))} × ${f1(lerp(0, 80, r))}`;
+    else if (step === 2) txt = `body${c} x ${f1(lerp(270, 220, b))} → ${f1(lerp(320, 310, b))}, y ${f1(lerp(100, 200, b))} → ${f1(lerp(100, 230, b))}`;
+    else if (step === 3) txt = `${fr ? 'tirets' : 'dashes'}${c} x ${f1(220 - 200 * d)} → ${f1(310 - 200 * d)} · ${f1(220 - 89.77 * d)} → ${f1(310 - 89.77 * d)}`;
+    else if (step === 4) txt = `${fr ? 'fente' : 'slit'}${c} x 310 → ${f1(310 + 10.39 * f)} · ${fr ? 'pied' : 'foot'} → ${f1(310 + 69.92 * f)}`;
+    else txt = $$('.caps .cap')[5].dataset.live || '';
+    live.textContent = txt;
+  };
+};
+</script>
+</figure>
