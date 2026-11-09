@@ -1,0 +1,115 @@
+<figure class="anim t0929" data-duration="24" data-scene="t0929" data-wide="-40 -30 640 360" data-off-label="-36 -26" style="--bg:#c0d6e7">
+<style>
+.t0929{--t0929-red:#cc5360;--t0929-navy:#2d3464;--t0929-dash:rgb(25 30 70 / .75);--t0929-t0:rgb(80 170 110 / .28);--t0929-t1:rgb(230 150 40 / .28)}
+.t0929 .t0929-bar{position:absolute;box-sizing:border-box;border:solid var(--t0929-red);border-width:10px 0}
+.t0929 .t0929-tile{position:absolute;top:0;width:260px;height:300px;box-sizing:border-box}
+.t0929 .t0929-tile > *{position:absolute}
+.t0929 .t0929-nv{left:0;top:0;width:39.69px;height:150px;background:var(--t0929-navy)}
+.t0929 .t0929-out{inset:0;border:2px dashed var(--t0929-dash);pointer-events:none}
+.t0929 .t0929-ctr{left:39.69px;top:150px;width:6px;height:6px;margin:-3px 0 0 -3px;border-radius:50%;background:var(--t0929-dash)}
+.t0929 .zlab{color:#fff;background:rgb(25 30 70 / .85);padding:1px 5px;border-radius:3px}
+.t0929 .legend .t0929-mk{background:transparent;box-shadow:inset 0 0 0 1.5px currentColor}
+</style>
+<div class="anim-col">
+<div class="stage" role="img" aria-label="{% if include.lang == "fr" %}Animation : cinq paragraphes vides deviennent cinq barres rouges par leurs bordures haute et basse, resserrés par une marge en ch ; le dernier, en police minuscule, a des ch plus petits et s'élargit ; puis un dégradé conique en tuiles de 260px peint deux montants bleu nuit sur le canevas{% else %}Animation: five empty paragraphs become five red bars through their top and bottom borders, narrowed by a margin in ch; the last one, in a tiny font, has smaller ch and gets wider; then a conic gradient in 260px tiles paints two navy posts on the canvas{% endif %}">
+<div class="scene">
+<div class="t0929-tile" data-k="-1"><div class="t0929-nv"></div><div class="t0929-out"></div><div class="t0929-ctr"></div></div>
+<div class="t0929-tile" data-k="0"><div class="t0929-nv"></div><div class="t0929-out"></div><div class="t0929-ctr"></div></div>
+<div class="t0929-tile" data-k="1"><div class="t0929-nv"></div><div class="t0929-out"></div><div class="t0929-ctr"></div></div>
+<div class="t0929-bar"></div>
+<div class="t0929-bar"></div>
+<div class="t0929-bar"></div>
+<div class="t0929-bar"></div>
+<div class="t0929-bar"></div>
+<span class="zlab t0929-l-bar" style="left:130px;top:200px">11Q = {% if include.lang == "fr" %}10,39{% else %}10.39{% endif %} → 10px</span>
+<span class="zlab t0929-l-m" style="left:124px;top:210px">14ch = 14 × 8 = 112px</span>
+<span class="zlab t0929-l-a" style="left:52px;top:210px">6% → 6px · 14ch = 14 × 3 = 42px</span>
+<span class="zlab t0929-l-pos" style="left:160px;top:228px">53Q = {% if include.lang == "fr" %}50,08{% else %}50.08{% endif %}px</span>
+<span class="zlab t0929-l-sz" style="left:160px;top:252px">65% × 400 = 260px</span>
+<span class="zlab t0929-l-at" style="left:160px;top:204px">at 42q = {% if include.lang == "fr" %}39,69{% else %}39.69{% endif %}px</span>
+<span class="zlab t0929-l-rep" style="left:160px;top:228px">+260 → {% if include.lang == "fr" %}310,08{% else %}310.08{% endif %}</span>
+</div>
+</div>
+<div class="legend"><span><i style="--c:var(--t0929-red)"></i>{% if include.lang == "fr" %}bordures des p{% else %}p borders{% endif %}</span><span><i style="--c:var(--t0929-navy)"></i>{% if include.lang == "fr" %}dernier quart du dégradé{% else %}last quarter of the gradient{% endif %}</span><span><i class="t0929-mk"></i>{% if include.lang == "fr" %}tuiles du fond (bleu pâle en vrai){% else %}background tiles (pale blue in reality){% endif %}</span></div>
+</div>
+<div class="anim-side">
+<pre class="code" aria-hidden="true"><span data-on="1">&lt;p>&lt;p>&lt;p>&lt;p></span><span data-on="1 3">&lt;p a></span>&lt;style>&amp;{p{<span data-on="1">border:11Q solid#cc5360</span>;<span data-on="2 3">margin:20 14ch</span>}<span data-on="3" data-tone="2">[a]{font:6%a}</span>background:<span data-on="4 5" data-tone="2">53Q/65%</span><span data-on="4" data-tone="2">conic-gradient(at 42q,#c0d6e7,75%,#2d3464 0</span></pre>
+<div class="now" aria-live="polite">
+<div class="caps">
+{%- if include.lang == "fr" %}
+<div class="cap" data-t="0" data-step="Cinq p vides : cinq barres"><h3>1. Cinq p vides : cinq barres</h3><p>Les cinq <code>&lt;p></code> sont vides : leur contenu fait 0px de haut. <code>&amp;</code> seul vise <code>html</code>, donc <code>p</code> imbriqué vise tous les <code>&lt;p></code>. Leur bordure de <code>11Q</code> (10,39px, arrondie à 10px) n'a que ses côtés haut et bas visibles : chaque <code>&lt;p></code> est une barre rouge de 20px de haut.</p></div>
+<div class="cap" data-t="4" data-step="margin:20 14ch"><h3>2. Des marges en ch</h3><p><code>margin:20 14ch</code> : 20px en haut et en bas, et 14ch sur les côtés. Ici, 1ch fait 8px, donc 14ch font 112px, plus les 8px de marge du <code>body</code> : les barres vont de x = 120 à 280. Les marges de 20 entre deux barres fusionnent : un seul écart de 20px, une barre tous les 40px, de y = 20 à 180.</p></div>
+<div class="cap" data-t="8" data-step="Le dernier p : des ch plus petits"><h3>3. Le dernier p : des ch plus petits</h3><p>Le dernier <code>&lt;p a></code> a un attribut nu, visé par <code>[a]</code>. <code>font:6%a</code> donne une taille de 0,96px, mais Chrome ne descend pas sous 6px pour une taille relative : il prend 6px. Le ch suit la police : 3px au lieu de 8. Les mêmes 14ch ne font plus que 42px : cette barre va de x = 50 à 350.</p></div>
+<div class="cap" data-t="12" data-step="Une tuile de dégradé conique"><h3>4. Une tuile de dégradé conique</h3><p>Le fond de <code>html</code> va au canevas. <code>53Q/65%</code> : une tuile de 65 % × 400 = 260px de large, placée en x = 50,08px. Dans la tuile, le dégradé conique tourne autour de (39,69 ; 150). Il reste bleu pâle jusqu'à 75 % du tour, puis passe au bleu nuit : le dernier quart, en haut à gauche du centre. C'est un montant de 39,69 × 150, de x = 50,08 à 89,77.</p></div>
+<div class="cap" data-t="16" data-step="La tuile se répète"><h3>5. La tuile se répète</h3><p>Un fond se répète par défaut. La tuile suivante commence 260px plus loin, en x = 310,08 : son quart bleu nuit est le second montant, de x = 310,08 à 349,77. La précédente tombe hors du canevas, à gauche. Les bords à 0,08px près des pixels entiers donnent un rendu à 100 %.</p></div>
+<div class="cap" data-t="20" data-step="Résultat" data-live="141 caractères · 100 % identique"><h3>6. Résultat : 141 caractères</h3><p>Cinq paragraphes vides pour les barres, un fond en tuiles pour les montants.</p></div>
+{%- else %}
+<div class="cap" data-t="0" data-step="Five empty p: five bars"><h3>1. Five empty p: five bars</h3><p>The five <code>&lt;p></code> are empty: their content is 0px tall. A lone <code>&amp;</code> matches <code>html</code>, so the nested <code>p</code> matches every <code>&lt;p></code>. Their <code>11Q</code> border (10.39px, rounded down to 10px) only shows its top and bottom sides: each <code>&lt;p></code> is a red bar, 20px tall.</p></div>
+<div class="cap" data-t="4" data-step="margin:20 14ch"><h3>2. Margins in ch</h3><p><code>margin:20 14ch</code>: 20px at the top and bottom, and 14ch on the sides. Here 1ch is 8px, so 14ch is 112px, plus the <code>body</code>'s 8px margin: the bars run from x = 120 to 280. The 20px margins between two bars collapse into one 20px gap: one bar every 40px, from y = 20 to 180.</p></div>
+<div class="cap" data-t="8" data-step="The last p: smaller ch"><h3>3. The last p: smaller ch</h3><p>The last <code>&lt;p a></code> has a bare attribute, matched by <code>[a]</code>. <code>font:6%a</code> asks for 0.96px, but Chrome does not go below 6px for a relative size: it uses 6px. The ch follows the font: 3px instead of 8. The same 14ch are now only 42px: this bar runs from x = 50 to 350.</p></div>
+<div class="cap" data-t="12" data-step="A conic gradient tile"><h3>4. A conic gradient tile</h3><p><code>html</code>'s background goes to the canvas. <code>53Q/65%</code>: a tile 65% × 400 = 260px wide, placed at x = 50.08px. In the tile, the conic gradient turns around (39.69, 150). It stays pale blue for 75% of the turn, then switches to navy: the last quarter, up and to the left of the centre. That is a 39.69 × 150 post, from x = 50.08 to 89.77.</p></div>
+<div class="cap" data-t="16" data-step="The tile repeats"><h3>5. The tile repeats</h3><p>A background repeats by default. The next tile starts 260px further, at x = 310.08: its navy quarter is the second post, from x = 310.08 to 349.77. The one before falls off the canvas, on the left. Edges 0.08px off whole pixels still give a 100% match.</p></div>
+<div class="cap" data-t="20" data-step="Result" data-live="141 characters · 100% match"><h3>6. Result: 141 characters</h3><p>Five empty paragraphs for the bars, one tiled background for the posts.</p></div>
+{%- endif %}
+</div>
+<div class="live"></div>
+</div>
+</div>
+<script>
+(window.AnimScenes = window.AnimScenes || {}).t0929 = (fig) => {
+  const fr = document.documentElement.lang === 'fr';
+  const $ = (s) => fig.querySelector(s);
+  const $$ = (s) => [...fig.querySelectorAll(s)];
+  const bars = $$('.t0929-bar'), tiles = $$('.t0929-tile'), live = $('.live');
+  const L = (k) => $(`.t0929-l-${k}`);
+  const W = { bars: [0.3, 1.6], m: [4.2, 6.4], a: [8.2, 9.8], tile: [12.2, 13.8], rep: [16.2, 17.8], fin: [20.1, 20.9] };
+  const ease = (x) => (x < 0.5 ? 4 * x * x * x : 1 - Math.pow(-2 * x + 2, 3) / 2);
+  const pr = (t, [a, b]) => ease(Math.min(1, Math.max(0, (t - a) / (b - a))));
+  const lerp = (a, b, m) => a + (b - a) * m;
+  const win = (t, a, b) => Math.min(pr(t, [a, a + 0.5]), 1 - pr(t, [b - 0.4, b]));
+  const f1 = (v) => { const s = (Math.round(v * 100) / 100).toFixed(2).replace(/\.?0+$/, ''); return (fr ? s.replace('.', ',') : s).replace('-', '−'); };
+  const c = fr ? ' :' : ':';
+  const place = (el, x, y, w, h) => Object.assign(el.style, { left: `${x}px`, top: `${y}px`, width: `${Math.max(0, w)}px`, height: `${Math.max(0, h)}px` });
+  return (t, step) => {
+    const teach = fig.dataset.teach === '1';
+    const real = !teach || t >= W.fin[0];
+    const guides = t < W.fin[0] ? 1 : 0;
+    // 1-3. bars: default margins, then 20 / 14ch, then the last one at 3px per ch
+    const show = pr(t, W.bars), m = pr(t, W.m), a = pr(t, W.a);
+    bars.forEach((b, i) => {
+      const y = lerp(8 + 36 * i, 20 + 40 * i, m);
+      let x = lerp(8, 120, m), w = lerp(384, 160, m);
+      if (i === 4) { x = lerp(x, 50, a); w = lerp(w, 300, a); }
+      place(b, x, y, w, 20);
+      b.style.opacity = show;
+    });
+    L('bar').style.opacity = win(t, W.bars[0], W.m[0] - 0.2);
+    L('m').style.opacity = win(t, W.m[0], W.a[0]);
+    L('a').style.opacity = win(t, W.a[0], W.tile[0]);
+    // 4-5. background tiles: 260 wide from 50.08, then the copies on each side
+    const ti = pr(t, W.tile), rp = pr(t, W.rep);
+    tiles.forEach((el) => {
+      const k = +el.dataset.k;
+      el.style.left = `${50.08 + 260 * k}px`;
+      const on = k === 0 ? ti : rp;
+      el.querySelector('.t0929-nv').style.opacity = on;
+      el.querySelector('.t0929-out').style.opacity = on * guides;
+      el.querySelector('.t0929-ctr').style.opacity = on * guides;
+      el.style.background = !real && on > 0 ? (k === 0 ? 'var(--t0929-t0)' : 'var(--t0929-t1)') : 'transparent';
+    });
+    L('pos').style.opacity = win(t, W.tile[0], W.rep[0]);
+    L('sz').style.opacity = win(t, W.tile[0], W.rep[0]);
+    L('at').style.opacity = win(t, W.tile[0], W.rep[0]);
+    L('rep').style.opacity = win(t, W.rep[0], W.fin[0]);
+    let txt = '';
+    if (step === 0) txt = `${fr ? 'barres' : 'bars'}${c} 10 + 0 + 10 = 20px`;
+    else if (step === 1) txt = `x ${f1(lerp(8, 120, m))} → ${f1(lerp(392, 280, m))} · y ${f1(lerp(8, 20, m))}, ${f1(lerp(44, 60, m))}, ${f1(lerp(80, 100, m))} …`;
+    else if (step === 2) txt = `${fr ? 'dernière barre' : 'last bar'}${c} x ${f1(lerp(120, 50, a))} → ${f1(lerp(280, 350, a))}`;
+    else if (step === 3) txt = `${fr ? 'montant' : 'post'}${c} x 50,08 → 89,77, y 0 → 150`.replace(/(\d),(\d)/g, fr ? '$1,$2' : '$1.$2');
+    else if (step === 4) txt = `${fr ? 'montants' : 'posts'}${c} x 50,08 → 89,77 · 310,08 → 349,77`.replace(/(\d),(\d)/g, fr ? '$1,$2' : '$1.$2');
+    else txt = $$('.caps .cap')[5].dataset.live || '';
+    live.textContent = txt;
+  };
+};
+</script>
+</figure>
