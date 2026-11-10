@@ -1,0 +1,92 @@
+<figure class="anim t1109" data-duration="20" data-scene="t1109" data-wide="-40 -30 480 360" data-off-label="-36 -26" style="--bg:#1d025e">
+<style>
+.t1109{--t1109-b:#469dba;--t1109-n:#1d025e;--t1109-t:#f0a040;--t1109-q:#e05a8a;--t1109-dash:rgb(230 240 255 / .8)}
+.t1109 .t1109-html{position:absolute;left:75px;top:125px;width:250px;height:140px;box-sizing:border-box;border:50px solid var(--t1109-b)}
+.t1109 .t1109-body{position:absolute;left:165px;top:15px;width:70px;height:200px;background:var(--t1109-n)}
+.t1109 .t1109-bar{position:absolute;left:175px;top:25px;width:50px}
+.t1109 .t1109-dot{position:absolute;left:175px;top:125px;width:50px;height:50px;border-radius:50%}
+.t1109 .t1109-o{position:absolute;box-sizing:border-box;border:1.5px dashed var(--t1109-dash);pointer-events:none}
+.t1109 .zlab{color:#fff;background:rgb(20 10 50 / .9);padding:1px 5px;border-radius:3px}
+</style>
+<div class="anim-col">
+<div class="stage" role="img" aria-label="{% if include.lang == "fr" %}Animation : la bordure de html fait un grand cadre bleu-vert ; le body, bleu nuit, passe devant et l'ouvre en haut ; le li, dans le body, n'a qu'une bordure haute de 90px : la barre ; sa puce, dans une police de 168px, est le disque{% else %}Animation: html's border makes a big blue-green frame; the body, navy, goes in front and opens it at the top; the li, inside the body, only has a 90px top border: the bar; its bullet, in a 168px font, is the disc{% endif %}">
+<div class="scene">
+<div class="t1109-html"></div>
+<div class="t1109-body"></div>
+<div class="t1109-bar"></div>
+<div class="t1109-dot"></div>
+<div class="t1109-o" data-o="body" style="left:165px;top:15px;width:70px;height:200px"></div>
+<div class="t1109-o" data-o="li" style="left:175px;top:25px;width:50px;height:146.7px"></div>
+<span class="zlab t1109-l-h" style="left:12px;top:276px">margin:125 75 35 · 53Q = {% if include.lang == "fr" %}50,08{% else %}50.08{% endif %} → 50</span>
+<span class="zlab t1109-l-b" style="left:12px;top:276px">body · margin:−160 40 0 → 70 × 200</span>
+<span class="zlab t1109-l-l" style="left:12px;top:276px">li · margin:10 · 96Q = {% if include.lang == "fr" %}90,7{% else %}90.7{% endif %} → 90</span>
+<span class="zlab t1109-l-d" style="left:12px;top:276px">178Q = {% if include.lang == "fr" %}168,2{% else %}168.2{% endif %}px · 60q = {% if include.lang == "fr" %}56,7{% else %}56.7{% endif %}px</span>
+</div>
+</div>
+<div class="legend"><span><i style="--c:var(--t1109-b)"></i>{% if include.lang == "fr" %}couleur du texte{% else %}text color{% endif %}</span><span><i style="--c:var(--t1109-t)"></i>{% if include.lang == "fr" %}bordure du li (bleu-vert en vrai){% else %}the li's border (blue-green in reality){% endif %}</span><span><i style="--c:var(--t1109-q)"></i>{% if include.lang == "fr" %}puce (bleu-vert en vrai){% else %}bullet (blue-green in reality){% endif %}</span></div>
+</div>
+<div class="anim-side">
+<pre class="code" aria-hidden="true"><span data-on="3 4">&lt;li></span>&lt;style>&amp;{<span data-on="1 4">color:469dba</span>;<span data-on="1">border:53Q solid;margin:125 75 35</span>}*{<span data-on="2">background:#1d025e</span>;*{<span data-on="2">margin:-160 40 0</span>;*{<span data-on="3">border-top:96Q solid;margin:10</span>;<span data-on="4" data-tone="2">font:178Q/60q"</span></pre>
+<div class="now" aria-live="polite">
+<div class="caps">
+{%- if include.lang == "fr" %}
+<div class="cap" data-t="0" data-step="html : un cadre"><h3>1. <code>html</code> : un cadre</h3><p><code>&amp;</code> seul vise <code>html</code>. <code>margin:125 75 35</code> : de x = 75 à 325 et, en mode quirks, de y = 125 à 265. Sa bordure de <code>53Q</code> (50,08, arrondis à 50) prend la couleur du texte, <code>469dba</code>, un hex sans <code>#</code> que le mode quirks accepte. Il ne reste au milieu qu'un trou de 150 × 40, bleu nuit.</p></div>
+<div class="cap" data-t="4" data-step="Le body ouvre le cadre"><h3>2. Le <code>body</code> ouvre le cadre</h3><p><code>*</code> donne à tout le fond bleu nuit, et <code>*</code> imbriqué donne au <code>body</code> <code>margin:-160 40 0</code> : de x = 165 à 235, et 160 au-dessus du contenu de <code>html</code>, en y = 15. En mode quirks, il descend jusqu'au bas de ce contenu, y = 215. Bleu nuit, il passe devant la bordure haute de <code>html</code> : le cadre s'ouvre au milieu.</p></div>
+<div class="cap" data-t="8" data-step="Le li : la barre"><h3>3. Le <code>li</code> : la barre</h3><p>Le troisième niveau de <code>*</code> vise le <code>li</code>. <code>margin:10</code> le place de x = 175 à 225, en y = 25. <code>border-top:96Q solid</code> fait 90,7, arrondis à 90 : une barre bleu-vert de y = 25 à 115. Son fond bleu nuit ne se voit pas.</p></div>
+<div class="cap" data-t="12" data-step="La puce : le disque"><h3>4. La puce : le disque</h3><p>Un <code>li</code> est un élément de liste : il a une puce, un disque « • » de la couleur du texte. <code>font:178Q/60q"</code> lui donne une police de 168,2px et une ligne de 56,7px. À cette taille, la puce est un disque de 50px de large : je l'ai mesuré centré en (200 ; 150), juste sous la barre, dans l'ouverture du cadre.</p></div>
+<div class="cap" data-t="16" data-step="Résultat" data-live="147 caractères · 100 % identique"><h3>5. Résultat : 147 caractères</h3><p>Trois bordures et une puce de liste, d'une seule couleur de texte.</p></div>
+{%- else %}
+<div class="cap" data-t="0" data-step="html: a frame"><h3>1. <code>html</code>: a frame</h3><p>A lone <code>&amp;</code> matches <code>html</code>. <code>margin:125 75 35</code>: from x = 75 to 325 and, in quirks mode, from y = 125 to 265. Its <code>53Q</code> border (50.08, rounded down to 50) uses the text color, <code>469dba</code>, a hex with no <code>#</code> that quirks mode accepts. Only a 150 × 40 navy hole is left in the middle.</p></div>
+<div class="cap" data-t="4" data-step="The body opens the frame"><h3>2. The <code>body</code> opens the frame</h3><p><code>*</code> gives everything the navy background, and the nested <code>*</code> gives the <code>body</code> <code>margin:-160 40 0</code>: from x = 165 to 235, and 160 above <code>html</code>'s content, at y = 15. In quirks mode it reaches down to the bottom of that content, y = 215. Navy, it covers <code>html</code>'s top border: the frame opens in the middle.</p></div>
+<div class="cap" data-t="8" data-step="The li: the bar"><h3>3. The <code>li</code>: the bar</h3><p>The third level of <code>*</code> matches the <code>li</code>. <code>margin:10</code> puts it from x = 175 to 225, at y = 25. <code>border-top:96Q solid</code> is 90.7, rounded down to 90: a blue-green bar from y = 25 to 115. Its navy background cannot be seen.</p></div>
+<div class="cap" data-t="12" data-step="The bullet: the disc"><h3>4. The bullet: the disc</h3><p>An <code>li</code> is a list item: it has a bullet, a "•" disc in the text color. <code>font:178Q/60q"</code> gives it a 168.2px font and a 56.7px line. At that size, the bullet is a disc 50px wide: I measured it centred at (200, 150), just under the bar, in the frame's opening.</p></div>
+<div class="cap" data-t="16" data-step="Result" data-live="147 characters · 100% match"><h3>5. Result: 147 characters</h3><p>Three borders and a list bullet, all in one text color.</p></div>
+{%- endif %}
+</div>
+<div class="live"></div>
+</div>
+</div>
+<script>
+(window.AnimScenes = window.AnimScenes || {}).t1109 = (fig) => {
+  const fr = document.documentElement.lang === 'fr';
+  const $ = (s) => fig.querySelector(s);
+  const $$ = (s) => [...fig.querySelectorAll(s)];
+  const H = $('.t1109-html'), B = $('.t1109-body'), BAR = $('.t1109-bar'), DOT = $('.t1109-dot'), oB = $('[data-o="body"]'), oL = $('[data-o="li"]'), live = $('.live');
+  const L = (k) => $(`.t1109-l-${k}`);
+  const W = { h: [0.3, 1.8], b: [4.2, 5.8], l: [8.2, 9.8], d: [12.2, 13.8], fin: [16.1, 16.9] };
+  const ease = (x) => (x < 0.5 ? 4 * x * x * x : 1 - Math.pow(-2 * x + 2, 3) / 2);
+  const pr = (t, [a, b]) => ease(Math.min(1, Math.max(0, (t - a) / (b - a))));
+  const lerp = (a, b, m) => a + (b - a) * m;
+  const win = (t, a, b) => Math.min(pr(t, [a, a + 0.5]), 1 - pr(t, [b - 0.4, b]));
+  const f1 = (v) => { const s = (Math.round(v * 100) / 100).toFixed(2).replace(/\.?0+$/, ''); return (fr ? s.replace('.', ',') : s).replace('-', '−'); };
+  const c = fr ? ' :' : ':';
+  return (t, step) => {
+    const teach = fig.dataset.teach === '1';
+    const real = !teach || t >= W.fin[0];
+    const guides = t < W.fin[0] ? 1 : 0;
+    const h = pr(t, W.h), b = pr(t, W.b), l = pr(t, W.l), d = pr(t, W.d);
+    H.style.borderWidth = `${50 * h}px`;
+    B.style.opacity = b;
+    B.style.top = `${lerp(175, 15, b)}px`;
+    B.style.height = `${lerp(40, 200, b)}px`;
+    oB.style.opacity = (step === 1 ? b : 0) * guides;
+    BAR.style.height = `${90 * l}px`;
+    BAR.style.background = real ? 'var(--t1109-b)' : 'var(--t1109-t)';
+    oL.style.opacity = (step === 2 || step === 3 ? l : 0) * guides;
+    const r = 25 * d;
+    Object.assign(DOT.style, { left: `${200 - r}px`, top: `${150 - r}px`, width: `${2 * r}px`, height: `${2 * r}px`, background: real ? 'var(--t1109-b)' : 'var(--t1109-q)' });
+    L('h').style.opacity = win(t, W.h[0], W.b[0] - 0.2);
+    L('b').style.opacity = win(t, W.b[0], W.l[0] - 0.2);
+    L('l').style.opacity = win(t, W.l[0], W.d[0] - 0.2);
+    L('d').style.opacity = win(t, W.d[0], W.fin[0]);
+    let txt = '';
+    if (step === 0) txt = `html${c} x 75 → 325, y 125 → 265`;
+    else if (step === 1) txt = `body${c} y ${f1(lerp(175, 15, b))} → 215`;
+    else if (step === 2) txt = `${fr ? 'barre' : 'bar'}${c} y 25 → ${f1(25 + 90 * l)}`;
+    else if (step === 3) txt = `${fr ? 'puce' : 'bullet'}${c} ${f1(50 * d)}px`;
+    else txt = $$('.caps .cap')[4].dataset.live || '';
+    live.textContent = txt;
+  };
+};
+</script>
+</figure>
