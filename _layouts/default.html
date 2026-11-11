@@ -15,6 +15,12 @@
 <link rel="alternate" hreflang="{{ a.lang }}" href="{{ a.url | absolute_url }}">
 {%- endfor %}
 {% seo title=false %}
+{%- assign og_image = page.target | default: page.cover -%}
+{%- if og_image %}
+<meta property="og:image" content="{{ og_image | absolute_url }}">
+<meta property="og:image:alt" content="{{ page.title | escape }}">
+<meta name="twitter:image" content="{{ og_image | absolute_url }}">
+{%- endif %}
 <title>{% if page.title %}{{ page.title }} | {% endif %}{{ t.site_title }}</title>
 </head>
 <body>
