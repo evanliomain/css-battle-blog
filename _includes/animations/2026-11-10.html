@@ -1,0 +1,100 @@
+<figure class="anim t1110" data-duration="28" data-scene="t1110" data-wide="-50 -60 530 420" data-off-label="-46 -56" style="--bg:#fff">
+<style>
+.t1110{--t1110-o:#aa8855;--t1110-d:#373737;--t1110-c:#4a90c8;--t1110-dash:rgb(200 40 110 / .9)}
+.t1110 .t1110-html{position:absolute;left:140px;top:195px;width:260px;height:30px;border-radius:15px}
+.t1110 .t1110-body{position:absolute;left:280px;top:195px;width:30px;height:149.6px;border-radius:15px}
+.t1110 .t1110-o{position:absolute;box-sizing:border-box;border:1.5px dashed var(--t1110-dash);border-radius:15px;pointer-events:none}
+.t1110 .zlab{color:#fff;background:rgb(40 30 15 / .9);padding:1px 5px;border-radius:3px}
+</style>
+<div class="anim-col">
+<div class="stage" role="img" aria-label="{% if include.lang == "fr" %}Animation : html, une boîte transparente arrondie de 260 × 30, porte une ombre ocre géante qui peint tout le fond sauf sa propre boîte, restée blanche, et trois ombres décalées qui font trois barres ; le body reçoit les mêmes ombres avec une police de 189px : ses ombres en ch et em sortent du cadre, son ombre géante devient un cache ocre qui coupe les barres à x = 330, et son ombre en vw devient la pilule{% else %}Animation: html, a transparent rounded 260 × 30 box, casts a giant ochre shadow that paints the whole background except its own box, which stays white, and three offset shadows that make three bars; the body gets the same shadows with a 189px font: its ch and em shadows leave the canvas, its giant shadow becomes an ochre cover that cuts the bars at x = 330, and its vw shadow becomes the pill{% endif %}">
+<div class="scene">
+<div class="t1110-html"></div>
+<div class="t1110-body"></div>
+<div class="t1110-o" data-o="html" style="left:140px;top:195px;width:260px;height:30px"></div>
+<div class="t1110-o" data-o="body" style="left:280px;top:195px;width:30px;height:149.6px"></div>
+<span class="zlab t1110-l-h" style="left:12px;top:12px">260 × 30 · 1in → r 15</span>
+<span class="zlab t1110-l-g" style="left:12px;top:12px">4in = {% if include.lang == "fr" %}étalement{% else %}spread{% endif %} 384</span>
+<span class="zlab t1110-l-s" style="left:12px;top:12px">5ch = 40 · 5em = 80 · 30vw = 120</span>
+<span class="zlab t1110-l-b" style="left:12px;top:12px">5cm = 189px · 5ch = {% if include.lang == "fr" %}472,4{% else %}472.4{% endif %} · 5em = 945</span>
+<span class="zlab t1110-l-c" style="left:12px;top:12px">2lh = 434 · 280 + 434 − 384 = 330</span>
+<span class="zlab t1110-l-p" style="left:12px;top:12px">64Q -30vw → x {% if include.lang == "fr" %}340,5{% else %}340.5{% endif %}, y 75</span>
+</div>
+</div>
+<div class="legend"><span><i style="--c:#fff"></i>{% if include.lang == "fr" %}canevas (boîte de html){% else %}canvas (html's box){% endif %}</span><span><i style="--c:var(--t1110-o)"></i>{% if include.lang == "fr" %}ombre géante de html{% else %}html's giant shadow{% endif %}</span><span><i style="--c:var(--t1110-c)"></i>{% if include.lang == "fr" %}ombre géante du body (ocre en vrai){% else %}the body's giant shadow (ochre in reality){% endif %}</span></div>
+</div>
+<div class="anim-side">
+<pre class="code" aria-hidden="true">&lt;style>*{<span data-on="1">border-radius:1in;color:373737;margin:195 0 75 140</span>;box-shadow:<span data-on="3 4">5vw -5ch,5ch -5em#fff</span>,<span data-on="3 6" data-tone="2">64Q -30vw</span>,<span data-on="2 5">2lh 0 0 4in#a85</span>;*{<span data-on="4">margin:0 90-46%140</span>;<span data-on="4 5" data-tone="2">font:5cm"</span></pre>
+<div class="now" aria-live="polite">
+<div class="caps">
+{%- if include.lang == "fr" %}
+<div class="cap" data-t="0" data-step="html : un trou"><h3>1. <code>html</code> : un trou</h3><p><code>*</code> vise tout, à commencer par <code>html</code>. <code>margin:195 0 75 140</code> le met de x = 140 à 400 et, en mode quirks, de y = 195 à 225 : 260 × 30. <code>border-radius:1in</code> (96px), trop grand, est ramené à 15 : les bouts sont ronds. <code>html</code> n'a pas de fond : on voit le canevas, blanc.</p></div>
+<div class="cap" data-t="4" data-step="Une ombre géante : le fond"><h3>2. Une ombre géante : le fond</h3><p>La dernière ombre, <code>2lh 0 0 4in#a85</code>, est étalée de 384px (<code>4in</code>) : elle couvre tout le cadre en ocre. Mais une ombre n'est jamais peinte sous la boîte qui la porte. La boîte de <code>html</code> reste blanche : c'est la barre blanche du bas, sans écrire de blanc ni de <code>background</code>.</p></div>
+<div class="cap" data-t="8" data-step="Trois ombres : trois barres"><h3>3. Trois ombres : trois barres</h3><p><code>color:373737</code>, un hex sans <code>#</code> que le mode quirks accepte, colore les ombres sans couleur. Avec la police de 16px, <code>5vw -5ch</code> décale une copie de 20 à droite et 40 plus haut : barre sombre en y = 155. <code>5ch -5em#fff</code> : 40 et 80, barre blanche en y = 115. <code>64Q -30vw</code> : 60,47 et 120, barre sombre en y = 75. Elles dépassent toutes à droite du cadre.</p></div>
+<div class="cap" data-t="12" data-step="Le body : même liste, grosse police"><h3>4. Le <code>body</code> : même liste, grosse police</h3><p><code>*</code> imbriqué vise le <code>body</code>, qui garde tout ce que <code>*</code> lui donne : rayon, couleur, ombres. <code>margin:0 90-46%140</code> le met de x = 280 à 310. <code>-46%</code> de 260 fait −119,6 : en mode quirks, il descend jusqu'à y = 344,6. <code>font:5cm"</code> lui donne une police de 189px. Ses ombres en <code>ch</code> et <code>em</code> grandissent avec elle : (20 ; −472,4) et (472,4 ; −945). Elles sortent du cadre.</p></div>
+<div class="cap" data-t="16" data-step="Un cache couleur du fond"><h3>5. Un cache couleur du fond</h3><p>L'ombre géante du <code>body</code> est la même, <code>2lh 0 0 4in</code>, mais <code>2lh</code> vaut maintenant 434px. Décalée de 434 et étalée de 384, elle commence à x = 280 + 434 − 384 = 330 et couvre tout ce qui est à droite, sur toute la hauteur. Peinte après les ombres de <code>html</code>, elle coupe net les quatre barres à x = 330.</p></div>
+<div class="cap" data-t="20" data-step="La pilule"><h3>6. La pilule</h3><p><code>64Q -30vw</code> ne dépend pas de la police. Sur le <code>body</code>, cette copie est décalée de 60,47 à droite et 120 plus haut : de x = 340,5 à 370,5 et de y = 75 à 224,6, avec les bouts ronds du <code>body</code>. Placée avant l'ombre géante dans la liste, elle est peinte au-dessus : c'est la pilule sombre.</p></div>
+<div class="cap" data-t="24" data-step="Résultat" data-live="149 caractères · 100 % identique"><h3>7. Résultat : 149 caractères</h3><p>Deux boîtes transparentes, une seule liste d'ombres. L'unité de chaque ombre choisit sur quelle boîte elle reste visible.</p></div>
+{%- else %}
+<div class="cap" data-t="0" data-step="html: a hole"><h3>1. <code>html</code>: a hole</h3><p><code>*</code> matches everything, starting with <code>html</code>. <code>margin:195 0 75 140</code> puts it from x = 140 to 400 and, in quirks mode, from y = 195 to 225: 260 × 30. <code>border-radius:1in</code> (96px) is too big and is scaled down to 15: round ends. <code>html</code> has no background: the canvas shows through, white.</p></div>
+<div class="cap" data-t="4" data-step="A giant shadow: the background"><h3>2. A giant shadow: the background</h3><p>The last shadow, <code>2lh 0 0 4in#a85</code>, is spread by 384px (<code>4in</code>): it covers the whole canvas in ochre. But a shadow is never painted under the box that casts it. <code>html</code>'s box stays white: that is the bottom white bar, with no white and no <code>background</code> written.</p></div>
+<div class="cap" data-t="8" data-step="Three shadows: three bars"><h3>3. Three shadows: three bars</h3><p><code>color:373737</code>, a hex with no <code>#</code> that quirks mode accepts, colors the shadows that have no color. With the 16px font, <code>5vw -5ch</code> moves a copy 20 right and 40 up: a dark bar at y = 155. <code>5ch -5em#fff</code>: 40 and 80, a white bar at y = 115. <code>64Q -30vw</code>: 60.47 and 120, a dark bar at y = 75. They all go past the right edge of the canvas.</p></div>
+<div class="cap" data-t="12" data-step="The body: same list, big font"><h3>4. The <code>body</code>: same list, big font</h3><p>The nested <code>*</code> matches the <code>body</code>, which keeps everything <code>*</code> gives it: radius, color, shadows. <code>margin:0 90-46%140</code> puts it from x = 280 to 310. <code>-46%</code> of 260 is −119.6: in quirks mode it reaches down to y = 344.6. <code>font:5cm"</code> gives it a 189px font. Its shadows in <code>ch</code> and <code>em</code> grow with it: (20, −472.4) and (472.4, −945). They leave the canvas.</p></div>
+<div class="cap" data-t="16" data-step="A background-colored cover"><h3>5. A background-colored cover</h3><p>The <code>body</code>'s giant shadow is the same, <code>2lh 0 0 4in</code>, but <code>2lh</code> is now 434px. Moved by 434 and spread by 384, it starts at x = 280 + 434 − 384 = 330 and covers everything to the right, full height. Painted after <code>html</code>'s shadows, it cuts the four bars cleanly at x = 330.</p></div>
+<div class="cap" data-t="20" data-step="The pill"><h3>6. The pill</h3><p><code>64Q -30vw</code> does not depend on the font. On the <code>body</code>, this copy moves 60.47 right and 120 up: from x = 340.5 to 370.5 and y = 75 to 224.6, with the <code>body</code>'s round ends. It comes before the giant shadow in the list, so it is painted on top: the dark pill.</p></div>
+<div class="cap" data-t="24" data-step="Result" data-live="149 characters · 100% match"><h3>7. Result: 149 characters</h3><p>Two transparent boxes, one shadow list. The unit of each shadow decides on which box it stays in view.</p></div>
+{%- endif %}
+</div>
+<div class="live"></div>
+</div>
+</div>
+<script>
+(window.AnimScenes = window.AnimScenes || {}).t1110 = (fig) => {
+  const fr = document.documentElement.lang === 'fr';
+  const $ = (s) => fig.querySelector(s);
+  const $$ = (s) => [...fig.querySelectorAll(s)];
+  const H = $('.t1110-html'), B = $('.t1110-body'), oH = $('[data-o="html"]'), oB = $('[data-o="body"]'), live = $('.live');
+  const L = (k) => $(`.t1110-l-${k}`);
+  const W = { h: [0.3, 1.8], g: [4.2, 6], s: [8.2, 9.8], b: [12.2, 14.2], c: [16.2, 17.8], p: [20.2, 21.8], fin: [24.1, 24.9] };
+  const ease = (x) => (x < 0.5 ? 4 * x * x * x : 1 - Math.pow(-2 * x + 2, 3) / 2);
+  const pr = (t, [a, b]) => ease(Math.min(1, Math.max(0, (t - a) / (b - a))));
+  const lerp = (a, b, m) => a + (b - a) * m;
+  const win = (t, a, b) => Math.min(pr(t, [a, a + 0.5]), 1 - pr(t, [b - 0.4, b]));
+  const f1 = (v) => { const s = (Math.round(v * 10) / 10).toFixed(1).replace(/\.0$/, ''); return (fr ? s.replace('.', ',') : s).replace('-', '−'); };
+  const c = fr ? ' :' : ':';
+  const D = 'var(--t1110-d)', O = 'var(--t1110-o)';
+  return (t, step) => {
+    const teach = fig.dataset.teach === '1';
+    const real = !teach || t >= W.fin[0];
+    const guides = t < W.fin[0] ? 1 : 0;
+    const h = pr(t, W.h), g = pr(t, W.g), s = pr(t, W.s), b = pr(t, W.b), cc = pr(t, W.c), p = pr(t, W.p);
+    // html: three bars, then the giant ochre shadow (last = painted below)
+    H.style.boxShadow = `${20 * s}px ${-40 * s}px 0 0 ${D}, ${40 * s}px ${-80 * s}px 0 0 #fff, ${60.4724 * s}px ${-120 * s}px 0 0 ${D}, ${36 * g}px 0 0 ${384 * g}px ${O}`;
+    // body: its font grows from 16px to 189px (5cm); ch = 0.5em, lh 18 → 217
+    const fs = lerp(16, 188.976, b), ch = fs / 2, lh = lerp(18, 217, b);
+    const list = [];
+    if (b > 0) list.push(`20px ${-5 * ch}px 0 0 ${D}`, `${5 * ch}px ${-5 * fs}px 0 0 #fff`);
+    if (p > 0) list.push(`${60.4724 * p}px ${-120 * p}px 0 0 ${D}`);
+    if (cc > 0) list.push(`${lerp(834, 2 * lh, cc)}px 0 0 384px ${real ? O : 'var(--t1110-c)'}`);
+    B.style.boxShadow = list.join(', ') || 'none';
+    oH.style.opacity = (step <= 2 ? h : 0) * guides;
+    oB.style.opacity = (step >= 3 && step <= 5 ? b : 0) * guides;
+    L('h').style.opacity = win(t, W.h[0], W.g[0] - 0.2);
+    L('g').style.opacity = win(t, W.g[0], W.s[0] - 0.2);
+    L('s').style.opacity = win(t, W.s[0], W.b[0] - 0.2);
+    L('b').style.opacity = win(t, W.b[0], W.c[0] - 0.2);
+    L('c').style.opacity = win(t, W.c[0], W.p[0] - 0.2);
+    L('p').style.opacity = win(t, W.p[0], W.fin[0]);
+    let txt = '';
+    if (step === 0) txt = `html${c} x 140 → 400, y 195 → 225`;
+    else if (step === 1) txt = `${fr ? 'étalement' : 'spread'}${c} ${f1(384 * g)}px`;
+    else if (step === 2) txt = `${fr ? 'barre du haut' : 'top bar'}${c} y ${f1(195 - 120 * s)}`;
+    else if (step === 3) txt = `font${c} ${f1(fs)}px · 5ch = ${f1(5 * ch)}`;
+    else if (step === 4) txt = `${fr ? 'bord gauche' : 'left edge'}${c} x ${f1(lerp(834, 434, cc) + 280 - 384)}`;
+    else if (step === 5) txt = `${fr ? 'pilule' : 'pill'}${c} y ${f1(195 - 120 * p)} → ${f1(344.6 - 120 * p)}`;
+    else txt = $$('.caps .cap')[6].dataset.live || '';
+    live.textContent = txt;
+  };
+};
+</script>
+</figure>
