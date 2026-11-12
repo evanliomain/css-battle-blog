@@ -1,0 +1,106 @@
+<figure class="anim t1111" data-duration="28" data-scene="t1111" data-wide="-40 -70 480 450" data-off-label="-36 -66" style="--bg:#6f9893">
+<style>
+.t1111{--t1111-b:#2f5a76;--t1111-g:#6f9893;--t1111-ho:#e3a13b;--t1111-bo:#b46bd6;--t1111-dash:rgb(200 40 110 / .9)}
+.t1111 .t1111-bg{position:absolute;left:-40px;top:-70px;width:480px;height:450px;background:linear-gradient(var(--t1111-b) 40px,var(--t1111-g) 0) 0 0/100% 50px;opacity:0}
+.t1111 .t1111-html{position:absolute;left:80px;top:30px;width:240px;height:250px}
+.t1111 .t1111-bclip{position:absolute;left:0;top:0;width:100%;height:100%;overflow:visible}
+.t1111 .t1111-bout{position:absolute;left:300px;top:65px;width:20px;height:170px}
+.t1111 .t1111-body{position:absolute;left:300px;top:65px;width:20px;height:170px;background:var(--t1111-b);opacity:0}
+.t1111 .t1111-o{position:absolute;box-sizing:border-box;border:1.5px dashed var(--t1111-dash);pointer-events:none;opacity:0}
+.t1111 .t1111-circ{position:absolute;left:220px;top:50px;width:200px;height:200px;border-radius:50%}
+.t1111 .zlab{color:#fff;background:rgb(15 30 40 / .9);padding:1px 5px;border-radius:3px}
+</style>
+<div class="anim-col">
+<div class="stage" role="img" aria-label="{% if include.lang == "fr" %}Animation : html est une boîte de 240 × 250 ; son fond en bandes, 40px de bleu puis 10px de vert, couvre tout le canevas ; son outline vert de 80px cache tout autour du carré ; le body, une boîte de 20 × 170 toute bleue, est la barre verticale ; son outline vert, découpé par clip-path en un disque de rayon 100 centré en (320, 150), mord dans les bandes{% else %}Animation: html is a 240 × 250 box; its striped background, 40px of blue then 10px of green, covers the whole canvas; its 80px green outline hides everything around the square; the body, an all-blue 20 × 170 box, is the vertical bar; its green outline, cut by clip-path into a disc of radius 100 centered at (320, 150), bites into the stripes{% endif %}">
+<div class="scene">
+<div class="t1111-bg"></div>
+<div class="t1111-html"></div>
+<div class="t1111-bclip"><div class="t1111-bout"></div></div>
+<div class="t1111-body"></div>
+<div class="t1111-o" data-o="html" style="left:80px;top:30px;width:240px;height:250px"></div>
+<div class="t1111-o" data-o="body" style="left:300px;top:65px;width:20px;height:170px"></div>
+<div class="t1111-o t1111-circ" data-o="circ"></div>
+<span class="zlab t1111-l-h" style="left:84px;top:34px">html 240 × 250</span>
+<span class="zlab t1111-l-s" style="left:84px;top:34px">20% × 250 = 50 · 5ch = 40</span>
+<span class="zlab t1111-l-o" style="left:84px;top:34px">5pc = 80px</span>
+<span class="zlab t1111-l-b" style="left:84px;top:244px">body 20 × 170 · 20% × 170 = 34 &lt; 40</span>
+<span class="zlab t1111-l-bo" style="left:84px;top:244px">outline 80px</span>
+<span class="zlab t1111-l-c" style="left:84px;top:244px">25vw = 100 · 5vw = 20 → (320, 150)</span>
+</div>
+</div>
+<div class="legend"><span><i style="--c:var(--t1111-ho)"></i>{% if include.lang == "fr" %}outline de html (vert en vrai){% else %}html's outline (green in reality){% endif %}</span><span><i style="--c:var(--t1111-bo)"></i>{% if include.lang == "fr" %}outline du body (vert en vrai){% else %}the body's outline (green in reality){% endif %}</span></div>
+</div>
+<div class="anim-side">
+<pre class="code" aria-hidden="true">&lt;style>*{<span data-on="1">margin:30 80 20</span>;<span data-on="3 5">outline:5pc solid#6f9893</span>;<span data-on="2 4">background:linear-gradient(#2f5a76 5ch,#6f9893 0)0/9%20%</span>;*{<span data-on="4" data-tone="2">margin:35 0 45 220</span>;<span data-on="6" data-tone="2">clip-path:circle(25vw at 5vw</span></pre>
+<div class="now" aria-live="polite">
+<div class="caps">
+{%- if include.lang == "fr" %}
+<div class="cap" data-t="0" data-step="html : le carré"><h3>1. <code>html</code> : le carré</h3><p><code>*</code> vise tout, à commencer par <code>html</code>. <code>margin:30 80 20</code> le met de x = 80 à 320. En mode quirks, il prend la hauteur laissée par ses marges : 300 − 30 − 20 = 250, de y = 30 à 280. C'est le carré des bandes.</p></div>
+<div class="cap" data-t="4" data-step="Le fond : des bandes partout"><h3>2. Le fond : des bandes partout</h3><p>Le fond de <code>html</code> passe au canevas : il couvre tout le cadre, mais ses tuiles se calent sur la boîte de <code>html</code>. <code>0/9%20%</code> fait des tuiles de 20 % × 250 = 50px de haut, à partir de y = 30. Dans chacune, le dégradé met 40px de bleu (<code>5ch</code>, 8px par <code>ch</code>) puis du vert jusqu'au bout.</p></div>
+<div class="cap" data-t="8" data-step="Un outline cache le reste"><h3>3. Un outline cache le reste</h3><p><code>outline:5pc solid#6f9893</code> trace 80px de vert autour de <code>html</code> (<code>1pc</code> = 16px) : de x = 0 à 400 et de y = −50 à 360. Il cache toutes les bandes hors du carré. Il reste cinq barres bleues, de y = 30 à 270, et 10px de vert en bas du carré.</p></div>
+<div class="cap" data-t="12" data-step="Le body : la barre verticale"><h3>4. Le <code>body</code> : la barre verticale</h3><p><code>*</code> imbriqué vise le <code>body</code>. <code>margin:35 0 45 220</code> le met de x = 300 à 320 et, en mode quirks, de y = 65 à 235 : 20 × 170. Il a le même fond, mais ses tuiles font 20 % × 170 = 34px de haut, moins que les 40px de bleu : le <code>body</code> est tout bleu.</p></div>
+<div class="cap" data-t="16" data-step="Un deuxième outline"><h3>5. Un deuxième outline</h3><p>Le <code>body</code> a aussi son outline vert de 80px : de x = 220 à 400 et de y = −15 à 315. Il est peint au-dessus de celui de <code>html</code>. Tel quel, il cacherait toute la droite des barres.</p></div>
+<div class="cap" data-t="20" data-step="clip-path : un disque"><h3>6. <code>clip-path</code> : un disque</h3><p><code>circle(25vw at 5vw)</code> découpe tout ce que peint le <code>body</code>, outline compris, dans un cercle de rayon 100 (<code>25vw</code>). Son centre est à 20px du bord gauche du <code>body</code> (<code>5vw</code>) et à mi-hauteur : (320, 150). Il reste un disque vert qui mord dans les barres jusqu'à x = 220, avec la barre bleue dedans.</p></div>
+<div class="cap" data-t="24" data-step="Résultat" data-live="156 caractères · 100 % identique"><h3>7. Résultat : 156 caractères</h3><p>Un fond en bandes, deux outlines du vert du fond, et un <code>clip-path</code> qui ne garde qu'un disque du second.</p></div>
+{%- else %}
+<div class="cap" data-t="0" data-step="html: the square"><h3>1. <code>html</code>: the square</h3><p><code>*</code> matches everything, starting with <code>html</code>. <code>margin:30 80 20</code> puts it from x = 80 to 320. In quirks mode it takes the height left by its margins: 300 − 30 − 20 = 250, from y = 30 to 280. That is the square of stripes.</p></div>
+<div class="cap" data-t="4" data-step="The background: stripes everywhere"><h3>2. The background: stripes everywhere</h3><p><code>html</code>'s background goes to the canvas: it covers the whole frame, but its tiles line up with <code>html</code>'s box. <code>0/9%20%</code> makes tiles 20% × 250 = 50px tall, starting at y = 30. In each one, the gradient puts 40px of blue (<code>5ch</code>, 8px per <code>ch</code>), then green to the end.</p></div>
+<div class="cap" data-t="8" data-step="An outline hides the rest"><h3>3. An outline hides the rest</h3><p><code>outline:5pc solid#6f9893</code> draws 80px of green around <code>html</code> (<code>1pc</code> = 16px): from x = 0 to 400 and y = −50 to 360. It hides every stripe outside the square. Five blue bars are left, from y = 30 to 270, and 10px of green at the bottom of the square.</p></div>
+<div class="cap" data-t="12" data-step="The body: the vertical bar"><h3>4. The <code>body</code>: the vertical bar</h3><p>The nested <code>*</code> matches the <code>body</code>. <code>margin:35 0 45 220</code> puts it from x = 300 to 320 and, in quirks mode, from y = 65 to 235: 20 × 170. It has the same background, but its tiles are 20% × 170 = 34px tall, less than the 40px of blue: the <code>body</code> is all blue.</p></div>
+<div class="cap" data-t="16" data-step="A second outline"><h3>5. A second outline</h3><p>The <code>body</code> gets the 80px green outline too: from x = 220 to 400 and y = −15 to 315. It is painted on top of <code>html</code>'s. As is, it would hide the whole right side of the bars.</p></div>
+<div class="cap" data-t="20" data-step="clip-path: a disc"><h3>6. <code>clip-path</code>: a disc</h3><p><code>circle(25vw at 5vw)</code> cuts everything the <code>body</code> paints, outline included, to a circle of radius 100 (<code>25vw</code>). Its center is 20px from the <code>body</code>'s left edge (<code>5vw</code>) and halfway down: (320, 150). What is left is a green disc that bites into the bars up to x = 220, with the blue bar inside.</p></div>
+<div class="cap" data-t="24" data-step="Result" data-live="156 characters · 100% match"><h3>7. Result: 156 characters</h3><p>A striped background, two outlines in the background green, and a <code>clip-path</code> that keeps only a disc of the second one.</p></div>
+{%- endif %}
+</div>
+<div class="live"></div>
+</div>
+</div>
+<script>
+(window.AnimScenes = window.AnimScenes || {}).t1111 = (fig) => {
+  const fr = document.documentElement.lang === 'fr';
+  const $ = (s) => fig.querySelector(s);
+  const $$ = (s) => [...fig.querySelectorAll(s)];
+  const BG = $('.t1111-bg'), H = $('.t1111-html'), BC = $('.t1111-bclip'), BO = $('.t1111-bout'), B = $('.t1111-body'), live = $('.live');
+  const oH = $('[data-o="html"]'), oB = $('[data-o="body"]'), oC = $('[data-o="circ"]');
+  const L = (k) => $(`.t1111-l-${k}`);
+  const W = { h: [0.3, 1.8], s: [4.2, 6], o: [8.2, 10], b: [12.2, 13.6], bo: [16.2, 18], c: [20.2, 22.2], fin: [24.1, 24.9] };
+  const ease = (x) => (x < 0.5 ? 4 * x * x * x : 1 - Math.pow(-2 * x + 2, 3) / 2);
+  const pr = (t, [a, b]) => ease(Math.min(1, Math.max(0, (t - a) / (b - a))));
+  const lerp = (a, b, m) => a + (b - a) * m;
+  const win = (t, a, b) => Math.min(pr(t, [a, a + 0.5]), 1 - pr(t, [b - 0.4, b]));
+  const f0 = (v) => String(Math.round(v)).replace('-', '−');
+  const c = fr ? ' :' : ':';
+  return (t, st) => {
+    const step = st + 1;
+    const teach = fig.dataset.teach === '1';
+    const real = !teach || t >= W.fin[0];
+    const guides = t < W.fin[0] ? 1 : 0;
+    const h = pr(t, W.h), s = pr(t, W.s), o = pr(t, W.o), b = pr(t, W.b), bo = pr(t, W.bo), cc = pr(t, W.c);
+    BG.style.opacity = s;
+    H.style.boxShadow = o > 0 ? `0 0 0 ${80 * o}px ${real ? 'var(--t1111-g)' : 'var(--t1111-ho)'}` : 'none';
+    B.style.opacity = b;
+    BO.style.boxShadow = bo > 0 ? `0 0 0 ${80 * bo}px ${real ? 'var(--t1111-g)' : 'var(--t1111-bo)'}` : 'none';
+    const R = lerp(420, 100, cc);
+    BC.style.clipPath = cc > 0 ? `circle(${R}px at 320px 150px)` : 'none';
+    oH.style.opacity = (step <= 3 ? h : 0) * guides;
+    oB.style.opacity = (step >= 4 && step <= 6 ? b : 0) * guides;
+    oC.style.opacity = (step === 6 ? cc : 0) * guides;
+    L('h').style.opacity = win(t, W.h[0], W.s[0] - 0.2);
+    L('s').style.opacity = win(t, W.s[0], W.o[0] - 0.2);
+    L('o').style.opacity = win(t, W.o[0], W.b[0] - 0.2);
+    L('b').style.opacity = win(t, W.b[0], W.bo[0] - 0.2);
+    L('bo').style.opacity = win(t, W.bo[0], W.c[0] - 0.2);
+    L('c').style.opacity = win(t, W.c[0], W.fin[0]);
+    let txt = '';
+    if (step === 1) txt = `html${c} x 80 → 320, y 30 → 280`;
+    else if (step === 2) txt = `${fr ? 'bleu' : 'blue'}${c} y 30 → 70, 80 → 120, 130 → 170…`;
+    else if (step === 3) txt = `outline${c} ${f0(80 * o)}px`;
+    else if (step === 4) txt = `body${c} x 300 → 320, y 65 → 235`;
+    else if (step === 5) txt = `outline${c} ${f0(80 * bo)}px`;
+    else if (step === 6) txt = `${fr ? 'rayon' : 'radius'}${c} ${f0(R)}px`;
+    else txt = $$('.caps .cap')[6].dataset.live || '';
+    live.textContent = txt;
+  };
+};
+</script>
+</figure>
