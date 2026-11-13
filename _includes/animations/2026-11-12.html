@@ -1,0 +1,99 @@
+<figure class="anim t1112" data-duration="24" data-scene="t1112" data-wide="-50 -40 500 380" data-off-label="-46 -36" style="--bg:#fff">
+<style>
+.t1112{--t1112-y:#f2eaa8;--t1112-c:#ee7766;--t1112-h:#e3a13b;--t1112-d:#4a90c8;--t1112-p:#3fae6a;--t1112-pb:#555;--t1112-dash:rgb(200 40 110 / .9)}
+.t1112 .t1112-can{position:absolute;left:0;top:0;width:400px;height:300px;background:var(--t1112-c);opacity:0}
+.t1112 .t1112-bar{position:absolute;left:90px;top:110px;width:220px;height:80px;box-sizing:border-box;border-inline:108px solid var(--t1112-y);transform-origin:50% 50%;opacity:0}
+.t1112 .t1112-body{position:absolute;left:199.5px;top:110px;width:1px;height:80px;border-left:1.5px dashed var(--t1112-dash);transform-origin:50% 50%;opacity:0}
+.t1112 .t1112-p{position:absolute;left:80px;top:135.2px;width:240px;height:29.6px;box-sizing:border-box;border-inline:30px solid var(--t1112-y);background:var(--t1112-c);transform-origin:50% 50%;opacity:0}
+.t1112 .zlab{color:#fff;background:rgb(40 25 20 / .9);padding:1px 5px;border-radius:3px}
+</style>
+<div class="anim-col">
+<div class="stage" role="img" aria-label="{% if include.lang == "fr" %}Animation : html est une barre de 220 × 80 aux deux bouts jaunes ; offset:ray(45deg) la centre sur le canevas et la tourne de −45° ; le body, au fond corail, tourne encore de −45° ; dl, la même barre, tourne de −135° et croise la première en X ; p, une bande de 240 × 30 au centre corail et aux bouts jaunes, tourne de −180° : horizontale, elle coupe le X en deux et laisse deux petits carrés jaunes{% else %}Animation: html is a 220 × 80 bar with two yellow ends; offset:ray(45deg) centers it on the canvas and turns it by −45°; the body, with a coral background, turns by another −45°; dl, the same bar, turns by −135° and crosses the first one in an X; p, a 240 × 30 band with a coral middle and yellow ends, turns by −180°: horizontal, it cuts the X in two and leaves two small yellow squares{% endif %}">
+<div class="scene">
+<div class="t1112-can"></div>
+<div class="t1112-bar" data-b="h"></div>
+<div class="t1112-body"></div>
+<div class="t1112-bar" data-b="d"></div>
+<div class="t1112-p"></div>
+<span class="zlab t1112-l-h" style="left:10px;top:10px">4 + 2 × 108 = 220 · 5em = 80</span>
+<span class="zlab t1112-l-r" style="left:10px;top:10px">ray(45deg) → −45°</span>
+<span class="zlab t1112-l-b" style="left:10px;top:10px">body : −45° − 45° = −90°</span>
+<span class="zlab t1112-l-d" style="left:10px;top:10px">dl : −135°</span>
+<span class="zlab t1112-l-p" style="left:10px;top:10px">p : 240 × {% if include.lang == "fr" %}29,6{% else %}29.6{% endif %} · −180°</span>
+</div>
+</div>
+<div class="legend"><span><i style="--c:var(--t1112-h)"></i>{% if include.lang == "fr" %}bordures de html{% else %}html's borders{% endif %}</span><span><i style="--c:var(--t1112-d)"></i>{% if include.lang == "fr" %}bordures de dl{% else %}dl's borders{% endif %}</span><span><i style="--c:var(--t1112-p)"></i>{% if include.lang == "fr" %}bordures de p{% else %}p's borders{% endif %}</span></div>
+</div>
+<div class="anim-side">
+<pre class="code" aria-hidden="true"><span data-on="4">&lt;dl></span><span data-on="5">&lt;p></span>&lt;style>*{<span data-on="2 3 4 5">offset:ray(45deg)</span>}<span data-on="1 4">&amp;,dl,p{height:5em;width:4;border-inline:6lh solid#f2eaa8</span>;<span data-on="3 5" data-tone="2">>*{background:#e76</span>;<span data-on="5">p{width:180;font:37%/85%"</span></pre>
+<div class="now" aria-live="polite">
+<div class="caps">
+{%- if include.lang == "fr" %}
+<div class="cap" data-t="0" data-step="html : une barre"><h3>1. <code>html</code> : une barre</h3><p>Le <code>&amp;</code> de premier niveau vise <code>html</code>. <code>width:4</code>, plus deux bordures de <code>6lh</code> : la ligne fait 18px avec la police de 16px, donc 108px chacune. La boîte fait 4 + 2 × 108 = 220 de long et <code>5em</code> = 80 de haut : deux blocs jaunes séparés de 4px.</p></div>
+<div class="cap" data-t="4" data-step="offset : centrer et tourner"><h3>2. <code>offset</code> : centrer et tourner</h3><p><code>offset:ray(45deg)</code> pose chaque boîte sur un chemin : un rayon qui part du centre de son bloc conteneur, à 45° de la verticale. La boîte se centre au départ du rayon et tourne dans son sens : −45°. <code>html</code> se centre sur le canevas, en (200, 150), sans aucune marge.</p></div>
+<div class="cap" data-t="8" data-step="Le body : du corail et un quart de tour"><h3>3. Le <code>body</code> : du corail et un quart de tour</h3><p><code>>*</code> vise les enfants : le <code>body</code> reçoit <code>background:#e76</code>, qui passe au canevas. Il a aussi son <code>offset</code> : il se centre dans <code>html</code> et tourne encore de −45°. Avec le tour de <code>html</code>, cela fait −90° en tout. Il ne peint rien d'autre, mais ses enfants héritent de ce repère.</p></div>
+<div class="cap" data-t="12" data-step="dl : la deuxième barre"><h3>4. <code>dl</code> : la deuxième barre</h3><p><code>dl</code> est dans le <code>body</code> et reçoit la même barre de 220 × 80. Sa propre rotation s'ajoute : −135°. Elle croise la première en X, centrée elle aussi en (200, 150). Chaque barre cache le trou de 4px de l'autre, sauf un petit carré au centre.</p></div>
+<div class="cap" data-t="16" data-step="p : la bande horizontale"><h3>5. <code>p</code> : la bande horizontale</h3><p>Le <code>p</code> est dans <code>dl</code> : −180°, il est à plat. <code>font:37%/85%"</code> : 37 % de 16 fait 5,92px, donc <code>5em</code> = 29,6 de haut. La ligne, 85 %, se calcule sur le plancher de 6px du texte : 5,1px, et <code>6lh</code> = 30,6 est arrondi à 30. Il fait 180 + 2 × 30 = 240 de long. Enfant de <code>dl</code>, il a le fond corail : il coupe le X en deux, et ses bordures font les deux petits carrés jaunes.</p></div>
+<div class="cap" data-t="20" data-step="Résultat" data-live="135 caractères · 100 % identique"><h3>6. Résultat : 135 caractères</h3><p>Quatre boîtes emboîtées, une seule rotation de −45° écrite : chaque niveau la rajoute.</p></div>
+{%- else %}
+<div class="cap" data-t="0" data-step="html: a bar"><h3>1. <code>html</code>: a bar</h3><p>The top-level <code>&amp;</code> matches <code>html</code>. <code>width:4</code>, plus two borders of <code>6lh</code>: the line is 18px with the 16px font, so 108px each. The box is 4 + 2 × 108 = 220 long and <code>5em</code> = 80 tall: two yellow blocks 4px apart.</p></div>
+<div class="cap" data-t="4" data-step="offset: center and turn"><h3>2. <code>offset</code>: center and turn</h3><p><code>offset:ray(45deg)</code> puts each box on a path: a ray from the center of its containing block, 45° from vertical. The box is centered on the start of the ray and turns to follow it: −45°. <code>html</code> is centered on the canvas, at (200, 150), with no margin at all.</p></div>
+<div class="cap" data-t="8" data-step="The body: coral and a quarter turn"><h3>3. The <code>body</code>: coral and a quarter turn</h3><p><code>>*</code> matches the children: the <code>body</code> gets <code>background:#e76</code>, which goes to the canvas. It has its own <code>offset</code> too: it is centered in <code>html</code> and turns by another −45°. Added to <code>html</code>'s turn, that makes −90° in all. It paints nothing else, but its children inherit that frame.</p></div>
+<div class="cap" data-t="12" data-step="dl: the second bar"><h3>4. <code>dl</code>: the second bar</h3><p><code>dl</code> is inside the <code>body</code> and gets the same 220 × 80 bar. Its own turn adds up: −135°. It crosses the first one in an X, also centered at (200, 150). Each bar hides the other's 4px gap, except for a small square in the middle.</p></div>
+<div class="cap" data-t="16" data-step="p: the horizontal band"><h3>5. <code>p</code>: the horizontal band</h3><p>The <code>p</code> is inside <code>dl</code>: at −180°, it lies flat. <code>font:37%/85%"</code>: 37% of 16 is 5.92px, so <code>5em</code> = 29.6 tall. The line, 85%, is computed on the 6px floor for text: 5.1px, and <code>6lh</code> = 30.6 is rounded down to 30. It is 180 + 2 × 30 = 240 long. As a child of <code>dl</code>, it gets the coral background: it cuts the X in two, and its borders are the two small yellow squares.</p></div>
+<div class="cap" data-t="20" data-step="Result" data-live="135 characters · 100% match"><h3>6. Result: 135 characters</h3><p>Four nested boxes, one −45° turn written once: each level adds it again.</p></div>
+{%- endif %}
+</div>
+<div class="live"></div>
+</div>
+</div>
+<script>
+(window.AnimScenes = window.AnimScenes || {}).t1112 = (fig) => {
+  const fr = document.documentElement.lang === 'fr';
+  const $ = (s) => fig.querySelector(s);
+  const $$ = (s) => [...fig.querySelectorAll(s)];
+  const CAN = $('.t1112-can'), H = $('[data-b="h"]'), BD = $('.t1112-body'), D = $('[data-b="d"]'), P = $('.t1112-p'), live = $('.live');
+  const L = (k) => $(`.t1112-l-${k}`);
+  const W = { h: [0.3, 1.5], r: [4.3, 6.3], b: [8.3, 10.3], d: [12.3, 14.3], p: [16.3, 18.3], fin: [20.1, 20.9] };
+  const ease = (x) => (x < 0.5 ? 4 * x * x * x : 1 - Math.pow(-2 * x + 2, 3) / 2);
+  const pr = (t, [a, b]) => ease(Math.min(1, Math.max(0, (t - a) / (b - a))));
+  const win = (t, a, b) => Math.min(pr(t, [a, a + 0.5]), 1 - pr(t, [b - 0.4, b]));
+  const f0 = (v) => String(Math.round(v)).replace('-', '−');
+  const c = fr ? ' :' : ':';
+  return (t, st) => {
+    const step = st + 1;
+    const teach = fig.dataset.teach === '1';
+    const real = !teach || t >= W.fin[0];
+    const guides = t < W.fin[0] ? 1 : 0;
+    const h = pr(t, W.h), r = pr(t, W.r), b = pr(t, W.b), d = pr(t, W.d), p = pr(t, W.p);
+    const a1 = -45 * r, a2 = a1 - 45 * b;
+    CAN.style.opacity = b;
+    H.style.opacity = h;
+    H.style.transform = `rotate(${a1}deg)`;
+    H.style.borderColor = real ? 'var(--t1112-y)' : 'var(--t1112-h)';
+    BD.style.opacity = (step >= 3 && step <= 4 ? b : 0) * guides;
+    BD.style.transform = `rotate(${a2 + 90}deg)`;
+    D.style.opacity = d;
+    D.style.transform = `rotate(${a2 - 45 * d}deg)`;
+    D.style.borderColor = real ? 'var(--t1112-y)' : 'var(--t1112-d)';
+    P.style.opacity = p;
+    P.style.transform = `rotate(${a2 - 45 - 45 * p}deg)`;
+    P.style.borderColor = real ? 'var(--t1112-y)' : 'var(--t1112-p)';
+    P.style.background = real ? 'var(--t1112-c)' : 'var(--t1112-pb)';
+    L('h').style.opacity = win(t, W.h[0], W.r[0] - 0.2);
+    L('r').style.opacity = win(t, W.r[0], W.b[0] - 0.2);
+    L('b').style.opacity = win(t, W.b[0], W.d[0] - 0.2);
+    L('d').style.opacity = win(t, W.d[0], W.p[0] - 0.2);
+    L('p').style.opacity = win(t, W.p[0], W.fin[0]);
+    let txt = '';
+    if (step === 1) txt = `html${c} 220 × 80`;
+    else if (step === 2) txt = `html${c} ${f0(a1)}°`;
+    else if (step === 3) txt = `body${c} ${f0(a2)}°`;
+    else if (step === 4) txt = `dl${c} ${f0(a2 - 45 * d)}°`;
+    else if (step === 5) txt = `p${c} ${f0(a2 - 45 - 45 * p)}°`;
+    else txt = $$('.caps .cap')[5].dataset.live || '';
+    live.textContent = txt;
+  };
+};
+</script>
+</figure>
