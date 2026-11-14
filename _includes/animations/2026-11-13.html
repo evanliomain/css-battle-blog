@@ -1,0 +1,122 @@
+<figure class="anim t1113" data-duration="28" data-scene="t1113" data-wide="-50 -40 500 380" data-off-label="-46 -36" style="--bg:#fff">
+<style>
+.t1113{--t1113-v:#411c56;--t1113-g:#b7d7cd;--t1113-p:#c06c88;--t1113-g2:#7fb3e0;--t1113-p2:#e3a13b;--t1113-dash:rgb(255 210 90 / .95)}
+.t1113 .t1113-can{position:absolute;left:0;top:0;width:400px;height:300px;background:var(--t1113-v);opacity:0}
+.t1113 .t1113-pp{position:absolute;left:0;top:0;width:400px;height:300px;opacity:0}
+.t1113 .t1113-out,.t1113 .t1113-in{position:absolute;left:0;top:0;width:400px;height:300px}
+.t1113 .t1113-out{background:var(--t1113-p)}
+.t1113 .t1113-in{background:var(--t1113-g)}
+.t1113 .t1113-o{position:absolute;box-sizing:border-box;border:1.5px dashed var(--t1113-dash);pointer-events:none;opacity:0}
+.t1113 .zlab{color:#fff;background:rgb(20 10 30 / .9);padding:1px 5px;border-radius:3px}
+</style>
+<div class="anim-col">
+<div class="stage" role="img" aria-label="{% if include.lang == "fr" %}Animation : tout le canevas devient violet ; le premier p est une boîte de 200 × 90, en x = 100 et y = 40, toute en bordure verte de 45px ; corner-shape:notch et border-radius:35%/0 53Q retirent un rectangle de 70 × 50 en haut à droite et en bas à gauche ; l'outline rose de 10px suit cette découpe ; le second p est la même forme 40px plus bas ; scale:1 -1 le retourne de haut en bas{% else %}Animation: the whole canvas turns violet; the first p is a 200 × 90 box at x = 100 and y = 40, all green border, 45px thick; corner-shape:notch and border-radius:35%/0 53Q take a 70 × 50 rectangle out of the top right and bottom left corners; the 10px pink outline follows that cut; the second p is the same shape 40px lower; scale:1 -1 flips it upside down{% endif %}">
+<div class="scene">
+<div class="t1113-can"></div>
+<div class="t1113-pp" data-p="1"><div class="t1113-out"></div><div class="t1113-in"></div></div>
+<div class="t1113-pp" data-p="2"><div class="t1113-out"></div><div class="t1113-in"></div></div>
+<div class="t1113-o" data-o="body" style="left:8px;top:40px;width:384px;height:220px"></div>
+<div class="t1113-o" data-o="p1" style="left:100px;top:40px;width:200px;height:90px"></div>
+<div class="t1113-o" data-o="tr" style="left:230px;top:40px;width:70px;height:50px"></div>
+<div class="t1113-o" data-o="bl" style="left:100px;top:80px;width:70px;height:50px"></div>
+<div class="t1113-o" data-o="p2" style="left:100px;top:170px;width:200px;height:90px"></div>
+<span class="zlab t1113-l-v" style="left:12px;top:12px">* → html, body, p</span>
+<span class="zlab t1113-l-p" style="left:104px;top:8px">p 200 × 90 · 48Q → 45px</span>
+<span class="zlab t1113-l-n" style="left:104px;top:8px">35% = 70 · 53Q = 50</span>
+<span class="zlab t1113-l-o" style="left:104px;top:8px">outline 11q → 10px</span>
+<span class="zlab t1113-l-q" style="left:104px;top:144px">130 + 40 = 170</span>
+<span class="zlab t1113-l-s" style="left:104px;top:144px">scale: 1 −1</span>
+</div>
+</div>
+<div class="legend"><span><i style="--c:var(--t1113-g2)"></i>{% if include.lang == "fr" %}bordure du second p (verte en vrai){% else %}the second p's border (green in reality){% endif %}</span><span><i style="--c:var(--t1113-p2)"></i>{% if include.lang == "fr" %}outline du second p (rose en vrai){% else %}the second p's outline (pink in reality){% endif %}</span></div>
+</div>
+<div class="anim-side">
+<pre class="code" aria-hidden="true"><span data-on="2">&lt;p></span><span data-on="5 6" data-tone="2">&lt;p></span>&lt;style><span data-on="1">*{background:#411c56</span>;p{<span data-on="2">border:48Q solid#b7d7cd</span>;<span data-on="4">outline:11q solid#c06c88</span>;<span data-on="3">corner-shape:notch;border-radius:35%/0 53Q</span>;<span data-on="2 5">margin:40 92</span>;<span data-on="6" data-tone="2">+p{scale:1-1</span></pre>
+<div class="now" aria-live="polite">
+<div class="caps">
+{%- if include.lang == "fr" %}
+<div class="cap" data-t="0" data-step="Tout en violet"><h3>1. Tout en violet</h3><p><code>*</code> vise tous les éléments : <code>html</code>, <code>body</code>, les deux <code>p</code>. Tous ont le fond violet. Celui de <code>html</code> passe au canevas et couvre tout le cadre.</p></div>
+<div class="cap" data-t="4" data-step="Le premier p : un bloc de bordure"><h3>2. Le premier <code>p</code> : un bloc de bordure</h3><p>Le <code>p</code> est vide : son contenu fait 0 de haut. <code>margin:40 92</code> le met de x = 100 à 300 (le <code>body</code> commence à x = 8). Sa marge du haut fusionne avec celle du <code>body</code> : il commence à y = 40. <code>48Q</code> fait 45,35px, arrondi à 45 pour une bordure. La boîte fait 200 × 90, toute en vert, sans fond visible.</p></div>
+<div class="cap" data-t="8" data-step="notch : deux coins retirés"><h3>3. <code>notch</code> : deux coins retirés</h3><p><code>border-radius:35%/0 53Q</code> : tous les coins ont 35 % de 200 = 70 en largeur. En hauteur, <code>0 53Q</code> donne 0 en haut à gauche et en bas à droite, 50 en haut à droite et en bas à gauche. Un rayon nul ne coupe rien. <code>corner-shape:notch</code> change chaque arrondi en encoche droite : deux rectangles de 70 × 50 disparaissent. Le bloc devient un Z.</p></div>
+<div class="cap" data-t="12" data-step="L'outline suit la découpe"><h3>4. L'<code>outline</code> suit la découpe</h3><p><code>11q</code> fait 10,39px, arrondi à 10. L'<code>outline</code> suit la forme des coins, encoches comprises : un contour rose de 10px tout autour du Z, de x = 90 à 310 et de y = 30 à 140.</p></div>
+<div class="cap" data-t="16" data-step="Le second p, 40px plus bas"><h3>5. Le second <code>p</code>, 40px plus bas</h3><p>Le second <code>p</code> reçoit les mêmes règles. Entre les deux, les marges de 40 fusionnent : il commence à 130 + 40 = 170 et finit à 260. Tel quel, c'est le même Z.</p></div>
+<div class="cap" data-t="20" data-step="scale : le miroir"><h3>6. <code>scale</code> : le miroir</h3><p><code>+p</code>, imbriqué dans <code>p</code>, ne vise que le second. <code>scale:1-1</code> se lit <code>1 -1</code> : la boîte se retourne de haut en bas, autour de son centre (y = 215). Ses encoches passent en haut à gauche et en bas à droite.</p></div>
+<div class="cap" data-t="24" data-step="Résultat" data-live="153 caractères · 100 % identique"><h3>7. Résultat : 153 caractères</h3><p>Deux <code>p</code> vides en bordure épaisse, deux encoches, un <code>outline</code> qui suit, et un miroir pour le second.</p></div>
+{%- else %}
+<div class="cap" data-t="0" data-step="All violet"><h3>1. All violet</h3><p><code>*</code> matches every element: <code>html</code>, <code>body</code>, both <code>p</code>. They all get the violet background. <code>html</code>'s goes to the canvas and covers the whole frame.</p></div>
+<div class="cap" data-t="4" data-step="The first p: a block of border"><h3>2. The first <code>p</code>: a block of border</h3><p>The <code>p</code> is empty: its content is 0 tall. <code>margin:40 92</code> puts it from x = 100 to 300 (the <code>body</code> starts at x = 8). Its top margin merges with the <code>body</code>'s, so it starts at y = 40. <code>48Q</code> is 45.35px, rounded down to 45 for a border. The box is 200 × 90, all green, with no visible background.</p></div>
+<div class="cap" data-t="8" data-step="notch: two corners taken out"><h3>3. <code>notch</code>: two corners taken out</h3><p><code>border-radius:35%/0 53Q</code>: every corner is 35% of 200 = 70 wide. For the heights, <code>0 53Q</code> gives 0 at the top left and bottom right, 50 at the top right and bottom left. A zero radius cuts nothing. <code>corner-shape:notch</code> turns each rounded corner into a straight notch: two 70 × 50 rectangles are gone. The block is now a Z.</p></div>
+<div class="cap" data-t="12" data-step="The outline follows the cut"><h3>4. The <code>outline</code> follows the cut</h3><p><code>11q</code> is 10.39px, rounded down to 10. The <code>outline</code> follows the shape of the corners, notches included: a 10px pink line all around the Z, from x = 90 to 310 and y = 30 to 140.</p></div>
+<div class="cap" data-t="16" data-step="The second p, 40px lower"><h3>5. The second <code>p</code>, 40px lower</h3><p>The second <code>p</code> gets the same rules. Between the two, the 40px margins merge: it starts at 130 + 40 = 170 and ends at 260. As is, it is the same Z.</p></div>
+<div class="cap" data-t="20" data-step="scale: the mirror"><h3>6. <code>scale</code>: the mirror</h3><p><code>+p</code>, nested in <code>p</code>, matches only the second one. <code>scale:1-1</code> reads as <code>1 -1</code>: the box flips upside down around its center (y = 215). Its notches move to the top left and bottom right.</p></div>
+<div class="cap" data-t="24" data-step="Result" data-live="153 characters · 100% match"><h3>7. Result: 153 characters</h3><p>Two empty <code>p</code> made of thick border, two notches, an <code>outline</code> that follows them, and a mirror for the second one.</p></div>
+{%- endif %}
+</div>
+<div class="live"></div>
+</div>
+</div>
+<script>
+(window.AnimScenes = window.AnimScenes || {}).t1113 = (fig) => {
+  const fr = document.documentElement.lang === 'fr';
+  const $ = (s) => fig.querySelector(s);
+  const $$ = (s) => [...fig.querySelectorAll(s)];
+  const CAN = $('.t1113-can'), P1 = $('[data-p="1"]'), P2 = $('[data-p="2"]'), live = $('.live');
+  const O = (k) => $(`[data-o="${k}"]`);
+  const L = (k) => $(`.t1113-l-${k}`);
+  const W = { v: [0.3, 1.8], p: [4.3, 5.8], n: [8.3, 10.3], o: [12.3, 13.8], q: [16.3, 17.8], s: [20.3, 22.5], fin: [24.1, 24.9] };
+  const ease = (x) => (x < 0.5 ? 4 * x * x * x : 1 - Math.pow(-2 * x + 2, 3) / 2);
+  const pr = (t, [a, b]) => ease(Math.min(1, Math.max(0, (t - a) / (b - a))));
+  const lerp = (a, b, m) => a + (b - a) * m;
+  const win = (t, a, b) => Math.min(pr(t, [a, a + 0.5]), 1 - pr(t, [b - 0.4, b]));
+  const f0 = (v) => String(Math.round(v)).replace('-', '−');
+  const c = fr ? '\u00a0:' : ':';
+  // Z shape of a p whose border box is (100, y0)–(300, y0 + 90), notches nw × nh, grown by d on every side.
+  const poly = (y0, nw, nh, d) => {
+    const x1 = 100 - d, x2 = 300 + d, y1 = y0 - d, y2 = y0 + 90 + d;
+    const pts = [[x1, y1], [300 - nw + d, y1], [300 - nw + d, y0 + nh - d], [x2, y0 + nh - d], [x2, y2], [100 + nw - d, y2], [100 + nw - d, y0 + 90 - nh + d], [x1, y0 + 90 - nh + d]];
+    return `polygon(${pts.map(([x, y]) => `${x}px ${y}px`).join(',')})`;
+  };
+  return (t, st) => {
+    const step = st + 1;
+    const teach = fig.dataset.teach === '1';
+    const real = !teach || t >= W.fin[0];
+    const guides = t < W.fin[0] ? 1 : 0;
+    const v = pr(t, W.v), p = pr(t, W.p), n = pr(t, W.n), o = pr(t, W.o), q = pr(t, W.q), s = pr(t, W.s);
+    const nw = 70 * n, nh = 50.08 * n, ow = 10 * o;
+    CAN.style.opacity = v;
+    for (const [P, y0] of [[P1, 40], [P2, 170]]) {
+      P.querySelector('.t1113-in').style.clipPath = poly(y0, nw, nh, 0);
+      const out = P.querySelector('.t1113-out');
+      out.style.clipPath = poly(y0, nw, nh, ow);
+      out.style.opacity = o > 0 ? 1 : 0;
+    }
+    P1.style.opacity = p;
+    P2.style.opacity = q;
+    P2.style.transformOrigin = '200px 215px';
+    P2.style.transform = `scaleY(${lerp(1, -1, s)})`;
+    P2.querySelector('.t1113-in').style.background = real ? 'var(--t1113-g)' : 'var(--t1113-g2)';
+    P2.querySelector('.t1113-out').style.background = real ? 'var(--t1113-p)' : 'var(--t1113-p2)';
+    O('body').style.opacity = (step === 2 ? p : 0) * guides * 0.8;
+    O('p1').style.opacity = (step === 2 ? p : 0) * guides;
+    O('tr').style.opacity = (step === 3 ? n : 0) * guides;
+    O('bl').style.opacity = (step === 3 ? n : 0) * guides;
+    O('p2').style.opacity = (step === 5 ? q : 0) * guides;
+    L('v').style.opacity = win(t, W.v[0], W.p[0] - 0.2);
+    L('p').style.opacity = win(t, W.p[0], W.n[0] - 0.2);
+    L('n').style.opacity = win(t, W.n[0], W.o[0] - 0.2);
+    L('o').style.opacity = win(t, W.o[0], W.q[0] - 0.2);
+    L('q').style.opacity = win(t, W.q[0], W.s[0] - 0.2);
+    L('s').style.opacity = win(t, W.s[0], W.fin[0]);
+    let txt = '';
+    if (step === 1) txt = `${fr ? 'fond' : 'background'}${c} #411c56`;
+    else if (step === 2) txt = `p${c} x 100 → 300, y 40 → 130`;
+    else if (step === 3) txt = `${fr ? 'encoches' : 'notches'}${c} ${f0(nw)} × ${f0(nh)}`;
+    else if (step === 4) txt = `outline${c} ${f0(ow)}px`;
+    else if (step === 5) txt = `p${c} y 170 → 260`;
+    else if (step === 6) txt = `scale${c} 1 ${lerp(1, -1, s).toFixed(2).replace('-', '−').replace('.', fr ? ',' : '.')}`;
+    else txt = $$('.caps .cap')[6].dataset.live || '';
+    live.textContent = txt;
+  };
+};
+</script>
+</figure>
