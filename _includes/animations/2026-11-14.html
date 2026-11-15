@@ -1,0 +1,122 @@
+<figure class="anim t1114" data-duration="28" data-scene="t1114" data-wide="-30 -165 460 560" data-off-label="-26 -161" style="--bg:#f3ac3c">
+<style>
+.t1114{--t1114-o:#f3ac3c;--t1114-k:#998235;--t1114-bo:#d9c8f0;--t1114-bk:#4f73c9;--t1114-dash:rgb(40 30 10 / .85)}
+.t1114 .t1114-html{position:absolute;left:-30px;top:-165px;width:460px;height:560px;background-image:radial-gradient(1q at bottom,var(--t1114-o),70.2px,var(--t1114-k) 0 95q,var(--t1114-o));background-size:400px 300px;background-position:30px 165px}
+.t1114 .t1114-body{position:absolute;left:8px;top:8px;width:384px;height:284px;transform-origin:192px 142px;opacity:0}
+.t1114 .t1114-o{position:absolute;box-sizing:border-box;border:1.5px dashed var(--t1114-dash);pointer-events:none;opacity:0}
+.t1114 .t1114-c{border-radius:50%}
+.t1114 .t1114-dot{position:absolute;width:6px;height:6px;margin:-3px 0 0 -3px;border-radius:50%;background:#1a1408;box-shadow:0 0 0 1.5px #fff;opacity:0}
+.t1114 .zlab{color:#fff;background:rgb(30 22 8 / .9);padding:1px 5px;border-radius:3px}
+</style>
+<div class="anim-col">
+<div class="stage" role="img" aria-label="{% if include.lang == "fr" %}Animation : le fond de html est un dégradé radial centré en bas de sa tuile de 400 × 300, orange jusqu'à 70,2px puis olive jusqu'à 89,8px ; décalé de 150px vers le bas, la tuile du dessus montre un demi-anneau centré en (200, 150), coupé net par le bord de la tuile ; le body, 384 × 284, a le même fond avec des rayons de 31,2 et 89,8 ; clip-path n'en garde qu'un triangle à angle droit, de son centre vers ses coins du haut ; scale:-.48 le retourne et le réduit : une part d'anneau de rayons 15 et 43 sous le demi-anneau{% else %}Animation: html's background is a radial gradient centered at the bottom of its 400 × 300 tile, orange up to 70.2px then olive up to 89.8px; moved down by 150px, the tile above shows a half ring centered at (200, 150), cut clean by the tile edge; the 384 × 284 body has the same background with radii 31.2 and 89.8; clip-path keeps only a right-angled triangle, from its center to its top corners; scale:-.48 flips and shrinks it: a piece of ring with radii 15 and 43 under the half ring{% endif %}">
+<div class="scene">
+<div class="t1114-html"></div>
+<div class="t1114-body"></div>
+<div class="t1114-o" data-o="t1" style="left:0;top:-150px;width:400px;height:300px"></div>
+<div class="t1114-o" data-o="t2" style="left:0;top:150px;width:400px;height:300px"></div>
+<div class="t1114-o" data-o="body" style="left:8px;top:8px;width:384px;height:284px"></div>
+<div class="t1114-o t1114-c" data-o="in" style="left:185.02px;top:131.18px;width:29.95px;height:29.95px"></div>
+<div class="t1114-dot" data-d="hc" style="left:200px;top:150px"></div>
+<div class="t1114-dot" data-d="bc"></div>
+<div class="t1114-dot" data-d="ap" style="left:200px;top:150px"></div>
+<span class="zlab t1114-l-g" style="left:12px;top:12px">3.9lh = 70.2 · 95q = 89.8</span>
+<span class="zlab t1114-l-t" style="left:12px;top:12px">0 50vh = 0 150px</span>
+<span class="zlab t1114-l-b" style="left:12px;top:12px">body · font:40% → 1lh = 8</span>
+<span class="zlab t1114-l-c" style="left:12px;top:12px">polygon(50%50%,87%0,13%0)</span>
+<span class="zlab t1114-l-s" style="left:12px;top:12px">scale: −0.48</span>
+<span class="zlab t1114-l-n" style="left:12px;top:12px">{% if include.lang == "fr" %}centre y 146,16 · pointe y 150{% else %}center y 146.16 · tip y 150{% endif %}</span>
+</div>
+</div>
+<div class="legend"><span><i style="--c:var(--t1114-bo)"></i>{% if include.lang == "fr" %}fond orange du body{% else %}the body's orange background{% endif %}</span><span><i style="--c:var(--t1114-bk)"></i>{% if include.lang == "fr" %}anneau olive du body{% else %}the body's olive ring{% endif %}</span></div>
+</div>
+<div class="anim-side">
+<pre class="code" aria-hidden="true">&lt;style>*{background:<span data-on="1 3">radial-gradient(1q at bottom,#F3AC3C,3.9lh,#998235 0 95q,#F3AC3C)</span><span data-on="2 3">0 50vh</span>;*{<span data-on="5 6" data-tone="2">scale:-.48</span>;<span data-on="3 6" data-tone="2">font:40%a</span>;<span data-on="4" data-tone="2">clip-path:polygon(50%50%,87%0,13%0</span></pre>
+<div class="now" aria-live="polite">
+<div class="caps">
+{%- if include.lang == "fr" %}
+<div class="cap" data-t="0" data-step="Un anneau dans un dégradé"><h3>1. Un anneau dans un dégradé</h3><p><code>*</code> donne ce fond à <code>html</code> et au <code>body</code>. Celui de <code>html</code> passe au canevas, en tuiles de 400 × 300. Le centre est en bas de la tuile. Orange jusqu'à <code>3.9lh</code> : <code>html</code> a une police de 16px et 1lh = 18, donc 70,2px. Puis olive jusqu'à <code>95q</code> = 89,8px, et orange au-delà. On voit le haut de l'anneau, en bas du cadre.</p></div>
+<div class="cap" data-t="4" data-step="0 50vh : la tuile descend"><h3>2. <code>0 50vh</code> : la tuile descend</h3><p>La position <code>0 50vh</code> descend la tuile de 150px. Les tuiles se répètent : celle du dessus va de y = −150 à 150, et son centre tombe en (200, 150). Son anneau s'arrête net au bord de la tuile : un demi-anneau. Celui de la tuile du dessous commence à y = 360, hors du cadre.</p></div>
+<div class="cap" data-t="8" data-step="Le body : le même fond, plus petit"><h3>3. Le <code>body</code> : le même fond, plus petit</h3><p><code>html</code> a déjà un fond : celui du <code>body</code> reste sur sa boîte de 384 × 284, en (8, 8), et couvre presque tout. <code>font:40%a</code> lui donne une police de 6,4px et 1lh = 8 : <code>3.9lh</code> ne fait plus que 31,2px. <code>95q</code> ne change pas. Sa tuile descend aussi de 150 : le centre de son anneau est en (200, 158).</p></div>
+<div class="cap" data-t="12" data-step="clip-path : un coin d'anneau"><h3>4. <code>clip-path</code> : un coin d'anneau</h3><p>Le triangle part du centre du <code>body</code>, (200, 150), et monte vers (342, 8) et (58, 8) : deux côtés à 45°, un angle droit. Il ne garde qu'un quart du haut de l'anneau du <code>body</code>. Sa pointe est 8px au-dessus du centre de l'anneau. Le demi-anneau de <code>html</code> réapparaît autour.</p></div>
+<div class="cap" data-t="16" data-step="scale:-.48 : retourné et réduit"><h3>5. <code>scale:-.48</code> : retourné et réduit</h3><p>Une seule valeur vaut pour les deux axes : <code>-.48</code> retourne la boîte dans les deux sens, comme un demi-tour, et la réduit à 0,48, autour de son centre (200, 150). Le coin d'anneau passe dessous, la pointe en haut. Ses rayons deviennent 31,2 × 0,48 = 15 et 89,8 × 0,48 = 43.</p></div>
+<div class="cap" data-t="20" data-step="L'encoche en V"><h3>6. L'encoche en V</h3><p>La pointe reste en (200, 150), mais le centre de l'anneau passe à 150 − 8 × 0,48 = 146,16. Le cercle intérieur de rayon 15 coupe les côtés du triangle vers y = 158,5, et descend jusqu'à 161 au milieu. D'où le petit creux en V en haut de la forme.</p></div>
+<div class="cap" data-t="24" data-step="Résultat" data-live="149 caractères · 100 % identique"><h3>7. Résultat : 149 caractères</h3><p>Pas une balise à part <code>&lt;style></code> : un dégradé en tuiles pour le demi-anneau, et le même fond sur le <code>body</code>, réduit, découpé et retourné, pour la petite forme.</p></div>
+{%- else %}
+<div class="cap" data-t="0" data-step="A ring in a gradient"><h3>1. A ring in a gradient</h3><p><code>*</code> gives this background to <code>html</code> and the <code>body</code>. <code>html</code>'s goes to the canvas, in 400 × 300 tiles. The center is at the bottom of the tile. Orange up to <code>3.9lh</code>: <code>html</code> has a 16px font and 1lh = 18, so 70.2px. Then olive up to <code>95q</code> = 89.8px, and orange after that. We see the top of the ring, at the bottom of the frame.</p></div>
+<div class="cap" data-t="4" data-step="0 50vh: the tile moves down"><h3>2. <code>0 50vh</code>: the tile moves down</h3><p>The position <code>0 50vh</code> moves the tile down by 150px. Tiles repeat: the one above goes from y = −150 to 150, and its center lands at (200, 150). Its ring stops clean at the tile edge: a half ring. The ring of the tile below starts at y = 360, off the frame.</p></div>
+<div class="cap" data-t="8" data-step="The body: same background, smaller"><h3>3. The <code>body</code>: same background, smaller</h3><p><code>html</code> already has a background, so the <code>body</code>'s stays on its own 384 × 284 box, at (8, 8), and covers almost everything. <code>font:40%a</code> gives it a 6.4px font and 1lh = 8: <code>3.9lh</code> is now only 31.2px. <code>95q</code> doesn't change. Its tile moves down 150 too, so its ring is centered at (200, 158).</p></div>
+<div class="cap" data-t="12" data-step="clip-path: a corner of ring"><h3>4. <code>clip-path</code>: a corner of ring</h3><p>The triangle starts at the <code>body</code>'s center, (200, 150), and goes up to (342, 8) and (58, 8): two sides at 45°, a right angle. It keeps only a quarter of the top of the <code>body</code>'s ring. Its tip is 8px above the ring's center. <code>html</code>'s half ring shows again around it.</p></div>
+<div class="cap" data-t="16" data-step="scale:-.48: flipped and shrunk"><h3>5. <code>scale:-.48</code>: flipped and shrunk</h3><p>One value applies to both axes: <code>-.48</code> flips the box both ways, like a half turn, and shrinks it to 0.48, around its center (200, 150). The corner of ring moves below, tip up. Its radii become 31.2 × 0.48 = 15 and 89.8 × 0.48 = 43.</p></div>
+<div class="cap" data-t="20" data-step="The V notch"><h3>6. The V notch</h3><p>The tip stays at (200, 150), but the ring's center moves to 150 − 8 × 0.48 = 146.16. The inner circle of radius 15 crosses the triangle's sides near y = 158.5, and goes down to 161 in the middle. That is the small V dip at the top of the shape.</p></div>
+<div class="cap" data-t="24" data-step="Result" data-live="149 characters · 100% match"><h3>7. Result: 149 characters</h3><p>Not a single tag besides <code>&lt;style></code>: a tiled gradient for the half ring, and the same background on the <code>body</code>, shrunk, cut and flipped, for the small shape.</p></div>
+{%- endif %}
+</div>
+<div class="live"></div>
+</div>
+</div>
+<script>
+(window.AnimScenes = window.AnimScenes || {}).t1114 = (fig) => {
+  const fr = document.documentElement.lang === 'fr';
+  const $ = (s) => fig.querySelector(s);
+  const $$ = (s) => [...fig.querySelectorAll(s)];
+  const H = $('.t1114-html'), B = $('.t1114-body'), live = $('.live');
+  const O = (k) => $(`[data-o="${k}"]`);
+  const D = (k) => $(`[data-d="${k}"]`);
+  const L = (k) => $(`.t1114-l-${k}`);
+  const W = { g: [0.3, 1.8], t: [4.3, 6.3], b: [8.3, 9.8], c: [12.3, 14.3], s: [16.3, 18.8], n: [20.3, 21.3], fin: [24.1, 24.9] };
+  const ease = (x) => (x < 0.5 ? 4 * x * x * x : 1 - Math.pow(-2 * x + 2, 3) / 2);
+  const pr = (t, [a, b]) => ease(Math.min(1, Math.max(0, (t - a) / (b - a))));
+  const lerp = (a, b, m) => a + (b - a) * m;
+  const win = (t, a, b) => Math.min(pr(t, [a, a + 0.5]), 1 - pr(t, [b - 0.4, b]));
+  const num = (v, d) => v.toFixed(d).replace('-', '−').replace('.', fr ? ',' : '.');
+  const c = fr ? ' :' : ':';
+  // clip-path of the body: its whole box, folding into the triangle (192,142) (334.08,0) (49.92,0)
+  const clip = (m) => {
+    const pts = [[lerp(0, 49.92, m), 0], [lerp(384, 334.08, m), 0], [lerp(384, 192, m), lerp(284, 142, m)], [lerp(0, 192, m), lerp(284, 142, m)]];
+    return `polygon(${pts.map(([x, y]) => `${x}px ${y}px`).join(',')})`;
+  };
+  return (t, st) => {
+    const step = st + 1;
+    const teach = fig.dataset.teach === '1';
+    const real = !teach || t >= W.fin[0];
+    const guides = t < W.fin[0] ? 1 : 0;
+    const tt = pr(t, W.t), b = pr(t, W.b), k = pr(t, W.c), s = pr(t, W.s), n = pr(t, W.n);
+    H.style.backgroundPosition = `30px ${165 + 150 * tt}px`;
+    const bo = real ? 'var(--t1114-o)' : 'var(--t1114-bo)', bk = real ? 'var(--t1114-k)' : 'var(--t1114-bk)';
+    B.style.backgroundImage = `radial-gradient(1q at bottom,${bo},31.2px,${bk} 0 95q,${bo})`;
+    B.style.backgroundPosition = '0 150px';
+    B.style.opacity = b;
+    B.style.clipPath = clip(k);
+    B.style.transform = `rotate(${180 * s}deg) scale(${lerp(1, 0.48, s)})`;
+    O('t1').style.opacity = (step === 2 ? tt : 0) * guides;
+    O('t1').style.top = `${-300 + 150 * tt}px`;
+    O('t2').style.opacity = (step === 2 ? tt : 0) * guides;
+    O('t2').style.top = `${150 * tt}px`;
+    O('body').style.opacity = (step === 3 ? b : 0) * guides;
+    O('in').style.opacity = (step === 6 ? n : 0) * guides;
+    D('hc').style.opacity = (step === 2 ? tt : 0) * guides;
+    const bc = D('bc');
+    bc.style.left = '200px';
+    bc.style.top = `${lerp(158, 146.16, s)}px`;
+    bc.style.opacity = (step === 3 || step === 4 ? b : step === 6 ? n : 0) * guides;
+    D('ap').style.opacity = (step === 4 ? k : step === 6 ? n : 0) * guides;
+    L('g').style.opacity = win(t, W.g[0], W.t[0] - 0.2);
+    L('t').style.opacity = win(t, W.t[0], W.b[0] - 0.2);
+    L('b').style.opacity = win(t, W.b[0], W.c[0] - 0.2);
+    L('c').style.opacity = win(t, W.c[0], W.s[0] - 0.2);
+    L('s').style.opacity = win(t, W.s[0], W.n[0] - 0.2);
+    L('n').style.opacity = win(t, W.n[0], W.fin[0]);
+    let txt = '';
+    if (step === 1) txt = `${fr ? 'anneau' : 'ring'}${c} ${num(70.2, 1)} → ${num(89.8, 1)}px`;
+    else if (step === 2) txt = `${fr ? 'tuile' : 'tile'}${c} y ${Math.round(150 * tt)} → ${Math.round(300 + 150 * tt)}`;
+    else if (step === 3) txt = `body${c} 3,9 × 8 = 31,2px`.replace(/,/g, fr ? ',' : '.');
+    else if (step === 4) txt = `${fr ? 'triangle' : 'triangle'}${c} (200, 150) (342, 8) (58, 8)`;
+    else if (step === 5) txt = `${Math.round(180 * s)}° · ×${num(lerp(1, 0.48, s), 2)}`;
+    else if (step === 6) txt = `${fr ? 'rayons' : 'radii'} 15 → 43 · ${fr ? 'centre' : 'center'} (200, ${num(146.16, 2)})`;
+    else txt = $$('.caps .cap')[6].dataset.live || '';
+    live.textContent = txt;
+  };
+};
+</script>
+</figure>
