@@ -1,0 +1,129 @@
+<figure class="anim t0831" data-duration="27" data-scene="t0831" data-wide="-50 -40 500 380" data-off-label="-46 318" style="--bg:#655220">
+<style>
+.t0831{--t0831-y:#f1d36f;--t0831-top:#f0904a;--t0831-side:#6fd0c4;--t0831-bot:#e98ac0;--t0831-dash:rgb(255 245 220 / .85)}
+.t0831 .t0831-p{position:absolute;display:block;box-sizing:border-box}
+.t0831 .t0831-o{position:absolute;box-sizing:border-box;border:1.5px dashed var(--t0831-dash);pointer-events:none}
+.t0831 .t0831-h{position:absolute;height:0;border-top:1.5px dashed rgb(60 40 10 / .9);pointer-events:none}
+.t0831 .t0831-v{position:absolute;width:0;border-left:1.5px dashed rgb(60 40 10 / .9);pointer-events:none}
+.t0831 .zlab{color:#fff;background:rgb(40 30 10 / .9);padding:1px 5px;border-radius:3px}
+</style>
+<div class="anim-col">
+<div class="stage" role="img" aria-label="{% if include.lang == "fr" %}Animation : le body, 260 × 160 sur fond brun, reçoit une border-image jaune unie découpée en neuf morceaux (41 en haut, 58 sur les côtés, 1 en bas) et dessinée dans une bande de 40px ; les quatre coins deviennent des carrés de 40, le bord haut une barre de 140,5 centrée, et les côtés et le bas, trop grands pour leur place en mode space, ne sont pas dessinés{% else %}Animation: the body, 260 × 160 on a brown background, gets a plain yellow border-image sliced into nine pieces (41 at the top, 58 on the sides, 1 at the bottom) and drawn in a 40px band; the four corners become 40px squares, the top edge a centred 140.5 bar, and the sides and bottom, too big for their room in space mode, are not drawn{% endif %}">
+<div class="scene">
+<div class="t0831-p" data-k="img" style="left:70px;top:70px;width:260px;height:160px"></div>
+<div data-g="pieces"></div>
+<div class="t0831-h" data-l="h1" style="left:70px;top:111px;width:260px"></div>
+<div class="t0831-h" data-l="h2" style="left:70px;top:229px;width:260px"></div>
+<div class="t0831-v" data-l="v1" style="left:128px;top:70px;height:160px"></div>
+<div class="t0831-v" data-l="v2" style="left:272px;top:70px;height:160px"></div>
+<div class="t0831-o" data-o="body" style="left:70px;top:70px;width:260px;height:160px"></div>
+<div class="t0831-o" data-o="in" style="left:110px;top:110px;width:180px;height:80px"></div>
+<span class="zlab t0831-l" data-l="1" style="left:12px;top:22px">bgcolor=65522 → #655220 · body 260 × 160</span>
+<span class="zlab t0831-l" data-l="2" style="left:12px;top:22px">conic-gradient(#F1D36F) → 260 × 160</span>
+<span class="zlab t0831-l" data-l="3" style="left:12px;top:22px">{% if include.lang == "fr" %}découpe{% else %}slice{% endif %} 41 · 58 · 1 · 58</span>
+<span class="zlab t0831-l" data-l="4" style="left:12px;top:22px">5ch = 40px · {% if include.lang == "fr" %}coins{% else %}corners{% endif %} → 40 × 40</span>
+<span class="zlab t0831-l" data-l="5" style="left:12px;top:22px">{% if include.lang == "fr" %}144 × 41 → 140,5 × 40 · place 180{% else %}144 × 41 → 140.5 × 40 · room 180{% endif %}</span>
+<span class="zlab t0831-l" data-l="6a" style="left:12px;top:10px">{% if include.lang == "fr" %}côtés 40 × 81,4 &gt; 80{% else %}sides 40 × 81.4 &gt; 80{% endif %}</span>
+<span class="zlab t0831-l" data-l="6b" style="left:12px;top:36px">{% if include.lang == "fr" %}bas{% else %}bottom{% endif %} 5760 × 40 &gt; 180</span>
+</div>
+</div>
+<div class="legend"><span><i style="--c:var(--t0831-y)"></i>{% if include.lang == "fr" %}coins{% else %}corners{% endif %}</span><span><i style="--c:var(--t0831-top)"></i>{% if include.lang == "fr" %}bord haut (jaune en vrai){% else %}top edge (yellow in reality){% endif %}</span><span><i style="--c:var(--t0831-side)"></i>{% if include.lang == "fr" %}côtés (jamais dessinés){% else %}sides (never drawn){% endif %}</span><span><i style="--c:var(--t0831-bot)"></i>{% if include.lang == "fr" %}bord bas (jamais dessiné){% else %}bottom edge (never drawn){% endif %}</span></div>
+</div>
+<div class="anim-side">
+<pre class="code" aria-hidden="true">&lt;body <span data-on="1">bgcolor=65522</span> style=<span data-on="1" data-tone="2">margin:70</span>;border-image:<span data-on="2">conic-gradient(#F1D36F)</span><span data-on="5 6" data-tone="2">space</span><span data-on="3">+41+58+1</span><span data-on="4">/5ch</span>></pre>
+<div class="now" aria-live="polite">
+<div class="caps">
+{%- if include.lang == "fr" %}
+<div class="cap" data-t="0" data-step="Le body sur fond brun"><h3>1. Le <code>body</code> sur fond brun</h3><p><code>bgcolor=65522</code> est une couleur HTML à l'ancienne : cinq chiffres, complétés par un 0 en <code>655220</code>, soit <code>#655220</code>. Le fond du <code>body</code> passe à tout le canevas. <code>margin:70</code>, sans unité en mode quirks, et le <code>body</code> qui remplit la hauteur : une boîte de 260 × 160 en (70 ; 70).</p></div>
+<div class="cap" data-t="4" data-step="Une image jaune unie"><h3>2. Une image jaune unie</h3><p><code>conic-gradient(#F1D36F)</code>, avec une seule couleur, est une image jaune unie. Elle n'a pas de taille propre : la <code>border-image</code> l'étire sur la boîte du <code>body</code>, 260 × 160. Un pixel de l'image vaut donc un pixel du canevas.</p></div>
+<div class="cap" data-t="8" data-step="Neuf morceaux"><h3>3. Neuf morceaux</h3><p>La découpe <code>+41+58+1</code> coupe l'image à 41 du haut, 58 de la droite, 1 du bas, et 58 de la gauche (la valeur de droite est reprise). Quatre coins, quatre bords, un milieu. Le milieu n'est peint qu'avec <code>fill</code> : il disparaît.</p></div>
+<div class="cap" data-t="12" data-step="Une bande de 40 : quatre carrés"><h3>4. Une bande de 40 : quatre carrés</h3><p><code>/5ch</code> fixe la largeur de la <code>border-image</code> : 40px (1ch = 8px en Times 16px). Le <code>body</code> n'a pas de bordure, mais une largeur en longueur n'en dépend pas : l'image est dessinée dans une bande de 40 le long du bord. Chaque coin est étiré en 40 × 40 : les quatre carrés.</p></div>
+<div class="cap" data-t="16" data-step="Le bord haut en space"><h3>5. Le bord haut en <code>space</code></h3><p>Avec <code>space</code>, un bord est mis à l'épaisseur de la bande en gardant ses proportions, puis répété en morceaux entiers seulement. Le bord haut, 144 × 41, devient 140,5 × 40. Entre les coins, il y a 180 : un seul morceau tient, et le reste est partagé de chaque côté. La barre va de 129,8 à 270,2.</p></div>
+<div class="cap" data-t="20" data-step="Les côtés et le bas : pas la place"><h3>6. Les côtés et le bas : pas la place</h3><p>Un côté, 58 × 118, devient 40 × 81,4 : il a 80 de place, pas un seul morceau ne tient. Le bord bas, 144 × 1, devient 5760 × 40 pour 180 de place. <code>space</code> ne dessine que des morceaux entiers : rien du tout.</p></div>
+<div class="cap" data-t="24" data-step="Résultat" data-live="90 caractères · 100 % identique"><h3>7. Résultat : 90 caractères</h3><p>Une seule boîte et une seule <code>border-image</code> : quatre coins, une barre, et trois bords qui ne tiennent pas.</p></div>
+{%- else %}
+<div class="cap" data-t="0" data-step="The body on brown"><h3>1. The <code>body</code> on brown</h3><p><code>bgcolor=65522</code> is an old-style HTML color: five digits, padded with a 0 to <code>655220</code>, so <code>#655220</code>. The <code>body</code>'s background goes to the whole canvas. <code>margin:70</code>, unitless in quirks mode, and the <code>body</code> filling the height: a 260 × 160 box at (70, 70).</p></div>
+<div class="cap" data-t="4" data-step="A plain yellow image"><h3>2. A plain yellow image</h3><p><code>conic-gradient(#F1D36F)</code>, with a single color, is a plain yellow image. It has no size of its own: the <code>border-image</code> stretches it over the <code>body</code>'s box, 260 × 160. So one image pixel is one canvas pixel.</p></div>
+<div class="cap" data-t="8" data-step="Nine pieces"><h3>3. Nine pieces</h3><p>The slice <code>+41+58+1</code> cuts the image 41 from the top, 58 from the right, 1 from the bottom, and 58 from the left (the right value is reused). Four corners, four edges, one middle. The middle is only painted with <code>fill</code>: it is dropped.</p></div>
+<div class="cap" data-t="12" data-step="A 40 band: four squares"><h3>4. A 40 band: four squares</h3><p><code>/5ch</code> sets the <code>border-image</code> width: 40px (1ch = 8px in Times 16px). The <code>body</code> has no border, but a length width does not depend on it: the image is drawn in a 40 band along the edge. Each corner is stretched to 40 × 40: the four squares.</p></div>
+<div class="cap" data-t="16" data-step="The top edge in space"><h3>5. The top edge in <code>space</code></h3><p>With <code>space</code>, an edge is scaled to the band's thickness, keeping its proportions, then repeated in whole pieces only. The top edge, 144 × 41, becomes 140.5 × 40. There are 180 between the corners: one piece fits, and the rest is split on both sides. The bar runs from 129.8 to 270.2.</p></div>
+<div class="cap" data-t="20" data-step="Sides and bottom: no room"><h3>6. Sides and bottom: no room</h3><p>A side, 58 × 118, becomes 40 × 81.4: it has 80 of room, not even one piece fits. The bottom edge, 144 × 1, becomes 5760 × 40 for 180 of room. <code>space</code> only draws whole pieces: nothing at all.</p></div>
+<div class="cap" data-t="24" data-step="Result" data-live="90 characters · 100% match"><h3>7. Result: 90 characters</h3><p>One box and one <code>border-image</code>: four corners, one bar, and three edges that do not fit.</p></div>
+{%- endif %}
+</div>
+<div class="live"></div>
+</div>
+</div>
+<script>
+(window.AnimScenes = window.AnimScenes || {}).t0831 = (fig) => {
+  const fr = document.documentElement.lang === 'fr';
+  const $ = (s) => fig.querySelector(s);
+  const $$ = (s) => [...fig.querySelectorAll(s)];
+  const live = $('.live');
+  // pieces: slice rect (image px = canvas px) → drawn rect, teaching color, morph window, kept?
+  const P = [
+    { k: 'tl', a: [70, 70, 58, 41], b: [70, 70, 40, 40], c: '--t0831-y', w: [12.3, 13.9], keep: 1 },
+    { k: 'tr', a: [272, 70, 58, 41], b: [290, 70, 40, 40], c: '--t0831-y', w: [12.3, 13.9], keep: 1 },
+    { k: 'bl', a: [70, 229, 58, 1], b: [70, 190, 40, 40], c: '--t0831-y', w: [12.3, 13.9], keep: 1 },
+    { k: 'br', a: [272, 229, 58, 1], b: [290, 190, 40, 40], c: '--t0831-y', w: [12.3, 13.9], keep: 1 },
+    { k: 't', a: [128, 70, 144, 41], b: [129.76, 70, 140.49, 40], c: '--t0831-top', w: [16.3, 17.9], keep: 1 },
+    { k: 'l', a: [70, 111, 58, 118], b: [70, 109.31, 40, 81.38], c: '--t0831-side', w: [20.3, 21.6], keep: 0 },
+    { k: 'r', a: [272, 111, 58, 118], b: [290, 109.31, 40, 81.38], c: '--t0831-side', w: [20.3, 21.6], keep: 0 },
+    { k: 'b', a: [128, 229, 144, 1], b: [110, 190, 5760, 40], c: '--t0831-bot', w: [20.3, 21.6], keep: 0 },
+    { k: 'm', a: [128, 111, 144, 118], b: [128, 111, 144, 118], c: '', w: [0, 0], keep: 0 },
+  ];
+  const g = $('[data-g="pieces"]');
+  for (const p of [...P].sort((a, b) => a.keep - b.keep)) { const e = document.createElement('i'); e.className = 't0831-p'; g.append(e); p.e = e; }
+  const img = $('[data-k="img"]');
+  const ease = (x) => (x < 0.5 ? 4 * x * x * x : 1 - Math.pow(-2 * x + 2, 3) / 2);
+  const pr = (t, a, b) => ease(Math.min(1, Math.max(0, (t - a) / (b - a))));
+  const win = (t, a, b) => Math.min(pr(t, a, a + 0.5), 1 - pr(t, b - 0.4, b));
+  const mix = (a, b, m) => a.map((v, i) => v + (b[i] - v) * m);
+  const c = fr ? '\u00a0:' : ':';
+  const n = (v) => (fr ? String(v).replace('.', ',') : String(v));
+  return (t, step) => {
+    const teach = fig.dataset.teach === '1';
+    const fin = t >= 24;
+    const sliced = pr(t, 8.2, 9);
+    img.style.background = 'var(--t0831-y)';
+    img.style.opacity = String(0.6 * pr(t, 4.2, 5) * (1 - sliced));
+    for (const p of P) {
+      const m = pr(t, p.w[0], p.w[1]);
+      let [x, y, w, h] = mix(p.a, p.b, m);
+      let op = 0.6 * sliced;
+      let col = teach && !fin && p.c ? `var(${p.c})` : 'var(--t0831-y)';
+      let out = 'none';
+      if (p.keep) op = 0.6 * sliced + 0.4 * m;
+      else if (p.k === 'm') {
+        op = 0.6 * sliced * (1 - pr(t, 10.6, 11.6));
+        col = teach ? 'rgb(200 200 200 / .5)' : 'var(--t0831-y)';
+      } else {
+        op *= 1 - pr(t, 22.6, 23.6);
+        if (m > 0) out = '1.5px dashed #fff';
+      }
+      Object.assign(p.e.style, { left: `${x}px`, top: `${y}px`, width: `${w}px`, height: `${h}px`, background: col, opacity: String(op), outline: out, outlineOffset: '-1.5px' });
+    }
+    for (const l of $$('[data-l^="h"], [data-l^="v"]')) l.style.opacity = String(win(t, 8.2, 12.3));
+    $('[data-o="body"]').style.opacity = String(t < 24 ? 1 : 0);
+    $('[data-o="in"]').style.opacity = String(win(t, 12.1, 24));
+    const L = (k) => $(`.t0831-l[data-l="${k}"]`);
+    L('1').style.opacity = String(win(t, 0, 3.9));
+    L('2').style.opacity = String(win(t, 4, 7.9));
+    L('3').style.opacity = String(win(t, 8, 11.9));
+    L('4').style.opacity = String(win(t, 12, 15.9));
+    L('5').style.opacity = String(win(t, 16, 19.9));
+    L('6a').style.opacity = String(win(t, 20, 23.9));
+    L('6b').style.opacity = String(win(t, 20, 23.9));
+    let txt = '';
+    if (step === 0) txt = `body${c} 260 × 160 · ${fr ? '(70\u00a0; 70)' : '(70, 70)'}`;
+    else if (step === 1) txt = `image${c} 260 × 160`;
+    else if (step === 2) txt = '41 · 58 · 1 · 58';
+    else if (step === 3) txt = `${fr ? 'coins' : 'corners'}${c} 4 × 40 × 40`;
+    else if (step === 4) txt = `${fr ? 'barre' : 'bar'}${c} ${n(129.8)} → ${n(270.2)}`;
+    else if (step === 5) txt = `${n(81.4)} > 80 · 5760 > 180`;
+    else txt = $$('.caps .cap')[6].dataset.live || '';
+    live.textContent = txt;
+  };
+};
+</script>
+</figure>
