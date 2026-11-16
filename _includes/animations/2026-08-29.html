@@ -1,0 +1,108 @@
+<figure class="anim t0829" data-duration="28" data-scene="t0829" data-wide="-50 -175 500 580" data-off-label="-46 -171" style="--bg:#fff">
+<style>
+.t0829{--t0829-w:#fff;--t0829-k:#0c0d0a;--t0829-p:#6d57c4;--t0829-hw:#f0a040;--t0829-hk:#c03030;--t0829-hp:#a99be6;--t0829-bw:#7ad0c8;--t0829-bk:#30a050;--t0829-bp:#3a2a7a;--t0829-dash:rgb(30 20 70 / .85)}
+.t0829 .t0829-s{position:absolute;box-sizing:border-box}
+.t0829 .t0829-a{position:absolute;left:140px;top:180px;width:120px;height:210px;border-radius:60px}
+.t0829 .t0829-g{position:absolute;left:0;top:0;width:400px;height:300px;transform-origin:200px 285px}
+.t0829 .t0829-o{position:absolute;box-sizing:border-box;border:1.5px dashed var(--t0829-dash);pointer-events:none}
+.t0829 .zlab{color:#fff;background:rgb(30 20 70 / .9);padding:1px 5px;border-radius:3px}
+</style>
+<div class="anim-col">
+<div class="stage" role="img" aria-label="{% if include.lang == "fr" %}Animation : html, une boîte de 120 × 210 aux coins ronds de 60px, projette une ombre blanche à 130px à droite, une ombre noire à 65px, et une ombre violette décalée et étalée qui couvre la droite du canevas ; le body, la même boîte avec les mêmes ombres, est retourné par scale:-1 et les projette à gauche ; l'arche du milieu n'est aucune ombre : c'est le canevas blanc, vu à travers la boîte{% else %}Animation: html, a 120 × 210 box with 60px round corners, casts a white shadow 130px to the right, a black one 65px to the right, and a moved, spread purple one that covers the right of the canvas; the body, the same box with the same shadows, is flipped by scale:-1 and casts them to the left; the middle arch is no shadow at all: it is the white canvas, seen through the box{% endif %}">
+<div class="scene">
+<div class="t0829-g" data-g="html"><div class="t0829-s" data-s="hp"></div><div class="t0829-a" data-s="hk"></div><div class="t0829-a" data-s="hw"></div></div>
+<div class="t0829-g" data-g="body"><div class="t0829-s" data-s="bp"></div><div class="t0829-a" data-s="bk"></div><div class="t0829-a" data-s="bw"></div></div>
+<div class="t0829-s" data-s="hole" style="left:140px;top:180px;width:120px;height:210px;background:var(--t0829-w)"></div>
+<div class="t0829-o" data-o="box" style="left:140px;top:180px;width:120px;height:210px"></div>
+<span class="zlab t0829-l-m" style="left:8px;top:8px">120 × 210<br>y 180 → 390</span>
+<span class="zlab t0829-l-r" style="left:8px;top:8px">1in = 96 → 60</span>
+<span class="zlab t0829-l-s" style="left:8px;top:8px">138q = {% if include.lang == "fr" %}130,39{% else %}130.39{% endif %}<br>69q = {% if include.lang == "fr" %}65,2{% else %}65.2{% endif %}</span>
+<span class="zlab t0829-l-p" style="left:8px;top:8px">{% if include.lang == "fr" %}140 + 384 − 340,16<br>x = 183,84{% else %}140 + 384 − 340.16<br>x = 183.84{% endif %}</span>
+<span class="zlab t0829-l-b" style="left:8px;top:8px">body · margin:0<br>120 × 210</span>
+<span class="zlab t0829-l-f" style="left:8px;top:8px">scale:-1<br>x′ = 400 − x</span>
+<span class="zlab t0829-l-c" style="left:152px;top:262px">{% if include.lang == "fr" %}canevas #fff{% else %}canvas #fff{% endif %}</span>
+</div>
+</div>
+<div class="legend"><span><i style="--c:var(--t0829-hw)"></i>{% if include.lang == "fr" %}html 138q (blanc){% else %}html 138q (white){% endif %}</span><span><i style="--c:var(--t0829-hk)"></i>{% if include.lang == "fr" %}html 69q (noir){% else %}html 69q (black){% endif %}</span><span><i style="--c:var(--t0829-hp)"></i>{% if include.lang == "fr" %}html 4in (violet){% else %}html 4in (purple){% endif %}</span><span><i style="--c:var(--t0829-bw)"></i>{% if include.lang == "fr" %}body 138q (blanc){% else %}body 138q (white){% endif %}</span><span><i style="--c:var(--t0829-bk)"></i>{% if include.lang == "fr" %}body 69q (noir){% else %}body 69q (black){% endif %}</span><span><i style="--c:var(--t0829-bp)"></i>{% if include.lang == "fr" %}body 4in (violet){% else %}body 4in (purple){% endif %}</span></div>
+</div>
+<div class="anim-side">
+<pre class="code" aria-hidden="true">&lt;style>*{<span data-on="1">margin:45%140-90</span>;<span data-on="2">border-radius:1in</span>;box-shadow:<span data-on="3 6">138q 0#FFF,69q 0#0C0D0A</span>,<span data-on="4 6" data-tone="2">4in 0 0 9cm#6D57C4</span>;*{<span data-on="5">margin:0</span>;<span data-on="6" data-tone="2">scale:-1</span></pre>
+<div class="now" aria-live="polite">
+<div class="caps">
+{%- if include.lang == "fr" %}
+<div class="cap" data-t="0" data-step="html : une boîte qui dépasse en bas"><h3>1. <code>html</code> : une boîte qui dépasse en bas</h3><p><code>*</code> vise d'abord <code>html</code>. <code>margin:45%140-90</code> : 45 % de la largeur, soit 180 en haut, 140 à gauche et à droite, −90 en bas. <code>html</code> fait 400 − 280 = 120 de large. En mode quirks, il remplit la hauteur de la fenêtre moins ses marges : 300 − 180 + 90 = 210. Il va de y = 180 à 390, sous le bas du canevas.</p></div>
+<div class="cap" data-t="4" data-step="Des coins de 1in : une arche"><h3>2. Des coins de <code>1in</code> : une arche</h3><p><code>border-radius:1in</code> vaut 96px. Deux coins de 96 ne tiennent pas dans 120 de large : le navigateur les réduit à 60. Le haut est un demi-cercle, et les coins du bas, de y = 330 à 390, sont hors du canevas. La boîte est transparente : on ne la voit pas.</p></div>
+<div class="cap" data-t="8" data-step="Une arche blanche, une noire"><h3>3. Une arche blanche, une noire</h3><p>Les ombres prennent la forme de la boîte. <code>138q 0#FFF</code> la décale de 130,39 à droite : une arche blanche de x = 270,39 à 390,39. <code>69q 0#0C0D0A</code>, décalée de 65,2, est peinte dessous : seuls un dôme noir et une bande noire de 10px restent visibles. Une ombre externe n'est jamais peinte sous sa propre boîte.</p></div>
+<div class="cap" data-t="12" data-step="Une ombre violette géante"><h3>4. Une ombre violette géante</h3><p><code>4in 0 0 9cm#6D57C4</code> décale la boîte de 384 et l'étale de 340,16 de chaque côté. Son bord gauche tombe en x = 140 + 384 − 340,16 = 183,84, son haut en y = −160,16. Dernière de la liste, elle est peinte sous les deux autres. Ses coins sont arrondis eux aussi, d'environ 243px (mesuré) : son coin en haut à gauche laisse un vide blanc au-dessus de la boîte.</p></div>
+<div class="cap" data-t="16" data-step="Le body : la même boîte"><h3>5. Le <code>body</code> : la même boîte</h3><p><code>*</code> imbriqué vise ce qui est dans un élément : le <code>body</code>. <code>margin:0</code> efface la marge de 45 %. En mode quirks, le <code>body</code> remplit <code>html</code> : la même boîte, 120 × 210 en (140 ; 180), avec les mêmes coins et les mêmes ombres. Pour l'instant, elles tombent pile sur celles de <code>html</code>.</p></div>
+<div class="cap" data-t="20" data-step="scale:-1 : un miroir"><h3>6. <code>scale:-1</code> : un miroir</h3><p><code>scale:-1</code> retourne le <code>body</code> autour de son centre, (200 ; 285). Ses ombres passent à gauche : arche blanche de x = 9,61 à 129,61, noire derrière, violet jusqu'à x = 216,16, dont le coin arrondi bouche le vide laissé par <code>html</code>. Le retournement vertical ne change rien : la boîte est symétrique et les ombres n'ont pas de décalage vertical. Le <code>body</code> est peint après <code>html</code>, par-dessus.</p></div>
+<div class="cap" data-t="24" data-step="Résultat" data-live="117 caractères · 100 % identique"><h3>7. Résultat : 117 caractères</h3><p>L'arche du milieu n'est aucune ombre. Aucune des deux boîtes ne peint ses ombres sous elle-même : on y voit le canevas, blanc par défaut. Trois arches, deux boîtes, une seule règle d'ombres.</p></div>
+{%- else %}
+<div class="cap" data-t="0" data-step="html: a box that goes below"><h3>1. <code>html</code>: a box that goes below</h3><p><code>*</code> matches <code>html</code> first. <code>margin:45%140-90</code>: 45% of the width, so 180 at the top, 140 left and right, −90 at the bottom. <code>html</code> is 400 − 280 = 120 wide. In quirks mode, it fills the window height minus its margins: 300 − 180 + 90 = 210. It runs from y = 180 to 390, below the bottom of the canvas.</p></div>
+<div class="cap" data-t="4" data-step="1in corners: an arch"><h3>2. <code>1in</code> corners: an arch</h3><p><code>border-radius:1in</code> is 96px. Two 96 corners do not fit in 120 wide: the browser scales them down to 60. The top is a half circle, and the bottom corners, from y = 330 to 390, are off the canvas. The box is transparent: it cannot be seen.</p></div>
+<div class="cap" data-t="8" data-step="A white arch, a black one"><h3>3. A white arch, a black one</h3><p>Shadows take the shape of the box. <code>138q 0#FFF</code> moves it 130.39 to the right: a white arch from x = 270.39 to 390.39. <code>69q 0#0C0D0A</code>, moved 65.2, is painted under it: only a black dome and a 10px black strip stay visible. An outer shadow is never painted under its own box.</p></div>
+<div class="cap" data-t="12" data-step="A giant purple shadow"><h3>4. A giant purple shadow</h3><p><code>4in 0 0 9cm#6D57C4</code> moves the box 384 and spreads it by 340.16 on every side. Its left edge lands at x = 140 + 384 − 340.16 = 183.84, its top at y = −160.16. Last in the list, it is painted under the other two. Its corners are rounded too, about 243px (measured): its top-left corner leaves a white gap above the box.</p></div>
+<div class="cap" data-t="16" data-step="The body: the same box"><h3>5. The <code>body</code>: the same box</h3><p>The nested <code>*</code> matches what is inside an element: the <code>body</code>. <code>margin:0</code> removes the 45% margin. In quirks mode, the <code>body</code> fills <code>html</code>: the same box, 120 × 210 at (140, 180), with the same corners and the same shadows. For now, they land right on <code>html</code>'s.</p></div>
+<div class="cap" data-t="20" data-step="scale:-1: a mirror"><h3>6. <code>scale:-1</code>: a mirror</h3><p><code>scale:-1</code> flips the <code>body</code> around its centre, (200, 285). Its shadows go to the left: a white arch from x = 9.61 to 129.61, the black one behind, purple up to x = 216.16, its rounded corner filling the gap left by <code>html</code>. The vertical flip changes nothing: the box is symmetric and the shadows have no vertical offset. The <code>body</code> is painted after <code>html</code>, on top.</p></div>
+<div class="cap" data-t="24" data-step="Result" data-live="117 characters · 100% match"><h3>7. Result: 117 characters</h3><p>The middle arch is no shadow. Neither box paints its shadows under itself: the canvas shows through, white by default. Three arches, two boxes, one shadow rule.</p></div>
+{%- endif %}
+</div>
+<div class="live"></div>
+</div>
+</div>
+<script>
+(window.AnimScenes = window.AnimScenes || {}).t0829 = (fig) => {
+  const fr = document.documentElement.lang === 'fr';
+  const $ = (s) => fig.querySelector(s);
+  const $$ = (s) => [...fig.querySelectorAll(s)];
+  const S = (k) => $(`[data-s="${k}"]`), G = (k) => $(`[data-g="${k}"]`), BOX = $('[data-o="box"]'), live = $('.live');
+  const L = (k) => $(`.t0829-l-${k}`);
+  const W = { m: [0.3, 1.8], r: [4.2, 5.8], s: [8.2, 9.8], p: [12.2, 13.8], b: [16.2, 17.2], f: [20.3, 22.3], fin: [24.1, 24.9] };
+  const ease = (x) => (x < 0.5 ? 4 * x * x * x : 1 - Math.pow(-2 * x + 2, 3) / 2);
+  const pr = (t, [a, b]) => ease(Math.min(1, Math.max(0, (t - a) / (b - a))));
+  const lerp = (a, b, m) => a + (b - a) * m;
+  const win = (t, a, b) => Math.min(pr(t, [a, a + 0.5]), 1 - pr(t, [b - 0.4, b]));
+  const c = fr ? '\u00a0:' : ':';
+  const n = (v) => (fr ? String(v).replace('.', ',') : String(v));
+  // purple shadow: offset 384 (4in), spread 340.16 (9cm); corner radius measured in Chrome ≈ 243
+  const purple = (el, m, col) => Object.assign(el.style, { left: `${140 + (384 - 340.157) * m}px`, top: `${180 - 340.157 * m}px`, width: `${120 + 680.315 * m}px`, height: `${210 + 680.315 * m}px`, borderRadius: `${lerp(60, 243, m)}px`, background: col, opacity: m > 0 ? 1 : 0 });
+  return (t, step) => {
+    const teach = fig.dataset.teach === '1';
+    const real = !teach || t >= W.fin[0];
+    const guides = t < W.fin[0] ? 1 : 0;
+    const m = pr(t, W.m), r = pr(t, W.r), s = pr(t, W.s), p = pr(t, W.p), b = pr(t, W.b), f = pr(t, W.f);
+    const col = (k, real0) => (real ? `var(--t0829-${real0})` : `var(--t0829-${k})`);
+    // html's shadows slide out of the box
+    Object.assign(S('hw').style, { left: `${140 + 130.394 * s}px`, background: col('hw', 'w'), opacity: s > 0 ? 1 : 0 });
+    Object.assign(S('hk').style, { left: `${140 + 65.197 * s}px`, background: col('hk', 'k'), opacity: s > 0 ? 1 : 0 });
+    purple(S('hp'), p, col('hp', 'p'));
+    // the body: the same three shadows, in place, then flipped around x = 200
+    Object.assign(S('bw').style, { left: '270.394px', background: col('bw', 'w') });
+    Object.assign(S('bk').style, { left: '205.197px', background: col('bk', 'k') });
+    purple(S('bp'), 1, col('bp', 'p'));
+    G('body').style.opacity = b;
+    G('body').style.transform = `scaleX(${1 - 2 * f})`;
+    // the box: drawn in, then rounded; the hole shows the canvas
+    const rad = 60 * r;
+    S('hole').style.borderRadius = `${rad}px`;
+    Object.assign(BOX.style, { borderRadius: `${rad}px`, opacity: (step <= 5 ? Math.max(m, step > 0 ? 1 : 0) : 0) * guides, clipPath: `inset(0 0 ${100 - 100 * m}% 0)` });
+    L('m').style.opacity = win(t, W.m[0], W.r[0] - 0.2);
+    L('r').style.opacity = win(t, W.r[0], W.s[0] - 0.2);
+    L('s').style.opacity = win(t, W.s[0], W.p[0] - 0.2);
+    L('p').style.opacity = win(t, W.p[0], W.b[0] - 0.2);
+    L('b').style.opacity = win(t, W.b[0], W.f[0] - 0.2);
+    L('f').style.opacity = win(t, W.f[0], W.fin[0]);
+    L('c').style.opacity = step === 6 ? win(t, W.fin[0] + 0.3, 26.6) : 0;
+    let txt = '';
+    if (step === 0) txt = `html${c} 120 × 210 ${fr ? 'en (140\u00a0; 180)' : 'at (140, 180)'}`;
+    else if (step === 1) txt = `border-radius${c} 96 → 60`;
+    else if (step === 2) txt = `${fr ? 'blanc' : 'white'}${c} x ${n(270.39)} → ${n(390.39)} · ${fr ? 'noir' : 'black'}${c} x ${n(205.2)} → ${n(325.2)}`;
+    else if (step === 3) txt = `${fr ? 'violet' : 'purple'}${c} x ≥ ${n(183.84)}, y ≥ −${n(160.16)}`;
+    else if (step === 4) txt = `body${c} 120 × 210 ${fr ? 'en (140\u00a0; 180)' : 'at (140, 180)'}`;
+    else if (step === 5) txt = `${fr ? 'blanc' : 'white'}${c} x ${n(9.61)} → ${n(129.61)} · ${fr ? 'violet' : 'purple'}${c} x ≤ ${n(216.16)}`;
+    else txt = $$('.caps .cap')[6].dataset.live || '';
+    live.textContent = txt;
+  };
+};
+</script>
+</figure>
