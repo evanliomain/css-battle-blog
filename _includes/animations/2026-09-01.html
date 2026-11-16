@@ -1,0 +1,119 @@
+<figure class="anim t0901" data-duration="24" data-scene="t0901" data-wide="-20 -40 620 380" data-off-label="-16 -36" style="--bg:#bade37">
+<style>
+.t0901{--t0901-g:#bade37;--t0901-d:#333;--t0901-h:#e8643a;--t0901-b:#3d7be0;--t0901-dash:rgb(20 30 0 / .7)}
+.t0901 .t0901-ring{position:absolute;left:0;top:0;width:400px;height:300px}
+.t0901 .t0901-box{position:absolute;box-sizing:border-box;border-style:solid}
+.t0901 .t0901-o{position:absolute;box-sizing:border-box;border:1.5px dashed var(--t0901-dash);pointer-events:none}
+.t0901 .t0901-x{position:absolute;left:194px;top:144px;width:12px;height:12px;background:linear-gradient(var(--t0901-dash) 0 0) 50% 0/1.5px 100% no-repeat,linear-gradient(var(--t0901-dash) 0 0) 0 50%/100% 1.5px no-repeat}
+.t0901 .t0901-r{position:absolute;left:200px;top:149.25px;height:1.5px;background:var(--t0901-dash);transform-origin:0 50%}
+.t0901 .zlab{color:#fff;background:rgb(30 36 10 / .88);padding:1px 5px;border-radius:3px}
+</style>
+<div class="anim-col">
+<div class="stage" role="img" aria-label="{% if include.lang == "fr" %}Animation : le fond du body, un dégradé radial fixé au viewport, peint un anneau sombre sur tout le canevas ; la bordure verte de html y taille une fente verticale, puis le body, étiré six fois en largeur, cache la gauche de l'anneau avec sa bordure gauche et taille deux fentes horizontales avec ses bordures du haut et du bas{% else %}Animation: the body's background, a radial gradient fixed to the viewport, paints a dark ring over the whole canvas; html's green border cuts a vertical slit in it, then the body, stretched six times in width, hides the left of the ring with its left border and cuts two horizontal slits with its top and bottom borders{% endif %}">
+<div class="scene">
+<div class="t0901-ring"></div>
+<div class="t0901-box" data-b="html" style="left:190px;top:0;width:300px;height:300px;border-width:20px"></div>
+<div class="t0901-box" data-b="body" style="left:300px;top:110px;width:80px;height:80px;border-width:20px"></div>
+<div class="t0901-o" data-o="html" style="left:190px;top:0;width:300px;height:300px"></div>
+<div class="t0901-o" data-o="body" style="left:300px;top:110px;width:80px;height:80px"></div>
+<div class="t0901-x"></div>
+<div class="t0901-r" data-r="60"></div>
+<div class="t0901-r" data-r="90"></div>
+<span class="zlab t0901-l-c" style="left:12px;top:10px">{% if include.lang == "fr" %}fixed → centre (200 ; 150){% else %}fixed → centre (200, 150){% endif %}</span>
+<span class="zlab t0901-l-s" style="left:12px;top:10px">{% if include.lang == "fr" %}sans 1q : fondu jusqu'à 250px{% else %}no 1q: fade up to 250px{% endif %}</span>
+<span class="zlab t0901-l-q" style="left:12px;top:10px">1q → 60px · 5lh = 90px</span>
+<span class="zlab t0901-l-h" style="left:12px;top:10px">html · x 190 → 490</span>
+<span class="zlab t0901-l-b" style="left:12px;top:10px">body · 80 × 80 {% if include.lang == "fr" %}en (300 ; 110){% else %}at (300, 110){% endif %}</span>
+<span class="zlab t0901-l-k" style="left:12px;top:10px">scale:6 1 → x 100 → 580</span>
+</div>
+</div>
+<div class="legend"><span><i style="--c:var(--t0901-d)"></i>{% if include.lang == "fr" %}anneau (fond du canevas){% else %}ring (canvas background){% endif %}</span><span><i style="--c:var(--t0901-h)"></i>{% if include.lang == "fr" %}bordure de html (verte en vrai){% else %}html's border (green in reality){% endif %}</span><span><i style="--c:var(--t0901-b)"></i>{% if include.lang == "fr" %}bordure du body (verte en vrai){% else %}the body's border (green in reality){% endif %}</span></div>
+</div>
+<div class="anim-side">
+<pre class="code" aria-hidden="true">&lt;style>*{<span data-on="3">margin:0-90 0 190</span>;<span data-on="3 4 5" data-tone="2">border:5vw solid#BADE37</span>;*{<span data-on="1">background:radial-gradient(</span><span data-on="2">1q,#BADE37 60px,#333 0 5lh,#BADE37</span><span data-on="1">)</span><span data-on="1" data-tone="2">fixed</span>;<span data-on="5">scale:6 1</span>;<span data-on="4">margin:90</span></pre>
+<div class="now" aria-live="polite">
+<div class="caps">
+{%- if include.lang == "fr" %}
+<div class="cap" data-t="0" data-step="Un anneau sur le canevas"><h3>1. Un anneau sur le canevas</h3><p>Le <code>*</code> imbriqué vise le <code>body</code> (et <code>head</code>, <code>style</code>, cachés). Comme <code>html</code> n'a pas de fond, celui du <code>body</code> sert pour tout le canevas : un dégradé radial vert, puis <code>#333</code> de 60 à 90px du centre, puis vert. <code>fixed</code> le place sur le viewport de 400 × 300 : centre en (200 ; 150).</p></div>
+<div class="cap" data-t="4" data-step="1q : des bords nets"><h3>2. <code>1q</code> : des bords nets</h3><p>Sans taille, le rayon du dégradé va jusqu'au coin le plus loin, 250px, et le dernier vert serait posé à 250px : un fondu. Avec <code>1q</code>, le rayon fait 0,945px. Le dernier vert (100 % = 0,945px) et le <code>0</code> du <code>#333</code> sont plus petits que l'arrêt d'avant, donc remontés à 90px et à 60px : deux bords nets. <code>5lh</code> = 5 × 18 = 90px.</p></div>
+<div class="cap" data-t="8" data-step="html : la fente verticale"><h3>3. <code>html</code> : la fente verticale</h3><p>Le premier <code>*</code> vise <code>html</code> : <code>margin:0-90 0 190</code> donne 0, −90, 0, 190. La boîte va de x 190 à 490, 300 de large, et 300 de haut (en mode quirks, <code>html</code> remplit le viewport). Sa bordure de <code>5vw</code> = 20px est verte comme le fond : sa bordure gauche, de x 190 à 210, coupe l'anneau en haut et en bas.</p></div>
+<div class="cap" data-t="12" data-step="Le body : 80 × 80"><h3>4. Le <code>body</code> : 80 × 80</h3><p>Le <code>body</code> a aussi une bordure verte de 20px, et <code>margin:90</code> dans le contenu de <code>html</code> (260 × 260). Il reste 260 − 180 = 80 en largeur, et en mode quirks le <code>body</code> remplit aussi la hauteur : une boîte de 80 × 80 en (300 ; 110), avec une fenêtre transparente de 40 × 40 au milieu.</p></div>
+<div class="cap" data-t="16" data-step="scale:6 1 : étirer le body"><h3>5. <code>scale:6 1</code> : étirer le <code>body</code></h3><p><code>scale:6 1</code> étire le <code>body</code> six fois en largeur autour de son centre, x 340 : il va de x 100 à 580. Sa bordure gauche, 120 de large, cache la gauche de l'anneau. Ses bordures du haut et du bas, de y 110 à 130 et de 170 à 190, font deux fentes horizontales. Sa fenêtre, de x 220 à 460, laisse voir le petit arc de droite.</p></div>
+<div class="cap" data-t="20" data-step="Résultat" data-live="140 caractères · 100 % identique"><h3>6. Résultat : 140 caractères</h3><p>Un seul fond pour tout le canevas, et deux bordures de la même couleur que lui pour y tailler les fentes.</p></div>
+{%- else %}
+<div class="cap" data-t="0" data-step="A ring on the canvas"><h3>1. A ring on the canvas</h3><p>The nested <code>*</code> matches the <code>body</code> (and <code>head</code>, <code>style</code>, which are hidden). Since <code>html</code> has no background, the <code>body</code>'s is used for the whole canvas: a radial gradient, green, then <code>#333</code> from 60 to 90px from the centre, then green. <code>fixed</code> places it on the 400 × 300 viewport: centre at (200, 150).</p></div>
+<div class="cap" data-t="4" data-step="1q: sharp edges"><h3>2. <code>1q</code>: sharp edges</h3><p>With no size, the gradient ray goes to the farthest corner, 250px, and the last green would sit at 250px: a fade. With <code>1q</code>, the ray is 0.945px. The last green (100% = 0.945px) and the <code>0</code> of <code>#333</code> are smaller than the stop before them, so they are pulled up to 90px and 60px: two sharp edges. <code>5lh</code> = 5 × 18 = 90px.</p></div>
+<div class="cap" data-t="8" data-step="html: the vertical slit"><h3>3. <code>html</code>: the vertical slit</h3><p>The first <code>*</code> matches <code>html</code>: <code>margin:0-90 0 190</code> reads 0, −90, 0, 190. The box runs from x 190 to 490, 300 wide, and 300 tall (in quirks mode, <code>html</code> fills the viewport). Its <code>5vw</code> = 20px border is green like the background: its left border, from x 190 to 210, cuts the ring at the top and bottom.</p></div>
+<div class="cap" data-t="12" data-step="The body: 80 × 80"><h3>4. The <code>body</code>: 80 × 80</h3><p>The <code>body</code> also has a 20px green border, and <code>margin:90</code> inside <code>html</code>'s content (260 × 260). That leaves 260 − 180 = 80 in width, and in quirks mode the <code>body</code> also fills the height: an 80 × 80 box at (300, 110), with a transparent 40 × 40 window in the middle.</p></div>
+<div class="cap" data-t="16" data-step="scale:6 1: stretch the body"><h3>5. <code>scale:6 1</code>: stretch the <code>body</code></h3><p><code>scale:6 1</code> stretches the <code>body</code> six times in width around its centre, x 340: it runs from x 100 to 580. Its left border, 120 wide, hides the left of the ring. Its top and bottom borders, from y 110 to 130 and from 170 to 190, make two horizontal slits. Its window, from x 220 to 460, shows the small arc on the right.</p></div>
+<div class="cap" data-t="20" data-step="Result" data-live="140 characters · 100% match"><h3>6. Result: 140 characters</h3><p>One background for the whole canvas, and two borders of the same color to cut the slits into it.</p></div>
+{%- endif %}
+</div>
+<div class="live"></div>
+</div>
+</div>
+<script>
+(window.AnimScenes = window.AnimScenes || {}).t0901 = (fig) => {
+  const fr = document.documentElement.lang === 'fr';
+  const $ = (s) => fig.querySelector(s);
+  const $$ = (s) => [...fig.querySelectorAll(s)];
+  const live = $('.live');
+  const L = (k) => $(`.t0901-l-${k}`);
+  const ring = $('.t0901-ring');
+  const html = $('[data-b="html"]');
+  const body = $('[data-b="body"]');
+  const oHtml = $('[data-o="html"]');
+  const oBody = $('[data-o="body"]');
+  const ease = (x) => (x < 0.5 ? 4 * x * x * x : 1 - Math.pow(-2 * x + 2, 3) / 2);
+  const pr = (t, a, b) => ease(Math.min(1, Math.max(0, (t - a) / (b - a))));
+  const win = (t, a, b) => Math.min(pr(t, a, a + 0.5), 1 - pr(t, b - 0.4, b));
+  const c = fr ? '\u00a0:' : ':';
+  const n = (x) => (fr ? String(x).replace('.', ',') : String(x));
+  return (t, step) => {
+    const teach = fig.dataset.teach === '1';
+    const fin = t >= 20;
+    const real = !teach || fin;
+    // 1. the ring grows; 2. the outer edge fades out to 250px, then snaps back to 90px
+    const m = pr(t, 0.3, 2);
+    const soft = Math.min(pr(t, 4.6, 5.8), 1 - pr(t, 7, 7.8));
+    const ri = 60 * m;
+    const ro = 90 * m;
+    const e = ro + (250 - 90) * soft;
+    ring.style.background = m > 0 ? `radial-gradient(circle at 200px 150px, transparent ${ri}px, var(--t0901-d) 0 ${ro}px, transparent ${e}px)` : 'none';
+    $('.t0901-x').style.opacity = win(t, 0.3, 8);
+    $$('.t0901-r').forEach((r) => {
+      const R = +r.dataset.r;
+      Object.assign(r.style, { width: `${R}px`, transform: `rotate(${R === 60 ? 180 : 0}deg)`, opacity: win(t, 4.2, 8) });
+    });
+    // 3. html; 4. body; 5. scale
+    const hOp = pr(t, 8.2, 9.2);
+    const bOp = pr(t, 12.2, 13.2);
+    const s = 1 + 5 * pr(t, 16.3, 18.3);
+    html.style.opacity = hOp;
+    html.style.borderColor = real ? 'var(--t0901-g)' : 'var(--t0901-h)';
+    body.style.opacity = bOp;
+    body.style.borderColor = real ? 'var(--t0901-g)' : 'var(--t0901-b)';
+    Object.assign(body.style, { left: `${340 - 40 * s}px`, width: `${80 * s}px`, borderLeftWidth: `${20 * s}px`, borderRightWidth: `${20 * s}px` });
+    Object.assign(oBody.style, { left: `${340 - 40 * s}px`, width: `${80 * s}px` });
+    const guides = fin ? 0 : 1;
+    oHtml.style.opacity = hOp * guides;
+    oBody.style.opacity = bOp * guides;
+    L('c').style.opacity = win(t, 0.5, 4);
+    const so = win(t, 4.6, 7.2);
+    L('s').style.opacity = so;
+    L('q').style.opacity = win(t, 4.2, 8) * (1 - so);
+    L('h').style.opacity = win(t, 8.4, 12);
+    L('b').style.opacity = win(t, 12.4, 16);
+    L('k').style.opacity = win(t, 16.4, 20);
+    let txt = '';
+    if (step === 0) txt = `${fr ? 'anneau' : 'ring'}${c} r 60 → 90 · ${fr ? 'centre (200\u00a0; 150)' : 'centre (200, 150)'}`;
+    else if (step === 1) txt = `1q = ${n(0.945)}px · 5lh = 90px`;
+    else if (step === 2) txt = `html${c} x 190 → 490 · ${fr ? 'bordure' : 'border'} 20`;
+    else if (step === 3) txt = `body${c} 80 × 80 ${fr ? 'en (300\u00a0; 110)' : 'at (300, 110)'}`;
+    else if (step === 4) txt = `body${c} 480 × 80 · x 100 → 580`;
+    else txt = $$('.caps .cap')[5].dataset.live || '';
+    live.textContent = txt;
+  };
+};
+</script>
+</figure>
