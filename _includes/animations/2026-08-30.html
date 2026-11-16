@@ -1,0 +1,112 @@
+<figure class="anim t0830" data-duration="24" data-scene="t0830" data-wide="-50 -40 500 380" style="--bg:#57c4c4">
+<style>
+.t0830{--t0830-d:#243d83;--t0830-l:#57c4c4;--t0830-ha:#9b59b6;--t0830-hb:#e67e22;--t0830-bi:#f6e7a1;--t0830-ba:#b5ecae;--t0830-bb:#f7b2c4;--t0830-dash:rgb(255 255 255 / .9)}
+.t0830 .t0830-r{position:absolute;display:block}
+.t0830 .t0830-o{position:absolute;box-sizing:border-box;border:1.5px dashed var(--t0830-dash);pointer-events:none;z-index:20}
+.t0830 .zlab{color:#fff;background:rgb(20 30 70 / .9);padding:1px 5px;border-radius:3px}
+</style>
+<div class="anim-col">
+<div class="stage" role="img" aria-label="{% if include.lang == "fr" %}Animation : html, zoomé 2,5 fois, est une boîte de 200 × 120 ; une ombre interne la remplit de bleu foncé, et deux ombres décalées de 40px la recopient en haut à gauche et en bas à droite. Le body, 20px plus à l'intérieur, fait la même chose en turquoise : il reste un contour bleu en escalier de 20px d'épaisseur{% else %}Animation: html, zoomed 2.5 times, is a 200 × 120 box; an inset shadow fills it with dark blue, and two shadows offset by 40px copy it to the top left and bottom right. The body, 20px further in, does the same in turquoise: a 20px dark blue staircase outline is left{% endif %}">
+<div class="scene">
+<i class="t0830-r" data-r="hb"></i>
+<i class="t0830-r" data-r="ha"></i>
+<i class="t0830-r" data-r="hi"></i>
+<i class="t0830-r" data-r="ba"></i>
+<i class="t0830-r" data-r="bb"></i>
+<i class="t0830-r" data-r="bi"></i>
+<div class="t0830-o" data-o="html" style="left:100px;top:90px;width:200px;height:120px"></div>
+<div class="t0830-o" data-o="body" style="left:120px;top:110px;width:160px;height:80px"></div>
+<span class="zlab t0830-l1" style="left:8px;top:276px">zoom:2.5 → html 200 × 120</span>
+<span class="zlab t0830-l2" style="left:8px;top:276px">inset 0 2in · 192 &gt; 48</span>
+<span class="zlab t0830-l3" style="left:8px;top:276px">1em = 16 × {% if include.lang == "fr" %}2,5{% else %}2.5{% endif %} = 40</span>
+<span class="zlab t0830-l4" style="left:8px;top:276px">body · 8 × {% if include.lang == "fr" %}2,5{% else %}2.5{% endif %} = 20</span>
+<span class="zlab t0830-l5" style="left:8px;top:276px">body · ±1em → ±40</span>
+</div>
+</div>
+<div class="legend"><span><i style="--c:var(--t0830-d)"></i>{% if include.lang == "fr" %}html, ombre interne{% else %}html, inset shadow{% endif %}</span><span><i style="--c:var(--t0830-ha)"></i>html -1em -1em</span><span><i style="--c:var(--t0830-hb)"></i>html 1em 1em</span><span><i style="--c:var(--t0830-bi)"></i>{% if include.lang == "fr" %}body, ombre interne{% else %}body, inset shadow{% endif %}</span><span><i style="--c:var(--t0830-ba)"></i>body -1em -1em</span><span><i style="--c:var(--t0830-bb)"></i>body 1em 1em</span></div>
+</div>
+<div class="anim-side">
+<pre class="code" aria-hidden="true">&lt;style>*{box-shadow:<span data-on="2 4">inset 0 2in</span>,<span data-on="3 5">1em 1em,-1em -1em</span>;<span data-on="4 5" data-tone="2">color:57C4C4</span>}&amp;{<span data-on="2 3" data-tone="2">color:243D83</span>;<span data-on="1" data-tone="2">background:#57C4C4</span>;<span data-on="1 3 4">zoom:2.5</span>;<span data-on="1">margin:36 40</span></pre>
+<div class="now" aria-live="polite">
+<div class="caps">
+{%- if include.lang == "fr" %}
+<div class="cap" data-t="0" data-step="html, zoomé 2,5 fois"><h3>1. <code>html</code>, zoomé 2,5 fois</h3><p><code>&amp;</code> seul vise <code>html</code>. Son fond turquoise va au canevas. Avec <code>zoom:2.5</code>, le canevas ne fait plus que 160 × 120px CSS. En mode quirks, <code>html</code> remplit cette hauteur, moins ses marges <code>36 40</code> : 80 × 48px CSS, soit une boîte de 200 × 120 en (100 ; 90) à l'écran.</p></div>
+<div class="cap" data-t="4" data-step="Une ombre interne qui remplit"><h3>2. Une ombre interne qui remplit</h3><p><code>html</code> a la couleur <code>243D83</code>, donc ses ombres sont bleu foncé. <code>inset 0 2in</code> décale le « trou » de l'ombre de 2in = 192px vers le bas. La boîte ne fait que 48px de haut : le trou sort de la boîte, et l'ombre la remplit toute.</p></div>
+<div class="cap" data-t="8" data-step="Deux copies à ±40"><h3>3. Deux copies à ±40</h3><p><code>1em 1em</code> et <code>-1em -1em</code> sont deux ombres pleines de la même taille que la boîte. 1em = 16px, et le zoom en fait 40 à l'écran. Une copie en (60 ; 50), une en (140 ; 130) : trois rectangles bleus en escalier.</p></div>
+<div class="cap" data-t="12" data-step="Le body, 20 plus à l'intérieur"><h3>4. Le <code>body</code>, 20 plus à l'intérieur</h3><p>Le <code>body</code> garde sa marge par défaut de 8px, soit 20 à l'écran : 160 × 80 en (120 ; 110). <code>*</code> lui donne la même ombre, mais sa couleur est <code>57C4C4</code>, le turquoise du fond. Son ombre interne le remplit de turquoise.</p></div>
+<div class="cap" data-t="16" data-step="Ses deux copies creusent le contour"><h3>5. Ses deux copies creusent le contour</h3><p>Les ombres à ±1em du <code>body</code> sont des rectangles turquoise de 160 × 80, en (80 ; 70) et (160 ; 150). Chacun est 20px plus petit de chaque côté que le rectangle bleu qu'il recouvre. Il reste un trait bleu de 20px.</p></div>
+<div class="cap" data-t="20" data-step="Résultat" data-live="118 caractères · 100 % identique"><h3>6. Résultat : 118 caractères</h3><p>Deux boîtes, une seule liste d'ombres : trois rectangles bleus, puis trois rectangles turquoise par-dessus.</p></div>
+{%- else %}
+<div class="cap" data-t="0" data-step="html, zoomed 2.5 times"><h3>1. <code>html</code>, zoomed 2.5 times</h3><p>A lone <code>&amp;</code> matches <code>html</code>. Its turquoise background goes to the canvas. With <code>zoom:2.5</code>, the canvas is only 160 × 120 CSS px. In quirks mode, <code>html</code> fills that height, minus its <code>36 40</code> margins: 80 × 48 CSS px, so a 200 × 120 box at (100, 90) on screen.</p></div>
+<div class="cap" data-t="4" data-step="An inset shadow that fills"><h3>2. An inset shadow that fills</h3><p><code>html</code> has the color <code>243D83</code>, so its shadows are dark blue. <code>inset 0 2in</code> moves the shadow's "hole" 2in = 192px down. The box is only 48px tall: the hole leaves the box, and the shadow fills all of it.</p></div>
+<div class="cap" data-t="8" data-step="Two copies at ±40"><h3>3. Two copies at ±40</h3><p><code>1em 1em</code> and <code>-1em -1em</code> are two solid shadows the size of the box. 1em = 16px, and the zoom makes it 40 on screen. One copy at (60, 50), one at (140, 130): three dark blue rectangles in a staircase.</p></div>
+<div class="cap" data-t="12" data-step="The body, 20 further in"><h3>4. The <code>body</code>, 20 further in</h3><p>The <code>body</code> keeps its default 8px margin, 20 on screen: 160 × 80 at (120, 110). <code>*</code> gives it the same shadows, but its color is <code>57C4C4</code>, the background turquoise. Its inset shadow fills it with turquoise.</p></div>
+<div class="cap" data-t="16" data-step="Its two copies hollow the outline"><h3>5. Its two copies hollow the outline</h3><p>The <code>body</code>'s ±1em shadows are 160 × 80 turquoise rectangles, at (80, 70) and (160, 150). Each one is 20px smaller on every side than the blue rectangle it covers. A 20px blue line is left.</p></div>
+<div class="cap" data-t="20" data-step="Result" data-live="118 characters · 100% match"><h3>6. Result: 118 characters</h3><p>Two boxes, one list of shadows: three blue rectangles, then three turquoise ones on top.</p></div>
+{%- endif %}
+</div>
+<div class="live"></div>
+</div>
+</div>
+<script>
+(window.AnimScenes = window.AnimScenes || {}).t0830 = (fig) => {
+  const fr = document.documentElement.lang === 'fr';
+  const $ = (s) => fig.querySelector(s);
+  const $$ = (s) => [...fig.querySelectorAll(s)];
+  const live = $('.live');
+  const R = (k) => $(`[data-r="${k}"]`);
+  const ease = (x) => (x < 0.5 ? 4 * x * x * x : 1 - Math.pow(-2 * x + 2, 3) / 2);
+  const pr = (t, a, b) => ease(Math.min(1, Math.max(0, (t - a) / (b - a))));
+  const win = (t, a, b) => Math.min(pr(t, a, a + 0.5), 1 - pr(t, b - 0.4, b));
+  const lerp = (a, b, m) => a + (b - a) * m;
+  // final boxes: x, y, w, h; start box (where the shadow slides from); teaching color; real color
+  const H = [100, 90, 200, 120];
+  const B = [120, 110, 160, 80];
+  const S = {
+    hi: { box: H, col: '--t0830-d', real: '--t0830-d' },
+    ha: { box: [60, 50, 200, 120], from: H, col: '--t0830-ha', real: '--t0830-d' },
+    hb: { box: [140, 130, 200, 120], from: H, col: '--t0830-hb', real: '--t0830-d' },
+    bi: { box: B, col: '--t0830-bi', real: '--t0830-l' },
+    ba: { box: [80, 70, 160, 80], from: B, col: '--t0830-ba', real: '--t0830-l' },
+    bb: { box: [160, 150, 160, 80], from: B, col: '--t0830-bb', real: '--t0830-l' },
+  };
+  const z = { hb: 1, ha: 2, hi: 3, ba: 4, bb: 4, bi: 5 };
+  for (const k of Object.keys(z)) R(k).style.zIndex = z[k];
+  const c = fr ? '\u00a0:' : ':';
+  return (t, step) => {
+    const teach = fig.dataset.teach === '1';
+    const real = !teach || t >= 20.1;
+    const set = (k, x, y, w, h, on) => Object.assign(R(k).style, { left: `${x}px`, top: `${y}px`, width: `${w}px`, height: `${h}px`, opacity: on ? 1 : 0, background: `var(${real ? S[k].real : S[k].col})` });
+    // inset shadows: a band that grows from the top until it fills the box
+    const mi = pr(t, 4.3, 6.3);
+    set('hi', ...H.slice(0, 3), H[3] * mi, mi > 0);
+    const mb = pr(t, 12.4, 14.4);
+    set('bi', ...B.slice(0, 3), B[3] * mb, mb > 0);
+    // outer shadows: copies that slide out from behind their box
+    const mh = pr(t, 8.3, 10.3);
+    const ms = pr(t, 16.3, 18.3);
+    for (const [k, m] of [['ha', mh], ['hb', mh], ['ba', ms], ['bb', ms]]) {
+      const [x, y, w, h] = S[k].box;
+      const [fx, fy] = S[k].from;
+      set(k, lerp(fx, x, m), lerp(fy, y, m), w, h, m > 0);
+    }
+    const guides = t < 20 ? 1 : 0;
+    $('[data-o="html"]').style.opacity = guides;
+    $('[data-o="body"]').style.opacity = (t >= 12 ? 1 : 0) * guides;
+    $('.t0830-l1').style.opacity = win(t, 0.2, 4);
+    $('.t0830-l2').style.opacity = win(t, 4, 8);
+    $('.t0830-l3').style.opacity = win(t, 8, 12);
+    $('.t0830-l4').style.opacity = win(t, 12, 16);
+    $('.t0830-l5').style.opacity = win(t, 16, 20);
+    let txt = '';
+    if (step === 0) txt = `html${c} 200 × 120 ${fr ? 'en' : 'at'} (100${fr ? '\u00a0; ' : ', '}90)`;
+    else if (step === 1) txt = `inset 0 2in${c} 192px > 48px`;
+    else if (step === 2) txt = `1em${c} 16 × ${fr ? '2,5' : '2.5'} = 40px`;
+    else if (step === 3) txt = `body${c} 160 × 80 ${fr ? 'en' : 'at'} (120${fr ? '\u00a0; ' : ', '}110)`;
+    else if (step === 4) txt = fr ? 'trait\u00a0: 20px' : 'stroke: 20px';
+    else txt = $$('.caps .cap')[5].dataset.live || '';
+    live.textContent = txt;
+  };
+};
+</script>
+</figure>
