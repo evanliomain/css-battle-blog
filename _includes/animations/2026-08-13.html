@@ -1,0 +1,127 @@
+<figure class="anim t0813" data-duration="30" data-scene="t0813" data-wide="-50 -40 500 380" data-off-label="-46 304" style="--bg:#4c4c6b">
+<style>
+.t0813{--t0813-bg:#4c4c6b;--t0813-ye:#fae29e;--t0813-gr:#4a9a86;--t0813-ht:#e8708a;--t0813-bo:#5aa0e6}
+.t0813 .t0813-hs{width:20px;height:50px;opacity:0;z-index:2}
+.t0813 .t0813-html{left:190px;top:125px;width:20px;height:50px;background:var(--t0813-ht);opacity:0;z-index:3}
+.t0813 .t0813-bs{opacity:0;z-index:4}
+.t0813 .t0813-bb{background:var(--t0813-bo);opacity:0;z-index:5}
+.t0813 .zlab{color:#14142a;background:rgb(255 255 255 / .92);padding:1px 5px;border-radius:3px}
+.t0813 .t0813-l{left:110px;top:6px;opacity:0;z-index:8}
+.t0813 .off-lab.in-canvas{left:125px!important}
+</style>
+<div class="anim-col">
+<div class="stage" role="img" aria-label="{% if include.lang == "fr" %}Animation : le canevas prend le fond de html ; avec margin:125 190, html fait 20 × 50 en (190 ; 125) ; ses quatre ombres, décalées de 95q = 89,76px et 5ch = 40px, deux jaunes et deux vertes, font les quatre petits rectangles ; body, avec margin:-7-8, fait 36 × 64 en (182 ; 118) et porte les mêmes ombres, qui couvrent celles de html ; scale:1.39 1.88 l'étire en 50,04 × 120,32, et ses ombres avec ; le signe moins de −1,88 le retourne : ses ombres changent de côté, et chaque grand rectangle se retrouve à côté d'un petit d'une autre couleur{% else %}Animation: the canvas takes the background of html; with margin:125 190, html is 20 × 50 at (190, 125); its four shadows, offset by 95q = 89.76px and 5ch = 40px, two yellow and two green, make the four small rectangles; body, with margin:-7-8, is 36 × 64 at (182, 118) and has the same shadows, which cover those of html; scale:1.39 1.88 stretches it to 50.04 × 120.32, its shadows too; the minus sign of −1.88 flips it: its shadows swap sides, and each big rectangle ends up next to a small one of the other color{% endif %}">
+<div class="scene">
+<div class="t0813-hs" data-i="0"></div>
+<div class="t0813-hs" data-i="1"></div>
+<div class="t0813-hs" data-i="2"></div>
+<div class="t0813-hs" data-i="3"></div>
+<div class="t0813-html"></div>
+<div class="t0813-bs" data-i="0"></div>
+<div class="t0813-bs" data-i="1"></div>
+<div class="t0813-bs" data-i="2"></div>
+<div class="t0813-bs" data-i="3"></div>
+<div class="t0813-bb"></div>
+<span class="zlab t0813-l" data-l="1">400 − 2 × 190 = 20<br>300 − 2 × 125 = 50</span>
+<span class="zlab t0813-l" data-l="2">{% if include.lang == "fr" %}95q = 89,76px<br>5ch = 5 × 8 = 40px{% else %}95q = 89.76px<br>5ch = 5 × 8 = 40px{% endif %}</span>
+<span class="zlab t0813-l" data-l="3">20 + 2 × 8 = 36<br>50 + 2 × 7 = 64</span>
+<span class="zlab t0813-l" data-l="4">{% if include.lang == "fr" %}36 × 1,39 = 50,04<br>64 × 1,88 = 120,32{% else %}36 × 1.39 = 50.04<br>64 × 1.88 = 120.32{% endif %}</span>
+<span class="zlab t0813-l" data-l="5">{% if include.lang == "fr" %}40 × −1,88 = −75,2{% else %}40 × −1.88 = −75.2{% endif %}</span>
+</div>
+</div>
+<div class="legend"><span><i style="--c:var(--t0813-ht)"></i>{% if include.lang == "fr" %}html : #4C4C6B{% else %}html: #4C4C6B{% endif %}</span><span><i style="--c:var(--t0813-bo)"></i>{% if include.lang == "fr" %}body : #4C4C6B{% else %}body: #4C4C6B{% endif %}</span><span><i style="--c:transparent;outline:2px dashed var(--t0813-bo);outline-offset:-2px"></i>{% if include.lang == "fr" %}ombres de body{% else %}body's shadows{% endif %}</span><span><i style="--c:var(--t0813-ye)"></i>#FAE29E</span><span><i style="--c:var(--t0813-gr)"></i>color:4A9A86</span></div>
+</div>
+<div class="anim-side">
+<pre class="code" aria-hidden="true">&lt;style>*{<span data-on="1 6">background:#4C4C6B</span>;<span data-on="2">color:4A9A86</span>;<span data-on="1">margin:125 190</span>;<span data-on="2">box-shadow:95q 5ch#FAE29E,-95q -5ch#FAE29E,95q -5ch,-95q 5ch</span>;<span data-on="3">*{margin:-7-8</span>;<span data-on="4 5">scale:1.39<span data-on="5" data-tone="2">-</span>1.88</span></pre>
+<div class="now" aria-live="polite">
+<div class="caps">
+{%- if include.lang == "fr" %}
+<div class="cap" data-t="0" data-step="html, 20 × 50"><h3>1. html, 20 × 50</h3><p><code>*</code> vise tous les éléments, html en premier. Le fond de html peint tout le canevas en <code>#4C4C6B</code>. <code>margin:125 190</code> n'a pas d'unité : en mode quirks, ce sont des px. En mode quirks, html remplit aussi la hauteur de la page, moins ses marges : il fait 400 − 2 × 190 = 20px de large et 300 − 2 × 125 = 50px de haut, en (190 ; 125).</p></div>
+<div class="cap" data-t="5" data-step="Quatre ombres"><h3>2. Quatre ombres sur html</h3><p><code>95q</code>, c'est 95 quarts de millimètre : 89,76px. <code>5ch</code> fait 40px dans mon Chrome. Deux ombres sont <code>#FAE29E</code>. Les deux autres n'ont pas de couleur : elles prennent celle du texte, <code>color:4A9A86</code>, un hexa sans <code>#</code>, que le mode quirks accepte. Chaque ombre est une copie de html, 20 × 50 : ce sont les quatre petits rectangles.</p></div>
+<div class="cap" data-t="10" data-step="body, pareil"><h3>3. body reçoit la même chose</h3><p>Le <code>*{</code> imbriqué vise tout élément placé dans un autre : head, style et body. Seul body s'affiche. Il ne change que la marge : −7px et −8px. En mode quirks, body remplit html, moins ses marges : 20 + 2 × 8 = 36px de large, 50 + 2 × 7 = 64px de haut, en (182 ; 118). Il garde le reste de <code>*</code> : le même fond, et les quatre mêmes ombres, ici en 36 × 64. Elles couvrent celles de html, dans les mêmes couleurs.</p></div>
+<div class="cap" data-t="15" data-step="Étirer"><h3>4. Étirer body</h3><p>Je montre d'abord l'échelle sans le signe moins. <code>scale</code> étire body autour de son centre, (200 ; 150) : 36 × 1,39 = 50,04px de large, 64 × 1,88 = 120,32px de haut. Les ombres font partie de body : elles s'étirent aussi, et leurs décalages avec : 89,76 × 1,39 = 124,77px, 40 × 1,88 = 75,2px. Chaque grand rectangle arrive à côté d'un petit de la même couleur.</p></div>
+<div class="cap" data-t="20" data-step="Le signe moins"><h3>5. Le signe moins retourne body</h3><p>La vraie valeur est −1,88. Une échelle négative retourne aussi body, haut en bas. Chaque décalage vertical change de signe : l'ombre jaune qui descendait de 40px monte maintenant de 75,2px. Chaque grand rectangle se retrouve à côté d'un petit de l'autre couleur.</p></div>
+<div class="cap" data-t="25" data-step="Résultat" data-live="146 caractères · 100 % identique"><h3>6. Résultat : 146 caractères</h3><p>body a la couleur du canevas : seules les huit ombres se voient. Les quatre ombres de html font les petits rectangles, et les mêmes quatre ombres, sur body étiré et retourné, font les grands.</p></div>
+{%- else %}
+<div class="cap" data-t="0" data-step="html, 20 × 50"><h3>1. html, 20 × 50</h3><p><code>*</code> targets every element, html first. The background of html paints the whole canvas <code>#4C4C6B</code>. <code>margin:125 190</code> has no unit: in quirks mode, it means px. In quirks mode, html also fills the height of the page, minus its margins: it is 400 − 2 × 190 = 20px wide and 300 − 2 × 125 = 50px tall, at (190, 125).</p></div>
+<div class="cap" data-t="5" data-step="Four shadows"><h3>2. Four shadows on html</h3><p><code>95q</code> is 95 quarter-millimeters: 89.76px. <code>5ch</code> is 40px in my Chrome. Two shadows are <code>#FAE29E</code>. The other two have no color: they take the text color, <code>color:4A9A86</code>, a hex color without its <code>#</code>, which quirks mode accepts. Each shadow is a copy of html, 20 × 50: they are the four small rectangles.</p></div>
+<div class="cap" data-t="10" data-step="body, the same"><h3>3. body gets the same</h3><p>The nested <code>*{</code> targets every element inside another one: head, style and body. Only body is displayed. It only changes the margin: −7px and −8px. In quirks mode, body fills html, minus its margins: 20 + 2 × 8 = 36px wide, 50 + 2 × 7 = 64px tall, at (182, 118). It keeps the rest of <code>*</code>: the same background, and the same four shadows, now 36 × 64. They cover those of html, in the same colors.</p></div>
+<div class="cap" data-t="15" data-step="Stretch"><h3>4. Stretch body</h3><p>I show the scale without the minus sign first. <code>scale</code> stretches body around its center, (200, 150): 36 × 1.39 = 50.04px wide, 64 × 1.88 = 120.32px tall. The shadows are part of body: they stretch too, and so do their offsets: 89.76 × 1.39 = 124.77px, 40 × 1.88 = 75.2px. Each big rectangle lands next to a small one of the same color.</p></div>
+<div class="cap" data-t="20" data-step="The minus sign"><h3>5. The minus sign flips body</h3><p>The real value is −1.88. A negative scale also turns body upside down. Each vertical offset changes sign: the yellow shadow that went 40px down now goes 75.2px up. Each big rectangle now sits next to a small one of the other color.</p></div>
+<div class="cap" data-t="25" data-step="Result" data-live="146 characters · 100% match"><h3>6. Result: 146 characters</h3><p>body has the color of the canvas: only the eight shadows show. The four shadows of html make the small rectangles, and the same four shadows, on body stretched and flipped, make the big ones.</p></div>
+{%- endif %}
+</div>
+<div class="live"></div>
+</div>
+</div>
+<script>
+(window.AnimScenes = window.AnimScenes || {}).t0813 = (fig) => {
+  const fr = document.documentElement.lang === 'fr';
+  const $ = (s) => fig.querySelector(s);
+  const $$ = (s) => [...fig.querySelectorAll(s)];
+  const live = $('.live');
+  const ease = (x) => (x < 0.5 ? 4 * x * x * x : 1 - Math.pow(-2 * x + 2, 3) / 2);
+  const pr = (t, [a, b]) => ease(Math.min(1, Math.max(0, (t - a) / (b - a))));
+  const win = (t, a, b) => Math.min(pr(t, [a, a + 0.5]), 1 - pr(t, [b - 0.4, b]));
+  const lerp = (a, b, k) => a + (b - a) * k;
+  const n2 = (v) => (fr ? v.toFixed(2).replace('.', ',') : v.toFixed(2));
+  const c = fr ? ' :' : ':';
+  const sep = fr ? ' ;' : ',';
+  // Measured on the official code (getComputedStyle / getBoundingClientRect in local Chrome):
+  // html (190, 125) 20 × 50; shadows 95q 5ch = 89.7638px 40px: yellow (+, +) (−, −), currentcolor green (+, −) (−, +)
+  // body unscaled (182, 118) 36 × 64, transform-origin 18px 32px; scaled 1.39 −1.88: (174.98, 89.84) 50.04 × 120.32
+  // big shapes x 50.21..100.25 and 299.75..349.79, y 14.64..134.96 and 165.04..285.36; small x 100.24..120.24 and 279.76..299.76
+  const FIN = 25;
+  const DX = 89.7638, DY = 40;
+  const SH = [[1, 1, 'ye'], [-1, -1, 'ye'], [1, -1, 'gr'], [-1, 1, 'gr']];
+  const hs = $$('.t0813-hs');
+  const html = $('.t0813-html');
+  const bb = $('.t0813-bb');
+  const bs = $$('.t0813-bs');
+  // body and its shadows are drawn as plain boxes, sized from the scale around body's center (200, 150)
+  const put = (e, cx, cy, w, h) => { e.style.left = `${cx - w / 2}px`; e.style.top = `${cy - h / 2}px`; e.style.width = `${w}px`; e.style.height = `${h}px`; };
+  return (t, step) => {
+    const teach = fig.dataset.teach === '1' && t < FIN;
+    html.style.opacity = teach ? pr(t, [0.3, 1]) : 0;
+    const op2 = pr(t, [5.2, 5.8]);
+    const k2 = pr(t, [5.6, 7.6]);
+    const op3 = pr(t, [10.3, 10.9]);
+    const k3 = pr(t, [10.6, 12.6]);
+    const k4 = pr(t, [15.6, 17.8]);
+    const k5 = pr(t, [20.6, 23.2]);
+    const sx = lerp(1, 1.39, k4);
+    const sy = k5 > 0 ? lerp(1.88, -1.88, k5) : lerp(1, 1.88, k4);
+    // once body's shadows are in place, the small shapes slip 1px under the big ones (no seam on the shared edge)
+    const ext = k4 >= 1 && (k5 <= 0 || k5 >= 1) ? 1 : 0;
+    hs.forEach((e, i) => {
+      const [x, y, col] = SH[i];
+      e.style.opacity = op2;
+      e.style.background = `var(--t0813-${col})`;
+      e.style.left = `${190 + x * DX * k2 - (x < 0 ? ext : 0)}px`;
+      e.style.top = `${125 + y * DY * k2}px`;
+      e.style.width = `${20 + ext}px`;
+    });
+    const w = 36 * sx, h = 64 * Math.abs(sy);
+    put(bb, 200, 150, w, h);
+    bb.style.opacity = teach ? op3 : 0;
+    bs.forEach((e, i) => {
+      const [x, y, col] = SH[i];
+      e.style.opacity = op3;
+      e.style.background = `var(--t0813-${col})`;
+      put(e, 200 + x * DX * k3 * sx, 150 + y * DY * k3 * sy, w, h);
+      e.style.outline = teach ? '2px dashed var(--t0813-bo)' : 'none';
+      e.style.outlineOffset = '-2px';
+    });
+    [[0.2, 4.8], [5.2, 9.8], [10.2, 14.8], [15.2, 19.8], [20.2, 24.8]].forEach(([a, z], i) => ($(`.t0813-l[data-l="${i + 1}"]`).style.opacity = win(t, a, z)));
+    let txt = '';
+    if (step === 0) txt = `html${c} (190${sep} 125) · 20 × 50`;
+    else if (step === 1) txt = `95q = ${n2(DX * k2)}px · 5ch = ${n2(DY * k2)}px`;
+    else if (step === 2) txt = `body${c} (182${sep} 118) · 36 × 64 · ${fr ? 'ombres' : 'shadows'} ±${n2(DX * k3)} ±${n2(DY * k3)}`;
+    else if (step === 3) txt = `scale${c} ${n2(sx)} ${n2(sy)} · body ${n2(36 * sx)} × ${n2(64 * sy)} · ${fr ? 'ombres' : 'shadows'} ±${n2(DX * sx)} ±${n2(DY * sy)}`;
+    else if (step === 4) txt = `scale${c} 1${fr ? ',' : '.'}39 ${n2(sy).replace('-', '−')} · ${fr ? 'ombre jaune' : 'yellow shadow'} (+${n2(DX * 1.39)}${sep} ${n2(DY * sy).replace('-', '−')})`;
+    else txt = $$('.caps .cap')[5].dataset.live || '';
+    live.textContent = txt;
+  };
+};
+</script>
+</figure>
