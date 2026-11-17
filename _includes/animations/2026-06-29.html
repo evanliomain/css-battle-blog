@@ -1,0 +1,118 @@
+<figure class="anim t0629" data-duration="30" data-scene="t0629" data-wide="-70 -40 540 405" data-off-label="-66 -34" style="--bg:#fff">
+<style>
+.t0629{--t0629-ink:#ed736e;--t0629-hd:#f59e0b;--t0629-bd:#22c55e;--t0629-pp:#3b82f6;--t0629-ln:#fff}
+.t0629 .scene .t0629-bar{box-sizing:content-box;left:175px;top:50px;width:0;height:150px;border:25px solid var(--t0629-ink);opacity:0}
+.t0629 .scene .t0629-html{z-index:1}
+.t0629 .scene .t0629-p{z-index:3}
+.t0629 .scene .t0629-body{box-sizing:content-box;left:100px;top:40px;width:0;height:150px;padding:35px 50px;border:0 solid var(--t0629-ink);border-inline-width:50px;opacity:0;z-index:2}
+.t0629 .scene .t0629-bb{box-sizing:border-box;left:100px;top:40px;width:200px;height:220px;border:calc(2px * var(--k, 1)) dashed var(--t0629-ln);box-shadow:0 0 0 calc(1px * var(--k, 1)) rgb(20 20 42 / .6);opacity:0;z-index:4}
+.t0629 .zlab{color:#fff;background:rgb(20 20 42 / .9);padding:1px 5px;border-radius:3px;opacity:0}
+.t0629 .scene .zlab.t0629-l1{left:4px;top:calc(300px - 4px - 36px * var(--k, 1))}
+.t0629 .scene .zlab.t0629-l2{left:4px;top:calc(300px - 4px - 18px * var(--k, 1))}
+.t0629[data-view="canvas"] .scene .zlab.t0629-l1[data-l="3"]{top:4px}
+.t0629[data-view="canvas"] .scene .zlab.t0629-l2[data-l="3"]{top:calc(4px + 18px * var(--k, 1))}
+.t0629[data-view="wide"] .scene .zlab.t0629-l1{left:-66px;top:306px}
+.t0629[data-view="wide"] .scene .zlab.t0629-l2{left:-66px;top:calc(306px + 18px * var(--k, 1))}
+</style>
+<div class="anim-col">
+<div class="stage" role="img" aria-label="{% if include.lang == "fr" %}Animation : chaque élément reçoit une bordure corail de 25px, une largeur de 0 et une hauteur de 150 ; html devient une barre de 50 × 200 ; offset: ray(45deg) met son centre au centre du canevas, en (200, 150), et le tourne de −45° ; body, juste après head, fait 200 × 220 avec deux bordures de 50px à gauche et à droite, et son fond bleu nuit passe sur le canevas ; son propre offset ajoute −45° à celui de html : −90°, et ses bordures deviennent les barres du haut et du bas ; p, dans body, est une barre de 50 × 200 tournée de −135° ; les deux diagonales se croisent entre les deux barres et laissent deux triangles bleu nuit{% else %}Animation: every element gets a 25px coral border, a width of 0 and a height of 150; html becomes a 50 × 200 bar; offset: ray(45deg) puts its center at the canvas center, (200, 150), and turns it by −45°; body, right after head, is 200 × 220 with two 50px borders on the left and right, and its navy background goes to the canvas; its own offset adds −45° to html's: −90°, and its borders become the top and bottom bars; p, inside body, is a 50 × 200 bar turned by −135°; the two diagonals cross between the two bars and leave two navy triangles{% endif %}">
+<div class="scene">
+<div class="t0629-bar t0629-html"></div>
+<div class="t0629-body"></div>
+<div class="t0629-bar t0629-p"></div>
+<div class="t0629-bb"></div>
+<span class="zlab t0629-l1" data-l="1">html · 0 × 150 + 2 × 25px</span>
+<span class="zlab t0629-l2" data-l="1">{% if include.lang == "fr" %}50 × 200 · en haut à gauche{% else %}50 × 200 · at the top left{% endif %}</span>
+<span class="zlab t0629-l1" data-l="2">offset: ray(45deg) → (200, 150)</span>
+<span class="zlab t0629-l2" data-l="2">45° − 90° = −45°</span>
+<span class="zlab t0629-l1" data-l="3">+* → body · 200 × 220</span>
+<span class="zlab t0629-l2" data-l="3">{% if include.lang == "fr" %}fond → canevas{% else %}background → canvas{% endif %}</span>
+<span class="zlab t0629-l1" data-l="4">body · −45° − 45° = −90°</span>
+<span class="zlab t0629-l2" data-l="4">220 × 50 · y = 50 … 100, 200 … 250</span>
+<span class="zlab t0629-l1" data-l="5">p · −90° − 45° = −135°</span>
+<span class="zlab t0629-l2" data-l="5">{% if include.lang == "fr" %}50 × 200 · centre (200, 150){% else %}50 × 200 · center (200, 150){% endif %}</span>
+<span class="zlab t0629-l1" data-l="6">{% if include.lang == "fr" %}pointe du triangle : y = 114,6{% else %}triangle tip: y = 114.6{% endif %}</span>
+<span class="zlab t0629-l2" data-l="6">{% if include.lang == "fr" %}150 − 25√2 = 114,6{% else %}150 − 25√2 = 114.6{% endif %}</span>
+</div>
+</div>
+<div class="legend"><span><i style="--c:var(--t0629-hd)"></i>{% if include.lang == "fr" %}bordure de html{% else %}html's border{% endif %}</span><span><i style="--c:var(--t0629-bd)"></i>{% if include.lang == "fr" %}bordures de body{% else %}body's borders{% endif %}</span><span><i style="--c:var(--t0629-pp)"></i>{% if include.lang == "fr" %}bordure de p{% else %}p's border{% endif %}</span><span><i style="--c:transparent;outline:2px dashed currentColor;outline-offset:-2px"></i>{% if include.lang == "fr" %}boîte de body{% else %}body's box{% endif %}</span><span><i style="--c:#161e44;outline:1px solid currentColor;outline-offset:-1px"></i>{% if include.lang == "fr" %}fond de body, sur le canevas{% else %}body's background, on the canvas{% endif %}</span></div>
+</div>
+<div class="anim-side">
+<pre class="code" aria-hidden="true"><span data-on="5">&lt;p></span>&lt;style><span data-on="1 2" data-tone="2">*{</span><span data-on="1">border:27Q solid#ed736e;width:0;height:150</span>;<span data-on="3 4" data-tone="2">+*{</span><span data-on="3">background:#161e44;padding:35 50;border-width:0 50</span>}<span data-on="2 4 5">offset:ray(45deg</span></pre>
+<div class="now" aria-live="polite">
+<div class="caps">
+{%- if include.lang == "fr" %}
+<div class="cap" data-t="0" data-step="html"><h3>1. html, une barre</h3><p>Pas de doctype : la page est en mode quirks, et un nombre sans unité vaut des px. <code>*</code> vise tous les éléments : html, head, body, p et style (head et style sont masqués). Chacun reçoit <code>border:27Q solid#ed736e</code> : 27Q vaut 25,51px, et Chrome dessine 25px. Avec <code>width:0;height:150</code>, html n'est que sa bordure : une barre de 50 × 200, en haut à gauche.</p></div>
+<div class="cap" data-t="5" data-step="offset"><h3>2. offset:ray(45deg)</h3><p><code>offset</code> donne à chaque boîte le chemin <code>ray(45deg)</code>. Sans distance, le centre de la boîte va au départ du rayon : le centre de son bloc conteneur. Pour html, c'est le centre du canevas, (200, 150). La boîte tourne aussi pour que son axe x suive le rayon, à 45° à droite de la verticale : une rotation de −45°. La barre penche maintenant comme une barre oblique inversée.</p></div>
+<div class="cap" data-t="10" data-step="body"><h3>3. body, deux bordures</h3><p>Le <code>+*</code> imbriqué veut dire <code>* + *</code> : un élément qui suit un frère. Seul body en est un, après head. Son <code>background:#161e44</code> passe sur le canevas, car html n'a pas de fond, et body ne peint rien lui-même. body fait 0 × 150, avec <code>padding:35 50</code> et <code>border-width:0 50</code> : une boîte de 200 × 220, avec deux bordures de 50px, à gauche et à droite, et un milieu vide. Il est dans html, donc tourné avec lui.</p></div>
+<div class="cap" data-t="15" data-step="−90°"><h3>4. body, −90° en tout</h3><p>body a son propre <code>offset:ray(45deg)</code>. Son bloc conteneur est le contenu de html, 0 × 150, centré sur html : le centre de body reste en (200, 150). Ses −45° s'ajoutent à ceux de html : −90° en tout. Ses deux bordures deviennent les barres du haut et du bas, de 220 × 50, de x = 90 à 310, et de y = 50 à 100 et 200 à 250.</p></div>
+<div class="cap" data-t="20" data-step="p"><h3>5. p, −135°</h3><p>Le <code>&lt;p></code> est dans body. Il reçoit la même bordure et la même taille que html : une barre de 50 × 200. Son bloc conteneur est le contenu de body, centré sur body : le centre de p est lui aussi en (200, 150). Il part des −90° de body et ajoute ses propres −45° : −135°. La barre penche dans l'autre sens, comme une barre oblique.</p></div>
+<div class="cap" data-t="26" data-step="Résultat" data-live="125 caractères · 100 % identique"><h3>6. Résultat : 125 caractères</h3><p>Dans les vraies couleurs, les trois éléments se fondent. Les bouts des deux diagonales s'arrêtent dans les barres horizontales. Là où les diagonales se croisent, elles laissent deux triangles bleu nuit : celui du haut descend de y = 100 jusqu'à sa pointe en y = 114,6, celui du bas est son reflet.</p></div>
+{%- else %}
+<div class="cap" data-t="0" data-step="html"><h3>1. html, a bar</h3><p>There is no doctype: the page is in quirks mode, and a number with no unit means px. <code>*</code> selects every element: html, head, body, p and style (head and style are hidden). Each one gets <code>border:27Q solid#ed736e</code>: 27Q is 25.51px, and Chrome draws 25px. With <code>width:0;height:150</code>, html is just its border: a 50 × 200 bar, at the top left.</p></div>
+<div class="cap" data-t="5" data-step="offset"><h3>2. offset:ray(45deg)</h3><p><code>offset</code> gives each box the path <code>ray(45deg)</code>. With no distance, the box's center goes to the start of the ray: the center of its containing block. For html, that is the canvas center, (200, 150). The box also turns so that its x axis follows the ray, 45° clockwise from straight up: a turn of −45°. The bar now leans like a backslash.</p></div>
+<div class="cap" data-t="10" data-step="body"><h3>3. body, two borders</h3><p>The nested <code>+*</code> means <code>* + *</code>: an element that follows a sibling. Only body does, after head. Its <code>background:#161e44</code> goes to the canvas, because html has none, and body paints nothing itself. body is 0 × 150, with <code>padding:35 50</code> and <code>border-width:0 50</code>: a 200 × 220 box, with two 50px borders, left and right, and an empty middle. It sits inside html, so it is turned with html.</p></div>
+<div class="cap" data-t="15" data-step="−90°"><h3>4. body, −90° in all</h3><p>body has its own <code>offset:ray(45deg)</code>. Its containing block is html's content box, 0 × 150, centered on html: body's center stays at (200, 150). Its −45° adds to html's: −90° in all. Its two borders become the top and bottom bars, 220 × 50, from x = 90 to 310, and from y = 50 to 100 and 200 to 250.</p></div>
+<div class="cap" data-t="20" data-step="p"><h3>5. p, −135°</h3><p>The <code>&lt;p></code> is inside body. It gets the same border and size as html: a 50 × 200 bar. Its containing block is body's content box, centered on body: p's center is at (200, 150) too. It starts from body's −90° and adds its own −45°: −135°. The bar leans the other way, like a slash.</p></div>
+<div class="cap" data-t="26" data-step="Result" data-live="125 characters · 100% match"><h3>6. Result: 125 characters</h3><p>In the real colors, the three elements merge. The ends of both diagonal bars stop inside the horizontal bars. Where the diagonals cross, they leave two navy triangles: the top one runs from y = 100 down to its tip at y = 114.6, and the bottom one is its mirror.</p></div>
+{%- endif %}
+</div>
+<div class="live"></div>
+</div>
+</div>
+<script>
+(window.AnimScenes = window.AnimScenes || {}).t0629 = (fig) => {
+  const fr = document.documentElement.lang === 'fr';
+  const $ = (s) => fig.querySelector(s);
+  const $$ = (s) => [...fig.querySelectorAll(s)];
+  const live = $('.live');
+  const ease = (x) => (x < 0.5 ? 4 * x * x * x : 1 - Math.pow(-2 * x + 2, 3) / 2);
+  const pr = (t, [a, b]) => ease(Math.min(1, Math.max(0, (t - a) / (b - a))));
+  const win = (t, a, b) => Math.min(pr(t, [a, a + 0.5]), 1 - pr(t, [b - 0.2, b]));
+  const c = fr ? ' :' : ':';
+  const deg = (v) => (v < -0.05 ? '−' : '') + Math.abs(v).toFixed(0) + '°';
+  // Measured on the official code in local Chrome (400 × 300, quirks mode): borders 25px (27Q = 25.51px);
+  // html and p 50 × 200, body 200 × 220 (offsetWidth / offsetHeight); every center at (200, 150) in the render;
+  // turns −45° (html), −90° (body), −135° (p); bars x 90 … 310, y 50 … 100 and 200 … 250.
+  const FIN = 26;
+  const hd = $('.t0629-html'), bd = $('.t0629-body'), pp = $('.t0629-p'), bb = $('.t0629-bb');
+  const L = (k) => $$(`.zlab[data-l="${k}"]`);
+  const ink = 'var(--t0629-ink)';
+  return (t, step) => {
+    const teach = fig.dataset.teach === '1' && t < FIN;
+    const ann = 1 - pr(t, [FIN, FIN + 0.6]);
+    // 1. html at the top left; 2. centered and turned
+    const k2 = pr(t, [5.6, 8]);
+    const ah = -45 * k2;
+    hd.style.opacity = pr(t, [0.3, 1.2]);
+    hd.style.transform = `translate(${-175 * (1 - k2)}px, ${-50 * (1 - k2)}px) rotate(${ah}deg)`;
+    hd.style.borderColor = teach ? 'var(--t0629-hd)' : ink;
+    // 3. body, turned with html; the background goes to the canvas
+    const kb = pr(t, [10.6, 12]);
+    fig.style.setProperty('--bg', kb <= 0 ? '#fff' : kb >= 1 ? '#161e44' : `color-mix(in srgb, #161e44 ${(kb * 100).toFixed(1)}%, #fff)`);
+    // 4. its own −45°
+    const ab = -45 - 45 * pr(t, [15.6, 18]);
+    const tb = `rotate(${ab}deg)`;
+    bd.style.opacity = pr(t, [10.6, 11.6]);
+    bd.style.transform = tb;
+    bd.style.borderColor = teach ? 'var(--t0629-bd)' : ink;
+    bb.style.transform = tb;
+    bb.style.opacity = 0.9 * pr(t, [10.6, 11.6]) * ann;
+    // 5. p, from body's −90° to −135°
+    const ap = -90 - 45 * pr(t, [21, 23.4]);
+    pp.style.opacity = pr(t, [20.4, 21]);
+    pp.style.transform = `rotate(${ap}deg)`;
+    pp.style.borderColor = teach ? 'var(--t0629-pp)' : ink;
+    [[0.3, 5], [5.3, 10], [10.3, 15], [15.3, 20], [20.3, FIN], [26.3, 28.8]].forEach(([a, e], k) => L(k + 1).forEach((l) => (l.style.opacity = win(t, a, e))));
+    let txt;
+    if (step === 0) txt = `html${c} 50 × 200 · ${fr ? 'bordure' : 'border'} 25px`;
+    else if (step === 1) txt = `html${c} ${deg(ah)} · ${fr ? 'centre' : 'center'} (200, 150)`;
+    else if (step === 2) txt = `body${c} 200 × 220 · ${fr ? 'canevas' : 'canvas'} #161e44`;
+    else if (step === 3) txt = `body${c} ${deg(ab)}`;
+    else if (step === 4) txt = `p${c} ${deg(ap)}`;
+    else txt = $$('.caps .cap')[5].dataset.live || '';
+    live.textContent = txt;
+  };
+};
+</script>
+</figure>
