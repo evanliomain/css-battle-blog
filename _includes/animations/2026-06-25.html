@@ -1,0 +1,151 @@
+<figure class="anim t0625" data-duration="38" data-scene="t0625" data-wide="-70 -100 540 470" data-off-label="-66 354" style="--bg:#fff">
+<style>
+.t0625{--t0625-b:#328fc1;--t0625-h:#ea580c;--t0625-y:#7c3aed;--t0625-l:#16a34a;--t0625-t:#db2777;--t0625-p:#ca8a04;--t0625-o:#14142a}
+.t0625 .scene .t0625-cv{left:0;top:0;width:400px;height:300px}
+.t0625 .scene .t0625-hb{left:0;top:0;width:400px;height:300px;transform-origin:200px 150px}
+.t0625 .scene .t0625-bx{left:8px;top:0;width:384px;height:300px;transform-origin:192px 150px}
+.t0625 .scene .t0625-x{left:200px;top:150px;width:0;height:0;opacity:0;z-index:5}
+.t0625 .t0625-x::before,.t0625 .t0625-x::after{content:"";position:absolute;background:#14142a;box-shadow:0 0 0 calc(1px * var(--k, 1)) #fff}
+.t0625 .t0625-x::before{left:-10px;top:calc(-1px * var(--k, 1));width:20px;height:calc(2px * var(--k, 1))}
+.t0625 .t0625-x::after{top:-10px;left:calc(-1px * var(--k, 1));height:20px;width:calc(2px * var(--k, 1))}
+.t0625 .zlab{color:#fff;background:rgb(20 20 42 / .9);padding:1px 5px;border-radius:3px;opacity:0}
+</style>
+<div class="anim-col">
+<div class="stage" role="img" aria-label="{% if include.lang == "fr" %}Animation : le fond de html est peint sur tout le canevas ; radial-gradient(1q at top, …) est un cercle centré sur le bord haut de la tuile, blanc jusqu'à 20px, bleu de 20px à 60px, puis transparent : un demi-anneau ; la position -5ch 45vw le pousse de 40px à gauche et de 180px vers le bas, centre en (160, 180) ; offset: ray(0deg) place le centre de chaque boîte sur le centre de son parent, (200, 150), et la tourne de -90° ; html tourne, mais pas la copie du canevas ; body, dans html, est à -180° : son demi-anneau va en (240, 120) ; dl est à -270° : (170, 110) ; dt est à -360°, à l'endroit : (160, 180), pile sur la copie du canevas ; p est à -450° : (230, 190) ; quatre demi-anneaux bleus en moulinet autour du centre{% else %}Animation: html's background is painted on the whole canvas; radial-gradient(1q at top, …) is a circle centered on the top edge of the tile, white up to 20px, blue from 20px to 60px, then transparent: a half ring; the position -5ch 45vw moves it 40px left and 180px down, center at (160, 180); offset: ray(0deg) puts the center of each box on its parent's center, (200, 150), and turns it -90°; html turns, but the canvas copy does not; body, inside html, is at -180°: its half ring goes to (240, 120); dl is at -270°: (170, 110); dt is at -360°, upright: (160, 180), right on the canvas copy; p is at -450°: (230, 190); four blue half rings in a pinwheel around the center{% endif %}">
+<div class="scene">
+<div class="t0625-cv"></div>
+<div class="t0625-hb"></div>
+<div class="t0625-bx" data-e="y"></div>
+<div class="t0625-bx" data-e="l"></div>
+<div class="t0625-bx" data-e="t"></div>
+<div class="t0625-bx" data-e="p"></div>
+<div class="t0625-x"></div>
+<span class="zlab t0625-l1" data-l="1">{% if include.lang == "fr" %}1q = 0,945px · 5vw = 20px{% else %}1q = 0.945px · 5vw = 20px{% endif %}</span>
+<span class="zlab t0625-l2" data-l="1">{% if include.lang == "fr" %}blanc 0 … 20px · bleu 20 … 60px{% else %}white 0 … 20px · blue 20 … 60px{% endif %}</span>
+<span class="zlab t0625-l1" data-l="2">-5ch = -40px · 45vw = 180px</span>
+<span class="zlab t0625-l2" data-l="2">(200 − 40, 0 + 180) = (160, 180)</span>
+<span class="zlab t0625-l1" data-l="3">offset: ray(0deg) → −90°</span>
+<span class="zlab t0625-l2" data-l="3">body: (8, 8) → (8, 0)</span>
+<span class="zlab t0625-l1" data-l="4">body · −90° − 90° = −180°</span>
+<span class="zlab t0625-l2" data-l="4">→ (240, 120)</span>
+<span class="zlab t0625-l1" data-l="5">dl · −180° − 90° = −270°</span>
+<span class="zlab t0625-l2" data-l="5">→ (170, 110)</span>
+<span class="zlab t0625-l1" data-l="6">dt · −270° − 90° = −360°</span>
+<span class="zlab t0625-l2" data-l="6">8 + 192 − 40 = 200 − 40 = 160</span>
+<span class="zlab t0625-l1" data-l="7">p · −360° − 90° = −450°</span>
+<span class="zlab t0625-l2" data-l="7">→ (230, 190)</span>
+</div>
+</div>
+<div class="legend"><span><i style="--c:var(--t0625-h)"></i>{% if include.lang == "fr" %}html (sur le canevas){% else %}html (on the canvas){% endif %}</span><span><i style="--c:var(--t0625-y)"></i>body</span><span><i style="--c:var(--t0625-l)"></i>dl</span><span><i style="--c:var(--t0625-t)"></i>dt</span><span><i style="--c:var(--t0625-p)"></i>p</span><span><i style="--c:transparent;outline:1.5px dashed currentColor;outline-offset:-2px"></i>{% if include.lang == "fr" %}boîte de l'élément{% else %}element box{% endif %}</span></div>
+</div>
+<div class="anim-side">
+<pre class="code" aria-hidden="true">&lt;<span data-on="5">dl</span>>&lt;<span data-on="6">dt</span>>&lt;<span data-on="7">p</span>>&lt;style><span data-on="3" data-tone="2">*{</span><span data-on="1" data-tone="2">height:300</span>;background:<span data-on="1">radial-gradient(1q at top,#fff 5vw,#328FC1 0 60px,#0000)</span><span data-on="2">-5ch 45vw</span>;<span data-on="3 4 5 6 7">offset:ray(0deg</span></pre>
+<div class="now" aria-live="polite">
+<div class="caps">
+{%- if include.lang == "fr" %}
+<div class="cap" data-t="0" data-step="Dégradé"><h3>1. Une tuile</h3><p><code>*</code> donne le même fond à html, body, dl, dt et p (head et style sont masqués), et <code>height:300</code> leur donne 300px de haut. Le fond de html est peint sur tout le canevas. <code>1q at top</code> est un cercle de 0,945px de rayon, centré sur le bord haut de la tuile. Les arrêts se mesurent depuis le centre, même au-delà du cercle : blanc jusqu'à 20px (5vw), bleu de 20px à 60px, puis <code>#0000</code>. Seule la moitié basse est dans la tuile : un demi-anneau.</p></div>
+<div class="cap" data-t="5" data-step="Position"><h3>2. -5ch 45vw</h3><p>1ch est la largeur du chiffre 0, 8px dans la police par défaut : -5ch font -40px. 45vw font 45 % de 400px, 180px. La tuile glisse de 40px à gauche et de 180px vers le bas : le centre du demi-anneau passe de (200, 0) à (160, 180). Par rapport au centre de la boîte, il est 40px à gauche et 30px plus bas. La tuile se répète, mais aucune autre copie de l'anneau n'atteint le canevas.</p></div>
+<div class="cap" data-t="9.5" data-step="offset"><h3>3. offset: ray(0deg)</h3><p>Chaque boîte suit un chemin, un rayon. Il part du centre du bloc conteneur, et le centre de la boîte se pose dessus. body était 8px trop bas à cause de sa marge : il remonte en (8, 0), 384 × 300, centre (200, 150). dl, dt et p ont la taille de body et sont dans son coin : ils sont déjà centrés. offset-rotate vaut auto : la boîte tourne pour suivre le rayon, qui pointe vers le haut, soit -90°. html tourne, et body avec lui. La copie du canevas, elle, ne tourne pas.</p></div>
+<div class="cap" data-t="16" data-step="body"><h3>4. body : -180°</h3><p>Dans html, body est déjà à -90°. Son propre offset ajoute -90° : -180°, un demi-tour. Son demi-anneau, 40px à gauche et 30px sous le centre de body, finit 40px à droite et 30px au-dessus du centre du canevas : en (240, 120), ouvert vers le bas, de x = 180 à 300 et de y = 60 à 120.</p></div>
+<div class="cap" data-t="20.5" data-step="dl"><h3>5. dl : -270°</h3><p>dl est dans body et ajoute encore -90° : -270°, soit un quart de tour dans le sens des aiguilles d'une montre. Son demi-anneau va en (170, 110), ouvert vers la droite, de x = 110 à 170 et de y = 50 à 170.</p></div>
+<div class="cap" data-t="25" data-step="dt"><h3>6. dt : -360°</h3><p>dt ajoute -90° de plus : -360°, un tour complet. Il est à l'endroit, et son demi-anneau tombe en (160, 180), pile sur la copie du canevas : 8 + 192 − 40 = 200 − 40 = 160. dt est peint par-dessus, et l'image ne change pas.</p></div>
+<div class="cap" data-t="29.5" data-step="p"><h3>7. p : -450°</h3><p>p, dans dt, est à -450°, soit -90°, comme html. Son demi-anneau va en (230, 190), ouvert vers la gauche, de x = 230 à 290 et de y = 130 à 250.</p></div>
+<div class="cap" data-t="34" data-step="Résultat" data-live="123 caractères · 100 % identique"><h3>8. Résultat : 123 caractères</h3><p>Quatre demi-anneaux en moulinet autour de (200, 150), chacun tourné d'un quart de tour par rapport au précédent. Ils ne se touchent pas : 10px les séparent. Un seul dégradé, et une boîte de plus à chaque quart de tour.</p></div>
+{%- else %}
+<div class="cap" data-t="0" data-step="Gradient"><h3>1. One tile</h3><p><code>*</code> gives html, body, dl, dt and p the same background (head and style are hidden), and <code>height:300</code> makes them 300px tall. html's background is painted on the whole canvas. <code>1q at top</code> is a circle with a 0.945px radius, centered on the top edge of the tile. The stops are measured from the center, even past the circle: white up to 20px (5vw), blue from 20px to 60px, then <code>#0000</code>. Only the lower half is inside the tile: a half ring.</p></div>
+<div class="cap" data-t="5" data-step="Position"><h3>2. -5ch 45vw</h3><p>1ch is the width of the digit 0, 8px in the default font: -5ch is -40px. 45vw is 45% of 400px, 180px. The tile slides 40px left and 180px down: the center of the half ring goes from (200, 0) to (160, 180). Seen from the center of the box, it is 40px to the left and 30px lower. The tile repeats, but no other copy of the ring reaches the canvas.</p></div>
+<div class="cap" data-t="9.5" data-step="offset"><h3>3. offset: ray(0deg)</h3><p>Each box follows a path, a ray. It starts at the center of the containing block, and the center of the box sits on it. body was 8px too low because of its margin: it moves up to (8, 0), 384 × 300, center (200, 150). dl, dt and p have body's size and sit in its corner: they are already centered. offset-rotate is auto: the box turns to follow the ray, which points up, so -90°. html turns, and body with it. The canvas copy does not turn.</p></div>
+<div class="cap" data-t="16" data-step="body"><h3>4. body: -180°</h3><p>Inside html, body is already at -90°. Its own offset adds -90°: -180°, a half turn. Its half ring, 40px left of and 30px below body's center, ends up 40px right of and 30px above the canvas center: at (240, 120), opening down, from x = 180 to 300 and y = 60 to 120.</p></div>
+<div class="cap" data-t="20.5" data-step="dl"><h3>5. dl: -270°</h3><p>dl is inside body and adds another -90°: -270°, which is a quarter turn clockwise. Its half ring goes to (170, 110), opening right, from x = 110 to 170 and y = 50 to 170.</p></div>
+<div class="cap" data-t="25" data-step="dt"><h3>6. dt: -360°</h3><p>dt adds -90° more: -360°, a full turn. It is upright, and its half ring lands at (160, 180), right on the canvas copy: 8 + 192 − 40 = 200 − 40 = 160. dt is painted on top, and the picture does not change.</p></div>
+<div class="cap" data-t="29.5" data-step="p"><h3>7. p: -450°</h3><p>p, inside dt, is at -450°, which is -90°, like html. Its half ring goes to (230, 190), opening left, from x = 230 to 290 and y = 130 to 250.</p></div>
+<div class="cap" data-t="34" data-step="Result" data-live="123 characters · 100% match"><h3>8. Result: 123 characters</h3><p>Four half rings in a pinwheel around (200, 150), each one a quarter turn from the previous one. They never touch: 10px apart. One gradient, and one more box for each quarter turn.</p></div>
+{%- endif %}
+</div>
+<div class="live"></div>
+</div>
+</div>
+<script>
+(window.AnimScenes = window.AnimScenes || {}).t0625 = (fig) => {
+  const fr = document.documentElement.lang === 'fr';
+  const $ = (s) => fig.querySelector(s);
+  const $$ = (s) => [...fig.querySelectorAll(s)];
+  const live = $('.live');
+  const ease = (x) => (x < 0.5 ? 4 * x * x * x : 1 - Math.pow(-2 * x + 2, 3) / 2);
+  const pr = (t, [a, b]) => ease(Math.min(1, Math.max(0, (t - a) / (b - a))));
+  const win = (t, a, b) => Math.min(pr(t, [a, a + 0.5]), 1 - pr(t, [b - 0.2, b]));
+  const c = fr ? ' :' : ':';
+  const mix = (k, a, b) => (k <= 0 ? b : k >= 1 ? a : `color-mix(in srgb, ${a} ${(k * 100).toFixed(1)}%, ${b})`);
+  // Measured on the official code in local Chrome (400 × 300 iframe), with probes at the box corners:
+  // html 400 × 300 turned -90° about (200, 150); body, dl, dt, p 384 × 300, all centered on (200, 150),
+  // turned -180°, -270°, -360°, -450°. Without offset, body, dl, dt and p sit at (8, 8).
+  // Each element alone: canvas (html) ring x 100..220 y 180..240; body 180..300 / 60..120; dl 110..170 / 50..170;
+  // dt 100..220 / 180..240; p 230..290 / 130..250 (5,020 pixels each).
+  const FIN = 34;
+  const cv = $('.t0625-cv'), hb = $('.t0625-hb');
+  const bx = Object.fromEntries($$('.t0625-bx').map((e) => [e.dataset.e, e]));
+  const cross = $('.t0625-x');
+  const labs = $$('.zlab');
+  const ring = (col, r1, r2, x, y) => `radial-gradient(circle at top, #fff ${r1}px, ${col} 0 ${r2}px, #0000 0) ${x}px ${y}px`;
+  const ctr = (a) => { const r = (a * Math.PI) / 180; return [200 + -40 * Math.cos(r) - 30 * Math.sin(r), 150 + -40 * Math.sin(r) + 30 * Math.cos(r)]; };
+  const pt = (a) => { const [x, y] = ctr(a); return `(${Math.round(x)}, ${Math.round(y)})`; };
+  return (t, step) => {
+    const wide = fig.dataset.view === 'wide';
+    const teach = fig.dataset.teach === '1';
+    const tw = teach ? 1 - pr(t, [FIN, FIN + 0.8]) : 0;
+    const B = 'var(--t0625-b)';
+    const col = (v) => mix(tw, `var(--t0625-${v})`, B);
+    const k1 = pr(t, [0.4, 2.6]);
+    const k2 = pr(t, [5.4, 7.9]);
+    const kL = pr(t, [10.2, 11.6]);
+    const kH = pr(t, [12.2, 14.8]);
+    const kY = pr(t, [16.9, 19.4]);
+    const kD = pr(t, [21.4, 23.9]);
+    const kT = pr(t, [25.9, 28.4]);
+    const kP = pr(t, [30.4, 32.9]);
+    const aH = -90 * kH;
+    const ang = { y: aH - 90 * kY, l: -180 - 90 * kD, t: -270 - 90 * kT, p: -360 - 90 * kP };
+    const appear = { y: pr(t, [16.1, 16.7]), l: pr(t, [20.6, 21.2]), t: pr(t, [25.1, 25.7]), p: pr(t, [29.6, 30.2]) };
+    // html's background, on the canvas: never turned.
+    cv.style.background = ring(col('h'), 20 * k1, 60 * k1, -40 * k2, 180 * k2);
+    cv.style.opacity = t > 0.4 ? 1 : 0;
+    // Element boxes: dashed outline while they are explained, in the teaching color or dark.
+    const out = (e, v, o) => {
+      const oc = teach ? `var(--t0625-${v})` : 'var(--t0625-o)';
+      e.style.outline = o > 0 ? `calc(1.5px * var(--k, 1)) dashed color-mix(in srgb, ${oc} ${(o * 100).toFixed(0)}%, transparent)` : 'none';
+      e.style.outlineOffset = 'calc(-0.75px * var(--k, 1))';
+    };
+    hb.style.transform = `rotate(${aH}deg)`;
+    out(hb, 'h', win(t, 9.6, 16));
+    ['y', 'l', 't', 'p'].forEach((v) => {
+      const e = bx[v];
+      e.style.transform = v === 'y' ? `translate(0, ${8 * (1 - kL)}px) rotate(${ang.y}deg)` : `rotate(${ang[v]}deg)`;
+      // The ring fades in where the parent's ring is, then turns with the box.
+      const ap = appear[v];
+      e.style.background = ap <= 0 ? 'none' : ring(ap < 1 ? `color-mix(in srgb, ${col(v)} ${(ap * 100).toFixed(0)}%, transparent)` : col(v), 20, 60, -40, 180);
+      out(e, v, win(t, ...{ y: [9.6, 20.5], l: [20.6, 25], t: [25.1, 29.5], p: [29.6, FIN] }[v]));
+    });
+    cross.style.opacity = win(t, 9.6, FIN);
+    labs.forEach((l) => {
+      const n = +l.dataset.l, second = l.classList.contains('t0625-l2');
+      l.style.left = wide ? '-66px' : '3px';
+      // Wide view: above the canvas, off canvas. Canvas view: bottom band, below every ring (y ≤ 250).
+      l.style.top = wide ? `calc(-96px + ${second ? 16 : 0}px * var(--k, 1))` : `calc(298px - ${second ? 16 : 32}px * var(--k, 1))`;
+      const ivs = [[0.3, 5], [5.3, 9.5], [9.8, 16], [16.3, 20.5], [20.8, 25], [25.3, 29.5], [29.8, FIN]];
+      l.style.opacity = win(t, ...ivs[n - 1]);
+    });
+    let txt;
+    const deg = (a) => `${Math.round(a)}°`.replace('-', '−');
+    if (step === 0) txt = `${fr ? 'blanc' : 'white'} 0 … ${Math.round(20 * k1)}px · ${fr ? 'bleu' : 'blue'} ${Math.round(20 * k1)} … ${Math.round(60 * k1)}px`;
+    else if (step === 1) txt = `${fr ? 'centre' : 'center'}${c} (${Math.round(200 - 40 * k2)}, ${Math.round(180 * k2)})`;
+    else if (step === 2) txt = kH > 0 ? `html${c} ${deg(aH)}` : `body${c} y = ${Math.round(8 - 8 * kL)}`;
+    else if (step === 3) txt = `body${c} ${deg(ang.y)} → ${pt(ang.y)}`;
+    else if (step === 4) txt = `dl${c} ${deg(ang.l)} → ${pt(ang.l)}`;
+    else if (step === 5) txt = `dt${c} ${deg(ang.t)} → ${pt(ang.t)}`;
+    else if (step === 6) txt = `p${c} ${deg(ang.p)} → ${pt(ang.p)}`;
+    else txt = $$('.caps .cap')[7].dataset.live || '';
+    live.textContent = txt;
+  };
+};
+</script>
+</figure>
