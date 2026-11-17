@@ -1,0 +1,167 @@
+<figure class="anim t0623" data-duration="40" data-scene="t0623" data-wide="-250 -170 900 640" data-off-label="-246 424" style="--bg:#b3f0b6">
+<style>
+.t0623{--t0623-ink:#1b5f1e;--t0623-bo:#f97316;--t0623-ho:#7c3aed;--t0623-io:#db2777;--t0623-gd:#14142a}
+.t0623 .scene .t0623-cl,.t0623 .scene .t0623-g,.t0623 .scene .t0623-gg{left:0;top:0;width:400px;height:300px;transform-origin:200px 150px}
+.t0623 .scene .t0623-cl > *,.t0623 .scene .t0623-g > *,.t0623 .scene .t0623-gg > *{position:absolute;box-sizing:border-box}
+.t0623 .scene .t0623-paper{left:-250px;top:-170px;width:900px;height:640px;background:#fff}
+.t0623 .scene .t0623-dot{width:8px;height:8px;margin:-4px 0 0 -4px;border-radius:50%}
+.t0623 .zlab{color:#14142a;background:rgb(255 255 255 / .92);padding:1px 5px;border-radius:3px;opacity:0}
+</style>
+<div class="anim-col">
+<div class="stage" role="img" aria-label="{% if include.lang == "fr" %}Animation : body suit head, donc +* le vise ; html n'a pas de fond, alors celui de body, #B3F0B6, couvre tout le canevas ; margin: 50 -32 donne à html 464 × 200, de (−32, 50) à (432, 250), et à body 528 × 100, de (−64, 100) à (464, 200) ; h1 fait 592 × 100, de (−96, 100) à (496, 200), car les marges verticales de img, 50 + 50, donnent une ligne de 100 de haut ; l'outline dashed 8ex fait 57px autour de body, en tirets de 114 séparés de 62, et 117px autour de h1, en tirets de 234 ; img reçoit un carré plein de 234 × 234 ; rotate: -60deg tourne h1 autour de (200, 150), et sa boîte devient la bande claire en biais ; clip-path: inset(-50% 31%) sur body ne garde que la fenêtre de (99,68, 50) à (300,32, 250) : les deux bandes de h1 de part et d'autre de la bande claire, le bloc en haut à droite et le pied en bas à gauche, deux tirets de body{% else %}Animation: body follows head, so +* selects it; html has no background, so body's, #B3F0B6, covers the whole canvas; margin: 50 -32 makes html 464 × 200, from (−32, 50) to (432, 250), and body 528 × 100, from (−64, 100) to (464, 200); h1 is 592 × 100, from (−96, 100) to (496, 200), because img's vertical margins, 50 + 50, make a line 100 tall; the dashed 8ex outline is 57px around body, in 114px dashes with 62px gaps, and 117px around h1, in 234px dashes; img gets a solid 234 × 234 square; rotate: -60deg turns h1 around (200, 150), and its box becomes the slanted light stripe; clip-path: inset(-50% 31%) on body keeps only the window from (99.68, 50) to (300.32, 250): the two h1 bands on each side of the light stripe, the top right block and the bottom left foot, two body dashes{% endif %}">
+<div class="scene">
+<div class="t0623-paper"></div>
+<div class="t0623-cl">
+<div data-e="b"></div><div data-e="b"></div><div data-e="b"></div><div data-e="b"></div><div data-e="b"></div><div data-e="b"></div><div data-e="b"></div><div data-e="b"></div><div data-e="b"></div><div data-e="b"></div>
+<div class="t0623-g">
+<div data-e="h"></div><div data-e="h"></div><div data-e="h"></div><div data-e="h"></div><div data-e="h"></div><div data-e="h"></div><div data-e="h"></div><div data-e="h"></div>
+<div data-e="i"></div>
+</div>
+</div>
+<div data-e="hb"></div>
+<div data-e="bb"></div>
+<div class="t0623-gg"><div data-e="h1b"></div><div class="t0623-dot" data-e="dot"></div></div>
+<div data-e="win"></div>
+<span class="zlab t0623-l1" data-l="1">{% if include.lang == "fr" %}* = html, head, body, h1, img, style{% else %}* = html, head, body, h1, img, style{% endif %}</span>
+<span class="zlab t0623-l2" data-l="1">{% if include.lang == "fr" %}+* = body → fond sur tout le canevas{% else %}+* = body → background on the whole canvas{% endif %}</span>
+<span class="zlab t0623-l1" data-l="2">{% if include.lang == "fr" %}html : 464 × 200, depuis (−32, 50){% else %}html: 464 × 200, from (−32, 50){% endif %}</span>
+<span class="zlab t0623-l2" data-l="2">{% if include.lang == "fr" %}body : 528 × 100, depuis (−64, 100){% else %}body: 528 × 100, from (−64, 100){% endif %}</span>
+<span class="zlab t0623-l1" data-l="3">{% if include.lang == "fr" %}h1 : 592 × 100, centre (200, 150){% else %}h1: 592 × 100, center (200, 150){% endif %}</span>
+<span class="zlab t0623-l2" data-l="3">{% if include.lang == "fr" %}img 0 × 0 : ligne de 50 + 0 + 50 = 100{% else %}img 0 × 0: line 50 + 0 + 50 = 100{% endif %}</span>
+<span class="zlab t0623-l1" data-l="4">{% if include.lang == "fr" %}body : 8ex = 8 × 7,18 → 57px{% else %}body: 8ex = 8 × 7.18 → 57px{% endif %}</span>
+<span class="zlab t0623-l2" data-l="4">{% if include.lang == "fr" %}tirets de 114 · trous de 62{% else %}dashes 114 · gaps 62{% endif %}</span>
+<span class="zlab t0623-l1" data-l="5">{% if include.lang == "fr" %}h1 : 8ex = 8 × 14,73 → 117px{% else %}h1: 8ex = 8 × 14.73 → 117px{% endif %}</span>
+<span class="zlab t0623-l2" data-l="5">{% if include.lang == "fr" %}img : carré plein de 234 × 234{% else %}img: solid 234 × 234 square{% endif %}</span>
+<span class="zlab t0623-l1" data-l="6">{% if include.lang == "fr" %}-60deg autour de (200, 150){% else %}-60deg around (200, 150){% endif %}</span>
+<span class="zlab t0623-l2" data-l="6">{% if include.lang == "fr" %}boîte de h1 → bande claire de 100{% else %}h1's box → light stripe, 100 wide{% endif %}</span>
+<span class="zlab t0623-l1" data-l="7">{% if include.lang == "fr" %}31 % de 528 = 163,68 · −50 % de 100 = −50{% else %}31% of 528 = 163.68 · −50% of 100 = −50{% endif %}</span>
+<span class="zlab t0623-l2" data-l="7">{% if include.lang == "fr" %}fenêtre : (99,68, 50) … (300,32, 250){% else %}window: (99.68, 50) … (300.32, 250){% endif %}</span>
+</div>
+</div>
+<div class="legend"><span><i style="--c:var(--t0623-bo)"></i>{% if include.lang == "fr" %}outline de body{% else %}body outline{% endif %}</span><span><i style="--c:var(--t0623-ho)"></i>{% if include.lang == "fr" %}outline de h1{% else %}h1 outline{% endif %}</span><span><i style="--c:var(--t0623-io)"></i>{% if include.lang == "fr" %}outline de img{% else %}img outline{% endif %}</span><span><i style="--c:transparent;outline:1.5px dashed currentColor;outline-offset:-2px"></i>{% if include.lang == "fr" %}boîtes, fenêtre du clip-path{% else %}boxes, clip-path window{% endif %}</span></div>
+</div>
+<div class="anim-side">
+<pre class="code" aria-hidden="true"><span data-on="3">&lt;h1>&lt;img></span>&lt;style><span data-on="1" data-tone="2">*{</span><span data-on="2 3">margin:50-32</span>;<span data-on="4 5" data-tone="2">*{</span><span data-on="6">*{rotate:-60deg}</span><span data-on="4 5">outline:dashed 8ex#1B5F1E</span>}<span data-on="1 7" data-tone="2">+*{</span><span data-on="1">background:#B3F0B6</span>;<span data-on="7">clip-path:inset(-50%31%</span></pre>
+<div class="now" aria-live="polite">
+<div class="caps">
+{%- if include.lang == "fr" %}
+<div class="cap" data-t="0" data-step="Fond"><h3>1. Une règle pour six éléments</h3><p><code>*</code> vise html, head, body, h1, img et style. Dedans, <code>+*</code> vise un élément qui suit un frère : body, qui suit head (style aussi, mais il est masqué). html n'a pas de fond, alors celui de body passe sur tout le canevas : tout devient #B3F0B6. Le clip-path de la fin ne le coupera pas.</p></div>
+<div class="cap" data-t="4.5" data-step="margin"><h3>2. margin: 50 -32</h3><p>Sans unité, les nombres sont en px : les pages de CSS Battle sont en mode quirks. Chaque élément a 50px en haut et en bas, −32px à gauche et à droite. html remplit la hauteur de la page moins ses marges : 464 × 200, de (−32, 50) à (432, 250). body remplit html de la même façon : 528 × 100, de (−64, 100) à (464, 200).</p></div>
+<div class="cap" data-t="10" data-step="h1 et img"><h3>3. Une ligne de 100px</h3><p>h1 déborde de 32px de chaque côté de body : 592px de large, de −96 à 496. Son centre est (200, 150), le centre du canevas. img fait 0 × 0, mais ses marges de 50 en haut et en bas comptent dans la ligne : la ligne fait 100px de haut, et h1 aussi, de y = 100 à 200.</p></div>
+<div class="cap" data-t="15" data-step="outline body"><h3>4. Les tirets de body</h3><p><code>outline:dashed 8ex#1B5F1E</code> vaut pour <code>* *</code> : body, h1 et img. body a une police de 16px : 1ex fait 7,18px, et 8ex donnent 57px. En tirets, Chrome fait des tirets de 114px et des trous de 62px. En haut et en bas, un trou va de x = 169 à 230, centré sur 200.</p></div>
+<div class="cap" data-t="20" data-step="outline h1"><h3>5. Les bandes de h1</h3><p>h1 a une police de 32px en gras : 1ex fait 14,73px, et 8ex donnent 117px. Autour de sa boîte, chaque grand côté a trois tirets de 234px, séparés de 62px. img reçoit le même outline : autour d'une boîte de 0 × 0, c'est un carré plein de 234 × 234.</p></div>
+<div class="cap" data-t="26" data-step="rotate"><h3>6. Un tour de −60°</h3><p><code>*{*{*{</code> donne <code>* * *</code> : les éléments qui ont deux ancêtres, h1 et img. h1 tourne autour de son centre, (200, 150). Sa boîte vide devient la bande claire en biais, de 100px de large, entre ses deux grandes bandes. img tourne aussi, autour de son propre point.</p></div>
+<div class="cap" data-t="31" data-step="clip-path"><h3>7. La fenêtre</h3><p><code>inset(-50%31%)</code> se calcule sur la boîte de body, 528 × 100 : 163,68px de moins de chaque côté, et 50px de plus en haut et en bas. Il reste une fenêtre de (99,68, 50) à (300,32, 250). clip-path coupe body et tout ce qu'il contient, outlines compris. Le fond reste : il appartient au canevas.</p></div>
+<div class="cap" data-t="36.5" data-step="Résultat" data-live="120 caractères · 100 % identique"><h3>8. Résultat : 120 caractères</h3><p>Dans la fenêtre, le tiret du milieu de chaque grande bande de h1 forme une pièce en biais de chaque côté de la bande claire. Deux tirets de body ajoutent le bloc en haut à droite et le pied en bas à gauche.</p></div>
+{%- else %}
+<div class="cap" data-t="0" data-step="Background"><h3>1. One rule for six elements</h3><p><code>*</code> selects html, head, body, h1, img and style. Inside it, <code>+*</code> selects an element that follows a sibling: body, after head (style too, but it is hidden). html has no background, so body's goes to the whole canvas: everything turns #B3F0B6. The clip-path at the end will not cut it.</p></div>
+<div class="cap" data-t="4.5" data-step="margin"><h3>2. margin: 50 -32</h3><p>With no unit, numbers are px: CSS Battle pages run in quirks mode. Every element gets 50px at the top and bottom, −32px on the left and right. html fills the page height minus its margins: 464 × 200, from (−32, 50) to (432, 250). body fills html the same way: 528 × 100, from (−64, 100) to (464, 200).</p></div>
+<div class="cap" data-t="10" data-step="h1 and img"><h3>3. A line 100px tall</h3><p>h1 sticks out 32px on each side of body: 592px wide, from −96 to 496. Its center is (200, 150), the center of the canvas. img is 0 × 0, but its margins of 50 above and below count in the line: the line is 100px tall, and so is h1, from y = 100 to 200.</p></div>
+<div class="cap" data-t="15" data-step="body outline"><h3>4. The body dashes</h3><p><code>outline:dashed 8ex#1B5F1E</code> applies to <code>* *</code>: body, h1 and img. body's font is 16px: 1ex is 7.18px, and 8ex gives 57px. Dashed, Chrome draws 114px dashes with 62px gaps. At the top and bottom, one gap goes from x = 169 to 230, centered on 200.</p></div>
+<div class="cap" data-t="20" data-step="h1 outline"><h3>5. The h1 bands</h3><p>h1's font is 32px bold: 1ex is 14.73px, and 8ex gives 117px. Around its box, each long side has three 234px dashes, 62px apart. img gets the same outline: around a 0 × 0 box, it is a solid 234 × 234 square.</p></div>
+<div class="cap" data-t="26" data-step="rotate"><h3>6. A −60° turn</h3><p><code>*{*{*{</code> gives <code>* * *</code>: elements with two ancestors, h1 and img. h1 turns around its center, (200, 150). Its empty box becomes the slanted light stripe, 100px wide, between its two long bands. img turns too, around its own point.</p></div>
+<div class="cap" data-t="31" data-step="clip-path"><h3>7. The window</h3><p><code>inset(-50%31%)</code> is computed on body's box, 528 × 100: 163.68px less on each side, and 50px more at the top and bottom. What is left is a window from (99.68, 50) to (300.32, 250). clip-path cuts body and everything inside it, outlines included. The background stays: it belongs to the canvas.</p></div>
+<div class="cap" data-t="36.5" data-step="Result" data-live="120 characters · 100% match"><h3>8. Result: 120 characters</h3><p>Inside the window, the middle dash of each long h1 band makes a slanted piece on each side of the light stripe. Two body dashes add the top right block and the bottom left foot.</p></div>
+{%- endif %}
+</div>
+<div class="live"></div>
+</div>
+</div>
+<script>
+(window.AnimScenes = window.AnimScenes || {}).t0623 = (fig) => {
+  const fr = document.documentElement.lang === 'fr';
+  const $ = (s) => fig.querySelector(s);
+  const $$ = (s) => [...fig.querySelectorAll(s)];
+  const live = $('.live');
+  const ease = (x) => (x < 0.5 ? 4 * x * x * x : 1 - Math.pow(-2 * x + 2, 3) / 2);
+  const pr = (t, [a, b]) => ease(Math.min(1, Math.max(0, (t - a) / (b - a))));
+  const win = (t, a, b) => Math.min(pr(t, [a, a + 0.5]), 1 - pr(t, [b - 0.2, b]));
+  const c = fr ? ' :' : ':';
+  const num = (v, d = 0) => (fr ? v.toFixed(d).replace('.', ',') : v.toFixed(d));
+  const mix = (k, a, b) => (k <= 0 ? b : k >= 1 ? a : `color-mix(in srgb, ${a} ${(k * 100).toFixed(1)}%, ${b})`);
+  const lerp = (k, a, b) => a.map((v, i) => v + (b[i] - v) * k);
+  const put = (e, [x, y, w, h]) => { e.style.left = `${x}px`; e.style.top = `${y}px`; e.style.width = `${w}px`; e.style.height = `${h}px`; };
+  // Measured on the official code in local Chrome (400 × 300 iframe, getBoundingClientRect, getComputedStyle, renders of each part alone):
+  // html -32..432 × 50..250; body -64..464 × 100..200; h1 -96..496 × 100..200 (100 tall: img 0 × 0 with margins 50 + 50).
+  // 1ex: 7.18px (16px), 14.73px (32px bold): outline 57px on body, 117px on h1 and img.
+  // body outline: bands y 43..99 and 200..256, dashes x -121..-8, 55..168, 231..344, 407..520; sides solid (x -121..-65, 465..520).
+  // h1 outline (unrotated): bands y -17..99 and 200..316, dashes x -213..20, 83..316, 379..612; sides solid (x -213..-97, 496..612).
+  // img outline: solid 234 × 234 square around its point (-128, 150), turned -60deg with h1 and -60deg on its own; on top of h1's.
+  // clip-path inset(-50% 31%) on body: window 99.68..300.32 × 50..250.
+  const FIN = 36.5;
+  const HTML = [-32, 50, 464, 200], BODY = [-64, 100, 528, 100], H1 = [-96, 100, 592, 100];
+  const BD = [[-121, 114], [55, 114], [231, 114], [407, 114]];
+  const HD = [[-213, 234], [83, 234], [379, 234]];
+  const b = $$('[data-e="b"]'), h = $$('[data-e="h"]');
+  const el = Object.fromEntries(['i', 'hb', 'bb', 'h1b', 'dot', 'win'].map((k) => [k, $(`[data-e="${k}"]`)]));
+  const cl = $('.t0623-cl'), g = $('.t0623-g'), gg = $('.t0623-gg'), paper = $('.t0623-paper');
+  const labs = $$('.zlab');
+  return (t, step) => {
+    const wide = fig.dataset.view === 'wide';
+    const teach = fig.dataset.teach === '1';
+    const tw = teach ? 1 - pr(t, [FIN, FIN + 0.8]) : 0;
+    const col = (v) => mix(tw, `var(--t0623-${v})`, 'var(--t0623-ink)');
+    // 1. The white default canvas gives way to body's background.
+    paper.style.opacity = 1 - pr(t, [0.8, 2.6]);
+    // 2. margins. 3. h1.
+    const kH = pr(t, [5, 7]), kB = pr(t, [7.4, 9.4]), kH1 = pr(t, [10.5, 12.5]);
+    const hbox = lerp(kH, [0, 0, 400, 300], HTML);
+    const bbox = lerp(kB, hbox, BODY);
+    const h1box = lerp(kH1, [BODY[0], 150, BODY[2], 0], H1);
+    const dash = (e, r, o) => {
+      put(e, r);
+      e.style.outline = o > 0 ? `calc(1.5px * var(--k, 1)) dashed color-mix(in srgb, var(--t0623-gd) ${(o * 100).toFixed(0)}%, transparent)` : 'none';
+      e.style.outlineOffset = 'calc(-0.75px * var(--k, 1))';
+    };
+    const gone = 1 - pr(t, [31.4, 32]);
+    dash(el.hb, hbox, Math.min(pr(t, [4.6, 5.1]), gone));
+    dash(el.bb, bbox, Math.min(pr(t, [7, 7.5]), gone));
+    dash(el.h1b, h1box, Math.min(pr(t, [10.2, 10.7]), gone));
+    put(el.dot, [-128, 150, 8, 8]);
+    el.dot.style.background = teach ? 'var(--t0623-io)' : 'var(--t0623-gd)';
+    el.dot.style.opacity = Math.min(pr(t, [12.6, 13.2]), gone);
+    // 4. body outline: a 57px band, dashed.
+    const wB = 57 * pr(t, [15.6, 17.8]);
+    const oB = pr(t, [15.6, 16.2]);
+    BD.forEach(([x, w], i) => { put(b[i], [x, 100 - wB, w, wB]); put(b[i + 4], [x, 200, w, wB]); });
+    put(b[8], [-64 - wB, 100 - wB, wB, 100 + 2 * wB]); put(b[9], [464, 100 - wB, wB, 100 + 2 * wB]);
+    b.forEach((e) => { e.style.background = col('bo'); e.style.opacity = oB; });
+    // 5. h1 outline: a 117px band, dashed; img: a solid square.
+    const wH = 117 * pr(t, [20.6, 22.8]);
+    const oH = pr(t, [20.6, 21.2]);
+    HD.forEach(([x, w], i) => { put(h[i], [x, 100 - wH, w, wH]); put(h[i + 3], [x, 200, w, wH]); });
+    put(h[6], [-96 - wH, 100 - wH, wH, 100 + 2 * wH]); put(h[7], [496, 100 - wH, wH, 100 + 2 * wH]);
+    h.forEach((e) => { e.style.background = col('ho'); e.style.opacity = oH; });
+    const wI = 117 * pr(t, [23, 25]);
+    put(el.i, [-128 - wI, 150 - wI, 2 * wI, 2 * wI]);
+    el.i.style.background = col('io'); el.i.style.opacity = pr(t, [23, 23.6]);
+    // 6. rotate: h1 around (200, 150), img around its own point.
+    const kR = pr(t, [26.6, 29.4]);
+    g.style.rotate = gg.style.rotate = `${-60 * kR}deg`;
+    el.i.style.rotate = `${-60 * kR}deg`;
+    // 7. clip-path on body: the window closes in.
+    const kC = pr(t, [32.4, 34.4]);
+    const ins = lerp(kC, [-700, -700, -700, -700], [50, 99.68, 50, 99.68]);
+    cl.style.clipPath = kC > 0 ? `inset(${ins.map((v) => `${v}px`).join(' ')})` : 'none';
+    dash(el.win, [99.68, 50, 200.64, 200], win(t, 31.4, FIN));
+    labs.forEach((l) => {
+      const n = +l.dataset.l, second = l.classList.contains('t0623-l2');
+      l.style.left = wide ? 'calc(-250px + 4px * var(--k, 1))' : 'calc(4px * var(--k, 1))';
+      l.style.top = wide ? `calc(-170px + ${second ? 20 : 4}px * var(--k, 1))` : second ? 'calc(300px - 20px * var(--k, 1))' : 'calc(4px * var(--k, 1))';
+      const ivs = [[0.3, 4.5], [4.8, 10], [10.3, 15], [15.3, 20], [20.3, 26], [26.3, 31], [31.3, FIN]];
+      l.style.opacity = win(t, ...ivs[n - 1]);
+    });
+    let txt;
+    if (step === 0) txt = `body → ${fr ? 'canevas' : 'canvas'}${c} #B3F0B6`;
+    else if (step === 1) txt = `html${c} ${Math.round(hbox[2])} × ${Math.round(hbox[3])} · body${c} ${Math.round(bbox[2])} × ${Math.round(bbox[3])}`;
+    else if (step === 2) txt = `h1${c} ${Math.round(h1box[2])} × ${Math.round(h1box[3])}`;
+    else if (step === 3) txt = `outline body${c} ${Math.round(wB)}px`;
+    else if (step === 4) txt = `outline h1${c} ${Math.round(wH)}px · img${c} ${Math.round(2 * wI)} × ${Math.round(2 * wI)}`;
+    else if (step === 5) txt = `rotate${c} ${num(-60 * kR)}deg`;
+    else if (step === 6) txt = `${fr ? 'fenêtre' : 'window'}${c} ${num(200.64, 2)} × 200`;
+    else txt = $$('.caps .cap')[7].dataset.live || '';
+    live.textContent = txt;
+  };
+};
+</script>
+</figure>
