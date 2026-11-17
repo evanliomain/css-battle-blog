@@ -1,0 +1,113 @@
+<figure class="anim t0628" data-duration="30" data-scene="t0628" data-wide="-60 -40 520 410" data-off-label="-56 -34" style="--bg:#fff">
+<style>
+.t0628{--t0628-yl:#f1f271;--t0628-rd:#be6b6c;--t0628-bg:#284a5b;--t0628-cut:#a78bfa;--t0628-ln:#fff}
+.t0628 .scene .t0628-disk{left:0;top:0;width:400px;height:300px;background:radial-gradient(1Q, var(--t0628-yl) 100px, #0000 0);opacity:0;z-index:1}
+.t0628 .scene .t0628-body{left:221px;top:100px;width:100px;height:100px;z-index:2}
+.t0628 .t0628-body > *{position:absolute}
+.t0628 .t0628-fill{inset:0;background:radial-gradient(at -1533% 43cm, var(--t0628-rd) 60cm, var(--t0628-c, var(--t0628-bg)) 0);opacity:0}
+.t0628 .t0628-bb{inset:0;border:calc(2px * var(--k, 1)) dashed var(--t0628-ln);box-shadow:0 0 0 calc(1px * var(--k, 1)) rgb(20 20 42 / .5);opacity:0;z-index:3}
+.t0628 .t0628-ell{left:-3800.72px;top:-631.68px;width:4535.43px;height:4513.76px;border-radius:50%;border:calc(1.5px * var(--k, 1)) dashed var(--t0628-ln);-webkit-mask:radial-gradient(circle at 3850.72px 681.68px, #000 110px, transparent 150px);mask:radial-gradient(circle at 3850.72px 681.68px, #000 110px, transparent 150px);opacity:0;z-index:4}
+.t0628 .t0628-arr{left:50px;top:50px;width:130px;height:0;border-top:calc(2px * var(--k, 1)) solid var(--t0628-ln);transform-origin:0 0;rotate:135.14deg;translate:0 calc(-1px * var(--k, 1));opacity:0;z-index:4}
+.t0628 .t0628-arr::after{content:"";position:absolute;right:calc(-8px * var(--k, 1));top:calc(-6px * var(--k, 1));border-left:calc(9px * var(--k, 1)) solid var(--t0628-ln);border-block:calc(5px * var(--k, 1)) solid transparent}
+.t0628 .zlab{color:#fff;background:rgb(20 20 42 / .9);padding:1px 5px;border-radius:3px;opacity:0}
+.t0628 .scene .zlab.t0628-l1{left:4px;top:calc(300px - 4px - 36px * var(--k, 1))}
+.t0628 .scene .zlab.t0628-l2{left:4px;top:calc(300px - 4px - 18px * var(--k, 1))}
+.t0628[data-view="wide"] .scene .zlab.t0628-l1{left:-56px;top:306px}
+.t0628[data-view="wide"] .scene .zlab.t0628-l2{left:-56px;top:calc(306px + 18px * var(--k, 1))}
+</style>
+<div class="anim-col">
+<div class="stage" role="img" aria-label="{% if include.lang == "fr" %}Animation : le dégradé de html, radial-gradient(1Q, #f1f271, 25vw, #284a5b 0), dessine un disque jaune de 100px de rayon au centre du canevas, et le reste du canevas en bleu-gris ; body, avec margin: 25% 79 25% 221, est un carré de 100 × 100 en (221, 100) ; --a remplace le début de son dégradé : un centre très loin en bas à gauche, en (−1312, 1725), et du rouge jusqu'à 60cm, soit 2268px ; le bord de ce cercle géant coupe le coin en haut à droite du carré selon une ligne à 45° ; rotate: 45deg tourne le carré en losange autour de (271, 150), et le bord devient vertical, en x ≈ 300 ; au-delà, le dégradé peint #284a5b, la couleur du canevas : cette partie disparaît, et la partie rouge remplit l'entaille du disque{% else %}Animation: html's gradient, radial-gradient(1Q, #f1f271, 25vw, #284a5b 0), draws a yellow disc with a 100px radius at the canvas center, and the rest of the canvas in blue-gray; body, with margin: 25% 79 25% 221, is a 100 × 100 square at (221, 100); --a replaces the start of its gradient: a center far down to the left, at (−1312, 1725), and red up to 60cm, which is 2268px; the edge of that giant circle cuts the top right corner of the square along a 45° line; rotate: 45deg turns the square into a diamond around (271, 150), and the edge becomes vertical, at x ≈ 300; past it, the gradient paints #284a5b, the canvas color: that part disappears, and the red part fills the notch in the disc{% endif %}">
+<div class="scene">
+<div class="t0628-disk"></div>
+<div class="t0628-body"><div class="t0628-fill"></div><div class="t0628-ell"></div><div class="t0628-arr"></div><div class="t0628-bb"></div></div>
+<span class="zlab t0628-l1" data-l="1">html · radial-gradient(1Q, …)</span>
+<span class="zlab t0628-l2" data-l="1">{% if include.lang == "fr" %}1Q → cercle · 25vw = 100px{% else %}1Q → circle · 25vw = 100px{% endif %}</span>
+<span class="zlab t0628-l1" data-l="2">* * → body · margin: 100 79 100 221</span>
+<span class="zlab t0628-l2" data-l="2">{% if include.lang == "fr" %}100 × 100 en (221, 100){% else %}100 × 100 at (221, 100){% endif %}</span>
+<span class="zlab t0628-l1" data-l="3">{% if include.lang == "fr" %}centre (−1312, 1725){% else %}center (−1312, 1725){% endif %}</span>
+<span class="zlab t0628-l2" data-l="3">{% if include.lang == "fr" %}rouge jusqu'à 60cm = 2268px{% else %}red up to 60cm = 2268px{% endif %}</span>
+<span class="zlab t0628-l1" data-l="4">{% if include.lang == "fr" %}rotate: 45deg · autour de (271, 150){% else %}rotate: 45deg · around (271, 150){% endif %}</span>
+<span class="zlab t0628-l2" data-l="4">{% if include.lang == "fr" %}bord → x ≈ 300{% else %}edge → x ≈ 300{% endif %}</span>
+<span class="zlab t0628-l1" data-l="5">#284a5b 0</span>
+<span class="zlab t0628-l2" data-l="5">{% if include.lang == "fr" %}= la couleur du canevas{% else %}= the canvas color{% endif %}</span>
+<span class="zlab t0628-l1" data-l="6">{% if include.lang == "fr" %}losange : x = 200,3 … 341,7{% else %}diamond: x = 200.3 … 341.7{% endif %}</span>
+<span class="zlab t0628-l2" data-l="6">{% if include.lang == "fr" %}rouge : x = 200,3 … 300{% else %}red: x = 200.3 … 300{% endif %}</span>
+</div>
+</div>
+<div class="legend"><span><i style="--c:var(--t0628-yl)"></i>{% if include.lang == "fr" %}dégradé de html{% else %}html's gradient{% endif %}</span><span><i style="--c:var(--t0628-rd)"></i>{% if include.lang == "fr" %}dégradé de body, partie rouge{% else %}body's gradient, red part{% endif %}</span><span><i style="--c:var(--t0628-cut)"></i>{% if include.lang == "fr" %}dégradé de body, partie #284a5b{% else %}body's gradient, #284a5b part{% endif %}</span><span><i style="--c:transparent;outline:2px dashed currentColor;outline-offset:-2px"></i>{% if include.lang == "fr" %}boîte de body{% else %}body's box{% endif %}</span><span><i style="--c:var(--t0628-bg);outline:1px solid currentColor;outline-offset:-1px"></i>{% if include.lang == "fr" %}canevas{% else %}canvas{% endif %}</span></div>
+</div>
+<div class="anim-side">
+<pre class="code" aria-hidden="true">&lt;style><span data-on="1" data-tone="2">*{</span><span data-on="2" data-tone="2">*{</span><span data-on="2">margin:25%79 25%221</span>;<span data-on="4">rotate:45deg</span>;<span data-on="3">--a:at -1533%43cm,#be6b6c 60cm</span>}<span data-on="1 3" data-tone="2">background:radial-gradient(var(--a,</span><span data-on="1">1Q,#f1f271,25vw</span><span data-on="1 3" data-tone="2">)</span><span data-on="1 3 5">,#284a5b 0</span></pre>
+<div class="now" aria-live="polite">
+<div class="caps">
+{%- if include.lang == "fr" %}
+<div class="cap" data-t="0" data-step="html"><h3>1. html, un disque</h3><p>Le premier <code>*</code> vise tous les éléments, et son <code>background</code> vaut pour tous. html n'a pas de <code>--a</code> : <code>var()</code> prend sa valeur de repli, et le fond devient <code>radial-gradient(1Q,#f1f271,25vw,#284a5b 0)</code>. <code>1Q</code> est une taille : le dégradé est un cercle. Le jaune part du centre, et <code>#284a5b 0</code> est ramené à 25vw, soit 100px : un disque jaune de 100px de rayon, bord net. Le fond de html couvre tout le canevas, centré en (200, 150).</p></div>
+<div class="cap" data-t="5" data-step="body"><h3>2. body, un carré</h3><p>Le <code>*</code> imbriqué veut dire <code>* *</code> : tout élément dans un autre. html n'en est pas un, body si (head et style aussi, mais ils sont masqués). Pas de doctype : en mode quirks, body remplit la hauteur de la page, moins ses marges. <code>margin:25%79 25%221</code> donne 100, 79, 100 et 221px (les % se calculent sur les 400px de large) : body est un carré de 100 × 100, de x = 221 à 321 et de y = 100 à 200.</p></div>
+<div class="cap" data-t="10" data-step="--a"><h3>3. Un cercle géant</h3><p>body a <code>--a</code> : son fond devient <code>radial-gradient(at -1533% 43cm,#be6b6c 60cm,#284a5b 0)</code>. Le centre est à −1533px et 1625px de son coin : en (−1312, 1725), très loin en bas à gauche. Le rouge va jusqu'à 60cm, soit 2268px, puis le bleu-gris prend le relais. Vu du carré, le bord de ce cercle géant est presque droit : il coupe son coin en haut à droite, de (262, 100) à (321, 159).</p></div>
+<div class="cap" data-t="16" data-step="rotate"><h3>4. rotate:45deg</h3><p>body tourne de 45° autour de son centre, (271, 150), et son fond tourne avec lui. Le carré devient un losange, de x = 200,3 à 341,7 : son coin gauche touche le centre du disque. Le centre du dégradé passe à gauche, en (−1962, 144), et le bord devient vertical, en x ≈ 300.</p></div>
+<div class="cap" data-t="21" data-step="#284a5b"><h3>5. La couleur du canevas</h3><p>Au-delà du bord, le dégradé de body peint <code>#284a5b</code>, la couleur du canevas : cette partie du losange disparaît. Ce même <code>,#284a5b 0</code> sert aux deux dégradés. Il reste la partie rouge, de x = 200,3 à 300 : elle couvre l'entaille du disque.</p></div>
+<div class="cap" data-t="26" data-step="Résultat" data-live="136 caractères · 100 % identique"><h3>6. Résultat : 136 caractères</h3><p>Un disque jaune, et à droite une forme rouge à cinq côtés : deux côtés à 45° qui partent du centre du disque, deux coins coupés, et un bord vertical en x = 300, juste au bord du disque. Le bord est un arc, mais il reste à moins d'un demi-pixel de x = 300 sur toute sa hauteur.</p></div>
+{%- else %}
+<div class="cap" data-t="0" data-step="html"><h3>1. html, a disc</h3><p>The first <code>*</code> selects every element, and its <code>background</code> applies to all of them. html has no <code>--a</code>: <code>var()</code> uses its fallback, and the background becomes <code>radial-gradient(1Q,#f1f271,25vw,#284a5b 0)</code>. <code>1Q</code> is a size: the gradient is a circle. Yellow starts at the center, and <code>#284a5b 0</code> is pulled up to 25vw, which is 100px: a yellow disc with a 100px radius and a sharp edge. html's background covers the whole canvas, centered on (200, 150).</p></div>
+<div class="cap" data-t="5" data-step="body"><h3>2. body, a square</h3><p>The nested <code>*</code> means <code>* *</code>: any element inside another. html is not, body is (head and style too, but they are hidden). There is no doctype: in quirks mode, body fills the height of the page, minus its margins. <code>margin:25%79 25%221</code> gives 100, 79, 100 and 221px (the % are of the 400px width): body is a 100 × 100 square, from x = 221 to 321 and from y = 100 to 200.</p></div>
+<div class="cap" data-t="10" data-step="--a"><h3>3. A giant circle</h3><p>body has <code>--a</code>: its background becomes <code>radial-gradient(at -1533% 43cm,#be6b6c 60cm,#284a5b 0)</code>. The center is −1533px and 1625px from its corner: at (−1312, 1725), far down to the left. Red goes up to 60cm, which is 2268px, then blue-gray takes over. Seen from the square, the edge of that giant circle is almost straight: it cuts the top right corner, from (262, 100) to (321, 159).</p></div>
+<div class="cap" data-t="16" data-step="rotate"><h3>4. rotate:45deg</h3><p>body turns by 45° around its center, (271, 150), and its background turns with it. The square becomes a diamond, from x = 200.3 to 341.7: its left corner touches the center of the disc. The gradient's center moves to the left, to (−1962, 144), and the edge becomes vertical, at x ≈ 300.</p></div>
+<div class="cap" data-t="21" data-step="#284a5b"><h3>5. The canvas color</h3><p>Past the edge, body's gradient paints <code>#284a5b</code>, the canvas color: that part of the diamond disappears. The same <code>,#284a5b 0</code> serves both gradients. What is left is the red part, from x = 200.3 to 300: it covers the notch in the disc.</p></div>
+<div class="cap" data-t="26" data-step="Result" data-live="136 characters · 100% match"><h3>6. Result: 136 characters</h3><p>A yellow disc, and on its right a red five-sided shape: two 45° sides that start at the center of the disc, two cut corners, and a vertical edge at x = 300, right at the edge of the disc. The edge is an arc, but it stays within half a pixel of x = 300 over its whole height.</p></div>
+{%- endif %}
+</div>
+<div class="live"></div>
+</div>
+</div>
+<script>
+(window.AnimScenes = window.AnimScenes || {}).t0628 = (fig) => {
+  const fr = document.documentElement.lang === 'fr';
+  const $ = (s) => fig.querySelector(s);
+  const $$ = (s) => [...fig.querySelectorAll(s)];
+  const live = $('.live');
+  const ease = (x) => (x < 0.5 ? 4 * x * x * x : 1 - Math.pow(-2 * x + 2, 3) / 2);
+  const pr = (t, [a, b]) => ease(Math.min(1, Math.max(0, (t - a) / (b - a))));
+  const win = (t, a, b) => Math.min(pr(t, [a, a + 0.5]), 1 - pr(t, [b - 0.2, b]));
+  const c = fr ? ' :' : ':';
+  const mix = (k, a, b) => (k <= 0 ? b : k >= 1 ? a : `color-mix(in srgb, ${a} ${(k * 100).toFixed(1)}%, ${b})`);
+  // Measured on the official code in local Chrome (400 × 300, quirks mode): html 400 × 300, disc r = 100 at (200, 150);
+  // body margins 100 79 100 221, offsetWidth/Height 100 × 100, turned rect x 200.29 … 341.71, y 79.29 … 220.71;
+  // gradient center at (−1533, 1625.2) from body's corner, red up to 60cm = 2267.7px (ellipse 2267.7 × 2256.9);
+  // upright edge (rotate removed) from (262, 100) to (321, 159); turned edge at x = 300 (render), 299.7 … 300.1 (geometry).
+  const FIN = 26;
+  const disk = $('.t0628-disk'), fill = $('.t0628-fill'), body = $('.t0628-body'), bb = $('.t0628-bb'), ell = $('.t0628-ell'), arr = $('.t0628-arr');
+  const L = (k) => $$(`.zlab[data-l="${k}"]`);
+  return (t, step) => {
+    const teach = fig.dataset.teach === '1' && t < FIN;
+    const ann = 1 - pr(t, [FIN, FIN + 0.6]);
+    // 1. html's gradient: the canvas and the disc
+    const k1 = pr(t, [0.3, 1.5]);
+    fig.style.setProperty('--bg', mix(k1, '#284a5b', '#fff'));
+    disk.style.opacity = k1;
+    disk.style.transform = `scale(${0.2 + 0.8 * pr(t, [0.6, 2.2])})`;
+    // 2. body's box
+    bb.style.opacity = pr(t, [5.3, 6]) * ann;
+    // 3. body's gradient, the giant circle and its center
+    fill.style.opacity = pr(t, [10.3, 11.3]);
+    const ka = pr(t, [11, 12]) * ann;
+    ell.style.opacity = ka;
+    arr.style.opacity = ka;
+    // 4. the turn
+    const a = 45 * pr(t, [16.4, 19]);
+    body.style.transform = `rotate(${a}deg)`;
+    // 5. the #284a5b part: canvas color
+    const kc = teach ? pr(t, [21.4, 23]) : 1;
+    fill.style.setProperty('--t0628-c', mix(kc, '#284a5b', 'var(--t0628-cut)'));
+    [[0.3, 5], [5.3, 10], [10.3, 16], [16.3, 21], [21.3, FIN], [26.3, 29]].forEach(([s, e], k) => L(k + 1).forEach((l) => (l.style.opacity = win(t, s, e))));
+    let txt;
+    if (step === 0) txt = `html${c} ${fr ? 'disque' : 'disc'} r = 100 · (200, 150)`;
+    else if (step === 1) txt = `body${c} 100 × 100 · (221, 100)`;
+    else if (step === 2) txt = `${fr ? 'centre' : 'center'} (−1312, 1725) · 60cm = 2268px`;
+    else if (step === 3) txt = `body${c} ${a.toFixed(0)}°`;
+    else if (step === 4) txt = `#284a5b = ${fr ? 'canevas' : 'canvas'}`;
+    else txt = $$('.caps .cap')[5].dataset.live || '';
+    live.textContent = txt;
+  };
+};
+</script>
+</figure>
