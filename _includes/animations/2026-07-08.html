@@ -1,0 +1,128 @@
+<figure class="anim t0708" data-duration="29" data-scene="t0708" data-wide="-30 -20 460 360" data-off-label="-26 318" style="--bg:#fae29e">
+<style>
+.t0708{--t0708-green:#4a9a86;--t0708-dark:#4c4c6b;--t0708-c1:#f97316;--t0708-c2:#a855f7;--t0708-c3:#0ea5e9}
+.t0708 .t0708-body{left:65px;top:100px;width:270px;height:40px;background:var(--t0708-green);z-index:3;opacity:0}
+.t0708 .t0708-bo{box-sizing:border-box;border:0 solid var(--t0708-dark);z-index:4;opacity:0}
+.t0708 .t0708-ho{box-sizing:border-box;border:0 solid var(--t0708-dark);z-index:6;opacity:0}
+.t0708 .t0708-box{box-sizing:border-box;border:calc(2px * var(--k, 1)) dashed #fff;box-shadow:0 0 0 calc(1px * var(--k, 1)) rgb(0 0 0 / .45),inset 0 0 0 calc(1px * var(--k, 1)) rgb(0 0 0 / .45);z-index:20;opacity:0}
+.t0708 .t0708-mark{box-sizing:border-box;border:calc(2px * var(--k, 1)) dashed #fff;border-radius:calc(3px * var(--k, 1));box-shadow:0 0 0 calc(1px * var(--k, 1)) rgb(0 0 0 / .5),inset 0 0 0 calc(1px * var(--k, 1)) rgb(0 0 0 / .5);z-index:21;opacity:0}
+.t0708 .t0708-m1{left:86px;top:96px;width:18px;height:48px}
+.t0708 .t0708-m2{left:296px;top:96px;width:18px;height:48px}
+.t0708 .scene .off-lab.in-canvas{left:106px!important}
+.t0708 .zlab{color:#fff;background:rgb(20 20 42 / .9);padding:1px 5px;border-radius:3px;opacity:0}
+.t0708 .scene .zlab.t0708-l1,.t0708 .scene .zlab.t0708-l2{left:4px}
+.t0708 .scene .zlab.t0708-l1{top:4px}
+.t0708 .scene .zlab.t0708-l2{top:calc(4px + 16px * var(--k, 1))}
+.t0708[data-view="wide"] .scene .zlab.t0708-l1,.t0708[data-view="wide"] .scene .zlab.t0708-l2{left:-26px}
+.t0708[data-view="wide"] .scene .zlab.t0708-l1{top:-16px}
+.t0708[data-view="wide"] .scene .zlab.t0708-l2{top:calc(-16px + 16px * var(--k, 1))}
+</style>
+<div class="anim-col">
+<div class="stage" role="img" aria-label="{% if include.lang == "fr" %}Animation : le * vise html ; margin:25%25%0 lui donne 100px de marge en haut, à gauche et à droite, car un pourcentage de marge se prend sur la largeur, 400px ; html fait 200 × 200 en (100, 100), et sa couleur crème va au canevas ; outline:11q, 10,39px, est dessiné sur 10px autour de html : de x = 90 à 310 et de y = 90 à 310, le bas sort du canevas ; le * imbriqué vise body : margin:0-35 160 en fait une barre de 270 × 40 en (65, 100), verte ; body a aussi l'outline de 10px : un cadre de x = 55 à 345 et de y = 90 à 150 ; l'outline de html est peint après body : là où ses côtés traversent la barre, ils font deux séparations, en x = 90 et 300 ; il reste une table, avec une barre verte encadrée et deux pieds{% else %}Animation: the * selects html; margin:25%25%0 gives it a 100px margin on the top, left and right, because a margin percentage is taken from the width, 400px; html is 200 × 200 at (100, 100), and its cream color goes to the canvas; outline:11q, 10.39px, is drawn 10px wide around html: from x = 90 to 310 and from y = 90 to 310, the bottom leaves the canvas; the nested * selects body: margin:0-35 160 makes it a 270 × 40 green bar at (65, 100); body gets the 10px outline too: a frame from x = 55 to 345 and from y = 90 to 150; html's outline is painted after body: where its sides cross the bar, they make two dividers, at x = 90 and 300; what is left is a table, with a framed green bar and two legs{% endif %}">
+<div class="scene">
+<div class="t0708-body"></div>
+<div class="t0708-bo"></div>
+<div class="t0708-ho"></div>
+<div class="t0708-box t0708-hb"></div>
+<div class="t0708-box t0708-bb"></div>
+<div class="t0708-mark t0708-m1"></div>
+<div class="t0708-mark t0708-m2"></div>
+<span class="zlab t0708-l t0708-l1" data-l="1">* = html · margin: 25% 25% 0</span>
+<span class="zlab t0708-l t0708-l2" data-l="1">25% × 400 = 100px → 200 × 200</span>
+<span class="zlab t0708-l t0708-l1" data-l="2">{% if include.lang == "fr" %}outline : 11q = 10,39px → 10px{% else %}outline: 11q = 10.39px → 10px{% endif %}</span>
+<span class="zlab t0708-l t0708-l2" data-l="2">{% if include.lang == "fr" %}autour de html : x 90 → 310, y 90 → 310{% else %}around html: x 90 → 310, y 90 → 310{% endif %}</span>
+<span class="zlab t0708-l t0708-l1" data-l="3">* * = body · margin: 0 -35 160</span>
+<span class="zlab t0708-l t0708-l2" data-l="3">{% if include.lang == "fr" %}270 × 40 en (65, 100){% else %}270 × 40 at (65, 100){% endif %}</span>
+<span class="zlab t0708-l t0708-l1" data-l="4">{% if include.lang == "fr" %}l'outline de body : 10px{% else %}body's outline: 10px{% endif %}</span>
+<span class="zlab t0708-l t0708-l2" data-l="4">x 55 → 345, y 90 → 150</span>
+<span class="zlab t0708-l t0708-l1" data-l="5">{% if include.lang == "fr" %}l'outline de html, peint en dernier{% else %}html's outline, painted last{% endif %}</span>
+<span class="zlab t0708-l t0708-l2" data-l="5">{% if include.lang == "fr" %}séparations en x = 90 et 300{% else %}dividers at x = 90 and 300{% endif %}</span>
+</div>
+</div>
+<div class="legend"><span><i style="--c:var(--t0708-c1)"></i>{% if include.lang == "fr" %}outline de html{% else %}html's outline{% endif %}</span><span><i style="--c:var(--t0708-c2)"></i>body</span><span><i style="--c:var(--t0708-c3)"></i>{% if include.lang == "fr" %}outline de body{% else %}body's outline{% endif %}</span><span><i style="--c:transparent;outline:2px dashed currentColor;outline-offset:-2px"></i>{% if include.lang == "fr" %}boîtes{% else %}boxes{% endif %}</span></div>
+</div>
+<div class="anim-side">
+<pre class="code" aria-hidden="true">&lt;style>*{<span data-on="1">margin:25%25%0</span>;<span data-on="2 4 5">outline:11q solid#4C4C6B</span>;<span data-on="1">background:#FAE29E</span>;<span data-on="3" data-tone="2">*{margin:0-35 160;background:#4A9A86</span></pre>
+<div class="now" aria-live="polite">
+<div class="caps">
+{%- if include.lang == "fr" %}
+<div class="cap" data-t="0" data-step="html"><h3>1. html, centré en largeur</h3><p>Le <code>*</code> vise html. Une marge en pourcentage se prend sur la largeur, même en haut : <code>25%</code> de 400, c'est 100px. html fait 200 × 200 en (100, 100) : en mode quirks, il remplit la hauteur moins ses marges. Son fond crème va à tout le canevas.</p></div>
+<div class="cap" data-t="5" data-step="Outline de html"><h3>2. L'outline de html</h3><p><code>11q</code>, c'est 11 quarts de millimètre : 10,39px. Chrome le dessine sur 10px. L'outline ne prend pas de place : il se pose autour de html, de x = 90 à 310 et de y = 90 à 310. Ses deux côtés font les pieds. Son bord du bas sort du canevas.</p></div>
+<div class="cap" data-t="10" data-step="body"><h3>3. body, la barre</h3><p>Le <code>*</code> imbriqué veut dire <code>* *</code> : head, style et body. Il vient après le premier et pèse autant : body prend <code>margin:0-35 160</code> et le vert. Il déborde de 35px de chaque côté : 270px de large, en x = 65. Il fait 200 − 160 = 40px de haut.</p></div>
+<div class="cap" data-t="15" data-step="Outline de body"><h3>4. L'outline de body</h3><p>body garde l'outline du premier <code>*</code> : 10px tout autour. Il encadre la barre, de x = 55 à 345 et de y = 90 à 150. Son bord du haut recouvre celui de html.</p></div>
+<div class="cap" data-t="20" data-step="Par-dessus"><h3>5. L'outline de html par-dessus</h3><p>Dans mon Chrome, l'outline de html est peint après body : sur son vert et sur son outline. Je l'ai vérifié en peignant les deux outlines en rouge et en bleu. Là où les pieds traversent la barre, ils font deux séparations de 10px, en x = 90 et 300.</p></div>
+<div class="cap" data-t="25" data-step="Résultat" data-live="104 caractères · 100 % identique"><h3>6. Résultat : 104 caractères</h3><p>Deux boîtes, un seul outline. Sur html, il fait les pieds et les séparations. Sur body, il encadre la barre.</p></div>
+{%- else %}
+<div class="cap" data-t="0" data-step="html"><h3>1. html, centered across</h3><p>The <code>*</code> selects html. A margin percentage is taken from the width, even on top: <code>25%</code> of 400 is 100px. html is 200 × 200 at (100, 100): in quirks mode, it fills the height minus its margins. Its cream background goes to the whole canvas.</p></div>
+<div class="cap" data-t="5" data-step="html's outline"><h3>2. html's outline</h3><p><code>11q</code> is 11 quarter millimeters: 10.39px. Chrome draws it 10px wide. An outline takes no room: it sits around html, from x = 90 to 310 and from y = 90 to 310. Its two sides are the legs. Its bottom edge leaves the canvas.</p></div>
+<div class="cap" data-t="10" data-step="body"><h3>3. body, the bar</h3><p>The nested <code>*</code> means <code>* *</code>: head, style and body. It comes after the first one and weighs the same: body gets <code>margin:0-35 160</code> and the green. It sticks out 35px on each side: 270px wide, at x = 65. It is 200 − 160 = 40px tall.</p></div>
+<div class="cap" data-t="15" data-step="body's outline"><h3>4. body's outline</h3><p>body keeps the outline of the first <code>*</code>: 10px all around. It frames the bar, from x = 55 to 345 and from y = 90 to 150. Its top edge covers html's.</p></div>
+<div class="cap" data-t="20" data-step="On top"><h3>5. html's outline on top</h3><p>In my Chrome, html's outline is painted after body: over its green and over its outline. I checked it by painting the two outlines red and blue. Where the legs cross the bar, they make two 10px dividers, at x = 90 and 300.</p></div>
+<div class="cap" data-t="25" data-step="Result" data-live="104 characters · 100% match"><h3>6. Result: 104 characters</h3><p>Two boxes, one outline. On html, it makes the legs and the dividers. On body, it frames the bar.</p></div>
+{%- endif %}
+</div>
+<div class="live"></div>
+</div>
+</div>
+<script>
+(window.AnimScenes = window.AnimScenes || {}).t0708 = (fig) => {
+  const fr = document.documentElement.lang === 'fr';
+  const $ = (s) => fig.querySelector(s);
+  const $$ = (s) => [...fig.querySelectorAll(s)];
+  const live = $('.live');
+  const ease = (x) => (x < 0.5 ? 4 * x * x * x : 1 - Math.pow(-2 * x + 2, 3) / 2);
+  const pr = (t, [a, b]) => ease(Math.min(1, Math.max(0, (t - a) / (b - a))));
+  const win = (t, a, b) => Math.min(pr(t, [a, a + 0.5]), 1 - pr(t, [b - 0.2, b]));
+  const c = fr ? ' :' : ':';
+  const num = (v, d = 0) => { const s = Math.abs(v).toFixed(d); return (v < -0.005 ? '−' : '') + (fr ? s.replace('.', ',') : s); };
+  // Measured on the official code in local Chrome (quirks mode, 400 × 300), getBoundingClientRect and getComputedStyle:
+  // html (100, 100) 200 × 200, body (65, 100) 270 × 40, outline-width 10px (11q = 10.39px).
+  // html's outline: x 90..310, y 90..310. body's outline: x 55..345, y 90..150. html's outline is painted over body.
+  const FIN = 25;
+  const body = $('.t0708-body'), bo = $('.t0708-bo'), ho = $('.t0708-ho');
+  const hb = $('.t0708-hb'), bb = $('.t0708-bb'), m1 = $('.t0708-m1'), m2 = $('.t0708-m2');
+  const L = (k) => $$(`.t0708-l[data-l="${k}"]`);
+  const put = (e, x, y, w, h) => { e.style.left = `${x}px`; e.style.top = `${y}px`; e.style.width = `${w}px`; e.style.height = `${h}px`; };
+  const lerp = (a, b, k) => a + (b - a) * k;
+  return (t, step) => {
+    const teach = fig.dataset.teach === '1' && t < FIN;
+    // 1. html's box shrinks from the canvas to (100, 100) 200 × 200
+    const kM = pr(t, [0.5, 2.5]);
+    put(hb, 100 * kM, 100 * kM, 400 - 200 * kM, 300 - 100 * kM);
+    hb.style.opacity = 0.9 * pr(t, [0.2, 0.5]) * (1 - pr(t, [9.6, 10]));
+    // 2. html's outline grows outward to 10px
+    const kO = pr(t, [5.6, 7.4]), w = 10 * kO;
+    put(ho, 100 - w, 100 - w, 200 + 2 * w, 200 + 2 * w);
+    ho.style.borderWidth = `${w}px`;
+    ho.style.opacity = t >= 5.6 ? 1 : 0;
+    ho.style.borderColor = teach ? 'var(--t0708-c1)' : 'var(--t0708-dark)';
+    // 3. body goes from html's box to (65, 100) 270 × 40
+    const kB = pr(t, [10.6, 12.8]);
+    const bx = lerp(100, 65, kB), bw = lerp(200, 270, kB), bh = lerp(200, 40, kB);
+    // 4. body's outline grows to 10px; the green reaches under it so that no seam shows
+    const kF = pr(t, [15.6, 17.4]), f = 10 * kF, u = f / 2;
+    put(body, bx - u, 100 - u, bw + 2 * u, bh + 2 * u);
+    body.style.opacity = pr(t, [10.3, 10.6]);
+    body.style.background = teach ? 'var(--t0708-c2)' : '';
+    put(bb, bx, 100, bw, bh);
+    bb.style.opacity = 0.9 * pr(t, [10.3, 10.6]) * (1 - pr(t, [19.6, 20]));
+    put(bo, 65 - f, 100 - f, 270 + 2 * f, 40 + 2 * f);
+    bo.style.borderWidth = `${f}px`;
+    bo.style.opacity = t >= 15.6 ? 1 : 0;
+    bo.style.borderColor = teach ? 'var(--t0708-c3)' : 'var(--t0708-dark)';
+    // 5. the two dividers: html's outline over body
+    const kX = win(t, 20.3, FIN);
+    m1.style.opacity = m2.style.opacity = 0.95 * kX;
+    [[0.3, 5], [5.3, 10], [10.3, 15], [15.3, 20], [20.3, 25]].forEach(([a, z], k) => L(k + 1).forEach((e) => (e.style.opacity = win(t, a, z))));
+    let txt;
+    if (step === 0) txt = `html${c} ${num(400 - 200 * kM)} × ${num(300 - 100 * kM)}`;
+    else if (step === 1) txt = fr ? `outline de html${c} ${num(w, 1)}px` : `html's outline${c} ${num(w, 1)}px`;
+    else if (step === 2) txt = `body${c} ${num(bw)} × ${num(bh)}`;
+    else if (step === 3) txt = fr ? `outline de body${c} ${num(f, 1)}px` : `body's outline${c} ${num(f, 1)}px`;
+    else if (step === 4) txt = fr ? `séparations${c} x = 90 → 100 et 300 → 310` : `dividers${c} x = 90 → 100 and 300 → 310`;
+    else txt = $$('.caps .cap')[5].dataset.live || '';
+    live.textContent = txt;
+  };
+};
+</script>
+</figure>
