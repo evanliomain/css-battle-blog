@@ -1,0 +1,140 @@
+<figure class="anim t0715" data-duration="31" data-scene="t0715" data-wide="-50 -40 500 380" data-off-label="-46 -37" style="--bg:#f48b26">
+<style>
+.t0715{--t0715-o:#f48b26;--t0715-k:#f5e3b5;--t0715-c1:#38bdf8;--t0715-c2:#c084fc}
+.t0715 .t0715-w{left:0;top:0;width:400px;height:300px;background:#fff}
+.t0715 .t0715-q{width:56px;height:56px;background:var(--t0715-k);opacity:0;z-index:5}
+.t0715 .t0715-box{box-sizing:border-box;border:calc(2px * var(--k, 1)) dashed #1d1530;opacity:0;z-index:20}
+.t0715 .t0715-m{z-index:21}
+.t0715 .t0715-bad{border-color:#b91c1c}
+.t0715 .zlab{color:#fff;background:rgb(20 20 42 / .9);padding:1px 5px;border-radius:3px;opacity:0}
+.t0715 .scene .zlab.t0715-l1,.t0715 .scene .zlab.t0715-l2{left:4px;top:auto;transform-origin:0 100%}
+.t0715 .scene .zlab.t0715-l2{bottom:2px}
+.t0715 .scene .zlab.t0715-l1{bottom:calc(2px + 19px * var(--k, 1))}
+</style>
+<div class="anim-col">
+<div class="stage" role="img" aria-label="{% if include.lang == "fr" %}Animation : pas de doctype, mode quirks ; &amp; vaut html, son fond orange remplit le canevas ; body fait 384 × 284 en (8, 8) ; * * vise les six balises vides hr et p, pas body ; float:left les réduit à une largeur 0, et border:7vw, 28px de chaque côté, en fait des carrés de 56 × 56 ; margin:62-8-14 58 donne à chacun une boîte de marge de 106 × 104 qui s'arrête 8px avant son bord droit et 14px au-dessus de son bas ; le premier carré va en (66, 70), les suivants en x = 172 et 278 ; un quatrième irait de x 326 à 432, au-delà du bord droit de body en 392 : il passe en dessous, en y = 174 ; p{rotate:15deg} tourne les trois p autour de leur centre{% else %}Animation: no doctype, quirks mode; &amp; is html, its orange background fills the canvas; body is 384 × 284 at (8, 8); * * selects the six empty hr and p elements, not body; float:left shrinks them to width 0, and border:7vw, 28px on each side, makes them 56 × 56 squares; margin:62-8-14 58 gives each one a 106 × 104 margin box that ends 8px before its right edge and 14px above its bottom; the first square goes to (66, 70), the next ones to x = 172 and 278; a fourth would take x 326 to 432, past body's right edge at 392: it goes down, to y = 174; p{rotate:15deg} turns the three p around their center{% endif %}">
+<div class="scene">
+<div class="t0715-w"></div>
+<div class="t0715-q" data-i="0"></div>
+<div class="t0715-q" data-i="1"></div>
+<div class="t0715-q" data-i="2"></div>
+<div class="t0715-q" data-i="3"></div>
+<div class="t0715-q" data-i="4"></div>
+<div class="t0715-q" data-i="5"></div>
+<div class="t0715-box t0715-body" style="left:8px;top:8px;width:384px;height:284px"></div>
+<div class="t0715-box t0715-m" data-i="0"></div>
+<div class="t0715-box t0715-m" data-i="1"></div>
+<div class="t0715-box t0715-m" data-i="2"></div>
+<div class="t0715-box t0715-m" data-i="3"></div>
+<div class="t0715-box t0715-m" data-i="4"></div>
+<div class="t0715-box t0715-m" data-i="5"></div>
+<span class="zlab t0715-l t0715-l1" data-l="1">&amp;{background:#F48B26} · html · 400 × 300</span>
+<span class="zlab t0715-l t0715-l2" data-l="1">{% if include.lang == "fr" %}body : 384 × 284 en (8, 8){% else %}body: 384 × 284 at (8, 8){% endif %}</span>
+<span class="zlab t0715-l t0715-l1" data-l="2">{% if include.lang == "fr" %}* * → hr, p (pas body) · float → largeur 0{% else %}* * → hr, p (not body) · float → width 0{% endif %}</span>
+<span class="zlab t0715-l t0715-l2" data-l="2">{% if include.lang == "fr" %}7vw = 28px · carré de 56 × 56{% else %}7vw = 28px · a 56 × 56 square{% endif %}</span>
+<span class="zlab t0715-l t0715-l1" data-l="3">margin: 62 −8 −14 58</span>
+<span class="zlab t0715-l t0715-l2" data-l="3">58 + 56 − 8 = 106 · 62 + 56 − 14 = 104</span>
+<span class="zlab t0715-l t0715-l1" data-l="4">x = 8 + 58 + 106 × n · 326 + 106 = 432 > 392</span>
+<span class="zlab t0715-l t0715-l2" data-l="4">{% if include.lang == "fr" %}rangée 2 : y = 112 + 62 = 174{% else %}row 2: y = 112 + 62 = 174{% endif %}</span>
+<span class="zlab t0715-l t0715-l1" data-l="5">p{rotate:15deg}</span>
+<span class="zlab t0715-l t0715-l2" data-l="5">{% if include.lang == "fr" %}autour du centre · mise en page inchangée{% else %}around the center · the layout does not move{% endif %}</span>
+</div>
+</div>
+<div class="legend"><span><i style="--c:transparent;outline:2px dashed currentColor;outline-offset:-2px"></i>{% if include.lang == "fr" %}boîtes de body et de marge{% else %}body and margin boxes{% endif %}</span><span><i style="--c:var(--t0715-c1)"></i>hr</span><span><i style="--c:var(--t0715-c2)"></i>p</span></div>
+</div>
+<div class="anim-side">
+<pre class="code" aria-hidden="true"><span data-on="2">&lt;hr>&lt;p>&lt;hr>&lt;p>&lt;hr>&lt;p></span>&lt;style><span data-on="1">&amp;{background:#F48B26;</span><span data-on="2">* *{</span><span data-on="2 4">float:left;</span><span data-on="3 4">margin:62-8-14 58;</span><span data-on="2">border:<span data-on="2" data-tone="2">7vw</span> solid#F5E3B5</span>}<span data-on="5">p{rotate:15deg</span></pre>
+<div class="now" aria-live="polite">
+<div class="caps">
+{%- if include.lang == "fr" %}
+<div class="cap" data-t="0" data-step="html et body"><h3>1. html et body</h3><p>Pas de doctype : la page est en mode quirks. Au premier niveau du CSS, <code>&amp;</code> désigne la racine : html. Son fond remplit tout le canevas d'orange. body garde ses marges de 8px : 384 × 284 en (8, 8).</p></div>
+<div class="cap" data-t="4.5" data-step="Six carrés"><h3>2. Six carrés faits de bordures</h3><p><code>&lt;hr>&lt;p>&lt;hr>&lt;p>&lt;hr>&lt;p></code> donne six éléments vides dans body : chaque <code>&lt;hr></code> ferme le <code>&lt;p></code> d'avant. Le <code>* *</code> imbriqué vaut <code>&amp; * *</code> : tout élément dans un élément de html. C'est eux, pas body. <code>float:left</code> les réduit à leur contenu : 0 × 0. <code>border:7vw</code> fait 28px de chaque côté : un carré de 56 × 56. Avec des marges à 0, les six se suivraient, de x = 8 à 344.</p></div>
+<div class="cap" data-t="9" data-step="Cellule 106 × 104"><h3>3. Une cellule de 106 × 104</h3><p><code>margin:62-8-14 58</code> se lit 62, −8, −14 et 58 : haut, droite, bas, gauche. Le premier hr descend de 62 et avance de 58, en (66, 70). Sa boîte de marge part de (8, 8) et s'arrête 8px avant son bord droit et 14px au-dessus de son bas : 58 + 56 − 8 = 106 de large, 62 + 56 − 14 = 104 de haut.</p></div>
+<div class="cap" data-t="14" data-step="Deux rangées"><h3>4. Les flottants font deux rangées</h3><p>Chaque flottant se place juste après la boîte de marge du précédent : x = 66, 172, 278. Un quatrième irait de x 326 à 432, au-delà du bord droit de body, en 392. Il descend sous les boîtes de marge de la première rangée (y = 112) : son carré est en y = 174. Les deux derniers suivent. Écarts : 50px en largeur (58 − 8), 48px en hauteur (62 − 14).</p></div>
+<div class="cap" data-t="21" data-step="p tourne"><h3>5. Les p tournent de 15°</h3><p><code>p{rotate:15deg}</code> tourne les trois p autour de leur centre. Une rotation ne change pas la mise en page : les autres carrés restent en place. hr et p alternent : les carrés penchés font un damier.</p></div>
+<div class="cap" data-t="26.5" data-step="Résultat" data-live="120 caractères · 100 % identique"><h3>6. Résultat : 120 caractères</h3><p>Six balises vides, une règle pour leur taille et leur place, une pour la pente.</p></div>
+{%- else %}
+<div class="cap" data-t="0" data-step="html and body"><h3>1. html and body</h3><p>There is no doctype: the page is in quirks mode. At the top level of the CSS, <code>&amp;</code> is the root: html. Its background fills the whole canvas with orange. body keeps its 8px margins: 384 × 284 at (8, 8).</p></div>
+<div class="cap" data-t="4.5" data-step="Six squares"><h3>2. Six squares made of borders</h3><p><code>&lt;hr>&lt;p>&lt;hr>&lt;p>&lt;hr>&lt;p></code> gives six empty elements in body: each <code>&lt;hr></code> closes the <code>&lt;p></code> before it. The nested <code>* *</code> means <code>&amp; * *</code>: any element inside an element of html. That is them, not body. <code>float:left</code> shrinks them to their content: 0 × 0. <code>border:7vw</code> is 28px on each side: a 56 × 56 square. With margins at 0, the six would sit side by side, from x = 8 to 344.</p></div>
+<div class="cap" data-t="9" data-step="106 × 104 cell"><h3>3. One cell: 106 × 104</h3><p><code>margin:62-8-14 58</code> reads 62, −8, −14 and 58: top, right, bottom, left. The first hr moves 62 down and 58 right, to (66, 70). Its margin box starts at (8, 8) and ends 8px before its right edge and 14px above its bottom: 58 + 56 − 8 = 106 wide, 62 + 56 − 14 = 104 tall.</p></div>
+<div class="cap" data-t="14" data-step="Two rows"><h3>4. The floats make two rows</h3><p>Each float goes right after the previous margin box: x = 66, 172, 278. A fourth would take x 326 to 432, past body's right edge at 392. It goes down, under the first row's margin boxes (y = 112): its square is at y = 174. The last two follow. Gaps: 50px across (58 − 8), 48px down (62 − 14).</p></div>
+<div class="cap" data-t="21" data-step="p turns"><h3>5. The p turn 15°</h3><p><code>p{rotate:15deg}</code> turns the three p around their center. A rotation does not change the layout: the other squares stay where they are. hr and p alternate, so the tilted squares make a checkerboard.</p></div>
+<div class="cap" data-t="26.5" data-step="Result" data-live="120 characters · 100% match"><h3>6. Result: 120 characters</h3><p>Six empty tags, one rule for their size and place, one for the tilt.</p></div>
+{%- endif %}
+</div>
+<div class="live"></div>
+</div>
+</div>
+<script>
+(window.AnimScenes = window.AnimScenes || {}).t0715 = (fig) => {
+  const fr = document.documentElement.lang === 'fr';
+  const $ = (s) => fig.querySelector(s);
+  const $$ = (s) => [...fig.querySelectorAll(s)];
+  const live = $('.live');
+  const ease = (x) => (x < 0.5 ? 4 * x * x * x : 1 - Math.pow(-2 * x + 2, 3) / 2);
+  const pr = (t, [a, b]) => ease(Math.min(1, Math.max(0, (t - a) / (b - a))));
+  const win = (t, a, b) => Math.min(pr(t, [a, a + 0.5]), 1 - pr(t, [b - 0.2, b]));
+  const c = fr ? ' :' : ':';
+  const num = (v, d = 0) => { const s = Math.abs(v).toFixed(d); return (v < -0.005 ? '−' : '') + (fr ? s.replace('.', ',') : s); };
+  // Measured on the official code in local Chrome (quirks mode, 400 × 300), getBoundingClientRect and computed styles:
+  // html (0, 0) 400 × 300; body (8, 8) 384 × 284; hr, p: float left, width 0, height 0, margin 62px -8px -14px 58px, border 28px.
+  // Border boxes: hr (66, 70), p (172, 70), hr (278, 70), p (66, 174), hr (172, 174), p (278, 174), all 56 × 56; p rotate 15deg.
+  // With margin:0 instead, the six sit at x = 8, 64, 120, 176, 232, 288, y = 8.
+  const FIN = 26.5;
+  const POS = [[66, 70], [172, 70], [278, 70], [66, 174], [172, 174], [278, 174]];
+  const SHOW = [0, 14.6, 15.4, 16.2, 19, 19.8];
+  const w = $('.t0715-w'), bod = $('.t0715-body');
+  const Q = $$('.t0715-q'), M = $$('.t0715-m');
+  const L = (k) => $$(`.t0715-l[data-l="${k}"]`);
+  const box = (e, x, y, wd, ht) => Object.assign(e.style, { left: `${x}px`, top: `${y}px`, width: `${wd}px`, height: `${ht}px` });
+  return (t, step) => {
+    const teach = fig.dataset.teach === '1' && t < FIN;
+    w.style.opacity = 1 - pr(t, [0.4, 1.4]);
+    bod.style.opacity = Math.max(0.9 * pr(t, [1.8, 2.2]) * (1 - pr(t, [4.5, 4.8])), 0.9 * win(t, 14.2, 21));
+    // 2. border 0 → 28, six floats side by side (margins at 0)
+    const b = 28 * pr(t, [5.2, 7.2]);
+    // 3. the first hr's margins grow: 58 left, 62 top, -8 right, -14 bottom
+    const m = pr(t, [10, 12]);
+    const ang = 15 * pr(t, [21.8, 23.8]);
+    Q.forEach((q, i) => {
+      const isP = i % 2 === 1;
+      let x, y, o;
+      if (t < 9.6 || (i === 0 && t < 12)) {
+        x = 8 + 2 * b * i; y = 8; o = pr(t, [5, 5.2]) * (i === 0 ? 1 : 1 - pr(t, [9.2, 9.6]));
+        if (i === 0) { x = 8 + 58 * m; y = 8 + 62 * m; }
+      } else {
+        const a = i === 0 ? 1 : pr(t, [SHOW[i], SHOW[i] + 0.6]);
+        [x, y] = POS[i];
+        if (i === 3) {
+          const d = pr(t, [17.4, 18.4]);
+          x = 384 + (66 - 384) * d; y = 70 + 104 * d;
+        } else x += 30 * (1 - a);
+        o = a;
+      }
+      // side by side in step 2: a slight overlap so no seam shows between same-color squares
+      box(q, x, y, 2 * b + (t < 9.6 && i < 5 && b > 0 ? 0.6 : 0), 2 * b);
+      q.style.opacity = o;
+      q.style.transform = isP ? `rotate(${ang}deg)` : 'none';
+      q.style.background = teach ? `var(--t0715-c${isP ? 2 : 1})` : 'var(--t0715-k)';
+      const mb = M[i];
+      if (i === 0) box(mb, 8, 8, 56 + 50 * m, 56 + 48 * m);
+      else box(mb, x - 58, y - 62, 106, 104);
+      mb.classList.toggle('t0715-bad', i === 3 && t < 17.6);
+      mb.style.opacity = 0.9 * (i === 0 ? pr(t, [9.6, 10]) : o * pr(t, [14, 14.2])) * (1 - pr(t, [21, 21.4]));
+    });
+    [[0.3, 4.5], [4.8, 9], [9.3, 14], [14.3, 21], [21.3, 26.5]].forEach(([a, z], k) => L(k + 1).forEach((e) => (e.style.opacity = win(t, a, z))));
+    let txt;
+    if (step === 0) txt = fr ? `html${c} 400 × 300 · body${c} 384 × 284 en (8, 8)` : `html${c} 400 × 300 · body${c} 384 × 284 at (8, 8)`;
+    else if (step === 1) txt = fr ? `border${c} ${num(b, 1)}px · carrés de ${num(2 * b, 1)} × ${num(2 * b, 1)}` : `border${c} ${num(b, 1)}px · ${num(2 * b, 1)} × ${num(2 * b, 1)} squares`;
+    else if (step === 2) txt = fr ? `margin${c} ${num(62 * m)} ${num(-8 * m)} ${num(-14 * m)} ${num(58 * m)} · hr en (${num(8 + 58 * m)}, ${num(8 + 62 * m)})` : `margin${c} ${num(62 * m)} ${num(-8 * m)} ${num(-14 * m)} ${num(58 * m)} · hr at (${num(8 + 58 * m)}, ${num(8 + 62 * m)})`;
+    else if (step === 3) {
+      if (t < 16.2) txt = fr ? `rangée 1${c} x = 66, 172, 278` : `row 1${c} x = 66, 172, 278`;
+      else if (t < 19) txt = fr ? `p${c} 326 + 106 = 432 > 392 → rangée 2, y = 174` : `p${c} 326 + 106 = 432 > 392 → row 2, y = 174`;
+      else txt = fr ? `rangée 2${c} x = 66, 172, 278 · y = 174` : `row 2${c} x = 66, 172, 278 · y = 174`;
+    } else if (step === 4) txt = fr ? `rotate${c} ${num(ang, 1)}deg` : `rotate${c} ${num(ang, 1)}deg`;
+    else txt = $$('.caps .cap')[5].dataset.live || '';
+    live.textContent = txt;
+  };
+};
+</script>
+</figure>
