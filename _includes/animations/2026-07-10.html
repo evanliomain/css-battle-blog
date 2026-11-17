@@ -1,0 +1,153 @@
+<figure class="anim t0710" data-duration="32" data-scene="t0710" data-wide="-60 -50 520 390" data-off-label="-56 316" style="--bg:#c9a077">
+<style>
+.t0710{--t0710-sand:#c9a077;--t0710-blue:#273e7c;--t0710-c1:#f97316;--t0710-c2:#f472b6}
+.t0710 .t0710-white{left:0;top:0;width:400px;height:300px;background:#fff;z-index:1}
+.t0710 .t0710-out{left:0;top:0;width:400px;height:300px;background:rgb(187 136 85 / .8);z-index:2}
+.t0710 .t0710-disk{border-radius:50%;z-index:3}
+.t0710 .t0710-grad{left:0;top:0;width:400px;height:300px;background:radial-gradient(1Q at 200px 150px,#c9a077,90Q,#273e7c 0 115px,#b85c);z-index:5;opacity:0}
+.t0710 .t0710-blue{background:var(--t0710-blue)}
+.t0710 .t0710-sand{background:var(--t0710-sand);z-index:4}
+.t0710 .t0710-body{left:180px;top:141px;width:40px;z-index:6}
+.t0710 .t0710-p{left:180px;top:141px;width:40px;height:18px;z-index:7}
+.t0710 .t0710-box{box-sizing:border-box;border:calc(2px * var(--k, 1)) dashed #fff;z-index:20}
+.t0710 .t0710-ring{box-sizing:border-box;border-radius:50%;border:calc(1.5px * var(--k, 1)) dashed #fff;z-index:19}
+.t0710 .t0710-dot{left:198px;top:148px;width:4px;height:4px;border-radius:50%;background:#1d2827;z-index:21}
+.t0710 .zlab{color:#fff;background:rgb(20 20 42 / .9);padding:1px 5px;border-radius:3px;opacity:0}
+.t0710 .scene .zlab.t0710-l1,.t0710 .scene .zlab.t0710-l2{left:4px}
+.t0710 .scene .zlab.t0710-l1{top:1px}
+.t0710 .scene .zlab.t0710-l2{top:calc(1px + 16px * var(--k, 1))}
+.t0710[data-view="wide"] .scene .zlab.t0710-l1,.t0710[data-view="wide"] .scene .zlab.t0710-l2{left:-56px}
+.t0710[data-view="wide"] .scene .zlab.t0710-l1{top:-47px}
+.t0710[data-view="wide"] .scene .zlab.t0710-l2{top:calc(-47px + 16px * var(--k, 1))}
+</style>
+<div class="anim-col">
+<div class="stage" role="img" aria-label="{% if include.lang == "fr" %}Animation : html couvre le canevas de 400 × 300 et lui passe son fond, un radial-gradient centré en (200, 150) ; le 1Q en fait un cercle de 0,945px de rayon ; du sable jusqu'à 85,04px (90Q), du bleu de 85,04 à 115px : un anneau ; la dernière couleur, #b85c, part de 115px : un sable à 80 % d'opacité, posé sur le blanc de la page, qui donne le même sable ; body, avec margin:141 45% 0, est une boîte de 40 × 143 en (180, 141) ; il a le même dégradé, mais ses coins sont à 74,24px de son centre : il est tout sable, et coupe l'anneau en bas ; le p a une espace insécable, donc une ligne de 18px : 40 × 18 en (180, 141), centré en (200, 150), tout sable lui aussi ; scale:9 1.1 l'étire en 360 × 19,8 et coupe l'anneau à gauche et à droite ; il reste un anneau en trois morceaux{% else %}Animation: html covers the 400 × 300 canvas and gives it its background, a radial-gradient centered at (200, 150); the 1Q makes it a circle with a 0.945px ray; sand up to 85.04px (90Q), blue from 85.04 to 115px: a ring; the last color, #b85c, starts at 115px: a sand at 80% opacity, over the white page, which gives the same sand; body, with margin:141 45% 0, is a 40 × 143 box at (180, 141); it has the same gradient, but its corners are 74.24px from its center: it is all sand, and cuts the ring at the bottom; the p holds a no-break space, so one 18px line: 40 × 18 at (180, 141), centered at (200, 150), all sand too; scale:9 1.1 stretches it to 360 × 19.8 and cuts the ring on the left and right; what is left is a ring in three pieces{% endif %}">
+<div class="scene">
+<div class="t0710-white"></div>
+<div class="t0710-out"></div>
+<div class="t0710-disk t0710-blue"></div>
+<div class="t0710-disk t0710-sand"></div>
+<div class="t0710-grad"></div>
+<div class="t0710-body"></div>
+<div class="t0710-p"></div>
+<div class="t0710-ring t0710-g1"></div>
+<div class="t0710-ring t0710-g2"></div>
+<div class="t0710-ring t0710-g3"></div>
+<div class="t0710-box t0710-bb"></div>
+<div class="t0710-box t0710-pb"></div>
+<div class="t0710-dot"></div>
+<span class="zlab t0710-l t0710-l1" data-l="1">radial-gradient(1Q, …)</span>
+<span class="zlab t0710-l t0710-l2" data-l="1">{% if include.lang == "fr" %}un cercle de 0,945px, centré en (200, 150){% else %}a 0.945px circle, centered at (200, 150){% endif %}</span>
+<span class="zlab t0710-l t0710-l1" data-l="2">{% if include.lang == "fr" %}sable → 85,04 (90Q){% else %}sand → 85.04 (90Q){% endif %}</span>
+<span class="zlab t0710-l t0710-l2" data-l="2">{% if include.lang == "fr" %}bleu 85,04 → 115px{% else %}blue 85.04 → 115px{% endif %}</span>
+<span class="zlab t0710-l t0710-l1" data-l="3">{% if include.lang == "fr" %}#b85c : 100 % = 0,945 → 115px{% else %}#b85c: 100% = 0.945 → 115px{% endif %}</span>
+<span class="zlab t0710-l t0710-l2" data-l="3">{% if include.lang == "fr" %}80 % sur le blanc = #c9a077{% else %}80% over white = #c9a077{% endif %}</span>
+<span class="zlab t0710-l t0710-l1" data-l="4">body · margin: 141 45% 0</span>
+<span class="zlab t0710-l t0710-l2" data-l="4">{% if include.lang == "fr" %}40 × 143 en (180, 141) · tout sable{% else %}40 × 143 at (180, 141) · all sand{% endif %}</span>
+<span class="zlab t0710-l t0710-l1" data-l="5">{% if include.lang == "fr" %}p · une espace insécable{% else %}p · a no-break space{% endif %}</span>
+<span class="zlab t0710-l t0710-l2" data-l="5">{% if include.lang == "fr" %}40 × 18 en (180, 141) · tout sable{% else %}40 × 18 at (180, 141) · all sand{% endif %}</span>
+<span class="zlab t0710-l t0710-l1" data-l="6">p · scale: 9 1.1</span>
+<span class="zlab t0710-l t0710-l2" data-l="6">{% if include.lang == "fr" %}360 × 19,8 en (20, 140,1){% else %}360 × 19.8 at (20, 140.1){% endif %}</span>
+</div>
+</div>
+<div class="legend"><span><i style="--c:var(--t0710-c1)"></i>body</span><span><i style="--c:var(--t0710-c2)"></i>p</span><span><i style="--c:transparent;outline:2px dashed currentColor;outline-offset:-2px"></i>{% if include.lang == "fr" %}boîtes{% else %}boxes{% endif %}</span><span><i style="--c:transparent;outline:2px dashed currentColor;outline-offset:-2px;border-radius:50%"></i>{% if include.lang == "fr" %}disque sable de 85,04px{% else %}85.04px sand disk{% endif %}</span></div>
+</div>
+<div class="anim-side">
+<pre class="code" aria-hidden="true"><span data-on="5">&lt;p>&nbsp;</span>&lt;style>*{<span data-on="1 4 5">background:</span><span data-on="1">radial-gradient(1Q</span>,<span data-on="2">#c9a077,90Q,#273e7c 0 115px</span>,<span data-on="3">#b85c</span>);<span data-on="4">+*{margin:141 45%0</span>;<span data-on="6">*{scale:9 1.1</span></pre>
+<div class="now" aria-live="polite">
+<div class="caps">
+{%- if include.lang == "fr" %}
+<div class="cap" data-t="0" data-step="Le dégradé"><h3>1. Un cercle de 1Q</h3><p>Le <code>*</code> donne le même fond à tous les éléments. html est l'élément racine : son fond couvre le canevas, et son dégradé est centré en (200, 150). <code>radial-gradient(1Q,</code> en fait un cercle de 1Q de rayon, 0,945px. Pour l'instant, on voit le blanc de la page.</p></div>
+<div class="cap" data-t="4.5" data-step="Sable puis bleu"><h3>2. Du sable, puis du bleu</h3><p>Le sable part du centre. <code>90Q</code>, entre deux virgules, est un repère de transition à 85,04px. Le bleu suivant demande 0, ramené à 85,04 : le sable s'arrête net. Le bleu va ensuite jusqu'à 115px. Les positions en px ne dépendent pas de la taille du cercle.</p></div>
+<div class="cap" data-t="9.5" data-step="#b85c"><h3>3. La dernière couleur</h3><p><code>#b85c</code> n'a pas de position : elle se met à 100 %, la fin du rayon, 0,945px. C'est avant 115px, donc elle passe à 115px : le bleu s'arrête net. Au-delà, c'est un sable à 80 % d'opacité. Posé sur le blanc de la page, il donne le même sable que le centre.</p></div>
+<div class="cap" data-t="14" data-step="body"><h3>4. body coupe le bas</h3><p><code>+*</code> se lit <code>* + *</code> : un élément qui suit un autre élément, ici body, après head. <code>margin:141 45%0</code> lui laisse 40px de large, de x = 180 à 220. Il a le même dégradé, centré sur lui : ses coins sont à 74,24px du centre, avant 85,04. Il est tout sable, et coupe l'anneau en bas.</p></div>
+<div class="cap" data-t="19" data-step="p"><h3>5. Le p, une ligne de 18px</h3><p>Le p contient une espace insécable : elle ne disparaît pas, et le p a une ligne de 18px. Il fait 40 × 18 en (180, 141), et son centre tombe en (200, 150), le centre du canevas. Même dégradé : ses coins sont à 21,93px de son centre, il est tout sable.</p></div>
+<div class="cap" data-t="23.5" data-step="scale"><h3>6. Étiré par scale</h3><p>Le <code>*</code> imbriqué vise ce qui est dans body : le p. <code>scale:9 1.1</code> l'étire autour de son centre : 360 × 19,8, de x = 20 à 380 et de y = 140,1 à 159,9. Son fond s'étire avec lui et reste tout sable : il coupe l'anneau à gauche et à droite.</p></div>
+<div class="cap" data-t="28" data-step="Résultat" data-live="110 caractères · 100 % identique"><h3>7. Résultat : 110 caractères</h3><p>Un seul dégradé, donné à html, body et p. Sur le canevas, il dessine l'anneau. Sur body et sur le p, trop petits pour atteindre le bleu, il ne peint que du sable : trois coupes dans l'anneau.</p></div>
+{%- else %}
+<div class="cap" data-t="0" data-step="The gradient"><h3>1. A 1Q circle</h3><p>The <code>*</code> gives every element the same background. html is the root element: its background covers the canvas, and its gradient is centered at (200, 150). <code>radial-gradient(1Q,</code> makes it a circle with a 1Q ray, 0.945px. For now, the page's white shows.</p></div>
+<div class="cap" data-t="4.5" data-step="Sand, then blue"><h3>2. Sand, then blue</h3><p>The sand starts at the center. <code>90Q</code>, between two commas, is a transition hint at 85.04px. The next blue asks for 0, moved up to 85.04: the sand stops sharp. Then the blue goes on to 115px. Positions in px do not depend on the circle's size.</p></div>
+<div class="cap" data-t="9.5" data-step="#b85c"><h3>3. The last color</h3><p><code>#b85c</code> has no position: it goes at 100%, the end of the ray, 0.945px. That is before 115px, so it moves to 115px: the blue stops sharp. Beyond, it is a sand at 80% opacity. Over the page's white, it gives the same sand as the center.</p></div>
+<div class="cap" data-t="14" data-step="body"><h3>4. body cuts the bottom</h3><p><code>+*</code> reads <code>* + *</code>: an element that follows another element, here body, after head. <code>margin:141 45%0</code> leaves it 40px wide, from x = 180 to 220. It has the same gradient, centered on itself: its corners are 74.24px from the center, short of 85.04. It is all sand, and cuts the ring at the bottom.</p></div>
+<div class="cap" data-t="19" data-step="p"><h3>5. The p, one 18px line</h3><p>The p holds a no-break space: it does not collapse, and the p gets one 18px line. It is 40 × 18 at (180, 141), and its center falls at (200, 150), the canvas center. Same gradient: its corners are 21.93px from its center, it is all sand.</p></div>
+<div class="cap" data-t="23.5" data-step="scale"><h3>6. Stretched by scale</h3><p>The nested <code>*</code> selects what is inside body: the p. <code>scale:9 1.1</code> stretches it around its center: 360 × 19.8, from x = 20 to 380 and from y = 140.1 to 159.9. Its background stretches with it and stays all sand: it cuts the ring on the left and right.</p></div>
+<div class="cap" data-t="28" data-step="Result" data-live="110 characters · 100% match"><h3>7. Result: 110 characters</h3><p>One gradient, given to html, body and the p. On the canvas, it draws the ring. On body and the p, too small to reach the blue, it only paints sand: three cuts in the ring.</p></div>
+{%- endif %}
+</div>
+<div class="live"></div>
+</div>
+</div>
+<script>
+(window.AnimScenes = window.AnimScenes || {}).t0710 = (fig) => {
+  const fr = document.documentElement.lang === 'fr';
+  const $ = (s) => fig.querySelector(s);
+  const $$ = (s) => [...fig.querySelectorAll(s)];
+  const live = $('.live');
+  const ease = (x) => (x < 0.5 ? 4 * x * x * x : 1 - Math.pow(-2 * x + 2, 3) / 2);
+  const pr = (t, [a, b]) => ease(Math.min(1, Math.max(0, (t - a) / (b - a))));
+  const win = (t, a, b) => Math.min(pr(t, [a, a + 0.5]), 1 - pr(t, [b - 0.2, b]));
+  const c = fr ? ' :' : ':';
+  const num = (v, d = 0) => { const s = Math.abs(v).toFixed(d); return (v < -0.005 ? '−' : '') + (fr ? s.replace('.', ',') : s); };
+  // Measured on the official code in local Chrome (quirks mode, 400 × 300), getBoundingClientRect:
+  // html (0, 0) 400 × 300, its background goes to the canvas. body (180, 141) 40 × 143.
+  // p before scale (180, 141) 40 × 18; with scale:9 1.1, (20, 140.1) 360 × 19.8. 90Q = 85.039px, 1Q = 0.945px.
+  const R1 = 85.039, R2 = 115, FIN = 28;
+  const grad = $('.t0710-grad'), blue = $('.t0710-blue'), sand = $('.t0710-sand'), out = $('.t0710-out');
+  const body = $('.t0710-body'), p = $('.t0710-p'), dot = $('.t0710-dot');
+  const g1 = $('.t0710-g1'), g2 = $('.t0710-g2'), g3 = $('.t0710-g3');
+  const bb = $('.t0710-bb'), pb = $('.t0710-pb');
+  const L = (k) => $$(`.t0710-l[data-l="${k}"]`);
+  const disk = (e, cx, cy, r) => { e.style.left = `${cx - r}px`; e.style.top = `${cy - r}px`; e.style.width = `${2 * r}px`; e.style.height = `${2 * r}px`; };
+  const put = (e, x, y, w, h) => { e.style.left = `${x}px`; e.style.top = `${y}px`; e.style.width = `${w}px`; e.style.height = `${h}px`; };
+  return (t, step) => {
+    const teach = fig.dataset.teach === '1' && t < FIN;
+    // 1. the 1Q circle, a dot at the center
+    dot.style.opacity = pr(t, [0.3, 0.8]) * (1 - pr(t, [4.3, 4.8]));
+    // 2. sand grows to 85.04, then blue from 85.04 to 115
+    const ks = pr(t, [5, 6.8]), kb = pr(t, [7, 8.8]);
+    disk(sand, 200, 150, R1 * ks);
+    disk(blue, 200, 150, kb > 0 ? R1 + (R2 - R1) * kb : 0);
+    // 3. #b85c beyond 115px, 80% over the white page
+    out.style.opacity = pr(t, [10, 11.8]);
+    // Once the ring is whole, the official gradient itself takes over (same picture, same edges as the code).
+    const gOn = t >= 11.8;
+    grad.style.opacity = gOn ? 1 : 0;
+    if (gOn) { out.style.opacity = 0; blue.style.opacity = 0; sand.style.opacity = 0; } else { blue.style.opacity = 1; sand.style.opacity = 1; }
+    // 4. body grows down from y = 141 to 284
+    const kB = pr(t, [14.5, 16.5]);
+    body.style.height = `${143 * kB}px`;
+    body.style.opacity = pr(t, [14.3, 14.5]);
+    put(bb, 180, 141, 40, 143 * kB);
+    bb.style.opacity = 0.9 * pr(t, [14.3, 14.5]) * (1 - pr(t, [FIN - 0.5, FIN]));
+    // body's own sand disk: radius 85.04 around its center (200, 212.5)
+    disk(g1, 200, 212.5, R1);
+    g1.style.opacity = 0.9 * win(t, 16.8, 19);
+    // 5. the p, 40 × 18 at (180, 141); its own sand disk is html's
+    p.style.opacity = pr(t, [19.4, 19.9]);
+    disk(g2, 200, 150, R1);
+    g2.style.opacity = 0.9 * win(t, 20.3, 23.5);
+    // 6. scale:9 1.1 around (200, 150)
+    const kS = pr(t, [24, 26.2]);
+    const sx = 1 + 8 * kS, sy = 1 + 0.1 * kS;
+    p.style.transform = `scale(${sx}, ${sy})`;
+    put(pb, 200 - 20 * sx, 150 - 9 * sy, 40 * sx, 18 * sy);
+    pb.style.opacity = 0.9 * pr(t, [19.4, 19.9]) * (1 - pr(t, [FIN - 0.5, FIN]));
+    // outer guide for the 115px edge, step 3
+    disk(g3, 200, 150, R2);
+    g3.style.opacity = 0.9 * win(t, 9.8, 14);
+    body.style.background = teach ? 'var(--t0710-c1)' : 'var(--t0710-sand)';
+    p.style.background = teach ? 'var(--t0710-c2)' : 'var(--t0710-sand)';
+    [[0.3, 4.5], [4.8, 9.5], [9.8, 14], [14.3, 19], [19.3, 23.5], [23.8, 28]].forEach(([a, z], k) => L(k + 1).forEach((e) => (e.style.opacity = win(t, a, z))));
+    let txt;
+    if (step === 0) txt = fr ? `rayon du cercle${c} 1Q = 0,945px` : `circle ray${c} 1Q = 0.945px`;
+    else if (step === 1) txt = kb > 0 ? (fr ? `bleu jusqu'à ${num(R1 + (R2 - R1) * kb, 2)}px` : `blue up to ${num(R1 + (R2 - R1) * kb, 2)}px`) : (fr ? `sable jusqu'à ${num(R1 * ks, 2)}px` : `sand up to ${num(R1 * ks, 2)}px`);
+    else if (step === 2) txt = fr ? `#b85c au-delà de 115px · opacité ${num(80 * pr(t, [10, 11.8]), 0)} %` : `#b85c beyond 115px · opacity ${num(80 * pr(t, [10, 11.8]), 0)}%`;
+    else if (step === 3) txt = fr ? `body${c} 40 × ${num(143 * kB, 0)}` : `body${c} 40 × ${num(143 * kB, 0)}`;
+    else if (step === 4) txt = fr ? `p${c} 40 × 18, centre (200, 150)` : `p${c} 40 × 18, center (200, 150)`;
+    else if (step === 5) txt = fr ? `p${c} ${num(40 * sx, 1)} × ${num(18 * sy, 2)}` : `p${c} ${num(40 * sx, 1)} × ${num(18 * sy, 2)}`;
+    else txt = $$('.caps .cap')[6].dataset.live || '';
+    live.textContent = txt;
+  };
+};
+</script>
+</figure>
