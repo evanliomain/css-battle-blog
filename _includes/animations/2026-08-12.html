@@ -1,0 +1,142 @@
+<figure class="anim t0812" data-duration="35" data-scene="t0812" data-wide="-50 -40 500 380" data-off-label="-46 304" style="--bg:#469dba">
+<style>
+.t0812{--t0812-bg:#469dba;--t0812-dk:#394257;--t0812-ye:#fae29e;--t0812-bo:#8f6fd1;--t0812-fr:#ffffff;--t0812-tq:#ff5c93;--t0812-bq:#a6f26b}
+.t0812 .t0812-body{left:0;top:0;width:400px;height:300px;background:var(--t0812-bo);opacity:0;z-index:1}
+.t0812 .t0812-img,.t0812 .t0812-q{left:0;top:0;transform-origin:0 0;z-index:2}
+.t0812 .t0812-img{width:400px;height:300px;opacity:0;background:radial-gradient(52px 45.354px at 200px 150px,#0000 89.28px,var(--t0812-ye) 0 144.56px,#0000 0)}
+.t0812 .t0812-q{width:200px;height:150px;opacity:0;outline-offset:-2px}
+.t0812 .t0812-q[data-i="0"]{background:radial-gradient(52px 45.354px at 200px 150px,#0000 89.28px,var(--t0812-ye) 0 144.56px,#0000 0)}
+.t0812 .t0812-q[data-i="1"]{background:radial-gradient(52px 45.354px at 0 150px,#0000 89.28px,var(--t0812-ye) 0 144.56px,#0000 0)}
+.t0812 .t0812-q[data-i="2"]{background:radial-gradient(52px 45.354px at 200px 0,#0000 89.28px,var(--t0812-ye) 0 144.56px,#0000 0)}
+.t0812 .t0812-q[data-i="3"]{background:radial-gradient(52px 45.354px at 0 0,#0000 89.28px,var(--t0812-ye) 0 144.56px,#0000 0)}
+.t0812 .t0812-arm{top:25px;height:120px;width:0;background:var(--t0812-dk);z-index:4}
+.t0812 .t0812-frame{left:0;top:0;width:400px;height:300px;box-sizing:border-box;border:2px dashed var(--t0812-fr);opacity:0;z-index:5}
+.t0812 .t0812-cut{background:repeating-linear-gradient(var(--t0812-fr) 0 6px,#0000 0 10px);opacity:0;z-index:6}
+.t0812 .t0812-cut[data-c="v"]{left:199px;top:0;width:2px;height:300px}
+.t0812 .t0812-cut[data-c="h"]{left:0;top:149px;width:400px;height:2px;background:repeating-linear-gradient(90deg,var(--t0812-fr) 0 6px,#0000 0 10px)}
+.t0812 .zlab{color:#14142a;background:rgb(255 255 255 / .92);padding:1px 5px;border-radius:3px}
+.t0812 .t0812-l{left:118px;top:56px;opacity:0;z-index:8}
+.t0812 .t0812-l[data-l="3"]{left:122px;top:104px}
+.t0812 .t0812-l[data-l="4"]{left:118px;top:98px}
+</style>
+<div class="anim-col">
+<div class="stage" role="img" aria-label="{% if include.lang == "fr" %}Animation : & vise html, et le * imbriqué vise body ; avec margin:25 50 155, body fait 300 × 120 en (50 ; 25), et son fond #469DBA peint tout le canevas ; border-inline lui donne deux bordures de 50px, les deux barres bleu nuit ; border-image, sur html qui n'a pas de bordure, prend un radial-gradient de 400 × 300 : un anneau jaune centré en (200 ; 150) ; la tranche 50 % le coupe en quatre quarts de 200 × 150 ; la largeur 0 % en haut écrase les deux quarts du haut ; les deux quarts du bas vont dans les coins du bas, 180 × 156, en (0 ; 144) et (220 ; 144) : deux arcs presque ronds, séparés par un vide de 40px{% else %}Animation: & targets html, and the nested * targets body; with margin:25 50 155, body is 300 × 120 at (50, 25), and its #469DBA background paints the whole canvas; border-inline gives it two 50px borders, the two dark bars; border-image, on html, which has no border, takes a 400 × 300 radial-gradient: a yellow ring centered at (200, 150); the 50% slice cuts it into four 200 × 150 quarters; the 0% width at the top squashes the two top quarters; the two bottom quarters go into the bottom corners, 180 × 156, at (0, 144) and (220, 144): two almost round arcs, with a 40px gap between them{% endif %}">
+<div class="scene">
+<div class="t0812-body"></div>
+<div class="t0812-img"></div>
+<div class="t0812-q" data-i="0"></div>
+<div class="t0812-q" data-i="1"></div>
+<div class="t0812-q" data-i="2"></div>
+<div class="t0812-q" data-i="3"></div>
+<div class="t0812-arm" data-a="0" style="left:50px"></div>
+<div class="t0812-arm" data-a="1" style="left:350px"></div>
+<div class="t0812-frame"></div>
+<div class="t0812-cut" data-c="v"></div>
+<div class="t0812-cut" data-c="h"></div>
+<span class="zlab t0812-l" data-l="1">400 − 2 × 50 = 300<br>300 − 25 − 155 = 120</span>
+<span class="zlab t0812-l" data-l="2">{% if include.lang == "fr" %}53q = 50,08px → 50px{% else %}53q = 50.08px → 50px{% endif %}</span>
+<span class="zlab t0812-l" data-l="3">{% if include.lang == "fr" %}13 % × 400 = 52px<br>48q = 45,35px<br>0,93in = 89,28px<br>278 % × 52 = 144,56px{% else %}13% × 400 = 52px<br>48q = 45.35px<br>0.93in = 89.28px<br>278% × 52 = 144.56px{% endif %}</span>
+<span class="zlab t0812-l" data-l="4">{% if include.lang == "fr" %}50 % → 4 × (200 × 150){% else %}50% → 4 × (200 × 150){% endif %}</span>
+<span class="zlab t0812-l" data-l="5">{% if include.lang == "fr" %}45 % × 400 = 180<br>0 % × 300 = 0{% else %}45% × 400 = 180<br>0% × 300 = 0{% endif %}</span>
+<span class="zlab t0812-l" data-l="6">{% if include.lang == "fr" %}52 % × 300 = 156<br>× 0,9 · × 1,04{% else %}52% × 300 = 156<br>× 0.9 · × 1.04{% endif %}</span>
+</div>
+</div>
+<div class="legend"><span><i style="--c:var(--t0812-bo)"></i>{% if include.lang == "fr" %}body : #469DBA{% else %}body: #469DBA{% endif %}</span><span><i style="--c:var(--t0812-dk)"></i>border-inline</span><span><i style="--c:var(--t0812-ye)"></i>{% if include.lang == "fr" %}l'image : radial-gradient{% else %}the image: radial-gradient{% endif %}</span><span><i style="--c:var(--t0812-bg);outline:2px dashed var(--t0812-fr);outline-offset:-2px"></i>{% if include.lang == "fr" %}html, 400 × 300{% else %}html, 400 × 300{% endif %}</span><span><i style="--c:transparent;outline:2px dashed var(--t0812-tq);outline-offset:-2px"></i>{% if include.lang == "fr" %}quarts du haut{% else %}top quarters{% endif %}</span><span><i style="--c:transparent;outline:2px dashed var(--t0812-bq);outline-offset:-2px"></i>{% if include.lang == "fr" %}quarts du bas{% else %}bottom quarters{% endif %}</span></div>
+</div>
+<div class="anim-side">
+<pre class="code" aria-hidden="true">&lt;style><span data-on="1 3">&amp;{</span><span data-on="1">*{</span><span data-on="2">border-inline:solid 53q#394257</span>;<span data-on="1">background:#469DBA;margin:25 50 155</span>}<span data-on="3 4 5 6">border-image:<span data-on="4" data-tone="2">50%</span>/<span data-on="5" data-tone="2">0%</span><span data-on="5 6" data-tone="2">45%</span><span data-on="6" data-tone="2">52%</span><span data-on="3">radial-gradient(13%48q,#0000.93in,#FAE29E 0 278%,#0000</span></span></pre>
+<div class="now" aria-live="polite">
+<div class="caps">
+{%- if include.lang == "fr" %}
+<div class="cap" data-t="0" data-step="body, 300 × 120"><h3>1. body, 300 × 120</h3><p>En haut de la feuille de style, <code>&amp;</code> désigne la racine : html. Le <code>*{</code> imbriqué vise tout élément dans html : head, style et body. Seul body s'affiche. En mode quirks, <code>margin:25 50 155</code> est en px. body fait 400 − 2 × 50 = 300px de large. Il remplit la hauteur de html moins ses marges : 300 − 25 − 155 = 120px, en (50 ; 25). html n'a pas de fond : le <code>#469DBA</code> de body peint tout le canevas.</p></div>
+<div class="cap" data-t="5" data-step="Deux barres"><h3>2. Deux barres bleu nuit</h3><p><code>border-inline</code> donne à body une bordure à gauche et une à droite, en <code>solid</code> et <code>#394257</code>. <code>53q</code>, c'est 53 quarts de millimètre : 50,08px. Chrome dessine les bordures en pixels entiers : getComputedStyle donne 50px. Les barres vont de x = 50 à 100 et de 300 à 350, et de y = 25 à 145.</p></div>
+<div class="cap" data-t="10" data-step="L'image"><h3>3. Une image de bordure, sans bordure</h3><p><code>border-image</code> est sur html, qui n'a aucune bordure. Ses largeurs sont en %, une part de la boîte : Chrome peint l'image quand même. L'image est le radial-gradient, à la taille de html : 400 × 300. L'ellipse fait 13 % de 400 = 52px en largeur et 48q = 45,35px en hauteur. Les arrêts se mesurent en largeur : transparent jusqu'à 89,28px, jaune jusqu'à 278 % × 52 = 144,56px. En hauteur, l'anneau va de 77,87 à 126,08px.</p></div>
+<div class="cap" data-t="15" data-step="Quatre quarts"><h3>4. La tranche coupe l'image en quatre</h3><p>La tranche <code>50%</code> coupe l'image à 50 % de chaque bord : 200px à gauche et à droite, 150px en haut et en bas. Les quatre coins sont les quatre quarts de l'image, 200 × 150 chacun. Les bords et le milieu font 0 de large ou 0 de haut : ils ne contiennent rien.</p></div>
+<div class="cap" data-t="20" data-step="Le haut disparaît"><h3>5. Les quarts du haut disparaissent</h3><p>Les largeurs <code>0%45%52%</code> se lisent : 0 % en haut, 45 % à gauche et à droite, 52 % en bas. Les coins du haut font 45 % × 400 = 180px de large, mais 0px de haut. Les deux quarts du haut y sont écrasés : il n'en reste rien.</p></div>
+<div class="cap" data-t="25" data-step="Les coins du bas"><h3>6. Les quarts du bas vont dans les coins</h3><p>Les coins du bas font 180 × 156 (52 % × 300), en (0 ; 144) et (220 ; 144). Chaque quart du bas y est étiré : × 0,9 en largeur, × 1,04 en hauteur. Le centre de l'anneau arrive en (180 ; 144) et en (220 ; 144). Le jaune va de 80,35 à 130,10px en largeur et de 80,98 à 131,13px en hauteur : presque un cercle. Entre les deux, x = 180 à 220, le bord du bas est vide : c'est le vide du U.</p></div>
+<div class="cap" data-t="30" data-step="Résultat" data-live="157 caractères · 100 % identique"><h3>7. Résultat : 157 caractères</h3><p>body est peint par-dessus l'image de bordure de html : ses barres couvrent la ligne y = 144, où le jaune commence. Une seule image, coupée en quatre, donne les deux arcs. Les deux bordures de body donnent les barres.</p></div>
+{%- else %}
+<div class="cap" data-t="0" data-step="body, 300 × 120"><h3>1. body, 300 × 120</h3><p>At the top of the style sheet, <code>&amp;</code> stands for the root: html. The nested <code>*{</code> targets every element inside html: head, style and body. Only body is displayed. In quirks mode, <code>margin:25 50 155</code> is in px. body is 400 − 2 × 50 = 300px wide. It fills the height of html minus its margins: 300 − 25 − 155 = 120px, at (50, 25). html has no background, so body's <code>#469DBA</code> paints the whole canvas.</p></div>
+<div class="cap" data-t="5" data-step="Two bars"><h3>2. Two dark bars</h3><p><code>border-inline</code> gives body a left and a right border, <code>solid</code> and <code>#394257</code>. <code>53q</code> is 53 quarter-millimeters: 50.08px. Chrome draws borders on whole pixels: getComputedStyle gives 50px. The bars run from x = 50 to 100 and 300 to 350, and from y = 25 to 145.</p></div>
+<div class="cap" data-t="10" data-step="The image"><h3>3. A border image, without a border</h3><p><code>border-image</code> is on html, which has no border at all. Its widths are percentages, a share of the box, so Chrome paints the image anyway. The image is the radial-gradient, at the size of html: 400 × 300. The ellipse is 13% of 400 = 52px across and 48q = 45.35px down. The stops are measured across: transparent up to 89.28px, yellow up to 278% × 52 = 144.56px. Down, the ring runs from 77.87 to 126.08px.</p></div>
+<div class="cap" data-t="15" data-step="Four quarters"><h3>4. The slice cuts the image in four</h3><p>The slice <code>50%</code> cuts the image 50% from each edge: 200px from the left and right, 150px from the top and bottom. The four corners are the four quarters of the image, 200 × 150 each. The edges and the middle are 0 wide or 0 tall: they hold nothing.</p></div>
+<div class="cap" data-t="20" data-step="Top goes away"><h3>5. The top quarters go away</h3><p>The widths <code>0%45%52%</code> read: 0% at the top, 45% on the left and right, 52% at the bottom. The top corners are 45% × 400 = 180px wide, but 0px tall. The two top quarters are squashed into them: nothing is left.</p></div>
+<div class="cap" data-t="25" data-step="Bottom corners"><h3>6. The bottom quarters go into the corners</h3><p>The bottom corners are 180 × 156 (52% × 300), at (0, 144) and (220, 144). Each bottom quarter is stretched to fit: × 0.9 across, × 1.04 down. The center of the ring lands at (180, 144) and (220, 144). The yellow runs from 80.35 to 130.10px across and from 80.98 to 131.13px down: almost a circle. Between them, x = 180 to 220, the bottom edge is empty: that is the gap of the U.</p></div>
+<div class="cap" data-t="30" data-step="Result" data-live="157 characters · 100% match"><h3>7. Result: 157 characters</h3><p>body is painted over html's border image: its bars cover the row y = 144, where the yellow starts. One image, cut in four, gives the two arcs. body's two borders give the bars.</p></div>
+{%- endif %}
+</div>
+<div class="live"></div>
+</div>
+</div>
+<script>
+(window.AnimScenes = window.AnimScenes || {}).t0812 = (fig) => {
+  const fr = document.documentElement.lang === 'fr';
+  const $ = (s) => fig.querySelector(s);
+  const $$ = (s) => [...fig.querySelectorAll(s)];
+  const live = $('.live');
+  const ease = (x) => (x < 0.5 ? 4 * x * x * x : 1 - Math.pow(-2 * x + 2, 3) / 2);
+  const pr = (t, [a, b]) => ease(Math.min(1, Math.max(0, (t - a) / (b - a))));
+  const win = (t, a, b) => Math.min(pr(t, [a, a + 0.5]), 1 - pr(t, [b - 0.4, b]));
+  const lerp = (a, b, k) => a + (b - a) * k;
+  const lr = (A, B, k) => A.map((v, i) => lerp(v, B[i], k));
+  const n2 = (v) => (fr ? v.toFixed(2).replace('.', ',') : v.toFixed(2));
+  const c = fr ? ' :' : ':';
+  const sep = fr ? ' ;' : ',';
+  // Measured on the official code in local Chrome (quirks mode):
+  // body (50, 25) 300 × 120, border-left/right 50px (53q = 50.0781px); html 400 × 300, border-style none,
+  // border-image 50% / 0% 45% 52%: only the bottom corners show, (0,144)-(180,300) and (220,144)-(400,300)
+  // (checked with a four-color conic-gradient). The gradient alone: ring 89.28..144.56px across, 77.87..126.08px down,
+  // centered at (200, 150). Final ring: center (180|220, 144), 80.35..130.10 across, 80.98..131.13 down.
+  const FIN = 30;
+  const body = $('.t0812-body'), img = $('.t0812-img'), frame = $('.t0812-frame');
+  const qs = $$('.t0812-q'), arms = $$('.t0812-arm'), cuts = $$('.t0812-cut');
+  // quarter rectangles [x, y, w, h]: source, split apart, final
+  const A = [[0, 0, 200, 150], [200, 0, 200, 150], [0, 150, 200, 150], [200, 150, 200, 150]];
+  const B = [[0, 0, 192, 144], [208, 0, 192, 144], [0, 156, 192, 144], [208, 156, 192, 144]];
+  const C = [[0, 0, 180, 0], [220, 0, 180, 0], [0, 144, 180, 156], [220, 144, 180, 156]];
+  const put = (e, [x, y, w, h]) => { e.style.transform = `translate(${x}px,${y}px) scale(${w / 200},${h / 150})`; };
+  return (t, step) => {
+    const teach = fig.dataset.teach === '1' && t < FIN;
+    // 1. body
+    const k1 = pr(t, [0.5, 2.5]);
+    const bx = lerp(0, 50, k1), by = lerp(0, 25, k1), bw = lerp(400, 300, k1), bh = lerp(300, 120, k1);
+    Object.assign(body.style, { left: `${bx}px`, top: `${by}px`, width: `${bw}px`, height: `${bh}px` });
+    body.style.opacity = teach ? Math.min(pr(t, [0.2, 0.8]), 1 - pr(t, [10.2, 10.8])) : 0;
+    // 2. the bars, dimmed while the image is shown, back on top at step 6
+    const k2 = pr(t, [5.5, 7.5]);
+    const aw = 50 * k2;
+    arms[0].style.width = `${aw}px`;
+    arms[1].style.left = `${350 - aw}px`;
+    arms[1].style.width = `${aw}px`;
+    const dim = Math.min(pr(t, [10.3, 11]), 1 - pr(t, [27.9, 28.7]));
+    arms.forEach((e) => (e.style.opacity = 1 - 0.7 * dim));
+    // 3. the whole image, then 4. the four quarters
+    const k4 = pr(t, [15.6, 17.4]);
+    const split = t >= 15.6;
+    img.style.opacity = split ? 0 : pr(t, [10.3, 11.3]);
+    const k5 = pr(t, [20.6, 22.8]);
+    const k6 = pr(t, [25.6, 27.8]);
+    qs.forEach((e, i) => {
+      let r = lr(A[i], B[i], k4);
+      if (i < 2) r = lr(r, C[i], k5);
+      else r = lr(r, C[i], k6);
+      put(e, r);
+      e.style.opacity = split && r[3] > 0.3 ? 1 : 0;
+      e.style.outline = teach && split ? `2px dashed var(--t0812-${i < 2 ? 'tq' : 'bq'})` : 'none';
+    });
+    frame.style.opacity = teach ? Math.min(pr(t, [10.3, 10.9]), 1 - pr(t, [29.2, 29.8])) : 0;
+    cuts.forEach((e) => (e.style.opacity = win(t, 15.1, 17.2)));
+    [[0.2, 4.8], [5.2, 9.8], [10.2, 14.8], [15.2, 19.8], [20.2, 24.8], [25.2, 29.8]].forEach(([a, z], i) => ($(`.t0812-l[data-l="${i + 1}"]`).style.opacity = win(t, a, z)));
+    let txt = '';
+    if (step === 0) txt = `body${c} (${n2(bx)}${sep} ${n2(by)}) · ${n2(bw)} × ${n2(bh)}`;
+    else if (step === 1) txt = `border-inline${c} ${n2(aw)}px`;
+    else if (step === 2) txt = `image${c} 400 × 300 · ${fr ? 'anneau' : 'ring'} 89${fr ? ',' : '.'}28 → 144${fr ? ',' : '.'}56px`;
+    else if (step === 3) txt = fr ? 'tranche 50 % : 4 × (200 × 150)' : 'slice 50%: 4 × (200 × 150)';
+    else if (step === 4) { const r = lr(B[0], C[0], k5); txt = `${fr ? 'quarts du haut' : 'top quarters'}${c} ${n2(r[2])} × ${n2(r[3])}`; }
+    else if (step === 5) { const r = lr(B[2], C[2], k6); txt = `${fr ? 'quarts du bas' : 'bottom quarters'}${c} ${n2(r[2])} × ${n2(r[3])} ${fr ? 'en' : 'at'} (${n2(r[0])}${sep} ${n2(r[1])})`; }
+    else txt = $$('.caps .cap')[6].dataset.live || '';
+    live.textContent = txt;
+  };
+};
+</script>
+</figure>
