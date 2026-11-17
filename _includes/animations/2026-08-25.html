@@ -1,0 +1,102 @@
+<figure class="anim t0825" data-duration="28" data-scene="t0825" data-wide="-100 -230 600 600" data-off-label="-94 326" style="--bg:#3f6d43">
+<style>
+.t0825{--t0825-cream:#e5ca72;--t0825-bg:#3f6d43;--t0825-mask:#3e6d43;--t0825-tmask:#505a80;--t0825-c1:#3f8cff;--t0825-c2:#ff5a4f;--t0825-c3:#b45cff;--t0825-c4:#17c3b0}
+.t0825 .t0825-html{left:0;top:0;width:400px;height:300px;background:#fff}
+.t0825 .t0825-e{left:60px;top:135px;width:280px;height:30px;transform-origin:140px 15px;opacity:0}
+.t0825 .zlab{color:#fff;background:rgb(16 26 20 / .9);padding:1px 5px;border-radius:3px}
+.t0825 .t0825-l{left:6px;top:281px;opacity:0}
+.t0825[data-view="wide"] .t0825-l{left:-94px;top:-224px}
+</style>
+<div class="anim-col">
+<div class="stage" role="img" aria-label="{% if include.lang == "fr" %}Animation : l'ombre interne de html, décalée de 9in, le remplit de vert ; le body, 280 × 30, est centré et tourné d'un quart de tour par offset:ray(0deg) : la barre verticale ; deux ombres crème font le carré en haut à droite et une ligne du dièse ; une ombre verte décalée de 484q coupe ce qui dépasse en haut ; dl, dl et p reçoivent la même liste et tournent chacun d'un quart de tour de plus : le même dessin, quatre fois, tourné de 90° à chaque fois{% else %}Animation: the html's inset shadow, moved by 9in, fills it with green; the body, 280 × 30, is centered and turned a quarter turn by offset:ray(0deg): the vertical bar; two cream shadows make the top-right square and one line of the hash; a green shadow moved by 484q cuts what sticks out at the top; dl, dl and p get the same list and each turn one more quarter: the same drawing, four times, turned 90° each time{% endif %}">
+<div class="scene">
+<div class="t0825-html"></div>
+<div class="t0825-e" data-e="1"></div>
+<div class="t0825-e" data-e="2"></div>
+<div class="t0825-e" data-e="3"></div>
+<div class="t0825-e" data-e="4"></div>
+<span class="zlab t0825-l" data-l="1">inset 0 9in → 864px</span>
+<span class="zlab t0825-l" data-l="2">body 280 × 30 · ray(0deg) → −90°</span>
+<span class="zlab t0825-l" data-l="3">{% if include.lang == "fr" %}15, 40 · 195, 80 · 32q = 30,24{% else %}15, 40 · 195, 80 · 32q = 30.24{% endif %}</span>
+<span class="zlab t0825-l" data-l="4">{% if include.lang == "fr" %}484q = 457,32 · 2in = 192{% else %}484q = 457.32 · 2in = 192{% endif %}</span>
+<span class="zlab t0825-l" data-l="5">dl · −90° − 90° = −180°</span>
+<span class="zlab t0825-l" data-l="6">dl dl · −270° · p · −360°</span>
+</div>
+</div>
+<div class="legend"><span><i style="--c:var(--t0825-bg)"></i>{% if include.lang == "fr" %}html (fond){% else %}html (background){% endif %}</span><span><i style="--c:var(--t0825-c1)"></i>body</span><span><i style="--c:var(--t0825-c2)"></i>dl</span><span><i style="--c:var(--t0825-c3)"></i>dl dl</span><span><i style="--c:var(--t0825-c4)"></i>p</span><span><i style="--c:var(--t0825-tmask)"></i>{% if include.lang == "fr" %}ombres 484q #3E6D43 (vertes en vrai){% else %}484q #3E6D43 shadows (green in reality){% endif %}</span></div>
+</div>
+<div class="anim-side">
+<pre class="code" aria-hidden="true"><span data-on="5">&lt;dl></span><span data-on="6">&lt;dl>&lt;p></span>&lt;style>*{<span data-on="1" data-tone="2">color:3F6D43</span>;box-shadow:<span data-on="1 2">inset 0 9in</span>,<span data-on="4">484q 0 0 2in#3E6D43</span>,<span data-on="3">5vh 5ch,65vh 5pc 0 32q</span>;*{<span data-on="2">width:280;height:30</span>;<span data-on="2 3" data-tone="2">color:E5CA72</span>;<span data-on="2 5 6">offset:ray(0deg</span></pre>
+<div class="now" aria-live="polite">
+<div class="caps">
+{%- if include.lang == "fr" %}
+<div class="cap" data-t="0" data-step="html : une ombre interne pour fond"><h3>1. <code>html</code> : une ombre interne pour fond</h3><p><code>*</code> vise <code>html</code>, qui fait tout le canevas, 400 × 300. <code>inset 0 9in</code> est une ombre interne décalée de 9in = 864px vers le bas. Une ombre interne peint la boîte partout, sauf dans une copie décalée de la boîte. Ici, la copie est partie très loin : toute la boîte est peinte, dans la couleur du texte, <code>3F6D43</code>. C'est le fond vert.</p></div>
+<div class="cap" data-t="4" data-step="body : centré et tourné d'un quart de tour"><h3>2. <code>body</code> : centré et tourné d'un quart de tour</h3><p>Le <code>*</code> imbriqué vise tout sauf <code>html</code>. Le <code>body</code> fait 280 × 30, et la même ombre interne le remplit de crème, <code>E5CA72</code>. <code>offset:ray(0deg)</code> le pose au centre de <code>html</code>, en (200 ; 150). Le rayon pointe vers le haut, et la boîte s'oriente sur lui : un quart de tour à gauche. Une barre verticale de x = 185 à 215 et de y = 10 à 290.</p></div>
+<div class="cap" data-t="8.5" data-step="Deux ombres crème : un carré et une ligne"><h3>3. Deux ombres crème : un carré et une ligne</h3><p>Les ombres tournent avec la boîte : le x de la boîte pointe vers le haut, son y vers la droite. <code>5vh 5ch</code> (15 ; 40) devient 40 à droite et 15 en haut : une barre de x = 225 à 255. <code>65vh 5pc 0 32q</code> (195 ; 80), étalée de 32q = 30,24px, devient 80 à droite et 195 en haut : de x = 234,76 à 325,24, jusqu'à y = 125,24. Elle dépasse du canevas par le haut.</p></div>
+<div class="cap" data-t="12.5" data-step="Une ombre verte coupe le haut"><h3>4. Une ombre verte coupe le haut</h3><p><code>484q 0 0 2in#3E6D43</code> : décalée de 484q = 457,32px vers le haut, étalée de 2in = 192px, en vert. Elle s'arrête en y = 150 − 457,32 + 140 + 192 = 24,68. Elle est écrite avant les ombres crème, donc peinte par-dessus : tout ce qui dépasse en haut disparaît. Le carré en haut à droite va de y = 24,68 à 125,24.</p></div>
+<div class="cap" data-t="16.5" data-step="dl : la même liste, un quart de tour de plus"><h3>5. <code>dl</code> : la même liste, un quart de tour de plus</h3><p>Le <code>dl</code> est dans le <code>body</code>. Il a les mêmes règles : 280 × 30, centré, les mêmes ombres. Il tourne d'un quart de tour dans le <code>body</code> déjà tourné : −180° en tout. Il dessine la barre horizontale, le carré en haut à gauche, et son ombre verte coupe tout à gauche de x = 74,68.</p></div>
+<div class="cap" data-t="20.5" data-step="dl dl et p : le bas et la droite"><h3>6. <code>dl dl</code> et <code>p</code> : le bas et la droite</h3><p>Le second <code>dl</code> tourne de −270°, le <code>p</code> de −360°. Chacun refait le même dessin, tourné de 90° de plus : le carré en bas à gauche et le vert sous y = 275,32, puis le carré en bas à droite et le vert après x = 325,32. Chaque élément est peint au-dessus du précédent.</p></div>
+<div class="cap" data-t="25" data-step="Résultat" data-live="149 caractères · 100 % identique"><h3>7. Résultat : 149 caractères</h3><p>Une liste de quatre ombres, écrite une fois. <code>html</code> en tire le fond, et quatre éléments imbriqués la tournent d'un quart de tour chacun : la cible a la même symétrie.</p></div>
+{%- else %}
+<div class="cap" data-t="0" data-step="html: an inset shadow as background"><h3>1. <code>html</code>: an inset shadow as background</h3><p><code>*</code> matches <code>html</code>, which fills the canvas, 400 × 300. <code>inset 0 9in</code> is an inset shadow moved 9in = 864px down. An inset shadow paints the box everywhere except inside a moved copy of the box. Here the copy has gone far away, so the whole box is painted, in the text color, <code>3F6D43</code>. That is the green background.</p></div>
+<div class="cap" data-t="4" data-step="body: centered and turned a quarter turn"><h3>2. <code>body</code>: centered and turned a quarter turn</h3><p>The nested <code>*</code> matches everything but <code>html</code>. The <code>body</code> is 280 × 30, and the same inset shadow fills it with cream, <code>E5CA72</code>. <code>offset:ray(0deg)</code> puts it at the center of <code>html</code>, (200, 150). The ray points up, and the box turns to follow it: a quarter turn to the left. A vertical bar from x = 185 to 215 and y = 10 to 290.</p></div>
+<div class="cap" data-t="8.5" data-step="Two cream shadows: a square and a line"><h3>3. Two cream shadows: a square and a line</h3><p>The shadows turn with the box: its x points up, its y points right. <code>5vh 5ch</code> (15, 40) becomes 40 right and 15 up: a bar from x = 225 to 255. <code>65vh 5pc 0 32q</code> (195, 80), spread by 32q = 30.24px, becomes 80 right and 195 up: from x = 234.76 to 325.24, down to y = 125.24. It sticks out of the canvas at the top.</p></div>
+<div class="cap" data-t="12.5" data-step="A green shadow cuts the top"><h3>4. A green shadow cuts the top</h3><p><code>484q 0 0 2in#3E6D43</code>: moved 484q = 457.32px up, spread by 2in = 192px, in green. It ends at y = 150 − 457.32 + 140 + 192 = 24.68. It is written before the cream shadows, so it is painted above them: everything that sticks out at the top is gone. The top-right square runs from y = 24.68 to 125.24.</p></div>
+<div class="cap" data-t="16.5" data-step="dl: the same list, one more quarter turn"><h3>5. <code>dl</code>: the same list, one more quarter turn</h3><p>The <code>dl</code> is inside the <code>body</code>. It gets the same rules: 280 × 30, centered, the same shadows. It turns a quarter turn inside the <code>body</code>, which is already turned: −180° in all. It draws the horizontal bar and the top-left square, and its green shadow cuts everything left of x = 74.68.</p></div>
+<div class="cap" data-t="20.5" data-step="dl dl and p: the bottom and the right"><h3>6. <code>dl dl</code> and <code>p</code>: the bottom and the right</h3><p>The second <code>dl</code> turns to −270°, the <code>p</code> to −360°. Each one draws the same thing, turned 90° more: the bottom-left square and green below y = 275.32, then the bottom-right square and green past x = 325.32. Each element is painted above the one before.</p></div>
+<div class="cap" data-t="25" data-step="Result" data-live="149 characters · 100% match"><h3>7. Result: 149 characters</h3><p>One list of four shadows, written once. <code>html</code> takes the background from it, and four nested elements turn it a quarter turn each: the target has the same symmetry.</p></div>
+{%- endif %}
+</div>
+<div class="live"></div>
+</div>
+</div>
+<script>
+(window.AnimScenes = window.AnimScenes || {}).t0825 = (fig) => {
+  const fr = document.documentElement.lang === 'fr';
+  const $ = (s) => fig.querySelector(s);
+  const $$ = (s) => [...fig.querySelectorAll(s)];
+  const H = $('.t0825-html'), E = [1, 2, 3, 4].map((k) => $(`[data-e="${k}"]`)), live = $('.live');
+  const L = (k) => $(`.t0825-l[data-l="${k}"]`);
+  const W = { html: [0.4, 2.6], b: [4.3, 4.9], bt: [5.1, 7.1], sh: [8.8, 10.8], mk: [12.8, 14.8], d1: [16.8, 17.3], d1t: [17.5, 19.3], d2: [20.8, 21.1], d2t: [21.2, 22.4], p: [22.6, 22.9], pt: [23, 24.2], fin: [25, 25.6] };
+  const ease = (x) => (x < 0.5 ? 4 * x * x * x : 1 - Math.pow(-2 * x + 2, 3) / 2);
+  const pr = (t, [a, b]) => ease(Math.min(1, Math.max(0, (t - a) / (b - a))));
+  const win = (t, a, b) => Math.min(pr(t, [a, a + 0.5]), 1 - pr(t, [b - 0.4, b]));
+  const f2 = (v) => { const s = (Math.round(v * 100) / 100).toFixed(2).replace(/\.?0+$/, ''); return fr ? s.replace('.', ',') : s; };
+  const Q = 96 / 2.54 / 40; // 1q in px
+  const c = fr ? ' :' : ':';
+  return (t, step) => {
+    const teach = fig.dataset.teach === '1' && t < W.fin[0];
+    // html: inset 0 Y, Y from 0 to 9in
+    H.style.boxShadow = `inset 0 ${864 * pr(t, W.html)}px var(--t0825-bg)`;
+    const sh = pr(t, W.sh), mk = pr(t, W.mk);
+    const mask = teach ? 'var(--t0825-tmask)' : 'var(--t0825-mask)';
+    // [appear, turn window, start angle, end angle] for body, dl, dl dl, p
+    const S = [[W.b, W.bt, 0, -90], [W.d1, W.d1t, -90, -180], [W.d2, W.d2t, -180, -270], [W.p, W.pt, -270, -360]];
+    S.forEach(([ap, tw, a0, a1], i) => {
+      const e = E[i], col = teach ? `var(--t0825-c${i + 1})` : 'var(--t0825-cream)';
+      const lite = teach ? `color-mix(in srgb, var(--t0825-c${i + 1}) 62%, #fff)` : 'var(--t0825-cream)';
+      // body grows its shadows and mask in steps 3 and 4; the others arrive with the whole list
+      const s = i ? 1 : sh, m = i ? 1 : mk;
+      e.style.opacity = pr(t, ap);
+      e.style.transform = `rotate(${a0 + (a1 - a0) * pr(t, tw)}deg)`;
+      e.style.background = col;
+      const list = [];
+      if (m > 0) list.push(`${457.3228}px 0 0 ${192 * m}px ${mask}`);
+      list.push(`${15 * s}px ${40 * s}px ${lite}`, `${195 * s}px ${80 * s}px 0 ${32 * Q * s}px ${lite}`);
+      e.style.boxShadow = list.join(',');
+    });
+    const lw = [[W.html[0], 3.8], [W.b[0], 8.3], [W.sh[0], 12.3], [W.mk[0], 16.3], [W.d1[0], 20.3], [W.d2[0], W.fin[0]]];
+    lw.forEach(([a, z], i) => (L(i + 1).style.opacity = win(t, a, z)));
+    let txt = '';
+    if (step === 0) txt = `inset 0 ${f2(864 * pr(t, W.html))}px`;
+    else if (step === 1) txt = `body${c} rotate ${f2(-90 * pr(t, W.bt))}°`;
+    else if (step === 2) txt = `${fr ? 'décalage' : 'offset'}${c} ${f2(195 * sh)}, ${f2(80 * sh)} · ${fr ? 'étalement' : 'spread'}${c} ${f2(32 * Q * sh)}px`;
+    else if (step === 3) txt = `${fr ? 'bord du vert' : 'green edge'}${c} y = ${f2(150 - 457.3228 + 140 + 192 * mk)}`;
+    else if (step === 4) txt = `dl${c} rotate ${f2(-90 - 90 * pr(t, W.d1t))}°`;
+    else if (step === 5) txt = t < W.p[0] ? `dl dl${c} rotate ${f2(-180 - 90 * pr(t, W.d2t))}°` : `p${c} rotate ${f2(-270 - 90 * pr(t, W.pt))}°`;
+    else txt = $$('.caps .cap')[6].dataset.live || '';
+    live.textContent = txt;
+  };
+};
+</script>
+</figure>
