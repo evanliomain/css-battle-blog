@@ -1,0 +1,138 @@
+<figure class="anim t0723" data-duration="35" data-scene="t0723" data-wide="-50 -40 500 380" data-off-label="-45 306" style="--bg:#3f3642">
+<style>
+.t0723{--t0723-dk:#3f3642;--t0723-cr:#fef6e2;--t0723-hc:#38bdf8;--t0723-hb:#f59e0b;--t0723-bb:#ef4444;--t0723-bc:#a3e635;--t0723-bd:#7c3aed;--t0723-ln:#14142a}
+.t0723 .t0723-cv{left:0;top:0;width:400px;height:300px;opacity:0}
+.t0723 .t0723-hb{left:0;top:0;width:400px;height:300px;box-sizing:border-box;border:20px solid transparent;z-index:1}
+.t0723 .t0723-bu{left:120px;top:70px;width:160px;height:160px;opacity:0;z-index:2}
+.t0723 .t0723-b{left:120px;top:70px;width:160px;height:160px;box-sizing:border-box;border:20px solid transparent;opacity:0;z-index:2}
+.t0723 .t0723-o{outline:calc(2px * var(--k, 1)) dashed var(--t0723-ln);box-shadow:0 0 0 calc(3px * var(--k, 1)) rgb(255 255 255 / .55);opacity:0;z-index:6}
+.t0723 .t0723-box{outline-offset:calc(-2px * var(--k, 1));box-shadow:inset 0 0 0 calc(3px * var(--k, 1)) rgb(255 255 255 / .55)}
+.t0723 .t0723-ci{border-radius:50%;left:190px;top:140px;width:20px;height:20px}
+.t0723 .zlab{color:#fff;background:rgb(20 20 42 / .9);padding:1px 5px;border-radius:3px;opacity:0}
+.t0723 .scene .zlab.t0723-tr{left:auto;right:4px;top:2px;transform-origin:100% 0}
+.t0723 .scene .zlab.t0723-br{left:auto;right:4px;top:auto;bottom:2px;transform-origin:100% 100%}
+.t0723[data-view="wide"] .scene .zlab.t0723-tr{top:-4px;transform-origin:100% 100%;transform:translateY(-100%) scale(var(--k, 1))}
+.t0723[data-view="wide"] .scene .zlab.t0723-br{top:2px;bottom:auto;transform-origin:100% 0}
+</style>
+<div class="anim-col">
+<div class="stage" role="img" aria-label="{% if include.lang == "fr" %}Animation : html remplit le canevas de 400 × 300 ; son dégradé a des tuiles de 3,6 × 40 qui gardent une tranche d'un cercle de 10px de rayon ; répétées, ces tranches font des bandes crème de 20px, toutes les 40px ; la bordure de 20px de html coupe les bandes sur les côtés ; body est une boîte de 160 × 160 en (120, 70), avec la même bordure et le même fond ; sa police de 96px agrandit la tuile à 172,8 × 240 et le rayon à 60px : un seul disque crème au milieu{% else %}Animation: html fills the 400 × 300 canvas; its gradient has 3.6 × 40 tiles that keep a slice of a circle with a 10px radius; repeated, the slices make 20px cream bands, every 40px; html's 20px border cuts the bands at the sides; body is a 160 × 160 box at (120, 70), with the same border and the same background; its 96px font makes the tile 172.8 × 240 and the radius 60px: one cream disc in the middle{% endif %}">
+<div class="scene">
+<div class="t0723-cv"></div>
+<div class="t0723-hb"></div>
+<div class="t0723-bu"></div>
+<div class="t0723-b"></div>
+<div class="t0723-o t0723-ci"></div>
+<div class="t0723-o t0723-tile"></div>
+<div class="t0723-o t0723-box"></div>
+<span class="zlab t0723-l t0723-tr" data-l="1">*{ → html</span>
+<span class="zlab t0723-l t0723-br" data-l="1">{% if include.lang == "fr" %}html : 400 × 300, fond → canevas{% else %}html: 400 × 300, background → canvas{% endif %}</span>
+<span class="zlab t0723-l t0723-tr" data-l="2">{% if include.lang == "fr" %}.2lh 5ch = 3,6 × 40{% else %}.2lh 5ch = 3.6 × 40{% endif %}</span>
+<span class="zlab t0723-l t0723-br" data-l="2">{% if include.lang == "fr" %}1q · .625em = rayon de 10px{% else %}1q · .625em = 10px radius{% endif %}</span>
+<span class="zlab t0723-l t0723-tr" data-l="3">50%</span>
+<span class="zlab t0723-l t0723-br" data-l="3">{% if include.lang == "fr" %}bandes : y = 20…40, 60…80, …{% else %}bands: y = 20…40, 60…80, …{% endif %}</span>
+<span class="zlab t0723-l t0723-tr" data-l="4">border:5vw solid#3F3642</span>
+<span class="zlab t0723-l t0723-br" data-l="4">5vw = 20px</span>
+<span class="zlab t0723-l t0723-tr" data-l="5">*{margin:50 100</span>
+<span class="zlab t0723-l t0723-br" data-l="5">{% if include.lang == "fr" %}body : 160 × 160 en (120, 70){% else %}body: 160 × 160 at (120, 70){% endif %}</span>
+<span class="zlab t0723-l t0723-tr" data-l="6">font:6em/9'</span>
+<span class="zlab t0723-l t0723-br" data-l="6">{% if include.lang == "fr" %}172,8 × 240 · rayon de 60px{% else %}172.8 × 240 · 60px radius{% endif %}</span>
+</div>
+</div>
+<div class="legend"><span><i style="--c:transparent;outline:2px dashed currentColor;outline-offset:-2px"></i>{% if include.lang == "fr" %}boîte, tuile, cercle{% else %}box, tile, circle{% endif %}</span><span><i style="--c:var(--t0723-hc)"></i>{% if include.lang == "fr" %}crème du dégradé de html{% else %}html's gradient: cream{% endif %}</span><span><i style="--c:var(--t0723-hb)"></i>{% if include.lang == "fr" %}bordure de html{% else %}html's border{% endif %}</span><span><i style="--c:var(--t0723-bb)"></i>{% if include.lang == "fr" %}bordure de body{% else %}body's border{% endif %}</span><span><i style="--c:var(--t0723-bc)"></i>{% if include.lang == "fr" %}crème du dégradé de body{% else %}body's gradient: cream{% endif %}</span><span><i style="--c:var(--t0723-bd)"></i>{% if include.lang == "fr" %}sombre du dégradé de body{% else %}body's gradient: dark{% endif %}</span></div>
+</div>
+<div class="anim-side">
+<pre class="code" aria-hidden="true">&lt;style><span data-on="1">*{</span><span data-on="4 5">border:5vw solid#3F3642</span>;<span data-on="1">background:</span><span data-on="2 6">radial-gradient(1q,#FEF6E2.625em,#3F3642)</span><span data-on="3" data-tone="2">50%</span>/<span data-on="2 6" data-tone="2">.2lh 5ch</span>;<span data-on="5">*{margin:50 100</span>;<span data-on="6">font:6em/9'</span></pre>
+<div class="now" aria-live="polite">
+<div class="caps">
+{%- if include.lang == "fr" %}
+<div class="cap" data-t="0" data-step="Le canevas"><h3>1. html remplit le canevas</h3><p>Il n'y a pas de doctype : la page est en mode quirks. <code>*</code> vise d'abord html, puis head, body et style. html fait 400 × 300 : tout le canevas. Son fond est peint sur tout le canevas.</p></div>
+<div class="cap" data-t="5" data-step="Une tuile"><h3>2. Une tuile : une tranche de cercle</h3><p><code>.2lh 5ch</code> donne la taille de la tuile. La line-height de html est normale, 18px dans mon rendu : .2lh = 3,6px, et 5ch = 40px. <code>radial-gradient(1q,#FEF6E2.625em,#3F3642)</code> est un cercle : crème jusqu'à .625em = 10px, puis sombre. Son centre est au milieu de la tuile. La tuile ne fait que 3,6px de large : elle garde une fine tranche du cercle, d'environ 20px de haut.</p></div>
+<div class="cap" data-t="10" data-step="Les bandes"><h3>3. Les tuiles se répètent : des bandes</h3><p>Les tuiles se répètent dans les deux sens. Côte à côte, les tranches font une bande crème de 20px de haut sur toute la largeur. <code>50%</code> centre les tuiles dans la boîte de html, de (20, 20) à (380, 280) : une rangée de tuiles commence à y = 20 + (260 − 40) / 2 = 130, puis toutes les 40px. Les bandes vont de y = 20 à 40, de 60 à 80… jusqu'à 260 à 280.</p></div>
+<div class="cap" data-t="15" data-step="La bordure"><h3>4. La bordure de html</h3><p><code>border:5vw solid#3F3642</code> : 5vw = 20px, en sombre, par-dessus le canevas. Elle coupe les bandes à x = 20 et à x = 380. En haut et en bas, elle tombe sur des rangées sombres.</p></div>
+<div class="cap" data-t="20" data-step="body"><h3>5. body : une boîte de 160 × 160</h3><p>Le <code>*{</code> imbriqué vise head, style (masqués) et body. <code>margin:50 100</code> compte en px. body est dans la boîte de contenu de html, 360 × 260 : il fait 160 × 160, en (120, 70). Il reçoit la même bordure de 20px : le cadre sombre. Et le même fond : avec une police de 16px, les mêmes bandes, aux mêmes hauteurs.</p></div>
+<div class="cap" data-t="25" data-step="La police"><h3>6. Une police plus grande : un disque</h3><p><code>font:6em/9'</code> donne à body 96px, et une line-height de 9 × 96 = 864px. Les unités suivent : la tuile fait .2lh × 5ch = 172,8 × 240, et le rayon du cercle .625em = 60px. Centré par <code>50%</code>, un seul cercle remplit l'intérieur de body : un disque de (140, 90) à (260, 210).</p></div>
+<div class="cap" data-t="30" data-step="Résultat" data-live="125 caractères · 100 % identique"><h3>7. Résultat : 125 caractères</h3><p>Un seul fond, deux polices. Sur html, les petites unités coupent le cercle en bandes. Sur body, les grandes unités dessinent un disque entier.</p></div>
+{%- else %}
+<div class="cap" data-t="0" data-step="The canvas"><h3>1. html fills the canvas</h3><p>There is no doctype: the page is in quirks mode. <code>*</code> first targets html, then head, body and style. html is 400 × 300: the whole canvas. Its background is painted on the whole canvas.</p></div>
+<div class="cap" data-t="5" data-step="One tile"><h3>2. One tile: a slice of a circle</h3><p><code>.2lh 5ch</code> sets the tile size. html's line-height is normal, 18px in my render: .2lh = 3.6px, and 5ch = 40px. <code>radial-gradient(1q,#FEF6E2.625em,#3F3642)</code> is a circle: cream up to .625em = 10px, then dark. Its center is the middle of the tile. The tile is only 3.6px wide: it keeps a thin slice of the circle, about 20px tall.</p></div>
+<div class="cap" data-t="10" data-step="Stripes"><h3>3. The tiles repeat: stripes</h3><p>The tiles repeat in both directions. Side by side, the slices make a cream band, 20px tall, across the whole width. <code>50%</code> centers the tiles in html's box, from (20, 20) to (380, 280): a row of tiles starts at y = 20 + (260 − 40) / 2 = 130, then every 40px. The bands run from y = 20 to 40, 60 to 80… down to 260 to 280.</p></div>
+<div class="cap" data-t="15" data-step="Border"><h3>4. html's border</h3><p><code>border:5vw solid#3F3642</code>: 5vw = 20px, dark, on top of the canvas. It cuts the bands at x = 20 and x = 380. At the top and bottom, it falls on dark rows.</p></div>
+<div class="cap" data-t="20" data-step="body"><h3>5. body: a 160 × 160 box</h3><p>The nested <code>*{</code> targets head, style (hidden) and body. <code>margin:50 100</code> counts in px. body sits in html's content box, 360 × 260: it is 160 × 160, at (120, 70). It gets the same 20px border: the dark frame. And the same background: with a 16px font, the same bands, in the same rows.</p></div>
+<div class="cap" data-t="25" data-step="The font"><h3>6. A bigger font: one disc</h3><p><code>font:6em/9'</code> gives body 96px, and a line-height of 9 × 96 = 864px. The units follow: the tile is .2lh × 5ch = 172.8 × 240, and the circle's radius is .625em = 60px. Centered by <code>50%</code>, one circle fills the inside of body: a disc from (140, 90) to (260, 210).</p></div>
+<div class="cap" data-t="30" data-step="Result" data-live="125 characters · 100% match"><h3>7. Result: 125 characters</h3><p>One background, two fonts. On html, small units cut the circle into stripes. On body, big units draw a whole disc.</p></div>
+{%- endif %}
+</div>
+<div class="live"></div>
+</div>
+</div>
+<script>
+(window.AnimScenes = window.AnimScenes || {}).t0723 = (fig) => {
+  const fr = document.documentElement.lang === 'fr';
+  const $ = (s) => fig.querySelector(s);
+  const $$ = (s) => [...fig.querySelectorAll(s)];
+  const live = $('.live');
+  const ease = (x) => (x < 0.5 ? 4 * x * x * x : 1 - Math.pow(-2 * x + 2, 3) / 2);
+  const pr = (t, [a, b]) => ease(Math.min(1, Math.max(0, (t - a) / (b - a))));
+  const win = (t, a, b) => Math.min(pr(t, [a, a + 0.5]), 1 - pr(t, [b - 0.4, b]));
+  const c = fr ? '\u00a0:' : ':';
+  const dec = (x, n) => (fr ? x.toFixed(n).replace('.', ',') : x.toFixed(n));
+  // Measured on the official code in local Chrome (quirks mode, 400 × 300), getBoundingClientRect and computed styles:
+  // html (0, 0, 400 × 300), border 20px, background-size 3.6px 40px (line-height normal = 18px, 5ch = 40px), radius .625em = 10px.
+  // 50% in html's padding box (20, 20, 360 × 260): tile at x = 198.2, y = 130 (+ k × 40): cream bands y = 20..40, 60..80, …, 260..280.
+  // body (120, 70, 160 × 160), border 20px; font 96px / 864px: background-size 172.8px 240px, radius 60px,
+  // tile at (113.6, 30), disc (140, 90) → (260, 210). Without the font (16px), body shows the same bands, same rows.
+  const FIN = 30;
+  const cv = $('.t0723-cv'), hb = $('.t0723-hb'), B = $('.t0723-b'), bu = $('.t0723-bu');
+  const ci = $('.t0723-ci'), tile = $('.t0723-tile'), box = $('.t0723-box');
+  const L = (k) => $$(`.t0723-l[data-l="${k}"]`);
+  const css = getComputedStyle(fig);
+  const col = (n) => css.getPropertyValue(`--t0723-${n}`).trim();
+  const place = (e, x, y, w, h) => { e.style.left = `${x}px`; e.style.top = `${y}px`; e.style.width = `${w}px`; e.style.height = `${h}px`; };
+  return (t, step) => {
+    const teach = fig.dataset.teach === '1' && t < FIN;
+    const ann = 1 - pr(t, [FIN, FIN + 0.6]);
+    const D = col('dk'), C = col('cr');
+    // 2–3. html's bands on the canvas: one tile first (the row at y = 130), then the whole width, then every row
+    const hc = teach ? col('hc') : C;
+    cv.style.background = `linear-gradient(transparent 20px, ${hc} 0) 0 0 / 100% 40px`;
+    cv.style.opacity = pr(t, [5.6, 6.6]);
+    const sx = pr(t, [10.6, 12.2]), sy = pr(t, [12.6, 14.2]);
+    const side = 198.2 * (1 - sx);
+    cv.style.clipPath = `inset(${130 * (1 - sy)}px ${side}px ${130 * (1 - sy)}px ${side}px)`;
+    // 4. html's border
+    hb.style.borderColor = teach ? col('hb') : D;
+    hb.style.opacity = pr(t, [15.6, 16.6]);
+    // 5. body: border and the same background; 6. its font grows from 16px to 96px
+    const p = pr(t, [25.6, 28.4]);
+    const em = 16 + 80 * p, lh = 18 + 846 * p;
+    const W = 0.2 * lh, H = 5 * em / 2, R = 0.625 * em;
+    const bc = teach ? col('bc') : C, bd = teach ? col('bd') : D;
+    B.style.opacity = pr(t, [20.6, 21.6]);
+    // same-color underlay: no seam where body's background meets its border
+    bu.style.opacity = B.style.opacity;
+    bu.style.background = teach ? col('bb') : D;
+    B.style.borderColor = teach ? col('bb') : D;
+    B.style.background = p > 0
+      ? `radial-gradient(1px, ${bc} ${R}px, ${bd}) 50% / ${W}px ${H}px`
+      : `linear-gradient(transparent 20px, ${bc} 0) 0 -10px / 100% 40px ${bd}`;
+    // annotations: html's box (1), html's tile and circle (2), body's box (5), body's tile (6)
+    if (step <= 1) place(box, 0, 0, 400, 300); else place(box, 120, 70, 160, 160);
+    box.style.opacity = 0.9 * Math.max(win(t, 0.3, 4.8), win(t, 20.3, 24.8));
+    if (step <= 4) place(tile, 198.2, 130, 3.6, 40); else place(tile, 200 - W / 2, 150 - H / 2, W, H);
+    tile.style.opacity = 0.9 * Math.max(win(t, 5.3, 9.8), win(t, 25.3, 29.8));
+    if (step <= 4) place(ci, 190, 140, 20, 20); else place(ci, 200 - R, 150 - R, 2 * R, 2 * R);
+    ci.style.opacity = 0.9 * Math.max(win(t, 5.3, 9.8), win(t, 25.3, 29.8));
+    [[0.3, 4.8], [5.3, 9.8], [10.3, 14.8], [15.3, 19.8], [20.3, 24.8], [25.3, 29.8]].forEach(([a, z], k) => L(k + 1).forEach((e) => (e.style.opacity = win(t, a, z) * ann)));
+    let txt;
+    if (step === 0) txt = `html${c} 400 × 300 · (0, 0) → (400, 300)`;
+    else if (step === 1) txt = `${fr ? 'tuile' : 'tile'}${c} ${dec(3.6, 1)} × 40 · ${fr ? 'rayon' : 'radius'} 10px`;
+    else if (step === 2) txt = `${fr ? 'bandes' : 'bands'}${c} y = 20 … 40, 60 … 80, …, 260 … 280`;
+    else if (step === 3) txt = `${fr ? 'bordure' : 'border'}${c} 20px · x = 20 … 380`;
+    else if (step === 4) txt = `body${c} 160 × 160 · (120, 70) → (280, 230)`;
+    else if (step === 5) txt = `font${c} ${dec(em, 1)}px · ${fr ? 'tuile' : 'tile'} ${dec(W, 1)} × ${dec(H, 1)} · ${fr ? 'rayon' : 'radius'} ${dec(R, 1)}px`;
+    else txt = $$('.caps .cap')[6].dataset.live || '';
+    live.textContent = txt;
+  };
+};
+</script>
+</figure>
