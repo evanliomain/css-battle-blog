@@ -1,0 +1,128 @@
+<figure class="anim t0719" data-duration="33" data-scene="t0719" data-wide="-40 -40 480 380" data-off-label="-36 -36" style="--bg:#e38f66">
+<style>
+.t0719{--t0719-o:#e38f66;--t0719-k:#000;--t0719-b:#38bdf8;--t0719-i1:#22c55e;--t0719-i2:#a855f7}
+.t0719 .t0719-w{left:0;top:0;width:400px;height:300px;background:#fff}
+.t0719 .t0719-bar{left:80px;top:120px;width:160px;height:60px;background:var(--t0719-k);z-index:2;opacity:0}
+.t0719 .t0719-rb{left:300px;top:120px;width:20px;height:60px;background:var(--t0719-k);z-index:2;opacity:0}
+.t0719 .t0719-img{box-sizing:border-box;border:20px solid var(--t0719-k);z-index:3;opacity:0}
+.t0719 .t0719-box{box-sizing:border-box;border:calc(2px * var(--k, 1)) dashed currentColor;opacity:0;z-index:8}
+.t0719 .zlab{color:#fff;background:rgb(20 20 42 / .9);padding:1px 5px;border-radius:3px;opacity:0}
+.t0719 .scene .zlab.t0719-tl{left:4px;top:2px}
+.t0719 .scene .zlab.t0719-br{left:auto;right:4px;top:auto;bottom:2px;transform-origin:100% 100%}
+.t0719[data-view="wide"] .scene .zlab.t0719-br{right:-36px;bottom:-36px}
+</style>
+<div class="anim-col">
+<div class="stage" role="img" aria-label="{% if include.lang == "fr" %}Animation : & vise html, qui reçoit le fond orange, peint sur tout le canevas ; >* vise body, que margin:30%80 place en (80, 120), 240 × 60 ; border-width:0 20 0 160 lui donne une bordure gauche noire de 160px, la barre, et une bordure droite de 20px ; chaque img vide, avec padding:50 et une bordure de 20px, est un cadre de 140 × 140 ; la première se pose en (240, 80) ; sa marge droite de −360 ramène la seconde en (20, 80) ; la barre de body relie les deux cadres, et sa bordure droite fait le trait vertical dans le cadre de droite{% else %}Animation: & targets html, which gets the orange background, painted on the whole canvas; >* targets body, which margin:30%80 puts at (80, 120), 240 × 60; border-width:0 20 0 160 gives it a 160px black left border, the bar, and a 20px right border; each empty img, with padding:50 and a 20px border, is a 140 × 140 frame; the first one sits at (240, 80); its −360 right margin brings the second one back to (20, 80); body's bar links the two frames, and its right border is the vertical stroke in the right frame{% endif %}">
+<div class="scene">
+<div class="t0719-w"></div>
+<div class="t0719-bar"></div>
+<div class="t0719-rb"></div>
+<div class="t0719-img t0719-i1"></div>
+<div class="t0719-img t0719-i2"></div>
+<div class="t0719-box t0719-bb" style="left:80px;top:120px;width:240px;height:60px"></div>
+<div class="t0719-box t0719-cb" style="left:240px;top:120px;width:60px;height:60px"></div>
+<span class="zlab t0719-l t0719-tl" data-l="1">&amp;{ → html · background:#e38f66</span>
+<span class="zlab t0719-l t0719-br" data-l="1">{% if include.lang == "fr" %}fond de html → canevas{% else %}html's background → canvas{% endif %}</span>
+<span class="zlab t0719-l t0719-tl" data-l="2">>*{ → body · margin:30%80</span>
+<span class="zlab t0719-l t0719-br" data-l="2">{% if include.lang == "fr" %}body : 240 × 60 en (80, 120){% else %}body: 240 × 60 at (80, 120){% endif %}</span>
+<span class="zlab t0719-l t0719-tl" data-l="3">border-width:0 20 0 160</span>
+<span class="zlab t0719-l t0719-br" data-l="3">{% if include.lang == "fr" %}gauche : 160px · droite : 20px{% else %}left: 160px · right: 20px{% endif %}</span>
+<span class="zlab t0719-l t0719-tl" data-l="4">&lt;img> · padding:50 · 5vw = 20px</span>
+<span class="zlab t0719-l t0719-br" data-l="4">{% if include.lang == "fr" %}0 + 100 + 40 = 140 · en (240, 80){% else %}0 + 100 + 40 = 140 · at (240, 80){% endif %}</span>
+<span class="zlab t0719-l t0719-tl" data-l="5">margin:-40-360-40 0</span>
+<span class="zlab t0719-l t0719-br" data-l="5">240 + 140 − 360 = 20</span>
+<span class="zlab t0719-l t0719-tl" data-l="6">{% if include.lang == "fr" %}body sous les img{% else %}body under the imgs{% endif %}</span>
+<span class="zlab t0719-l t0719-br" data-l="6">{% if include.lang == "fr" %}contenu de body : x = 240 → 300, vide{% else %}body's content: x = 240 → 300, empty{% endif %}</span>
+</div>
+</div>
+<div class="legend"><span><i style="--c:transparent;outline:2px dashed currentColor;outline-offset:-2px"></i>{% if include.lang == "fr" %}boîtes{% else %}boxes{% endif %}</span><span><i style="--c:var(--t0719-b)"></i>{% if include.lang == "fr" %}bordures de body{% else %}body's borders{% endif %}</span><span><i style="--c:var(--t0719-i1)"></i>{% if include.lang == "fr" %}1re img{% else %}1st img{% endif %}</span><span><i style="--c:var(--t0719-i2)"></i>{% if include.lang == "fr" %}2e img{% else %}2nd img{% endif %}</span></div>
+</div>
+<div class="anim-side">
+<pre class="code" aria-hidden="true"><span data-on="4">&lt;img></span><span data-on="5">&lt;img></span>&lt;style><span data-on="1">&amp;{background:#e38f66</span>;<span data-on="3 4" data-tone="2">*{border:5vw solid}</span><span data-on="2">>*{</span><span data-on="3 6">border-width:0 20 0 160</span>;<span data-on="2">margin:30%80</span>;<span data-on="4">*{padding:50</span>;<span data-on="4 5">margin:-40-360-40 0</span></pre>
+<div class="now" aria-live="polite">
+<div class="caps">
+{%- if include.lang == "fr" %}
+<div class="cap" data-t="0" data-step="html : le fond"><h3>1. html : le fond orange</h3><p>Au plus haut niveau, <code>&amp;</code> veut dire <code>:scope</code> : la racine, html. <code>background:#e38f66</code> lui donne le fond orange. Comme c'est le fond de la racine, il est peint sur tout le canevas.</p></div>
+<div class="cap" data-t="4.5" data-step="body : 240 × 60"><h3>2. body : une boîte de 240 × 60</h3><p><code>&gt;*</code> vise les enfants de html : head, qui ne s'affiche pas, et body. Pas de doctype : la page est en mode quirks, et les nombres sans unité comptent en px. <code>margin:30%80</code> : 30 % de la largeur, 400, soit 120px en haut et en bas, et 80px sur les côtés. En mode quirks, body remplit la fenêtre moins ses marges : 400 − 160 = 240 de large, 300 − 240 = 60 de haut, en (80, 120).</p></div>
+<div class="cap" data-t="9" data-step="La barre"><h3>3. Une bordure gauche de 160px : la barre</h3><p><code>*{border:5vw solid}</code> donne à tous les éléments dans html une bordure noire (la couleur du texte) de 20px. Pour body, <code>border-width:0 20 0 160</code> vient après et l'emporte : rien en haut et en bas, 20px à droite, 160px à gauche. La bordure gauche va de x = 80 à 240 : c'est la barre. La bordure droite va de 300 à 320. Entre les deux, le contenu de body, 60 × 60, reste vide.</p></div>
+<div class="cap" data-t="13.5" data-step="1re img"><h3>4. Une img vide : un cadre de 140 × 140</h3><p>Le dernier <code>*{</code> vise les éléments dans body : les deux img. Sans <code>src</code>, une img a un contenu de 0 × 0. <code>padding:50</code> et la bordure de 20px en font un cadre de 0 + 100 + 40 = 140. Les marges de −40 en haut et en bas ramènent sa boîte de marge à 140 − 80 = 60 de haut : la hauteur de body. La première img se pose au début du contenu de body : en (240, 80), car 120 − 40 = 80.</p></div>
+<div class="cap" data-t="18.5" data-step="−360"><h3>5. Une marge de −360 : la 2e img revient à gauche</h3><p>La marge droite de −360 fait reculer la ligne : la boîte de marge de la première img finit en 240 + 140 − 360 = 20. La seconde img commence donc en x = 20, sur la même ligne, à la même hauteur : le cadre de gauche, de 20 à 160.</p></div>
+<div class="cap" data-t="23.5" data-step="Les recouvrements"><h3>6. La barre passe sous les cadres</h3><p>La bordure de body est peinte d'abord, les img par-dessus. Dans le trou du cadre de gauche, la barre couvre x = 80 à 140 : il reste un C. Entre les cadres, elle les relie, de 160 à 240. Dans le cadre de droite, le contenu vide de body laisse voir l'orange, et sa bordure droite, de 300 à 320, fait le trait vertical.</p></div>
+<div class="cap" data-t="28" data-step="Résultat" data-live="129 caractères · 100 % identique"><h3>7. Résultat : 129 caractères</h3><p>Deux img vides pour les cadres, posées l'une derrière l'autre grâce à une marge négative, et les deux bordures de body pour la barre et le trait vertical.</p></div>
+{%- else %}
+<div class="cap" data-t="0" data-step="html: background"><h3>1. html: the orange background</h3><p>At the top level, <code>&amp;</code> means <code>:scope</code>: the root, html. <code>background:#e38f66</code> gives it the orange background. As the root's background, it is painted on the whole canvas.</p></div>
+<div class="cap" data-t="4.5" data-step="body: 240 × 60"><h3>2. body: a 240 × 60 box</h3><p><code>&gt;*</code> targets html's children: head, which is not displayed, and body. There is no doctype: the page is in quirks mode, and numbers with no unit count as px. <code>margin:30%80</code>: 30% of the width, 400, so 120px at the top and bottom, and 80px on the sides. In quirks mode, body fills the window minus its margins: 400 − 160 = 240 wide, 300 − 240 = 60 tall, at (80, 120).</p></div>
+<div class="cap" data-t="9" data-step="The bar"><h3>3. A 160px left border: the bar</h3><p><code>*{border:5vw solid}</code> gives every element inside html a 20px black border (the text color). For body, <code>border-width:0 20 0 160</code> comes later and wins: nothing at the top and bottom, 20px on the right, 160px on the left. The left border runs from x = 80 to 240: that is the bar. The right border runs from 300 to 320. In between, body's content, 60 × 60, stays empty.</p></div>
+<div class="cap" data-t="13.5" data-step="1st img"><h3>4. An empty img: a 140 × 140 frame</h3><p>The last <code>*{</code> targets the elements inside body: the two imgs. With no <code>src</code>, an img has 0 × 0 content. <code>padding:50</code> and the 20px border make it a 0 + 100 + 40 = 140 frame. The −40 margins at the top and bottom bring its margin box down to 140 − 80 = 60 tall: body's height. The first img sits at the start of body's content: at (240, 80), as 120 − 40 = 80.</p></div>
+<div class="cap" data-t="18.5" data-step="−360"><h3>5. A −360 margin: the 2nd img goes back left</h3><p>The −360 right margin moves the line back: the first img's margin box ends at 240 + 140 − 360 = 20. So the second img starts at x = 20, on the same line, at the same height: the left frame, from 20 to 160.</p></div>
+<div class="cap" data-t="23.5" data-step="Overlaps"><h3>6. The bar goes under the frames</h3><p>body's border is painted first, the imgs on top. In the left frame's hole, the bar covers x = 80 to 140: a C is left. Between the frames, it links them, from 160 to 240. In the right frame, body's empty content shows the orange, and its right border, from 300 to 320, is the vertical stroke.</p></div>
+<div class="cap" data-t="28" data-step="Result" data-live="129 characters · 100% match"><h3>7. Result: 129 characters</h3><p>Two empty imgs for the frames, put one behind the other with a negative margin, and body's two borders for the bar and the vertical stroke.</p></div>
+{%- endif %}
+</div>
+<div class="live"></div>
+</div>
+</div>
+<script>
+(window.AnimScenes = window.AnimScenes || {}).t0719 = (fig) => {
+  const fr = document.documentElement.lang === 'fr';
+  const $ = (s) => fig.querySelector(s);
+  const $$ = (s) => [...fig.querySelectorAll(s)];
+  const live = $('.live');
+  const ease = (x) => (x < 0.5 ? 4 * x * x * x : 1 - Math.pow(-2 * x + 2, 3) / 2);
+  const pr = (t, [a, b]) => ease(Math.min(1, Math.max(0, (t - a) / (b - a))));
+  const win = (t, a, b) => Math.min(pr(t, [a, a + 0.5]), 1 - pr(t, [b - 0.4, b]));
+  const c = fr ? '\u00a0:' : ':';
+  const n0 = (v) => (v < -0.5 ? '−' : '') + Math.abs(Math.round(v));
+  // Measured on the official code in local Chrome (quirks mode, 400 × 300), getBoundingClientRect and computed styles:
+  // html (0, 0) 400 × 300, background rgb(227, 143, 102). body (80, 120) 240 × 60, margin 120px 80px,
+  // border-width 0 20px 0 160px, black (currentColor). img 1 (240, 80) 140 × 140, img 2 (20, 80) 140 × 140:
+  // padding 50px, border 20px, margin −40px −360px −40px 0. style and head: display none.
+  const FIN = 28;
+  const w = $('.t0719-w'), bar = $('.t0719-bar'), rb = $('.t0719-rb'), i1 = $('.t0719-i1'), i2 = $('.t0719-i2');
+  const bb = $('.t0719-bb'), cb = $('.t0719-cb');
+  const L = (k) => $$(`.t0719-l[data-l="${k}"]`);
+  return (t, step) => {
+    const teach = fig.dataset.teach === '1' && t < FIN;
+    const ann = 1 - pr(t, [FIN, FIN + 0.6]);
+    // 1. html's background: white → orange
+    w.style.opacity = 1 - pr(t, [0.6, 2]);
+    // 2. body's box
+    bb.style.color = '#1d1530';
+    bb.style.opacity = 0.9 * win(t, 5, 13);
+    // 3. body's borders: left 20 → 160, right 20
+    const g = pr(t, [9.8, 12]);
+    const bl = 20 + 140 * g;
+    bar.style.opacity = rb.style.opacity = pr(t, [9.2, 9.8]);
+    // under the first img's left border once it is there: no seam at x = 240
+    const o1 = pr(t, [13.8, 14.4]);
+    bar.style.width = `${o1 >= 1 ? bl + 10 : bl}px`;
+    bar.style.background = rb.style.background = teach ? 'var(--t0719-b)' : 'var(--t0719-k)';
+    // 4. first img: padding 0 → 50, left edge at 240, centered on y = 150
+    const p = 50 * pr(t, [14.4, 16.6]);
+    const s = 40 + 2 * p;
+    i1.style.opacity = o1;
+    Object.assign(i1.style, { left: '240px', top: `${150 - s / 2}px`, width: `${s}px`, height: `${s}px` });
+    i1.style.borderColor = teach ? 'var(--t0719-i1)' : 'var(--t0719-k)';
+    // 5. second img: margin-right 0 → −360 on the first one, the second goes from x = 380 to 20
+    const m = pr(t, [19.6, 22.2]);
+    const x2 = 380 - 360 * m;
+    i2.style.opacity = pr(t, [18.8, 19.4]);
+    Object.assign(i2.style, { left: `${x2}px`, top: '80px', width: '140px', height: '140px' });
+    i2.style.borderColor = teach ? 'var(--t0719-i2)' : 'var(--t0719-k)';
+    // 6. body's empty content box
+    cb.style.color = '#1d1530';
+    cb.style.opacity = 0.9 * win(t, 23.8, 27.6);
+    [[0.3, 4.3], [4.8, 8.8], [9.3, 13.3], [13.8, 18.3], [18.8, 23.3], [23.8, 27.6]].forEach(([u, z], k) => L(k + 1).forEach((e) => (e.style.opacity = win(t, u, z) * ann)));
+    let txt;
+    if (step === 0) txt = fr ? `canevas${c} #e38f66` : `canvas${c} #e38f66`;
+    else if (step === 1) txt = `body${c} 240 × 60 · (80, 120)`;
+    else if (step === 2) txt = `border-left${c} ${n0(bl)}px · border-right${c} 20px`;
+    else if (step === 3) txt = `padding${c} ${n0(p)}px · img${c} ${n0(s)} × ${n0(s)}`;
+    else if (step === 4) txt = fr ? `2e img${c} x = ${n0(x2)}` : `2nd img${c} x = ${n0(x2)}`;
+    else if (step === 5) txt = fr ? `barre${c} x = 80 → 240 · trait${c} x = 300 → 320` : `bar${c} x = 80 → 240 · stroke${c} x = 300 → 320`;
+    else txt = $$('.caps .cap')[6].dataset.live || '';
+    live.textContent = txt;
+  };
+};
+</script>
+</figure>
