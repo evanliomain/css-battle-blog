@@ -1,0 +1,127 @@
+<figure class="anim t0630" data-duration="38" data-scene="t0630" data-wide="-100 -220 600 740" style="--bg:#fff">
+<style>
+.t0630{--t0630-ink:#62306d;--t0630-hd:#f97316;--t0630-bl:#8b5cf6;--t0630-br:#0ea5e9;--t0630-sl:#16a34a;--t0630-ln:#14142a}
+.t0630 .t0630-html{left:-70px;top:80px;width:540px;height:140px;border-inline:140px dotted var(--t0630-ink);opacity:0;z-index:1}
+.t0630 .t0630-body{left:20px;top:-493px;width:280px;height:1286px;border-inline:140px dotted var(--t0630-ink);transform-origin:190px 643px;opacity:0;z-index:2}
+.t0630 .t0630-box{border:calc(2px * var(--k, 1)) dashed var(--t0630-ln);box-shadow:0 0 0 calc(1px * var(--k, 1)) rgb(255 255 255 / .6);opacity:0;z-index:4}
+.t0630 .t0630-hb{left:-70px;top:80px;width:540px;height:140px}
+.t0630 .t0630-slice{left:209px;top:92px;width:0;height:116px;border-left:calc(2px * var(--k, 1)) dashed var(--t0630-sl);opacity:0;z-index:5}
+.t0630 .zlab{color:#fff;background:rgb(20 20 42 / .9);padding:1px 5px;border-radius:3px;opacity:0}
+.t0630 .scene .zlab.t0630-l1{left:4px;top:4px}
+.t0630 .scene .zlab.t0630-l2{left:4px;top:calc(4px + 18px * var(--k, 1))}
+.t0630[data-view="wide"] .scene .zlab.t0630-l1{left:-96px}
+.t0630[data-view="wide"] .scene .zlab.t0630-l2{left:-96px}
+.t0630 .scene .zlab.t0630-ls{left:214px;top:210px;background:var(--t0630-sl)}
+</style>
+<div class="anim-col">
+<div class="stage" role="img" aria-label="{% if include.lang == "fr" %}Animation : avec margin: 80 -70, html fait 540 × 140, de x = −70 à 470 et de y = 80 à 220 ; border-inline: 35vw dotted lui donne une bordure de 140px à gauche et à droite, et chaque côté de 140px de haut ne porte qu'un point de 140px : deux disques centrés en x = 0 et 400, coupés par les bords ; le fond rose de body passe sur le canevas, car html n'en a pas ; body fait 280 × 1286, loin à gauche, et chacune de ses deux bordures porte 5 points ; scale: 1e4 .07 l'écrase à 90px de haut, puis l'étire 10 000 fois en largeur : le canevas ne montre qu'une tranche de 0,04px de sa bordure droite, et ses 5 points deviennent 5 bandes de 9,4px{% else %}Animation: with margin: 80 -70, html is 540 × 140, from x = −70 to 470 and from y = 80 to 220; border-inline: 35vw dotted gives it a 140px border on the left and right, and each 140px tall side holds a single 140px dot: two discs centered on x = 0 and 400, cut by the edges; body's pink background goes to the canvas, since html has none; body is 280 × 1286, far to the left, and each of its two borders holds 5 dots; scale: 1e4 .07 squashes it to 90px tall, then stretches it 10,000 times across: the canvas only shows a 0.04px slice of its right border, and its 5 dots become 5 bands, 9.4px tall{% endif %}">
+<div class="scene">
+<div class="t0630-html"></div>
+<div class="t0630-body"></div>
+<div class="t0630-box t0630-hb"></div>
+<div class="t0630-box t0630-bb"></div>
+<div class="t0630-slice"></div>
+<span class="zlab t0630-l1" data-l="1">html · margin: 80 -70</span>
+<span class="zlab t0630-l2" data-l="1">540 × 140 · x = −70 … 470 · y = 80 … 220</span>
+<span class="zlab t0630-l1" data-l="2">border-inline: 35vw · 35vw = 140px</span>
+<span class="zlab t0630-l2" data-l="2">{% if include.lang == "fr" %}1 point par côté · ⌀ 140px{% else %}1 dot per side · ⌀ 140px{% endif %}</span>
+<span class="zlab t0630-l1" data-l="3">{% if include.lang == "fr" %}background → body seul{% else %}background → body only{% endif %}</span>
+<span class="zlab t0630-l2" data-l="3">{% if include.lang == "fr" %}html n'en a pas → sur le canevas{% else %}html has none → on the canvas{% endif %}</span>
+<span class="zlab t0630-l1" data-l="4">body · margin: -573 5e5 -573 -5e5</span>
+<span class="zlab t0630-l2" data-l="4">{% if include.lang == "fr" %}280 × 1286 · en vrai en x = −499 930{% else %}280 × 1286 · really at x = −499,930{% endif %}</span>
+<span class="zlab t0630-l1" data-l="5">{% if include.lang == "fr" %}scale: 1e4 .07 · ×0,07 en hauteur{% else %}scale: 1e4 .07 · ×0.07 down{% endif %}</span>
+<span class="zlab t0630-l2" data-l="5">{% if include.lang == "fr" %}1286 × 0,07 = 90 · y = 105 … 195{% else %}1286 × 0.07 = 90 · y = 105 … 195{% endif %}</span>
+<span class="zlab t0630-l1" data-l="6">{% if include.lang == "fr" %}×10 000 autour de x = −499 790{% else %}×10,000 around x = −499,790{% endif %}</span>
+<span class="zlab t0630-l2" data-l="6">{% if include.lang == "fr" %}−499 790 + 50 × 10 000 = 210{% else %}−499,790 + 50 × 10,000 = 210{% endif %}</span>
+<span class="zlab t0630-ls" data-l="6">x = 210</span>
+</div>
+</div>
+<div class="legend"><span><i style="--c:transparent;outline:2px dashed currentColor;outline-offset:-2px"></i>{% if include.lang == "fr" %}boîtes html et body{% else %}html and body boxes{% endif %}</span><span><i style="--c:var(--t0630-hd)"></i>{% if include.lang == "fr" %}points de html{% else %}html's dots{% endif %}</span><span><i style="--c:var(--t0630-bl)"></i>{% if include.lang == "fr" %}bordure gauche de body{% else %}body's left border{% endif %}</span><span><i style="--c:var(--t0630-br)"></i>{% if include.lang == "fr" %}bordure droite de body{% else %}body's right border{% endif %}</span><span><i style="--c:var(--t0630-sl)"></i>{% if include.lang == "fr" %}tranche qui arrive sur le canevas{% else %}slice that lands on the canvas{% endif %}</span><span><i style="--c:#f7bed9"></i>{% if include.lang == "fr" %}fond de body, sur le canevas{% else %}body's background, on the canvas{% endif %}</span></div>
+</div>
+<div class="anim-side">
+<pre class="code" aria-hidden="true">&lt;style><span data-on="1 2" data-tone="2">*{</span><span data-on="2 4">border-inline:35vw dotted#62306D</span>;<span data-on="1">margin:80-70</span>;<span data-on="3 4" data-tone="2">*{</span><span data-on="3">background:#F7BED9</span>;<span data-on="4">margin:-573 5e5-573-5e5</span>;<span data-on="5 6" data-tone="2">scale:</span><span data-on="6">1e4</span><span data-on="5">.07</span></pre>
+<div class="now" aria-live="polite">
+<div class="caps">
+{%- if include.lang == "fr" %}
+<div class="cap" data-t="0" data-step="html"><h3>1. html, plus large que le canevas</h3><p>Pas de doctype : la page est en mode quirks, et un nombre sans unité vaut des px dans <code>margin</code>. <code>*</code> vise html, head, style et body ; head et style sont masqués. <code>margin:80-70</code> donne à html 80px en haut et en bas, et −70px de chaque côté : 540 × 140, de x = −70 à 470 et de y = 80 à 220.</p></div>
+<div class="cap" data-t="5" data-step="Pointillés"><h3>2. Un point par côté</h3><p><code>border-inline:35vw dotted#62306D</code> met une bordure de 140px à gauche et à droite de html : 35vw, c'est 35 % de 400. Une bordure en pointillés est une suite de points ronds, aussi larges que la bordure. Chaque côté fait 140px de haut : la place d'un seul point, un disque de 140px. Les centres sont en x = 0 et 400, y = 150 : les bords du canevas coupent les disques en deux.</p></div>
+<div class="cap" data-t="10" data-step="Fond"><h3>3. Le fond de body, sur le canevas</h3><p>Le <code>*{</code> imbriqué vise les éléments situés dans un autre : head, style et body. <code>background:#F7BED9</code> ne touche donc que body. html n'a pas de fond : le navigateur peint alors celui de body sur tout le canevas, sous les disques de html.</p></div>
+<div class="cap" data-t="15" data-step="body"><h3>4. body, loin à gauche</h3><p>La règle imbriquée vient après : sa marge l'emporte pour body. En mode quirks, body remplit les 140px de haut de html moins ses marges : 140 + 573 + 573 = 1286px, de y = −493 à 793. En largeur, 260 + 500 000 − 500 000 − 280 est négatif : le contenu fait 0, et body n'est que ses deux bordures de 140px. Il fait 280px de large, en x = −499 930 : je le dessine ici, plus près. Chaque bordure porte 5 points, à 286,5px d'écart.</p></div>
+<div class="cap" data-t="21" data-step="×0,07"><h3>5. scale:1e4.07, en hauteur</h3><p><code>1e4.07</code> se lit comme deux nombres : 1e4 en largeur et .07 en hauteur, autour du centre de body, en y = 150. La colonne passe à 1286 × 0,07 = 90px, de y = 105 à 195. Les points deviennent des ellipses plates de 9,8px de haut, à 20,06px d'écart.</p></div>
+<div class="cap" data-t="27" data-step="×10 000"><h3>6. ×10 000 en largeur</h3><p>Le centre de body est en x = −499 790. Le point situé 50px à sa droite arrive en −499 790 + 50 × 10 000 = 210. Tout le canevas ne montre que 0,04px de body : une tranche fine, 20px à gauche du centre des points de droite. À cet endroit, chaque point fait 134,2px de haut : chaque bande fait 134,2 × 0,07 = 9,4px.</p></div>
+<div class="cap" data-t="33" data-step="Résultat" data-live="112 caractères · 100 % identique"><h3>7. Résultat : 112 caractères</h3><p>Les deux points de html sont les demi-disques. La bordure droite de body, écrasée puis étirée, donne les cinq bandes. Elles passent aussi sur les disques, dans la même couleur. La bordure gauche part loin à gauche, hors du canevas.</p></div>
+{%- else %}
+<div class="cap" data-t="0" data-step="html"><h3>1. html, wider than the canvas</h3><p>There is no doctype: the page is in quirks mode, and a number with no unit means px in <code>margin</code>. <code>*</code> selects html, head, style and body; head and style are hidden. <code>margin:80-70</code> gives html 80px at the top and bottom, and −70px on each side: 540 × 140, from x = −70 to 470 and from y = 80 to 220.</p></div>
+<div class="cap" data-t="5" data-step="Dots"><h3>2. One dot per side</h3><p><code>border-inline:35vw dotted#62306D</code> puts a 140px border on the left and right of html: 35vw is 35% of 400. A dotted border is a row of round dots, as wide as the border. Each side is 140px tall: room for a single dot, a 140px disc. The centers sit at x = 0 and 400, y = 150: the canvas edges cut the discs in half.</p></div>
+<div class="cap" data-t="10" data-step="Background"><h3>3. body's background, on the canvas</h3><p>The nested <code>*{</code> selects the elements inside another one: head, style and body. So <code>background:#F7BED9</code> only reaches body. html has no background: the browser then paints body's background on the whole canvas, under html's discs.</p></div>
+<div class="cap" data-t="15" data-step="body"><h3>4. body, far to the left</h3><p>The nested rule comes later, so its margin wins for body. In quirks mode, body fills html's 140px of height minus its margins: 140 + 573 + 573 = 1286px, from y = −493 to 793. Across, 260 + 500,000 − 500,000 − 280 is negative: the content is 0, and body is just its two 140px borders. It is 280px wide, at x = −499,930: I draw it here, closer. Each border holds 5 dots, 286.5px apart.</p></div>
+<div class="cap" data-t="21" data-step="×0.07"><h3>5. scale:1e4.07, down</h3><p><code>1e4.07</code> reads as two numbers: 1e4 across and .07 down, around body's center, at y = 150. The column shrinks to 1286 × 0.07 = 90px, from y = 105 to 195. The dots become flat ellipses, 9.8px tall and 20.06px apart.</p></div>
+<div class="cap" data-t="27" data-step="×10,000"><h3>6. ×10,000 across</h3><p>body's center is at x = −499,790. The point 50px right of it lands at −499,790 + 50 × 10,000 = 210. The whole canvas shows only 0.04px of body: a thin slice, 20px left of the right dots' centers. There, each dot is 134.2px tall: each band is 134.2 × 0.07 = 9.4px.</p></div>
+<div class="cap" data-t="33" data-step="Result" data-live="112 characters · 100% match"><h3>7. Result: 112 characters</h3><p>html's two dots are the half discs. body's right border, squashed and then stretched, gives the five bands. They also cross the discs, in the same color. The left border flies far to the left, off the canvas.</p></div>
+{%- endif %}
+</div>
+<div class="live"></div>
+</div>
+</div>
+<script>
+(window.AnimScenes = window.AnimScenes || {}).t0630 = (fig) => {
+  const fr = document.documentElement.lang === 'fr';
+  const $ = (s) => fig.querySelector(s);
+  const $$ = (s) => [...fig.querySelectorAll(s)];
+  const live = $('.live');
+  const ease = (x) => (x < 0.5 ? 4 * x * x * x : 1 - Math.pow(-2 * x + 2, 3) / 2);
+  const pr = (t, [a, b]) => ease(Math.min(1, Math.max(0, (t - a) / (b - a))));
+  const win = (t, a, b) => Math.min(pr(t, [a, a + 0.5]), 1 - pr(t, [b - 0.2, b]));
+  const c = fr ? ' :' : ':';
+  const num = (v, d = 0) => { const s = Math.abs(v).toFixed(d); return (v < -0.005 ? '−' : '') + (fr ? s.replace('.', ',') : s); };
+  const big = (v) => Math.round(v).toString().replace(/\B(?=(\d{3})+(?!\d))/g, fr ? ' ' : ',');
+  // Measured on the official code in local Chrome (getBoundingClientRect, 400 × 300, quirks mode):
+  // html (−70, 80) 540 × 140, borders 140px; one 140px dot per side, centers (0, 150) and (400, 150).
+  // body 280 × 1286 before the transform, top y = −493, left x = −499,930 (drawn here at x = 20, so that
+  // its offset 190 sits at x = 210); 5 dots per border, centers 70, 356.5, 643, 929.5, 1216 from its top.
+  // After scale: 1e4 .07 around its center (−499,790, 150): x −1,899,790 … 900,210, y 104.99 … 195.01.
+  const FIN = 33;
+  const hb = $('.t0630-hb'), hd = $('.t0630-html'), bd = $('.t0630-body'), bb = $('.t0630-bb'), sl = $('.t0630-slice');
+  const L = (k) => $$(`.zlab[data-l="${k}"]`);
+  const ink = 'var(--t0630-ink)';
+  return (t, step) => {
+    const teach = fig.dataset.teach === '1' && t < FIN;
+    const ann = 1 - pr(t, [FIN, FIN + 0.6]);
+    // 1. html's box
+    hb.style.opacity = 0.9 * pr(t, [0.3, 1.2]) * ann;
+    // 2. one dot per side
+    hd.style.opacity = pr(t, [5.5, 6.8]);
+    hd.style.borderColor = teach ? 'var(--t0630-hd)' : ink;
+    // 3. body's background goes to the canvas
+    const kb = pr(t, [11, 12.5]);
+    fig.style.setProperty('--bg', kb <= 0 ? '#fff' : kb >= 1 ? '#f7bed9' : `color-mix(in srgb, #f7bed9 ${(kb * 100).toFixed(1)}%, #fff)`);
+    // 4. body, drawn closer than it is; 5. ×0.07 down; 6. ×10,000 across, around the slice at x = 210
+    const k5 = pr(t, [22, 24.5]), k6 = pr(t, [28.5, 31.5]);
+    const ky = k5 >= 1 ? 0.07 : 1 - 0.93 * k5;
+    const kx = Math.pow(10, 4 * k6);
+    bd.style.opacity = pr(t, [15.5, 16.5]);
+    bd.style.transform = `scale(${kx}, ${ky})`;
+    bd.style.borderLeftColor = teach ? 'var(--t0630-bl)' : ink;
+    bd.style.borderRightColor = teach ? 'var(--t0630-br)' : ink;
+    const ob = 0.9 * pr(t, [15.5, 16.5]) * (1 - pr(t, [28.5, 29.3])) * ann;
+    bb.style.opacity = ob;
+    bb.style.visibility = ob > 0 ? 'visible' : 'hidden';
+    bb.style.left = `${210 - 190 * kx}px`;
+    bb.style.width = `${280 * kx}px`;
+    bb.style.top = `${150 - 643 * ky}px`;
+    bb.style.height = `${1286 * ky}px`;
+    sl.style.opacity = win(t, 27.3, FIN);
+    [[0.3, 5], [5.3, 10], [10.3, 15], [15.3, 21], [21.3, 27], [27.3, FIN]].forEach(([a, e], k) => L(k + 1).forEach((l) => (l.style.opacity = win(t, a, e))));
+    let txt;
+    if (step === 0) txt = `html${c} 540 × 140 · x = −70 … 470`;
+    else if (step === 1) txt = `${fr ? 'points' : 'dots'}${c} ⌀ 140px · x = 0, 400`;
+    else if (step === 2) txt = `${fr ? 'canevas' : 'canvas'}${c} #F7BED9`;
+    else if (step === 3) txt = `body${c} 280 × 1286 · y = −493 … 793`;
+    else if (step === 4) txt = `scale y${c} ×${num(ky, 2)} · ${fr ? 'hauteur' : 'height'} ${num(1286 * ky, 1)}px`;
+    else if (step === 5) txt = `scale x${c} ×${big(kx)}`;
+    else txt = $$('.caps .cap')[6].dataset.live || '';
+    live.textContent = txt;
+  };
+};
+</script>
+</figure>
