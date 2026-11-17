@@ -18,7 +18,7 @@ La cible du 23 août est une mallette : un épais contour noir sur fond orange,
 
 Cochez **Couleurs pédagogiques** pour voir quelle boîte dessine quelle partie : en vraies couleurs, plusieurs bordures se superposent exactement.
 
-{% include animations/2026-08-23.html lang=page.lang %}
+{% include animations/2026-08-23.html lang=page.lang %}
 
 ## Le code, aéré
 
