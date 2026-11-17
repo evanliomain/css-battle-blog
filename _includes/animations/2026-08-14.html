@@ -1,0 +1,118 @@
+<figure class="anim t0814" data-duration="30" data-scene="t0814" data-wide="-30 -30 460 395" data-off-label="-26 338" style="--bg:#6d1477">
+<style>
+.t0814{--t0814-pu:#6d1477;--t0814-be:#f5e3b5;--t0814-bo:#4a78c2;--t0814-a:#4fb879}
+.t0814 .t0814-body{left:28px;top:28px;width:344px;height:182px;background:var(--t0814-bo);opacity:0;z-index:1}
+.t0814 .t0814-p{width:80px;height:80px;background:var(--t0814-be);opacity:0;z-index:2}
+.t0814 .t0814-p > i{position:absolute;left:20px;top:20px;width:40px;height:40px;background:var(--t0814-pu)}
+.t0814 .t0814-g{box-sizing:border-box;border:1.5px dashed rgb(255 255 255 / .9);opacity:0;z-index:5}
+.t0814 .zlab{color:#14142a;background:rgb(255 255 255 / .92);padding:1px 5px;border-radius:3px}
+.t0814 .t0814-l{left:6px;top:6px;opacity:0;z-index:8}
+.t0814[data-view="wide"] .t0814-l{left:-26px;top:-26px}
+.t0814 .off-lab.in-canvas{left:236px!important}
+</style>
+<div class="anim-col">
+<div class="stage" role="img" aria-label="{% if include.lang == "fr" %}Animation : le canevas est violet, le fond de html ; html a 20px de padding, body garde sa marge de 8px et prend 20px de padding, donc son contenu commence en (48 ; 48) et fait 304px de large ; chaque p contient un a ; flottants, les a font 40 × 40 et les p 80 × 80 ; avec margin:62 0 0 22, le troisième p ne tient plus et passe à la ligne en (70 ; 252) ; la marge droite de −4 %, soit −12,16px, remet les trois p sur une ligne en x = 70, 160 et 250 ; border-radius:50% arrondit le premier et le troisième p et le deuxième a{% else %}Animation: the canvas is purple, the background of html; html has 20px of padding, body keeps its 8px margin and gets 20px of padding, so its content starts at (48, 48) and is 304px wide; each p holds an a; as floats, the a elements are 40 × 40 and the p elements 80 × 80; with margin:62 0 0 22, the third p no longer fits and wraps to (70, 252); the −4% right margin, −12.16px, puts the three p back on one row at x = 70, 160 and 250; border-radius:50% rounds the first and third p and the second a{% endif %}">
+<div class="scene">
+<div class="t0814-body"></div>
+<div class="t0814-p"><i></i></div>
+<div class="t0814-p"><i></i></div>
+<div class="t0814-p"><i></i></div>
+<div class="t0814-g" data-g="1" style="left:0;top:0;width:400px;height:238px"></div>
+<div class="t0814-g" data-g="2" style="left:28px;top:28px;width:344px;height:182px"></div>
+<div class="t0814-g" data-g="3" style="left:48px;top:48px;width:304px;height:142px"></div>
+<span class="zlab t0814-l" data-l="1">html 20 + body 8 + 20 = 48</span>
+<span class="zlab t0814-l" data-l="2">{% if include.lang == "fr" %}a : 20 + 20 = 40 · p : 20 + 40 + 20 = 80{% else %}a: 20 + 20 = 40 · p: 20 + 40 + 20 = 80{% endif %}</span>
+<span class="zlab t0814-l" data-l="3">48 + 62 = 110 · 48 + 22 = 70<br>3 × (22 + 80) = 306 > 304</span>
+<span class="zlab t0814-l" data-l="4">{% if include.lang == "fr" %}4 % × 304 = 12,16<br>22 + 80 − 12,16 = 89,84{% else %}4% × 304 = 12.16<br>22 + 80 − 12.16 = 89.84{% endif %}</span>
+<span class="zlab t0814-l" data-l="5">50% × 80 = 40 · 50% × 40 = 20</span>
+</div>
+</div>
+<div class="legend"><span><i style="--c:var(--t0814-pu)"></i>{% if include.lang == "fr" %}html : #6D1477{% else %}html: #6D1477{% endif %}</span><span><i style="--c:var(--t0814-bo)"></i>{% if include.lang == "fr" %}body : #6D1477{% else %}body: #6D1477{% endif %}</span><span><i style="--c:var(--t0814-be)"></i>{% if include.lang == "fr" %}p : #F5E3B5{% else %}p: #F5E3B5{% endif %}</span><span><i style="--c:var(--t0814-a)"></i>{% if include.lang == "fr" %}a : #6D1477{% else %}a: #6D1477{% endif %}</span></div>
+</div>
+<div class="anim-side">
+<pre class="code" aria-hidden="true"><span data-on="2">&lt;p a>&lt;a>&lt;p>&lt;a a>&lt;p a>&lt;a></span>&lt;style><span data-on="5">[a]{border-radius:50%}</span>*{<span data-on="1">background:#6D1477</span>;<span data-on="1 2" data-tone="2">padding:20</span>;<span data-on="2">float:left</span>}p{<span data-on="6">background:#F5E3B5</span>;<span data-on="3 4">margin:62<span data-on="4" data-tone="2">-4%</span>0 22</span></pre>
+<div class="now" aria-live="polite">
+<div class="caps">
+{%- if include.lang == "fr" %}
+<div class="cap" data-t="0" data-step="Tout en violet"><h3>1. Tout en violet</h3><p><code>*</code> vise tous les éléments, html compris. Le fond de html peint tout le canevas en <code>#6D1477</code>. <code>padding:20</code> n'a pas d'unité : en mode quirks, ce sont des px. html a 20px de padding, body garde sa marge par défaut de 8px et prend lui aussi 20px de padding : son contenu commence en (48 ; 48) et fait 304px de large.</p></div>
+<div class="cap" data-t="5" data-step="Trois p, trois a"><h3>2. Trois <code>p</code>, trois <code>a</code></h3><p>Aucune balise n'est fermée. Un <code>&lt;p></code> ferme le <code>p</code> d'avant : on obtient trois <code>p</code>, avec un <code>a</code> dans chacun. Flottant, un <code>a</code> devient un bloc ; vide, il fait 20 + 20 = 40px de côté. Flottant, un <code>p</code> s'ajuste à son <code>a</code> : 20 + 40 + 20 = 80px. Pour l'instant, les <code>p</code> gardent leur marge par défaut de 16px en haut.</p></div>
+<div class="cap" data-t="10" data-step="Les marges"><h3>3. Les marges</h3><p><code>margin:62…0 22</code> : 62px en haut, 22px à gauche. Le premier <code>p</code> descend en (70 ; 110). Mais chaque <code>p</code> prend alors 22 + 80 = 102px, et trois font 306px : 2px de trop pour les 304px du contenu de body. Sans marge négative, le troisième passe à la ligne, en (70 ; 252), en partie hors du canevas.</p></div>
+<div class="cap" data-t="15" data-step="−4 %"><h3>4. Une marge droite de −4 %</h3><p>Une marge en % se calcule sur la largeur du bloc parent : les 304px du contenu de body. 4 % font 12,16px. Chaque <code>p</code> ne prend plus que 22 + 80 − 12,16 = 89,84px : les trois tiennent sur une ligne, en x = 70, 159,84 et 249,69. Chrome les peint sur des pixels entiers : 160 et 250, avec 10px d'écart.</p></div>
+<div class="cap" data-t="20" data-step="Arrondir [a]"><h3>5. Arrondir les <code>[a]</code></h3><p><code>[a]</code> vise tout élément qui porte l'attribut <code>a</code> : le premier et le troisième <code>p</code>, et le deuxième <code>a</code>. <code>border-radius:50%</code> en fait des cercles : 40px de rayon pour les <code>p</code>, 20px pour le <code>a</code>.</p></div>
+<div class="cap" data-t="25" data-step="Résultat" data-live="133 caractères · 100 % identique"><h3>6. Résultat : 133 caractères</h3><p>Les <code>p</code> sont beiges, les <code>a</code> violets comme le fond : ils font les trous. Un seul padding de 20px donne toutes les tailles.</p></div>
+{%- else %}
+<div class="cap" data-t="0" data-step="All purple"><h3>1. All purple</h3><p><code>*</code> targets every element, html included. The background of html paints the whole canvas <code>#6D1477</code>. <code>padding:20</code> has no unit: in quirks mode, it means px. html has 20px of padding, body keeps its default 8px margin and also gets 20px of padding: its content starts at (48, 48) and is 304px wide.</p></div>
+<div class="cap" data-t="5" data-step="Three p, three a"><h3>2. Three <code>p</code>, three <code>a</code></h3><p>No tag is closed. A <code>&lt;p></code> closes the <code>p</code> before it: that gives three <code>p</code>, with one <code>a</code> in each. As a float, an <code>a</code> becomes a block; it is empty, so it is 20 + 20 = 40px wide. As a float, a <code>p</code> wraps its <code>a</code>: 20 + 40 + 20 = 80px. For now, the <code>p</code> elements keep their default 16px top margin.</p></div>
+<div class="cap" data-t="10" data-step="The margins"><h3>3. The margins</h3><p><code>margin:62…0 22</code>: 62px on top, 22px on the left. The first <code>p</code> moves to (70, 110). But each <code>p</code> now takes 22 + 80 = 102px, and three take 306px: 2px too many for the 304px of content in body. With no negative margin, the third one wraps to (70, 252), partly off the canvas.</p></div>
+<div class="cap" data-t="15" data-step="−4%"><h3>4. A −4% right margin</h3><p>A margin in % is a share of the parent's width: the 304px of content in body. 4% is 12.16px. Each <code>p</code> now takes only 22 + 80 − 12.16 = 89.84px: the three fit on one row, at x = 70, 159.84 and 249.69. Chrome paints them on whole pixels: 160 and 250, 10px apart.</p></div>
+<div class="cap" data-t="20" data-step="Round [a]"><h3>5. Round the <code>[a]</code></h3><p><code>[a]</code> targets every element with the attribute <code>a</code>: the first and third <code>p</code>, and the second <code>a</code>. <code>border-radius:50%</code> turns them into circles: a 40px radius for the <code>p</code> elements, 20px for the <code>a</code>.</p></div>
+<div class="cap" data-t="25" data-step="Result" data-live="133 characters · 100% match"><h3>6. Result: 133 characters</h3><p>The <code>p</code> elements are beige, the <code>a</code> elements purple like the background: they make the holes. One 20px padding gives every size.</p></div>
+{%- endif %}
+</div>
+<div class="live"></div>
+</div>
+</div>
+<script>
+(window.AnimScenes = window.AnimScenes || {}).t0814 = (fig) => {
+  const fr = document.documentElement.lang === 'fr';
+  const $ = (s) => fig.querySelector(s);
+  const $$ = (s) => [...fig.querySelectorAll(s)];
+  const live = $('.live');
+  const ease = (x) => (x < 0.5 ? 4 * x * x * x : 1 - Math.pow(-2 * x + 2, 3) / 2);
+  const pr = (t, [a, b]) => ease(Math.min(1, Math.max(0, (t - a) / (b - a))));
+  const win = (t, a, b) => Math.min(pr(t, [a, a + 0.5]), 1 - pr(t, [b - 0.4, b]));
+  const lerp = (a, b, k) => a + (b - a) * k;
+  const n2 = (v) => (fr ? v.toFixed(2).replace('.', ',') : v.toFixed(2));
+  const c = fr ? ' :' : ':';
+  const sep = fr ? ' ;' : ',';
+  // Measured on the official code and variants (getBoundingClientRect in local Chrome):
+  // body (28, 28) 344 × 182, content 304px wide from (48, 48); p 80 × 80, a 40 × 40 at +20
+  // without the margin rule: p at (48, 64) (128, 64) (208, 64); with margin:62 0 0 22: (70, 110) (172, 110) (70, 252)
+  // official: (70, 110) (159.844, 110) (249.688, 110), painted from x = 160 and 250
+  const FIN = 25;
+  const P0 = [[48, 64], [128, 64], [208, 64]];
+  const P1 = [[70, 110], [172, 110], [70, 252]];
+  const ps = $$('.t0814-p');
+  const as = ps.map((p) => p.firstElementChild);
+  const body = $('.t0814-body');
+  return (t, step) => {
+    const teach = fig.dataset.teach === '1' && t < FIN;
+    body.style.opacity = teach ? pr(t, [0.3, 1]) : 0;
+    const op = pr(t, [5.4, 6.4]);
+    const k1 = pr(t, [10.6, 12.6]);
+    const k1c = pr(t, [10.8, 13]);
+    const m = 12.16 * pr(t, [15.6, 17.6]);
+    const k2 = pr(t, [16, 18]);
+    const rk = pr(t, [20.6, 23]);
+    const pos = [
+      [lerp(P0[0][0], P1[0][0], k1), lerp(P0[0][1], P1[0][1], k1)],
+      [lerp(P0[1][0], P1[1][0], k1) - m, lerp(P0[1][1], P1[1][1], k1)],
+      [lerp(lerp(P0[2][0], P1[2][0], k1c), 249.69, k2), lerp(lerp(P0[2][1], P1[2][1], k1c), 110, k2)],
+    ];
+    // once the margin is in place, the boxes sit on the whole pixels Chrome paints
+    if (k2 >= 1) { pos[1][0] = 160; pos[2][0] = 250; }
+    ps.forEach((p, i) => {
+      p.style.opacity = op;
+      p.style.left = `${pos[i][0]}px`; p.style.top = `${pos[i][1]}px`;
+      p.style.borderRadius = i === 1 ? '0' : `${40 * rk}px`;
+      as[i].style.background = teach ? 'var(--t0814-a)' : 'var(--t0814-pu)';
+      as[i].style.borderRadius = i === 1 ? `${20 * rk}px` : '0';
+    });
+    $$('.t0814-g').forEach((g) => {
+      const i = +g.dataset.g;
+      const w1 = win(t, 0.3, 4.8);
+      g.style.opacity = 0.9 * (i === 3 ? Math.max(w1, win(t, 10.3, 19.8)) : w1);
+    });
+    [[0.2, 4.8], [5.2, 9.8], [10.2, 14.8], [15.2, 19.8], [20.2, 24.8]].forEach(([a, z], i) => ($(`.t0814-l[data-l="${i + 1}"]`).style.opacity = win(t, a, z)));
+    let txt = '';
+    if (step === 0) txt = `body${c} (28${sep} 28) · 344 × 182 · ${fr ? 'contenu' : 'content'} 304px`;
+    else if (step === 1) txt = `a${c} 40 × 40 · p${c} 80 × 80`;
+    else if (step === 2) txt = `p${c} (${Math.round(pos[0][0])}${sep} ${Math.round(pos[0][1])}) (${Math.round(pos[1][0])}${sep} ${Math.round(pos[1][1])}) (${Math.round(pos[2][0])}${sep} ${Math.round(pos[2][1])})`;
+    else if (step === 3) txt = `margin-right${c} −${n2(m)}px · x = 70 / ${n2(172 - m)} / ${n2(lerp(70, 249.69, k2))}`;
+    else if (step === 4) txt = `border-radius${c} ${n2(40 * rk)}px · ${n2(20 * rk)}px`;
+    else txt = $$('.caps .cap')[5].dataset.live || '';
+    live.textContent = txt;
+  };
+};
+</script>
+</figure>
