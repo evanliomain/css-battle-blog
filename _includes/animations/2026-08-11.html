@@ -1,0 +1,125 @@
+<figure class="anim t0811" data-duration="35" data-scene="t0811" data-wide="-30 -20 460 340" data-off-label="-26 304" style="--bg:#3a2568">
+<style>
+.t0811{--t0811-bg:#3a2568;--t0811-cr:#f9ddc6;--t0811-lv:#9d92c8;--t0811-fr:#ffffff;--t0811-bo:#5fd99a;--t0811-gp:#ff5c93}
+.t0811 .t0811-html{left:0;top:0;width:400px;height:300px;box-sizing:border-box;border:2px dashed var(--t0811-fr);opacity:0;z-index:5}
+.t0811 .t0811-band{left:120px;width:160px;height:0;background:var(--t0811-cr);z-index:2}
+.t0811 .t0811-band[data-b="t"]{top:20px}
+.t0811 .t0811-body{left:120px;top:100px;width:160px;height:100px;box-sizing:border-box;background:rgb(95 217 154 / .55);border:2px dashed var(--t0811-bo);opacity:0;z-index:3}
+.t0811 .t0811-bar{top:110px;height:80px;width:0;z-index:4}
+.t0811 .zlab{color:#14142a;background:rgb(255 255 255 / .92);padding:1px 5px;border-radius:3px}
+.t0811 .t0811-l{left:4px;top:4px;opacity:0;z-index:8}
+.t0811 .t0811-l[data-l="2"]{top:52px}
+.t0811 .t0811-l[data-l="4"]{top:120px}
+.t0811 .t0811-l[data-l="5"]{top:122px}
+.t0811 .t0811-l[data-l="6"]{top:140px}
+</style>
+<div class="anim-col">
+<div class="stage" role="img" aria-label="{% if include.lang == "fr" %}Animation : & vise html ; margin:5%120 lui donne 20px en haut et en bas et 120px à gauche et à droite : html fait 160 × 260 en (120 ; 20), et son fond #3A2568 passe au canevas ; border-block:5em ajoute deux bordures crème de 80px, en haut et en bas ; border-radius:9in, soit 864px, est ramené à 80px : les deux bordures deviennent deux demi-disques ; le * imbriqué vise body, qui fait 160 × 80,81 en (120 ; 109,59) ; border-inline:64q lui donne deux bordures de 60px, à gauche et à droite ; en double, chacune devient deux traits de 20px séparés par 20px : les quatre barres lavande{% else %}Animation: & targets html; margin:5%120 gives it 20px at the top and bottom and 120px on the left and right: html is 160 × 260 at (120, 20), and its #3A2568 background goes to the canvas; border-block:5em adds two 80px cream borders, at the top and bottom; border-radius:9in, which is 864px, is scaled down to 80px: the two borders become two half discs; the nested * targets body, which is 160 × 80.81 at (120, 109.59); border-inline:64q gives it two 60px borders, on the left and right; as double, each one becomes two 20px lines with 20px between them: the four lavender bars{% endif %}">
+<div class="scene">
+<div class="t0811-band" data-b="t"></div>
+<div class="t0811-band" data-b="b"></div>
+<div class="t0811-body"></div>
+<div class="t0811-bar" data-a="0" style="left:120px"></div>
+<div class="t0811-bar" data-a="1" style="left:280px"></div>
+<div class="t0811-html"></div>
+<span class="zlab t0811-l" data-l="1">{% if include.lang == "fr" %}5 % × 400<br>= 20px<br>300 − 40<br>= 260px{% else %}5% × 400<br>= 20px<br>300 − 40<br>= 260px{% endif %}</span>
+<span class="zlab t0811-l" data-l="2">5em = 80px</span>
+<span class="zlab t0811-l" data-l="3">9in = 864px<br>→ 80px</span>
+<span class="zlab t0811-l" data-l="4">{% if include.lang == "fr" %}6 % × 160<br>= 9,6px{% else %}6% × 160<br>= 9.6px{% endif %}</span>
+<span class="zlab t0811-l" data-l="5">{% if include.lang == "fr" %}64q<br>= 60,47px<br>→ 60px{% else %}64q<br>= 60.47px<br>→ 60px{% endif %}</span>
+<span class="zlab t0811-l" data-l="6">60 = 3 × 20</span>
+</div>
+</div>
+<div class="legend"><span><i style="--c:var(--t0811-bg);outline:2px dashed var(--t0811-fr);outline-offset:-2px"></i>{% if include.lang == "fr" %}html, 160 × 260{% else %}html, 160 × 260{% endif %}</span><span><i style="--c:var(--t0811-cr)"></i>border-block</span><span><i style="--c:rgb(95 217 154 / .55);outline:2px dashed var(--t0811-bo);outline-offset:-2px"></i>body</span><span><i style="--c:var(--t0811-lv)"></i>border-inline</span><span><i style="--c:var(--t0811-gp)"></i>{% if include.lang == "fr" %}le creux du double{% else %}the gap of double{% endif %}</span></div>
+</div>
+<div class="anim-side">
+<pre class="code" aria-hidden="true">&lt;style><span data-on="1">&amp;{background:#3A2568;margin:5%120</span>;<span data-on="2">border-block:5em solid#F9DDC6</span>;<span data-on="3">border-radius:9in</span>;<span data-on="4">*{margin:6%0</span>;<span data-on="5 6">border-inline:64q <span data-on="6" data-tone="2">double</span>#9D92C8</span></pre>
+<div class="now" aria-live="polite">
+<div class="caps">
+{%- if include.lang == "fr" %}
+<div class="cap" data-t="0" data-step="html, 160 × 260"><h3>1. html, 160 × 260</h3><p>En haut de la feuille de style, <code>&amp;</code> désigne la racine : html. Il n'y a pas de doctype : la page est en mode quirks, et <code>120</code> sans unité vaut 120px. <code>margin:5%120</code> donne 5 % × 400 = 20px en haut et en bas, et 120px à gauche et à droite. html fait 400 − 240 = 160px de large et, en mode quirks, 300 − 40 = 260px de haut. Son fond <code>#3A2568</code> passe au canevas.</p></div>
+<div class="cap" data-t="5" data-step="Deux bordures"><h3>2. Deux bordures crème</h3><p><code>border-block</code> règle les bordures du haut et du bas. <code>5em</code> vaut 5 × 16 = 80px. Les bordures sont dans les 260px de html : celle du haut va de y = 20 à 100, celle du bas de 200 à 280. Entre les deux, la boîte de contenu de html fait 160 × 100 : on y voit le canevas.</p></div>
+<div class="cap" data-t="10" data-step="Deux demi-disques"><h3>3. Deux demi-disques</h3><p><code>9in</code>, c'est 9 × 96 = 864px. Deux rayons de 864px ne tiennent pas dans les 160px de large : Chrome réduit tous les rayons du même facteur, 160 / 1728. Chaque coin fait 80 × 80. Les bordures font 80px de haut : elles deviennent deux demi-disques de rayon 80. Le bord intérieur reste droit, car le rayon vertical moins la bordure donne 80 − 80 = 0.</p></div>
+<div class="cap" data-t="15" data-step="body"><h3>4. body, dans le creux</h3><p>Le <code>*{</code> imbriqué veut dire <code>&amp; *</code> : head, style et body. Seul body s'affiche. <code>margin:6%0</code> se calcule sur la largeur de html : 6 % × 160 = 9,6px en haut et en bas. En mode quirks, body remplit la hauteur de html moins ses marges : 100 − 2 × 9,6 = 80,8px. getBoundingClientRect donne 160 × 80,81 en (120 ; 109,59).</p></div>
+<div class="cap" data-t="20" data-step="Deux bordures de 60px"><h3>5. Deux bordures de 60px</h3><p><code>border-inline</code> règle les bordures gauche et droite de body. <code>64q</code>, c'est 64 quarts de millimètre : 60,47px. Chrome dessine les bordures en pixels entiers : getComputedStyle donne 60px. Elles vont de x = 120 à 180 et de 220 à 280. Les bords à 109,59 et 190,41 tombent sur les lignes 110 à 189.</p></div>
+<div class="cap" data-t="25" data-step="double"><h3>6. double : deux barres par bordure</h3><p>Le style <code>double</code> coupe chaque bordure en trois tiers de 20px : un trait, un creux, un trait. Chaque côté donne deux barres. Les barres vont de x = 120 à 140, 160 à 180, 220 à 240 et 260 à 280. Le creux de 40px entre les deux bordures est le contenu de body, vide.</p></div>
+<div class="cap" data-t="30" data-step="Résultat" data-live="133 caractères · 100 % identique"><h3>7. Résultat : 133 caractères</h3><p>Deux éléments suffisent. Les bordures du haut et du bas de html, arrondies, font la pilule. Les bordures gauche et droite de body, en <code>double</code>, font les quatre barres.</p></div>
+{%- else %}
+<div class="cap" data-t="0" data-step="html, 160 × 260"><h3>1. html, 160 × 260</h3><p>At the top of the style sheet, <code>&amp;</code> stands for the root: html. There is no doctype, so the page is in quirks mode, and <code>120</code> with no unit is 120px. <code>margin:5%120</code> gives 5% × 400 = 20px at the top and bottom, and 120px on the left and right. html is 400 − 240 = 160px wide and, in quirks mode, 300 − 40 = 260px tall. Its <code>#3A2568</code> background goes to the canvas.</p></div>
+<div class="cap" data-t="5" data-step="Two borders"><h3>2. Two cream borders</h3><p><code>border-block</code> sets the top and bottom borders. <code>5em</code> is 5 × 16 = 80px. The borders are inside html's 260px: the top one runs from y = 20 to 100, the bottom one from 200 to 280. Between them, html's content box is 160 × 100, and the canvas shows through.</p></div>
+<div class="cap" data-t="10" data-step="Two half discs"><h3>3. Two half discs</h3><p><code>9in</code> is 9 × 96 = 864px. Two radii of 864px do not fit in 160px of width, so Chrome scales all the radii down by the same factor, 160 / 1728. Each corner is 80 × 80. The borders are 80px tall, so they become two half discs of radius 80. The inner edge stays straight: the vertical radius minus the border is 80 − 80 = 0.</p></div>
+<div class="cap" data-t="15" data-step="body"><h3>4. body, in the gap</h3><p>The nested <code>*{</code> means <code>&amp; *</code>: head, style and body. Only body is displayed. <code>margin:6%0</code> is a share of html's width: 6% × 160 = 9.6px at the top and bottom. In quirks mode, body fills the height of html minus its margins: 100 − 2 × 9.6 = 80.8px. getBoundingClientRect gives 160 × 80.81 at (120, 109.59).</p></div>
+<div class="cap" data-t="20" data-step="Two 60px borders"><h3>5. Two 60px borders</h3><p><code>border-inline</code> sets body's left and right borders. <code>64q</code> is 64 quarter-millimeters: 60.47px. Chrome draws borders on whole pixels: getComputedStyle gives 60px. They run from x = 120 to 180 and from 220 to 280. The edges at 109.59 and 190.41 land on the rows 110 to 189.</p></div>
+<div class="cap" data-t="25" data-step="double"><h3>6. double: two bars per border</h3><p>The <code>double</code> style cuts each border into three thirds of 20px: a line, a gap, a line. Each side gives two bars. The bars run from x = 120 to 140, 160 to 180, 220 to 240 and 260 to 280. The 40px between the two borders is body's content, which is empty.</p></div>
+<div class="cap" data-t="30" data-step="Result" data-live="133 characters · 100% match"><h3>7. Result: 133 characters</h3><p>Two elements are enough. html's top and bottom borders, rounded, make the pill. body's left and right borders, as <code>double</code>, make the four bars.</p></div>
+{%- endif %}
+</div>
+<div class="live"></div>
+</div>
+</div>
+<script>
+(window.AnimScenes = window.AnimScenes || {}).t0811 = (fig) => {
+  const fr = document.documentElement.lang === 'fr';
+  const $ = (s) => fig.querySelector(s);
+  const $$ = (s) => [...fig.querySelectorAll(s)];
+  const live = $('.live');
+  const ease = (x) => (x < 0.5 ? 4 * x * x * x : 1 - Math.pow(-2 * x + 2, 3) / 2);
+  const pr = (t, [a, b]) => ease(Math.min(1, Math.max(0, (t - a) / (b - a))));
+  const win = (t, a, b) => Math.min(pr(t, [a, a + 0.5]), 1 - pr(t, [b - 0.4, b]));
+  const lerp = (a, b, k) => a + (b - a) * k;
+  const n2 = (v) => (fr ? v.toFixed(2).replace('.', ',') : v.toFixed(2));
+  const c = fr ? ' :' : ':';
+  const sep = fr ? ' ;' : ',';
+  // Measured on the official code in local Chrome (quirks mode, 400 × 300):
+  // html (120, 20) 160 × 260, border 80px 0, radius 864px (drawn 80px); body (120, 109.59375) 160 × 80.8125,
+  // border-left/right 60px double (64q = 60.47px), bars painted on columns 120-139, 160-179, 220-239, 260-279, rows 110-189.
+  const FIN = 30;
+  const html = $('.t0811-html'), body = $('.t0811-body');
+  const bt = $('.t0811-band[data-b="t"]'), bb = $('.t0811-band[data-b="b"]');
+  const bars = $$('.t0811-bar');
+  return (t, step) => {
+    const teach = fig.dataset.teach === '1' && t < FIN;
+    // 1. html shrinks to 160 × 260
+    const k1 = pr(t, [0.5, 2.5]);
+    const hx = lerp(0, 120, k1), hy = lerp(0, 20, k1), hw = lerp(400, 160, k1), hh = lerp(300, 260, k1);
+    Object.assign(html.style, { left: `${hx}px`, top: `${hy}px`, width: `${hw}px`, height: `${hh}px` });
+    html.style.opacity = teach ? Math.min(pr(t, [0.2, 0.8]), 1 - pr(t, [29.2, 29.8])) : 0;
+    // 2. border-block
+    const bh = 80 * pr(t, [5.5, 7.5]);
+    bt.style.height = `${bh}px`;
+    bb.style.height = `${bh}px`;
+    bb.style.top = `${280 - bh}px`;
+    // 3. the radius
+    const r = 80 * pr(t, [10.5, 12.8]);
+    bt.style.borderRadius = `${r}px ${r}px 0 0`;
+    bb.style.borderRadius = `0 0 ${r}px ${r}px`;
+    // 4. body
+    const k4 = pr(t, [15.5, 17.5]);
+    const by = lerp(100, 109.59375, k4), bhh = lerp(100, 80.8125, k4);
+    body.style.top = `${by}px`;
+    body.style.height = `${bhh}px`;
+    body.style.opacity = teach ? pr(t, [15.2, 15.8]) : 0;
+    // 5. border-inline, then 6. double
+    const w = 60 * pr(t, [20.5, 22.5]);
+    const g = 20 * pr(t, [25.5, 27.5]);
+    const a = (w - g) / 2;
+    const gap = teach ? 'var(--t0811-gp)' : '#0000';
+    bars.forEach((e, i) => {
+      e.style.width = `${w}px`;
+      if (i) e.style.left = `${280 - w}px`;
+      e.style.background = `linear-gradient(90deg,var(--t0811-lv) ${a}px,${gap} 0 ${a + g}px,var(--t0811-lv) 0)`;
+    });
+    [[0.2, 4.8], [5.2, 9.8], [10.2, 14.8], [15.2, 19.8], [20.2, 24.8], [25.2, 29.8]].forEach(([p, q], i) => ($(`.t0811-l[data-l="${i + 1}"]`).style.opacity = win(t, p, q)));
+    let txt = '';
+    if (step === 0) txt = `html${c} (${n2(hx)}${sep} ${n2(hy)}) · ${n2(hw)} × ${n2(hh)}`;
+    else if (step === 1) txt = `border-block${c} ${n2(bh)}px`;
+    else if (step === 2) txt = `border-radius${c} ${n2(r)}px`;
+    else if (step === 3) txt = `body${c} (120${sep} ${n2(by)}) · 160 × ${n2(bhh)}`;
+    else if (step === 4) txt = `border-inline${c} ${n2(w)}px`;
+    else if (step === 5) txt = fr ? `double : trait ${n2(a)}px · creux ${n2(g)}px` : `double: line ${n2(a)}px · gap ${n2(g)}px`;
+    else txt = $$('.caps .cap')[6].dataset.live || '';
+    live.textContent = txt;
+  };
+};
+</script>
+</figure>
