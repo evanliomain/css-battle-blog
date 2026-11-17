@@ -1,0 +1,131 @@
+<figure class="anim t0802" data-duration="30" data-scene="t0802" data-wide="-50 -40 500 380" data-off-label="-46 -35" style="--bg:#e05947">
+<style>
+.t0802{--t0802-rd:#e05947;--t0802-pk:#eed9d9;--t0802-dt:#1e3a8a;--t0802-s1:#facc15;--t0802-s2:#16a34a;--t0802-ln:#14142a}
+.t0802 .t0802-dot{width:70px;height:70px;border-radius:50%;opacity:0;z-index:2}
+.t0802 .t0802-band{left:100px;top:40px;width:200px;height:220px;box-sizing:border-box;border:70px solid var(--t0802-dt);opacity:0;z-index:1}
+.t0802 .t0802-sh{opacity:0;z-index:3}
+.t0802 .t0802-g{opacity:0;z-index:3}
+.t0802 .t0802-hb{left:100px;top:40px;width:200px;height:220px;box-sizing:border-box;border:calc(2px * var(--k, 1)) dashed var(--t0802-ln);opacity:0;z-index:5}
+.t0802 .t0802-cb{left:170px;top:110px;width:60px;height:80px;box-sizing:border-box;border:calc(1.5px * var(--k, 1)) dotted var(--t0802-ln);opacity:0;z-index:5}
+.t0802 .t0802-bb{box-sizing:border-box;border:calc(2px * var(--k, 1)) solid var(--t0802-ln);background:rgb(255 255 255 / .3);opacity:0;z-index:4}
+.t0802 .zlab{color:#fff;background:rgb(20 20 42 / .9);padding:1px 5px;border-radius:3px;opacity:0}
+</style>
+<div class="anim-col">
+<div class="stage" role="img" aria-label="{% if include.lang == "fr" %}Animation : & désigne html ; margin:40 100 en fait une boîte de 200 × 220 en (100 ; 40), et son fond rouge couvre tout le canevas ; border:dotted 75q donne une bordure de 70px dont les points de 70px ne tiennent qu'aux quatre coins : quatre disques rose pâle ; le body, transparent, est tiré par ses marges de x = −13 à 125 et de y = 101 à 199 ; sa première ombre, décalée de 20px vers la droite, ne se voit qu'au-delà de son bord droit : une barre de x = 125 à 145 ; la seconde, décalée de 144px puis réduite de 29,29px de chaque côté, devient le rectangle du centre, de 79,4 × 39,4 en (160,3 ; 130,3){% else %}Animation: & is html; margin:40 100 makes it a 200 × 220 box at (100, 40), and its red background covers the whole canvas; border:dotted 75q gives a 70px border whose 70px dots only fit at the four corners: four pale pink disks; the transparent body is pulled by its margins from x = −13 to 125 and y = 101 to 199; its first shadow, moved 20px right, only shows past its right edge: a bar from x = 125 to 145; the second one, moved 144px and then made 29.29px smaller on each side, becomes the middle rectangle, 79.4 × 39.4 at (160.3, 130.3){% endif %}">
+<div class="scene">
+<div class="t0802-band"></div>
+<div class="t0802-dot" style="left:100px;top:40px"></div>
+<div class="t0802-dot" style="left:230px;top:40px"></div>
+<div class="t0802-dot" style="left:100px;top:190px"></div>
+<div class="t0802-dot" style="left:230px;top:190px"></div>
+<div class="t0802-g" data-g="1"></div>
+<div class="t0802-g" data-g="2"></div>
+<div class="t0802-sh" data-s="1"></div>
+<div class="t0802-sh" data-s="2"></div>
+<div class="t0802-bb"></div>
+<div class="t0802-hb"></div>
+<div class="t0802-cb"></div>
+<span class="zlab t0802-l" data-l="1" style="left:6px;top:6px">html 200 × 220 · margin:40 100</span>
+<span class="zlab t0802-l" data-l="2" style="left:6px;top:6px">{% if include.lang == "fr" %}75q = 70,87px → 70px{% else %}75q = 70.87px → 70px{% endif %}</span>
+<span class="zlab t0802-l" data-l="2" style="left:236px;top:272px">{% if include.lang == "fr" %}contenu : 60 × 80{% else %}content: 60 × 80{% endif %}</span>
+<span class="zlab t0802-l" data-l="3" style="left:6px;top:6px">body 138 × 98 · x −13 → 125</span>
+<span class="zlab t0802-l" data-l="4" style="left:6px;top:6px">5vw = 20px · x 125 → 145</span>
+<span class="zlab t0802-l" data-l="5" style="left:6px;top:6px">9pc = 144px · x 131 → 269</span>
+<span class="zlab t0802-l" data-l="6" style="left:6px;top:6px">{% if include.lang == "fr" %}−31q = −29,29px{% else %}−31q = −29.29px{% endif %}</span>
+<span class="zlab t0802-l" data-l="6" style="left:236px;top:272px">{% if include.lang == "fr" %}79,4 × 39,4{% else %}79.4 × 39.4{% endif %}</span>
+</div>
+</div>
+<div class="legend"><span><i style="--c:transparent;outline:2px dashed currentColor;outline-offset:-2px"></i>{% if include.lang == "fr" %}boîte de html{% else %}html box{% endif %}</span><span><i style="--c:var(--t0802-dt);border-radius:50%"></i>{% if include.lang == "fr" %}bordure pointillée{% else %}dotted border{% endif %}</span><span><i style="--c:rgb(255 255 255 / .3);outline:2px solid currentColor;outline-offset:-2px"></i>{% if include.lang == "fr" %}boîte de body (transparente){% else %}body box (transparent){% endif %}</span><span><i style="--c:var(--t0802-s1)"></i>{% if include.lang == "fr" %}1ʳᵉ ombre{% else %}1st shadow{% endif %}</span><span><i style="--c:var(--t0802-s2)"></i>{% if include.lang == "fr" %}2ᵉ ombre{% else %}2nd shadow{% endif %}</span></div>
+</div>
+<div class="anim-side">
+<pre class="code" aria-hidden="true">&lt;style><span data-on="1">&amp;{</span><span data-on="1 7">background:#E05947</span>;<span data-on="1">margin:40 100</span>;<span data-on="2">border:dotted 75q</span>;<span data-on="2 4 5 7" data-tone="2">color:EED9D9</span>;<span data-on="3">*{margin:-9 105-9-183</span>;box-shadow:<span data-on="4">5vw 0</span>,<span data-on="5">9pc 0 0</span><span data-on="6">-31q</span></pre>
+<div class="now" aria-live="polite">
+<div class="caps">
+{%- if include.lang == "fr" %}
+<div class="cap" data-t="0" data-step="html : 200 × 220"><h3>1. html : 200 × 220</h3><p>Hors de toute règle, <code>&amp;</code> désigne la racine : html. Pas de doctype : la page est en mode quirks, et <code>40 100</code> se lit en px. <code>margin:40 100</code> laisse une boîte de 200 × 220 en (100 ; 40). Le fond de html, <code>#E05947</code>, est peint sur tout le canevas.</p></div>
+<div class="cap" data-t="4" data-step="Quatre points"><h3>2. Quatre points</h3><p><code>75q</code>, c'est 75 quarts de millimètre, 70,87px : Chrome trace une bordure de 70px. Il reste 60 × 80 pour le contenu. En pointillé, chaque point est un disque de 70px. Sur ces côtés courts, il n'y en a qu'aux coins : quatre disques. Ils prennent la couleur de <code>color:EED9D9</code>, écrite sans <code>#</code>, ce que le mode quirks accepte.</p></div>
+<div class="cap" data-t="8.5" data-step="body"><h3>3. body, invisible</h3><p>Le <code>*{</code> imbriqué vise les descendants de html ; le seul visible est body. Il se place dans la boîte de contenu de html, 60 × 80 en (170 ; 110). <code>margin:-9 105-9-183</code> le tire de 183px à gauche, le rentre de 105px à droite et le tire de 9px en haut et en bas. body fait 138 × 98, de x = −13 à 125 et de y = 101 à 199. Il n'a pas de fond : on ne le voit pas.</p></div>
+<div class="cap" data-t="13" data-step="1ʳᵉ ombre"><h3>4. La 1ʳᵉ ombre : la barre</h3><p><code>5vw</code> fait 20px. La première ombre est la boîte de body décalée de 20px vers la droite, dans la couleur héritée. Une ombre extérieure n'est jamais peinte sous sa propre boîte : seuls les 20px qui dépassent le bord droit de body se voient, une barre de x = 125 à 145. Ses bouts, à y = 101 et 199, se cachent sous les disques.</p></div>
+<div class="cap" data-t="17.5" data-step="2ᵉ ombre"><h3>5. La 2ᵉ ombre se décale</h3><p><code>9pc</code> fait 144px. La seconde ombre part de x = −13 + 144 = 131 et va jusqu'à 269. Elle est sortie de la boîte de body, qui s'arrête à 125 : elle se voit en entier.</p></div>
+<div class="cap" data-t="21.5" data-step="Étalement"><h3>6. La 2ᵉ ombre rétrécit</h3><p>L'étalement <code>-31q</code>, −29,29px, retire la même chose de chaque côté : 138 − 58,58 = 79,4 de large, 98 − 58,58 = 39,4 de haut, en (160,3 ; 130,3). C'est le rectangle du milieu.</p></div>
+<div class="cap" data-t="26" data-step="Résultat" data-live="123 caractères · 100 % identique"><h3>7. Résultat : 123 caractères</h3><p>Une seule couleur sert aux quatre disques et aux deux ombres. La bordure de html dessine les disques, et la boîte vide de body donne sa taille aux deux ombres : une barre de 20px et un rectangle.</p></div>
+{%- else %}
+<div class="cap" data-t="0" data-step="html: 200 × 220"><h3>1. html: 200 × 220</h3><p>Outside any rule, <code>&amp;</code> is the root: html. There is no doctype: the page is in quirks mode, and <code>40 100</code> is read as px. <code>margin:40 100</code> leaves a 200 × 220 box at (100, 40). html's background, <code>#E05947</code>, is painted on the whole canvas.</p></div>
+<div class="cap" data-t="4" data-step="Four dots"><h3>2. Four dots</h3><p><code>75q</code> is 75 quarter millimeters, 70.87px: Chrome draws a 70px border. The content box is left with 60 × 80. In a dotted border, each dot is a 70px disk. On these short sides, they only fit at the corners: four disks. They take the color of <code>color:EED9D9</code>, written without <code>#</code>, which quirks mode accepts.</p></div>
+<div class="cap" data-t="8.5" data-step="body"><h3>3. body, invisible</h3><p>The nested <code>*{</code> targets html's descendants; the only visible one is body. It sits in html's content box, 60 × 80 at (170, 110). <code>margin:-9 105-9-183</code> pulls it 183px out on the left, 105px in on the right, and 9px out at the top and bottom. body is 138 × 98, from x = −13 to 125 and y = 101 to 199. It has no background: it does not show.</p></div>
+<div class="cap" data-t="13" data-step="1st shadow"><h3>4. The 1st shadow: the bar</h3><p><code>5vw</code> is 20px. The first shadow is body's box moved 20px right, in the inherited color. An outer shadow is never painted under its own box: only the 20px past body's right edge show, a bar from x = 125 to 145. Its ends, at y = 101 and 199, hide under the disks.</p></div>
+<div class="cap" data-t="17.5" data-step="2nd shadow"><h3>5. The 2nd shadow moves</h3><p><code>9pc</code> is 144px. The second shadow goes from x = −13 + 144 = 131 to 269. It is out of body's box, which ends at 125: all of it shows.</p></div>
+<div class="cap" data-t="21.5" data-step="Spread"><h3>6. The 2nd shadow shrinks</h3><p>The spread <code>-31q</code>, −29.29px, takes the same amount off every side: 138 − 58.58 = 79.4 wide, 98 − 58.58 = 39.4 tall, at (160.3, 130.3). That is the rectangle in the middle.</p></div>
+<div class="cap" data-t="26" data-step="Result" data-live="123 characters · 100% match"><h3>7. Result: 123 characters</h3><p>One color serves the four disks and the two shadows. html's border draws the disks, and body's empty box gives both shadows their size: a 20px bar and a rectangle.</p></div>
+{%- endif %}
+</div>
+<div class="live"></div>
+</div>
+</div>
+<script>
+(window.AnimScenes = window.AnimScenes || {}).t0802 = (fig) => {
+  const fr = document.documentElement.lang === 'fr';
+  const $ = (s) => fig.querySelector(s);
+  const $$ = (s) => [...fig.querySelectorAll(s)];
+  const live = $('.live');
+  const ease = (x) => (x < 0.5 ? 4 * x * x * x : 1 - Math.pow(-2 * x + 2, 3) / 2);
+  const pr = (t, [a, b]) => ease(Math.min(1, Math.max(0, (t - a) / (b - a))));
+  const win = (t, a, b) => Math.min(pr(t, [a, a + 0.5]), 1 - pr(t, [b - 0.4, b]));
+  const box = (e, r) => { e.style.left = `${r[0]}px`; e.style.top = `${r[1]}px`; e.style.width = `${Math.max(0, r[2])}px`; e.style.height = `${Math.max(0, r[3])}px`; };
+  const f1 = (v) => (fr ? v.toFixed(1).replace('.', ',') : v.toFixed(1));
+  const c = fr ? '\u00a0:' : ':';
+  // Measured on the official code in local Chrome (quirks mode, 400 × 300):
+  // html border box (100, 40) 200 × 220, border 70px (75q = 70.87px, drawn 70px), content box (170, 110) 60 × 80.
+  // Four 70px dots at the corners. body (-13, 101) 138 × 98, no background.
+  // 1st shadow: +20px, visible x 125..145 (not painted under body's box). 2nd shadow: +144px, spread -29.2913px:
+  // x 160.29..239.71, y 130.29..169.71.
+  const FIN = 26, SP = 29.2913, BX = [-13, 101, 138, 98], EDGE = 125;
+  const band = $('.t0802-band'), dots = $$('.t0802-dot'), hb = $('.t0802-hb'), cb = $('.t0802-cb'), bb = $('.t0802-bb');
+  const S = [$('.t0802-sh[data-s="1"]'), $('.t0802-sh[data-s="2"]')], G = [$('.t0802-g[data-g="1"]'), $('.t0802-g[data-g="2"]')];
+  const L = (k) => $$(`.t0802-l[data-l="${k}"]`);
+  // A shadow box r, cut where body's box covers it (x < 125): the visible part, and the hidden part as a ghost.
+  const shadow = (i, r, op, col, ghost) => {
+    const x0 = Math.max(r[0], EDGE);
+    box(S[i], [x0, r[1], r[0] + r[2] - x0, r[3]]);
+    box(G[i], [r[0], r[1], Math.min(r[2], EDGE - r[0]), r[3]]);
+    S[i].style.background = col;
+    G[i].style.background = col;
+    S[i].style.opacity = op;
+    G[i].style.opacity = ghost && r[0] < EDGE ? 0.3 * op : 0;
+  };
+  return (t, step) => {
+    const teach = fig.dataset.teach === '1' && t < FIN;
+    const col = (v) => (teach ? `var(--t0802-${v})` : 'var(--t0802-pk)');
+    const ann = 1 - pr(t, [FIN, FIN + 0.6]);
+    // html box, then its dotted border
+    hb.style.opacity = 0.9 * pr(t, [0.2, 0.8]) * ann;
+    band.style.opacity = teach ? 0.35 * win(t, 4.3, 6.4) : 0;
+    const d = pr(t, [5.6, 6.6]);
+    dots.forEach((e) => { e.style.opacity = d; e.style.background = col('dt'); });
+    cb.style.opacity = 0.9 * win(t, 4.6, 8.4);
+    // body: from html's content box (170, 110) 60 × 80 to (-13, 101) 138 × 98
+    const m = pr(t, [9.2, 11.4]);
+    const br = [170 - 183 * m, 110 - 9 * m, 60 + 78 * m, 80 + 18 * m];
+    box(bb, br);
+    bb.style.opacity = pr(t, [8.6, 9.1]) * ann;
+    // 1st shadow: body's box moved 20px right
+    const o1 = 20 * pr(t, [13.8, 15.6]);
+    shadow(0, [BX[0] + o1, BX[1], BX[2], BX[3]], pr(t, [13.2, 13.6]), col('s1'), t < FIN);
+    // 2nd shadow: moved 144px right, then 29.29px smaller on each side
+    const o2 = 144 * pr(t, [18, 20.4]), s = SP * pr(t, [22.2, 24.4]);
+    const r2 = [BX[0] + o2 + s, BX[1] + s, BX[2] - 2 * s, BX[3] - 2 * s];
+    shadow(1, r2, pr(t, [17.6, 18]), col('s2'), t < FIN);
+    [[0.3, 3.8], [4.3, 8.3], [8.8, 12.8], [13.3, 17.3], [17.8, 21.3], [21.8, 25.8]].forEach(([a, z], k) => L(k + 1).forEach((e) => (e.style.opacity = win(t, a, z))));
+    let txt;
+    if (step === 0) txt = `html${c} 200 × 220 · (100${fr ? '\u00a0;' : ','} 40)`;
+    else if (step === 1) txt = `border${c} 70px · ${fr ? '4 points · contenu' : '4 dots · content'} 60 × 80`;
+    else if (step === 2) txt = `body${c} ${Math.round(br[2])} × ${Math.round(br[3])} · x ${Math.round(br[0])} → ${Math.round(br[0] + br[2])}`;
+    else if (step === 3) txt = `${fr ? '1ʳᵉ ombre' : '1st shadow'}${c} ${Math.round(o1)}px · ${fr ? 'visible' : 'shows'} x 125 → ${Math.max(125, Math.round(BX[0] + o1 + BX[2]))}`;
+    else if (step === 4) txt = `${fr ? '2ᵉ ombre' : '2nd shadow'}${c} ${Math.round(o2)}px · x ${Math.round(r2[0])} → ${Math.round(r2[0] + r2[2])}`;
+    else if (step === 5) txt = `${fr ? '2ᵉ ombre' : '2nd shadow'}${c} ${f1(r2[2])} × ${f1(r2[3])}`;
+    else txt = $$('.caps .cap')[6].dataset.live || '';
+    live.textContent = txt;
+  };
+};
+</script>
+</figure>
