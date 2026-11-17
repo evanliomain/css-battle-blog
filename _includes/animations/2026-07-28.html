@@ -1,0 +1,124 @@
+<figure class="anim t0728" data-duration="33" data-scene="t0728" data-wide="-40 -40 480 380" style="--bg:#4a9a86">
+<style>
+.t0728{--t0728-gr:#4a9a86;--t0728-cr:#ebf6f0;--t0728-pu:#4c4c6b;--t0728-hb:#f97316;--t0728-ri:#facc15;--t0728-ou:#38bdf8;--t0728-bb:#ec4899;--t0728-bi:#7c3aed;--t0728-ln:#14142a}
+.t0728 .t0728-hbg{left:0;top:0;width:400px;height:300px;z-index:1}
+.t0728 .t0728-hbi{left:-20px;top:-20px;width:440px;height:340px;z-index:2}
+.t0728 .t0728-bbg{z-index:3}
+.t0728 .t0728-bbi{left:80px;top:-20px;width:240px;height:100px;z-index:4}
+.t0728 .t0728-box{box-sizing:border-box;border:calc(2px * var(--k, 1)) dashed var(--t0728-ln);box-shadow:0 0 0 calc(1px * var(--k, 1)) rgb(255 255 255 / .55);opacity:0;z-index:6}
+.t0728 .t0728-sl{top:-20px;height:340px;width:0;box-sizing:border-box;border-left:calc(2px * var(--k, 1)) dashed var(--t0728-ln);box-shadow:0 0 0 calc(1px * var(--k, 1)) rgb(255 255 255 / .55);opacity:0;z-index:6}
+.t0728 .zlab{color:#fff;background:rgb(20 20 42 / .9);padding:1px 5px;border-radius:3px;opacity:0}
+.t0728 .scene .zlab.t0728-br{left:auto;right:4px;top:auto;bottom:2px;transform-origin:100% 100%}
+</style>
+<div class="anim-col">
+<div class="stage" role="img" aria-label="{% if include.lang == "fr" %}Animation : html remplit le canevas de son fond vert ; sa border-image, débordant de 20px, peint un dégradé radial centré en (200 ; 80) : un disque transparent de rayon 70, un anneau crème jusqu'à 90px, du violet au-delà ; les tranches 20 et 205 laissent le milieu non peint, une colonne de 30px de x = 185 à 215 où le fond vert devient la tige ; body, en (100 ; 0), fait 200 × 60 en vert ; sa police de 162px donne 1lh = 187px, donc des tranches de 20 et un crème qui va jusqu'à 935px ; sa border-image n'est plus qu'un cadre crème de 20px autour de body, transparent là où il croise le disque{% else %}Animation: html fills the canvas with its green background; its border-image, with a 20px outset, paints a radial gradient centered at (200, 80): a transparent disk of radius 70, a cream ring out to 90px, purple beyond; the slices 20 and 205 leave the middle unpainted, a 30px column from x = 185 to 215 where the green background becomes the stem; body, at (100, 0), is 200 × 60 in green; its 162px font makes 1lh = 187px, so slices of 20 and cream all the way to 935px; its border-image is only a 20px cream frame around body, transparent where it crosses the disk{% endif %}">
+<div class="scene">
+<div class="t0728-hbg"></div>
+<div class="t0728-hbi"></div>
+<div class="t0728-bbg"></div>
+<div class="t0728-bbi"></div>
+<div class="t0728-box t0728-ha" style="left:-20px;top:-20px;width:440px;height:340px"></div>
+<div class="t0728-sl" style="left:184px"></div>
+<div class="t0728-sl" style="left:214px"></div>
+<div class="t0728-box t0728-bb" style="left:100px;top:0;width:200px;height:60px"></div>
+<div class="t0728-box t0728-ba" style="left:80px;top:-20px;width:240px;height:100px"></div>
+<span class="zlab t0728-l" data-l="1" style="left:4px;top:2px">html 400 × 300</span>
+<span class="zlab t0728-l t0728-br" data-l="1">background:#4A9A86</span>
+<span class="zlab t0728-l" data-l="2" style="left:4px;top:2px">5vw = 20px · 440 × 340</span>
+<span class="zlab t0728-l t0728-br" data-l="2">{% if include.lang == "fr" %}69,92px → 90px{% else %}69.92px → 90px{% endif %}</span>
+<span class="zlab t0728-l" data-l="3" style="left:4px;top:2px">{% if include.lang == "fr" %}7392 / 36 = 205,33 → 205{% else %}7392 / 36 = 205.33 → 205{% endif %}</span>
+<span class="zlab t0728-l t0728-br" data-l="3">440 − 2 × 205 = 30</span>
+<span class="zlab t0728-l" data-l="4" style="left:4px;top:2px">body 200 × 60 · 25% = 100px</span>
+<span class="zlab t0728-l t0728-br" data-l="4">300 − 240 = 60</span>
+<span class="zlab t0728-l" data-l="5" style="left:4px;top:2px">{% if include.lang == "fr" %}1lh = 187px · 19,76 → 20{% else %}1lh = 187px · 19.76 → 20{% endif %}</span>
+<span class="zlab t0728-l t0728-br" data-l="5">5lh = 935px</span>
+<span class="zlab t0728-l" data-l="6" style="left:4px;top:2px">{% if include.lang == "fr" %}tranche 20 · auto = 20px{% else %}slice 20 · auto = 20px{% endif %}</span>
+<span class="zlab t0728-l t0728-br" data-l="6">{% if include.lang == "fr" %}cadre de 20px{% else %}a 20px frame{% endif %}</span>
+</div>
+</div>
+<div class="legend"><span><i style="--c:transparent;outline:2px dashed currentColor;outline-offset:-2px"></i>{% if include.lang == "fr" %}boîtes et découpes{% else %}boxes and cuts{% endif %}</span><span><i style="--c:var(--t0728-hb)"></i>{% if include.lang == "fr" %}fond de html{% else %}html's background{% endif %}</span><span><i style="--c:linear-gradient(90deg,var(--t0728-ri) 50%,var(--t0728-ou) 0)"></i>{% if include.lang == "fr" %}border-image de html{% else %}html's border image{% endif %}</span><span><i style="--c:var(--t0728-bb)"></i>{% if include.lang == "fr" %}fond de body{% else %}body's background{% endif %}</span><span><i style="--c:var(--t0728-bi)"></i>{% if include.lang == "fr" %}border-image de body{% else %}body's border image{% endif %}</span></div>
+</div>
+<div class="anim-side">
+<pre class="code" aria-hidden="true">&lt;style><span data-on="1 2 3">*{</span><span data-on="1 4">background:#4A9A86</span>;<span data-on="2 3 5 6">border-image:</span><span data-on="2 5">radial-gradient(1q at 50%25vw,#0000 74q,#EBF6F0 0 </span><span data-on="2 5" data-tone="2">5lh</span><span data-on="2 5">,#4C4C6B)</span><span data-on="3 6">20 </span><span data-on="3 5 6" data-tone="2">min(77in/2lh)</span><span data-on="3 6">/auto</span><span data-on="2 6">/5vw</span>;<span data-on="4 5 6">*{</span><span data-on="4">margin:0 25%240</span>;<span data-on="5">font:9lh'</span></pre>
+<div class="now" aria-live="polite">
+<div class="caps">
+{%- if include.lang == "fr" %}
+<div class="cap" data-t="0" data-step="html en vert"><h3>1. html : un canevas vert</h3><p>Pas de doctype : la page est en mode quirks. <code>*</code> vise html, head, style et body ; head et style sont masqués. html fait 400 × 300, et son fond <code>#4A9A86</code> passe à tout le canevas. Tout le reste est peint par-dessus.</p></div>
+<div class="cap" data-t="4.5" data-step="L'image"><h3>2. L'image : un anneau sur du violet</h3><p>Le débord <code>5vw</code> vaut 20px : la zone de la border-image fait 440 × 340, depuis (−20 ; −20). Le dégradé la remplit. Son centre : 50 % de 440, et <code>25vw</code> = 100px vers le bas, soit (200 ; 80) sur le canevas. Transparent jusqu'à 74q = 69,92px, crème jusqu'à <code>5lh</code>, puis violet. Dans html, 1lh vaut 18px : l'anneau s'arrête à 90px.</p></div>
+<div class="cap" data-t="9.5" data-step="La tige"><h3>3. Les tranches : un trou de 30px</h3><p>77in = 7392px et 2lh = 36px : <code>min(77in/2lh)</code> vaut 205,33, gardé à 205. Les tranches : 20 en haut et en bas, 205 à gauche et à droite. Avec <code>auto</code>, chaque bord a la taille de sa tranche : l'image reste telle quelle, sauf le milieu, jamais peint. Ce milieu va de x = 185 à 215 sur toute la hauteur : le fond vert s'y voit, c'est la tige.</p></div>
+<div class="cap" data-t="14.5" data-step="body"><h3>4. body : le bloc vert</h3><p>Le <code>*{</code> imbriqué vaut <code>* *</code> : head, style et body. Seul body s'affiche. <code>25%</code> vaut 100px : body va de x = 100 à 300. En mode quirks, il prend la hauteur de html moins sa marge basse : 300 − 240 = 60. Il garde le fond vert de <code>*</code> et cache le haut de l'anneau.</p></div>
+<div class="cap" data-t="19" data-step="Police"><h3>5. font : un autre 1lh</h3><p><code>9lh</code> se calcule avec le 1lh de html : 9 × 18 = 162px. Dans body, 1lh vaut alors 187px. La même border-image change : <code>5lh</code> = 935px, et 7392 / 374 = 19,76, gardé à 20. Sa zone fait 240 × 100, depuis (80 ; −20), avec le même centre (200 ; 80). Crème partout, sauf le disque transparent.</p></div>
+<div class="cap" data-t="24" data-step="Cadre"><h3>6. Un cadre de 20px</h3><p>Tranches de 20 partout, largeur <code>auto</code> = 20px. Le milieu non peint fait 200 × 60 : c'est la boîte de body. Il ne reste qu'un cadre crème de 20px, tout entier dans le débord. Là où son bas croise le disque, il est transparent : le disque vert reste entier.</p></div>
+<div class="cap" data-t="29" data-step="Résultat" data-live="156 caractères · 100 % identique"><h3>7. Résultat : 156 caractères</h3><p>Une seule border-image, lue avec deux hauteurs de ligne. Dans html, son milieu non peint fait la tige. Autour de body, elle fait le liseré crème.</p></div>
+{%- else %}
+<div class="cap" data-t="0" data-step="html in green"><h3>1. html: a green canvas</h3><p>There is no doctype: the page is in quirks mode. <code>*</code> targets html, head, style and body; head and style are hidden. html is 400 × 300, and its <code>#4A9A86</code> background goes to the whole canvas. Everything else is painted over it.</p></div>
+<div class="cap" data-t="4.5" data-step="The image"><h3>2. The image: a ring on purple</h3><p>The <code>5vw</code> outset is 20px: the border image area is 440 × 340, from (−20, −20). The gradient fills it. Its center: 50% of 440, and <code>25vw</code> = 100px down, so (200, 80) on the canvas. Transparent up to 74q = 69.92px, cream up to <code>5lh</code>, then purple. In html, 1lh is 18px: the ring ends at 90px.</p></div>
+<div class="cap" data-t="9.5" data-step="The stem"><h3>3. The slices: a 30px gap</h3><p>77in = 7392px and 2lh = 36px: <code>min(77in/2lh)</code> is 205.33, kept as 205. The slices: 20 at the top and bottom, 205 on the left and right. With <code>auto</code>, each border is the size of its slice: the image stays as it is, except the middle, which is never painted. That middle runs from x = 185 to 215, top to bottom: the green background shows there. It is the stem.</p></div>
+<div class="cap" data-t="14.5" data-step="body"><h3>4. body: the green block</h3><p>The nested <code>*{</code> means <code>* *</code>: head, style and body. Only body shows. <code>25%</code> is 100px: body runs from x = 100 to 300. In quirks mode, it takes html's height minus its bottom margin: 300 − 240 = 60. It keeps the green background of <code>*</code> and hides the top of the ring.</p></div>
+<div class="cap" data-t="19" data-step="Font"><h3>5. font: another 1lh</h3><p><code>9lh</code> uses html's 1lh: 9 × 18 = 162px. In body, 1lh is then 187px. The same border-image changes: <code>5lh</code> = 935px, and 7392 / 374 = 19.76, kept as 20. Its area is 240 × 100, from (80, −20), with the same center (200, 80). Cream everywhere, except the transparent disk.</p></div>
+<div class="cap" data-t="24" data-step="Frame"><h3>6. A 20px frame</h3><p>Slices of 20 all around, width <code>auto</code> = 20px. The unpainted middle is 200 × 60: body's box. All that is left is a 20px cream frame, entirely in the outset. Where its bottom crosses the disk, it is transparent: the green disk stays whole.</p></div>
+<div class="cap" data-t="29" data-step="Result" data-live="156 characters · 100% match"><h3>7. Result: 156 characters</h3><p>One border-image, read with two line heights. In html, its unpainted middle makes the stem. Around body, it makes the cream outline.</p></div>
+{%- endif %}
+</div>
+<div class="live"></div>
+</div>
+</div>
+<script>
+(window.AnimScenes = window.AnimScenes || {}).t0728 = (fig) => {
+  const fr = document.documentElement.lang === 'fr';
+  const $ = (s) => fig.querySelector(s);
+  const $$ = (s) => [...fig.querySelectorAll(s)];
+  const live = $('.live');
+  const ease = (x) => (x < 0.5 ? 4 * x * x * x : 1 - Math.pow(-2 * x + 2, 3) / 2);
+  const pr = (t, [a, b]) => ease(Math.min(1, Math.max(0, (t - a) / (b - a))));
+  const win = (t, a, b) => Math.min(pr(t, [a, a + 0.5]), 1 - pr(t, [b - 0.4, b]));
+  const c = fr ? '\u00a0:' : ':';
+  const sc = fr ? '\u00a0;' : ',';
+  // Measured on the official code in local Chrome (quirks mode, 400 × 300):
+  // html 400 × 300, 1lh = 18px, border-image-slice 20 205, width auto (= 20px 205px), outset 20px:
+  //   area (-20, -20) 440 × 340, gradient center (200, 80), transparent to 74q = 69.92px, cream to 90px, then purple.
+  // body (100, 0) 200 × 60, font-size 162px, 1lh = 187px, slice 20, width auto (= 20px), outset 20px:
+  //   area (80, -20) 240 × 100, same center, transparent to 69.92px, cream to 935px.
+  const FIN = 29;
+  const hbg = $('.t0728-hbg'), hbi = $('.t0728-hbi'), bbg = $('.t0728-bbg'), bbi = $('.t0728-bbi');
+  const ha = $('.t0728-ha'), bb = $('.t0728-bb'), ba = $('.t0728-ba'), sl = $$('.t0728-sl');
+  const L = (k) => $$(`.t0728-l[data-l="${k}"]`);
+  const hole = (W, H, x0, x1, y0, y1) => `polygon(evenodd, 0 0, ${W}px 0, ${W}px ${H}px, 0 ${H}px, 0 0, ${x0}px ${y0}px, ${x1}px ${y0}px, ${x1}px ${y1}px, ${x0}px ${y1}px, ${x0}px ${y0}px)`;
+  return (t, step) => {
+    const teach = fig.dataset.teach === '1' && t < FIN;
+    const ann = 1 - pr(t, [FIN, FIN + 0.6]);
+    const v = (k, r) => `var(--t0728-${teach ? k : r})`;
+    // html: background, then its border image, then the gap in the middle
+    hbg.style.background = v('hb', 'gr');
+    const a = pr(t, [5, 6.6]);
+    hbi.style.opacity = a;
+    hbi.style.background = `radial-gradient(circle at 220px 100px, transparent 69.92px, ${v('ri', 'cr')} 0 90px, ${v('ou', 'pu')} 0)`;
+    const w = 30 * pr(t, [10.2, 12.8]);
+    hbi.style.clipPath = hole(440, 340, 220 - w / 2, 220 + w / 2, 20, 320);
+    ha.style.opacity = 0.9 * win(t, 4.7, 13.9);
+    sl.forEach((e) => (e.style.opacity = 0.9 * win(t, 9.7, 13.9)));
+    // body: its box, then its border image, then the 20px frame
+    const f = pr(t, [24.5, 27]);
+    const g = f >= 1 ? 1 : 0; // once the frame is cut, body's background slips 1px under it
+    Object.assign(bbg.style, { left: `${100 - g}px`, top: `${-g}px`, width: `${200 + 2 * g}px`, height: `${60 + 2 * g}px` });
+    bbg.style.opacity = pr(t, [15, 16.2]);
+    bbg.style.background = v('bb', 'gr');
+    bbi.style.opacity = pr(t, [19.6, 21.2]);
+    bbi.style.background = `radial-gradient(circle at 120px 100px, transparent 69.92px, ${v('bi', 'cr')} 0)`;
+    bbi.style.clipPath = hole(240, 100, 120 - 100 * f, 120 + 100 * f, 50 - 30 * f, 50 + 30 * f);
+    bb.style.opacity = 0.9 * win(t, 14.7, 28.7);
+    ba.style.opacity = 0.9 * win(t, 19.2, 28.7);
+    [[0.3, 4.2], [4.8, 9.2], [9.8, 14.2], [14.8, 18.7], [19.3, 23.7], [24.3, 28.7]].forEach(([p, z], k) => L(k + 1).forEach((e) => (e.style.opacity = win(t, p, z) * ann)));
+    let txt;
+    if (step === 0) txt = `html${c} 400 × 300 · #4A9A86`;
+    else if (step === 1) txt = `border-image${c} 440 × 340 · (200${sc} 80)`;
+    else if (step === 2) txt = `${fr ? 'trou' : 'gap'}${c} ${Math.round(w)}px · x = ${Math.round(200 - w / 2)} → ${Math.round(200 + w / 2)}`;
+    else if (step === 3) txt = `body${c} 200 × 60 · (100${sc} 0)`;
+    else if (step === 4) txt = `body${c} 1lh = 187px · 5lh = 935px`;
+    else if (step === 5) txt = `${fr ? 'cadre' : 'frame'}${c} 20px · 240 × 100`;
+    else txt = $$('.caps .cap')[6].dataset.live || '';
+    live.textContent = txt;
+  };
+};
+</script>
+</figure>
