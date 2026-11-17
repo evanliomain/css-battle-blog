@@ -1,0 +1,107 @@
+<figure class="anim t1116" data-duration="32" data-scene="t1116" data-wide="-50 -40 500 380" data-off-label="-46 -36" style="--bg:#c36271">
+<style>
+.t1116{--t1116-y:#f2e09f;--t1116-r:#c36271;--t1116-c0:#e8e3d3;--t1116-c1:#f2c14e;--t1116-c2:#f08a4b;--t1116-c3:#7cc47f;--t1116-c4:#3fa7a0;--t1116-c5:#5b8def;--t1116-c6:#8a63d2;--t1116-c7:#2b2f6b;--t1116-dash:rgb(255 255 255 / .9)}
+.t1116 .t1116-cb{left:0;top:0;width:400px;height:300px}
+.t1116 .t1116-p{position:absolute;left:0;top:0;width:0;height:0;box-sizing:content-box;border:0 solid var(--t1116-y);border-radius:0}
+.t1116 .t1116-ring{left:145px;top:95px;width:110px;height:110px;border:1.5px dashed var(--t1116-dash);border-radius:50%;box-sizing:border-box;opacity:0}
+.t1116 .t1116-dot{width:8px;height:8px;margin:-4px 0 0 -4px;border-radius:50%;background:#fff;box-shadow:0 0 0 2px rgb(30 34 70 / .9);opacity:0}
+.t1116 .zlab{color:#fff;background:rgb(30 34 70 / .92);padding:1px 5px;border-radius:3px}
+.t1116 .t1116-ov{white-space:pre}
+</style>
+<div class="anim-col">
+<div class="stage" role="img" aria-label="{% if include.lang == "fr" %}Animation : huit boîtes imbriquées, html, body et six b, deviennent chacune un carré de 60 grâce à leur bordure de 30px, puis un quart de disque grâce à border-radius ; en faisant passer l'angle de ray() de 90deg à 45deg, chaque pièce tourne de 45° de plus que la précédente ; puis en faisant passer la position à 50% 73% et l'ancre à -31% 25Q, les huit quarts de disque s'écartent du centre et se posent en rond, à 55 px de (200, 150){% else %}Animation: eight nested boxes, html, body and six b, each become a 60 square through their 30px border, then a quarter disk through border-radius; as the ray() angle goes from 90deg to 45deg, each piece turns 45° more than the one before; then as the position goes to 50% 73% and the anchor to -31% 25Q, the eight quarter disks move out from the middle and settle in a ring, 55 px from (200, 150){% endif %}">
+<div class="scene">
+<div class="t1116-cb"><div class="t1116-p"><div class="t1116-p"><div class="t1116-p"><div class="t1116-p"><div class="t1116-p"><div class="t1116-p"><div class="t1116-p"><div class="t1116-p"></div></div></div></div></div></div></div></div></div>
+<div class="t1116-ring"></div>
+<div class="t1116-dot" data-d="q" style="left:200px;top:150px"></div>
+<div class="t1116-dot" data-d="p"></div>
+<span class="zlab t1116-l t1116-l-1" style="left:12px;top:12px">position:fixed · 0 + 2 × 30 = 60</span>
+<span class="zlab t1116-l t1116-l-2" style="left:12px;top:12px">1in = 96 → 60</span>
+<span class="zlab t1116-l t1116-l-3" style="left:12px;top:12px">ray(θ) · θ − 90°</span>
+<span class="zlab t1116-l t1116-l-4" style="left:12px;top:12px">html · 50% 73% → (200, 219)</span>
+<span class="zlab t1116-l t1116-l-5" style="left:12px;top:12px">8 × 45° = 360°</span>
+<span class="zlab t1116-l t1116-l-6" style="left:12px;top:12px">html · background → canvas</span>
+</div>
+</div>
+<div class="legend"><span><i style="--c:var(--t1116-c0)"></i>html</span><span><i style="--c:var(--t1116-c1)"></i>body</span><span><i style="--c:var(--t1116-c2)"></i>b 1</span><span><i style="--c:var(--t1116-c3)"></i>b 2</span><span><i style="--c:var(--t1116-c4)"></i>b 3</span><span><i style="--c:var(--t1116-c5)"></i>b 4</span><span><i style="--c:var(--t1116-c6)"></i>b 5</span><span><i style="--c:var(--t1116-c7)"></i>b 6</span></div>
+</div>
+<div class="anim-side">
+<pre class="code" aria-hidden="true"><span data-on="1" data-tone="2">&lt;b>&lt;b>&lt;b>&lt;b>&lt;b>&lt;b></span>&lt;style>*{<span data-on="3 4 5">offset:<span class="t1116-ov">50%73%ray(45deg)/-31%25Q</span></span>;<span data-on="1">position:fixed</span>;<span data-on="1">border:8mm solid#f2e09f</span>;<span data-on="6">background:#c36271</span>;<span data-on="2">border-radius:1in 0 0</span></pre>
+<div class="now" aria-live="polite">
+<div class="caps">
+{%- if include.lang == "fr" %}
+<div class="cap" data-t="0" data-step="Huit boîtes de 60"><h3>1. Huit boîtes de 60</h3><p><code>*</code> vise <code>html</code>, le <code>body</code> et les six <code>&lt;b></code>, chacun dans le précédent (<code>head</code> et <code>style</code> ne s'affichent pas). <code>position:fixed</code> leur donne un contenu de 0 × 0, et <code>8mm</code> donne une bordure de 30px : huit carrés de 60. Pour l'animation, je pars de <code>offset:50%50%ray(90deg)/50%32Q</code> : les huit carrés sont empilés au centre.</p></div>
+<div class="cap" data-t="4" data-step="border-radius : un quart de disque"><h3>2. <code>border-radius</code> : un quart de disque</h3><p><code>1in 0 0</code> donne 96px au coin haut gauche, et 0 aux trois autres. 96 dépasse le côté de 60 : le rayon est ramené à 60. Chaque carré devient un quart de disque, avec le centre du cercle dans le coin bas droit.</p></div>
+<div class="cap" data-t="8" data-step="ray() : chaque pièce tourne"><h3>3. <code>ray()</code> : chaque pièce tourne</h3><p><code>offset</code> pose chaque boîte sur un chemin, ici <code>ray()</code>, et la tourne dans le sens du chemin : de l'angle moins 90°. Avec <code>ray(90deg)</code>, rien ne tourne. Avec <code>ray(45deg)</code>, chaque boîte tourne de −45° dans son parent : <code>html</code> de −45°, le <code>body</code> de −90°, et ainsi de suite jusqu'à −360°.</p></div>
+<div class="cap" data-t="14" data-step="Position et ancre : la ronde"><h3>4. Position et ancre : la ronde</h3><p>L'ancre <code>-31% 25Q</code> est un point de la boîte, (−18,6 ; 23,6), à gauche, hors de la boîte. <code>offset</code> la pose sur la position <code>50% 73%</code>, lue dans la boîte du parent : (200, 219) dans le canevas pour <code>html</code>, (30 ; 43,8) dans le carré de 60 du parent pour les autres. Les pièces s'écartent du centre.</p></div>
+<div class="cap" data-t="20" data-step="Un seul pivot"><h3>5. Un seul pivot</h3><p>Chaque boîte refait le même geste dans la précédente : son ancre sur la position, puis −45°. Ce geste est une rotation de −45° autour d'un point fixe, 25 au-dessus du milieu du haut de la boîte. <code>html</code> pose ce point en (200, 150). Les huit centres sont à 55 de ce point, et 8 × 45° = 360° : la ronde se ferme.</p></div>
+<div class="cap" data-t="24" data-step="Le fond"><h3>6. Le fond</h3><p><code>background:#c36271</code> va aussi sur les huit boîtes, mais elles n'ont pas de contenu, et leur fond est sous leur bordure. Celui de <code>html</code> passe au canevas : tout le cadre est vieux rose.</p></div>
+<div class="cap" data-t="28" data-step="Résultat" data-live="138 caractères · 100 % identique"><h3>7. Résultat : 138 caractères</h3><p>Huit boîtes imbriquées, une seule règle : la bordure fait la pièce, <code>border-radius</code> l'arrondit, et <code>offset</code> la tourne de 45° de plus à chaque niveau, autour du même point.</p></div>
+{%- else %}
+<div class="cap" data-t="0" data-step="Eight 60 boxes"><h3>1. Eight 60 boxes</h3><p><code>*</code> matches <code>html</code>, the <code>body</code> and the six <code>&lt;b></code>, each inside the one before (<code>head</code> and <code>style</code> are not displayed). <code>position:fixed</code> gives them a 0 × 0 content box, and <code>8mm</code> gives a 30px border: eight 60 squares. For the animation, I start from <code>offset:50%50%ray(90deg)/50%32Q</code>: the eight squares are stacked in the middle.</p></div>
+<div class="cap" data-t="4" data-step="border-radius: a quarter disk"><h3>2. <code>border-radius</code>: a quarter disk</h3><p><code>1in 0 0</code> gives 96px to the top left corner, and 0 to the other three. 96 is more than the 60 side, so the radius is brought down to 60. Each square becomes a quarter disk, with the circle's center in the bottom right corner.</p></div>
+<div class="cap" data-t="8" data-step="ray(): each piece turns"><h3>3. <code>ray()</code>: each piece turns</h3><p><code>offset</code> puts each box on a path, here <code>ray()</code>, and turns it to follow the path: by the angle minus 90°. With <code>ray(90deg)</code>, nothing turns. With <code>ray(45deg)</code>, each box turns by −45° inside its parent: <code>html</code> by −45°, the <code>body</code> by −90°, and so on down to −360°.</p></div>
+<div class="cap" data-t="14" data-step="Position and anchor: the ring"><h3>4. Position and anchor: the ring</h3><p>The anchor <code>-31% 25Q</code> is a point of the box, (−18.6, 23.6), on the left, outside the box. <code>offset</code> puts it on the position <code>50% 73%</code>, read in the parent's box: (200, 219) in the canvas for <code>html</code>, (30, 43.8) in the parent's 60 square for the others. The pieces move out from the middle.</p></div>
+<div class="cap" data-t="20" data-step="One pivot"><h3>5. One pivot</h3><p>Each box makes the same move inside the one before: its anchor on the position, then −45°. That move is a −45° rotation around one fixed point, 25 above the middle of the box's top edge. <code>html</code> puts that point at (200, 150). The eight centers are 55 from it, and 8 × 45° = 360°: the ring closes.</p></div>
+<div class="cap" data-t="24" data-step="The background"><h3>6. The background</h3><p><code>background:#c36271</code> also goes to the eight boxes, but they have no content, and their background is under their border. The one on <code>html</code> goes to the canvas: the whole frame is dusty pink.</p></div>
+<div class="cap" data-t="28" data-step="Result" data-live="138 characters · 100% match"><h3>7. Result: 138 characters</h3><p>Eight nested boxes, one rule: the border makes the piece, <code>border-radius</code> rounds it, and <code>offset</code> turns it 45° more at each level, around the same point.</p></div>
+{%- endif %}
+</div>
+<div class="live"></div>
+</div>
+</div>
+<script>
+(window.AnimScenes = window.AnimScenes || {}).t1116 = (fig) => {
+  const fr = document.documentElement.lang === 'fr';
+  const $ = (s) => fig.querySelector(s);
+  const $$ = (s) => [...fig.querySelectorAll(s)];
+  const CB = $('.t1116-cb'), P = $$('.t1116-p'), RING = $('.t1116-ring'), DQ = $('[data-d="q"]'), DP = $('[data-d="p"]'), OV = $('.t1116-ov'), live = $('.live');
+  const OFFICIEL = OV.textContent;
+  const W = { b: [0.4, 2.6], r: [4.4, 6.9], a: [8.6, 13.2], m: [14.6, 19.2], q: [20.3, 21.3], bg: [24.3, 25.3], fin: [28.1, 28.9] };
+  const ease = (x) => (x < 0.5 ? 4 * x * x * x : 1 - Math.pow(-2 * x + 2, 3) / 2);
+  const pr = (t, [a, b]) => ease(Math.min(1, Math.max(0, (t - a) / (b - a))));
+  const lerp = (a, b, m) => a + (b - a) * m;
+  const win = (t, a, b) => Math.min(pr(t, [a, a + 0.5]), 1 - pr(t, [b - 0.4, b]));
+  // one decimal while moving, none at the ends; minified (code) or spaced (live line) like the site
+  const n1 = (v) => (Math.round(v * 10) / 10).toString();
+  const loc = (s) => (fr ? s.replace(/(\d)\.(\d)/g, '$1,$2') : s).replace(/-/g, '−');
+  const c = fr ? ' :' : ':';
+  return (t, st) => {
+    const step = st + 1;
+    const teach = fig.dataset.teach === '1';
+    const real = !teach || t >= W.fin[0];
+    const b = pr(t, W.b), r = pr(t, W.r), a = pr(t, W.a), m = pr(t, W.m), q = pr(t, W.q);
+    // the offset numbers: angle first (90 → 45), then position y (50% → 73%) and anchor (50% 32Q → -31% 25Q)
+    const ang = +n1(lerp(90, 45, a)), py = +n1(lerp(50, 73, m)), ax = +n1(lerp(50, -31, m)), ay = +n1(lerp(32, 25, m));
+    const off = `50% ${py}% ray(${ang}deg) / ${ax}% ${ay}Q`;
+    const rad = 96 * r;
+    P.forEach((e, k) => {
+      e.style.borderWidth = '30px';
+      e.style.borderTopLeftRadius = `${rad}px`;
+      e.style.offset = off;
+      e.style.borderColor = real ? 'var(--t1116-y)' : `var(--t1116-c${k})`;
+    });
+    CB.style.opacity = b;
+    OV.textContent = t >= W.q[0] ? OFFICIEL : `50%${py}%ray(${ang}deg)/${ax}%${ay}Q`;
+    // html's position point, then the pivot and the ring of centers
+    Object.assign(DP.style, { left: '200px', top: `${3 * py}px`, opacity: step === 4 ? 1 : 0 });
+    DQ.style.opacity = step === 5 ? q : 0;
+    RING.style.opacity = step === 5 ? q : 0;
+    $$('.t1116-l').forEach((l, k) => {
+      const ks = [W.b, W.r, W.a, W.m, W.q, W.bg];
+      const next = [W.r, W.a, W.m, W.q, W.bg, W.fin];
+      l.style.opacity = win(t, ks[k][0], next[k][0] - 0.2);
+    });
+    let txt = '';
+    if (step === 1) txt = `border${c} 30px · 60 × 60`;
+    else if (step === 2) txt = `border-radius${c} ${Math.round(rad)}px → ${Math.round(Math.min(rad, 60))}px`;
+    else if (step === 3) txt = loc(`offset${c} ${off} · ${n1(ang - 90)}°`);
+    else if (step === 4) txt = loc(`offset${c} ${off}`);
+    else if (step === 5) txt = fr ? 'pivot (200, 150) · rayon 55' : 'pivot (200, 150) · radius 55';
+    else if (step === 6) txt = 'background: #c36271'.replace(':', c);
+    else txt = $$('.caps .cap')[6].dataset.live || '';
+    live.textContent = txt;
+  };
+};
+</script>
+</figure>
