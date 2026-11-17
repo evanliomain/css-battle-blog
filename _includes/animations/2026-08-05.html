@@ -1,0 +1,155 @@
+<figure class="anim t0805" data-duration="37" data-scene="t0805" data-wide="-50 -40 500 380" data-off-label="-46 304" style="--bg:#b9c99f">
+<style>
+.t0805{--t0805-gr:#b9c99f;--t0805-ye:#f7cb71;--t0805-br:#7c3219;--t0805-cr:#fef9ce;--t0805-tb:#14b8a6;--t0805-cd:#1e40af;--t0805-cl:#93c5fd;--t0805-td:#86198f;--t0805-tl:#f0abfc;--t0805-ln:#0f172a}
+.t0805 .t0805-blank{left:-60px;top:-50px;width:520px;height:400px;background:#fff;z-index:1}
+.t0805 .t0805-b{left:90px;top:66px;width:220px;height:168px;z-index:2}
+.t0805 .t0805-b *{position:absolute}
+.t0805 .t0805-bg{left:0;top:0;width:220px;height:168px;opacity:0}
+.t0805 .t0805-img{left:0;top:0;width:220px;height:168px;opacity:0;background:linear-gradient(var(--t0805-br) 25%,var(--t0805-cr) 0)}
+.t0805 .t0805-p{opacity:0}
+.t0805 .t0805-cut{opacity:0;background:repeating-linear-gradient(90deg,var(--t0805-ln) 0 5px,#0000 0 9px)}
+.t0805 .t0805-cut[data-c="v"]{background:repeating-linear-gradient(var(--t0805-ln) 0 5px,#0000 0 9px)}
+.t0805 .t0805-box{box-sizing:border-box;border:calc(1.5px * var(--k, 1)) dashed var(--t0805-ln);opacity:0}
+.t0805 .zlab{color:#fff;background:rgb(20 20 42 / .9);padding:1px 5px;border-radius:3px}
+.t0805 .t0805-l,.t0805 .t0805-tag{opacity:0}
+</style>
+<div class="anim-col">
+<div class="stage" role="img" aria-label="{% if include.lang == "fr" %}Animation : & vise html, dont le fond vert sauge peint tout le canevas, et le * imbriqué vise body ; avec margin:66 90, body fait 220 × 168 en (90 ; 66), et son fond est jaune orangé ; border-image prend un linear-gradient de la taille de body, brun sur 25 % soit 42px, puis crème translucide ; il le coupe à 50 % de la hauteur, soit 84px, et à 65px des côtés ; la bordure du haut fait 67 % de 168, soit 112,56px, celles des côtés 5vw, soit 20px, celle du bas 0 ; les coins, 65 × 84 dans l'image, deviennent deux barres de 20 × 112, moitié brunes, moitié crème ; la tranche du haut, 90 × 84, grandit de 1,34 fois et donne une tuile de 120,6px ; space n'en met qu'une, au milieu des 180px du bord, et laisse deux trous de 29,7px où le jaune de body reste visible : les bretelles ; le crème #ffdd, posé sur le jaune, donne #fef9ce{% else %}Animation: & matches html, whose sage green background paints the whole canvas, and the nested * matches body; with margin:66 90, body is 220 × 168 at (90, 66), and its background is yellow orange; border-image takes a linear-gradient the size of body, brown for 25%, that is 42px, then translucent cream; it cuts it at 50% of the height, that is 84px, and 65px from the sides; the top border is 67% of 168, that is 112.56px, the side borders 5vw, that is 20px, the bottom one 0; the corners, 65 × 84 in the image, become two bars of 20 × 112, half brown, half cream; the top slice, 90 × 84, grows 1.34 times into a 120.6px tile; space puts only one, in the middle of the 180px edge, and leaves two 29.7px gaps where body's yellow shows: the suspenders; the cream #ffdd, over the yellow, gives #fef9ce{% endif %}">
+<div class="scene">
+<div class="t0805-blank"></div>
+<div class="t0805-b">
+<div class="t0805-bg"></div>
+<div class="t0805-img"></div>
+<div class="t0805-cut" data-c="h" style="left:0;top:83px;width:220px;height:2px"></div>
+<div class="t0805-cut" data-c="v" style="left:64px;top:0;width:2px;height:168px"></div>
+<div class="t0805-cut" data-c="v" style="left:154px;top:0;width:2px;height:168px"></div>
+<div class="t0805-p" data-k="c" data-g="0 0 65 84 0 0 20 112"></div>
+<div class="t0805-p" data-k="c" data-g="155 0 65 84 200 0 20 112"></div>
+<div class="t0805-p" data-k="t" data-g="65 0 90 84 50 0 120 112"></div>
+<div class="t0805-box" data-x="w" style="left:0;top:0;width:220px;height:112.56px"></div>
+<div class="t0805-box" data-x="w" style="left:0;top:0;width:20px;height:112.56px;border-style:dotted"></div>
+<div class="t0805-box" data-x="w" style="left:200px;top:0;width:20px;height:112.56px;border-style:dotted"></div>
+<div class="t0805-box" data-x="s" style="left:20px;top:0;width:29.7px;height:112.56px"></div>
+<div class="t0805-box" data-x="s" style="left:170.3px;top:0;width:29.7px;height:112.56px"></div>
+<div class="t0805-box" data-x="b" style="left:0;top:0;width:220px;height:168px"></div>
+</div>
+<span class="zlab t0805-tag" data-g="h" style="left:8px;top:8px">html</span>
+<span class="zlab t0805-tag" data-g="b" style="left:94px;top:212px">body</span>
+<span class="zlab t0805-l" data-l="1" style="left:8px;top:28px">{% if include.lang == "fr" %}& = html → canevas #B9C99F{% else %}& = html → canvas #B9C99F{% endif %}</span>
+<span class="zlab t0805-l" data-l="1" style="left:118px;top:244px">400 − 2 × 90 = 220</span>
+<span class="zlab t0805-l" data-l="1" style="left:316px;top:128px">300 − 132<br>= 168</span>
+<span class="zlab t0805-l" data-l="2" style="left:150px;top:142px">body{% if include.lang == "fr" %} :{% else %}:{% endif %} #F7CB71</span>
+<span class="zlab t0805-l" data-l="3" style="left:316px;top:80px">25% = 42</span>
+<span class="zlab t0805-l" data-l="3" style="left:316px;top:142px">50% = 84</span>
+<span class="zlab t0805-l" data-l="3" style="left:112px;top:244px">65</span>
+<span class="zlab t0805-l" data-l="3" style="left:190px;top:244px">90</span>
+<span class="zlab t0805-l" data-l="3" style="left:268px;top:244px">65</span>
+<span class="zlab t0805-l" data-l="4" style="left:316px;top:110px">67% × 168<br>= {% if include.lang == "fr" %}112,56{% else %}112.56{% endif %}</span>
+<span class="zlab t0805-l" data-l="4" style="left:66px;top:44px">5vw = 20</span>
+<span class="zlab t0805-l" data-l="4" style="left:256px;top:44px">5vw = 20</span>
+<span class="zlab t0805-l" data-l="4" style="left:150px;top:244px">{% if include.lang == "fr" %}bas : 0{% else %}bottom: 0{% endif %}</span>
+<span class="zlab t0805-l" data-l="5" style="left:96px;top:26px">84 → {% if include.lang == "fr" %}112,56 : × 1,34{% else %}112.56: × 1.34{% endif %}</span>
+<span class="zlab t0805-l" data-l="5" style="left:96px;top:44px">90 × {% if include.lang == "fr" %}1,34 = 120,6{% else %}1.34 = 120.6{% endif %}</span>
+<span class="zlab t0805-l" data-l="5" style="left:170px;top:240px">space{% if include.lang == "fr" %} : 180 − 120,6 = 59,4{% else %}: 180 − 120.6 = 59.4{% endif %}</span>
+<span class="zlab t0805-l" data-l="5" style="left:170px;top:257px">{% if include.lang == "fr" %}→ 29,7 + 29,7{% else %}→ 29.7 + 29.7{% endif %}</span>
+<span class="zlab t0805-l" data-l="6" style="left:170px;top:240px">#ffdd = #ffffdd · {% if include.lang == "fr" %}87 %{% else %}87%{% endif %}</span>
+<span class="zlab t0805-l" data-l="6" style="left:170px;top:257px">{% if include.lang == "fr" %}sur #F7CB71 → #fef9ce{% else %}over #F7CB71 → #fef9ce{% endif %}</span>
+</div>
+</div>
+<div class="legend"><span><i style="--c:transparent;outline:2px dashed var(--t0805-ln);outline-offset:-2px"></i>{% if include.lang == "fr" %}boîtes{% else %}boxes{% endif %}</span><span><i style="--c:var(--t0805-tb)"></i>{% if include.lang == "fr" %}fond de body{% else %}body's background{% endif %}</span><span><i style="--c:linear-gradient(var(--t0805-cd) 50%,var(--t0805-cl) 0)"></i>{% if include.lang == "fr" %}coins{% else %}corners{% endif %}</span><span><i style="--c:linear-gradient(var(--t0805-td) 50%,var(--t0805-tl) 0)"></i>{% if include.lang == "fr" %}tuile du haut{% else %}top tile{% endif %}</span></div>
+</div>
+<div class="anim-side">
+<pre class="code" aria-hidden="true">&lt;style><span data-on="1">&amp;{background:#B9C99F</span>;<span data-on="1" data-tone="2">*{</span><span data-on="2 6">background:#F7CB71</span>;<span data-on="1" data-tone="2">margin:66 90</span>;<span data-on="3 4 5">border-image:</span><span data-on="3">linear-gradient(#7C3219 25%,</span><span data-on="3 6">#ffdd</span><span data-on="3"> 0)</span><span data-on="3 4 5">50%65</span><span data-on="4 5">/67%5vw 0</span><span data-on="5"> space</span></pre>
+<div class="now" aria-live="polite">
+<div class="caps">
+{%- if include.lang == "fr" %}
+<div class="cap" data-t="0" data-step="Deux boîtes"><h3>1. Deux boîtes</h3><p>Chrome ajoute html, head et body ; style va dans head. Tout en haut de la feuille, <code>&amp;</code> vise html : son fond <code>#B9C99F</code> peint tout le canevas. Le <code>*{</code> imbriqué vise ce qui est dans html : head, style et body. Seul body s'affiche. Pas de doctype : en mode quirks, <code>66 90</code> est en px, et body s'étire en hauteur. Il fait 400 − 180 = 220 sur 300 − 132 = 168, en (90 ; 66).</p></div>
+<div class="cap" data-t="5" data-step="Le fond de body"><h3>2. Le fond de body</h3><p>html a son propre fond, donc celui de body reste dans sa boîte : un rectangle jaune orangé, <code>#F7CB71</code>. Ce jaune fera la bande du bas et les deux bretelles. Le reste est peint par-dessus, par le border-image.</p></div>
+<div class="cap" data-t="10" data-step="L'image"><h3>3. L'image et ses tranches</h3><p>L'image est un <code>linear-gradient</code> de la taille de body, 220 × 168 : brun sur 25 %, soit 42px, puis <code>#ffdd</code>, un crème translucide. Les tranches <code>50%65</code> la coupent à 84px du haut et du bas, et à 65px des côtés. La tranche du haut fait 84px : moitié brune, moitié crème. La rangée du milieu n'a pas de hauteur.</p></div>
+<div class="cap" data-t="16" data-step="Les coins"><h3>4. Les largeurs et les coins</h3><p>Les largeurs <code>67%5vw 0</code> : 67 % de 168 = 112,56px en haut, 5vw = 20px sur les côtés, 0 en bas. Le coin de l'image, 65 × 84, est écrasé dans un coin de 20 × 112,56 : il reste moitié brun, moitié crème. Ce sont les deux barres de gauche et de droite. Le bas et les côtés sous la bordure du haut ne dessinent rien.</p></div>
+<div class="cap" data-t="22" data-step="space"><h3>5. Une tuile, deux trous</h3><p>La tranche du haut fait 90 × 84. Elle prend la hauteur de la bordure, 112,56px : 1,34 fois plus grande, donc 120,6px de large. Le bord entre les coins fait 180px. Une tuile y tient, pas deux. <code>space</code> la met au milieu et laisse 29,7px de chaque côté. Dans ces trous, rien n'est peint : on voit le jaune de body. Ce sont les bretelles.</p></div>
+<div class="cap" data-t="28" data-step="Le crème"><h3>6. Un crème translucide</h3><p><code>#ffdd</code>, c'est <code>#ffffdd</code> avec une opacité de dd, soit 221 / 255 ≈ 87 %. Posé sur le jaune de body, il donne le crème pâle de la cible, <code>#fef9ce</code>.</p></div>
+<div class="cap" data-t="33" data-step="Résultat" data-live="131 caractères · 100 % identique"><h3>7. Résultat : 131 caractères</h3><p>Une seule boîte : le fond de body pour le jaune, et un border-image dont <code>space</code> découpe les bretelles.</p></div>
+{%- else %}
+<div class="cap" data-t="0" data-step="Two boxes"><h3>1. Two boxes</h3><p>Chrome adds html, head and body; style goes in head. At the top level of the sheet, <code>&amp;</code> matches html: its <code>#B9C99F</code> background paints the whole canvas. The nested <code>*{</code> matches what is inside html: head, style and body. Only body is displayed. There is no doctype: in quirks mode, <code>66 90</code> is in px, and body stretches to fill the height. It is 400 − 180 = 220 wide and 300 − 132 = 168 tall, at (90, 66).</p></div>
+<div class="cap" data-t="5" data-step="body's background"><h3>2. body's background</h3><p>html has its own background, so body's background stays in its box: a yellow orange rectangle, <code>#F7CB71</code>. This yellow will be the bottom band and the two suspenders. Everything else is painted on top, by the border-image.</p></div>
+<div class="cap" data-t="10" data-step="The image"><h3>3. The image and its slices</h3><p>The image is a <code>linear-gradient</code> the size of body, 220 × 168: brown for 25%, that is 42px, then <code>#ffdd</code>, a translucent cream. The slices <code>50%65</code> cut it 84px from the top and from the bottom, and 65px from the sides. The top slice is 84px tall: half brown, half cream. The middle row has no height.</p></div>
+<div class="cap" data-t="16" data-step="The corners"><h3>4. The widths and the corners</h3><p>The widths <code>67%5vw 0</code>: 67% of 168 = 112.56px on top, 5vw = 20px on the sides, 0 at the bottom. The image's corner, 65 × 84, is squeezed into a 20 × 112.56 corner: still half brown, half cream. These are the left and right bars. The bottom and the sides below the top border draw nothing.</p></div>
+<div class="cap" data-t="22" data-step="space"><h3>5. One tile, two gaps</h3><p>The top slice is 90 × 84. It takes the height of the border, 112.56px: 1.34 times bigger, so 120.6px wide. The edge between the corners is 180px wide. One tile fits, two do not. <code>space</code> puts it in the middle and leaves 29.7px on each side. Nothing is painted in these gaps: body's yellow shows. These are the suspenders.</p></div>
+<div class="cap" data-t="28" data-step="The cream"><h3>6. A translucent cream</h3><p><code>#ffdd</code> is <code>#ffffdd</code> with an opacity of dd, that is 221 / 255 ≈ 87%. Over body's yellow, it gives the pale cream of the target, <code>#fef9ce</code>.</p></div>
+<div class="cap" data-t="33" data-step="Result" data-live="131 characters · 100% match"><h3>7. Result: 131 characters</h3><p>One box: body's background for the yellow, and a border-image whose <code>space</code> cuts out the suspenders.</p></div>
+{%- endif %}
+</div>
+<div class="live"></div>
+</div>
+</div>
+<script>
+(window.AnimScenes = window.AnimScenes || {}).t0805 = (fig) => {
+  const fr = document.documentElement.lang === 'fr';
+  const $ = (s) => fig.querySelector(s);
+  const $$ = (s) => [...fig.querySelectorAll(s)];
+  const live = $('.live');
+  const ease = (x) => (x < 0.5 ? 4 * x * x * x : 1 - Math.pow(-2 * x + 2, 3) / 2);
+  const pr = (t, [a, b]) => ease(Math.min(1, Math.max(0, (t - a) / (b - a))));
+  const win = (t, a, b) => Math.min(pr(t, [a, a + 0.5]), 1 - pr(t, [b - 0.4, b]));
+  const c = fr ? ' :' : ':';
+  // Measured on the official code in local Chrome (quirks mode, 400 × 300):
+  // html (0, 0, 400, 300); body getBoundingClientRect (90, 66, 220, 168), border 0px none.
+  // border-image-width "67% 20px 0", slice "50% 65", repeat "space".
+  // Painted: brown y = 66-121, cream y = 122-177 at x = 90-109, 140-259, 290-309; yellow elsewhere in body.
+  // By the formula: top width 112.56, tile 90 × 112.56 / 84 = 120.6 wide, from x = 49.7 to 170.3 in body.
+  // The pieces sit on the painted pixels (20 × 112, tile 50 to 170) so the last frame matches the target.
+  const FIN = 33, REAL = 28;
+  const BL = $('.t0805-blank'), BG = $('.t0805-bg'), IMG = $('.t0805-img');
+  const P = $$('.t0805-p');
+  const CUT = $$('.t0805-cut');
+  const X = (k) => $$(`.t0805-box[data-x="${k}"]`);
+  const G = (k) => $(`.t0805-tag[data-g="${k}"]`);
+  const L = (k) => $$(`.t0805-l[data-l="${k}"]`);
+  const lerp = (a, b, u) => a + (b - a) * u;
+  return (t, step) => {
+    const teach = fig.dataset.teach === '1' && t < REAL;
+    const ann = 1 - pr(t, [FIN, FIN + 0.6]);
+    // 1. html's background paints the canvas; body's box
+    BL.style.opacity = 1 - pr(t, [0.6, 1.6]);
+    const w1 = win(t, 0.2, 4.8);
+    G('h').style.opacity = w1;
+    G('b').style.opacity = Math.max(w1, win(t, 5.2, 9.8));
+    X('b').forEach((e) => (e.style.opacity = Math.max(w1, win(t, 10.2, 15.8)) * 0.9));
+    // 2. body's background
+    BG.style.opacity = pr(t, [5.4, 6.4]);
+    BG.style.background = teach ? 'var(--t0805-tb)' : 'var(--t0805-ye)';
+    // 3. the image and its slices
+    IMG.style.opacity = Math.min(pr(t, [10.4, 11.2]), 1 - pr(t, [17.2, 18.2]));
+    CUT.forEach((e) => (e.style.opacity = win(t, 11.4, 21.8) * 0.9));
+    // 4. corners, 5. top tile: from their slice in the image to their place in the border
+    const mc = pr(t, [17.4, 19.4]), mt = pr(t, [23.2, 25.2]);
+    P.forEach((e) => {
+      const g = e.dataset.g.split(' ').map(Number);
+      const tile = e.dataset.k === 't';
+      const u = tile ? mt : mc;
+      e.style.left = lerp(g[0], g[4], u) + 'px';
+      e.style.top = lerp(g[1], g[5], u) + 'px';
+      e.style.width = lerp(g[2], g[6], u) + 'px';
+      e.style.height = lerp(g[3], g[7], u) + 'px';
+      e.style.opacity = tile ? pr(t, [22.4, 22.9]) : pr(t, [16.4, 16.9]);
+      const [d, l] = teach ? (tile ? ['--t0805-td', '--t0805-tl'] : ['--t0805-cd', '--t0805-cl']) : ['--t0805-br', '--t0805-cr'];
+      e.style.background = `linear-gradient(var(${d}) 50%,var(${l}) 0)`;
+      e.style.outline = teach && u < 1 ? `calc(1.5px * var(--k, 1)) solid var(--t0805-ln)` : 'none';
+    });
+    X('w').forEach((e) => (e.style.opacity = win(t, 16.4, 21.8) * 0.9));
+    X('s').forEach((e) => (e.style.opacity = win(t, 25.4, 27.8) * 0.9));
+    [[0.4, 4.8, 1], [5.6, 9.8, 2], [11, 15.8, 3], [16.6, 21.8, 4], [22.6, 27.8, 5], [28.4, 32.8, 6]].forEach(([a, z, k]) => L(k).forEach((e) => (e.style.opacity = win(t, a, z) * ann)));
+    let txt = '';
+    if (step === 0) txt = `html${c} 400 × 300 · body${c} 220 × 168`;
+    else if (step === 1) txt = `body${c} #F7CB71`;
+    else if (step === 2) txt = fr ? 'image : 220 × 168 · tranches 84 et 65' : 'image: 220 × 168 · slices 84 and 65';
+    else if (step === 3) txt = fr ? 'largeurs : 112,56 · 20 · 0' : 'widths: 112.56 · 20 · 0';
+    else if (step === 4) txt = fr ? '1 tuile de 120,6 · 2 trous de 29,7' : '1 tile of 120.6 · 2 gaps of 29.7';
+    else if (step === 5) txt = '#ffdd + #F7CB71 → #fef9ce';
+    else txt = $$('.caps .cap')[6].dataset.live || '';
+    live.textContent = txt;
+  };
+};
+</script>
+</figure>
