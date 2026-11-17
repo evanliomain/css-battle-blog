@@ -1,0 +1,114 @@
+<figure class="anim t0724" data-duration="35" data-scene="t0724" data-wide="-50 -50 500 400" style="--bg:#a973a2">
+<style>
+.t0724{--t0724-pu:#a973a2;--t0724-wh:#eff8fe;--t0724-hw:#f59e0b;--t0724-hp:#ef4444;--t0724-bg:#a3e635;--t0724-bw:#38bdf8;--t0724-bp:#7c3aed;--t0724-ln:#14142a}
+.t0724 .t0724-h{left:170px;top:70px;width:60px;height:160px;transform-origin:50% 50%;z-index:1}
+.t0724 .t0724-b{position:absolute;left:0;top:0;width:60px;height:160px;transform-origin:50% 50%;opacity:0}
+.t0724 .t0724-box{left:170px;top:70px;width:60px;height:160px;box-sizing:border-box;border:calc(2px * var(--k, 1)) dashed var(--t0724-ln);box-shadow:0 0 0 calc(1px * var(--k, 1)) rgb(255 255 255 / .55);opacity:0;z-index:6}
+.t0724 .zlab{color:#fff;background:rgb(20 20 42 / .9);padding:1px 5px;border-radius:3px;opacity:0}
+.t0724 .scene .zlab.t0724-tr{left:auto;right:4px;top:2px;transform-origin:100% 0}
+.t0724 .scene .zlab.t0724-br{left:auto;right:4px;top:auto;bottom:2px;transform-origin:100% 100%}
+.t0724[data-view="wide"] .scene .zlab.t0724-tr{top:-4px;transform-origin:100% 100%;transform:translateY(-100%) scale(var(--k, 1))}
+.t0724[data-view="wide"] .scene .zlab.t0724-br{top:2px;bottom:auto;transform-origin:100% 0}
+</style>
+<div class="anim-col">
+<div class="stage" role="img" aria-label="{% if include.lang == "fr" %}Animation : html est une boîte de 60 × 160 en (170, 70) ; son ombre intérieure dessine un L blanc ; une copie blanche décalée de 100px à droite, couverte par une copie violette décalée de 109,6px à droite et 40px vers le bas, laisse un crochet ; scale:-1 1 retourne html : le crochet passe à gauche ; body remplit la même boîte et cache le L de html ; body, retourné dans html retourné, est à l'endroit : son L au milieu, son crochet à droite{% else %}Animation: html is a 60 × 160 box at (170, 70); its inset shadow draws a white L; a white copy 100px to the right, covered by a purple copy 109.6px to the right and 40px down, leaves a hook; scale:-1 1 mirrors html: the hook goes to the left; body fills the same box and hides html's L; body, mirrored inside the mirrored html, is straight: its L in the middle, its hook on the right{% endif %}">
+<div class="scene">
+<div class="t0724-h"><div class="t0724-b"></div></div>
+<div class="t0724-box"></div>
+<span class="zlab t0724-l t0724-tr" data-l="1">margin:70 170</span>
+<span class="zlab t0724-l t0724-br" data-l="1">{% if include.lang == "fr" %}html : 60 × 160 en (170, 70){% else %}html: 60 × 160 at (170, 70){% endif %}</span>
+<span class="zlab t0724-l t0724-tr" data-l="2">inset 11Q -5ch</span>
+<span class="zlab t0724-l t0724-br" data-l="2">{% if include.lang == "fr" %}11Q ≈ 10,39px · 5ch = 40px{% else %}11Q ≈ 10.39px · 5ch = 40px{% endif %}</span>
+<span class="zlab t0724-l t0724-tr" data-l="3">25vw 0 · 116Q 5ch#a973a2</span>
+<span class="zlab t0724-l t0724-br" data-l="3">{% if include.lang == "fr" %}25vw = 100px · 116Q ≈ 109,61px{% else %}25vw = 100px · 116Q ≈ 109.61px{% endif %}</span>
+<span class="zlab t0724-l t0724-tr" data-l="4">scale:-1 1</span>
+<span class="zlab t0724-l t0724-br" data-l="4">{% if include.lang == "fr" %}html : miroir autour de x = 200{% else %}html: mirrored around x = 200{% endif %}</span>
+<span class="zlab t0724-l t0724-tr" data-l="5">*{margin:0</span>
+<span class="zlab t0724-l t0724-br" data-l="5">{% if include.lang == "fr" %}body = la boîte de html{% else %}body = html's box{% endif %}</span>
+<span class="zlab t0724-l t0724-tr" data-l="6">{% if include.lang == "fr" %}body · scale:-1 1{% else %}body · scale:-1 1{% endif %}</span>
+<span class="zlab t0724-l t0724-br" data-l="6">{% if include.lang == "fr" %}−1 × −1 = 1 : à l'endroit{% else %}−1 × −1 = 1: straight{% endif %}</span>
+</div>
+</div>
+<div class="legend"><span><i style="--c:transparent;outline:2px dashed currentColor;outline-offset:-2px"></i>{% if include.lang == "fr" %}boîte de html et body{% else %}html and body's box{% endif %}</span><span><i style="--c:var(--t0724-hw)"></i>{% if include.lang == "fr" %}blanc de html{% else %}html's white{% endif %}</span><span><i style="--c:var(--t0724-hp)"></i>{% if include.lang == "fr" %}ombre violette de html{% else %}html's purple shadow{% endif %}</span><span><i style="--c:var(--t0724-bg)"></i>{% if include.lang == "fr" %}fond de body{% else %}body's background{% endif %}</span><span><i style="--c:var(--t0724-bw)"></i>{% if include.lang == "fr" %}blanc de body{% else %}body's white{% endif %}</span><span><i style="--c:var(--t0724-bp)"></i>{% if include.lang == "fr" %}ombre violette de body{% else %}body's purple shadow{% endif %}</span></div>
+</div>
+<div class="anim-side">
+<pre class="code" aria-hidden="true">&lt;style>*{<span data-on="4 6">scale:-1 1</span>;<span data-on="1">margin:70 170</span>;<span data-on="1 5">background:#a973a2</span>;<span data-on="2 3" data-tone="2">color:eff8fe</span>;<span data-on="6">box-shadow:</span><span data-on="2 6">inset 11Q -5ch</span>,<span data-on="3 6">116Q 5ch#a973a2</span>,<span data-on="3 6">25vw 0</span>;<span data-on="5">*{margin:0</span></pre>
+<div class="now" aria-live="polite">
+<div class="caps">
+{%- if include.lang == "fr" %}
+<div class="cap" data-t="0" data-step="La boîte"><h3>1. html : une boîte de 60 × 160</h3><p>Sans doctype, la page est en mode quirks : <code>margin:70 170</code> compte en px. <code>*</code> vise d'abord html. Il fait 400 − 2 × 170 = 60px de large. En mode quirks, html remplit la hauteur de la fenêtre moins ses marges : 300 − 2 × 70 = 160px. Sa boîte va de (170, 70) à (230, 230). Son fond passe au canevas : tout est violet.</p></div>
+<div class="cap" data-t="5" data-step="Le L"><h3>2. L'ombre intérieure : un L</h3><p>Une ombre sans couleur prend <code>color</code> : <code>eff8fe</code>, sans dièse, accepté en mode quirks. <code>inset 11Q -5ch</code> décale le « trou » de 11Q ≈ 10,39px vers la droite et de 5ch = 40px vers le haut. L'ombre peint ce qu'il ne couvre plus : une barre à gauche, de x = 170 à 180,39, et un pied en bas, de y = 190 à 230. Un L.</p></div>
+<div class="cap" data-t="10" data-step="Le crochet"><h3>3. Deux ombres extérieures : un crochet</h3><p><code>25vw 0</code> pose une copie blanche de la boîte 100px à droite : x = 270 à 330. <code>116Q 5ch#a973a2</code> pose une copie violette 109,61px à droite et 40px plus bas. Elle est écrite avant : elle passe au-dessus. Du blanc, il reste les 40px du haut et une barre d'environ 9,6px à gauche. Le reste de la copie violette ne se voit pas sur le canevas violet.</p></div>
+<div class="cap" data-t="15" data-step="Miroir"><h3>4. scale:-1 1 : html passe dans le miroir</h3><p><code>scale:-1 1</code> retourne html de gauche à droite, autour du centre de sa boîte, x = 200. La boîte reste en place, mais tout ce qu'elle peint est retourné. Les copies vont à gauche : blanche de x = 70 à 130, violette de 60,39 à 120,39. Le crochet s'ouvre maintenant vers la gauche. Le L de html passe sur le bord droit de sa boîte.</p></div>
+<div class="cap" data-t="20" data-step="body"><h3>5. body : la même boîte</h3><p>Le <code>*{</code> imbriqué vise les éléments placés dans un autre : head, style (masqués) et body. <code>margin:0</code> retire à body les marges de <code>*</code> et ses 8px par défaut. En mode quirks, body remplit html : même boîte, 60 × 160. Il est peint au-dessus de html, et son fond violet cache le L de html.</p></div>
+<div class="cap" data-t="25" data-step="Retour"><h3>6. body : retourné deux fois</h3><p>body reçoit les mêmes ombres et le même <code>scale:-1 1</code>. Placé dans html, il serait retourné comme lui. Son propre miroir, autour du même centre, le remet à l'endroit : −1 × −1 = 1. Ses ombres vont là où elles sont écrites : le L à gauche de la boîte, au milieu du canevas, et le crochet à droite.</p></div>
+<div class="cap" data-t="30" data-step="Résultat" data-live="125 caractères · 100 % identique"><h3>7. Résultat : 125 caractères</h3><p>Une seule liste d'ombres sert deux fois. Sur html, retourné, elle dessine le crochet de gauche. Sur body, retourné deux fois, elle dessine le L du milieu et le crochet de droite.</p></div>
+{%- else %}
+<div class="cap" data-t="0" data-step="The box"><h3>1. html: a 60 × 160 box</h3><p>With no doctype, the page is in quirks mode: <code>margin:70 170</code> counts in px. <code>*</code> first targets html. It is 400 − 2 × 170 = 60px wide. In quirks mode, html fills the window's height minus its margins: 300 − 2 × 70 = 160px. Its box runs from (170, 70) to (230, 230). Its background goes to the canvas: everything is purple.</p></div>
+<div class="cap" data-t="5" data-step="The L"><h3>2. The inset shadow: an L</h3><p>A shadow with no color takes <code>color</code>: <code>eff8fe</code>, with no hash, accepted in quirks mode. <code>inset 11Q -5ch</code> moves the "hole" 11Q ≈ 10.39px to the right and 5ch = 40px up. The shadow paints what it no longer covers: a bar on the left, from x = 170 to 180.39, and a foot at the bottom, from y = 190 to 230. An L.</p></div>
+<div class="cap" data-t="10" data-step="The hook"><h3>3. Two outer shadows: a hook</h3><p><code>25vw 0</code> puts a white copy of the box 100px to the right: x = 270 to 330. <code>116Q 5ch#a973a2</code> puts a purple copy 109.61px to the right and 40px down. It is written first, so it is on top. Of the white, the top 40px are left, and a bar about 9.6px wide on the left. The rest of the purple copy does not show on the purple canvas.</p></div>
+<div class="cap" data-t="15" data-step="Mirror"><h3>4. scale:-1 1: html in the mirror</h3><p><code>scale:-1 1</code> flips html from left to right, around the center of its box, x = 200. The box stays in place, but everything it paints is flipped. The copies go to the left: white from x = 70 to 130, purple from 60.39 to 120.39. The hook now opens to the left. html's L moves to the right edge of its box.</p></div>
+<div class="cap" data-t="20" data-step="body"><h3>5. body: the same box</h3><p>The nested <code>*{</code> targets the elements inside another one: head, style (hidden) and body. <code>margin:0</code> takes away body's margins from <code>*</code> and its default 8px. In quirks mode, body fills html: same box, 60 × 160. It is painted on top of html, and its purple background hides html's L.</p></div>
+<div class="cap" data-t="25" data-step="Back"><h3>6. body: flipped twice</h3><p>body gets the same shadows and the same <code>scale:-1 1</code>. Inside html, it would be flipped like html. Its own mirror, around the same center, turns it back: −1 × −1 = 1. Its shadows go where they are written: the L on the left of the box, in the middle of the canvas, and the hook on the right.</p></div>
+<div class="cap" data-t="30" data-step="Result" data-live="125 characters · 100% match"><h3>7. Result: 125 characters</h3><p>One shadow list is used twice. On html, flipped, it draws the left hook. On body, flipped twice, it draws the middle L and the right hook.</p></div>
+{%- endif %}
+</div>
+<div class="live"></div>
+</div>
+</div>
+<script>
+(window.AnimScenes = window.AnimScenes || {}).t0724 = (fig) => {
+  const fr = document.documentElement.lang === 'fr';
+  const $ = (s) => fig.querySelector(s);
+  const $$ = (s) => [...fig.querySelectorAll(s)];
+  const live = $('.live');
+  const ease = (x) => (x < 0.5 ? 4 * x * x * x : 1 - Math.pow(-2 * x + 2, 3) / 2);
+  const pr = (t, [a, b]) => ease(Math.min(1, Math.max(0, (t - a) / (b - a))));
+  const win = (t, a, b) => Math.min(pr(t, [a, a + 0.5]), 1 - pr(t, [b - 0.4, b]));
+  const c = fr ? '\u00a0:' : ':';
+  const dec = (x, n) => (fr ? x.toFixed(n).replace('.', ',') : x.toFixed(n));
+  // Measured on the official code in local Chrome (quirks mode, 400 × 300):
+  // html and body: both (170, 70, 60 × 160) (getBoundingClientRect). Font Times 16px: 5ch = 40px; 11Q = 10.3937px,
+  // 116Q = 109.606px, 25vw = 100px. Shadows (top first): inset 10.39px -40px white, 109.61px 40px purple, 100px 0 white.
+  // html is mirrored around x = 200: its hook at x 70..130 (purple copy 60.39..120.39), its L on the right, hidden by
+  // body's background (checked with body's background removed). body, mirrored twice, draws the middle L and the right hook.
+  const FIN = 30;
+  const H = $('.t0724-h'), B = $('.t0724-b'), box = $('.t0724-box');
+  const L = (k) => $$(`.t0724-l[data-l="${k}"]`);
+  const css = getComputedStyle(fig);
+  const col = (n) => css.getPropertyValue(`--t0724-${n}`).trim();
+  const rgba = (hex, a) => { const h = hex.replace('#', ''); const v = (i) => parseInt(h.slice(i, i + 2), 16); return `rgb(${v(0)} ${v(2)} ${v(4)} / ${a})`; };
+  const shadows = (w, p, aIn, aOut, aP) => `inset 10.3937px -40px ${rgba(w, aIn)}, 109.606px 40px ${rgba(p, aP)}, 100px 0 ${rgba(w, aOut)}`;
+  return (t, step) => {
+    const teach = fig.dataset.teach === '1' && t < FIN;
+    const ann = 1 - pr(t, [FIN, FIN + 0.6]);
+    const W = col('wh'), P = col('pu');
+    // 2. html's L; 3. html's white copy, then its purple copy; 4. html flips
+    const aL = pr(t, [5.6, 6.8]), aW = pr(t, [10.6, 11.6]), aP = pr(t, [12.4, 13.6]);
+    // 5. body's background hides html's L: once it is opaque, the hidden L is not drawn (no seam at the box edge)
+    const aB = pr(t, [20.6, 21.6]), aS = pr(t, [25.4, 26]);
+    H.style.boxShadow = shadows(teach ? col('hw') : W, teach ? col('hp') : P, aL * (1 - aB), aW, aP);
+    const sh = 1 - 2 * pr(t, [15.6, 17.8]);
+    H.style.transform = `scaleX(${sh})`;
+    // 5. body's background; 6. body's shadows (still flipped with html), then body flips back
+    const bg = teach ? col('bg') : P;
+    B.style.opacity = aB;
+    B.style.background = bg;
+    B.style.boxShadow = shadows(teach ? col('bw') : W, teach ? col('bp') : P, aS, aS, aS);
+    const sb = 1 - 2 * pr(t, [26.2, 28.4]);
+    B.style.transform = `scaleX(${sb})`;
+    box.style.opacity = 0.9 * Math.max(win(t, 0.3, 4.8), win(t, 15.3, 19.8), win(t, 20.3, 24.8), win(t, 25.3, 29.8));
+    [[0.3, 4.8], [5.3, 9.8], [10.3, 14.8], [15.3, 19.8], [20.3, 24.8], [25.3, 29.8]].forEach(([p, z], k) => L(k + 1).forEach((e) => (e.style.opacity = win(t, p, z) * ann)));
+    let txt;
+    if (step === 0) txt = `html${c} 60 × 160 · (170, 70) → (230, 230)`;
+    else if (step === 1) txt = `L${c} x = 170 … ${dec(180.39, 2)} · y = 190 … 230`;
+    else if (step === 2) txt = `${fr ? 'blanc' : 'white'}${c} x = 270 … 330 · ${fr ? 'violet' : 'purple'}${c} x = ${dec(279.61, 2)} … ${dec(339.61, 2)}, y = 110 … 270`;
+    else if (step === 3) txt = `html${c} scale ${dec(sh, 2)} 1`;
+    else if (step === 4) txt = `body${c} 60 × 160 · (170, 70) · margin 0`;
+    else if (step === 5) txt = `body${c} ${dec(-1, 0)} × ${dec(sb, 2)} = ${dec(-sb, 2)}`;
+    else txt = $$('.caps .cap')[6].dataset.live || '';
+    live.textContent = txt.replace(/-/g, '−');
+  };
+};
+</script>
+</figure>
