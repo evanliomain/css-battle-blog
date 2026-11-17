@@ -1,0 +1,98 @@
+<figure class="anim t0826" data-duration="24" data-scene="t0826" data-wide="-125 -175 650 650" style="--bg:#fff">
+<style>
+.t0826{--t0826-olive:#bbb54e;--t0826-green:#566713;--t0826-blue:#3f8cff;--t0826-pink:#ff5fa2}
+.t0826 .t0826-box{position:absolute}
+.t0826 .t0826-o{position:absolute;box-sizing:border-box;border:calc(1.5px * var(--k, 1)) solid rgb(20 25 5 / .85);pointer-events:none}
+.t0826 .t0826-o::after{content:"";position:absolute;inset:calc(-1.5px * var(--k, 1));border:calc(1.5px * var(--k, 1)) dashed #fff;border-radius:inherit}
+.t0826 .t0826-c{border-radius:50%}
+.t0826 .zlab{color:#fff;background:rgb(30 36 8 / .9);padding:1px 5px;border-radius:3px}
+.t0826 .legend .t0826-mk{background:transparent;box-shadow:inset 0 0 0 1.5px currentColor}
+</style>
+<div class="anim-col">
+<div class="stage" role="img" aria-label="{% if include.lang == "fr" %}Animation : html devient une boîte de 50 × 50 au centre ; son ombre étalée de 3in, olive, couvre tout le canevas sauf cette boîte, qui reste blanche ; deux copies blanches décalées de 138q font les carrés des côtés ; le body, 80 × 230, reçoit les mêmes ombres en vert foncé ; clip-path:circle(5lh) les coupe en un disque de 90px de rayon, fendu par la boîte du body, et ses copies blanches tombent juste hors du cercle{% else %}Animation: html becomes a 50 × 50 box in the middle; its olive 3in spread shadow covers the whole canvas except that box, which stays white; two white copies moved by 138q make the side squares; the body, 80 × 230, gets the same shadows in dark green; clip-path:circle(5lh) cuts them to a disc with a 90px ray, split by the body's own box, and its white copies fall just outside the circle{% endif %}">
+<div class="scene">
+<div class="t0826-box" data-e="html" style="left:175px;top:125px;width:50px;height:50px"></div>
+<div class="t0826-box" data-e="body" style="left:160px;top:35px;width:80px;height:230px"></div>
+<div class="t0826-o" data-o="html" style="left:175px;top:125px;width:50px;height:50px"></div>
+<div class="t0826-o" data-o="body" style="left:160px;top:35px;width:80px;height:230px"></div>
+<div class="t0826-o t0826-c" data-c style="left:110px;top:60px;width:180px;height:180px"></div>
+<span class="zlab t0826-l" data-l="1" style="left:8px;top:8px">html 50 × 50 · {% if include.lang == "fr" %}(175 ; 125){% else %}(175, 125){% endif %}</span>
+<span class="zlab t0826-l" data-l="2" style="left:8px;top:8px">3in = 288px → 626 × 626</span>
+<span class="zlab t0826-l" data-l="3" style="left:8px;top:8px">{% if include.lang == "fr" %}±138q = ±130,39px{% else %}±138q = ±130.39px{% endif %}</span>
+<span class="zlab t0826-l" data-l="4" style="left:8px;top:8px">body 80 × 230 · {% if include.lang == "fr" %}(160 ; 35){% else %}(160, 35){% endif %}</span>
+<span class="zlab t0826-l" data-l="5" style="left:8px;top:8px">5lh = 5 × 18 = 90px · {% if include.lang == "fr" %}(200 ; 150){% else %}(200, 150){% endif %}</span>
+</div>
+</div>
+<div class="legend"><span><i style="--c:var(--t0826-olive)"></i>{% if include.lang == "fr" %}ombre étalée de html{% else %}html's spread shadow{% endif %}</span><span><i style="--c:var(--t0826-blue)"></i>{% if include.lang == "fr" %}copies #fff de html (blanches en vrai){% else %}html's #fff copies (white in reality){% endif %}</span><span><i style="--c:var(--t0826-green)"></i>{% if include.lang == "fr" %}ombre étalée du body{% else %}body's spread shadow{% endif %}</span><span><i style="--c:var(--t0826-pink)"></i>{% if include.lang == "fr" %}copies #fff du body (blanches en vrai){% else %}body's #fff copies (white in reality){% endif %}</span><span><i class="t0826-mk"></i>{% if include.lang == "fr" %}boîtes{% else %}boxes{% endif %}</span></div>
+</div>
+<div class="anim-side">
+<pre class="code" aria-hidden="true">&lt;style>*{<span data-on="1">margin:125 175</span>;box-shadow:<span data-on="3 4">-138q 0#fff,138q 0#fff</span>,<span data-on="2 4">0 0 0 3in</span>;<span data-on="2" data-tone="2">color:BBB54E</span>;*{<span data-on="4">margin:-90-15</span>;<span data-on="4" data-tone="2">color:566713</span>;<span data-on="5">clip-path:circle(5lh</span></pre>
+<div class="now" aria-live="polite">
+<div class="caps">
+{%- if include.lang == "fr" %}
+<div class="cap" data-t="0" data-step="html : une boîte de 50 × 50"><h3>1. <code>html</code> : une boîte de 50 × 50</h3><p><code>*</code> vise <code>html</code> et tout ce qu'il contient. Sur <code>html</code>, <code>margin:125 175</code> laisse 400 − 175 − 175 = 50 de large. En mode quirks, <code>html</code> remplit la hauteur du cadre moins ses marges : 300 − 125 − 125 = 50. Une boîte de 50 × 50 en (175 ; 125). Aucun fond n'est peint : le canevas reste blanc.</p></div>
+<div class="cap" data-t="4" data-step="Une ombre de 3in : le fond olive"><h3>2. Une ombre de 3in : le fond olive</h3><p><code>0 0 0 3in</code> est une ombre sans décalage ni flou, étalée de 3in = 288px. Elle n'a pas de couleur : elle prend celle du texte, <code>color:BBB54E</code>, un hexadécimal sans <code>#</code>, accepté en mode quirks. L'ombre fait 626 × 626, bien plus que le canevas. Une ombre externe ne se peint jamais sous sa propre boîte : les 50 × 50 restent blancs. C'est le carré du milieu.</p></div>
+<div class="cap" data-t="8" data-step="Deux copies blanches : les carrés des côtés"><h3>3. Deux copies blanches : les carrés des côtés</h3><p><code>-138q 0#fff</code> et <code>138q 0#fff</code> : deux copies blanches de la boîte, décalées de 138q = 130,39px à gauche et à droite. Elles sont écrites avant l'ombre olive, donc peintes par-dessus. Carré de gauche de x = 44,61 à 94,61, carré de droite de 305,39 à 355,39.</p></div>
+<div class="cap" data-t="12" data-step="body : les mêmes ombres, en vert"><h3>4. <code>body</code> : les mêmes ombres, en vert</h3><p>Le <code>*</code> imbriqué vise le <code>body</code>. <code>margin:-90-15</code> : 50 + 15 + 15 = 80 de large et, en mode quirks, 50 + 90 + 90 = 230 de haut. Une boîte de 80 × 230 en (160 ; 35). La règle du dehors le vise aussi : il a le même <code>box-shadow</code>, mais sa couleur est <code>566713</code>. Son ombre vert foncé couvre tout, sauf sa propre boîte, où l'on voit ce que <code>html</code> a peint. Ses copies blanches vont de x = 29,61 à 109,61 et de 290,39 à 370,39.</p></div>
+<div class="cap" data-t="16" data-step="circle(5lh) : le disque"><h3>5. <code>circle(5lh)</code> : le disque</h3><p><code>clip-path:circle(5lh)</code> coupe le <code>body</code> et ses ombres en un cercle centré sur sa boîte, en (200 ; 150). <code>lh</code> est la hauteur de ligne, 18px ici : le rayon fait 90px, de x = 110 à 290. Les copies blanches s'arrêtent en 109,61 et reprennent en 290,39 : juste hors du cercle, il n'en reste rien. La fente du disque, c'est la boîte du <code>body</code>, 80px de large.</p></div>
+<div class="cap" data-t="20" data-step="Résultat" data-live="130 caractères · 100 % identique"><h3>6. Résultat : 130 caractères</h3><p>Une seule liste d'ombres, écrite une fois, pour deux boîtes : <code>html</code> dessine le fond et les trois carrés, le <code>body</code> le disque fendu en deux.</p></div>
+{%- else %}
+<div class="cap" data-t="0" data-step="html: a 50 × 50 box"><h3>1. <code>html</code>: a 50 × 50 box</h3><p><code>*</code> matches <code>html</code> and everything in it. On <code>html</code>, <code>margin:125 175</code> leaves 400 − 175 − 175 = 50 of width. In quirks mode, <code>html</code> fills the height of the frame minus its margins: 300 − 125 − 125 = 50. A 50 × 50 box at (175, 125). No background is painted: the canvas stays white.</p></div>
+<div class="cap" data-t="4" data-step="A 3in shadow: the olive background"><h3>2. A 3in shadow: the olive background</h3><p><code>0 0 0 3in</code> is a shadow with no offset and no blur, spread by 3in = 288px. It has no color, so it takes the text color, <code>color:BBB54E</code>: a hex color without <code>#</code>, accepted in quirks mode. The shadow is 626 × 626, far bigger than the canvas. An outer shadow is never painted under its own box: the 50 × 50 stays white. That is the middle square.</p></div>
+<div class="cap" data-t="8" data-step="Two white copies: the side squares"><h3>3. Two white copies: the side squares</h3><p><code>-138q 0#fff</code> and <code>138q 0#fff</code>: two white copies of the box, moved 138q = 130.39px to the left and to the right. They are written before the olive shadow, so they are painted above it. Left square from x = 44.61 to 94.61, right square from 305.39 to 355.39.</p></div>
+<div class="cap" data-t="12" data-step="body: the same shadows, in green"><h3>4. <code>body</code>: the same shadows, in green</h3><p>The nested <code>*</code> matches the <code>body</code>. <code>margin:-90-15</code>: 50 + 15 + 15 = 80 wide and, in quirks mode, 50 + 90 + 90 = 230 tall. An 80 × 230 box at (160, 35). The outer rule matches it too, so it has the same <code>box-shadow</code>, but its color is <code>566713</code>. Its dark green shadow covers everything, except its own box, where what <code>html</code> painted shows through. Its white copies run from x = 29.61 to 109.61 and from 290.39 to 370.39.</p></div>
+<div class="cap" data-t="16" data-step="circle(5lh): the disc"><h3>5. <code>circle(5lh)</code>: the disc</h3><p><code>clip-path:circle(5lh)</code> cuts the <code>body</code> and its shadows to a circle centered on its box, at (200, 150). <code>lh</code> is the line height, 18px here, so the ray is 90px, from x = 110 to 290. The white copies stop at 109.61 and start again at 290.39: just outside the circle, so nothing is left of them. The slot through the disc is the <code>body</code>'s own box, 80px wide.</p></div>
+<div class="cap" data-t="20" data-step="Result" data-live="130 characters · 100% match"><h3>6. Result: 130 characters</h3><p>One shadow list, written once, for two boxes: <code>html</code> draws the background and the three squares, the <code>body</code> the disc split in two.</p></div>
+{%- endif %}
+</div>
+<div class="live"></div>
+</div>
+</div>
+<script>
+(window.AnimScenes = window.AnimScenes || {}).t0826 = (fig) => {
+  const fr = document.documentElement.lang === 'fr';
+  const $ = (s) => fig.querySelector(s);
+  const $$ = (s) => [...fig.querySelectorAll(s)];
+  const H = $('[data-e="html"]'), B = $('[data-e="body"]'), oH = $('[data-o="html"]'), oB = $('[data-o="body"]'), C = $('[data-c]'), live = $('.live');
+  const L = (k) => $(`.t0826-l[data-l="${k}"]`);
+  const W = { html: [0.3, 1.8], sp: [4.3, 6.3], sq: [8.3, 10], b: [12.3, 13.6], bs: [13.9, 15.6], clip: [16.3, 18.3], fin: [20.1, 20.9] };
+  const ease = (x) => (x < 0.5 ? 4 * x * x * x : 1 - Math.pow(-2 * x + 2, 3) / 2);
+  const pr = (t, [a, b]) => ease(Math.min(1, Math.max(0, (t - a) / (b - a))));
+  const lerp = (a, b, m) => a + (b - a) * m;
+  const win = (t, a, b) => Math.min(pr(t, [a, a + 0.5]), 1 - pr(t, [b - 0.4, b]));
+  const f2 = (v) => { const s = (Math.round(v * 100) / 100).toFixed(2).replace(/\.?0+$/, ''); return fr ? s.replace('.', ',') : s; };
+  const box = (e, r) => Object.assign(e.style, { left: `${r[0]}px`, top: `${r[1]}px`, width: `${r[2]}px`, height: `${r[3]}px` });
+  const Q = 130.3937; // 138q in px
+  const c = fr ? ' :' : ':';
+  return (t, step) => {
+    const teach = fig.dataset.teach === '1';
+    const real = !teach || t >= W.fin[0];
+    const guides = t < W.fin[0] ? 1 : 0;
+    const h = pr(t, W.html), sp = pr(t, W.sp), sq = pr(t, W.sq), b = pr(t, W.b), bs = pr(t, W.bs), cl = pr(t, W.clip);
+    const w1 = real ? '#fff' : 'var(--t0826-blue)', w2 = real ? '#fff' : 'var(--t0826-pink)';
+    // html: the spread shadow (last, so painted below) and the two white copies
+    H.style.boxShadow = `${-Q * sq}px 0 ${w1},${Q * sq}px 0 ${w1},0 0 0 ${288 * sp}px var(--t0826-olive)`;
+    // body: the same list, in its own color, then the circle
+    B.style.boxShadow = `${-Q * bs}px 0 ${w2},${Q * bs}px 0 ${w2},0 0 0 ${288 * bs}px var(--t0826-green)`;
+    B.style.clipPath = t >= W.clip[0] ? `circle(${lerp(540, 90, cl)}px)` : 'none';
+    // box outlines
+    box(oH, [lerp(0, 175, h), lerp(0, 125, h), lerp(400, 50, h), lerp(300, 50, h)]);
+    oH.style.opacity = (t >= W.html[0] ? 1 : 0) * guides;
+    box(oB, [lerp(175, 160, b), lerp(125, 35, b), lerp(50, 80, b), lerp(50, 230, b)]);
+    oB.style.opacity = (t >= W.b[0] ? 1 : 0) * guides;
+    C.style.opacity = win(t, W.clip[0] + 1.2, W.fin[0]) * guides;
+    // labels
+    const lw = [[W.html[0], W.sp[0] - 0.2], [W.sp[0], W.sq[0] - 0.2], [W.sq[0], W.b[0] - 0.2], [W.b[0], W.clip[0] - 0.2], [W.clip[0], W.fin[0]]];
+    lw.forEach(([a, z], i) => (L(i + 1).style.opacity = win(t, a, z)));
+    let txt = '';
+    if (step === 0) txt = `html${c} 50 × 50 ${fr ? 'en (175 ; 125)' : 'at (175, 125)'}`;
+    else if (step === 1) txt = `${fr ? 'étalement' : 'spread'}${c} ${f2(288 * sp)}px`;
+    else if (step === 2) txt = `${fr ? 'décalage' : 'offset'}${c} ±${f2(Q * sq)}px`;
+    else if (step === 3) txt = `body${c} 80 × 230 ${fr ? 'en (160 ; 35)' : 'at (160, 35)'}`;
+    else if (step === 4) txt = `${fr ? 'rayon' : 'ray'}${c} ${f2(lerp(540, 90, cl))}px`;
+    else txt = $$('.caps .cap')[5].dataset.live || '';
+    live.textContent = txt;
+  };
+};
+</script>
+</figure>
