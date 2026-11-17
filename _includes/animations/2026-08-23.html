@@ -1,0 +1,121 @@
+<figure class="anim t0823" data-duration="25" data-scene="t0823" data-wide="-50 -40 500 380" style="--bg:#f3ac3c">
+<style>
+.t0823{--t0823-or:#f3ac3c;--t0823-th:#6b3fa0;--t0823-tb:#0f8a6c;--t0823-td:#c2185b;--t0823-t1:#1f5fd1;--t0823-tl:#9cc3ff;--t0823-line:#14142a}
+.t0823 .t0823-x{box-sizing:border-box;border:20px solid #000;opacity:0}
+.t0823 .t0823-body{border-radius:20px}
+.t0823 .t0823-ln{opacity:0;background:repeating-linear-gradient(45deg,var(--t0823-tl) 0 3px,transparent 0 6px)}
+.t0823 .t0823-g{box-sizing:border-box;border:2px dashed var(--t0823-line);opacity:0}
+.t0823 .t0823-o{box-sizing:border-box;border:2px dashed var(--t0823-t1);opacity:0}
+.t0823 .zlab{color:#fff;background:rgb(20 20 42 / .9);padding:1px 5px;border-radius:3px}
+.t0823 .t0823-l{left:6px;top:234px;opacity:0}
+</style>
+<div class="anim-col">
+<div class="stage" role="img" aria-label="{% if include.lang == "fr" %}Animation : html, avec ses marges de 75 et 90px, devient un cadre noir de 220 × 150 bordé de 20px ; le body, étiré par le mode quirks puis décalé par ses marges, devient la poignée arrondie de 100 × 50 posée sur le cadre ; le dt s'élargit de 80px de chaque côté et sa bordure du haut trace la barre du milieu ; le h1, haut de 77px grâce à son espace insécable, pose ses bordures sur la barre ; color:F3AC3C les rend orange et coupe la barre en trois{% else %}Animation: html, with its 75 and 90px margins, becomes a 220 × 150 black frame with a 20px border; the body, stretched by quirks mode then moved by its margins, becomes the 100 × 50 rounded handle sitting on the frame; the dt widens by 80px on each side and its top border draws the middle bar; the h1, 77px tall thanks to its no-break space, puts its borders on the bar; color:F3AC3C turns them orange and cuts the bar in three{% endif %}">
+<div class="scene">
+<div class="t0823-g"></div>
+<div class="t0823-x t0823-html"></div>
+<div class="t0823-x t0823-body"></div>
+<div class="t0823-x t0823-dt"></div>
+<div class="t0823-ln"></div>
+<div class="t0823-x t0823-h1"></div>
+<div class="t0823-o"></div>
+<span class="zlab t0823-l" data-l="1">html 220 × 150 · 5vw = 20px</span>
+<span class="zlab t0823-l" data-l="2">{% if include.lang == "fr" %}body : 110 + 50 − 110 = 50px de haut{% else %}body: 110 + 50 − 110 = 50px tall{% endif %}</span>
+<span class="zlab t0823-l" data-l="3">{% if include.lang == "fr" %}dt : 60 + 2 × 80 = 220px · y = 65 + 75 = 140{% else %}dt: 60 + 2 × 80 = 220px · y = 65 + 75 = 140{% endif %}</span>
+<span class="zlab t0823-l" data-l="4">{% if include.lang == "fr" %}h1 : ligne de 37px + 2 × 20 = 77px{% else %}h1: 37px line + 2 × 20 = 77px{% endif %}</span>
+<span class="zlab t0823-l" data-l="5">border-color = currentColor = #F3AC3C</span>
+</div>
+</div>
+<div class="legend"><span><i style="--c:var(--t0823-th)"></i>html</span><span><i style="--c:var(--t0823-tb)"></i>body</span><span><i style="--c:var(--t0823-td)"></i>dt</span><span><i style="--c:var(--t0823-t1)"></i>h1</span><span><i style="--c:var(--t0823-tl)"></i>{% if include.lang == "fr" %}ligne du h1 (espace insécable){% else %}h1's line (no-break space){% endif %}</span></div>
+</div>
+<div class="anim-side">
+<pre class="code" aria-hidden="true">&lt;<span data-on="3" data-tone="2">dt</span>>&lt;<span data-on="4" data-tone="2">h1> </span>&lt;style><span data-on="1" data-tone="2">*{</span><span data-on="1">border:5vw solid;margin:75 90</span>;<span data-on="2" data-tone="2">+*{</span><span data-on="1 2">background:#F3AC3C</span>;<span data-on="2">border-radius:5vw;margin:-50 40 110</span>;<span data-on="3" data-tone="2">*{</span><span data-on="3">margin:75-80-150</span>;<span data-on="4" data-tone="2">*{</span><span data-on="5">color:F3AC3C</span>;<span data-on="4">margin:-40 30 8</span></pre>
+<div class="now" aria-live="polite">
+<div class="caps">
+{%- if include.lang == "fr" %}
+<div class="cap" data-t="0" data-step="html : le cadre"><h3>1. <code>html</code> : le cadre</h3><p><code>*</code> vise tous les éléments. 5vw, c'est 5 % de 400px : 20px. En mode quirks, <code>html</code> remplit le cadre de 400 × 300 moins ses marges : 220 × 150, de (90 ; 75) à (310 ; 225). Sa bordure noire est le contour de la mallette. Le fond orange du <code>body</code> va sur tout le canevas, parce que <code>html</code> n'a pas de fond.</p></div>
+<div class="cap" data-t="4" data-step="body : la poignée"><h3>2. <code>body</code> : la poignée</h3><p><code>+*</code>, c'est <code>* + *</code> : un élément qui en suit un autre. Ici, le <code>body</code>, après <code>head</code>. En mode quirks, le body s'étire pour remplir la boîte de contenu de <code>html</code>, haute de 110px, moins ses marges : 110 + 50 − 110 = 50px de haut, et 180 − 2 × 40 = 100px de large. Il va de (150 ; 45) à (250 ; 95), avec des coins arrondis de 20px. Sa bordure du bas se pose sur celle de <code>html</code>. Son intérieur reste orange : son fond est peint sur le canevas, pas dans sa boîte.</p></div>
+<div class="cap" data-t="8.5" data-step="dt : la barre du milieu"><h3>3. <code>dt</code> : la barre du milieu</h3><p>Le <code>*</code> imbriqué vise ce qui est dans le body : <code>dt</code> et <code>h1</code>. Le dt part de la boîte de contenu du body, 60px de large à y = 65. <code>margin:75-80-150</code> le descend de 75px, à y = 140, et l'élargit de 80px de chaque côté : 220px, de x = 90 à 310. Ses côtés et son bas tombent sur la bordure de <code>html</code> : seule sa bordure du haut se voit, la barre. La marge de −150 ramène sa boîte de marge à 75 + 85 − 150 = 10px, la hauteur de contenu du body : ni le body ni <code>html</code> ne grandissent.</p></div>
+<div class="cap" data-t="13" data-step="h1 : une ligne vide"><h3>4. <code>h1</code> : une ligne vide</h3><p>Le h1 contient une espace insécable. Pour le HTML, ce n'est pas un blanc : le h1 a donc une ligne, haute de 37px en 32px. Avec ses bordures : 77px. <code>margin:-40 30 8</code> le place de (140 ; 120) à (260 ; 197). Sa boîte de marge, −40 + 77 + 8 = 45px, fait la hauteur de contenu du dt : le dt fait 85px, et sa bordure du bas tombe sur celle de <code>html</code>. Ici, la bordure du h1 est noire, comme elle le serait sans <code>color</code>.</p></div>
+<div class="cap" data-t="17.5" data-step="color:F3AC3C"><h3>5. <code>color:F3AC3C</code></h3><p>Pas de <code>#</code> : en mode quirks, Chrome lit quand même une couleur hexadécimale pour <code>color</code>. La bordure prend la couleur du texte : celle du h1 devient orange. Son haut et son bas se perdent dans l'orange de l'intérieur. Ses deux côtés, de x = 140 à 160 et de 240 à 260, coupent la barre en trois.</p></div>
+<div class="cap" data-t="21.5" data-step="Résultat" data-live="155 caractères · 100 % identique"><h3>6. Résultat : 155 caractères</h3><p>Quatre boîtes avec la même bordure noire de 20px : <code>html</code> pour le contour, le <code>body</code> pour la poignée, le <code>dt</code> pour la barre, et un <code>h1</code> dont la bordure orange ouvre deux trous.</p></div>
+{%- else %}
+<div class="cap" data-t="0" data-step="html: the frame"><h3>1. <code>html</code>: the frame</h3><p><code>*</code> matches every element. 5vw is 5% of 400px: 20px. In quirks mode, <code>html</code> fills the 400 × 300 frame minus its margins: 220 × 150, from (90, 75) to (310, 225). Its black border is the outline of the briefcase. The <code>body</code>'s orange background goes to the whole canvas, because <code>html</code> has none.</p></div>
+<div class="cap" data-t="4" data-step="body: the handle"><h3>2. <code>body</code>: the handle</h3><p><code>+*</code> is <code>* + *</code>: an element right after another one. Here, the <code>body</code>, after <code>head</code>. In quirks mode, the body stretches to fill the content box of <code>html</code>, 110px tall, minus its margins: 110 + 50 − 110 = 50px tall, and 180 − 2 × 40 = 100px wide. It goes from (150, 45) to (250, 95), with 20px rounded corners. Its bottom border sits on the border of <code>html</code>. Its inside stays orange: its background is painted on the canvas, not in its box.</p></div>
+<div class="cap" data-t="8.5" data-step="dt: the middle bar"><h3>3. <code>dt</code>: the middle bar</h3><p>The nested <code>*</code> matches what is in the body: <code>dt</code> and <code>h1</code>. The dt starts in the body's content box, 60px wide at y = 65. <code>margin:75-80-150</code> moves it 75px down, to y = 140, and widens it by 80px on each side: 220px, from x = 90 to 310. Its sides and bottom land on the border of <code>html</code>: only its top border shows, the bar. The −150 margin brings its margin box down to 75 + 85 − 150 = 10px, the body's content height: neither the body nor <code>html</code> grows.</p></div>
+<div class="cap" data-t="13" data-step="h1: an empty line"><h3>4. <code>h1</code>: an empty line</h3><p>The h1 holds a no-break space. For HTML, it is not white space, so the h1 gets a line: 37px tall at 32px. With its borders: 77px. <code>margin:-40 30 8</code> puts it from (140, 120) to (260, 197). Its margin box, −40 + 77 + 8 = 45px, is the dt's content height: the dt is 85px tall, and its bottom border lands on the border of <code>html</code>. Here the h1's border is black, as it would be without <code>color</code>.</p></div>
+<div class="cap" data-t="17.5" data-step="color:F3AC3C"><h3>5. <code>color:F3AC3C</code></h3><p>No <code>#</code>: in quirks mode, Chrome still reads a hex color for <code>color</code>. The border takes the text color, so the h1's border turns orange. Its top and bottom are lost in the orange inside. Its two sides, from x = 140 to 160 and from 240 to 260, cut the bar in three.</p></div>
+<div class="cap" data-t="21.5" data-step="Result" data-live="155 characters · 100% match"><h3>6. Result: 155 characters</h3><p>Four boxes with the same 20px black border: <code>html</code> for the outline, the <code>body</code> for the handle, the <code>dt</code> for the bar, and an <code>h1</code> whose orange border opens two gaps.</p></div>
+{%- endif %}
+</div>
+<div class="live"></div>
+</div>
+</div>
+<script>
+(window.AnimScenes = window.AnimScenes || {}).t0823 = (fig) => {
+  const fr = document.documentElement.lang === 'fr';
+  const $ = (s) => fig.querySelector(s);
+  const $$ = (s) => [...fig.querySelectorAll(s)];
+  const H = $('.t0823-html'), B = $('.t0823-body'), D = $('.t0823-dt'), H1 = $('.t0823-h1');
+  const LN = $('.t0823-ln'), G = $('.t0823-g'), OL = $('.t0823-o'), live = $('.live');
+  const L = (k) => $(`.t0823-l[data-l="${k}"]`);
+  const ease = (x) => (x < 0.5 ? 4 * x * x * x : 1 - Math.pow(-2 * x + 2, 3) / 2);
+  const pr = (t, [a, b]) => ease(Math.min(1, Math.max(0, (t - a) / (b - a))));
+  const win = (t, a, b) => Math.min(pr(t, [a, a + 0.5]), 1 - pr(t, [b - 0.4, b]));
+  const mix = (a, b, p) => a.map((v, i) => v + (b[i] - v) * p);
+  const box = (e, r) => { e.style.left = `${r[0]}px`; e.style.top = `${r[1]}px`; e.style.width = `${r[2]}px`; e.style.height = `${r[3]}px`; };
+  const n = (v) => Math.round(v);
+  const c = fr ? '\u00a0:' : ':';
+  // [x, y, w, h] in canvas px, measured with getBoundingClientRect on the official code
+  const R = {
+    canvas: [0, 0, 400, 300], html: [90, 75, 220, 150], hc: [110, 95, 180, 110],
+    body: [150, 45, 100, 50], bc: [170, 65, 60, 10], dt: [90, 140, 220, 85],
+    dc: [110, 160, 180, 45], h1: [140, 120, 120, 77],
+  };
+  const W = { h: [0.8, 2.8], b: [5, 7], d: [9.5, 11.5], i: [14, 16], col: [18.2, 19.4], fin: [21.5, 22.1] };
+  return (t, step) => {
+    const teach = fig.dataset.teach === '1' && t < W.fin[0];
+    // 1. html
+    const ph = pr(t, W.h), hr = mix(R.canvas, R.html, ph);
+    box(H, hr);
+    H.style.opacity = pr(t, [0.1, 0.6]);
+    H.style.borderColor = teach ? 'var(--t0823-th)' : '#000';
+    // 2. body: from the content box of html to its place
+    const pb = pr(t, W.b), br = mix(R.hc, R.body, pb);
+    box(B, br);
+    B.style.opacity = pr(t, [4.2, 4.7]);
+    // once in place, in real colors, the parts that lie exactly on the html border are left to it (no doubled edge)
+    B.style.borderColor = teach ? 'var(--t0823-tb)' : pb >= 1 ? '#000 #000 transparent' : '#000';
+    // 3. dt: from the content box of the body to its place (its height, 85px, comes from the h1)
+    const pd = pr(t, W.d), dr = mix([R.bc[0], R.bc[1], R.bc[2], 85], R.dt, pd);
+    box(D, dr);
+    D.style.opacity = pr(t, [8.7, 9.2]);
+    D.style.borderColor = teach ? 'var(--t0823-td)' : pd >= 1 ? '#000 transparent transparent' : '#000';
+    // 4. h1: from the content box of the dt to its place; 5. its border turns orange
+    const pi = pr(t, W.i), ir = mix([R.dc[0], R.dc[1], R.dc[2], 77], R.h1, pi);
+    box(H1, ir);
+    H1.style.opacity = pr(t, [13.2, 13.7]);
+    const pc = pr(t, W.col);
+    H1.style.borderColor = pc >= 1 ? 'var(--t0823-or)' : `color-mix(in srgb, var(--t0823-or) ${pc * 100}%, ${teach ? 'var(--t0823-t1)' : '#000'})`;
+    box(LN, [ir[0] + 20, ir[1] + 20, ir[2] - 40, 37]);
+    LN.style.opacity = teach ? win(t, 13.6, 17.9) : 0;
+    box(OL, ir);
+    OL.style.opacity = teach ? pr(t, [18.6, 19.2]) * (1 - pr(t, [21.1, 21.5])) : 0;
+    // dashed guide: the parent's content box while each element moves in
+    const g = [[R.canvas, 0.2, 3.8], [R.hc, 4.2, 8.2], [R.bc, 8.7, 12.7], [R.dc, 13.2, 17.3]];
+    G.style.opacity = 0;
+    for (const [r, a, z] of g) if (t >= a && t <= z) { box(G, r); G.style.opacity = 0.85 * win(t, a, z); }
+    const lw = [[0.2, 3.9], [4.2, 8.3], [8.7, 12.8], [13.2, 17.3], [17.7, 21.3]];
+    lw.forEach(([a, z], k) => (L(k + 1).style.opacity = win(t, a, z)));
+    let txt = '';
+    if (step === 0) txt = `html${c} ${n(hr[2])} × ${n(hr[3])} · ${fr ? 'de' : 'from'} (${n(hr[0])}${fr ? '\u00a0;' : ','} ${n(hr[1])})`;
+    else if (step === 1) txt = `body${c} ${n(br[2])} × ${n(br[3])} · x ${n(br[0])} → ${n(br[0] + br[2])} · y ${n(br[1])} → ${n(br[1] + br[3])}`;
+    else if (step === 2) txt = `dt${c} x ${n(dr[0])} → ${n(dr[0] + dr[2])} · y ${n(dr[1])} → ${n(dr[1] + dr[3])}`;
+    else if (step === 3) txt = `h1${c} ${n(ir[2])} × 77 · x ${n(ir[0])} → ${n(ir[0] + ir[2])} · y ${n(ir[1])} → ${n(ir[1] + 77)}`;
+    else if (step === 4) txt = `h1 · border-color${c} ${pc >= 1 ? '#F3AC3C' : fr ? 'noir → #F3AC3C' : 'black → #F3AC3C'}`;
+    else txt = $$('.caps .cap')[5].dataset.live || '';
+    live.textContent = txt;
+  };
+};
+</script>
+</figure>
