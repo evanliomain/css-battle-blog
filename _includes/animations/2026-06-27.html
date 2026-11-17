@@ -1,0 +1,132 @@
+<figure class="anim t0627" data-duration="30" data-scene="t0627" data-wide="-40 -30 480 370" style="--bg:#fff">
+<style>
+.t0627{--t0627-yl:#e3e46f;--t0627-bg:#5dbcf9;--t0627-h:#f97316;--t0627-b:#a855f7;--t0627-p:#15803d}
+.t0627 .scene .t0627-box{left:0;top:0;width:80px;height:140px;opacity:0}
+.t0627 .scene .t0627-h{z-index:1}
+.t0627 .scene .t0627-b{z-index:2}
+.t0627 .scene .t0627-p{z-index:3}
+.t0627 .scene .t0627-x{left:200px;top:150px;width:0;height:0;opacity:0;z-index:5}
+.t0627 .t0627-x::before,.t0627 .t0627-x::after{content:"";position:absolute;background:#14142a;box-shadow:0 0 0 calc(1px * var(--k, 1)) #fff}
+.t0627 .t0627-x::before{left:-14px;top:calc(-1px * var(--k, 1));width:28px;height:calc(2px * var(--k, 1))}
+.t0627 .t0627-x::after{top:-14px;left:calc(-1px * var(--k, 1));height:28px;width:calc(2px * var(--k, 1))}
+.t0627 .scene .t0627-m{top:118px;height:64px;width:0;border-left:calc(2px * var(--k, 1)) dashed #14142a;opacity:0;z-index:5}
+.t0627 .scene .t0627-m1{left:calc(130px - 1px * var(--k, 1))}
+.t0627 .scene .t0627-m2{left:calc(270px - 1px * var(--k, 1))}
+.t0627 .zlab{color:#fff;background:rgb(20 20 42 / .9);padding:1px 5px;border-radius:3px;opacity:0}
+.t0627 .scene .zlab{left:auto;right:4px;transform-origin:100% 0}
+.t0627 .scene .zlab.t0627-l1{top:4px}
+.t0627 .scene .zlab.t0627-l2{top:calc(4px + 18px * var(--k, 1))}
+</style>
+<div class="anim-col">
+<div class="stage" role="img" aria-label="{% if include.lang == "fr" %}Animation : * donne à html, body et p width: 0, height: 60 et une bordure jaune de 40px (5ch) : trois boîtes de 80 × 140, tout en bordure, en (0, 0), (48, 48) et (88, 88) ; le fond bleu de html devient la couleur du canevas ; &,p donne à html et p une hauteur de 150 et border-radius: 9in, ramené à 40px : deux pilules de 80 × 230 ; offset: ray(45deg) pose chaque élément au centre de son bloc conteneur : tous en (200, 150) ; il les tourne aussi de 45° − 90° = −45°, et les rotations s'additionnent : html −45°, body −90°, p −135° ; les deux pilules forment un X, et body, couché, 140 × 80, remplit les encoches de gauche et de droite avec des côtés plats en x = 130 et 270{% else %}Animation: * gives html, body and p width: 0, height: 60 and a 40px yellow border (5ch): three 80 × 140 boxes, all border, at (0, 0), (48, 48) and (88, 88); html's blue background becomes the canvas color; &,p gives html and p a height of 150 and border-radius: 9in, cut down to 40px: two 80 × 230 pills; offset: ray(45deg) puts each element at the center of its containing block: all at (200, 150); it also turns them by 45° − 90° = −45°, and the turns add up: html −45°, body −90°, p −135°; the two pills make an X, and body, lying flat, 140 × 80, fills the left and right notches with flat sides at x = 130 and 270{% endif %}">
+<div class="scene">
+<div class="t0627-box t0627-h"></div>
+<div class="t0627-box t0627-b"></div>
+<div class="t0627-box t0627-p"></div>
+<div class="t0627-x"></div>
+<div class="t0627-m t0627-m1"></div>
+<div class="t0627-m t0627-m2"></div>
+<span class="zlab t0627-l1" data-l="1">* · width:0 · height:60</span>
+<span class="zlab t0627-l2" data-l="1">5ch = 40px → 80 × 140</span>
+<span class="zlab t0627-l1" data-l="2">&amp; = html · height:150</span>
+<span class="zlab t0627-l2" data-l="2">9in = 864px → 40px</span>
+<span class="zlab t0627-l1" data-l="3">offset:ray(45deg)</span>
+<span class="zlab t0627-l2" data-l="3">{% if include.lang == "fr" %}centres → (200, 150){% else %}centers → (200, 150){% endif %}</span>
+<span class="zlab t0627-l1" data-l="4">45° − 90° = −45°</span>
+<span class="zlab t0627-l2" data-l="4">html −45° · body −90° · p −135°</span>
+<span class="zlab t0627-l1" data-l="5">body · 140 × 80</span>
+<span class="zlab t0627-l2" data-l="5">x = 130 … 270</span>
+</div>
+</div>
+<div class="legend"><span><i style="--c:var(--t0627-h)"></i>html</span><span><i style="--c:var(--t0627-b)"></i>body</span><span><i style="--c:var(--t0627-p)"></i>p</span><span><i style="--c:var(--t0627-bg);outline:1px solid currentColor;outline-offset:-1px"></i>{% if include.lang == "fr" %}canevas (fond de html){% else %}canvas (html's background){% endif %}</span></div>
+</div>
+<div class="anim-side">
+<pre class="code" aria-hidden="true"><span data-on="1" data-tone="2">&lt;p></span>&lt;style><span data-on="1" data-tone="2">*{</span><span data-on="1">width:0</span>;<span data-on="1 5">height:60</span>;<span data-on="1">border:5ch solid#E3E46F</span>;<span data-on="1">background:#5DBCF9</span>;<span data-on="3 4">offset:ray(45deg)</span>}<span data-on="2" data-tone="2">&amp;,p{</span><span data-on="2">border-radius:9in;height:150</span></pre>
+<div class="now" aria-live="polite">
+<div class="caps">
+{%- if include.lang == "fr" %}
+<div class="cap" data-t="0" data-step="*"><h3>1. Trois boîtes</h3><p><code>*</code> vise html, head, body, p et style. head et style sont masqués. Chaque élément reçoit <code>width:0</code>, <code>height:60</code> et une bordure jaune de <code>5ch</code>, soit 40px : une boîte de 80 × 140, tout en bordure, car le contenu fait 0px de large. Le fond bleu de html devient la couleur du canevas. Dans le flux, html est en (0, 0), body en (48, 48) et p en (88, 88).</p></div>
+<div class="cap" data-t="5" data-step="&amp;,p"><h3>2. Deux pilules</h3><p>Hors de toute règle, <code>&amp;</code> désigne la racine : html. html et p reçoivent <code>height:150</code> : 80 × 230. <code>border-radius:9in</code>, soit 864px, est ramené à 40px, la moitié de la largeur : les deux boîtes deviennent des pilules. body garde ses 80 × 140 et ses coins carrés.</p></div>
+<div class="cap" data-t="10" data-step="offset"><h3>3. Au centre</h3><p><code>offset:ray(45deg)</code> pose chaque élément au départ d'un rayon, à distance 0 : son centre va au centre de son bloc conteneur, quelles que soient ses marges. Pour html, c'est le centre du canevas, (200, 150). Pour body, le centre de la boîte de contenu de html, qui est le centre de html. Pour p, le centre de body. Les trois se retrouvent en (200, 150).</p></div>
+<div class="cap" data-t="15" data-step="rotations"><h3>4. Trois angles</h3><p>Le rayon pointe à 45° (0° vers le haut, dans le sens des aiguilles d'une montre). <code>offset-rotate</code> vaut <code>auto</code> : l'élément tourne pour que son axe x suive le rayon, de 45° − 90° = −45°. Les rotations s'additionnent d'un élément à l'autre : html −45°, body −90°, p −135°. La pilule de html va d'en haut à gauche à en bas à droite, celle de p d'en haut à droite à en bas à gauche, et body se couche : 140 × 80.</p></div>
+<div class="cap" data-t="21" data-step="body"><h3>5. Les côtés plats</h3><p>En se croisant, les pilules laissent quatre encoches en V. body, de x = 130 à 270 et de y = 110 à 190, remplit celles de gauche et de droite : leurs côtés deviennent plats, de y = 136,6 à 163,4. body ne touche pas celles du haut et du bas, dont les pointes sont en y = 93,4 et 206,6.</p></div>
+<div class="cap" data-t="26" data-step="Résultat" data-live="123 caractères · 100 % identique"><h3>6. Résultat : 123 caractères</h3><p>Un X jaune aux bouts arrondis : deux pilules croisées à angle droit, et les côtés plats de body en x = 130 et 270. Le X va de x = 107 à 293 et de y = 57 à 243.</p></div>
+{%- else %}
+<div class="cap" data-t="0" data-step="*"><h3>1. Three boxes</h3><p><code>*</code> selects html, head, body, p and style. head and style are hidden. Each element gets <code>width:0</code>, <code>height:60</code> and a <code>5ch</code> yellow border, which is 40px: an 80 × 140 box, all border, since the content is 0px wide. html's blue background becomes the canvas color. In the flow, html is at (0, 0), body at (48, 48) and p at (88, 88).</p></div>
+<div class="cap" data-t="5" data-step="&amp;,p"><h3>2. Two pills</h3><p>Outside any rule, <code>&amp;</code> is the root: html. html and p get <code>height:150</code>: 80 × 230. <code>border-radius:9in</code>, which is 864px, is cut down to 40px, half the width: both boxes become pills. body keeps its 80 × 140 and its square corners.</p></div>
+<div class="cap" data-t="10" data-step="offset"><h3>3. To the center</h3><p><code>offset:ray(45deg)</code> puts each element at the start of a ray, at distance 0: its center goes to the center of its containing block, whatever its margins. For html, that is the canvas center, (200, 150). For body, the center of html's content box, which is html's center. For p, body's center. All three meet at (200, 150).</p></div>
+<div class="cap" data-t="15" data-step="turns"><h3>4. Three angles</h3><p>The ray points at 45° (0° is up, clockwise). <code>offset-rotate</code> is <code>auto</code>: the element turns so that its x axis follows the ray, by 45° − 90° = −45°. The turns add up from one element to the next: html −45°, body −90°, p −135°. html's pill goes from top left to bottom right, p's from top right to bottom left, and body lies flat: 140 × 80.</p></div>
+<div class="cap" data-t="21" data-step="body"><h3>5. The flat sides</h3><p>Where the pills cross, they leave four V-shaped notches. body, from x = 130 to 270 and y = 110 to 190, fills the left and right ones: their sides become flat, from y = 136.6 to 163.4. body does not reach the top and bottom notches, whose tips are at y = 93.4 and 206.6.</p></div>
+<div class="cap" data-t="26" data-step="Result" data-live="123 characters · 100% match"><h3>6. Result: 123 characters</h3><p>A yellow X with round ends: two pills crossed at right angles, and body's flat sides at x = 130 and 270. The X spans x = 107 to 293 and y = 57 to 243.</p></div>
+{%- endif %}
+</div>
+<div class="live"></div>
+</div>
+</div>
+<script>
+(window.AnimScenes = window.AnimScenes || {}).t0627 = (fig) => {
+  const fr = document.documentElement.lang === 'fr';
+  const $ = (s) => fig.querySelector(s);
+  const $$ = (s) => [...fig.querySelectorAll(s)];
+  const live = $('.live');
+  const ease = (x) => (x < 0.5 ? 4 * x * x * x : 1 - Math.pow(-2 * x + 2, 3) / 2);
+  const pr = (t, [a, b]) => ease(Math.min(1, Math.max(0, (t - a) / (b - a))));
+  const win = (t, a, b) => Math.min(pr(t, [a, a + 0.5]), 1 - pr(t, [b - 0.2, b]));
+  const c = fr ? '\u00a0:' : ':';
+  const mix = (k, a, b) => (k <= 0 ? b : k >= 1 ? a : `color-mix(in srgb, ${a} ${(k * 100).toFixed(1)}%, ${b})`);
+  const num = (v) => (fr ? String(v).replace('.', ',') : String(v));
+  // Measured on the official code in local Chrome (400 × 300, quirks mode), with offset removed: html 80 × 140 at (0, 0)
+  // (80 × 230 with the &,p rule), body 80 × 140 at (48, 48), p 80 × 140 at (88, 88) (80 × 230); border 40px (5ch).
+  // With offset: all centered at (200, 150); renders with one element hidden or recolored: html −45°, body −90°, p −135°.
+  // Official render: X from x = 107 to 292 and y = 57 to 242 (pixels), middle row yellow from x = 130 to 269,
+  // column x = 129 blue from y = 136 to 163, column x = 200 yellow from y = 93 to 206.
+  const FIN = 26;
+  const Y = 'var(--t0627-yl)';
+  const B = [
+    { el: $('.t0627-h'), x: 0, y: 0, h2: 230, r2: 40, a: -45, c: 'var(--t0627-h)' },
+    { el: $('.t0627-b'), x: 48, y: 48, h2: 140, r2: 0, a: -90, c: 'var(--t0627-b)' },
+    { el: $('.t0627-p'), x: 88, y: 88, h2: 230, r2: 40, a: -135, c: 'var(--t0627-p)' },
+  ];
+  const cross = $('.t0627-x');
+  const marks = $$('.t0627-m');
+  const L = (k) => $$(`.zlab[data-l="${k}"]`);
+  return (t, step) => {
+    const teach = fig.dataset.teach === '1' && t < FIN;
+    // 1. the boxes and the canvas color
+    const k1 = pr(t, [0.3, 1.5]);
+    fig.style.setProperty('--bg', mix(k1, '#5dbcf9', '#fff'));
+    // 2. html and p: 230 tall, round ends
+    const k2 = pr(t, [5.4, 7]);
+    // 3. to the center, 4. the turns
+    const k3 = pr(t, [10.4, 12.6]);
+    const k4 = pr(t, [15.4, 18.6]);
+    // 5. teaching colors: html and p go yellow, body keeps its color
+    const k5 = pr(t, [21.4, 22.6]);
+    B.forEach((b, i) => {
+      const w = 80, h = 140 + (b.h2 - 140) * k2;
+      const cx = b.x + 40 + (200 - b.x - 40) * k3, cy = b.y + h / 2 + (150 - b.y - h / 2) * k3;
+      const s = b.el.style;
+      s.opacity = k1;
+      s.left = `${cx - w / 2}px`;
+      s.top = `${cy - h / 2}px`;
+      s.width = `${w}px`;
+      s.height = `${h}px`;
+      s.borderRadius = `${b.r2 * k2}px`;
+      s.transform = `rotate(${b.a * k4}deg)`;
+      s.background = teach ? (i === 1 ? b.c : mix(k5, Y, b.c)) : Y;
+    });
+    cross.style.opacity = win(t, 10.3, 15);
+    marks.forEach((m) => (m.style.opacity = win(t, 21.5, FIN)));
+    [[0.3, 5], [5.3, 10], [10.3, 15], [15.3, 21], [21.3, FIN]].forEach(([s, e], k) => L(k + 1).forEach((l) => (l.style.opacity = win(t, s, e))));
+    let txt;
+    if (step === 0) txt = `html, body, p${c} 80 × 140`;
+    else if (step === 1) txt = `html, p${c} 80 × ${(140 + 90 * k2).toFixed(0)} · r = ${(40 * k2).toFixed(0)}`;
+    else if (step === 2) txt = `${fr ? 'centres' : 'centers'} → (200, 150)`;
+    else if (step === 3) txt = `html ${(-45 * k4).toFixed(0)}° · body ${(-90 * k4).toFixed(0)}° · p ${(-135 * k4).toFixed(0)}°`;
+    else if (step === 4) txt = `body${c} x = 130 … 270 · y = ${num(136.6)} … ${num(163.4)}`;
+    else txt = $$('.caps .cap')[5].dataset.live || '';
+    live.textContent = txt;
+  };
+};
+</script>
+</figure>
