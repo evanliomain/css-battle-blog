@@ -1,0 +1,117 @@
+<figure class="anim t0713" data-duration="27" data-scene="t0713" data-wide="-50 -30 500 360" data-off-label="-46 -27" style="--bg:#b46c31">
+<style>
+.t0713{--t0713-y:#fef8bb;--t0713-d:#331d1d;--t0713-h:#38bdf8;--t0713-c1:#f97316;--t0713-c2:#a855f7;--t0713-c3:#10b981}
+.t0713 .t0713-w{left:0;top:0;width:400px;height:300px;background:#fff}
+.t0713 .t0713-html{left:-20px;top:30px;width:440px;height:240px;box-sizing:border-box;border:0 solid;border-bottom-color:transparent;opacity:0;z-index:2}
+.t0713 .t0713-body{left:125px;top:30px;width:150px;height:240px;box-sizing:border-box;border:0 solid;opacity:0;z-index:5}
+.t0713 .t0713-box{box-sizing:border-box;border:calc(2px * var(--k, 1)) dashed #1d1530;opacity:0;z-index:20}
+.t0713 .t0713-j{height:calc(2px * var(--k, 1));width:96.05px;background:#1d1530;transform-origin:0 50%;opacity:0;z-index:21}
+.t0713 .zlab{color:#fff;background:rgb(20 20 42 / .9);padding:1px 5px;border-radius:3px;opacity:0}
+.t0713 .scene .zlab.t0713-l1,.t0713 .scene .zlab.t0713-l2{left:4px;top:auto;transform-origin:0 100%}
+.t0713 .scene .zlab.t0713-l2{bottom:2px}
+.t0713 .scene .zlab.t0713-l1{bottom:calc(2px + 19px * var(--k, 1))}
+</style>
+<div class="anim-col">
+<div class="stage" role="img" aria-label="{% if include.lang == "fr" %}Animation : body n'a pas de fond à lui, son fond #A51D passe au canevas : #aa5511 opaque à 87 % sur le blanc, un brun-orangé ; html, en mode quirks, avec margin:30-20, fait 440 × 240 en (−20, 30) ; sa bordure de 5vw, 20px, est brun foncé en haut, jaune pâle sur les côtés, hors du canevas, et transparente en bas ; le * imbriqué vise body : margin:-5%125 donne −20 en haut et en bas et 125 sur les côtés, body fait 150 × 240 en (125, 30) ; border-width:0 75 60 : deux bordures latérales jaunes de 75px, un contenu de 0 de large, une bordure du bas transparente de 60px ; les coins se partagent en biais, et la bordure du bas forme un triangle de sommet (200, 210) par où le canevas se voit : l'encoche du marque-page{% else %}Animation: body has no background of its own, its #A51D goes to the canvas: #aa5511 at 87% opacity over white, a brownish orange; html, in quirks mode, with margin:30-20, is 440 × 240 at (−20, 30); its 5vw border, 20px, is dark brown on top, pale yellow on the sides, off canvas, and transparent at the bottom; the nested * selects body: margin:-5%125 gives −20 top and bottom and 125 on the sides, body is 150 × 240 at (125, 30); border-width:0 75 60: two yellow 75px side borders, a content box 0 wide, a transparent 60px bottom border; the corners are split diagonally, and the bottom border is a triangle with its apex at (200, 210) where the canvas shows through: the bookmark's notch{% endif %}">
+<div class="scene">
+<div class="t0713-w"></div>
+<div class="t0713-html"></div>
+<div class="t0713-body"></div>
+<div class="t0713-box t0713-hb" style="left:-20px;top:30px;width:440px;height:240px"></div>
+<div class="t0713-box t0713-hc" style="left:0;top:50px;width:400px;height:200px"></div>
+<div class="t0713-box t0713-bb" style="left:125px;top:30px;width:150px;height:240px"></div>
+<div class="t0713-j" style="left:125px;top:calc(270px - 1px * var(--k, 1));transform:rotate(-38.66deg)"></div>
+<div class="t0713-j" style="left:200px;top:calc(210px - 1px * var(--k, 1));transform:rotate(38.66deg)"></div>
+<span class="zlab t0713-l t0713-l1" data-l="1">body{background:#A51D} → {% if include.lang == "fr" %}canevas{% else %}canvas{% endif %}</span>
+<span class="zlab t0713-l t0713-l2" data-l="1">{% if include.lang == "fr" %}#aa5511 à 87 % sur blanc → #b56c31{% else %}#aa5511 at 87% over white → #b56c31{% endif %}</span>
+<span class="zlab t0713-l t0713-l1" data-l="2">html · margin: 30 −20 · border: 5vw = 20px</span>
+<span class="zlab t0713-l t0713-l2" data-l="2">{% if include.lang == "fr" %}440 × 240 en (−20, 30) · 300 − 60 = 240{% else %}440 × 240 at (−20, 30) · 300 − 60 = 240{% endif %}</span>
+<span class="zlab t0713-l t0713-l1" data-l="3">body · margin: −5% 125 · 5% × 400 = 20</span>
+<span class="zlab t0713-l t0713-l2" data-l="3">{% if include.lang == "fr" %}150 × 240 en (125, 30) · 200 + 40 = 240{% else %}150 × 240 at (125, 30) · 200 + 40 = 240{% endif %}</span>
+<span class="zlab t0713-l t0713-l1" data-l="4">border-width: 0 75 60</span>
+<span class="zlab t0713-l t0713-l2" data-l="4">{% if include.lang == "fr" %}75 + 0 + 75 = 150 · contenu 0 × 180{% else %}75 + 0 + 75 = 150 · content 0 × 180{% endif %}</span>
+<span class="zlab t0713-l t0713-l1" data-l="5">{% if include.lang == "fr" %}bordure du bas : #0000{% else %}bottom border: #0000{% endif %}</span>
+<span class="zlab t0713-l t0713-l2" data-l="5">{% if include.lang == "fr" %}sommet (200, 210) · base y = 270{% else %}apex (200, 210) · base y = 270{% endif %}</span>
+</div>
+</div>
+<div class="legend"><span><i style="--c:var(--t0713-h)"></i>{% if include.lang == "fr" %}bordure de html{% else %}html's border{% endif %}</span><span><i style="--c:var(--t0713-c1)"></i>{% if include.lang == "fr" %}body : gauche{% else %}body: left{% endif %}</span><span><i style="--c:var(--t0713-c2)"></i>{% if include.lang == "fr" %}body : droite{% else %}body: right{% endif %}</span><span><i style="--c:var(--t0713-c3)"></i>{% if include.lang == "fr" %}body : bas{% else %}body: bottom{% endif %}</span><span><i style="--c:transparent;outline:2px dashed currentColor;outline-offset:-2px"></i>{% if include.lang == "fr" %}boîtes{% else %}boxes{% endif %}</span></div>
+</div>
+<div class="anim-side">
+<pre class="code" aria-hidden="true">&lt;style><span data-on="2">*{margin:30-20;</span><span data-on="2 4">border:<span data-on="2" data-tone="2">5vw</span> solid;</span><span data-on="2 4 5">border-color:331D1D#FEF8BB<span data-on="5" data-tone="2">#0000</span>;</span><span data-on="3">*{margin:-5%125;</span><span data-on="4">border-width:0 75 60;</span><span data-on="1">background:#A51D</span></pre>
+<div class="now" aria-live="polite">
+<div class="caps">
+{%- if include.lang == "fr" %}
+<div class="cap" data-t="0" data-step="Le canevas"><h3>1. Le fond du canevas</h3><p>html n'a pas de fond. Dans ce cas, le fond de body passe au canevas entier. <code>#A51D</code> est un <code>#aa5511</code> opaque à 87 %. Sur le blanc du canevas, il donne un brun-orangé, #b56c31 dans mon Chrome. body lui-même ne peint plus rien.</p></div>
+<div class="cap" data-t="4" data-step="html"><h3>2. html et sa bordure</h3><p>Pas de doctype : mode quirks. Le premier <code>*</code> vise html. <code>margin:30-20</code> : 30 en haut et en bas, −20 sur les côtés. html fait 440 de large, de x = −20 à 420. En mode quirks, il prend la hauteur du canevas moins ses marges : 300 − 60 = 240. <code>5vw</code> fait 20px. La bordure du haut, brun foncé, fait la barre de y = 30 à 50. Les côtés, jaunes, sortent du canevas. Le bas est transparent.</p></div>
+<div class="cap" data-t="9.5" data-step="body"><h3>3. body, 150 × 240</h3><p>Le <code>*</code> imbriqué vise tout ce qui est dans un élément : tout sauf html. Il vient après, donc il l'emporte pour body. <code>-5%</code> se calcule sur la largeur du contenu de html, 400 : −20 en haut et en bas. 125 de chaque côté : body fait 400 − 250 = 150 de large, en x = 125. En mode quirks, il s'étire sur la hauteur du contenu de html, 200, moins ses marges : 240, de y = 30 à 270.</p></div>
+<div class="cap" data-t="14.5" data-step="Bordures"><h3>4. Trois bordures</h3><p><code>border-width:0 75 60</code> : rien en haut, 75 à gauche et à droite, 60 en bas. Le style <code>solid</code> et les couleurs viennent du premier <code>*</code>, qui vise aussi body. 75 + 75 = 150 : le contenu fait 0 de large. Les côtés sont jaunes et couvrent la barre foncée. Là où deux bordures se rencontrent, le coin se partage en biais.</p></div>
+<div class="cap" data-t="19.5" data-step="Encoche"><h3>5. L'encoche</h3><p>La bordure du bas est <code>#0000</code>, transparente. Avec un contenu de 0 de large, ses deux biais se rejoignent en (200, 210) : c'est un triangle, de base 125 à 275 en y = 270. Le canevas brun se voit à travers. Les deux bordures jaunes restantes forment le ruban et ses deux pointes.</p></div>
+<div class="cap" data-t="23.5" data-step="Résultat" data-live="124 caractères · 100 % identique"><h3>6. Résultat : 124 caractères</h3><p>Deux boîtes, rien que des bordures. La barre est le haut de la bordure de html. Le marque-page est body : deux bordures jaunes et une bordure transparente.</p></div>
+{%- else %}
+<div class="cap" data-t="0" data-step="Canvas"><h3>1. The canvas background</h3><p>html has no background. In that case, body's background goes to the whole canvas. <code>#A51D</code> is <code>#aa5511</code> at 87% opacity. Over the white canvas, it gives a brownish orange, #b56c31 in my Chrome. body itself no longer paints anything.</p></div>
+<div class="cap" data-t="4" data-step="html"><h3>2. html and its border</h3><p>No doctype: quirks mode. The first <code>*</code> selects html. <code>margin:30-20</code>: 30 on top and bottom, −20 on the sides. html is 440 wide, from x = −20 to 420. In quirks mode, it takes the canvas height minus its margins: 300 − 60 = 240. <code>5vw</code> is 20px. The top border, dark brown, is the bar from y = 30 to 50. The yellow sides are off canvas. The bottom is transparent.</p></div>
+<div class="cap" data-t="9.5" data-step="body"><h3>3. body, 150 × 240</h3><p>The nested <code>*</code> selects anything inside an element: everything but html. It comes later, so it wins for body. <code>-5%</code> is a share of the width of html's content, 400: −20 on top and bottom. 125 on each side: body is 400 − 250 = 150 wide, at x = 125. In quirks mode, it stretches to the height of html's content, 200, minus its margins: 240, from y = 30 to 270.</p></div>
+<div class="cap" data-t="14.5" data-step="Borders"><h3>4. Three borders</h3><p><code>border-width:0 75 60</code>: nothing on top, 75 on the left and right, 60 at the bottom. The <code>solid</code> style and the colors come from the first <code>*</code>, which selects body too. 75 + 75 = 150: the content box is 0 wide. The sides are yellow and cover the dark bar. Where two borders meet, the corner is split diagonally.</p></div>
+<div class="cap" data-t="19.5" data-step="Notch"><h3>5. The notch</h3><p>The bottom border is <code>#0000</code>, transparent. With a content box 0 wide, its two diagonals meet at (200, 210): it is a triangle, with its base from 125 to 275 at y = 270. The brown canvas shows through. The two yellow borders left make the ribbon and its two tips.</p></div>
+<div class="cap" data-t="23.5" data-step="Result" data-live="124 characters · 100% match"><h3>6. Result: 124 characters</h3><p>Two boxes, nothing but borders. The bar is the top of html's border. The bookmark is body: two yellow borders and a transparent one.</p></div>
+{%- endif %}
+</div>
+<div class="live"></div>
+</div>
+</div>
+<script>
+(window.AnimScenes = window.AnimScenes || {}).t0713 = (fig) => {
+  const fr = document.documentElement.lang === 'fr';
+  const $ = (s) => fig.querySelector(s);
+  const $$ = (s) => [...fig.querySelectorAll(s)];
+  const live = $('.live');
+  const ease = (x) => (x < 0.5 ? 4 * x * x * x : 1 - Math.pow(-2 * x + 2, 3) / 2);
+  const pr = (t, [a, b]) => ease(Math.min(1, Math.max(0, (t - a) / (b - a))));
+  const win = (t, a, b) => Math.min(pr(t, [a, a + 0.5]), 1 - pr(t, [b - 0.2, b]));
+  const c = fr ? ' :' : ':';
+  const num = (v, d = 0) => { const s = Math.abs(v).toFixed(d); return (v < -0.005 ? '−' : '') + (fr ? s.replace('.', ',') : s); };
+  // Measured on the official code in local Chrome (quirks mode, 400 × 300), getBoundingClientRect and computed styles:
+  // html: margin 30px -20px, border 20px (5vw), border box (-20, 30) 440 × 240, content (0, 50) 400 × 200, no background.
+  // body: margin -20px 125px (-5% of 400), border 0 75px 60px, border box (125, 30) 150 × 240, content 0 × 180,
+  // background rgba(170, 85, 17, .867) propagated to the canvas: #b56c31 in local Chrome (target #b46c31).
+  // Notch: apex (200, 210), base 125..275 at y = 270.
+  const FIN = 23.5;
+  const w = $('.t0713-w'), html = $('.t0713-html'), bod = $('.t0713-body');
+  const hb = $('.t0713-hb'), hc = $('.t0713-hc'), bb = $('.t0713-bb'), J = $$('.t0713-j');
+  const L = (k) => $$(`.t0713-l[data-l="${k}"]`);
+  return (t, step) => {
+    const teach = fig.dataset.teach === '1' && t < FIN;
+    // 1. canvas
+    w.style.opacity = 1 - pr(t, [0.6, 2]);
+    // 2. html's border grows 0 → 20
+    const hw = 20 * pr(t, [4.8, 6.6]);
+    html.style.opacity = pr(t, [4.4, 4.8]);
+    html.style.borderWidth = `${hw}px`;
+    html.style.borderTopColor = teach ? 'var(--t0713-h)' : 'var(--t0713-d)';
+    html.style.borderLeftColor = html.style.borderRightColor = teach ? 'var(--t0713-h)' : 'var(--t0713-y)';
+    hb.style.opacity = 0.9 * win(t, 4.4, 14.5);
+    hc.style.opacity = 0.9 * win(t, 6.6, 14.5);
+    bb.style.opacity = 0.9 * pr(t, [10, 10.5]) * (1 - pr(t, [23, 23.5]));
+    // 4. body's borders grow: sides 0 → 75, bottom 0 → 60
+    const g = pr(t, [15.2, 17.6]);
+    bod.style.opacity = pr(t, [15, 15.2]);
+    bod.style.borderWidth = `0 ${75 * g}px ${60 * g}px`;
+    bod.style.borderLeftColor = teach ? 'var(--t0713-c1)' : 'var(--t0713-y)';
+    bod.style.borderRightColor = teach ? 'var(--t0713-c2)' : 'var(--t0713-y)';
+    // 5. the bottom border turns transparent (only visible with teaching colors)
+    const fade = 1 - pr(t, [20, 21.5]);
+    bod.style.borderBottomColor = teach ? `color-mix(in srgb, var(--t0713-c3) ${100 * fade}%, transparent)` : 'transparent';
+    J.forEach((j) => (j.style.opacity = 0.9 * win(t, 17.8, 23.5)));
+    [[0.3, 4], [4.4, 9.5], [9.9, 14.5], [14.9, 19.5], [19.9, 23.5]].forEach(([a, z], k) => L(k + 1).forEach((e) => (e.style.opacity = win(t, a, z))));
+    let txt;
+    if (step === 0) txt = fr ? `fond${c} #A51D → canevas #b56c31` : `background${c} #A51D → canvas #b56c31`;
+    else if (step === 1) txt = fr ? `html${c} 440 × 240 en (−20, 30) · bordure ${num(hw, 1)}px` : `html${c} 440 × 240 at (−20, 30) · border ${num(hw, 1)}px`;
+    else if (step === 2) txt = fr ? `body${c} 150 × 240 en (125, 30)` : `body${c} 150 × 240 at (125, 30)`;
+    else if (step === 3) txt = fr ? `bordures${c} 0 ${num(75 * g, 1)} ${num(60 * g, 1)} · contenu ${num(150 - 150 * g, 1)} de large` : `borders${c} 0 ${num(75 * g, 1)} ${num(60 * g, 1)} · content ${num(150 - 150 * g, 1)} wide`;
+    else if (step === 4) txt = fr ? `bordure du bas${c} opacité ${num(fade * 100)} % · sommet (200, 210)` : `bottom border${c} ${num(fade * 100)}% opacity · apex (200, 210)`;
+    else txt = $$('.caps .cap')[5].dataset.live || '';
+    live.textContent = txt;
+  };
+};
+</script>
+</figure>
