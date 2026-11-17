@@ -1,0 +1,123 @@
+<figure class="anim t0820" data-duration="27" data-scene="t0820" data-wide="-30 -150 460 600" style="--bg:#6d8178">
+<style>
+.t0820{--t0820-gn:#6d8178;--t0820-pk:#eed9d9;--t0820-nv:#394257;--t0820-hb:#e9a23b;--t0820-bb:#a9c4f2;--t0820-bt:#c2417a;--t0820-line:#14142a}
+.t0820 .t0820-wh{left:0;top:0;width:400px;height:300px;background:#fff;z-index:1}
+.t0820 .t0820-h{left:0;top:-130px;width:400px;height:560px;box-sizing:border-box;border:0 solid var(--t0820-pk);z-index:2}
+.t0820 .t0820-b{z-index:3;opacity:0}
+.t0820 .t0820-b>i{position:absolute;display:block;background:var(--t0820-nv)}
+.t0820 .t0820-g{box-sizing:border-box;border:2px dashed var(--t0820-line);opacity:0;z-index:7}
+.t0820 .t0820-g[data-g="c"]{border-radius:50%}
+.t0820 .zlab{color:#fff;background:rgb(20 20 42 / .9);padding:1px 5px;border-radius:3px}
+.t0820 .t0820-l{left:6px;top:281px;opacity:0;z-index:8}
+.t0820[data-view="wide"] .t0820-l{left:-26px;top:-146px}
+</style>
+<div class="anim-col">
+<div class="stage" role="img" aria-label="{% if include.lang == "fr" %}Animation : avec ses marges de −130px en haut et en bas, html fait 400 × 560, de y = −130 à 430 ; son fond vert couvre le canevas ; sa bordure rose de 180px ne laisse que son contenu, 40 × 200, une barre verte verticale ; le body, 200 × 120, se pose au milieu avec le même fond vert ; sa bordure de 40px en tirets bleu nuit a un trou de 40px au milieu des côtés haut et bas, qui prolonge la barre ; son contenu fait la barre horizontale ; clip-path le découpe en un disque de 60px de rayon{% else %}Animation: with its −130px top and bottom margins, html is 400 × 560, from y = −130 to 430; its green background covers the canvas; its 180px pink border leaves only its content, 40 × 200, a green vertical bar; the body, 200 × 120, sits in the middle with the same green background; its 40px dashed navy border has a 40px gap in the middle of the top and bottom sides, which extends the bar; its content makes the horizontal bar; clip-path cuts it into a disc with a 60px radius{% endif %}">
+<div class="scene">
+<div class="t0820-wh"></div>
+<div class="t0820-h"></div>
+<div class="t0820-b"><i data-p="tl"></i><i data-p="tr"></i><i data-p="bl"></i><i data-p="br"></i><i data-p="l"></i><i data-p="r"></i></div>
+<div class="t0820-g" data-g="h" style="left:0;top:-130px;width:400px;height:560px"></div>
+<div class="t0820-g" data-g="b"></div>
+<div class="t0820-g" data-g="p" style="left:180px;top:90px;width:40px;height:40px"></div>
+<div class="t0820-g" data-g="q" style="left:180px;top:170px;width:40px;height:40px"></div>
+<div class="t0820-g" data-g="c"></div>
+<span class="zlab t0820-l" data-l="1">{% if include.lang == "fr" %}html : 300 + 2 × 130 = 560{% else %}html: 300 + 2 × 130 = 560{% endif %}</span>
+<span class="zlab t0820-l" data-l="2">45vw = 180px · 40 × 200</span>
+<span class="zlab t0820-l" data-l="3">{% if include.lang == "fr" %}body : 40 + 2 × 80 = 200{% else %}body: 40 + 2 × 80 = 200{% endif %}</span>
+<span class="zlab t0820-l" data-l="4">5ch = 40px · 80 + 40 + 80</span>
+<span class="zlab t0820-l" data-l="5">{% if include.lang == "fr" %}circle() : 120 / 2 = 60px{% else %}circle(): 120 / 2 = 60px{% endif %}</span>
+</div>
+</div>
+<div class="legend"><span><i style="--c:var(--t0820-gn)"></i>{% if include.lang == "fr" %}canevas (fond de html){% else %}canvas (html's background){% endif %}</span><span><i style="--c:var(--t0820-hb)"></i>{% if include.lang == "fr" %}bordure de html{% else %}html's border{% endif %}</span><span><i style="--c:var(--t0820-bb)"></i>{% if include.lang == "fr" %}fond du body{% else %}body's background{% endif %}</span><span><i style="--c:var(--t0820-bt)"></i>{% if include.lang == "fr" %}tirets du body{% else %}body's dashes{% endif %}</span></div>
+</div>
+<div class="anim-side">
+<pre class="code" aria-hidden="true">&lt;style><span data-on="1" data-tone="2">*{</span><span data-on="1 3">background:#6d8178</span>;<span data-on="2 4">border:var(--b,45vw#eed9d9)dashed</span>;<span data-on="1">margin:-130 0</span>;<span data-on="3" data-tone="2">*{</span><span data-on="4">--b:5ch#394257</span>;<span data-on="3">margin:40-80</span>;<span data-on="5">clip-path:circle(</span></pre>
+<div class="now" aria-live="polite">
+<div class="caps">
+{%- if include.lang == "fr" %}
+<div class="cap" data-t="0" data-step="html : 400 × 560"><h3>1. <code>html</code> : 400 × 560</h3><p>Pas de doctype : la page est en mode quirks, et les nombres sans unité sont des px. <code>*</code> vise <code>html</code>, <code>head</code>, <code>style</code> et <code>body</code> ; <code>head</code> et <code>style</code> ne sont pas affichés. En mode quirks, <code>html</code> remplit le cadre moins ses marges : <code>margin:-130 0</code> donne 300 + 130 + 130 = 560px de haut, de y = −130 à 430, sur toute la largeur. Son fond vert passe au canevas.</p></div>
+<div class="cap" data-t="4.5" data-step="45vw : la barre verticale"><h3>2. <code>45vw</code> : la barre verticale</h3><p><code>html</code> n'a pas de <code>--b</code> : <code>var()</code> prend sa valeur de secours, <code>45vw#eed9d9</code>. 45vw = 180px de bordure rose de chaque côté. Il reste 400 − 360 = 40px de large et 560 − 360 = 200px de haut : le contenu, de x = 180 à 220 et de y = 50 à 250, laisse voir le vert du canevas. La bordure est en tirets, mais elle n'a aucun trou dans mon Chrome : elle se peint comme <code>solid</code>.</p></div>
+<div class="cap" data-t="9" data-step="body : 200 × 120"><h3>3. <code>body</code> : 200 × 120</h3><p>Le <code>*</code> imbriqué vise <code>head</code>, <code>style</code> et <code>body</code>. Le body se place dans le contenu de <code>html</code>, 40 × 200 en (180 ; 50). <code>margin:40-80</code> : −80px à gauche et à droite l'élargissent à 40 + 80 + 80 = 200px, de x = 100 à 300. En mode quirks, il prend la hauteur du conteneur moins ses marges : 200 − 40 − 40 = 120px, de y = 90 à 210. Son fond est le même vert.</p></div>
+<div class="cap" data-t="13.5" data-step="5ch : des tirets"><h3>4. <code>5ch</code> : des tirets</h3><p>Le body reçoit la même déclaration <code>border</code>, mais lui a <code>--b:5ch#394257</code> : 5ch de Times à 16px font 40px, en bleu nuit. Sur les côtés haut et bas, longs de 200px, les tirets font 80px, 40px de trou, 80px. Le trou, de x = 180 à 220, montre le fond vert du body et prolonge la barre. Les côtés gauche et droit, de 120px, n'ont pas de trou. Le contenu, 120 × 40 en (140 ; 130), fait la barre horizontale.</p></div>
+<div class="cap" data-t="18" data-step="circle() : le disque"><h3>5. <code>circle()</code> : le disque</h3><p><code>clip-path:circle(</code> n'a pas d'argument, et la fin du code ferme la parenthèse. Le cercle est centré sur la boîte du body, en (200 ; 150), et son rayon va jusqu'au côté le plus proche : 120 / 2 = 60px. Tout ce qui dépasse est coupé. Au-dessus et au-dessous du disque, la barre continue avec le contenu de <code>html</code>.</p></div>
+<div class="cap" data-t="22.5" data-step="Résultat" data-live="123 caractères · 100 % identique"><h3>6. Résultat : 123 caractères</h3><p>Le contenu de <code>html</code> fait la barre verticale. Le body fait le disque : ses tirets pour les quatre coins bleu nuit, un trou en haut et un en bas pour la barre, son contenu pour la barre horizontale. Une seule déclaration <code>border</code> sert aux deux éléments, grâce à <code>var()</code> et sa valeur de secours.</p></div>
+{%- else %}
+<div class="cap" data-t="0" data-step="html: 400 × 560"><h3>1. <code>html</code>: 400 × 560</h3><p>No doctype: the page is in quirks mode, and numbers with no unit are px. <code>*</code> matches <code>html</code>, <code>head</code>, <code>style</code> and <code>body</code>; <code>head</code> and <code>style</code> are not displayed. In quirks mode, <code>html</code> fills the frame minus its margins: <code>margin:-130 0</code> makes it 300 + 130 + 130 = 560px tall, from y = −130 to 430, across the whole width. Its green background goes to the canvas.</p></div>
+<div class="cap" data-t="4.5" data-step="45vw: the vertical bar"><h3>2. <code>45vw</code>: the vertical bar</h3><p><code>html</code> has no <code>--b</code>: <code>var()</code> takes its fallback, <code>45vw#eed9d9</code>. 45vw = 180px of pink border on each side. That leaves 400 − 360 = 40px across and 560 − 360 = 200px down: the content, from x = 180 to 220 and y = 50 to 250, shows the green canvas. The border is dashed, but in my Chrome it has no gap at all: it paints like <code>solid</code>.</p></div>
+<div class="cap" data-t="9" data-step="body: 200 × 120"><h3>3. <code>body</code>: 200 × 120</h3><p>The nested <code>*</code> matches <code>head</code>, <code>style</code> and <code>body</code>. The body sits in the content of <code>html</code>, 40 × 200 at (180, 50). <code>margin:40-80</code>: −80px on the left and right widen it to 40 + 80 + 80 = 200px, from x = 100 to 300. In quirks mode, it takes the height of its container minus its margins: 200 − 40 − 40 = 120px, from y = 90 to 210. Its background is the same green.</p></div>
+<div class="cap" data-t="13.5" data-step="5ch: dashes"><h3>4. <code>5ch</code>: dashes</h3><p>The body gets the same <code>border</code> declaration, but it has <code>--b:5ch#394257</code>: 5ch of 16px Times is 40px, in navy. On the top and bottom sides, 200px long, the dashes go 80px, 40px gap, 80px. The gap, from x = 180 to 220, shows the green background of the body and extends the bar. The left and right sides, 120px long, have no gap. The content, 120 × 40 at (140, 130), makes the horizontal bar.</p></div>
+<div class="cap" data-t="18" data-step="circle(): the disc"><h3>5. <code>circle()</code>: the disc</h3><p><code>clip-path:circle(</code> has no argument, and the end of the code closes the parenthesis. The circle is centered on the body's box, at (200, 150), and its radius reaches the closest side: 120 / 2 = 60px. Everything outside is cut off. Above and below the disc, the bar goes on with the content of <code>html</code>.</p></div>
+<div class="cap" data-t="22.5" data-step="Result" data-live="123 characters · 100% match"><h3>6. Result: 123 characters</h3><p>The content of <code>html</code> makes the vertical bar. The body makes the disc: its dashes for the four navy corners, one gap at the top and one at the bottom for the bar, its content for the horizontal bar. One <code>border</code> declaration serves both elements, thanks to <code>var()</code> and its fallback.</p></div>
+{%- endif %}
+</div>
+<div class="live"></div>
+</div>
+</div>
+<script>
+(window.AnimScenes = window.AnimScenes || {}).t0820 = (fig) => {
+  const fr = document.documentElement.lang === 'fr';
+  const $ = (s) => fig.querySelector(s);
+  const $$ = (s) => [...fig.querySelectorAll(s)];
+  const WH = $('.t0820-wh'), H = $('.t0820-h'), B = $('.t0820-b'), live = $('.live');
+  const P = (k) => $(`.t0820-b>i[data-p="${k}"]`);
+  const G = (k) => $(`.t0820-g[data-g="${k}"]`);
+  const L = (k) => $(`.t0820-l[data-l="${k}"]`);
+  const ease = (x) => (x < 0.5 ? 4 * x * x * x : 1 - Math.pow(-2 * x + 2, 3) / 2);
+  const pr = (t, [a, b]) => ease(Math.min(1, Math.max(0, (t - a) / (b - a))));
+  const win = (t, a, b) => Math.min(pr(t, [a, a + 0.5]), 1 - pr(t, [b - 0.4, b]));
+  const mix = (a, b, p) => a.map((v, i) => v + (b[i] - v) * p);
+  const box = (e, r) => { e.style.left = `${r[0]}px`; e.style.top = `${r[1]}px`; e.style.width = `${r[2]}px`; e.style.height = `${r[3]}px`; };
+  const f2 = (v) => { const s = (Math.round(v * 100) / 100).toFixed(2).replace(/\.?0+$/, ''); return fr ? s.replace('.', ',') : s; };
+  const c = fr ? ' :' : ':';
+  // Measured on the official code (getBoundingClientRect, computed styles, renders with one part changed):
+  // html 400 × 560 at (0, -130), border 180px, no gap (same pixels with solid); content 40 × 200 at (180, 50).
+  // body 200 × 120 at (100, 90), border 40px; top and bottom sides: dash x 100-180, gap 180-220, dash 220-300;
+  // left and right sides: no gap. Content 120 × 40 at (140, 130). clip-path circle(): radius 60px at (200, 150).
+  const HC = [180, 50, 40, 200], BODY = [100, 90, 200, 120];
+  const W = { bg: [0.8, 2.4], h: [5, 7], b: [9.5, 11.5], bt: [14, 16], gap: [16.3, 17.6], cl: [18.5, 20.8], fin: 22.5 };
+  return (t, step) => {
+    const teach = fig.dataset.teach === '1' && t < W.fin;
+    // 1. the canvas turns green (html's background goes to the canvas)
+    WH.style.opacity = 1 - pr(t, W.bg);
+    G('h').style.opacity = win(t, 0.2, 8.9) * 0.9;
+    // 2. html's border, 0 → 180px
+    const hw = 180 * pr(t, W.h);
+    H.style.borderWidth = `${hw}px`;
+    H.style.borderColor = teach ? 'var(--t0820-hb)' : 'var(--t0820-pk)';
+    // 3. the body: from html's content box to 200 × 120
+    const br = mix(HC, BODY, pr(t, W.b));
+    box(B, br);
+    B.style.opacity = t >= W.b[0] ? 1 : 0;
+    B.style.background = teach ? 'var(--t0820-bb)' : 'var(--t0820-gn)';
+    box(G('b'), br);
+    G('b').style.opacity = win(t, 9.2, 22.3) * 0.9;
+    // 4. its dashed border, 0 → 40px; the left and right pieces overlap the corner dashes (no seam)
+    const bw = 40 * pr(t, W.bt);
+    box(P('tl'), [0, 0, 80, bw]);
+    box(P('tr'), [120, 0, 80, bw]);
+    box(P('bl'), [0, 120 - bw, 80, bw]);
+    box(P('br'), [120, 120 - bw, 80, bw]);
+    box(P('l'), [0, 0, bw, 120]);
+    box(P('r'), [200 - bw, 0, bw, 120]);
+    $$('.t0820-b>i').forEach((e) => (e.style.background = teach ? 'var(--t0820-bt)' : 'var(--t0820-nv)'));
+    ['p', 'q'].forEach((k) => (G(k).style.opacity = win(t, W.gap[0], 18) * 0.9));
+    // 5. clip-path: circle() at the center of the body's box, radius 117 → 60px
+    const R = 117 - 57 * pr(t, W.cl);
+    B.style.clipPath = t >= W.cl[0] ? `circle(${R}px at 100px 60px)` : 'none';
+    box(G('c'), [200 - R, 150 - R, 2 * R, 2 * R]);
+    G('c').style.opacity = win(t, W.cl[0], 22.3) * 0.9;
+    const lw = [[0.2, 4.3], [4.7, 8.8], [9.2, 13.3], [13.7, 17.8], [18.2, 22.3]];
+    lw.forEach(([a, z], k) => (L(k + 1).style.opacity = win(t, a, z)));
+    let txt = '';
+    if (step === 0) txt = `html${c} 400 × 560 · ${fr ? 'de' : 'from'} (0${fr ? ' ;' : ','} −130)`;
+    else if (step === 1) txt = `border${c} ${f2(hw)}px · ${fr ? 'contenu' : 'content'} ${f2(400 - 2 * hw)} × ${f2(560 - 2 * hw)}`;
+    else if (step === 2) txt = `body${c} ${f2(br[2])} × ${f2(br[3])} · ${fr ? 'de' : 'from'} (${f2(br[0])}${fr ? ' ;' : ','} ${f2(br[1])})`;
+    else if (step === 3) txt = `border${c} ${f2(bw)}px · ${fr ? 'contenu' : 'content'} ${f2(200 - 2 * bw)} × ${f2(120 - 2 * bw)}`;
+    else if (step === 4) txt = `circle()${c} r = ${f2(R)}px`;
+    else txt = $$('.caps .cap')[5].dataset.live || '';
+    live.textContent = txt;
+  };
+};
+</script>
+</figure>
