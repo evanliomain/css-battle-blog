@@ -1,0 +1,129 @@
+<figure class="anim t0725" data-duration="35" data-scene="t0725" data-wide="-60 -60 520 450" data-off-label="-56 368" style="--bg:#94b31f">
+<style>
+.t0725{--t0725-gr:#94b31f;--t0725-wh:#fff;--t0725-br:#5f5f1e;--t0725-sb:#38bdf8;--t0725-sd:#ec4899;--t0725-sp:#7c3aed;--t0725-ln:#14142a}
+.t0725 .t0725-html{left:0;top:0;width:400px;height:300px;z-index:1}
+.t0725 .t0725-s{left:8px;top:135px;width:384px;height:30px;opacity:0;z-index:2}
+.t0725 .t0725-sp{z-index:3}
+.t0725 .t0725-sd{z-index:3}
+.t0725 .t0725-sq{z-index:4}
+.t0725 .t0725-box{left:8px;top:135px;width:384px;height:30px;box-sizing:border-box;border:calc(2px * var(--k, 1)) dashed var(--t0725-ln);box-shadow:0 0 0 calc(1px * var(--k, 1)) rgb(255 255 255 / .55);opacity:0;z-index:6}
+.t0725 .t0725-c{box-sizing:border-box;border-radius:50%;border:calc(2px * var(--k, 1)) dashed var(--t0725-ln);box-shadow:0 0 0 calc(1px * var(--k, 1)) rgb(255 255 255 / .55);opacity:0;z-index:6}
+.t0725 .zlab{color:#fff;background:rgb(20 20 42 / .9);padding:1px 5px;border-radius:3px;opacity:0}
+.t0725 .scene .zlab.t0725-tr{left:auto;right:4px;top:2px;transform-origin:100% 0}
+.t0725 .scene .zlab.t0725-br{left:auto;right:4px;top:auto;bottom:2px;transform-origin:100% 100%}
+.t0725[data-view="wide"] .scene .zlab.t0725-tr{top:-4px;transform-origin:100% 100%;transform:translateY(-100%) scale(var(--k, 1))}
+.t0725[data-view="wide"] .scene .zlab.t0725-br{top:304px;bottom:auto;transform-origin:100% 0}
+</style>
+<div class="anim-col">
+<div class="stage" role="img" aria-label="{% if include.lang == "fr" %}Animation : le dégradé de html dessine un anneau blanc, de 90 à 120px du centre ; avec 1Q, le dernier vert part de 120px et le bord est net ; body, une bande de 384 × 30, reçoit le même dégradé, mais son anneau est brun ; offset:ray(45deg) met son centre au centre du canevas et la tourne de 45° : deux blocs bruns en diagonale ; dt, dans body, tourne encore de 45° et devient vertical ; p, dans dt, tourne encore de 45° : six blocs bruns sur l'anneau{% else %}Animation: html's gradient draws a white ring, 90 to 120px from the center; with 1Q, the last green starts at 120px and the edge is sharp; body, a 384 × 30 strip, gets the same gradient, but its ring is brown; offset:ray(45deg) puts its center at the center of the canvas and turns it 45°: two brown blocks on a diagonal; dt, inside body, turns 45° more and stands upright; p, inside dt, turns 45° more: six brown blocks on the ring{% endif %}">
+<div class="scene">
+<div class="t0725-html"></div>
+<div class="t0725-s t0725-sb"></div>
+<div class="t0725-s t0725-sd"></div>
+<div class="t0725-s t0725-sq"></div>
+<div class="t0725-box"></div>
+<div class="t0725-c t0725-c90" style="left:110px;top:60px;width:180px;height:180px"></div>
+<div class="t0725-c t0725-c120" style="left:80px;top:30px;width:240px;height:240px"></div>
+<span class="zlab t0725-l t0725-tr" data-l="1">5lh = 90px · 30vw = 120px</span>
+<span class="zlab t0725-l t0725-br" data-l="1">{% if include.lang == "fr" %}html : vert, blanc 90 … 120, vert{% else %}html: green, white 90 … 120, green{% endif %}</span>
+<span class="zlab t0725-l t0725-tr" data-l="2">1Q ≈ 0.945px</span>
+<span class="zlab t0725-l t0725-br" data-l="2">{% if include.lang == "fr" %}dernier vert : 100 % → 120px{% else %}last green: 100% → 120px{% endif %}</span>
+<span class="zlab t0725-l t0725-tr" data-l="3">body · 384 × 30</span>
+<span class="zlab t0725-l t0725-br" data-l="3">--a:#5f5f1e</span>
+<span class="zlab t0725-l t0725-tr" data-l="4">offset:ray(45deg)</span>
+<span class="zlab t0725-l t0725-br" data-l="4">{% if include.lang == "fr" %}centre → (200, 150) · 45°{% else %}center → (200, 150) · 45°{% endif %}</span>
+<span class="zlab t0725-l t0725-tr" data-l="5">{% if include.lang == "fr" %}dt · dans body{% else %}dt · inside body{% endif %}</span>
+<span class="zlab t0725-l t0725-br" data-l="5">45° + 45° = 90°</span>
+<span class="zlab t0725-l t0725-tr" data-l="6">{% if include.lang == "fr" %}p · dans dt{% else %}p · inside dt{% endif %}</span>
+<span class="zlab t0725-l t0725-br" data-l="6">90° + 45° = 135°</span>
+</div>
+</div>
+<div class="legend"><span><i style="--c:transparent;outline:2px dashed currentColor;outline-offset:-2px"></i>{% if include.lang == "fr" %}boîtes{% else %}boxes{% endif %}</span><span><i style="--c:var(--t0725-sb)"></i>{% if include.lang == "fr" %}vert de body{% else %}body's green{% endif %}</span><span><i style="--c:var(--t0725-sd)"></i>{% if include.lang == "fr" %}vert de dt{% else %}dt's green{% endif %}</span><span><i style="--c:var(--t0725-sp)"></i>{% if include.lang == "fr" %}vert de p{% else %}p's green{% endif %}</span></div>
+</div>
+<div class="anim-side">
+<pre class="code" aria-hidden="true"><span data-on="5">&lt;dt></span><span data-on="6">&lt;p></span>&lt;style><span data-on="1">*{background:radial-gradient(</span><span data-on="2" data-tone="2">1Q</span><span data-on="1">,#94b31f,5lh,</span><span data-on="1 3">var(--a,#fff)</span><span data-on="1">0 30vw,</span><span data-on="1 2">#94b31f</span>);<span data-on="3">*{</span><span data-on="3" data-tone="2">--a:#5f5f1e</span>;<span data-on="3">height:30</span>;<span data-on="4 5 6">offset:ray(45deg</span></pre>
+<div class="now" aria-live="polite">
+<div class="caps">
+{%- if include.lang == "fr" %}
+<div class="cap" data-t="0" data-step="L'anneau"><h3>1. html : un anneau blanc</h3><p><code>*</code> vise d'abord html, et le fond de html peint tout le canevas. C'est un dégradé radial centré en (200, 150). Ses couleurs : vert, puis blanc de <code>5lh</code> à <code>30vw</code>, puis vert. Dans mon rendu, une ligne fait 18px, donc <code>5lh</code> = 90px. <code>30vw</code> = 30 % de 400 = 120px. L'anneau blanc va de 90 à 120px du centre. Sur html, <code>--a</code> n'existe pas : <code>var(--a,#fff)</code> donne le blanc.</p></div>
+<div class="cap" data-t="5" data-step="1Q"><h3>2. 1Q : un bord net</h3><p>Le premier mot, <code>1Q</code>, fait du dégradé un cercle de rayon 1Q ≈ 0,945px. Le dernier vert n'a pas de position : il se met à 100 %, soit 0,945px. Une couleur ne peut pas être placée avant la précédente, donc il remonte à 120px : le bord est net. Avec <code>circle</code>, 100 % serait le coin le plus loin, à 250px, et le blanc s'effacerait de 120 à 250px.</p></div>
+<div class="cap" data-t="10" data-step="body"><h3>3. body : une bande avec le même dégradé</h3><p>Le <code>*{</code> imbriqué vise head, style (masqués) et body. body garde le dégradé de <code>*</code>, centré sur sa propre boîte. <code>height:30</code> en fait une bande de 384 × 30, de x = 8 à 392. Ici <code>--a</code> vaut <code>#5f5f1e</code> : son anneau est brun. Son vert ne se voit pas sur le vert du canevas. Il ne reste que deux blocs bruns, là où la bande croise l'anneau.</p></div>
+<div class="cap" data-t="15" data-step="offset"><h3>4. offset:ray(45deg) : centrée et tournée</h3><p><code>offset</code> donne à body un chemin <code>ray(45deg)</code>. La boîte part du centre de son bloc conteneur, html : son centre va en (200, 150). Elle tourne pour suivre le rayon, pointé à 45° de la verticale : la bande monte vers la droite. Son dégradé suit : les deux blocs bruns tombent sur l'anneau blanc, en diagonale.</p></div>
+<div class="cap" data-t="20" data-step="dt"><h3>5. dt : 45° de plus</h3><p>dt est dans body. Il reçoit la même règle : même dégradé, brun, 30px de haut, même <code>offset</code>. Son bloc conteneur est body : son centre va au centre de body, donc encore en (200, 150). Il tourne de 45° dans body, déjà tourné de 45° : 90° en tout. La bande est verticale, avec un bloc en haut et un en bas.</p></div>
+<div class="cap" data-t="25" data-step="p"><h3>6. p : encore 45°</h3><p>p est dans dt. Même règle, même centre, 45° de plus : 135° en tout. La bande descend vers la droite et pose les deux derniers blocs, en haut à gauche et en bas à droite. À gauche et à droite, l'anneau reste blanc.</p></div>
+<div class="cap" data-t="30" data-step="Résultat" data-live="127 caractères · 100 % identique"><h3>7. Résultat : 127 caractères</h3><p>Un seul dégradé dessine l'anneau blanc sur html et les blocs bruns sur les trois bandes. Chaque bande tourne de 45° dans la précédente : six blocs.</p></div>
+{%- else %}
+<div class="cap" data-t="0" data-step="The ring"><h3>1. html: a white ring</h3><p><code>*</code> first targets html, and html's background paints the whole canvas. It is a radial gradient centered at (200, 150). Its colors: green, then white from <code>5lh</code> to <code>30vw</code>, then green. In my render, a line is 18px tall, so <code>5lh</code> = 90px. <code>30vw</code> = 30% of 400 = 120px. The white ring runs from 90 to 120px from the center. On html, <code>--a</code> does not exist: <code>var(--a,#fff)</code> gives white.</p></div>
+<div class="cap" data-t="5" data-step="1Q"><h3>2. 1Q: a sharp edge</h3><p>The first word, <code>1Q</code>, makes the gradient a circle with a radius of 1Q ≈ 0.945px. The last green has no position: it goes to 100%, which is 0.945px. A color cannot sit before the one before it, so it moves up to 120px: the edge is sharp. With <code>circle</code>, 100% would be the farthest corner, 250px away, and the white would fade out from 120 to 250px.</p></div>
+<div class="cap" data-t="10" data-step="body"><h3>3. body: a strip with the same gradient</h3><p>The nested <code>*{</code> targets head, style (hidden) and body. body keeps the gradient from <code>*</code>, centered on its own box. <code>height:30</code> makes it a 384 × 30 strip, from x = 8 to 392. Here <code>--a</code> is <code>#5f5f1e</code>: its ring is brown. Its green does not show on the green canvas. Only two brown blocks are left, where the strip crosses the ring.</p></div>
+<div class="cap" data-t="15" data-step="offset"><h3>4. offset:ray(45deg): centered and turned</h3><p><code>offset</code> gives body a <code>ray(45deg)</code> path. The box starts at the center of its containing block, html: its center goes to (200, 150). It turns to follow the ray, which points 45° from straight up: the strip rises to the right. Its gradient follows: the two brown blocks land on the white ring, on a diagonal.</p></div>
+<div class="cap" data-t="20" data-step="dt"><h3>5. dt: 45° more</h3><p>dt is inside body. It gets the same rule: same gradient, brown, 30px tall, same <code>offset</code>. Its containing block is body: its center goes to body's center, so again (200, 150). It turns 45° inside body, which is already turned 45°: 90° in all. The strip stands upright, with a block at the top and one at the bottom.</p></div>
+<div class="cap" data-t="25" data-step="p"><h3>6. p: 45° again</h3><p>p is inside dt. Same rule, same center, 45° more: 135° in all. The strip falls to the right and puts down the last two blocks, top left and bottom right. On the left and right, the ring stays white.</p></div>
+<div class="cap" data-t="30" data-step="Result" data-live="127 characters · 100% match"><h3>7. Result: 127 characters</h3><p>One gradient draws the white ring on html and the brown blocks on the three strips. Each strip turns 45° inside the one before: six blocks.</p></div>
+{%- endif %}
+</div>
+<div class="live"></div>
+</div>
+</div>
+<script>
+(window.AnimScenes = window.AnimScenes || {}).t0725 = (fig) => {
+  const fr = document.documentElement.lang === 'fr';
+  const $ = (s) => fig.querySelector(s);
+  const $$ = (s) => [...fig.querySelectorAll(s)];
+  const live = $('.live');
+  const ease = (x) => (x < 0.5 ? 4 * x * x * x : 1 - Math.pow(-2 * x + 2, 3) / 2);
+  const pr = (t, [a, b]) => ease(Math.min(1, Math.max(0, (t - a) / (b - a))));
+  const win = (t, a, b) => Math.min(pr(t, [a, a + 0.5]), 1 - pr(t, [b - 0.4, b]));
+  const c = fr ? '\u00a0:' : ':';
+  const dec = (x) => (fr ? String(x).replace('.', ',') : String(x));
+  // Measured on the official code in local Chrome (quirks mode, 400 × 300):
+  // html's gradient: circle of radius 1Q, white from 5lh = 90px (line height 18px) to 30vw = 120px, centered at (200, 150).
+  // body, dt and p: 384 × 30 each (body 8px margins); offset:ray(45deg) puts each center at (200, 150)
+  // (red renders: centroids 200, 150) and turns each one 45° counterclockwise inside its parent: body 45°, dt 90°, p 135°.
+  // Brown blocks: 30 × 30, from 90 to 120px from the center, top, bottom and the four diagonals; none on the left and right.
+  const FIN = 30;
+  const html = $('.t0725-html');
+  const S = [$('.t0725-sb'), $('.t0725-sd'), $('.t0725-sq')];
+  const KEY = ['sb', 'sd', 'sp'];
+  const box = $('.t0725-box'), c90 = $('.t0725-c90'), c120 = $('.t0725-c120');
+  const L = (k) => $$(`.t0725-l[data-l="${k}"]`);
+  return (t, step) => {
+    const teach = fig.dataset.teach === '1' && t < FIN;
+    const ann = 1 - pr(t, [FIN, FIN + 0.6]);
+    // 1. html's ring fades in; 2. the last green goes out to 250px, then back to 120px
+    const ring = pr(t, [0.6, 2.2]);
+    const R = 120 + 130 * (pr(t, [5.6, 6.8]) - pr(t, [7.8, 9.4]));
+    const W = `rgb(255 255 255 / ${ring})`;
+    html.style.background = `radial-gradient(circle at 200px 150px, var(--t0725-gr) 90px, ${W} 90px 120px, var(--t0725-gr) ${R}px)`;
+    // 3. body at its place, 4. offset: centered and turned; 5. dt; 6. p
+    const up = 127 * (1 - pr(t, [15.6, 17.8]));
+    const a0 = -45 * pr(t, [15.6, 17.8]);
+    const a1 = -45 - 45 * pr(t, [21.2, 23.2]);
+    const a2 = -90 - 45 * pr(t, [26.2, 28.2]);
+    const show = [pr(t, [10.6, 11.6]), pr(t, [20.4, 21]), pr(t, [25.4, 26])];
+    const ang = [a0, a1, a2];
+    S.forEach((e, i) => {
+      const g = teach ? `var(--t0725-${KEY[i]})` : 'var(--t0725-gr)';
+      e.style.background = `radial-gradient(circle at 192px 15px, ${g} 90px, var(--t0725-br) 90px 120px, ${g} 120px)`;
+      e.style.opacity = show[i];
+      e.style.transform = `translateY(${i ? 0 : -up}px) rotate(${ang[i]}deg)`;
+    });
+    const bi = step >= 5 ? 2 : step === 4 ? 1 : 0;
+    box.style.transform = `translateY(${bi ? 0 : -up}px) rotate(${ang[bi]}deg)`;
+    box.style.opacity = 0.9 * Math.max(win(t, 10.4, 14.8), win(t, 15.3, 19.8), win(t, 20.3, 24.8), win(t, 25.3, 29.8));
+    c90.style.opacity = 0.9 * win(t, 0.3, 4.8);
+    c120.style.opacity = 0.9 * Math.max(win(t, 0.3, 4.8), win(t, 5.3, 9.8));
+    [[0.3, 4.8], [5.3, 9.8], [10.3, 14.8], [15.3, 19.8], [20.3, 24.8], [25.3, 29.8]].forEach(([p, z], k) => L(k + 1).forEach((e) => (e.style.opacity = win(t, p, z) * ann)));
+    let txt;
+    if (step === 0) txt = `${fr ? 'anneau blanc' : 'white ring'}${c} 90 … 120px`;
+    else if (step === 1) txt = `${fr ? 'dernier vert' : 'last green'}${c} ${Math.round(R)}px${R < 120.5 ? ` (${fr ? '100\u00a0%' : '100%'} = ${dec(0.945)}px)` : ''}`;
+    else if (step === 2) txt = `body${c} 384 × 30 · ${fr ? 'centre' : 'center'} (200, ${Math.round(150 - up)})`;
+    else if (step === 3) txt = `body${c} ${fr ? 'centre' : 'center'} (200, ${Math.round(150 - up)}) · ${Math.round(-a0)}°`;
+    else if (step === 4) txt = `dt${c} ${Math.round(-a1)}°`;
+    else if (step === 5) txt = `p${c} ${Math.round(-a2)}°`;
+    else txt = $$('.caps .cap')[6].dataset.live || '';
+    live.textContent = txt;
+  };
+};
+</script>
+</figure>
