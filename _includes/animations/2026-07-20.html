@@ -1,0 +1,130 @@
+<figure class="anim t0720" data-duration="34" data-scene="t0720" data-wide="-40 -40 480 380" data-off-label="-36 -36" style="--bg:#682988">
+<style>
+.t0720{--t0720-p:#682988;--t0720-y:#f7ec7d;--t0720-h:#38bdf8;--t0720-b:#fb923c;--t0720-m:#e11d48}
+.t0720 .t0720-w{left:0;top:0;width:400px;height:300px;background:#fff}
+.t0720 .t0720-html{left:140px;top:90px;width:120px;height:120px;box-sizing:border-box;border:20px solid var(--t0720-y);z-index:2}
+.t0720 .t0720-body{box-sizing:border-box;border:20px solid var(--t0720-y);z-index:3;opacity:0}
+.t0720 .t0720-tiles{left:-40px;top:-40px;width:480px;height:380px;z-index:1;opacity:0;background-repeat:repeat;background-size:220px 220px}
+.t0720 .t0720-box{box-sizing:border-box;border:calc(2px * var(--k, 1)) dashed currentColor;opacity:0;z-index:8}
+.t0720 .zlab{color:#fff;background:rgb(20 20 42 / .9);padding:1px 5px;border-radius:3px;opacity:0}
+.t0720 .scene .zlab.t0720-tl{left:4px;top:2px}
+.t0720 .scene .zlab.t0720-br{left:auto;right:4px;top:auto;bottom:2px;transform-origin:100% 100%}
+.t0720[data-view="wide"] .scene .zlab.t0720-br{right:-36px;bottom:-36px}
+</style>
+<div class="anim-col">
+<div class="stage" role="img" aria-label="{% if include.lang == "fr" %}Animation : * vise html ; margin:90 140 en fait un carré de 120 × 120 en (140, 90), et border:5vw lui donne une bordure jaune de 20px : le carré creux du centre ; le * imbriqué vise body, qui a la même bordure ; margin:-70 l'agrandit à 220 × 220 en (90, 40) ; son fond violet est peint sur tout le canevas, car html n'a pas de fond ; border-radius:42q arrondit ses coins ; le masque conic-gradient(red 25%,#0000 0) ne garde que le quart en haut à droite de sa boîte ; décalé de 58q vers la droite et vers le haut, et répété tous les 220px, il ne garde que les quatre coins de l'anneau{% else %}Animation: * targets html; margin:90 140 makes it a 120 × 120 square at (140, 90), and border:5vw gives it a 20px yellow border: the hollow square in the middle; the nested * targets body, which gets the same border; margin:-70 grows it to 220 × 220 at (90, 40); its purple background is painted on the whole canvas, because html has none; border-radius:42q rounds its corners; the mask conic-gradient(red 25%,#0000 0) keeps only the top-right quarter of its box; moved 58q right and up, and repeated every 220px, it keeps only the four corners of the ring{% endif %}">
+<div class="scene">
+<div class="t0720-w"></div>
+<div class="t0720-html"></div>
+<div class="t0720-body"></div>
+<div class="t0720-tiles"></div>
+<div class="t0720-box t0720-hb" style="left:140px;top:90px;width:120px;height:120px"></div>
+<div class="t0720-box t0720-bb"></div>
+<span class="zlab t0720-l t0720-tl" data-l="1">*{ → html · margin:90 140</span>
+<span class="zlab t0720-l t0720-br" data-l="1">{% if include.lang == "fr" %}html : 120 × 120 en (140, 90) · 5vw = 20px{% else %}html: 120 × 120 at (140, 90) · 5vw = 20px{% endif %}</span>
+<span class="zlab t0720-l t0720-tl" data-l="2">*{ → body · margin:-70</span>
+<span class="zlab t0720-l t0720-br" data-l="2">{% if include.lang == "fr" %}body : 220 × 220 en (90, 40){% else %}body: 220 × 220 at (90, 40){% endif %}</span>
+<span class="zlab t0720-l t0720-tl" data-l="3">background:#682988</span>
+<span class="zlab t0720-l t0720-br" data-l="3">{% if include.lang == "fr" %}fond de body → canevas{% else %}body's background → canvas{% endif %}</span>
+<span class="zlab t0720-l t0720-tl" data-l="4">border-radius:42q</span>
+<span class="zlab t0720-l t0720-br" data-l="4">{% if include.lang == "fr" %}42q = 39,69px{% else %}42q = 39.69px{% endif %}</span>
+<span class="zlab t0720-l t0720-tl" data-l="5">mask:conic-gradient(red 25%,#0000 0)</span>
+<span class="zlab t0720-l t0720-br" data-l="5">{% if include.lang == "fr" %}tuile : 220 × 220 · rouge : 110 × 110{% else %}tile: 220 × 220 · red: 110 × 110{% endif %}</span>
+<span class="zlab t0720-l t0720-tl" data-l="6">58q -58q</span>
+<span class="zlab t0720-l t0720-br" data-l="6">{% if include.lang == "fr" %}58q = 54,80px · une tuile tous les 220px{% else %}58q = 54.80px · a tile every 220px{% endif %}</span>
+</div>
+</div>
+<div class="legend"><span><i style="--c:transparent;outline:2px dashed currentColor;outline-offset:-2px"></i>{% if include.lang == "fr" %}boîtes{% else %}boxes{% endif %}</span><span><i style="--c:var(--t0720-h)"></i>{% if include.lang == "fr" %}bordure de html{% else %}html's border{% endif %}</span><span><i style="--c:var(--t0720-b)"></i>{% if include.lang == "fr" %}bordure de body{% else %}body's border{% endif %}</span><span><i style="--c:var(--t0720-m)"></i>red 25%</span></div>
+</div>
+<div class="anim-side">
+<pre class="code" aria-hidden="true">&lt;style><span data-on="1">*{</span><span data-on="1 2">border:5vw solid#F7EC7D</span>;<span data-on="1">margin:90 140</span>;<span data-on="2">*{</span><span data-on="3" data-tone="2">background:#682988</span>;<span data-on="2">margin:-70</span>;<span data-on="4">border-radius:42q</span>;<span data-on="5">mask:conic-gradient(red 25%,#0000 0)</span><span data-on="6" data-tone="2">58q -58q</span></pre>
+<div class="now" aria-live="polite">
+<div class="caps">
+{%- if include.lang == "fr" %}
+<div class="cap" data-t="0" data-step="html : 120 × 120"><h3>1. html : le carré creux</h3><p><code>*</code> vise tous les éléments, et d'abord html. Pas de doctype : la page est en mode quirks, et <code>margin:90 140</code> compte en px. html remplit la fenêtre, moins ses marges : 400 − 280 = 120 de large et 300 − 180 = 120 de haut, à partir de (140, 90). <code>border:5vw solid#F7EC7D</code> lui donne une bordure jaune de 20px (5vw = 5 % de 400). Le milieu, 80 × 80, reste vide.</p></div>
+<div class="cap" data-t="5" data-step="body : 220 × 220"><h3>2. body : la même bordure, une plus grande boîte</h3><p>Le <code>*{</code> imbriqué vise les éléments placés dans un autre : body (head et style ne s'affichent pas). body garde la bordure de la règle extérieure et prend <code>margin:-70</code>. En mode quirks, body remplit le milieu de html, 80 × 80, moins ses marges : 80 + 140 = 220. Sa boîte va de (90, 40) à (310, 260).</p></div>
+<div class="cap" data-t="10" data-step="Fond violet"><h3>3. Le fond de body va au canevas</h3><p><code>background:#682988</code> est donné à body. html n'a pas de fond : celui de body est alors peint sur tout le canevas, et pas dans la boîte de body. Le milieu de html devient violet, lui aussi.</p></div>
+<div class="cap" data-t="14.5" data-step="border-radius"><h3>4. Des coins arrondis</h3><p><code>border-radius:42q</code> : 42q = 39,69px. Le bord extérieur de l'anneau est arrondi avec ce rayon, le bord intérieur avec 39,69 − 20 = 19,69px.</p></div>
+<div class="cap" data-t="19" data-step="Masque"><h3>5. Un masque : un quart opaque</h3><p>Un masque ne garde body que là où son image est opaque. <code>conic-gradient(red 25%,#0000 0)</code> part du haut et tourne dans le sens des aiguilles d'une montre : le premier quart est rouge, donc opaque, le reste est transparent (<code>0</code> place l'arrêt suivant juste à 25 %). L'image a la taille de la boîte de body, 220 × 220 : son quart rouge est le carré de 110 × 110 en haut à droite. Il ne reste que ce quart de l'anneau.</p></div>
+<div class="cap" data-t="24" data-step="58q -58q"><h3>6. Décalée et répétée : quatre coins</h3><p><code>58q -58q</code> décale l'image de 54,80px vers la droite et vers le haut. Le masque se répète tous les 220px, dans les deux sens. Le quart rouge d'une tuile couvre x = 254,80 à 364,80 et y = −14,80 à 95,20 : le coin en haut à droite. Celui de la tuile à sa gauche couvre x = 34,80 à 144,80, et ceux des tuiles du dessous y = 205,20 à 315,20. Il reste quatre coins d'environ 55 × 55.</p></div>
+<div class="cap" data-t="29.5" data-step="Résultat" data-live="141 caractères · 100 % identique"><h3>7. Résultat : 141 caractères</h3><p>Une seule règle de bordure pour deux éléments : le carré de html, et l'anneau arrondi de body, dont un quart de dégradé, répété, ne garde que les quatre coins.</p></div>
+{%- else %}
+<div class="cap" data-t="0" data-step="html: 120 × 120"><h3>1. html: the hollow square</h3><p><code>*</code> targets every element, html first. There is no doctype: the page is in quirks mode, and <code>margin:90 140</code> counts in px. html fills the window, minus its margins: 400 − 280 = 120 wide and 300 − 180 = 120 tall, from (140, 90). <code>border:5vw solid#F7EC7D</code> gives it a 20px yellow border (5vw = 5% of 400). The middle, 80 × 80, stays empty.</p></div>
+<div class="cap" data-t="5" data-step="body: 220 × 220"><h3>2. body: the same border, a bigger box</h3><p>The nested <code>*{</code> targets the elements inside another one: body (head and style are not displayed). body keeps the border from the outer rule and gets <code>margin:-70</code>. In quirks mode, body fills html's middle, 80 × 80, minus its margins: 80 + 140 = 220. Its box runs from (90, 40) to (310, 260).</p></div>
+<div class="cap" data-t="10" data-step="Purple background"><h3>3. body's background goes to the canvas</h3><p><code>background:#682988</code> is given to body. html has no background, so body's is painted on the whole canvas, not in body's box. html's middle turns purple too.</p></div>
+<div class="cap" data-t="14.5" data-step="border-radius"><h3>4. Rounded corners</h3><p><code>border-radius:42q</code>: 42q = 39.69px. The outer edge of the ring is rounded with that radius, the inner edge with 39.69 − 20 = 19.69px.</p></div>
+<div class="cap" data-t="19" data-step="Mask"><h3>5. A mask: one opaque quarter</h3><p>A mask keeps body only where its image is opaque. <code>conic-gradient(red 25%,#0000 0)</code> starts at the top and turns clockwise: the first quarter is red, so opaque, and the rest is transparent (<code>0</code> puts the next stop right at 25%). The image is the size of body's box, 220 × 220: its red quarter is the 110 × 110 square at the top right. Only that quarter of the ring is left.</p></div>
+<div class="cap" data-t="24" data-step="58q -58q"><h3>6. Moved and repeated: four corners</h3><p><code>58q -58q</code> moves the image 54.80px right and 54.80px up. The mask repeats every 220px, both ways. One tile's red quarter covers x = 254.80 to 364.80 and y = −14.80 to 95.20: the top-right corner. The tile on its left covers x = 34.80 to 144.80, and the tiles below cover y = 205.20 to 315.20. Four corners of about 55 × 55 are left.</p></div>
+<div class="cap" data-t="29.5" data-step="Result" data-live="141 characters · 100% match"><h3>7. Result: 141 characters</h3><p>One border rule for two elements: html's square, and body's rounded ring, of which one repeated gradient quarter keeps only the four corners.</p></div>
+{%- endif %}
+</div>
+<div class="live"></div>
+</div>
+</div>
+<script>
+(window.AnimScenes = window.AnimScenes || {}).t0720 = (fig) => {
+  const fr = document.documentElement.lang === 'fr';
+  const $ = (s) => fig.querySelector(s);
+  const $$ = (s) => [...fig.querySelectorAll(s)];
+  const live = $('.live');
+  const ease = (x) => (x < 0.5 ? 4 * x * x * x : 1 - Math.pow(-2 * x + 2, 3) / 2);
+  const pr = (t, [a, b]) => ease(Math.min(1, Math.max(0, (t - a) / (b - a))));
+  const win = (t, a, b) => Math.min(pr(t, [a, a + 0.5]), 1 - pr(t, [b - 0.4, b]));
+  const c = fr ? '\u00a0:' : ':';
+  const n2 = (v) => { const s = Math.abs(v).toFixed(2); return (v < -0.004 ? '−' : '') + (fr ? s.replace('.', ',') : s); };
+  // Measured on the official code in local Chrome (quirks mode, 400 × 300), getBoundingClientRect and computed styles:
+  // html (140, 90) 120 × 120, margin 90px 140px, border 20px, no background. body (90, 40) 220 × 220, margin −70px,
+  // border 20px, border-radius 39.685px, background rgb(104, 41, 136) (painted on the canvas), mask-position
+  // 54.8032px −54.8032px, mask-repeat repeat, mask-size auto, mask-origin and mask-clip border-box.
+  // Kept corners (rendered): x 90..144.80 and 254.80..310, y 40..95.20 and 205.20..260.
+  // body is drawn here with the same CSS mask, so the last frame is the real thing.
+  const FIN = 29.5;
+  const Q = 54.80315, R = 39.68504;
+  const w = $('.t0720-w'), html = $('.t0720-html'), body = $('.t0720-body'), tiles = $('.t0720-tiles');
+  const hb = $('.t0720-hb'), bb = $('.t0720-bb');
+  const L = (k) => $$(`.t0720-l[data-l="${k}"]`);
+  return (t, step) => {
+    const teach = fig.dataset.teach === '1' && t < FIN;
+    const ann = 1 - pr(t, [FIN, FIN + 0.6]);
+    // 1. html's border
+    html.style.opacity = pr(t, [0.4, 1.4]);
+    html.style.borderColor = teach ? 'var(--t0720-h)' : 'var(--t0720-y)';
+    // 2. body: from html's middle (160, 110, 80 × 80) to (90, 40, 220 × 220)
+    const g = pr(t, [6.2, 8.6]);
+    const x = 160 - 70 * g, y = 110 - 70 * g, s = 80 + 140 * g;
+    Object.assign(body.style, { left: `${x}px`, top: `${y}px`, width: `${s}px`, height: `${s}px` });
+    body.style.opacity = pr(t, [5.4, 6.2]);
+    body.style.borderColor = teach ? 'var(--t0720-b)' : 'var(--t0720-y)';
+    Object.assign(bb.style, { left: `${x}px`, top: `${y}px`, width: `${s}px`, height: `${s}px` });
+    // 3. body's background on the canvas: white → purple
+    const p = pr(t, [10.6, 12]);
+    w.style.opacity = 1 - p;
+    hb.style.color = bb.style.color = p > 0.5 ? '#fff' : '#1d1530';
+    // 4. border-radius 0 → 42q
+    const r = R * pr(t, [15.2, 17]);
+    body.style.borderRadius = `${r}px`;
+    // 5. the mask: the transparent part fades out; 6. the mask moves by 58q right and up
+    const a = 1 - pr(t, [20, 21.6]);
+    const m = pr(t, [24.8, 27.4]);
+    const mx = Q * m, my = -Q * m;
+    body.style.mask = t < 19.6 ? 'none' : `conic-gradient(red 25%, rgb(0 0 0 / ${a.toFixed(3)}) 0) ${mx}px ${my}px`;
+    // the mask tiles, drawn over the whole wide view (tile origin at body's corner + the offset; the div starts at (−40, −40))
+    const ox = 130 + mx, oy = 80 + my;
+    tiles.style.background = `conic-gradient(rgb(225 29 72 / .5) 25%, #0000 0) ${ox}px ${oy}px / 220px 220px, linear-gradient(90deg, rgb(255 255 255 / .8) 2px, #0000 0) ${ox - 1}px ${oy}px / 220px 220px, linear-gradient(rgb(255 255 255 / .8) 2px, #0000 0) ${ox}px ${oy - 1}px / 220px 220px`;
+    tiles.style.opacity = 0.9 * win(t, 19.4, 29);
+    hb.style.opacity = 0.9 * win(t, 0.2, 9.6);
+    bb.style.opacity = 0.9 * win(t, 5.4, 18.6);
+    [[0.3, 4.8], [5.3, 9.8], [10.3, 14.3], [14.8, 18.8], [19.3, 23.8], [24.3, 29]].forEach(([u, z], k) => L(k + 1).forEach((e) => (e.style.opacity = win(t, u, z) * ann)));
+    let txt;
+    if (step === 0) txt = `html${c} 120 × 120 · border${c} 20px`;
+    else if (step === 1) txt = `margin${c} ${n2(-70 * g)}px · body${c} ${n2(s)} × ${n2(s)}`;
+    else if (step === 2) txt = fr ? `canevas${c} #682988` : `canvas${c} #682988`;
+    else if (step === 3) txt = `border-radius${c} ${n2(r)}px`;
+    else if (step === 4) txt = fr ? `quart rouge${c} x = 200 → 310 · y = 40 → 150` : `red quarter${c} x = 200 → 310 · y = 40 → 150`;
+    else if (step === 5) txt = `mask-position${c} ${n2(mx)}px ${n2(my)}px`;
+    else txt = $$('.caps .cap')[6].dataset.live || '';
+    live.textContent = txt;
+  };
+};
+</script>
+</figure>
