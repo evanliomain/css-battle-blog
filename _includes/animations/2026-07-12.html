@@ -1,0 +1,146 @@
+<figure class="anim t0712" data-duration="32" data-scene="t0712" data-wide="-40 -30 480 380" data-off-label="-36 -26" style="--bg:#b7d7cd">
+<style>
+.t0712{--t0712-m:#b7d7cd;--t0712-p:#c06c88;--t0712-d:#411c56;--t0712-c1:#f97316;--t0712-c2:#10b981;--t0712-c3:#38bdf8;--t0712-c4:#facc15}
+.t0712 .t0712-ring{left:216px;top:78px;width:60px;height:120px;background:radial-gradient(circle at 0 60px,transparent 30.236px,var(--t0712-d) 0 60px,transparent 0);opacity:0;z-index:1}
+.t0712 .t0712-s{opacity:0}
+.t0712 .t0712-s3{z-index:2}
+.t0712 .t0712-s2{z-index:3}
+.t0712 .t0712-s1{z-index:4}
+.t0712 .t0712-hole{left:86px;top:75px;width:80px;height:160px;background:var(--t0712-m);z-index:6}
+.t0712 .t0712-body{left:216px;top:65px;width:61px;height:170px;background:radial-gradient(circle at 0 73px,var(--t0712-m) 30.236px,var(--t0712-d) 0 60px,var(--t0712-m) 0);opacity:0;z-index:8}
+.t0712 .t0712-tint{left:216px;top:65px;width:61px;height:170px;background:var(--t0712-c4);opacity:0;z-index:9}
+.t0712 .t0712-box{box-sizing:border-box;border:calc(2px * var(--k, 1)) dashed #1d1530;opacity:0;z-index:20}
+.t0712 .t0712-tile{box-sizing:border-box;border:calc(2px * var(--k, 1)) dashed #1d1530;top:0;width:400px;height:300px;opacity:0;z-index:19}
+.t0712 .t0712-axis{left:calc(216px - 1px * var(--k, 1));top:0;width:calc(2px * var(--k, 1));height:300px;background:#1d1530;opacity:0;z-index:21}
+.t0712 .zlab{color:#fff;background:rgb(20 20 42 / .9);padding:1px 5px;border-radius:3px;opacity:0}
+.t0712 .scene .zlab.t0712-l1,.t0712 .scene .zlab.t0712-l2{left:4px;top:auto;transform-origin:0 100%}
+.t0712 .scene .zlab.t0712-l2{bottom:1px}
+.t0712 .scene .zlab.t0712-l1{bottom:calc(1px + 16px * var(--k, 1))}
+.t0712[data-view="wide"] .scene .zlab.t0712-l1,.t0712[data-view="wide"] .scene .zlab.t0712-l2{bottom:auto;transform-origin:0 0}
+.t0712[data-view="wide"] .scene .zlab.t0712-l1{top:303px}
+.t0712[data-view="wide"] .scene .zlab.t0712-l2{top:calc(303px + 16px * var(--k, 1))}
+</style>
+<div class="anim-col">
+<div class="stage" role="img" aria-label="{% if include.lang == "fr" %}Animation : le dégradé radial du * va à html, et le fond de html passe au canevas ; fixed le cale sur le canevas, une tuile de 400 × 300 qui commence en x = 216 (54vw) ; le cercle est centré au bord gauche de la tuile, en (216, 138) : seule la moitié droite de l'anneau violet foncé, de rayon 30,24 à 60, est dans la tuile ; html, avec margin:75 234 65 86, est une boîte invisible de 80 × 160 en (86, 75) ; ses trois ombres ne sont jamais peintes dans sa propre boîte ; l'ombre 1, rose, 53Q −5ch, va en (136,08, 35) ; l'ombre 2, rose, 69Q 27Q avec un étalement de 5Q, fait 89,45 × 169,45 en (146,47, 95,79) ; l'ombre 3, violet foncé, 15ex −5ch, va en (193,7, 35), sous les deux roses ; body, 61 × 170 en (216, 65), a le même fond fixe : il recouvre les ombres avec l'image du canevas, et il ne reste qu'un I rose et un 5 violet foncé{% else %}Animation: the * radial gradient goes to html, and html's background goes to the canvas; fixed pins it to the canvas, a 400 × 300 tile starting at x = 216 (54vw); the circle is centered on the tile's left edge, at (216, 138): only the right half of the dark purple ring, radius 30.24 to 60, is in the tile; html, with margin:75 234 65 86, is an invisible 80 × 160 box at (86, 75); its three shadows are never painted inside its own box; shadow 1, pink, 53Q −5ch, goes to (136.08, 35); shadow 2, pink, 69Q 27Q with a 5Q spread, is 89.45 × 169.45 at (146.47, 95.79); shadow 3, dark purple, 15ex −5ch, goes to (193.7, 35), under the two pink ones; body, 61 × 170 at (216, 65), has the same fixed background: it covers the shadows with the canvas picture, and only a pink I and a dark purple 5 remain{% endif %}">
+<div class="scene">
+<div class="t0712-ring"></div>
+<div class="t0712-s t0712-s3"></div>
+<div class="t0712-s t0712-s2"></div>
+<div class="t0712-s t0712-s1"></div>
+<div class="t0712-hole"></div>
+<div class="t0712-body"></div>
+<div class="t0712-tint"></div>
+<div class="t0712-tile t0712-tl" style="left:-184px"></div>
+<div class="t0712-tile t0712-tr" style="left:216px"></div>
+<div class="t0712-axis"></div>
+<div class="t0712-box t0712-hb" style="left:86px;top:75px;width:80px;height:160px"></div>
+<div class="t0712-box t0712-bb" style="left:216px;top:65px;width:61px;height:170px"></div>
+<span class="zlab t0712-l t0712-l1" data-l="1">fixed 54vw → {% if include.lang == "fr" %}tuile en x = 216{% else %}tile at x = 216{% endif %}</span>
+<span class="zlab t0712-l t0712-l2" data-l="1">{% if include.lang == "fr" %}anneau 30,24 → 60 · centre (216, 138){% else %}ring 30.24 → 60 · center (216, 138){% endif %}</span>
+<span class="zlab t0712-l t0712-l1" data-l="2">html · margin: 75 234 65 86</span>
+<span class="zlab t0712-l t0712-l2" data-l="2">{% if include.lang == "fr" %}80 × 160 en (86, 75) · invisible{% else %}80 × 160 at (86, 75) · invisible{% endif %}</span>
+<span class="zlab t0712-l t0712-l1" data-l="3">{% if include.lang == "fr" %}ombre 1 · 53Q −5ch = 50,08 −40{% else %}shadow 1 · 53Q −5ch = 50.08 −40{% endif %}</span>
+<span class="zlab t0712-l t0712-l2" data-l="3">{% if include.lang == "fr" %}rien dans la boîte de html{% else %}nothing inside html's box{% endif %}</span>
+<span class="zlab t0712-l t0712-l1" data-l="4">{% if include.lang == "fr" %}ombre 2 · 69Q 27Q 0 5Q{% else %}shadow 2 · 69Q 27Q 0 5Q{% endif %}</span>
+<span class="zlab t0712-l t0712-l2" data-l="4">{% if include.lang == "fr" %}89,45 × 169,45 en (146,47, 95,79){% else %}89.45 × 169.45 at (146.47, 95.79){% endif %}</span>
+<span class="zlab t0712-l t0712-l1" data-l="5">{% if include.lang == "fr" %}ombre 3 · 15ex −5ch = 107,7 −40{% else %}shadow 3 · 15ex −5ch = 107.7 −40{% endif %}</span>
+<span class="zlab t0712-l t0712-l2" data-l="5">{% if include.lang == "fr" %}#411c56, sous les deux roses{% else %}#411c56, under the two pink ones{% endif %}</span>
+<span class="zlab t0712-l t0712-l1" data-l="6">body · margin: −10 −111 0 130</span>
+<span class="zlab t0712-l t0712-l2" data-l="6">{% if include.lang == "fr" %}61 × 170 en (216, 65) · même fond fixe{% else %}61 × 170 at (216, 65) · same fixed background{% endif %}</span>
+</div>
+</div>
+<div class="legend"><span><i style="--c:var(--t0712-c1)"></i>{% if include.lang == "fr" %}ombre 1{% else %}shadow 1{% endif %}</span><span><i style="--c:var(--t0712-c2)"></i>{% if include.lang == "fr" %}ombre 2{% else %}shadow 2{% endif %}</span><span><i style="--c:var(--t0712-c3)"></i>{% if include.lang == "fr" %}ombre 3{% else %}shadow 3{% endif %}</span><span><i style="--c:var(--t0712-c4)"></i>body</span><span><i style="--c:transparent;outline:2px dashed currentColor;outline-offset:-2px"></i>{% if include.lang == "fr" %}boîtes, tuiles{% else %}boxes, tiles{% endif %}</span></div>
+</div>
+<div class="anim-side">
+<pre class="code" aria-hidden="true">&lt;style>*{<span data-on="6">margin:-10-111 0 130;</span><span data-on="1 6">background:radial-gradient(1Q at 0%46%,#b7d7cd 32Q,#411c56 0 60px,#b7d7cd)<span data-on="1 6" data-tone="2">fixed 54vw</span></span>}&amp;{<span data-on="2">margin:75 234 65 86;</span><span data-on="3 4">color:C06C88;</span><span data-on="3 4 5">box-shadow:</span><span data-on="3">53Q -5ch</span>,<span data-on="4">69Q 27Q 0 5Q</span>,<span data-on="5">15ex -5ch#411c56</span></pre>
+<div class="now" aria-live="polite">
+<div class="caps">
+{%- if include.lang == "fr" %}
+<div class="cap" data-t="0" data-step="Le canevas"><h3>1. Un dégradé sur le canevas</h3><p>Le <code>*</code> donne le dégradé à html, et le fond de html passe au canevas. <code>fixed</code> cale l'image sur le canevas : une tuile de 400 × 300. <code>54vw</code>, 216px, la pousse à droite. Le cercle est centré au bord gauche de la tuile, en (216, 138) : seule la moitié droite de l'anneau, de 30,24 à 60px, est dans la tuile. La tuile répétée à gauche est vert d'eau à cet endroit.</p></div>
+<div class="cap" data-t="5" data-step="html"><h3>2. html, une boîte invisible</h3><p><code>&amp;</code> hors de toute règle vise html. Ses marges en font une boîte de 80 × 160 en (86, 75) : en mode quirks, html prend la hauteur du canevas moins ses marges, 300 − 140. Son fond est parti au canevas, donc la boîte ne peint rien. Mais elle va servir : une ombre portée n'est jamais peinte dans la boîte de son élément.</p></div>
+<div class="cap" data-t="9.5" data-step="Ombre 1"><h3>3. Ombre 1 : le haut du I</h3><p><code>53Q -5ch</code> décale une copie de html de 50,08px à droite et de 40px vers le haut. Sans couleur, l'ombre prend <code>color</code>, le rose <code>C06C88</code>. Elle couvre de (136,08, 35) à (216,08, 195). La partie qui tombe dans la boîte de html n'est pas peinte : il reste l'empattement du haut et le haut de la barre.</p></div>
+<div class="cap" data-t="14" data-step="Ombre 2"><h3>4. Ombre 2 : le bas du I</h3><p><code>69Q 27Q 0 5Q</code> : décalage de 65,2 et 25,51, pas de flou, et un étalement de 4,72px de chaque côté. L'ombre fait 89,45 × 169,45, de (146,47, 95,79) à (235,92, 265,24). Sous y = 235, sous la boîte de html, elle fait l'empattement du bas. Au-dessus, elle prolonge la barre du I.</p></div>
+<div class="cap" data-t="18.5" data-step="Ombre 3"><h3>5. Ombre 3 : le trait du 5</h3><p><code>15ex -5ch#411c56</code> : 107,7px à droite, 40px vers le haut, en violet foncé. Elle va de x = 193,7 à 273,7. C'est la dernière de la liste, donc elle passe sous les deux ombres roses. Pour l'instant, on la voit à droite des ombres roses, jusqu'à y = 195.</p></div>
+<div class="cap" data-t="23" data-step="body"><h3>6. body, un morceau du canevas</h3><p>body reçoit les marges du <code>*</code>, comptées depuis la boîte de html : 61 × 170 en (216, 65). Il a aussi le dégradé, et <code>fixed</code> le cale sur le canevas lui aussi : body peint exactement l'image du canevas, anneau compris. Il recouvre le bas de l'ombre 3 et le haut de l'ombre 2. De l'ombre 3, il ne reste que le trait de y = 35 à 65.</p></div>
+<div class="cap" data-t="28" data-step="Résultat" data-live="199 caractères · 100 % identique"><h3>7. Résultat : 199 caractères</h3><p>Un dégradé, posé deux fois au même endroit, et trois ombres. html découpe les ombres du dedans, body les recouvre du dessus. Il reste un I rose et un 5 violet foncé.</p></div>
+{%- else %}
+<div class="cap" data-t="0" data-step="Canvas"><h3>1. A gradient on the canvas</h3><p>The <code>*</code> gives the gradient to html, and html's background goes to the canvas. <code>fixed</code> pins the image to the canvas: a 400 × 300 tile. <code>54vw</code>, 216px, pushes it right. The circle is centered on the tile's left edge, at (216, 138): only the right half of the ring, from 30.24 to 60px, is inside the tile. The repeated tile on the left is mint green there.</p></div>
+<div class="cap" data-t="5" data-step="html"><h3>2. html, an invisible box</h3><p><code>&amp;</code> outside any rule selects html. Its margins make it an 80 × 160 box at (86, 75): in quirks mode, html takes the canvas height minus its margins, 300 − 140. Its background went to the canvas, so the box paints nothing. But it will matter: a box shadow is never painted inside its own element's box.</p></div>
+<div class="cap" data-t="9.5" data-step="Shadow 1"><h3>3. Shadow 1: the top of the I</h3><p><code>53Q -5ch</code> moves a copy of html 50.08px right and 40px up. With no color, the shadow takes <code>color</code>, the pink <code>C06C88</code>. It covers (136.08, 35) to (216.08, 195). The part that falls inside html's box is not painted: what is left is the top serif and the top of the stem.</p></div>
+<div class="cap" data-t="14" data-step="Shadow 2"><h3>4. Shadow 2: the bottom of the I</h3><p><code>69Q 27Q 0 5Q</code>: offset 65.2 and 25.51, no blur, and a 4.72px spread on every side. The shadow is 89.45 × 169.45, from (146.47, 95.79) to (235.92, 265.24). Below y = 235, below html's box, it is the bottom serif. Above, it extends the stem of the I.</p></div>
+<div class="cap" data-t="18.5" data-step="Shadow 3"><h3>5. Shadow 3: the bar of the 5</h3><p><code>15ex -5ch#411c56</code>: 107.7px right, 40px up, in dark purple. It spans x = 193.7 to 273.7. It is last in the list, so it goes under the two pink shadows. For now, it shows right of the pink shadows, down to y = 195.</p></div>
+<div class="cap" data-t="23" data-step="body"><h3>6. body, a patch of the canvas</h3><p>body gets the <code>*</code> margins, measured from html's box: 61 × 170 at (216, 65). It gets the gradient too, and <code>fixed</code> pins it to the canvas as well: body paints exactly the canvas picture, ring included. It covers the bottom of shadow 3 and the top of shadow 2. Of shadow 3, only the bar from y = 35 to 65 is left.</p></div>
+<div class="cap" data-t="28" data-step="Result" data-live="199 characters · 100% match"><h3>7. Result: 199 characters</h3><p>One gradient, laid twice in the same place, and three shadows. html cuts the shadows from inside, body covers them from above. What is left is a pink I and a dark purple 5.</p></div>
+{%- endif %}
+</div>
+<div class="live"></div>
+</div>
+</div>
+<script>
+(window.AnimScenes = window.AnimScenes || {}).t0712 = (fig) => {
+  const fr = document.documentElement.lang === 'fr';
+  const $ = (s) => fig.querySelector(s);
+  const $$ = (s) => [...fig.querySelectorAll(s)];
+  const live = $('.live');
+  const ease = (x) => (x < 0.5 ? 4 * x * x * x : 1 - Math.pow(-2 * x + 2, 3) / 2);
+  const pr = (t, [a, b]) => ease(Math.min(1, Math.max(0, (t - a) / (b - a))));
+  const win = (t, a, b) => Math.min(pr(t, [a, a + 0.5]), 1 - pr(t, [b - 0.2, b]));
+  const c = fr ? ' :' : ':';
+  const num = (v, d = 0) => { const s = Math.abs(v).toFixed(d); return (v < -0.005 ? '−' : '') + (fr ? s.replace('.', ',') : s); };
+  // Measured on the official code in local Chrome (quirks mode, 400 × 300), getBoundingClientRect and computed styles:
+  // html: margin 75px 234px 65px 86px, border box (86, 75) 80 × 160, background propagated to the canvas.
+  // body: margin -10px -111px 0 130px, border box (216, 65) 61 × 170, same background.
+  // background: radial-gradient(1q at 0% 46%, …) fixed, position 216px 50%: tile 400 × 300 at x = 216, circle (216, 138),
+  // stops 32Q = 30.236px and 60px. color rgb(192, 108, 136). box-shadow (1ex = 7.1797px, 1ch = 8px, 1Q = 0.94488px):
+  // 50.0787px -40px; 65.1969px 25.5118px 0 4.72441px; 107.695px -40px #411c56.
+  const H = [86, 75, 80, 160];
+  const S1 = [136.0787, 35, 80, 160], S2 = [146.4725, 95.7874, 89.4488, 169.4488], S3 = [193.695, 35, 80, 160];
+  const FIN = 28;
+  const ring = $('.t0712-ring'), s1 = $('.t0712-s1'), s2 = $('.t0712-s2'), s3 = $('.t0712-s3');
+  const bod = $('.t0712-body'), tint = $('.t0712-tint'), hb = $('.t0712-hb'), bb = $('.t0712-bb');
+  const tiles = $$('.t0712-tile'), axis = $('.t0712-axis');
+  const L = (k) => $$(`.t0712-l[data-l="${k}"]`);
+  const lerp = (a, b, k) => a.map((v, i) => v + (b[i] - v) * k);
+  const put = (e, [x, y, w, h]) => { e.style.left = `${x}px`; e.style.top = `${y}px`; e.style.width = `${w}px`; e.style.height = `${h}px`; };
+  return (t, step) => {
+    const teach = fig.dataset.teach === '1' && t < FIN;
+    // 1. the gradient on the canvas
+    ring.style.opacity = pr(t, [0.6, 2.2]);
+    tiles.forEach((e) => (e.style.opacity = 0.9 * win(t, 0.4, 5)));
+    axis.style.opacity = 0.9 * win(t, 0.4, 5);
+    // 2. html's box
+    hb.style.opacity = 0.9 * pr(t, [5.2, 5.7]) * (1 - pr(t, [FIN - 0.5, FIN]));
+    // 3-5. the three shadows slide out of html's box
+    const k1 = pr(t, [10, 12.2]), k2 = pr(t, [14.5, 16.7]), k3 = pr(t, [19, 21.2]);
+    s1.style.opacity = pr(t, [9.6, 9.8]);
+    s2.style.opacity = pr(t, [14.1, 14.3]);
+    s3.style.opacity = pr(t, [18.6, 18.8]);
+    put(s1, lerp(H, S1, k1));
+    put(s2, lerp(H, S2, k2));
+    const b3 = lerp(H, S3, k3);
+    put(s3, b3);
+    // Under shadow 1, start shadow 3 2px lower, so their shared top edge leaves no dark fringe at small scales.
+    const cx = Math.max(0, 215.6 - b3[0]);
+    s3.style.clipPath = `polygon(${cx}px -1px, 101% -1px, 101% 101%, -1% 101%, -1% 2px, ${cx}px 2px)`;
+    s1.style.background = teach ? 'var(--t0712-c1)' : 'var(--t0712-p)';
+    s2.style.background = teach ? 'var(--t0712-c2)' : 'var(--t0712-p)';
+    s3.style.background = teach ? 'var(--t0712-c3)' : 'var(--t0712-d)';
+    // 6. body, the same fixed gradient
+    const kb = pr(t, [23.6, 25.2]);
+    bod.style.opacity = kb;
+    tint.style.opacity = teach ? 0.45 * kb : 0;
+    bb.style.opacity = 0.9 * pr(t, [23.3, 23.8]) * (1 - pr(t, [FIN - 0.5, FIN]));
+    [[0.3, 5], [5.3, 9.5], [9.8, 14], [14.3, 18.5], [18.8, 23], [23.3, 28]].forEach(([a, z], k) => L(k + 1).forEach((e) => (e.style.opacity = win(t, a, z))));
+    let txt;
+    if (step === 0) txt = fr ? `anneau${c} 30,24 → 60px · centre (216, 138)` : `ring${c} 30.24 → 60px · center (216, 138)`;
+    else if (step === 1) txt = fr ? `html${c} 80 × 160 en (86, 75)` : `html${c} 80 × 160 at (86, 75)`;
+    else if (step === 2) txt = fr ? `ombre 1${c} décalage ${num(50.08 * k1, 2)} ${num(-40 * k1, 1)}` : `shadow 1${c} offset ${num(50.08 * k1, 2)} ${num(-40 * k1, 1)}`;
+    else if (step === 3) txt = fr ? `ombre 2${c} décalage ${num(65.2 * k2, 2)} ${num(25.51 * k2, 2)} · étalement ${num(4.72 * k2, 2)}` : `shadow 2${c} offset ${num(65.2 * k2, 2)} ${num(25.51 * k2, 2)} · spread ${num(4.72 * k2, 2)}`;
+    else if (step === 4) txt = fr ? `ombre 3${c} décalage ${num(107.7 * k3, 1)} ${num(-40 * k3, 1)}` : `shadow 3${c} offset ${num(107.7 * k3, 1)} ${num(-40 * k3, 1)}`;
+    else if (step === 5) txt = fr ? `body${c} 61 × 170 en (216, 65)` : `body${c} 61 × 170 at (216, 65)`;
+    else txt = $$('.caps .cap')[6].dataset.live || '';
+    live.textContent = txt;
+  };
+};
+</script>
+</figure>
