@@ -1,0 +1,118 @@
+<figure class="anim t0801" data-duration="29" data-scene="t0801" data-wide="-50 -40 500 380" data-off-label="-46 -35" style="--bg:#065840">
+<style>
+.t0801{--t0801-gr:#065840;--t0801-cr:#c3c3a8;--t0801-hc:#f59e0b;--t0801-bc:#2563eb;--t0801-bg:#facc15;--t0801-ln:#ffffff}
+.t0801 .t0801-html{left:126px;top:76px;width:148px;height:148px;box-sizing:border-box;border:0 solid var(--t0801-cr);opacity:0;z-index:1}
+.t0801 .t0801-ring{left:116px;top:66px;width:168px;height:168px;box-sizing:border-box;border:66px solid var(--t0801-cr);border-radius:0 50.08px;background:var(--t0801-gr);opacity:0;z-index:2}
+.t0801 .t0801-solid{left:116px;top:66px;width:168px;height:168px;background:var(--t0801-cr);clip-path:polygon(0 0,117.92px 0,117.92px 50.08px,100% 50.08px,100% 100%,50.08px 100%,50.08px 117.92px,0 117.92px);opacity:0;z-index:3}
+.t0801 .t0801-hb{left:126px;top:76px;width:148px;height:148px;box-sizing:border-box;border:calc(2px * var(--k, 1)) dashed var(--t0801-ln);opacity:0;z-index:5}
+.t0801 .t0801-bb{box-sizing:border-box;border:calc(2px * var(--k, 1)) solid var(--t0801-ln);opacity:0;z-index:4}
+.t0801 .t0801-cb{box-sizing:border-box;border:calc(1.5px * var(--k, 1)) dotted var(--t0801-ln);opacity:0;z-index:5}
+.t0801 .zlab{color:#fff;background:rgb(20 20 42 / .9);padding:1px 5px;border-radius:3px;opacity:0}
+</style>
+<div class="anim-col">
+<div class="stage" role="img" aria-label="{% if include.lang == "fr" %}Animation : * vise html et body ; margin:76 126 fait de html un carré de 148 × 148 en (126 ; 76), et son fond vert couvre tout le canevas ; border:70Q lui donne une bordure crème de 66px qui laisse un contenu de 16 × 16 ; border-radius:0 53Q arrondit ses coins haut droit et bas gauche de 50,08px ; body reçoit la même bordure, et margin:-76 en fait un carré de 168 × 168 en (116 ; 66) ; corner-shape:notch change ses deux coins arrondis en entailles carrées de 50,08px, et la bordure remplit alors tout body : deux carrés de 118px décalés de 50px ; dans chaque entaille, le coin arrondi de html se voit{% else %}Animation: * targets html and body; margin:76 126 makes html a 148 × 148 square at (126, 76), and its green background covers the whole canvas; border:70Q gives it a 66px cream border that leaves a 16 × 16 content box; border-radius:0 53Q rounds its top-right and bottom-left corners by 50.08px; body gets the same border, and margin:-76 makes it a 168 × 168 square at (116, 66); corner-shape:notch turns its two round corners into 50.08px square cuts, and the border then fills all of body: two 118px squares offset by 50px; in each cut, html's round corner shows{% endif %}">
+<div class="scene">
+<div class="t0801-html"></div>
+<div class="t0801-ring"></div>
+<div class="t0801-solid"></div>
+<div class="t0801-bb"></div>
+<div class="t0801-cb"></div>
+<div class="t0801-hb"></div>
+<span class="zlab t0801-l" data-l="1" style="left:6px;top:6px">html 148 × 148 · margin:76 126</span>
+<span class="zlab t0801-l" data-l="2" style="left:6px;top:6px">{% if include.lang == "fr" %}70Q = 66,14px → 66px{% else %}70Q = 66.14px → 66px{% endif %}</span>
+<span class="zlab t0801-l" data-l="2" style="left:6px;top:272px">{% if include.lang == "fr" %}contenu : 16 × 16{% else %}content: 16 × 16{% endif %}</span>
+<span class="zlab t0801-l" data-l="3" style="left:6px;top:6px">{% if include.lang == "fr" %}53Q = 50,08px{% else %}53Q = 50.08px{% endif %}</span>
+<span class="zlab t0801-l" data-l="4" style="left:6px;top:6px">body 168 × 168 · margin:-76</span>
+<span class="zlab t0801-l" data-l="4" style="left:6px;top:272px">{% if include.lang == "fr" %}contenu : 36 × 36{% else %}content: 36 × 36{% endif %}</span>
+<span class="zlab t0801-l" data-l="5" style="left:6px;top:6px">corner-shape:notch</span>
+<span class="zlab t0801-l" data-l="5" style="left:6px;top:272px">{% if include.lang == "fr" %}bord intérieur : vide{% else %}inner edge: empty{% endif %}</span>
+<span class="zlab t0801-l" data-l="6" style="left:6px;top:6px">{% if include.lang == "fr" %}coins de html : 50,08px{% else %}html's corners: 50.08px{% endif %}</span>
+</div>
+</div>
+<div class="legend"><span><i style="--c:transparent;outline:2px dashed currentColor;outline-offset:-2px"></i>{% if include.lang == "fr" %}boîte de html{% else %}html box{% endif %}</span><span><i style="--c:var(--t0801-hc)"></i>{% if include.lang == "fr" %}bordure de html{% else %}html border{% endif %}</span><span><i style="--c:transparent;outline:2px solid currentColor;outline-offset:-2px"></i>{% if include.lang == "fr" %}boîte de body{% else %}body box{% endif %}</span><span><i style="--c:var(--t0801-bc)"></i>{% if include.lang == "fr" %}bordure de body{% else %}body border{% endif %}</span><span><i style="--c:var(--t0801-bg)"></i>{% if include.lang == "fr" %}fond de body{% else %}body background{% endif %}</span></div>
+</div>
+<div class="anim-side">
+<pre class="code" aria-hidden="true">&lt;style><span data-on="1 4">*{</span><span data-on="1 7">background:#065840</span>;<span data-on="2 4">border:70Q solid#C3C3A8</span>;<span data-on="3 6">border-radius:0 53Q</span>;<span data-on="1">margin:76 126</span>;<span data-on="4">*{margin:-76</span>;<span data-on="5">corner-shape:notch</span></pre>
+<div class="now" aria-live="polite">
+<div class="caps">
+{%- if include.lang == "fr" %}
+<div class="cap" data-t="0" data-step="html : 148 × 148"><h3>1. html : 148 × 148</h3><p><code>*</code> vise tous les éléments : html, head, style et body. head et style ne s'affichent pas. Pas de doctype : la page est en mode quirks, et <code>76 126</code> se lit en px. En mode quirks, html remplit les 400 × 300 de la page, moins ses marges : un carré de 148 × 148 en (126 ; 76). Son fond, <code>#065840</code>, est peint sur tout le canevas.</p></div>
+<div class="cap" data-t="4" data-step="Bordure"><h3>2. Une bordure de 66px</h3><p><code>70Q</code>, c'est 70 quarts de millimètre, 66,14px : Chrome trace une bordure de 66px. L'anneau crème laisse une boîte de contenu de 148 − 2 × 66 = 16 de côté, en (192 ; 142). Le vert du canevas s'y voit.</p></div>
+<div class="cap" data-t="8" data-step="Deux coins ronds"><h3>3. Deux coins arrondis</h3><p><code>border-radius:0 53Q</code> : la première valeur vaut pour les coins haut gauche et bas droit, la seconde pour les coins haut droit et bas gauche. <code>53Q</code> fait 50,08px. La bordure est plus épaisse que le rayon : les coins intérieurs restent carrés.</p></div>
+<div class="cap" data-t="12" data-step="body"><h3>4. body : 168 × 168</h3><p>La même règle donne à body le même fond, la même bordure et les mêmes coins. Le <code>*{</code> imbriqué vise les descendants de html : body reçoit <code>margin:-76</code>. Il part du contenu de html, 16 × 16, et grandit de 76px de chaque côté : 168 × 168 en (116 ; 66). Sa bordure de 66px laisse un trou de 36 × 36, où se voit son fond vert.</p></div>
+<div class="cap" data-t="17" data-step="Entailles"><h3>5. Deux entailles</h3><p><code>corner-shape:notch</code> change les deux coins arrondis de body en entailles carrées de 50,08px de côté. Avec <code>corner-shape</code>, Chrome trace le bord intérieur de la bordure comme la forme extérieure rétrécie de l'épaisseur. Rétrécie de 66px, cette forme entaillée ne laisse rien : la bordure remplit tout body, et son fond reste caché dessous. body devient deux carrés d'environ 118px, décalés de 50px.</p></div>
+<div class="cap" data-t="21.5" data-step="Coins de html"><h3>6. Les coins de html</h3><p><code>corner-shape</code> n'est que dans la règle imbriquée : html garde ses coins arrondis. Dans chaque entaille de body, un morceau de ce coin de 50,08px remplit la marche : de (234 ; 77) à (273 ; 116) en haut à droite, de (127 ; 184) à (166 ; 223) en bas à gauche.</p></div>
+<div class="cap" data-t="25.5" data-step="Résultat" data-live="117 caractères · 100 % identique"><h3>7. Résultat : 117 caractères</h3><p>Une seule règle donne à html et à body la même bordure crème et les mêmes coins. body, entaillé, dessine les deux carrés. html, arrondi, remplit les deux marches.</p></div>
+{%- else %}
+<div class="cap" data-t="0" data-step="html: 148 × 148"><h3>1. html: 148 × 148</h3><p><code>*</code> targets every element: html, head, style and body. head and style are not displayed. There is no doctype: the page is in quirks mode, and <code>76 126</code> is read as px. In quirks mode, html fills the 400 × 300 page, minus its margins: a 148 × 148 square at (126, 76). Its background, <code>#065840</code>, is painted on the whole canvas.</p></div>
+<div class="cap" data-t="4" data-step="Border"><h3>2. A 66px border</h3><p><code>70Q</code> is 70 quarter millimeters, 66.14px: Chrome draws a 66px border. The cream ring leaves a content box of 148 − 2 × 66 = 16 on a side, at (192, 142). The green canvas shows through it.</p></div>
+<div class="cap" data-t="8" data-step="Two round corners"><h3>3. Two round corners</h3><p><code>border-radius:0 53Q</code>: the first value is for the top-left and bottom-right corners, the second one for the top-right and bottom-left corners. <code>53Q</code> is 50.08px. The border is thicker than the radius: the inside corners stay square.</p></div>
+<div class="cap" data-t="12" data-step="body"><h3>4. body: 168 × 168</h3><p>The same rule gives body the same background, border and corners. The nested <code>*{</code> targets html's descendants: body gets <code>margin:-76</code>. It starts from html's 16 × 16 content box and grows 76px on every side: 168 × 168 at (116, 66). Its 66px border leaves a 36 × 36 hole, where its green background shows.</p></div>
+<div class="cap" data-t="17" data-step="Notches"><h3>5. Two notches</h3><p><code>corner-shape:notch</code> turns body's two round corners into square cuts, 50.08px on a side. With <code>corner-shape</code>, Chrome draws the inner edge of the border as the outer shape shrunk by the border width. Shrunk by 66px, this notched shape leaves nothing: the border fills all of body, and its background stays hidden under it. body is now two squares of about 118px, offset by 50px.</p></div>
+<div class="cap" data-t="21.5" data-step="html's corners"><h3>6. html's corners</h3><p><code>corner-shape</code> is only in the nested rule: html keeps its round corners. In each notch of body, a piece of that 50.08px corner fills the step: from (234, 77) to (273, 116) at the top right, from (127, 184) to (166, 223) at the bottom left.</p></div>
+<div class="cap" data-t="25.5" data-step="Result" data-live="117 characters · 100% match"><h3>7. Result: 117 characters</h3><p>One rule gives html and body the same cream border and the same corners. body, notched, draws the two squares. html, rounded, fills the two steps.</p></div>
+{%- endif %}
+</div>
+<div class="live"></div>
+</div>
+</div>
+<script>
+(window.AnimScenes = window.AnimScenes || {}).t0801 = (fig) => {
+  const fr = document.documentElement.lang === 'fr';
+  const $ = (s) => fig.querySelector(s);
+  const $$ = (s) => [...fig.querySelectorAll(s)];
+  const live = $('.live');
+  const ease = (x) => (x < 0.5 ? 4 * x * x * x : 1 - Math.pow(-2 * x + 2, 3) / 2);
+  const pr = (t, [a, b]) => ease(Math.min(1, Math.max(0, (t - a) / (b - a))));
+  const win = (t, a, b) => Math.min(pr(t, [a, a + 0.5]), 1 - pr(t, [b - 0.4, b]));
+  const box = (e, r) => { e.style.left = `${r[0]}px`; e.style.top = `${r[1]}px`; e.style.width = `${Math.max(0, r[2])}px`; e.style.height = `${Math.max(0, r[3])}px`; };
+  const f2 = (v) => (fr ? v.toFixed(2).replace('.', ',') : v.toFixed(2));
+  const c = fr ? ' :' : ':';
+  const sc = fr ? ' ;' : ',';
+  // Measured on the official code in local Chrome (quirks mode, 400 × 300):
+  // html border box (126, 76) 148 × 148, border 66px (70Q = 66.14px, drawn 66px), content box (192, 142) 16 × 16,
+  // border-radius 0 50.0787px (53Q). body border box (116, 66) 168 × 168, same border, content box (182, 132) 36 × 36.
+  // corner-shape:notch on body only: 50.08px square cuts at top right and bottom left; the border fills the whole shape.
+  const FIN = 25.5, R = 50.0787;
+  const html = $('.t0801-html'), ring = $('.t0801-ring'), solid = $('.t0801-solid');
+  const hb = $('.t0801-hb'), bb = $('.t0801-bb'), cb = $('.t0801-cb');
+  const L = (k) => $$(`.t0801-l[data-l="${k}"]`);
+  return (t, step) => {
+    const teach = fig.dataset.teach === '1' && t < FIN;
+    const ann = 1 - pr(t, [FIN, FIN + 0.6]);
+    // html: its box, then its border, then its two round corners
+    hb.style.opacity = 0.9 * (pr(t, [0.2, 0.8]) * (1 - pr(t, [11.6, 12.2])) + win(t, 21.8, 25.4));
+    const bw = 66 * pr(t, [4.4, 6.4]), r = R * pr(t, [8.4, 10.4]);
+    html.style.opacity = bw > 0 ? 1 : 0;
+    html.style.borderWidth = `${bw}px`;
+    html.style.borderColor = teach ? 'var(--t0801-hc)' : 'var(--t0801-cr)';
+    html.style.borderRadius = `0 ${r}px`;
+    hb.style.borderRadius = `0 ${r}px`;
+    // html's content box, 16 × 16 at (192, 142), then body's, 36 × 36 at (182, 132)
+    const g = pr(t, [12.4, 14.4]);
+    box(bb, [192 - 76 * g, 142 - 76 * g, 16 + 152 * g, 16 + 152 * g]);
+    bb.style.opacity = pr(t, [12, 12.4]) * (1 - pr(t, [16.6, 17.2]));
+    const showCb = win(t, 4.8, 8) || win(t, 14.8, 20.8);
+    box(cb, t < 12 ? [192, 142, 16, 16] : [182, 132, 36, 36]);
+    cb.style.opacity = 0.9 * showCb;
+    // body: a ring with round corners, then the notched shape, filled by its border
+    const ringOn = pr(t, [14.4, 15]), notch = pr(t, [17.6, 19]);
+    ring.style.opacity = ringOn * (1 - notch);
+    ring.style.borderColor = teach ? 'var(--t0801-bc)' : 'var(--t0801-cr)';
+    ring.style.background = teach ? 'var(--t0801-bg)' : 'var(--t0801-gr)';
+    solid.style.opacity = notch;
+    solid.style.background = teach ? 'var(--t0801-bc)' : 'var(--t0801-cr)';
+    [[0.3, 3.8], [4.3, 7.8], [8.3, 11.8], [12.3, 16.8], [17.3, 21.3], [21.8, 25.3]].forEach(([a, z], k) => L(k + 1).forEach((e) => (e.style.opacity = win(t, a, z) * ann)));
+    let txt;
+    if (step === 0) txt = `html${c} 148 × 148 · (126${sc} 76)`;
+    else if (step === 1) txt = `border${c} ${Math.round(bw)}px · ${fr ? 'contenu' : 'content'} ${Math.round(148 - 2 * bw)} × ${Math.round(148 - 2 * bw)}`;
+    else if (step === 2) txt = `border-radius${c} 0 ${f2(r)}px`;
+    else if (step === 3) { const s = Math.round(16 + 152 * g); txt = `body${c} ${s} × ${s} · (${Math.round(192 - 76 * g)}${sc} ${Math.round(142 - 76 * g)})`; }
+    else if (step === 4) txt = `${fr ? 'entailles' : 'notches'}${c} ${f2(R * notch)}px · ${fr ? 'bord intérieur vide' : 'inner edge empty'}`;
+    else if (step === 5) txt = `html${c} ${fr ? 'coins arrondis de' : 'round corners,'} ${f2(R)}px`;
+    else txt = $$('.caps .cap')[6].dataset.live || '';
+    live.textContent = txt;
+  };
+};
+</script>
+</figure>
