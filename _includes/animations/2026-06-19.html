@@ -1,0 +1,118 @@
+<figure class="anim t0619" data-duration="31" data-scene="t0619" data-wide="-50 -40 500 380" data-off-label="-46 306" style="--bg:#af6a8a">
+<style>
+.t0619{--t0619-hw:#93c5fd;--t0619-hd:#1d4ed8;--t0619-bw:#fcd34d;--t0619-bd:#b45309;--t0619-gd:#14142a}
+.t0619 .scene .t0619-fr{left:200px;top:150px;width:0;height:0;transform-origin:0 0}
+.t0619 .scene .t0619-ln{opacity:0;z-index:4;border:0 dashed var(--t0619-gd)}
+.t0619 .scene .t0619-v{left:calc(200px - 0.75px * var(--k, 1));width:0;border-left-width:calc(1.5px * var(--k, 1))}
+.t0619 .scene .t0619-h{top:calc(150px - 0.75px * var(--k, 1));height:0;border-top-width:calc(1.5px * var(--k, 1))}
+.t0619 .scene .t0619-pt{left:calc(200px - 4px * var(--k, 1));top:calc(150px - 4px * var(--k, 1));width:calc(8px * var(--k, 1));height:calc(8px * var(--k, 1));border-radius:50%;background:var(--t0619-gd);box-shadow:0 0 0 calc(2px * var(--k, 1)) #fff;opacity:0;z-index:6}
+.t0619 .zlab{color:#14142a;background:rgb(255 255 255 / .92);padding:1px 5px;border-radius:3px;opacity:0}
+</style>
+<div class="anim-col">
+<div class="stage" role="img" aria-label="{% if include.lang == "fr" %}Animation : html a des marges de 37,5 % et 50 % de la largeur du canevas, 150px et 200px : en mode quirks, c'est une boîte de 0 × 0 au centre, en (200, 150) ; ses deux ombres sont un carré blanc de 120 × 120 décalé de 32q en haut à droite, et par-dessus un carré #444 de 60,47 × 60,47 décalé de 64q, dans le coin extérieur du blanc ; rotate:45deg tourne le tout vers la droite, et scale:-1 l'envoie de l'autre côté, vers la gauche ; body est aussi une boîte de 0 × 0 au centre, avec les mêmes ombres ; dans html, il tourne avec lui, et son propre scale:-1 le renvoie d'un demi-tour, vers la droite ; les deux carrés blancs se chevauchent au milieu et forment le X, avec un bloc #444 à chaque bout{% else %}Animation: html has margins of 37.5% and 50% of the canvas width, 150px and 200px: in quirks mode it is a 0 × 0 box at the center, at (200, 150); its two shadows are a 120 × 120 white square moved 32q up and right, and on top a 60.47 × 60.47 #444 square moved 64q, in the outer corner of the white one; rotate:45deg turns them to the right, and scale:-1 sends them to the other side, to the left; body is also a 0 × 0 box at the center, with the same shadows; inside html it turns with it, and its own scale:-1 sends it half a turn back, to the right; the two white squares overlap in the middle and make the X, with a #444 block at each end{% endif %}">
+<div class="scene">
+<div class="t0619-fr t0619-fh"></div>
+<div class="t0619-fr t0619-fb"></div>
+<div class="t0619-ln t0619-v" style="top:0;height:150px"></div>
+<div class="t0619-ln t0619-v" style="top:150px;height:150px"></div>
+<div class="t0619-ln t0619-h" style="left:0;width:200px"></div>
+<div class="t0619-ln t0619-h" style="left:200px;width:200px"></div>
+<div class="t0619-pt"></div>
+<span class="zlab t0619-l1" data-l="1">{% if include.lang == "fr" %}margin : 37,5 % × 400 = 150px, 50 % × 400 = 200px{% else %}margin: 37.5% × 400 = 150px, 50% × 400 = 200px{% endif %}</span>
+<span class="zlab t0619-l2" data-l="1">{% if include.lang == "fr" %}html : 0 × 0 en (200, 150){% else %}html: 0 × 0 at (200, 150){% endif %}</span>
+<span class="zlab t0619-l1" data-l="2">{% if include.lang == "fr" %}étalement 60px : 120 × 120, décalé de 32q{% else %}spread 60px: 120 × 120, moved 32q{% endif %}</span>
+<span class="zlab t0619-l2" data-l="2">{% if include.lang == "fr" %}étalement 32q : 60,47 × 60,47, décalé de 64q{% else %}spread 32q: 60.47 × 60.47, moved 64q{% endif %}</span>
+<span class="zlab t0619-l1" data-l="3">{% if include.lang == "fr" %}rotate:45deg autour de (200, 150){% else %}rotate:45deg around (200, 150){% endif %}</span>
+<span class="zlab t0619-l2" data-l="3">{% if include.lang == "fr" %}en haut à droite → à droite{% else %}up and right → right{% endif %}</span>
+<span class="zlab t0619-l1" data-l="4">{% if include.lang == "fr" %}scale:-1 : un demi-tour autour du centre{% else %}scale:-1: half a turn around the center{% endif %}</span>
+<span class="zlab t0619-l2" data-l="4">{% if include.lang == "fr" %}html : 45° + 180° = 225°{% else %}html: 45° + 180° = 225°{% endif %}</span>
+<span class="zlab t0619-l1" data-l="5">{% if include.lang == "fr" %}body : margin 37,5 % × 0 = 0{% else %}body: margin 37.5% × 0 = 0{% endif %}</span>
+<span class="zlab t0619-l2" data-l="5">{% if include.lang == "fr" %}0 × 0 en (200, 150), dans html : 225°{% else %}0 × 0 at (200, 150), inside html: 225°{% endif %}</span>
+<span class="zlab t0619-l1" data-l="6">{% if include.lang == "fr" %}scale:-1 de body : encore un demi-tour{% else %}body's scale:-1: one more half turn{% endif %}</span>
+<span class="zlab t0619-l2" data-l="6">{% if include.lang == "fr" %}225° + 180° = 405° = 45°{% else %}225° + 180° = 405° = 45°{% endif %}</span>
+</div>
+</div>
+<div class="legend"><span><i style="--c:var(--t0619-hw)"></i>{% if include.lang == "fr" %}ombre blanche de html{% else %}html's white shadow{% endif %}</span><span><i style="--c:var(--t0619-hd)"></i>{% if include.lang == "fr" %}ombre #444 de html{% else %}html's #444 shadow{% endif %}</span><span><i style="--c:var(--t0619-bw)"></i>{% if include.lang == "fr" %}ombre blanche de body{% else %}body's white shadow{% endif %}</span><span><i style="--c:var(--t0619-bd)"></i>{% if include.lang == "fr" %}ombre #444 de body{% else %}body's #444 shadow{% endif %}</span><span><i style="--c:currentColor;border-radius:50%"></i>{% if include.lang == "fr" %}html et body : 0 × 0{% else %}html and body: 0 × 0{% endif %}</span></div>
+</div>
+<div class="anim-side">
+<pre class="code" aria-hidden="true">&lt;style><span data-on="1">&amp;</span>{<span data-on="3">rotate:45deg</span>;<span data-on="1">background:#AF6A8A</span>}*{<span data-on="1 5">margin:37.5%50%</span>;<span data-on="4 6">scale:-1</span>;<span data-on="2 5" data-tone="2">box-shadow:64q -64q 0 32q#444,32q -32q 0 60px#fff</span></pre>
+<div class="now" aria-live="polite">
+<div class="caps">
+{%- if include.lang == "fr" %}
+<div class="cap" data-t="0" data-step="html"><h3>1. html, une boîte de 0 × 0 au centre</h3><p>Hors de toute règle, <code>&amp;</code> désigne la racine : html. Son fond couvre tout le canevas. <code>*</code> touche html, head, style et body ; head et style sont masqués. Une marge en % se calcule sur la largeur du parent, même en haut et en bas : 37,5 % × 400 = 150px et 50 % × 400 = 200px. html fait 400 − 400 = 0 de large. En mode quirks, il remplit la hauteur du canevas, donc il fait 300 − 300 = 0 de haut. html est un point, en (200, 150).</p></div>
+<div class="cap" data-t="5" data-step="Ombres"><h3>2. Deux ombres sur une boîte vide</h3><p>La boîte fait 0 × 0, donc une ombre n'est que son étalement : un carré de deux fois l'étalement. <code>32q -32q 0 60px</code> donne un carré blanc de 120 × 120, décalé de 30,24px vers la droite et le haut. <code>64q -64q 0 32q</code> donne un carré #444 de 60,47 × 60,47, décalé de 60,47px. La première ombre est peinte au-dessus : le carré #444 couvre le coin extérieur du blanc.</p></div>
+<div class="cap" data-t="10" data-step="rotate"><h3>3. rotate:45deg</h3><p>html tourne de 45° autour de sa boîte, au centre du canevas. Les deux carrés deviennent des losanges, et le coin en haut à droite pointe maintenant vers la droite.</p></div>
+<div class="cap" data-t="14" data-step="scale:-1"><h3>4. scale:-1 retourne html</h3><p><code>scale:-1</code> retourne html sur ses deux axes : c'est un demi-tour autour du centre. Les losanges passent à gauche. html est tourné de 45° + 180° = 225°.</p></div>
+<div class="cap" data-t="18" data-step="body"><h3>5. body, la même chose</h3><p>body a aussi la marge, scale:-1 et les ombres. Sa marge en % se calcule sur la largeur de html, 0 : elle vaut 0. body est donc aussi un point en (200, 150). Il est dans html, donc il tourne avec lui : ses ombres tombent d'abord pile sur celles de html.</p></div>
+<div class="cap" data-t="22" data-step="scale:-1 de body"><h3>6. Le scale:-1 de body</h3><p>Le <code>scale:-1</code> de body s'ajoute à celui de html : encore un demi-tour, 225° + 180° = 405°, soit 45°. Les ombres de body passent à droite. Les deux carrés blancs se chevauchent au milieu et forment le X.</p></div>
+<div class="cap" data-t="27" data-step="Résultat" data-live="117 caractères · 100 % identique"><h3>7. Résultat : 117 caractères</h3><p>Un X blanc entre deux blocs #444, sur fond mauve. Une seule liste d'ombres, sur deux boîtes vides placées au même point, à un demi-tour d'écart.</p></div>
+{%- else %}
+<div class="cap" data-t="0" data-step="html"><h3>1. html, a 0 × 0 box at the center</h3><p>Outside any rule, <code>&amp;</code> means the root: html. Its background goes to the whole canvas. <code>*</code> selects html, head, style and body; head and style are hidden. A margin in % is a share of the parent's width, even at the top and bottom: 37.5% × 400 = 150px and 50% × 400 = 200px. html is 400 − 400 = 0 wide. In quirks mode it fills the canvas height, so it is 300 − 300 = 0 tall. html is a point, at (200, 150).</p></div>
+<div class="cap" data-t="5" data-step="Shadows"><h3>2. Two shadows on an empty box</h3><p>The box is 0 × 0, so a shadow is only its spread: a square twice the spread. <code>32q -32q 0 60px</code> gives a 120 × 120 white square, moved 30.24px right and up. <code>64q -64q 0 32q</code> gives a 60.47 × 60.47 #444 square, moved 60.47px. The first shadow is painted on top: the #444 square covers the outer corner of the white one.</p></div>
+<div class="cap" data-t="10" data-step="rotate"><h3>3. rotate:45deg</h3><p>html turns 45° around its box, at the center of the canvas. The two squares become diamonds, and the top right corner now points to the right.</p></div>
+<div class="cap" data-t="14" data-step="scale:-1"><h3>4. scale:-1 flips html</h3><p><code>scale:-1</code> flips html on both axes: that is half a turn around the center. The diamonds move to the left. html is turned 45° + 180° = 225°.</p></div>
+<div class="cap" data-t="18" data-step="body"><h3>5. body, the same again</h3><p>body gets the margin, scale:-1 and the shadows too. Its % margin is a share of html's width, 0: it is 0. So body is a point at (200, 150) too. It is inside html, so it turns with it: at first its shadows fall right on html's.</p></div>
+<div class="cap" data-t="22" data-step="body's scale:-1"><h3>6. body's scale:-1</h3><p>body's <code>scale:-1</code> adds to html's: one more half turn, 225° + 180° = 405°, which is 45°. body's shadows move to the right. The two white squares overlap in the middle and make the X.</p></div>
+<div class="cap" data-t="27" data-step="Result" data-live="117 characters · 100% match"><h3>7. Result: 117 characters</h3><p>A white X between two #444 blocks, on a mauve background. One list of shadows, on two empty boxes at the same point, half a turn apart.</p></div>
+{%- endif %}
+</div>
+<div class="live"></div>
+</div>
+</div>
+<script>
+(window.AnimScenes = window.AnimScenes || {}).t0619 = (fig) => {
+  const fr = document.documentElement.lang === 'fr';
+  const $ = (s) => fig.querySelector(s);
+  const $$ = (s) => [...fig.querySelectorAll(s)];
+  const live = $('.live');
+  const ease = (x) => (x < 0.5 ? 4 * x * x * x : 1 - Math.pow(-2 * x + 2, 3) / 2);
+  const pr = (t, [a, b]) => ease(Math.min(1, Math.max(0, (t - a) / (b - a))));
+  const win = (t, a, b) => Math.min(pr(t, [a, a + 0.5]), 1 - pr(t, [b - 0.2, b]));
+  const c = fr ? ' :' : ':';
+  const mix = (k, a, b) => (k <= 0 ? b : k >= 1 ? a : `color-mix(in srgb, ${a} ${(k * 100).toFixed(1)}%, ${b})`);
+  // Measured on the official code in local Chrome (400 × 300 iframe, quirks mode, getBoundingClientRect, getComputedStyle):
+  // html 0 × 0 at (200, 150), margins 150px / 200px, rotate 45deg, scale -1; body 0 × 0 at (200, 150), margin 0, scale -1.
+  // Shadows (both): #444 60.4724px -60.4724px 0 30.2362px, then #fff 30.2362px -30.2362px 0 60px.
+  // The two frames are 0 × 0 boxes at (200, 150) with the same shadows (32q = 30.2362px), spreads grown from 0.
+  const FIN = 27;
+  const fh = $('.t0619-fh'), fb = $('.t0619-fb');
+  const Q = 30.2362;
+  const sh = (d, w, gd, gw) => `${d} ${2 * Q}px ${-2 * Q}px 0 ${Q * gd}px, ${w} ${Q}px ${-Q}px 0 ${60 * gw}px`;
+  const lines = $$('.t0619-ln'), pt = $('.t0619-pt');
+  const labs = $$('.zlab');
+  return (t, step) => {
+    const wide = fig.dataset.view === 'wide';
+    const teach = fig.dataset.teach === '1';
+    const tw = teach ? 1 - pr(t, [FIN, FIN + 0.8]) : 0;
+    const gw = pr(t, [5.3, 6.3]), gd = pr(t, [7, 8]);
+    const r = 45 * pr(t, [10.4, 11.8]);
+    const s = 1 - 2 * pr(t, [14.4, 16]);
+    fh.style.transform = `rotate(${r}deg) scale(${s})`;
+    const bo = pr(t, [18.6, 19.4]);
+    fb.style.opacity = bo;
+    const s2 = 1 - 2 * pr(t, [22.4, 24]);
+    fb.style.transform = `rotate(${r}deg) scale(${s * s2})`;
+    fh.style.boxShadow = sh(mix(tw, 'var(--t0619-hd)', '#444'), mix(tw, 'var(--t0619-hw)', '#fff'), gd, gw);
+    fb.style.boxShadow = sh(mix(tw, 'var(--t0619-bd)', '#444'), mix(tw, 'var(--t0619-bw)', '#fff'), gd, gw);
+    lines.forEach((l) => { l.style.opacity = win(t, 0.3, 5); });
+    pt.style.opacity = Math.min(pr(t, [0.3, 1]), 1 - pr(t, [FIN, FIN + 0.6]));
+    labs.forEach((l) => {
+      const n = +l.dataset.l, second = l.classList.contains('t0619-l2');
+      l.style.left = wide ? 'calc(-50px + 4px * var(--k, 1))' : 'calc(4px * var(--k, 1))';
+      l.style.top = `calc(${wide ? -40 : 0}px + ${second ? 20 : 4}px * var(--k, 1))`;
+      const ivs = [[0.3, 5], [5.3, 10], [10.3, 14], [14.3, 18], [18.3, 22], [22.3, FIN]];
+      l.style.opacity = win(t, ...ivs[n - 1]);
+    });
+    let txt;
+    if (step === 0) txt = `html${c} 0 × 0 ${fr ? 'en' : 'at'} (200, 150)`;
+    else if (step === 1) txt = fr ? 'blanc : 120 × 120 · #444 : 60,47 × 60,47' : 'white: 120 × 120 · #444: 60.47 × 60.47';
+    else if (step === 2) txt = `html${c} 45°`;
+    else if (step === 3) txt = `html${c} 45° + 180° = 225°`;
+    else if (step === 4) txt = `body${c} 0 × 0 ${fr ? 'en' : 'at'} (200, 150)`;
+    else if (step === 5) txt = `body${c} 225° + 180° = 45°`;
+    else txt = $$('.caps .cap')[6].dataset.live || '';
+    live.textContent = txt;
+  };
+};
+</script>
+</figure>
