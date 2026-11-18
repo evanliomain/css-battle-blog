@@ -1,0 +1,131 @@
+<figure class="anim t0519" data-duration="32" data-scene="t0519" data-wide="-50 -40 500 380" data-off-label="-46 -36" style="--bg:#efebdd">
+<style>
+.t0519{--t0519-light:#b29df7;--t0519-dark:#594f7c;--t0519-hb:#6366f1;--t0519-bb:#14b8a6;--t0519-bd:#ec4899;--t0519-bo:#f59e0b}
+.t0519 .scene .t0519-white{left:-60px;top:-50px;width:520px;height:400px;background:#fff;z-index:0}
+.t0519 .scene .t0519-html{left:70px;top:45px;width:260px;height:210px;opacity:0;z-index:1}
+.t0519 .scene .t0519-bbox{left:140px;top:90px;width:120px;height:120px;opacity:0;z-index:2}
+.t0519 .scene .t0519-d{width:80px;height:80px;clip-path:polygon(0 0,80px 0,80px 42px,42px 42px,42px 80px,0 80px);opacity:0;z-index:3}
+.t0519 .scene .t0519-ghost{left:140px;top:90px;width:160px;height:160px;opacity:0;z-index:4}
+.t0519 .scene .t0519-ghost > i{position:absolute;width:80px;height:80px;box-sizing:border-box;outline:calc(1.5px * var(--k, 1)) dashed #14142a;outline-offset:calc(-0.75px * var(--k, 1))}
+.t0519 .scene .t0519-sweep{left:140px;top:90px;width:80px;height:80px;opacity:0;z-index:5}
+.t0519 .scene .t0519-tiles{left:140px;top:90px;width:120px;height:120px;opacity:0;z-index:6}
+.t0519 .scene .t0519-box{box-sizing:border-box;outline:calc(1.5px * var(--k, 1)) dashed #fff;outline-offset:calc(-0.75px * var(--k, 1));filter:drop-shadow(0 0 calc(1px * var(--k, 1)) #14142a);opacity:0;z-index:10}
+.t0519 .scene .zlab{left:4px;top:4px;color:#14142a;background:rgb(255 255 255 / .92);box-shadow:0 0 0 1px rgb(20 20 42 / .25);padding:1px 5px;border-radius:3px;opacity:0}
+.t0519 .legend .t0519-ol{box-shadow:0 0 0 1px currentColor}
+.t0519 .legend .t0519-dash{background:none;outline:2px dashed currentColor;outline-offset:-2px}
+</style>
+<div class="anim-col">
+<div class="stage" role="img" aria-label="{% if include.lang == "fr" %}Animation : le style va dans head. Le fond #8602 de html, un jaune foncé à 13 % d'opacité, passe au canevas : crème #efebdd sur le blanc. html et body ont la même marge 45 70 : en mode quirks, html fait 260 × 210 en (70, 45), et body 120 × 120 en (140, 90). Le fond de body est un dégradé conique : violet clair #b29df7 jusqu'à 75 %, violet foncé #594f7c dans le dernier quart, en haut à gauche. Il se répète en tuiles de 80 × 80 : body a quatre coins foncés de 40 × 40. Son outline en tirets de 40px va de (100, 50) à (300, 250) : sur chaque côté, un tiret de 80px à chaque coin et un espace de 40px au milieu. Chaque coin forme un carré de 80px avec un quart foncé.{% else %}Animation: the style goes into head. html's #8602 background, a dark yellow at 13% opacity, goes to the canvas: cream #efebdd over white. html and body get the same margin 45 70: in quirks mode html is 260 × 210 at (70, 45), and body 120 × 120 at (140, 90). body's background is a conic gradient: light purple #b29df7 up to 75%, dark purple #594f7c in the last quarter, at the top left. It repeats in 80 × 80 tiles: body gets four 40 × 40 dark corners. Its 40px dashed outline runs from (100, 50) to (300, 250): on each side, an 80px dash at each corner and a 40px gap in the middle. Each corner makes an 80px square with a dark quarter.{% endif %}">
+<div class="scene">
+<div class="t0519-white"></div>
+<div class="t0519-html"></div>
+<div class="t0519-bbox"></div>
+<div class="t0519-d" style="left:100px;top:50px"></div>
+<div class="t0519-d" style="left:220px;top:50px;transform:scale(-1,1)"></div>
+<div class="t0519-d" style="left:100px;top:170px;transform:scale(1,-1)"></div>
+<div class="t0519-d" style="left:220px;top:170px;transform:scale(-1,-1)"></div>
+<div class="t0519-ghost"><i style="left:0;top:0"></i><i style="left:80px;top:0"></i><i style="left:0;top:80px"></i><i style="left:80px;top:80px"></i></div>
+<div class="t0519-sweep"></div>
+<div class="t0519-tiles"></div>
+<div class="t0519-box t0519-xhtml" style="left:70px;top:45px;width:260px;height:210px"></div>
+<div class="t0519-box t0519-xbody" style="left:140px;top:90px;width:120px;height:120px"></div>
+<span class="zlab" data-l="1">html › head › style, body</span>
+<span class="zlab" data-l="2">{% if include.lang == "fr" %}fond de html → canevas #efebdd{% else %}html's background → canvas #efebdd{% endif %}</span>
+<span class="zlab" data-l="3">html 260 × 210 · body 120 × 120</span>
+<span class="zlab" data-l="4">{% if include.lang == "fr" %}0 → 270° clair · 270° → 360° foncé{% else %}0 → 270° light · 270° → 360° dark{% endif %}</span>
+<span class="zlab" data-l="5">{% if include.lang == "fr" %}tuiles 80 × 80 · coupées à 120{% else %}80 × 80 tiles · cut at 120{% endif %}</span>
+<span class="zlab" data-l="6">{% if include.lang == "fr" %}5ch = 40px · tiret 80 · espace 40{% else %}5ch = 40px · dash 80 · gap 40{% endif %}</span>
+</div>
+</div>
+<div class="legend"><span><i class="t0519-ol" style="--c:#efebdd"></i>{% if include.lang == "fr" %}#efebdd, le canevas{% else %}#efebdd, the canvas{% endif %}</span><span><i class="t0519-ol" style="--c:#b29df7"></i>#b29df7</span><span><i class="t0519-ol" style="--c:#594f7c"></i>#594f7c</span><span><i style="--c:var(--t0519-hb)"></i>{% if include.lang == "fr" %}boîte de html{% else %}html's box{% endif %}</span><span><i style="--c:var(--t0519-bb)"></i>{% if include.lang == "fr" %}body, partie claire{% else %}body, light part{% endif %}</span><span><i style="--c:var(--t0519-bd)"></i>{% if include.lang == "fr" %}body, quart foncé{% else %}body, dark quarter{% endif %}</span><span><i style="--c:var(--t0519-bo)"></i>{% if include.lang == "fr" %}outline de body{% else %}body's outline{% endif %}</span><span><i class="t0519-dash"></i>{% if include.lang == "fr" %}boîtes{% else %}boxes{% endif %}</span></div>
+</div>
+<div class="anim-side">
+<pre class="code" aria-hidden="true">&lt;style><span data-on="1">*{</span><span data-on="2">background:#8602</span>;<span data-on="3">margin:45 70</span>;<span data-on="1">*{</span><span data-on="4">background:conic-gradient(#B29DF7 75%,#594F7C 0)</span><span data-on="5">0 0/5pc 5pc</span>;<span data-on="6">outline:dashed 5ch#B29DF7</span></pre>
+<div class="now" aria-live="polite">
+<div class="caps">
+{%- if include.lang == "fr" %}
+<div class="cap" data-t="0" data-step="Éléments"><h3>1. html, head, style, body</h3><p>Le <code>&lt;style></code> va dans head, et body reste vide. <code>*</code> vise html, head, style et body. Le <code>*{</code> imbriqué vise les éléments placés dans un autre : head, style et body. head et style ne s'affichent pas : il reste deux boîtes, html et body.</p></div>
+<div class="cap" data-t="4" data-step="Canevas"><h3>2. Un canevas crème</h3><p>html et body reçoivent <code>background:#8602</code> : le jaune foncé #886600 à 13,3 % d'opacité. Celui de html passe au canevas. Posé sur le blanc de la page, il donne un crème, #efebdd. Celui de body sera remplacé par la règle imbriquée.</p></div>
+<div class="cap" data-t="8" data-step="Marges"><h3>3. Une marge, deux boîtes</h3><p>html et body reçoivent tous les deux <code>margin:45 70</code>. En mode quirks, html remplit la page moins ses marges : 400 − 140 = 260 sur 300 − 90 = 210, en (70, 45). body fait de même dans html : 260 − 140 = 120 sur 210 − 90 = 120, en (140, 90). Un carré de 120px, centré.</p></div>
+<div class="cap" data-t="13" data-step="Dégradé"><h3>4. Un dégradé conique</h3><p>La règle imbriquée remplace le fond de body par <code>conic-gradient(#B29DF7 75%,#594F7C 0)</code>. Il tourne dans le sens horaire depuis midi. Violet clair jusqu'à 75 %, soit 270°. L'arrêt <code>0</code> est ramené à 75 % : le violet foncé commence là, sans fondu, et remplit le dernier quart, en haut à gauche.</p></div>
+<div class="cap" data-t="18" data-step="Tuiles"><h3>5. Des tuiles de 80px</h3><p><code>0 0/5pc 5pc</code> cale le dégradé dans le coin de body et lui donne 80 × 80 (1pc = 16px). Il se répète. Chaque tuile a son quart foncé de 40 × 40 en haut à gauche. body fait 120 de côté : la deuxième colonne de tuiles commence en x = 220, et seuls ses 40 premiers pixels se voient. Pareil pour les rangées. body a quatre coins foncés.</p></div>
+<div class="cap" data-t="23" data-step="Outline"><h3>6. Un outline en tirets</h3><p>La règle imbriquée donne aussi à body <code>outline:dashed 5ch#B29DF7</code>. En Times de 16px, 1ch vaut 8px : l'outline fait 40px d'épaisseur, de (100, 50) à (300, 250). Chaque côté fait 200px. Chrome dessine des tirets de 80px, deux fois l'épaisseur : un tiret à chaque coin, un espace de 40px au milieu. 80 + 40 + 80 = 200.</p></div>
+<div class="cap" data-t="28" data-step="Résultat" data-live="126 caractères · 100 % identique"><h3>7. Résultat : 126 caractères</h3><p>À chaque coin, l'outline forme un L clair, et le coin foncé de body le complète : un carré de 80px avec un quart foncé. On croit voir quatre carrés posés sur un cinquième, avec des chevauchements foncés. Les espaces du milieu laissent voir le crème.</p></div>
+{%- else %}
+<div class="cap" data-t="0" data-step="Elements"><h3>1. html, head, style, body</h3><p>The <code>&lt;style></code> goes into head, and body stays empty. <code>*</code> matches html, head, style and body. The nested <code>*{</code> matches the elements inside another one: head, style and body. head and style are not displayed: two boxes are left, html and body.</p></div>
+<div class="cap" data-t="4" data-step="Canvas"><h3>2. A cream canvas</h3><p>html and body get <code>background:#8602</code>: the dark yellow #886600 at 13.3% opacity. html's goes to the canvas. Over the white page, it gives a cream, #efebdd. body's will be replaced by the nested rule.</p></div>
+<div class="cap" data-t="8" data-step="Margins"><h3>3. One margin, two boxes</h3><p>html and body both get <code>margin:45 70</code>. In quirks mode, html fills the page minus its margins: 400 − 140 = 260 by 300 − 90 = 210, at (70, 45). body does the same inside html: 260 − 140 = 120 by 210 − 90 = 120, at (140, 90). A 120px square, centered.</p></div>
+<div class="cap" data-t="13" data-step="Gradient"><h3>4. A conic gradient</h3><p>The nested rule replaces body's background with <code>conic-gradient(#B29DF7 75%,#594F7C 0)</code>. It turns clockwise from 12 o'clock. Light purple up to 75%, that is 270°. The <code>0</code> stop is raised to 75%: the dark purple starts right there, with a hard edge, and fills the last quarter, at the top left.</p></div>
+<div class="cap" data-t="18" data-step="Tiles"><h3>5. 80px tiles</h3><p><code>0 0/5pc 5pc</code> puts the gradient in body's corner and makes it 80 × 80 (1pc = 16px). It repeats. Each tile has its 40 × 40 dark quarter at its top left. body is 120 wide: the second column of tiles starts at x = 220, and only its first 40 pixels show. Same for the rows. body gets four dark corners.</p></div>
+<div class="cap" data-t="23" data-step="Outline"><h3>6. A dashed outline</h3><p>The nested rule also gives body <code>outline:dashed 5ch#B29DF7</code>. In 16px Times, 1ch is 8px: the outline is 40px thick, from (100, 50) to (300, 250). Each side is 200px long. Chrome draws 80px dashes, twice the width: a dash at each corner, a 40px gap in the middle. 80 + 40 + 80 = 200.</p></div>
+<div class="cap" data-t="28" data-step="Result" data-live="126 characters · 100% match"><h3>7. Result: 126 characters</h3><p>At each corner, the outline makes a light L, and body's dark corner completes it: an 80px square with a dark quarter. It looks like four squares over a fifth one, with dark overlaps. The middle gaps let the cream through.</p></div>
+{%- endif %}
+</div>
+<div class="live"></div>
+</div>
+</div>
+<script>
+(window.AnimScenes = window.AnimScenes || {}).t0519 = (fig) => {
+  const fr = document.documentElement.lang === 'fr';
+  const $ = (s) => fig.querySelector(s);
+  const $$ = (s) => [...fig.querySelectorAll(s)];
+  const live = $('.live');
+  const ease = (x) => (x < 0.5 ? 4 * x * x * x : 1 - Math.pow(-2 * x + 2, 3) / 2);
+  const pr = (t, a, b) => ease(Math.min(1, Math.max(0, (t - a) / (b - a))));
+  const lin = (t, a, b) => Math.min(1, Math.max(0, (t - a) / (b - a)));
+  const win = (t, a, b) => Math.min(pr(t, a, a + 0.5), 1 - pr(t, b - 0.3, b));
+  const c = fr ? '\u00a0:' : ':';
+  const n = (x) => (fr ? String(x).replace('.', ',') : String(x));
+  const mix = (k, a, b) => (k <= 0 ? b : k >= 1 ? a : `color-mix(in srgb, ${a} ${(k * 100).toFixed(1)}%, ${b})`);
+  // Measured on the official code in local Chrome (400 × 300 iframe, quirks mode, getBoundingClientRect, getComputedStyle, variant renders).
+  // Canvas #efebdd (#8602 over white). html 70, 45, 260 × 210; body 140, 90, 120 × 120.
+  // body: conic-gradient(#b29df7 75%, #594f7c 0) 0 0 / 80px 80px -> dark 140..180 and 220..260 × 90..130 and 170..210.
+  // Outline 5ch = 40px (1ch = 8px), outer box 100..300 × 50..250; each side: dash 80, gap 40, dash 80 (with solid, 6,400 pixels change).
+  const white = $('.t0519-white'), html = $('.t0519-html'), bbox = $('.t0519-bbox');
+  const dashes = $$('.t0519-d'), ghost = $('.t0519-ghost'), sweep = $('.t0519-sweep'), tiles = $('.t0519-tiles');
+  const xhtml = $('.t0519-xhtml'), xbody = $('.t0519-xbody');
+  const labs = $$('.zlab');
+  const ivs = [[0.3, 3.8], [4.3, 7.8], [8.3, 12.8], [13.3, 17.8], [18.3, 22.8], [23.3, 27.8]];
+  return (t, step) => {
+    const teach = fig.dataset.teach === '1';
+    const tw = teach ? 1 - pr(t, 28.2, 29.2) : 0;
+    const L = mix(tw, 'var(--t0519-bb)', 'var(--t0519-light)');
+    const D = mix(tw, 'var(--t0519-bd)', 'var(--t0519-dark)');
+    // step 2: html's background goes to the canvas
+    white.style.opacity = 1 - pr(t, 4.5, 6);
+    // step 3: html's and body's boxes (only tinted in teaching colors)
+    html.style.opacity = pr(t, 8.5, 9.5) * tw;
+    html.style.background = 'color-mix(in srgb, var(--t0519-hb) 30%, transparent)';
+    bbox.style.opacity = pr(t, 9.5, 10.5) * tw * (1 - pr(t, 18.3, 19.3));
+    bbox.style.background = 'color-mix(in srgb, var(--t0519-bb) 22%, transparent)';
+    xhtml.style.opacity = win(t, 8.3, 12.8);
+    xbody.style.opacity = Math.max(win(t, 9.3, 12.8), win(t, 13.3, 17.8));
+    // step 4: one conic tile, swept clockwise from 12 o'clock
+    const a = 360 * lin(t, 13.6, 16.6), la = Math.min(a, 270);
+    sweep.style.background = `conic-gradient(${L} 0deg ${la}deg, ${D} ${la}deg ${a}deg, transparent ${a}deg)`;
+    const to = pr(t, 18.3, 19.3);
+    sweep.style.opacity = t < 13.3 || to >= 1 ? 0 : 1;
+    // step 5: the tiles repeat every 80px; body's box cuts them at 120
+    const grad = `conic-gradient(${L} 75%, ${D} 0) 0 0 / 80px 80px`;
+    tiles.style.background = grad;
+    tiles.style.opacity = to;
+    ghost.style.background = grad;
+    ghost.style.opacity = 0.4 * win(t, 18.3, 22.8);
+    // step 6: the dashed outline, one L per corner (a corner dash of each side; each L runs 2px under body, which hides it: no seam at body's edge)
+    const O = mix(tw, 'var(--t0519-bo)', 'var(--t0519-light)');
+    const dop = pr(t, 23.5, 24.5);
+    dashes.forEach((d) => { d.style.opacity = dop; d.style.background = O; });
+    labs.forEach((l) => { l.style.opacity = win(t, ...ivs[+l.dataset.l - 1]); });
+    let txt;
+    if (step === 0) txt = '* → html, head, style, body · * * → head, style, body';
+    else if (step === 1) txt = `#8602 = rgb(136 102 0 / ${n(0.133)}) → #efebdd`;
+    else if (step === 2) txt = `html${c} 260 × 210 · body${c} 260 − 140 = 120 · 210 − 90 = 120`;
+    else if (step === 3) txt = fr ? '75\u00a0% × 360° = 270°' : '75% × 360° = 270°';
+    else if (step === 4) txt = `5pc = 80px · 120 = 80 + 40`;
+    else if (step === 5) txt = `5ch = 5 × 8 = 40px · 80 + 40 + 80 = 200`;
+    else txt = $$('.caps .cap')[6].dataset.live || '';
+    live.textContent = txt;
+  };
+};
+</script>
+</figure>
