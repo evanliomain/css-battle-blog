@@ -1,0 +1,140 @@
+<figure class="anim t0523" data-duration="41" data-scene="t0523" data-wide="-112 -386 624 1072" style="--bg:#060f55">
+<style>
+.t0523{--t0523-navy:#060f55;--t0523-blue:#3157b4;--t0523-green:#84be8d;--t0523-s1:#14b8a6;--t0523-s2:#8b5cf6;--t0523-s3:#ec4899;--t0523-bb:#f59e0b;--t0523-box:#14142a}
+.t0523 .scene .t0523-white{left:-130px;top:-400px;width:660px;height:1100px;background:#fff;z-index:0}
+.t0523 .scene .t0523-html{left:90px;top:36px;width:120px;height:120px;z-index:2}
+.t0523 .scene .t0523-u{z-index:2;opacity:0}
+.t0523 .scene .t0523-body{left:190px;top:144px;width:120px;height:120px;z-index:3;font:16px Times,serif;color:var(--t0523-blue)}
+.t0523 .scene .t0523-box{box-sizing:border-box;outline:calc(1.5px * var(--k, 1)) dashed var(--t0523-box);outline-offset:calc(-0.75px * var(--k, 1));filter:drop-shadow(0 0 calc(1px * var(--k, 1)) #fff);opacity:0;z-index:9}
+.t0523 .scene .t0523-pt{width:calc(7px * var(--k, 1));height:calc(7px * var(--k, 1));transform:translate(-50%, -50%);border-radius:50%;background:var(--t0523-box);box-shadow:0 0 0 calc(1.5px * var(--k, 1)) #fff;opacity:0;z-index:10}
+.t0523 .scene .zlab{color:#14142a;background:rgb(255 255 255 / .92);box-shadow:0 0 0 1px rgb(20 20 42 / .25);padding:1px 5px;border-radius:3px;opacity:0}
+.t0523 .legend .t0523-ol{box-shadow:0 0 0 1px currentColor}
+.t0523 .legend .t0523-dash{background:none;outline:2px dashed currentColor;outline-offset:-2px}
+</style>
+<div class="anim-col">
+<div class="stage" role="img" aria-label="{% if include.lang == "fr" %}Animation : html a les marges 36 190 144 90 ; en mode quirks il fait 120 × 120 en (90, 36). body a les marges 108 −100 −108 100 : 120 × 120 en (190, 144). Le fond #060F55 de html passe au canevas, qui devient bleu marine partout. Trois ombres en #3157B4 et #84BE8D : une copie 90px à gauche, une ombre élargie de 192px et remontée de 220,16px qui couvre le haut jusqu'en y = 127,84, et une ombre intérieure verte décalée de (80 ; 84,09) qui laisse un coin libre. body reçoit les mêmes ombres, puis scale:-1 le retourne d'un demi-tour autour de (250, 204) : son ombre élargie couvre le bas à partir de y = 172,16. Entre les deux, le canevas bleu marine reste visible : une bande en escalier.{% else %}Animation: html has the margins 36 190 144 90; in quirks mode it is 120 × 120 at (90, 36). body has the margins 108 −100 −108 100: 120 × 120 at (190, 144). html's #060F55 background goes to the canvas, which turns navy everywhere. Three shadows in #3157B4 and #84BE8D: a copy 90px to the left, a shadow spread by 192px and moved up 220.16px that covers the top down to y = 127.84, and a green inset shadow moved by (80, 84.09) that leaves one corner free. body gets the same shadows, then scale:-1 flips it a half turn around (250, 204): its spread shadow covers the bottom from y = 172.16. Between them, the navy canvas still shows: a stepped band.{% endif %}">
+<div class="scene">
+<div class="t0523-white"></div>
+<div class="t0523-html"></div>
+<div class="t0523-u" style="left:188px;top:181.5px;width:124px;height:84.5px"></div>
+<div class="t0523-u" style="left:231.5px;top:145.5px;width:80.5px;height:120.5px"></div>
+<div class="t0523-body"><span class="t0523-dot">.</span></div>
+<div class="t0523-box t0523-g"></div>
+<div class="t0523-box t0523-hbox" style="left:90px;top:36px;width:120px;height:120px"></div>
+<div class="t0523-box t0523-bbox" style="left:190px;top:144px;width:120px;height:120px"></div>
+<div class="t0523-pt t0523-bc" style="left:250px;top:204px"></div>
+<span class="zlab" data-l="1">html 120 × 120 · body 120 × 120</span>
+<span class="zlab" data-l="2">{% if include.lang == "fr" %}fond de html → canevas{% else %}html's background → canvas{% endif %}</span>
+<span class="zlab" data-l="3">-5lh 0 = -90px 0</span>
+<span class="zlab" data-l="4">{% if include.lang == "fr" %}étalement 2in = 192px · -233q = -220,16px{% else %}spread 2in = 192px · -233q = -220.16px{% endif %}</span>
+<span class="zlab" data-l="5">inset 5pc 89q = 80px 84.09px</span>
+<span class="zlab" data-l="6">{% if include.lang == "fr" %}body : les mêmes ombres{% else %}body: the same shadows{% endif %}</span>
+<span class="zlab" data-l="7">{% if include.lang == "fr" %}scale:-1 : demi-tour autour de (250, 204){% else %}scale:-1: half turn around (250, 204){% endif %}</span>
+</div>
+</div>
+<div class="legend"><span><i class="t0523-ol" style="--c:#060f55"></i>{% if include.lang == "fr" %}#060F55, le canevas{% else %}#060F55, the canvas{% endif %}</span><span><i class="t0523-ol" style="--c:#3157b4"></i>3157B4</span><span><i class="t0523-ol" style="--c:#84be8d"></i>#84BE8D</span><span><i style="--c:var(--t0523-s1)"></i>{% if include.lang == "fr" %}ombre -5lh 0{% else %}-5lh 0 shadow{% endif %}</span><span><i style="--c:var(--t0523-s2)"></i>{% if include.lang == "fr" %}ombre élargie{% else %}spread shadow{% endif %}</span><span><i style="--c:var(--t0523-s3)"></i>{% if include.lang == "fr" %}ombre intérieure{% else %}inset shadow{% endif %}</span><span><i style="--c:var(--t0523-bb)"></i>{% if include.lang == "fr" %}fond de body{% else %}body's background{% endif %}</span><span><i class="t0523-dash"></i>{% if include.lang == "fr" %}boîtes{% else %}boxes{% endif %}</span></div>
+</div>
+<div class="anim-side">
+<pre class="code" aria-hidden="true"><span data-on="1" data-tone="2">.</span>&lt;style>*{<span data-on="2">background:#060F55</span>;<span data-on="2 3 4" data-tone="2">color:3157B4</span>;box-shadow:<span data-on="3 6">-5LH 0</span>,<span data-on="4 6">0-233Q 0 2IN</span>,<span data-on="5 6">inset 5PC 89Q#84BE8D</span>;<span data-on="1">margin:36 190 36%90</span>;<span data-on="6">*{</span><span data-on="1" data-tone="2">margin:108-100-90%100</span>;<span data-on="7">scale:-1</span></pre>
+<div class="now" aria-live="polite">
+<div class="caps">
+{%- if include.lang == "fr" %}
+<div class="cap" data-t="0" data-step="Boîtes"><h3>1. Deux boîtes de 120 × 120</h3><p>Le point du début est du texte : il ouvre body, et le style va dans body. html a les marges 36, 190, 36 % de 400 = 144 et 90 : 400 − 280 = 120 de large en x = 90. En mode quirks, html remplit la hauteur de la page moins ses marges : 300 − 180 = 120. body a les marges 108, −100, −90 % de 120 = −108 et 100 : 120 × 120 en (190, 144).</p></div>
+<div class="cap" data-t="5.5" data-step="Fond"><h3>2. Un canevas bleu marine</h3><p>Tous les éléments reçoivent <code>background:#060F55</code>. Celui de html passe au canevas : tout devient bleu marine. Celui de body peint sa boîte. <code>color:3157B4</code> n'a pas de dièse : le mode quirks l'accepte quand même. Les ombres sans couleur prendront ce bleu.</p></div>
+<div class="cap" data-t="10" data-step="Ombre 1"><h3>3. Une copie à gauche</h3><p><code>-5LH 0</code> : 1lh fait 18px ici, donc l'ombre est une copie de html 90px plus à gauche, de x = 0 à 120. Une ombre extérieure ne se peint pas sous sa boîte : il en reste la bande de x = 0 à 90, de y = 36 à 156.</p></div>
+<div class="cap" data-t="15" data-step="Ombre 2"><h3>4. Une ombre géante</h3><p><code>0-233Q 0 2IN</code> : flou 0, étalement 2in = 192px. L'ombre fait 120 + 384 = 504 de côté, de x = −102 à 402. −233q = −220,16px la remonte : elle couvre tout le haut, jusqu'en y = 127,84. Sous html, elle ne se voit pas.</p></div>
+<div class="cap" data-t="21" data-step="Ombre 3"><h3>5. Le vert, moins un coin</h3><p><code>inset 5PC 89Q#84BE8D</code> : une ombre intérieure verte, décalée de 5pc = 80px et 89q = 84,09px. Elle remplit la boîte, sauf là où la boîte décalée la recouvre encore : le coin de x = 170 à 210 et de y = 120,09 à 156 reste bleu marine.</p></div>
+<div class="cap" data-t="26.5" data-step="Copie"><h3>6. body : le même dessin</h3><p>body reçoit les mêmes ombres. Avant le retournement, sa copie va à gauche et son ombre géante monte jusqu'en y = 235,84 : elle couvrirait presque tout (ici en transparence). Son coin libre est en bas à droite.</p></div>
+<div class="cap" data-t="31.5" data-step="Demi-tour"><h3>7. Un demi-tour</h3><p>Le <code>*{</code> imbriqué donne <code>scale:-1</code> à body : une symétrie par rapport à son centre (250, 204), comme un demi-tour. La copie passe à droite, de x = 310 à 400. L'ombre géante descend : elle couvre le bas à partir de y = 408 − 235,84 = 172,16. Le coin libre passe en haut à gauche.</p></div>
+<div class="cap" data-t="36.5" data-step="Résultat" data-live="146 caractères · 100 % identique"><h3>8. Résultat : 146 caractères</h3><p>Deux ombres géantes couvrent le haut et le bas. Entre y = 127,84 et 172,16, le canevas reste visible : une bande bleu marine. Les copies sur les côtés et les coins libres des carrés verts lui donnent son escalier.</p></div>
+{%- else %}
+<div class="cap" data-t="0" data-step="Boxes"><h3>1. Two 120 × 120 boxes</h3><p>The leading dot is text: it opens body, and the style goes into body. html has the margins 36, 190, 36% of 400 = 144 and 90: 400 − 280 = 120 wide at x = 90. In quirks mode, html fills the page height minus its margins: 300 − 180 = 120. body has the margins 108, −100, −90% of 120 = −108 and 100: 120 × 120 at (190, 144).</p></div>
+<div class="cap" data-t="5.5" data-step="Background"><h3>2. A navy canvas</h3><p>Every element gets <code>background:#060F55</code>. html's goes to the canvas: everything turns navy. body's paints its box. <code>color:3157B4</code> has no hash: quirks mode accepts it anyway. Shadows with no color will take this blue.</p></div>
+<div class="cap" data-t="10" data-step="Shadow 1"><h3>3. A copy on the left</h3><p><code>-5LH 0</code>: 1lh is 18px here, so the shadow is a copy of html 90px to the left, from x = 0 to 120. An outer shadow is not painted under its box: what is left is the strip from x = 0 to 90, from y = 36 to 156.</p></div>
+<div class="cap" data-t="15" data-step="Shadow 2"><h3>4. A giant shadow</h3><p><code>0-233Q 0 2IN</code>: blur 0, spread 2in = 192px. The shadow is 120 + 384 = 504 wide, from x = −102 to 402. −233q = −220.16px moves it up: it covers the whole top, down to y = 127.84. Under html, it doesn't show.</p></div>
+<div class="cap" data-t="21" data-step="Shadow 3"><h3>5. Green, minus a corner</h3><p><code>inset 5PC 89Q#84BE8D</code>: a green inset shadow, moved by 5pc = 80px and 89q = 84.09px. It fills the box, except where the moved box still covers it: the corner from x = 170 to 210 and from y = 120.09 to 156 stays navy.</p></div>
+<div class="cap" data-t="26.5" data-step="Copy"><h3>6. body: the same drawing</h3><p>body gets the same shadows. Before the flip, its copy goes to the left and its giant shadow reaches up to y = 235.84: it would cover almost everything (see-through here). Its free corner is at the bottom right.</p></div>
+<div class="cap" data-t="31.5" data-step="Half turn"><h3>7. A half turn</h3><p>The nested <code>*{</code> gives body <code>scale:-1</code>: a point reflection through its center (250, 204), like a half turn. The copy moves to the right, from x = 310 to 400. The giant shadow goes down: it covers the bottom from y = 408 − 235.84 = 172.16. The free corner moves to the top left.</p></div>
+<div class="cap" data-t="36.5" data-step="Result" data-live="146 characters · 100% match"><h3>8. Result: 146 characters</h3><p>Two giant shadows cover the top and the bottom. Between y = 127.84 and 172.16, the canvas still shows: a navy band. The copies on the sides and the free corners of the green squares give it its steps.</p></div>
+{%- endif %}
+</div>
+<div class="live"></div>
+</div>
+</div>
+<script>
+(window.AnimScenes = window.AnimScenes || {}).t0523 = (fig) => {
+  const fr = document.documentElement.lang === 'fr';
+  const $ = (s) => fig.querySelector(s);
+  const $$ = (s) => [...fig.querySelectorAll(s)];
+  const live = $('.live');
+  const ease = (x) => (x < 0.5 ? 4 * x * x * x : 1 - Math.pow(-2 * x + 2, 3) / 2);
+  const pr = (t, a, b) => ease(Math.min(1, Math.max(0, (t - a) / (b - a))));
+  const win = (t, a, b) => Math.min(pr(t, a, a + 0.5), 1 - pr(t, b - 0.3, b));
+  const c = fr ? ' :' : ':';
+  const n = (s) => (fr ? s.replace(/(\d)\.(\d)/g, '$1,$2') : s);
+  const mix = (k, a, b) => (k <= 0 ? b : k >= 1 ? a : `color-mix(in srgb, ${a} ${(k * 100).toFixed(1)}%, ${b})`);
+  const fade = (k, a) => (k >= 1 ? a : `color-mix(in srgb, ${a} ${(k * 100).toFixed(1)}%, transparent)`);
+  // Measured on the official code in local Chrome (400 × 300 iframe, quirks mode, getBoundingClientRect, getComputedStyle, variant renders).
+  // html 90, 36, 120 × 120 (margin 36 190 144 90); body 190, 144, 120 × 120 (margin 108 -100 -108 100), scale -1.
+  // box-shadow: -90px 0 #3157b4, 0 -220.157px 0 192px #3157b4, inset 80px 84.0945px #84be8d (1lh = 18px, 1q = 0.945px).
+  // The canvas takes html's #060f55; body paints its own #060f55. The '.' is body's text, in #3157b4.
+  const Y = 220.157, IY = 84.0945;
+  const white = $('.t0523-white'), html = $('.t0523-html'), body = $('.t0523-body'), dot = $('.t0523-dot');
+  const g = $('.t0523-g'), hbox = $('.t0523-hbox'), bbox = $('.t0523-bbox'), bc = $('.t0523-bc');
+  const labs = $$('.zlab'), unders = $$('.t0523-u');
+  const ivs = [[0.3, 5.3], [5.8, 9.8], [10.3, 14.8], [15.3, 20.8], [21.3, 26.3], [26.8, 31.3], [31.8, 36.3]];
+  const sh = (a1, sp, m, a3, c1, c2, c3) => [
+    `${(-90 * a1).toFixed(3)}px 0 0 0 ${c1}`,
+    `0 ${(-Y * m).toFixed(3)}px 0 ${(192 * sp).toFixed(3)}px ${c2}`,
+    `inset ${(80 * a3).toFixed(3)}px ${(IY * a3).toFixed(3)}px 0 0 ${c3}`,
+  ].join(',');
+  const box = (x, y, w, h) => { g.style.left = `${x}px`; g.style.top = `${y}px`; g.style.width = `${w}px`; g.style.height = `${h}px`; };
+  return (t, step) => {
+    const teach = fig.dataset.teach === '1';
+    const wide = fig.dataset.view === 'wide';
+    const tw = teach ? 1 - pr(t, 36.7, 37.7) : 0;
+    const c1 = mix(tw, 'var(--t0523-s1)', 'var(--t0523-blue)');
+    const c2 = mix(tw, 'var(--t0523-s2)', 'var(--t0523-blue)');
+    const c3 = mix(tw, 'var(--t0523-s3)', 'var(--t0523-green)');
+    // step 2: html's background goes to the canvas, body paints its box
+    const nb = pr(t, 6, 7.5);
+    white.style.opacity = 1 - nb;
+    // body's own #060f55 lies on the #060f55 canvas: drawn transparent in real colors (same picture, no dark seam at its scaled edges)
+    body.style.background = fade(nb * tw, 'var(--t0523-bb)');
+    dot.style.color = nb > 0.5 ? 'var(--t0523-blue)' : '#000';
+    // html's three shadows
+    const a1 = pr(t, 10.5, 12.5), sp = pr(t, 15.5, 17.5), m = pr(t, 18, 20), a3 = pr(t, 21.5, 23.5);
+    html.style.boxShadow = sh(a1, sp, m, a3, c1, c2, c3);
+    // body: the same shadows, see-through until the half turn
+    const b = pr(t, 27, 29), al = 0.55 + 0.45 * pr(t, 32.5, 35.5);
+    body.style.boxShadow = sh(b, b, b, b, fade(al, c1), fade(al, c2), fade(al, c3));
+    body.style.transform = `rotate(${(180 * pr(t, 32, 35)).toFixed(3)}deg)`;
+    // once flipped: green under body's green L, 2px past its outer edges (hidden by the blue shadows), so no dark seam where green meets blue at scaled sizes
+    unders.forEach((u) => { u.style.background = c3; u.style.opacity = t >= 35.5 ? 1 : 0; });
+    // dashed boxes: html, body, and the box each shadow is cut from
+    hbox.style.opacity = Math.max(win(t, 0.3, 5.3), win(t, 10.3, 26.3));
+    bbox.style.opacity = Math.max(win(t, 0.3, 5.3), win(t, 26.8, 36.3));
+    bc.style.opacity = win(t, 31.8, 36.3);
+    if (t < 15.3) { box(90 - 90 * a1, 36, 120, 120); g.style.opacity = win(t, 10.3, 14.8); }
+    else if (t < 21.3) { box(90 - 192 * sp, 36 - 192 * sp - Y * m, 120 + 384 * sp, 120 + 384 * sp); g.style.opacity = win(t, 15.3, 20.8); }
+    else { box(90 + 80 * a3, 36 + IY * a3, 120, 120); g.style.opacity = win(t, 21.3, 26.3); }
+    // labels: top left of the canvas, or of the wide frame
+    labs.forEach((l) => {
+      l.style.left = wide ? 'calc(-112px + 4px * var(--k, 1))' : 'calc(4px * var(--k, 1))';
+      l.style.top = wide ? 'calc(-386px + 4px * var(--k, 1))' : 'calc(4px * var(--k, 1))';
+      l.style.opacity = win(t, ...ivs[+l.dataset.l - 1]);
+    });
+    let txt;
+    if (step === 0) txt = `html${c} 400 − 190 − 90 = 120 · 300 − 36 − 144 = 120 · body${c} (90 + 100, 36 + 108)`;
+    else if (step === 1) txt = `html → canvas #060F55 · color${c} #3157B4`;
+    else if (step === 2) txt = `5lh = 5 × 18 = 90px · x 0 → 90, y 36 → 156`;
+    else if (step === 3) txt = n(`120 + 2 × 192 = 504 · 36 − 192 − 220.16 + 504 = 127.84`);
+    else if (step === 4) txt = n(`90 + 80 = 170 · 36 + 84.09 = 120.09`);
+    else if (step === 5) txt = n(`body${c} 144 + 120 + 192 − 220.16 = 235.84`);
+    else if (step === 6) txt = n(`(x, y) → (500 − x, 408 − y) · 408 − 235.84 = 172.16`);
+    else txt = $$('.caps .cap')[7].dataset.live || '';
+    live.textContent = txt;
+  };
+};
+</script>
+</figure>
