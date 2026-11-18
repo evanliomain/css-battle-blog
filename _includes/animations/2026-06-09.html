@@ -1,0 +1,137 @@
+<figure class="anim t0609" data-duration="31" data-scene="t0609" data-wide="-90 -60 580 780" data-off-label="-86 694" style="--bg:#ebf6f0">
+<style>
+.t0609{--t0609-bd:#f59e0b;--t0609-box:#14142a}
+.t0609 .scene .t0609-cv{left:150px;top:100px;width:100px;height:100px;border-radius:50%;background:#fff;z-index:1}
+.t0609 .scene .t0609-html{left:0;top:0;width:400px;height:300px;z-index:2}
+.t0609 .scene .t0609-body{left:3px;top:232px;width:394px;height:393px;transform-origin:50% 50%;opacity:0;z-index:3}
+.t0609 .scene .t0609-box{box-sizing:border-box;transform-origin:50% 50%;opacity:0;z-index:6;pointer-events:none;outline:calc(1.5px * var(--k, 1)) dashed var(--t0609-box);outline-offset:calc(-0.75px * var(--k, 1))}
+.t0609 .scene .t0609-ring{box-sizing:border-box;border-radius:50%;opacity:0;z-index:6;pointer-events:none;border:calc(1.5px * var(--k, 1)) dashed var(--t0609-box)}
+.t0609 .scene .t0609-dot{width:0;height:0;opacity:0;z-index:7;pointer-events:none}
+.t0609 .scene .t0609-dot::before{content:"";position:absolute;left:calc(-4px * var(--k, 1));top:calc(-4px * var(--k, 1));width:calc(8px * var(--k, 1));height:calc(8px * var(--k, 1));box-sizing:border-box;border-radius:50%;background:#fff;border:calc(2px * var(--k, 1)) solid var(--t0609-box)}
+.t0609 .scene .zlab{color:#14142a;background:rgb(255 255 255 / .92);box-shadow:0 0 0 1px rgb(20 20 42 / .25);padding:1px 5px;border-radius:3px;opacity:0}
+</style>
+<div class="anim-col">
+<div class="stage" role="img" aria-label="{% if include.lang == "fr" %}Animation : * donne à html un radial-gradient de taille 1Q, un cercle centré en (200, 150) ; ses arrêts en px dessinent un trou de 40px, un anneau violet jusqu'à 69,92px, un anneau vert jusqu'à 100px, puis du vert très pâle ; le trou est #6b82, un vert presque transparent sur le blanc du canevas : il sort presque de la même couleur que le fond. * * vise body : ses marges 232, 3 et −325 en font une boîte de 394 × 393 en (3, 232), presque toute sous le canevas ; elle a le même dégradé, centré en (200, 428,5), dont seule la dernière couleur atteint le canevas. rotate:45deg la pose sur la pointe : son coin du haut monte en (200, 150,25), au centre des anneaux, et découpe l'entaille en V.{% else %}Animation: * gives html a radial-gradient of size 1Q, a circle centered at (200, 150); its px stops draw a 40px hole, a violet ring up to 69.92px, a green ring up to 100px, then very pale green; the hole is #6b82, an almost transparent green over the white canvas: it comes out almost the same color as the background. * * targets body: its margins 232, 3 and −325 make it a 394 × 393 box at (3, 232), mostly below the canvas; it has the same gradient, centered at (200, 428.5), and only its last color reaches the canvas. rotate:45deg stands it on its corner: its top corner rises to (200, 150.25), the center of the rings, and cuts the V notch.{% endif %}">
+<div class="scene">
+<div class="t0609-cv"></div>
+<div class="t0609-html"></div>
+<div class="t0609-body"></div>
+<div class="t0609-box t0609-bh" style="left:0;top:0;width:400px;height:300px"></div>
+<div class="t0609-box t0609-bb" style="left:3px;top:232px;width:394px;height:393px"></div>
+<div class="t0609-ring t0609-r1"></div>
+<div class="t0609-ring t0609-r2"></div>
+<div class="t0609-dot t0609-d1" style="left:200px;top:150px"></div>
+<div class="t0609-dot t0609-d2" style="left:200px;top:428.5px"></div>
+<div class="t0609-dot t0609-d3" style="left:200px;top:150.253px"></div>
+<span class="zlab" data-l="1" data-r="0">{% if include.lang == "fr" %}html : 400 × 300, centre (200, 150){% else %}html: 400 × 300, center (200, 150){% endif %}</span>
+<span class="zlab" data-l="1" data-r="1">{% if include.lang == "fr" %}1Q = 0,945px : un cercle{% else %}1Q = 0.945px: a circle{% endif %}</span>
+<span class="zlab" data-l="2" data-r="0">{% if include.lang == "fr" %}5ch = 40 · 74Q = 69,92 · 25vw = 100{% else %}5ch = 40 · 74Q = 69.92 · 25vw = 100{% endif %}</span>
+<span class="zlab" data-l="2" data-r="1">{% if include.lang == "fr" %}dernier arrêt : 1Q → 100{% else %}last stop: 1Q → 100{% endif %}</span>
+<span class="zlab" data-l="3" data-r="0">{% if include.lang == "fr" %}#6b82 = #66bb88 à 34/255{% else %}#6b82 = #66bb88 at 34/255{% endif %}</span>
+<span class="zlab" data-l="3" data-r="1">{% if include.lang == "fr" %}sur blanc → (234, 246, 239){% else %}over white → (234, 246, 239){% endif %}</span>
+<span class="zlab" data-l="4" data-r="0">{% if include.lang == "fr" %}marges : 58 % × 400 = 232, 3, −325{% else %}margins: 58% × 400 = 232, 3, −325{% endif %}</span>
+<span class="zlab" data-l="4" data-r="1">{% if include.lang == "fr" %}hauteur : 300 − 232 + 325 = 393{% else %}height: 300 − 232 + 325 = 393{% endif %}</span>
+<span class="zlab" data-l="5" data-r="0">{% if include.lang == "fr" %}body : même dégradé, centre (200, 428,5){% else %}body: same gradient, center (200, 428.5){% endif %}</span>
+<span class="zlab" data-l="5" data-r="1">{% if include.lang == "fr" %}canevas : à 128,5 ou plus → pâle{% else %}canvas: 128.5 or more away → pale{% endif %}</span>
+<span class="zlab" data-l="6" data-r="0">{% if include.lang == "fr" %}rotate:45deg autour de (200, 428,5){% else %}rotate:45deg around (200, 428.5){% endif %}</span>
+<span class="zlab" data-l="6" data-r="1">{% if include.lang == "fr" %}pointe : 428,5 − 787 / 2√2 = 150,25{% else %}tip: 428.5 − 787 / 2√2 = 150.25{% endif %}</span>
+</div>
+</div>
+<div class="legend"><span><i style="--c:#ebf6f0;outline:1px solid currentColor;outline-offset:-1px"></i>{% if include.lang == "fr" %}fond de html{% else %}html's background{% endif %}</span><span><i style="--c:#66bb88"></i>{% if include.lang == "fr" %}#6b82 sans sa transparence{% else %}#6b82 without its alpha{% endif %}</span><span><i style="--c:var(--t0609-bd)"></i>{% if include.lang == "fr" %}fond de body (pâle en vrai){% else %}body's background (pale in reality){% endif %}</span><span><i style="--c:transparent;outline:2px dashed currentColor;outline-offset:-2px"></i>{% if include.lang == "fr" %}boîtes, rayons{% else %}boxes, radii{% endif %}</span></div>
+</div>
+<div class="anim-side">
+<pre class="code" aria-hidden="true"><span data-on="4" data-tone="2">&nbsp;</span>&lt;style><span data-on="1">*</span>{<span data-on="4" data-tone="2">*{</span><span data-on="6">rotate:45deg</span>;<span data-on="4">margin:58%3-325</span>}<span data-on="1 5">background:radial-gradient(</span><span data-on="1 2" data-tone="2">1Q</span>,<span data-on="2 3">#6b82 5ch</span>,<span data-on="2">#4c4c6b 0 74Q,#4a9a86 0 25vw</span>,<span data-on="2 5">#ebf6f0</span></pre>
+<div class="now" aria-live="polite">
+<div class="caps">
+{%- if include.lang == "fr" %}
+<div class="cap" data-t="0" data-step="html"><h3>1. Un cercle sur html</h3><p><code>*</code> donne un fond à tous les éléments. En mode quirks, html remplit le canevas : 400 × 300, centre (200, 150). Son fond est un <code>radial-gradient</code> de taille <code>1Q</code> : une seule longueur, donc un cercle, de 0,945px de rayon.</p></div>
+<div class="cap" data-t="4.5" data-step="Arrêts"><h3>2. Les anneaux</h3><p>Les arrêts sont en longueurs, mesurées depuis le centre : jusqu'à 5ch = 40px, puis du violet jusqu'à 74Q = 69,92px, du vert jusqu'à 25vw = 100px, et du vert pâle au-delà. Chaque <code>0</code> colle une couleur à la précédente : bords nets. La dernière couleur n'a pas de position : 100 % de 1Q, ramené à 100px.</p></div>
+<div class="cap" data-t="9" data-step="Trou"><h3>3. Le trou</h3><p><code>#6b82</code> veut dire #66bb88 avec une opacité de 34/255, à peine 13 %. Sous le fond de html, le canevas est blanc. Le mélange donne (234, 246, 239) : à une unité près, le vert pâle du fond. Cinq caractères au lieu de sept.</p></div>
+<div class="cap" data-t="13.5" data-step="body"><h3>4. Une grande boîte body</h3><p><code>*{*{</code> vise les éléments qui sont dans un autre : head, body et style. Seul body s'affiche. L'espace insécable du début est du texte, donc body s'ouvre avant <code>&lt;style></code>. Marges : 58 % de 400 = 232 en haut, 3 sur les côtés, −325 en bas. En mode quirks, body remplit html moins ses marges : 300 − 232 + 325 = 393. body fait 394 × 393 en (3, 232).</p></div>
+<div class="cap" data-t="18" data-step="Fond de body"><h3>5. Le fond de body</h3><p>body a le même dégradé, centré sur lui : (200, 428,5), sous le canevas. Ses anneaux restent hors du canevas. Le bas du canevas, y = 300, est à 128,5px de ce centre, plus que 100 : sur le canevas, body n'est que du vert pâle.</p></div>
+<div class="cap" data-t="22.5" data-step="Rotation"><h3>6. Sur la pointe</h3><p><code>rotate:45deg</code> tourne body autour de son centre. Son coin du haut monte de la moitié de la diagonale, (394 + 393) / 2√2 = 278,25 : il arrive en (200, 150,25), au centre des anneaux. Les deux côtés partent à 45° et découpent l'entaille en V.</p></div>
+<div class="cap" data-t="27" data-step="Résultat" data-live="117 caractères · 100 % identique"><h3>7. Résultat : 117 caractères</h3><p>Un seul dégradé, pour deux éléments : sur html il dessine les anneaux, sur body tourné il les coupe en V.</p></div>
+{%- else %}
+<div class="cap" data-t="0" data-step="html"><h3>1. A circle on html</h3><p><code>*</code> gives every element a background. In quirks mode, html fills the canvas: 400 × 300, center (200, 150). Its background is a <code>radial-gradient</code> of size <code>1Q</code>: a single length, so a circle, 0.945px in radius.</p></div>
+<div class="cap" data-t="4.5" data-step="Stops"><h3>2. The rings</h3><p>The stops are lengths, measured from the center: up to 5ch = 40px, then violet up to 74Q = 69.92px, green up to 25vw = 100px, and pale green beyond. Each <code>0</code> starts a color where the previous one ends: hard edges. The last color has no position: 100% of 1Q, pushed up to 100px.</p></div>
+<div class="cap" data-t="9" data-step="Hole"><h3>3. The hole</h3><p><code>#6b82</code> means #66bb88 with an alpha of 34/255, barely 13%. Under html's background, the canvas is white. The mix gives (234, 246, 239): within one unit, the pale green of the background. Five characters instead of seven.</p></div>
+<div class="cap" data-t="13.5" data-step="body"><h3>4. A big body box</h3><p><code>*{*{</code> targets the elements inside another one: head, body and style. Only body is displayed. The leading no-break space is text, so body opens before <code>&lt;style></code>. Margins: 58% of 400 = 232 at the top, 3 on the sides, −325 at the bottom. In quirks mode, body fills html minus its margins: 300 − 232 + 325 = 393. body is 394 × 393 at (3, 232).</p></div>
+<div class="cap" data-t="18" data-step="body's background"><h3>5. body's background</h3><p>body has the same gradient, centered on itself: (200, 428.5), below the canvas. Its rings stay off the canvas. The bottom of the canvas, y = 300, is 128.5px from that center, more than 100: on the canvas, body is only pale green.</p></div>
+<div class="cap" data-t="22.5" data-step="Rotation"><h3>6. On its corner</h3><p><code>rotate:45deg</code> turns body around its center. Its top corner rises by half the diagonal, (394 + 393) / 2√2 = 278.25: it lands at (200, 150.25), the center of the rings. The two sides go off at 45° and cut the V notch.</p></div>
+<div class="cap" data-t="27" data-step="Result" data-live="117 characters · 100% match"><h3>7. Result: 117 characters</h3><p>One gradient for two elements: on html it draws the rings, on the turned body it cuts them in a V.</p></div>
+{%- endif %}
+</div>
+<div class="live"></div>
+</div>
+</div>
+<script>
+(window.AnimScenes = window.AnimScenes || {}).t0609 = (fig) => {
+  const fr = document.documentElement.lang === 'fr';
+  const $ = (s) => fig.querySelector(s);
+  const $$ = (s) => [...fig.querySelectorAll(s)];
+  const live = $('.live');
+  const ease = (x) => (x < 0.5 ? 4 * x * x * x : 1 - Math.pow(-2 * x + 2, 3) / 2);
+  const pr = (t, [a, b]) => ease(Math.min(1, Math.max(0, (t - a) / (b - a))));
+  const win = (t, a, b) => Math.min(pr(t, [a, a + 0.5]), 1 - pr(t, [b - 0.2, b]));
+  const c = fr ? '\u00a0:' : ':';
+  const num = (n) => (fr ? String(n).replace('.', ',') : String(n));
+  const mix = (k, a, b) => (k <= 0 ? b : k >= 1 ? a : `color-mix(in srgb, ${a} ${(k * 100).toFixed(1)}%, ${b})`);
+  // Measured on the official code in local Chrome (400 × 300 iframe, quirks mode, getBoundingClientRect, getComputedStyle).
+  // html 400 × 300 at (0, 0): gradient center (200, 150). 1Q = 0.945px, 5ch = 40px, 74Q = 69.921px, 25vw = 100px.
+  // Rendered radii: hole up to 40, violet up to 70, green up to 100. Hole pixel (234, 246, 239).
+  // body: margin 232px 3px −325px, 394 × 393 at (3, 232), center (200, 428.5); rotated bounding box
+  // (−78.247, 150.253) 556.493 × 556.493: top corner at (200, 150.253).
+  const FIN = 27;
+  const html = $('.t0609-html'), body = $('.t0609-body'), bb = $('.t0609-bb'), bh = $('.t0609-bh');
+  const r1 = $('.t0609-r1'), r2 = $('.t0609-r2'), d1 = $('.t0609-d1'), d2 = $('.t0609-d2'), d3 = $('.t0609-d3');
+  const labs = $$('.zlab');
+  const ivs = [[0.3, 4.5], [4.8, 9], [9.3, 13.5], [13.8, 18], [18.3, 22.5], [22.8, FIN]];
+  const circ = (e, x, y, r) => { e.style.left = `${x - r}px`; e.style.top = `${y - r}px`; e.style.width = e.style.height = `${2 * r}px`; };
+  circ(r2, 200, 428.5, 128.5);
+  const grad = (hole, a, b, c3, last) => `radial-gradient(0.945px, ${hole} ${a}px, #4c4c6b 0 ${b}px, #4a9a86 0 ${c3}px, ${last})`;
+  return (t, step) => {
+    const teach = fig.dataset.teach === '1';
+    const wide = fig.dataset.view === 'wide';
+    const tw = teach ? 1 - pr(t, [FIN, FIN + 0.8]) : 0;
+    // step 2: the stops grow one after the other; step 3: the hole loses its alpha
+    const a = 40 * pr(t, [4.9, 5.9]);
+    const b = a + 29.921 * pr(t, [5.9, 6.9]);
+    const g = b + 30.079 * pr(t, [6.9, 7.9]);
+    const al = 1 - (1 - 34 / 255) * pr(t, [9.6, 11.2]);
+    const hole = `rgb(102 187 136 / ${al.toFixed(4)})`;
+    html.style.background = grad(hole, a, b, g, '#ebf6f0');
+    // step 4: body appears; its own gradient is always complete
+    body.style.background = grad(hole, 40, 69.921, 100, mix(tw, 'var(--t0609-bd)', '#ebf6f0'));
+    body.style.opacity = pr(t, [14, 14.8]);
+    // step 6: the quarter of a right angle
+    const rot = `rotate(${45 * pr(t, [23, 25])}deg)`;
+    body.style.transform = bb.style.transform = rot;
+    bh.style.opacity = win(t, 0.4, 4.5);
+    bb.style.opacity = win(t, 13.8, FIN);
+    circ(r1, 200, 150, 0.945 + 99.055 * (1 - pr(t, [0.8, 2.6])));
+    r1.style.opacity = win(t, 0.6, 4.5);
+    r2.style.opacity = win(t, 18.6, 22.5);
+    d1.style.opacity = Math.max(win(t, 0.4, 9), win(t, 22.8, FIN));
+    d2.style.opacity = Math.max(win(t, 18.4, 22.5), win(t, 22.8, FIN));
+    d3.style.opacity = pr(t, [25, 25.4]) * (1 - pr(t, [FIN - 0.2, FIN]));
+    // labels: two rows in the top left corner of the frame (above the rings on the canvas, above the canvas in wide view)
+    const x0 = wide ? -90 : 0, y0 = wide ? -60 : 0;
+    labs.forEach((l) => {
+      const r = +l.dataset.r;
+      l.style.left = `calc(${x0}px + 4px * var(--k, 1))`;
+      l.style.top = `calc(${y0}px + ${4 + 19 * r}px * var(--k, 1))`;
+      l.style.opacity = win(t, ...ivs[+l.dataset.l - 1]);
+    });
+    let txt;
+    if (step === 0) txt = `html${c} 400 × 300 · 1Q = ${num(0.945)}px`;
+    else if (step === 1) txt = `40 · ${num(69.92)} · 100`;
+    else if (step === 2) txt = `#6b82 → (234, 246, 239)`;
+    else if (step === 3) txt = `body${c} 394 × 393 ${fr ? 'en' : 'at'} (3, 232)`;
+    else if (step === 4) txt = `${fr ? 'centre' : 'center'} (200, ${num(428.5)})`;
+    else if (step === 5) txt = `${fr ? 'pointe' : 'tip'} (200, ${num(150.25)})`;
+    else txt = $$('.caps .cap')[6].dataset.live || '';
+    live.textContent = txt;
+  };
+};
+</script>
+</figure>
