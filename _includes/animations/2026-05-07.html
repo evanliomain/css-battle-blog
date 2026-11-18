@@ -1,0 +1,143 @@
+<figure class="anim t0507" data-duration="33" data-scene="t0507" data-wide="-50 -40 500 380" data-off-label="-46 304" style="--bg:#3157b4">
+<style>
+.t0507 .scene .t0507-g{left:0;top:0;width:7px;height:7px;transform-origin:3.5px 3.5px;border-radius:3.5px 0 0;background:#3157b4;z-index:2}
+.t0507 .scene .t0507-g[data-e="body"]{z-index:3}
+.t0507 .scene .t0507-g[data-e="dl"]{z-index:4}
+.t0507 .scene .t0507-g[data-e="p"]{z-index:5}
+.t0507 .scene .t0507-a{left:196.5px;top:146.5px;width:7px;height:7px;transform-origin:3.5px 3.5px;opacity:0;z-index:10}
+.t0507 .scene .t0507-ar{position:absolute;left:3.5px;top:3.5px;width:72px;height:calc(3px * var(--k, 1));margin-top:calc(-1.5px * var(--k, 1));transform:rotate(45deg);transform-origin:0 50%;background:currentColor;color:#fff;filter:drop-shadow(0 0 calc(1px * var(--k, 1)) rgb(0 0 0 / .9))}
+.t0507 .scene .t0507-ar::after{content:"";position:absolute;left:100%;top:50%;transform:translateY(-50%);border:calc(5px * var(--k, 1)) solid transparent;border-left:calc(9px * var(--k, 1)) solid currentColor;border-right:0}
+.t0507 .scene .t0507-ring{left:186px;top:136px;width:28px;height:28px;box-sizing:border-box;border-radius:50%;border:calc(2px * var(--k, 1)) dashed #fff;filter:drop-shadow(0 0 calc(1px * var(--k, 1)) rgb(0 0 0 / .9));opacity:0;z-index:11}
+.t0507 .scene .zlab{color:#14142a;background:rgb(255 255 255 / .92);box-shadow:0 0 0 1px rgb(20 20 42 / .25);padding:1px 5px;border-radius:3px;opacity:0}
+@media (max-width:700px){.t0507 .scene .zlab{font-size:8px;padding:0 3px}}
+.t0507 .legend .t0507-ol{box-shadow:0 0 0 1px currentColor}
+</style>
+<div class="anim-col">
+<div class="stage" role="img" aria-label="{% if include.lang == "fr" %}Animation : * vise html, head, body, dl, p et style ; head et style ne sont pas affichés. html est la racine : son fond #3157b4 couvre tout le canevas. html, body, dl et p font 7 × 7. offset:ray(0deg) pose le centre de chaque boîte au centre de son bloc conteneur : les quatre boîtes s'empilent en (196,5 ; 146,5), au centre du canevas. Chaque boîte se tourne vers le rayon, qui pointe vers le haut : un quart de tour vers la gauche, qui s'ajoute à celui du parent. html tourne de −90°, body de −180°, dl de −270°, p de −360°. Chaque boîte porte deux ombres décalées de 60px vers la droite et vers le bas : une verte grossie de 39q = 36,85px, un carré de 80,70, et une bleu marine grossie de 49q = 46,30px, un carré de 99,60, dessous. border-radius:50%0 0 arrondit le coin en haut à gauche, celui qui fait face au centre. Les quatre tours envoient la même feuille dans les quatre coins : html en haut à droite, body en haut à gauche, dl en bas à gauche, p en bas à droite.{% else %}Animation: * targets html, head, body, dl, p and style; head and style are not displayed. html is the root: its #3157b4 background covers the whole canvas. html, body, dl and p are 7 × 7. offset:ray(0deg) puts each box's center at the center of its containing block: the four boxes stack at (196.5, 146.5), in the middle of the canvas. Each box turns to face the ray, which points up: a quarter turn to the left, added to its parent's. html turns −90°, body −180°, dl −270°, p −360°. Each box has two shadows, moved 60px right and 60px down: a green one grown by 39q = 36.85px, an 80.70 square, and a navy one grown by 49q = 46.30px, a 99.60 square, below it. border-radius:50%0 0 rounds the top left corner, the one that faces the center. The four turns send the same leaf to the four corners: html top right, body top left, dl bottom left, p bottom right.{% endif %}">
+<div class="scene">
+<div class="t0507-g" data-e="html"></div>
+<div class="t0507-g" data-e="body"></div>
+<div class="t0507-g" data-e="dl"></div>
+<div class="t0507-g" data-e="p"></div>
+<div class="t0507-a" data-e="html"><div class="t0507-ar"></div></div>
+<div class="t0507-a" data-e="body"><div class="t0507-ar"></div></div>
+<div class="t0507-a" data-e="dl"><div class="t0507-ar"></div></div>
+<div class="t0507-a" data-e="p"><div class="t0507-ar"></div></div>
+<div class="t0507-ring"></div>
+<span class="zlab" data-l="1" style="left:10px;top:10px">{% if include.lang == "fr" %}html → canevas{% else %}html → canvas{% endif %}</span>
+<span class="zlab" data-l="2" style="left:216px;top:100px">4 × (7 × 7)</span>
+<span class="zlab" data-l="2" style="left:216px;top:130px">{% if include.lang == "fr" %}(196,5 ; 146,5){% else %}(196.5, 146.5){% endif %}</span>
+<span class="zlab" data-l="3" style="left:262px;top:66px">html −90°</span>
+<span class="zlab" data-l="3" style="left:70px;top:66px">body −180°</span>
+<span class="zlab" data-l="3" style="left:70px;top:222px">dl −270°</span>
+<span class="zlab" data-l="3" style="left:262px;top:222px">p −360°</span>
+<span class="zlab" data-l="4" style="left:214px;top:262px">{% if include.lang == "fr" %}39q = 36,85{% else %}39q = 36.85{% endif %}</span>
+<span class="zlab" data-l="4" style="left:108px;top:176px">{% if include.lang == "fr" %}r = 40,35{% else %}r = 40.35{% endif %}</span>
+<span class="zlab" data-l="5" style="left:214px;top:266px">{% if include.lang == "fr" %}49q = 46,30{% else %}49q = 46.30{% endif %}</span>
+<span class="zlab" data-l="5" style="left:232px;top:138px">{% if include.lang == "fr" %}10q = 9,45{% else %}10q = 9.45{% endif %}</span>
+<span class="zlab" data-l="6" style="left:226px;top:56px">html</span>
+<span class="zlab" data-l="6" style="left:106px;top:56px">body</span>
+<span class="zlab" data-l="6" style="left:106px;top:228px">dl</span>
+<span class="zlab" data-l="6" style="left:226px;top:228px">p</span>
+</div>
+</div>
+<div class="legend"><span><i class="t0507-ol" style="--c:#3157b4"></i>{% if include.lang == "fr" %}#3157b4 : fond de html, le canevas{% else %}#3157b4: html's background, the canvas{% endif %}</span><span><i class="t0507-ol" style="--c:#84be8d"></i>{% if include.lang == "fr" %}#84be8d : ombre de 39q{% else %}#84be8d: 39q shadow{% endif %}</span><span><i class="t0507-ol" style="--c:#060f55"></i>{% if include.lang == "fr" %}#060f55 : ombre de 49q{% else %}#060f55: 49q shadow{% endif %}</span><span><i style="--c:#facc15"></i>{% if include.lang == "fr" %}html (−90°) : boîte et ombre de 49q{% else %}html (−90°): box and 49q shadow{% endif %}</span><span><i style="--c:#f472b6"></i>body (−180°)</span><span><i style="--c:#22d3ee"></i>dl (−270°)</span><span><i style="--c:#fb923c"></i>p (−360°)</span></div>
+</div>
+<div class="anim-side">
+<pre class="code" aria-hidden="true"><span data-on="1 2 3 6">&lt;dl>&lt;p></span>&lt;style><span data-on="1">*{background:#3157b4;</span><span data-on="4 5 6">box-shadow:</span><span data-on="4 6">60px 60px 0 39q#84be8d</span>,<span data-on="5 6">60px 60px 0 49q#060f55</span>;<span data-on="4" data-tone="2">border-radius:50%0 0;</span><span data-on="2">height:7;width:7;</span><span data-on="2 3 6">offset:ray(0deg</span></pre>
+<div class="now" aria-live="polite">
+<div class="caps">
+{%- if include.lang == "fr" %}
+<div class="cap" data-t="0" data-step="Le canevas"><h3>1. Un fond pour le canevas</h3><p><code>&lt;dl>&lt;p></code> ouvre deux éléments, et aucun ne ferme l'autre : la page est html > body > dl > p. <code>*</code> vise tous les éléments, mais head et style ne sont pas affichés. Il reste html, body, dl et p. html est la racine : son fond <code>#3157b4</code> est peint sur tout le canevas, quelle que soit la taille de sa boîte.</p></div>
+<div class="cap" data-t="4.5" data-step="Quatre boîtes"><h3>2. Quatre boîtes au centre</h3><p><code>height:7;width:7</code> (sans unité, des px en mode quirks) : quatre boîtes de 7 × 7. <code>offset:ray(0deg</code> leur donne un chemin. Au départ du chemin, le centre de la boîte est posé au centre de son bloc conteneur. Pour html, c'est le canevas : (200, 150). body est posé au centre de html, dl au centre de body, p au centre de dl. Les quatre boîtes s'empilent de (196,5 ; 146,5) à (203,5 ; 153,5). Leur fond bleu ne se voit pas sur le canevas bleu.</p></div>
+<div class="cap" data-t="9.5" data-step="Quarts de tour"><h3>3. Un quart de tour chacune</h3><p>Une boîte sur un chemin se tourne dans le sens du chemin. Le rayon à 0deg pointe vers le haut, et la boîte tourne de 0° − 90° = −90° : un quart de tour vers la gauche. Une boîte tourne avec tout ce qu'elle contient, donc le tour d'un enfant s'ajoute à celui de son parent : html −90°, body −180°, dl −270°, p −360°, comme s'il n'avait pas tourné.</p></div>
+<div class="cap" data-t="15.5" data-step="Ombre verte"><h3>4. L'ombre verte</h3><p>Voici l'ombre de p, qui n'a pas tourné. <code>60px 60px 0 39q#84be8d</code> copie la boîte 60px à droite et 60px plus bas, sans flou, et la grossit de 39q = 36,85px de chaque côté : un carré de 7 + 2 × 36,85 = 80,70, de (219,65 ; 169,65) à (300,35 ; 250,35). <code>border-radius:50%0 0</code> arrondit le coin en haut à gauche de 3,5px. Dans l'ombre, ce coin devient un quart de cercle de 3,5 + 36,85 = 40,35, la moitié du côté, tourné vers le centre.</p></div>
+<div class="cap" data-t="20" data-step="Ombre marine"><h3>5. L'ombre bleu marine dessous</h3><p><code>60px 60px 0 49q#060f55</code> fait la même chose avec 49q = 46,30px : un carré de 99,60, de (210,20 ; 160,20) à (309,80 ; 259,80), avec un quart de cercle de 49,80. La première ombre de la liste est peinte au-dessus : le vert couvre le bleu marine, sauf un bord de 49q − 39q = 10q = 9,45px.</p></div>
+<div class="cap" data-t="24.5" data-step="Quatre feuilles"><h3>6. Quatre feuilles</h3><p>Les quatre boîtes ont les mêmes ombres, mais chacune les porte dans son propre sens. La feuille de html part en haut à droite, celle de body en haut à gauche, celle de dl en bas à gauche, et celle de p reste en bas à droite. Le coin arrondi fait toujours face au centre. Entre deux feuilles, il reste 2 × (60 − 49,80) = 20,40px de fond.</p></div>
+<div class="cap" data-t="29.5" data-step="Résultat" data-live="145 caractères · 100 % identique"><h3>7. Résultat : 145 caractères</h3><p>Une boîte de 7px, deux ombres et un rayon : quatre quarts de tour emboîtés envoient la même feuille encadrée dans les quatre coins.</p></div>
+{%- else %}
+<div class="cap" data-t="0" data-step="The canvas"><h3>1. A background for the canvas</h3><p><code>&lt;dl>&lt;p></code> opens two elements, and neither closes the other: the page is html > body > dl > p. <code>*</code> targets every element, but head and style are not displayed. That leaves html, body, dl and p. html is the root: its <code>#3157b4</code> background is painted on the whole canvas, whatever the size of its box.</p></div>
+<div class="cap" data-t="4.5" data-step="Four boxes"><h3>2. Four boxes in the middle</h3><p><code>height:7;width:7</code> (no unit: px in quirks mode) makes four 7 × 7 boxes. <code>offset:ray(0deg</code> gives them a path. At the start of the path, the box's center is put at the center of its containing block. For html, that is the canvas: (200, 150). body goes to the center of html, dl to the center of body, p to the center of dl. The four boxes stack from (196.5, 146.5) to (203.5, 153.5). Their blue background does not show on the blue canvas.</p></div>
+<div class="cap" data-t="9.5" data-step="Quarter turns"><h3>3. A quarter turn each</h3><p>A box on a path turns to follow the path. The ray at 0deg points up, and the box turns by 0° − 90° = −90°: a quarter turn to the left. A box turns with everything inside it, so a child's turn adds to its parent's: html −90°, body −180°, dl −270°, p −360°, as if it had not turned.</p></div>
+<div class="cap" data-t="15.5" data-step="Green shadow"><h3>4. The green shadow</h3><p>Here is p's shadow, as p has not turned. <code>60px 60px 0 39q#84be8d</code> copies the box 60px right and 60px down, with no blur, and grows it by 39q = 36.85px on each side: a square of 7 + 2 × 36.85 = 80.70, from (219.65, 169.65) to (300.35, 250.35). <code>border-radius:50%0 0</code> rounds the top left corner by 3.5px. In the shadow, that corner becomes a quarter circle of 3.5 + 36.85 = 40.35, half the side, facing the center.</p></div>
+<div class="cap" data-t="20" data-step="Navy shadow"><h3>5. The navy shadow below</h3><p><code>60px 60px 0 49q#060f55</code> does the same with 49q = 46.30px: a 99.60 square, from (210.20, 160.20) to (309.80, 259.80), with a 49.80 quarter circle. The first shadow in the list is painted on top: the green covers the navy, except for a 49q − 39q = 10q = 9.45px rim.</p></div>
+<div class="cap" data-t="24.5" data-step="Four leaves"><h3>6. Four leaves</h3><p>The four boxes have the same shadows, but each one carries them its own way round. html's leaf goes to the top right, body's to the top left, dl's to the bottom left, and p's stays at the bottom right. The round corner always faces the center. Between two leaves, 2 × (60 − 49.80) = 20.40px of background is left.</p></div>
+<div class="cap" data-t="29.5" data-step="Result" data-live="145 characters · 100% match"><h3>7. Result: 145 characters</h3><p>A 7px box, two shadows and a ray: four nested quarter turns send the same framed leaf to the four corners.</p></div>
+{%- endif %}
+</div>
+<div class="live"></div>
+</div>
+</div>
+<script>
+(window.AnimScenes = window.AnimScenes || {}).t0507 = (fig) => {
+  const fr = document.documentElement.lang === 'fr';
+  const $ = (s) => fig.querySelector(s);
+  const $$ = (s) => [...fig.querySelectorAll(s)];
+  const live = $('.live');
+  const ease = (x) => (x < 0.5 ? 4 * x * x * x : 1 - Math.pow(-2 * x + 2, 3) / 2);
+  const pr = (t, a, b) => ease(Math.min(1, Math.max(0, (t - a) / (b - a))));
+  const win = (t, a, b) => Math.min(pr(t, a, a + 0.5), 1 - pr(t, b - 0.3, b));
+  const c = fr ? ' :' : ':';
+  const n = (v) => (fr ? String(v).replace('.', ',') : String(v));
+  // Measured on the official code in local Chrome (400 × 300 page, quirks mode):
+  // html, body, dl and p are 7 × 7, all at (196.5, 146.5) (a test copy with a red background on p: pixels 196 and 203 half covered).
+  // offset-rotate auto turns each box by 0deg − 90deg, added to its parent's: a test copy with one shadow color per element
+  // puts html's leaf top right, body's top left, dl's bottom left, p's bottom right.
+  // Shadows: 60px 60px 0 36.8504px #84be8d, 60px 60px 0 46.2992px #060f55, border-radius 50% 0 0 (3.5px).
+  // The last frame draws the same 7 × 7 boxes with the same shadows, turned around (200, 150). They are moved there by a
+  // transform, as the offset path does, not by left/top: a fractional left is snapped to whole pixels and shifts the edges.
+  const FIN = 29.5;
+  const ROT = [-90, -180, -270, -360];
+  const TC = [[250, 204, 21], [244, 114, 182], [34, 211, 238], [251, 146, 60]];
+  const BLUE = [49, 87, 180], GREEN = [132, 190, 141], NAVY = [6, 15, 85], WHITE = [255, 255, 255];
+  const G = 36.8504, N = 46.2992;
+  const mix = (a, b, k) => a.map((v, i) => Math.round(v + (b[i] - v) * k));
+  const rgba = (col, a) => `rgb(${col.join(' ')} / ${a.toFixed(3)})`;
+  const boxes = $$('.t0507-g'), arrows = $$('.t0507-a'), ring = $('.t0507-ring');
+  const labs = $$('.zlab[data-l]');
+  const ivs = [[0.3, 4.3], [4.8, 9.2], [9.8, 15.2], [15.8, 19.8], [20.3, 24.2], [26.6, 29.3]];
+  return (t, step) => {
+    const teach = fig.dataset.teach === '1';
+    const fin = pr(t, FIN + 0.2, FIN + 0.9);
+    const tw = teach ? 1 - fin : 0;
+    boxes.forEach((b, i) => {
+      const fill = mix(BLUE, TC[i], tw * pr(t, 4.8, 5.6));
+      b.style.background = rgba(fill, 1);
+      const navy = mix(NAVY, TC[i], tw);
+      let gs = G, ns = N, ga, na, rot;
+      if (i === 3) {
+        gs = G * pr(t, 16.2, 18.2);
+        ns = N * pr(t, 20.8, 22.8);
+        ga = pr(t, 15.8, 16.2);
+        na = pr(t, 20.3, 20.7);
+        rot = 0;
+      } else {
+        ga = na = pr(t, 24.8, 25.2);
+        rot = ROT[i] * pr(t, 25.4, 27.8);
+      }
+      b.style.boxShadow = `60px 60px 0 ${gs.toFixed(4)}px ${rgba(GREEN, ga)}, 60px 60px 0 ${ns.toFixed(4)}px ${rgba(navy, na)}`;
+      b.style.transform = `translate(196.5px, 146.5px) rotate(${rot}deg)`;
+    });
+    arrows.forEach((a, i) => {
+      a.style.transform = `rotate(${ROT[i] * pr(t, 10.4, 13.6)}deg)`;
+      const o = i === 3 ? win(t, 9.8, 24.2) : Math.max(win(t, 9.8, 15.2), win(t, 25.2, 29.3));
+      a.style.opacity = o;
+      a.firstChild.style.color = rgba(teach ? TC[i] : WHITE, 1);
+    });
+    ring.style.opacity = win(t, 4.8, 9.2);
+    labs.forEach((l) => {
+      l.style.opacity = win(t, ...ivs[+l.dataset.l - 1]);
+    });
+    let txt;
+    if (step === 0) txt = `* → html, head, body, dl, p, style · html${c} #3157b4`;
+    else if (step === 1) txt = `7 × 7 · (${n(196.5)}${fr ? ' ; ' : ', '}${n(146.5)}) → (${n(203.5)}${fr ? ' ; ' : ', '}${n(153.5)})`;
+    else if (step === 2) txt = 'html −90° · body −180° · dl −270° · p −360°';
+    else if (step === 3) txt = `39q = ${n(36.85)}px · 7 + 2 × ${n(36.85)} = ${n('80.70')} · r = ${n(3.5)} + ${n(36.85)} = ${n(40.35)}`;
+    else if (step === 4) txt = `49q = ${n('46.30')}px · 7 + 2 × ${n('46.30')} = ${n('99.60')} · 10q = ${n(9.45)}px`;
+    else if (step === 5) txt = `html ↗ · body ↖ · dl ↙ · p ↘`;
+    else txt = $$('.caps .cap')[6].dataset.live || '';
+    live.textContent = txt;
+  };
+};
+</script>
+</figure>
