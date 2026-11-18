@@ -1,0 +1,16 @@
+{%- assign p = include.post -%}
+{%- assign tt = i18n[include.lang] -%}
+<article class="card{% unless p.data.target %} card-news{% endunless %}">
+  <div class="card-img"><img src="{{ p.data.cover | default: p.data.target | relative_url }}" alt="" width="400" height="300" loading="lazy"></div>
+  <div class="card-body">
+    <p class="meta"><time datetime="{{ p.date | iso }}">{{ p.date | fdate: include.lang }}</time>{% if p.data.chars %}<span class="chars" title="{{ tt.characters }}">{{ p.data.chars }}</span>{% else %}<span class="tag">{{ p.data.kicker | default: tt.news }}</span>{% endif %}</p>
+    <h3><a href="{{ p.url | relative_url }}">{{ p.data.title }}</a></h3>
+    {%- if include.excerpt %}<p class="excerpt">{{ p | excerpt: 26 }}</p>{% endif %}
+    <div class="card-foot">
+      {%- if p.data.player %}{% assign pl = p.data.player | player %}
+      <a class="by" href="{{ tt.players_url | append: pl.id | append: '/' | relative_url }}"><img src="{{ pl.avatar | relative_url }}" alt="" width="24" height="24" loading="lazy">{{ pl.name }}</a>
+      {%- endif %}
+      {% include views.html ref=p.data.ref lang=include.lang %}
+    </div>
+  </div>
+</article>

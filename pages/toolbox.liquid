@@ -1,0 +1,29 @@
+---
+pagination: { data: site.languages, size: 1, alias: lang }
+permalink: "{{ i18n[lang].toolbox_url }}"
+layout: default
+alt_key: toolbox_url
+eleventyComputed:
+  title: "{{ i18n[lang].toolbox_title }}"
+  description: "{{ i18n[lang].toolbox_intro | strip_html }}"
+---
+{%- assign t = i18n[lang] -%}
+{%- assign key = "posts_" | append: lang -%}
+{%- assign releases = collections[key] | news -%}
+<header class="page-head">
+  <h1>{{ t.toolbox_title }}</h1>
+  <p>{{ t.toolbox_intro }}</p>
+</header>
+<div class="releases">
+{%- for p in releases %}
+  <article class="release{% if forloop.first %} first{% endif %}">
+    <a class="release-img" href="{{ p.url | relative_url }}" tabindex="-1" aria-hidden="true"><img src="{{ p.data.cover | relative_url }}" alt="" width="400" height="300" loading="lazy"></a>
+    <div class="release-body">
+      <p class="eyebrow">{{ p.data.kicker | default: t.news }} · <time datetime="{{ p.date | iso }}">{{ p.date | fdate: lang }}</time></p>
+      <h2><a href="{{ p.url | relative_url }}">{{ p.data.title }}</a></h2>
+      <p class="excerpt">{{ p | excerpt: 45 }}</p>
+      {% include views.html ref=p.data.ref lang=lang %}
+    </div>
+  </article>
+{%- endfor %}
+</div>

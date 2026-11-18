@@ -1,0 +1,33 @@
+---
+pagination: { data: site.languages, size: 1, alias: lang }
+permalink: "{{ i18n[lang].calendar_url }}"
+layout: default
+alt_key: calendar_url
+eleventyComputed:
+  title: "{{ i18n[lang].calendar_title }}"
+  description: "{{ i18n[lang].calendar_intro }}"
+---
+{%- assign t = i18n[lang] -%}
+{%- assign key = "posts_" | append: lang -%}
+{%- assign months = collections[key] | calendar -%}
+<header class="page-head">
+  <h1>{{ t.calendar_title }}</h1>
+  <p>{{ t.calendar_intro }}</p>
+</header>
+<nav class="month-jump" aria-label="{{ t.calendar }}">
+  {%- for m in months %}<a href="#{{ m.key }}"><span>{{ m.date | fmonth: lang }}</span><b>{{ m.count }}</b></a>{% endfor %}
+</nav>
+{%- for m in months %}
+<section class="month" id="{{ m.key }}" aria-labelledby="h-{{ m.key }}">
+  <h2 id="h-{{ m.key }}">{{ m.date | fmonth: lang }} <span class="count">{{ m.count }} {{ t.posts_count }}</span></h2>
+  <div class="cal" role="list">
+    {%- for w in t.weekdays %}<span class="wd" aria-hidden="true">{{ w }}</span>{% endfor %}
+    {%- for c in m.cells -%}
+      {%- if c == nil %}<span class="cal-x" aria-hidden="true"></span>
+      {%- elsif c.post %}<a class="cal-day" role="listitem" href="{{ c.post.url | relative_url }}" title="{{ c.post.data.title | escape }}"><img src="{{ c.post.data.target | relative_url }}" alt="{{ c.post.date | fdate: lang }} : {{ c.post.data.title | escape }}" width="400" height="300" loading="lazy"><span class="d">{{ c.day }}</span><span class="c">{{ c.post.data.chars }}</span></a>
+      {%- else %}<span class="cal-empty" role="listitem" title="{{ t.no_post }}"><span class="d">{{ c.day }}</span></span>
+      {%- endif -%}
+    {%- endfor %}
+  </div>
+</section>
+{%- endfor %}

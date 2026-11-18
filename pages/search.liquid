@@ -1,0 +1,7 @@
+---
+pagination: { data: site.languages, size: 1, alias: lang }
+permalink: "{{ i18n[lang].search_url }}"
+eleventyExcludeFromCollections: true
+---
+{%- assign key = "posts_" | append: lang -%}
+{{ collections[key] | searchIndex: lang | json }}

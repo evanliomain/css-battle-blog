@@ -1,0 +1,92 @@
+---
+pagination: { data: site.languages, size: 1, alias: lang }
+permalink: "{{ i18n[lang].popular_url }}"
+layout: default
+alt_key: popular_url
+eleventyComputed:
+  title: "{{ i18n[lang].popular_title }}"
+  description: "{{ i18n[lang].popular_intro }}"
+---
+{%- assign t = i18n[lang] -%}
+{%- assign key = "posts_" | append: lang -%}
+{%- assign posts = collections[key] -%}
+{%- assign ranked = posts | popular: views -%}
+{%- assign unread = posts | unseen: views -%}
+{%- assign top = ranked | first -%}
+<header class="page-head">
+  <h1>{{ t.popular_title }}</h1>
+  <p>{{ t.popular_intro }}</p>
+</header>
+
+{%- assign u = unread | first -%}
+{%- if u %}
+{%- assign up = u.data.player | player %}
+<section class="hero-latest unseen-pick" aria-labelledby="pick-title">
+  <a class="hero-img" href="{{ u.url | relative_url }}" tabindex="-1" aria-hidden="true" data-f="href"><img src="{{ u.data.target | default: u.data.cover | relative_url }}" alt="" width="400" height="300" data-f="img"></a>
+  <div class="hero-body">
+    <p class="eyebrow"><span class="pulse"></span>{{ t.unseen_pick }} · <time data-f="date" datetime="{{ u.date | iso }}">{{ u.date | fdate: lang }}</time></p>
+    <h2 id="pick-title"><a href="{{ u.url | relative_url }}" data-f="title">{{ u.data.title }}</a></h2>
+    <p class="lede" data-f="excerpt">{{ u | excerpt: 48 }}</p>
+    <div class="hero-meta">
+      <a class="chip-player" data-f="player" href="{{ t.players_url | append: up.id | append: '/' | relative_url }}"{% unless u.data.player %} hidden{% endunless %}><img src="{{ up.avatar | relative_url }}" alt="" width="36" height="36"><span>{{ up.name }}</span></a>
+      <span class="stat" data-f="chars"{% unless u.data.chars %} hidden{% endunless %}><b>{{ u.data.chars }}</b> {{ t.characters_lower }}</span>
+    </div>
+    <div class="pick-actions">
+      <a class="btn primary" href="{{ u.url | relative_url }}" data-f="href">{{ t.views_zero }} →</a>
+      <button class="btn another" type="button" hidden>↻ {{ t.another }}</button>
+    </div>
+  </div>
+</section>
+<script type="application/json" id="unseen-data">{{ posts | unseenJson: views, lang }}</script>
+<script>
+// Pick a random unread post on every visit (the page shows the newest one without JavaScript).
+(() => {
+  const box = document.querySelector(".unseen-pick"), list = JSON.parse(document.getElementById("unseen-data").textContent);
+  if (!box || !list.length) return;
+  const f = (n) => box.querySelectorAll(`[data-f="${n}"]`);
+  let cur = -1;
+  const show = () => {
+    let i = Math.floor(Math.random() * list.length);
+    if (list.length > 1 && i === cur) i = (i + 1) % list.length;
+    cur = i; const x = list[i];
+    f("href").forEach((a) => (a.href = x.u));
+    f("img").forEach((im) => (im.src = x.i));
+    f("title").forEach((a) => { a.textContent = x.t; a.href = x.u; });
+    f("date").forEach((d) => { d.textContent = x.l; d.dateTime = x.d; });
+    f("excerpt").forEach((p) => (p.textContent = x.e));
+    f("player").forEach((a) => { a.hidden = !x.n; if (x.n) { a.href = x.h; a.querySelector("img").src = x.a; a.querySelector("span").textContent = x.n; } });
+    f("chars").forEach((s) => { s.hidden = !x.c; if (x.c) s.querySelector("b").textContent = x.c; });
+  };
+  show();
+  const b = box.querySelector(".another");
+  if (list.length > 1) { b.hidden = false; b.addEventListener("click", show); }
+})();
+</script>
+{%- endif %}
+
+{%- if ranked.size > 0 %}
+<section>
+  <div class="section-head"><h2>{{ t.ranking }}</h2></div>
+  <ol class="ranking">
+  {%- for x in ranked %}
+    {%- assign p = x.p %}
+    <li class="rank-row{% if forloop.index <= 3 %} medal m{{ forloop.index }}{% endif %}">
+      <span class="pos">{{ forloop.index }}</span>
+      <img class="thumb" src="{{ p.data.target | default: p.data.cover | relative_url }}" alt="" width="400" height="300" loading="lazy">
+      <span class="what">
+        <a href="{{ p.url | relative_url }}">{{ p.data.title }}</a>
+        <small>{{ p.date | fdate: lang }}{% if p.data.player %} · {{ p.data.player | player | map: "name" }}{% else %} · {{ p.data.kicker | default: t.news }}{% endif %}</small>
+      </span>
+      <span class="count"><span class="bar" style="--w:{{ x.v | times: 100 | divided_by: top.v }}%"></span><b>{{ x.v | fnum: lang }}</b> {% if x.v == 1 %}{{ t.views_one }}{% else %}{{ t.views_many }}{% endif %}</span>
+    </li>
+  {%- endfor %}
+  </ol>
+</section>
+{%- endif %}
+
+{%- if unread.size > 0 %}
+<section id="unread">
+  <div class="section-head"><h2>{{ t.unseen_title }}</h2><span class="muted">{{ t.unseen_intro | replace: "{n}", unread.size }}</span></div>
+  <div class="tiles">{% for p in unread %}{% include tile.html post=p lang=lang %}{% endfor %}</div>
+</section>
+{%- endif %}

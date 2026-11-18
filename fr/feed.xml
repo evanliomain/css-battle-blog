@@ -1,6 +1,0 @@
----
-layout: null
-permalink: /fr/feed.xml
-sitemap: false
----
-{% include atom.xml lang="fr" %}

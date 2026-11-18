@@ -17,10 +17,78 @@ en:
   characters_lower: characters
   score: Score
   match: Match
-  open_target: Open the target on cssbattle.dev →
+  open_target: Open the target on cssbattle.dev
   target_of: Target of
   language: Language
   months: [January, February, March, April, May, June, July, August, September, October, November, December]
+  months_short: [Jan, Feb, Mar, Apr, May, Jun, Jul, Aug, Sep, Oct, Nov, Dec]
+  weekdays: [Mon, Tue, Wed, Thu, Fri, Sat, Sun]
+  calendar_url: /calendar/
+  players_url: /players/
+  lengths_url: /lengths/
+  search_url: /search.json
+  calendar: Calendar
+  players: Players
+  lengths: Lengths
+  search: Search
+  search_placeholder: Title, player, date, length…
+  search_empty: No post matches.
+  search_hint: "Type / to search"
+  theme: Switch theme
+  latest: Latest post
+  read: Read the breakdown
+  recent: Recent targets
+  see_calendar: All targets in the calendar →
+  browse: Browse
+  browse_calendar: Every day, month by month.
+  browse_players: Who took the top 1, and how often.
+  browse_lengths: From the shortest solution to the longest.
+  top_players: Top players
+  calendar_title: Every daily target
+  calendar_intro: One square per day. Click a target to read how its shortest solution works.
+  no_post: No post
+  players_title: The top 1 players
+  players_intro: Everyone who held the shortest solution of a daily target, by number of wins.
+  wins: top 1
+  wins_many: top 1s
+  best: Shortest
+  latest_win: Latest
+  player_intro: Every daily target where this player wrote the shortest solution.
+  all_players: ← All players
+  lengths_title: Solutions by length
+  lengths_intro: Every winning solution, from the shortest to the longest. Click a bar to jump to its range.
+  chars_short: chars
+  older: Previous day
+  newer: Next day
+  more_by: More top 1s by
+  rank: shortest of
+  rank_post: "{rank} shortest of {total} daily targets"
+  on_this_month: This month
+  posts_count: posts
+  not_found: Page not found
+  not_found_text: This page does not exist, or not anymore.
+  back_home: Back to the home page
+  copy: Copy
+  copied: Copied
+  solution: Solution
+  views_one: view
+  views_many: views
+  views_zero: Be the first to read it
+  toolbox_url: /toolbox/
+  toolbox: Toolbox
+  toolbox_title: CSS Battle Toolbox releases
+  toolbox_intro: What each version of <a href="https://chromewebstore.google.com/detail/css-battle-toolbox/emdpbenabkkocjldgifjkciijdmcflin" rel="noopener">CSS Battle Toolbox</a> brings, the Chrome extension I build to add tools right into the battle page.
+  toolbox_latest: Latest Toolbox release
+  toolbox_all: All releases →
+  popular_url: /popular/
+  popular: Popular
+  popular_title: The most read posts
+  popular_intro: Every post ranked by views (English and French pages added up), and the ones nobody has opened yet.
+  unseen_pick: Nobody has read this one yet
+  another: Another one
+  ranking: Most read
+  unseen_title: Not read yet
+  unseen_intro: "{n} posts are waiting for their first reader."
 fr:
   short: FR
   flag: 🇫🇷
@@ -39,7 +107,75 @@ fr:
   characters_lower: caractères
   score: Score
   match: Match
-  open_target: Ouvrir la cible sur cssbattle.dev →
+  open_target: Ouvrir la cible sur cssbattle.dev
   target_of: Cible du
   language: Langue
   months: [janvier, février, mars, avril, mai, juin, juillet, août, septembre, octobre, novembre, décembre]
+  months_short: [janv., févr., mars, avr., mai, juin, juil., août, sept., oct., nov., déc.]
+  weekdays: [lun., mar., mer., jeu., ven., sam., dim.]
+  calendar_url: /fr/calendrier/
+  players_url: /fr/joueurs/
+  lengths_url: /fr/longueurs/
+  search_url: /fr/search.json
+  calendar: Calendrier
+  players: Joueurs
+  lengths: Longueurs
+  search: Rechercher
+  search_placeholder: Titre, joueur, date, longueur…
+  search_empty: Aucun article ne correspond.
+  search_hint: "Tapez / pour chercher"
+  theme: Changer de thème
+  latest: Dernier article
+  read: Lire l'explication
+  recent: Cibles récentes
+  see_calendar: Toutes les cibles dans le calendrier →
+  browse: Explorer
+  browse_calendar: Chaque jour, mois par mois.
+  browse_players: Qui a pris le top 1, et combien de fois.
+  browse_lengths: De la solution la plus courte à la plus longue.
+  top_players: Meilleurs joueurs
+  calendar_title: Toutes les cibles du jour
+  calendar_intro: Une case par jour. Cliquez sur une cible pour lire comment marche sa solution la plus courte.
+  no_post: Pas d'article
+  players_title: Les joueurs du top 1
+  players_intro: Tous ceux qui ont tenu la solution la plus courte d'une cible du jour, par nombre de victoires.
+  wins: top 1
+  wins_many: top 1
+  best: La plus courte
+  latest_win: Dernier
+  player_intro: Toutes les cibles du jour où ce joueur a écrit la solution la plus courte.
+  all_players: ← Tous les joueurs
+  lengths_title: Les solutions par longueur
+  lengths_intro: Toutes les solutions gagnantes, de la plus courte à la plus longue. Cliquez sur une barre pour aller à sa tranche.
+  chars_short: car.
+  older: Jour précédent
+  newer: Jour suivant
+  more_by: Autres top 1 de
+  rank: plus courte sur
+  rank_post: "{rank} plus courte des {total} cibles du jour"
+  on_this_month: Ce mois-ci
+  posts_count: articles
+  not_found: Page introuvable
+  not_found_text: Cette page n'existe pas, ou plus.
+  back_home: Retour à l'accueil
+  copy: Copier
+  copied: Copié
+  solution: Solution
+  views_one: vue
+  views_many: vues
+  views_zero: Soyez le premier à le lire
+  toolbox_url: /fr/toolbox/
+  toolbox: Toolbox
+  toolbox_title: Les versions de CSS Battle Toolbox
+  toolbox_intro: Ce qu'apporte chaque version de <a href="https://chromewebstore.google.com/detail/css-battle-toolbox/emdpbenabkkocjldgifjkciijdmcflin" rel="noopener">CSS Battle Toolbox</a>, l'extension Chrome que je développe pour ajouter des outils directement dans la page de la battle.
+  toolbox_latest: Dernière version de la Toolbox
+  toolbox_all: Toutes les versions →
+  popular_url: /fr/populaires/
+  popular: Populaires
+  popular_title: Les articles les plus lus
+  popular_intro: Tous les articles classés par nombre de vues (pages anglaise et française additionnées), et ceux que personne n'a encore ouverts.
+  unseen_pick: Personne n'a encore lu celui-ci
+  another: Un autre
+  ranking: Les plus lus
+  unseen_title: Pas encore lus
+  unseen_intro: "{n} articles attendent leur premier lecteur."

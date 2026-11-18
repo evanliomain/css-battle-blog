@@ -4,20 +4,39 @@ A blog about the winning solution of each [CSS Battle](https://cssbattle.dev) da
 
 Live site: https://evanliomain.github.io/css-battle-blog/
 
-It is a plain Jekyll site, built by GitHub Pages from the `main` branch.
+It is built with [Eleventy](https://www.11ty.dev) (Node 20+) by the GitHub Actions workflow `.github/workflows/pages.yml` on every push to `main`, and served by GitHub Pages. The sources keep the Jekyll layout (`_posts/`, `_includes/`, `_layouts/`, `_data/`) and Liquid templates.
+
+## Pages and navigation
+
+- Home (`_layouts/home.html`): the latest post, shortcuts to the three browse pages, the recent posts.
+- Calendar (`pages/calendar.liquid`, `/calendar/`, `/fr/calendrier/`): every month, one square per day.
+- Players (`pages/players.liquid` and `pages/player.liquid`, `/players/<id>/`): the top 1 leaderboard and one page per player.
+- Lengths (`pages/lengths.liquid`, `/lengths/`, `/fr/longueurs/`): solutions in 10-character buckets.
+- Popular (`pages/popular.liquid`, `/popular/`, `/fr/populaires/`): posts ranked by views, one unread post picked at random on every visit ("Another one" picks again), and every unread post.
+- Toolbox (`pages/toolbox.liquid`, `/toolbox/`, `/fr/toolbox/`): the CSS Battle Toolbox release posts. They stay out of the calendar and the recent posts; the home page only shows the latest one in a band.
+- Quick search (`/` or Ctrl+K, `assets/js/site.js`), fed by `/search.json` and `/fr/search.json`. It understands `<130`, `>200` and `120-140` for lengths.
+- On a post: ←/→ go to the previous / next day.
+
+The data behind these pages (calendar, leaderboard, buckets, excerpts, dates) is computed in `lib/blog.js`; the Eleventy settings are in `eleventy.config.js`, the site settings in `_data/site.js`.
+
+The design is dark by default, like cssbattle.dev; the button in the header switches to the light theme (remembered per browser). Fonts are self-hosted in `assets/fonts/`.
 
 ## Languages
 
 English lives at the root, French under `/fr/`. Every page exists in both languages:
 
-- interface strings are in `_data/i18n.yml`, and the list of languages is `languages` in `_config.yml`;
+- interface strings (and the URLs of the generated pages) are in `_data/i18n.yml`, and the list of languages is `languages` in `_data/site.js`;
 - the two versions of a page share the same `ref` in their front matter. The language select in the header (🇬🇧 English / 🇫🇷 Français, on every page) uses it to open the same page in the other language;
-- posts go in `_posts/en/` and `_posts/fr/` (`lang` and `layout` come from the folder);
-- each language has its own home page (`index.html`, `fr/index.html`) and Atom feed (`feed.xml`, `fr/feed.xml`).
+- posts go in `_posts/en/` and `_posts/fr/` (`lang` and `layout` come from `en.11tydata.json` / `fr.11tydata.json` in the folder);
+- each language has its own home page (`index.html`, `fr/index.html`) and Atom feed (`pages/feed.liquid`).
 
 ## Analytics
 
-Visits are counted with [GoatCounter](https://css-battle-blog.goatcounter.com) (no cookies, no consent banner). The script is in `_layouts/default.html` and only loads in production, so a local preview counts nothing.
+Visits are counted with [GoatCounter](https://css-battle-blog.goatcounter.com) (no cookies, no consent banner). The script is in `_layouts/default.html` and only loads in the production build (`npm run build`), so a local preview counts nothing.
+
+## View counts
+
+Every post shows its views (English + French pages added up), or "Be the first to read it" when it has none. They come from `_data/views.json` (`{ref: {en, fr}}`), written from GoatCounter by `stats-goatcounter.py` (in the knowledge base's `css-battle-ajouter-defi` skill) and committed with each daily update. Between two updates the numbers do not move.
 
 ## Writing a post
 
@@ -74,11 +93,14 @@ Then add `{% include animations/<date>.html lang=page.lang %}` in the body. Post
 
 ## Writing a news post
 
-A post that is not about a daily target (a CSS Battle Toolbox release, for example) uses `layout: article` instead of the default `post` layout. It needs no `target`, `player` or `chars`: give it a `cover` (a 4:3 image, shown on the home card) and a `kicker` (the label above the title, "News" by default). Put its images in `assets/<topic>/`, and show them with `<figure class="shot">`, or two side by side in `<div class="shots">`. See `_posts/en/2026-11-04-css-battle-toolbox-2-0.md`.
+A post that is not about a daily target (a CSS Battle Toolbox release, for example) uses `layout: article` instead of the default `post` layout. It needs no `target`, `player` or `chars`: give it a `cover` (a 4:3 image, shown on the Toolbox page and the home band) and a `kicker` (the label above the title, "News" by default). Put its images in `assets/<topic>/`, and show them with `<figure class="shot">`, or two side by side in `<div class="shots">`. See `_posts/en/2026-11-04-css-battle-toolbox-2-0.md`.
 
 ## Local preview
 
 ```sh
-bundle install
-bundle exec jekyll serve
+npm install
+npm start          # http://localhost:8080/css-battle-blog/, reloads on every change
+npm run build      # the production build, in _site/
 ```
+
+Behind a TLS-inspecting proxy, give npm the system certificates: `security find-certificate -a -p /Library/Keychains/System.keychain /System/Library/Keychains/SystemRootCertificates.keychain > ~/ca.pem` then `npm_config_cafile=~/ca.pem npm install`.

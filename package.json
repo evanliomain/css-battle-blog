@@ -1,0 +1,19 @@
+{
+  "name": "css-battle-blog",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "start": "eleventy --serve --port=8080",
+    "build": "ELEVENTY_ENV=production eleventy"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "devDependencies": {
+    "@11ty/eleventy": "^3.1.8",
+    "@11ty/eleventy-plugin-syntaxhighlight": "^5.0.2",
+    "js-yaml": "^5.5.0",
+    "markdown-it": "^15.0.3",
+    "markdown-it-anchor": "^10.1.0"
+  }
+}

@@ -1,27 +1,70 @@
 ---
 layout: default
 ---
-{%- assign t = site.data.i18n[page.lang] -%}
+{%- assign t = i18n[lang] -%}
+{%- assign key = "posts_" | append: lang -%}
+{%- assign posts = collections[key] -%}
+{%- assign nb = posts | neighbors: page.url -%}
+{%- assign pl = player | player -%}
+{%- assign rk = posts | rank: chars -%}
+{%- assign month_key = page.date | iso | slice: 0, 7 -%}
 <article class="post">
-  <p class="kicker">{{ t.daily_target }} · <time datetime="{{ page.date | date_to_xmlschema }}">{% include date.html date=page.date lang=page.lang %}</time></p>
-  <h1>{{ page.title }}</h1>
-  <div class="hero">
+  <nav class="crumbs" aria-label="Breadcrumb">
+    <a href="{{ t.home | relative_url }}">{{ t.site_title }}</a><span aria-hidden="true">/</span><a href="{{ t.calendar_url | append: '#' | append: month_key | relative_url }}">{{ page.date | fmonth: lang }}</a>
+    <span class="crumbs-nav">
+      {%- if nb.older %}<a href="{{ nb.older.url | relative_url }}" title="{{ t.older }} : {{ nb.older.data.title | escape }}" aria-label="{{ t.older }}">←</a>{% else %}<span aria-hidden="true">←</span>{% endif -%}
+      {%- if nb.newer %}<a href="{{ nb.newer.url | relative_url }}" title="{{ t.newer }} : {{ nb.newer.data.title | escape }}" aria-label="{{ t.newer }}">→</a>{% else %}<span aria-hidden="true">→</span>{% endif -%}
+    </span>
+  </nav>
+  <header class="post-head">
+    <p class="eyebrow">{{ t.daily_target }} · <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | fdate: lang }}</time> · {% include views.html ref=ref lang=lang %}</p>
+    <h1>{{ title }}</h1>
+  </header>
+  <div class="post-hero">
     <figure class="target">
-      <img src="{{ page.target | relative_url }}" alt="{{ t.target_of }} {% include date.html date=page.date lang=page.lang %}" width="400" height="300">
-      {% if page.colors %}<figcaption>{% for c in page.colors %}<span class="swatch" style="--c:{{ c }}"></span><code>{{ c }}</code>{% endfor %}</figcaption>{% endif %}
+      <img src="{{ target | relative_url }}" alt="{{ t.target_of }} {{ page.date | fdate: lang }}" width="400" height="300">
+      {% if colors %}<figcaption>{% for c in colors %}<span class="swatch-pill"><span class="swatch" style="--c:{{ c }}"></span><code>{{ c }}</code></span>{% endfor %}</figcaption>{% endif %}
     </figure>
     <aside class="facts">
       <p class="label">{{ t.top_by }}</p>
-      {% include player-card.html id=page.player %}
+      <div class="player-row">
+        <a class="player" href="{{ t.players_url | append: pl.id | append: '/' | relative_url }}">
+          <img class="avatar" src="{{ pl.avatar | relative_url }}" alt="" width="56" height="56">
+          <span class="who"><span class="name">{{ pl.name }}</span><span class="id">@{{ pl.id }}</span></span>
+        </a>
+        <a class="profile" href="https://cssbattle.dev/player/{{ pl.id }}" rel="noopener" title="cssbattle.dev/player/{{ pl.id }}">cssbattle.dev ↗</a>
+      </div>
       <dl>
-        <div><dt>{{ t.characters }}</dt><dd>{{ page.chars }}</dd></div>
-        <div><dt>{{ t.score }}</dt><dd>{{ page.score }}</dd></div>
-        <div><dt>{{ t.match }}</dt><dd>{{ page.match }}%</dd></div>
+        <div class="big"><dt>{{ t.characters }}</dt><dd>{{ chars }}</dd></div>
+        <div><dt>{{ t.score }}</dt><dd>{{ score }}</dd></div>
+        <div><dt>{{ t.match }}</dt><dd>{{ match }}%</dd></div>
       </dl>
-      {% if page.target_url %}<a class="play" href="{{ page.target_url }}" rel="noopener">{{ t.open_target }}</a>{% endif %}
+      {%- assign ord = rk.rank | ordinal: lang %}
+      <p class="rank"><a href="{{ t.lengths_url | relative_url }}#c{{ chars | divided_by: 10 | times: 10 }}">{{ t.rank_post | replace: "{rank}", ord | replace: "{total}", rk.total }}</a></p>
+      {% if target_url %}<a class="btn primary play" href="{{ target_url }}" rel="noopener">{{ t.open_target }}</a>{% endif %}
     </aside>
   </div>
-  <pre class="solution"><code>{{ page.code | rstrip | escape }}</code></pre>
-  {{ content }}
+  <figure class="solution">
+    <figcaption class="solution-head"><span class="dots" aria-hidden="true"><i></i><i></i><i></i></span>{{ t.solution }} · {{ chars }} {{ t.characters_lower }}<button class="copy" type="button" data-done="{{ t.copied }}">{{ t.copy }}</button></figcaption>
+    <pre><code>{{ code | rstrip | escape }}</code></pre>
+  </figure>
+  <div class="prose">
+{{ content }}
+  </div>
+  <nav class="pager" aria-label="{{ t.older }} / {{ t.newer }}">
+    {%- if nb.older %}
+    <a class="pager-link older" rel="prev" href="{{ nb.older.url | relative_url }}"><img src="{{ nb.older.data.target | relative_url }}" alt="" width="400" height="300" loading="lazy"><span><small>← {{ t.older }} · {{ nb.older.date | fshort: lang }}</small>{{ nb.older.data.title }}</span></a>
+    {%- else %}<span></span>{% endif %}
+    {%- if nb.newer %}
+    <a class="pager-link newer" rel="next" href="{{ nb.newer.url | relative_url }}"><span><small>{{ t.newer }} · {{ nb.newer.date | fshort: lang }} →</small>{{ nb.newer.data.title }}</span><img src="{{ nb.newer.data.target | relative_url }}" alt="" width="400" height="300" loading="lazy"></a>
+    {%- endif %}
+  </nav>
+  {%- assign more = posts | byPlayer: player, page.url, 6 -%}
+  {%- if more.size > 0 %}
+  <section class="more-by">
+    <div class="section-head"><h2>{{ t.more_by }} {{ pl.name }}</h2><a href="{{ t.players_url | append: pl.id | append: '/' | relative_url }}">{{ t.players }} →</a></div>
+    <div class="tiles">{% for p in more %}{% include tile.html post=p lang=lang %}{% endfor %}</div>
+  </section>
+  {%- endif %}
 </article>
 <script src="{{ '/assets/js/anim-player.js' | relative_url }}" defer></script>

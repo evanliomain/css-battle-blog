@@ -1,0 +1,30 @@
+---
+pagination: { data: collections.playerPages, size: 1, alias: x }
+permalink: "{{ i18n[x.lang].players_url }}{{ x.id }}/"
+layout: default
+alt_key: players_url
+eleventyComputed:
+  lang: "{{ x.lang }}"
+  alt_suffix: "{{ x.id }}/"
+  title: "{{ x.name }}"
+  description: "{{ i18n[x.lang].player_intro }}"
+---
+{%- assign t = i18n[lang] -%}
+{%- assign first = x.posts | last -%}
+<nav class="crumbs"><a href="{{ t.players_url | relative_url }}">{{ t.all_players }}</a></nav>
+<header class="player-head">
+  <img class="avatar" src="{{ x.avatar | relative_url }}" alt="" width="120" height="120">
+  <div>
+    <h1>{{ x.name }}</h1>
+    <p class="id"><a href="https://cssbattle.dev/player/{{ x.id }}" rel="noopener">@{{ x.id }} · cssbattle.dev ↗</a></p>
+    <dl class="stats">
+      <div><dt>{{ t.wins_many }}</dt><dd>{{ x.count }}</dd></div>
+      <div><dt>{{ t.best }}</dt><dd><a href="{{ x.best.url | relative_url }}">{{ x.best.data.chars }}</a></dd></div>
+      <div><dt>{{ t.latest_win }}</dt><dd><a href="{{ x.latest.url | relative_url }}">{{ x.latest.date | fshort: lang }}</a></dd></div>
+    </dl>
+  </div>
+</header>
+<p class="page-intro">{{ t.player_intro }}</p>
+<div class="cards">
+{%- for p in x.posts %}{% include card.html post=p lang=lang %}{% endfor %}
+</div>

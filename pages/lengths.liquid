@@ -1,0 +1,28 @@
+---
+pagination: { data: site.languages, size: 1, alias: lang }
+permalink: "{{ i18n[lang].lengths_url }}"
+layout: default
+alt_key: lengths_url
+eleventyComputed:
+  title: "{{ i18n[lang].lengths_title }}"
+  description: "{{ i18n[lang].lengths_intro }}"
+---
+{%- assign t = i18n[lang] -%}
+{%- assign key = "posts_" | append: lang -%}
+{%- assign buckets = collections[key] | lengths -%}
+<header class="page-head">
+  <h1>{{ t.lengths_title }}</h1>
+  <p>{{ t.lengths_intro }}</p>
+</header>
+<nav class="hist" aria-label="{{ t.lengths }}">
+  {%- for b in buckets %}
+  {%- if b.count > 0 %}<a href="#{{ b.id }}" style="--h:{{ b.pct }}%" title="{{ b.from }}–{{ b.to }} {{ t.characters_lower }} : {{ b.count }}"><b>{{ b.count }}</b><i></i><span>{{ b.from }}</span></a>
+  {%- else %}<span style="--h:0%"><b></b><i></i><span>{{ b.from }}</span></span>{% endif %}
+  {%- endfor %}
+</nav>
+{%- for b in buckets %}{% if b.count > 0 %}
+<section class="bucket" id="{{ b.id }}">
+  <h2>{{ b.from }}–{{ b.to }} <small>{{ t.characters_lower }}</small> <span class="count">{{ b.count }}</span></h2>
+  <div class="tiles">{% for p in b.posts %}{% include tile.html post=p lang=lang %}{% endfor %}</div>
+</section>
+{%- endif %}{% endfor %}

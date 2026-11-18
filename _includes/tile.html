@@ -1,0 +1,6 @@
+{%- assign p = include.post -%}
+<a class="tile" href="{{ p.url | relative_url }}" title="{{ p.data.title | escape }}">
+  <img src="{{ p.data.target | default: p.data.cover | relative_url }}" alt="" width="400" height="300" loading="lazy">
+  <span class="tile-meta"><time datetime="{{ p.date | iso }}">{{ p.date | fshort: include.lang }}</time>{% if p.data.chars %}<b>{{ p.data.chars }}</b>{% else %}<b class="k">{{ p.data.kicker | default: i18n[include.lang].news }}</b>{% endif %}</span>
+  <span class="tile-title">{{ p.data.title }}</span>
+</a>

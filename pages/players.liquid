@@ -1,0 +1,31 @@
+---
+pagination: { data: site.languages, size: 1, alias: lang }
+permalink: "{{ i18n[lang].players_url }}"
+layout: default
+alt_key: players_url
+eleventyComputed:
+  title: "{{ i18n[lang].players_title }}"
+  description: "{{ i18n[lang].players_intro }}"
+---
+{%- assign t = i18n[lang] -%}
+{%- assign key = "posts_" | append: lang -%}
+{%- assign board = collections[key] | leaderboard -%}
+{%- assign top = board | first -%}
+<header class="page-head">
+  <h1>{{ t.players_title }}</h1>
+  <p>{{ t.players_intro }}</p>
+</header>
+<ol class="board">
+{%- for x in board %}
+  <li class="row{% if forloop.index <= 3 %} medal m{{ forloop.index }}{% endif %}">
+    <span class="pos">{{ forloop.index }}</span>
+    <a class="player" href="{{ t.players_url | append: x.id | append: '/' | relative_url }}">
+      <img class="avatar" src="{{ x.avatar | relative_url }}" alt="" width="48" height="48" loading="lazy">
+      <span class="who"><span class="name">{{ x.name }}</span><span class="id">@{{ x.id }}</span></span>
+    </a>
+    <span class="wins"><span class="bar" style="--w:{{ x.count | times: 100 | divided_by: top.count }}%"></span><b>{{ x.count }}</b> {% if x.count > 1 %}{{ t.wins_many }}{% else %}{{ t.wins }}{% endif %}</span>
+    <span class="best" title="{{ t.best }}"><small>{{ t.best }}</small><a href="{{ x.best.url | relative_url }}">{{ x.best.data.chars }}</a></span>
+    <span class="thumbs" aria-hidden="true">{% for p in x.posts limit: 4 %}<a href="{{ p.url | relative_url }}" tabindex="-1"><img src="{{ p.data.target | relative_url }}" alt="" width="400" height="300" loading="lazy"></a>{% endfor %}</span>
+  </li>
+{%- endfor %}
+</ol>

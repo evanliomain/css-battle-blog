@@ -1,0 +1,12 @@
+---
+permalink: /404.html
+layout: default
+eleventyExcludeFromCollections: true
+title: Page not found
+---
+<section class="page-head not-found">
+  <p class="big404">404</p>
+  <h1>{{ i18n.en.not_found }} · {{ i18n.fr.not_found }}</h1>
+  <p>{{ i18n.en.not_found_text }} <span lang="fr">{{ i18n.fr.not_found_text }}</span></p>
+  <p><a class="btn primary" href="{{ '/' | relative_url }}">{{ i18n.en.back_home }}</a> <a class="btn" href="{{ '/fr/' | relative_url }}" lang="fr">{{ i18n.fr.back_home }}</a></p>
+</section>

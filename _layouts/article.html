@@ -1,9 +1,14 @@
 ---
 layout: default
 ---
-{%- assign t = site.data.i18n[page.lang] -%}
+{%- assign t = i18n[lang] -%}
 <article class="post article">
-  <p class="kicker">{{ page.kicker | default: t.news }} · <time datetime="{{ page.date | date_to_xmlschema }}">{% include date.html date=page.date lang=page.lang %}</time></p>
-  <h1>{{ page.title }}</h1>
-  {{ content }}
+  <nav class="crumbs" aria-label="Breadcrumb"><a href="{{ t.home | relative_url }}">{{ t.site_title }}</a><span aria-hidden="true">/</span><a href="{{ t.toolbox_url | relative_url }}">{{ t.toolbox }}</a></nav>
+  <header class="post-head">
+    <p class="eyebrow">{{ kicker | default: t.news }} · <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | fdate: lang }}</time> · {% include views.html ref=ref lang=lang %}</p>
+    <h1>{{ title }}</h1>
+  </header>
+  <div class="prose">
+{{ content }}
+  </div>
 </article>
