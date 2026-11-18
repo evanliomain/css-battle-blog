@@ -1,0 +1,125 @@
+<figure class="anim t0522" data-duration="32" data-scene="t0522" data-wide="-50 -40 500 380" data-off-label="6 -34" style="--bg:#0d2a58">
+<style>
+.t0522{--t0522-navy:#0d2a58;--t0522-cream:#f5e3b5;--t0522-bb:#6366f1;--t0522-bd:#f59e0b;--t0522-p1:#14b8a6;--t0522-p2:#ec4899;--t0522-box:#14142a;--t0522-neg:#ef4444}
+.t0522 .scene .t0522-white{left:-80px;top:-70px;width:560px;height:440px;background:#fff;z-index:0}
+.t0522 .scene .t0522-body{left:30px;top:80px;width:340px;height:140px;box-sizing:border-box;border:0 solid var(--t0522-cream);z-index:2}
+.t0522 .scene .t0522-p{left:80px;width:240px;height:40px;z-index:3;opacity:0}
+.t0522 .scene .t0522-mg{left:80px;width:240px;box-sizing:border-box;outline:calc(1.5px * var(--k, 1)) dashed #fff;outline-offset:calc(-0.75px * var(--k, 1));background:rgb(255 255 255 / .14);opacity:0;z-index:8}
+.t0522 .scene .t0522-mg.t0522-neg{outline-color:var(--t0522-neg);background:rgb(239 68 68 / .1)}
+.t0522 .scene .t0522-box{box-sizing:border-box;outline:calc(1.5px * var(--k, 1)) dashed var(--t0522-box);outline-offset:calc(-0.75px * var(--k, 1));filter:drop-shadow(0 0 calc(1px * var(--k, 1)) #fff);opacity:0;z-index:9}
+.t0522 .scene .zlab{left:4px;color:#14142a;background:rgb(255 255 255 / .92);box-shadow:0 0 0 1px rgb(20 20 42 / .25);padding:1px 5px;border-radius:3px;opacity:0}
+.t0522 .legend .t0522-ol{box-shadow:0 0 0 1px currentColor}
+.t0522 .legend .t0522-dash{background:none;outline:2px dashed currentColor;outline-offset:-2px}
+</style>
+<div class="anim-col">
+<div class="stage" role="img" aria-label="{% if include.lang == "fr" %}Animation : le second p ferme le premier, et le style va dans le second p. Le fond #0d2a58 de html passe au canevas, qui devient bleu marine partout. body a les marges 80 30 : en mode quirks il fait 340 × 140 en (30, 80). Sa bordure de 5vw = 20px en #f5e3b5 dessine un cadre crème. Les deux p reçoivent la même bordure : 240 de large, sans contenu, ce sont deux barres crème de 40px de haut. Le premier est en y = 165. La marge basse −174 du premier et la marge haute 65 du second fusionnent en une seule marge de −109 : le second p remonte en y = 96. Il reste un H bleu marine dans le cadre crème.{% else %}Animation: the second p closes the first one, and the style goes into the second p. html's #0d2a58 background goes to the canvas, which turns navy everywhere. body has the margins 80 30: in quirks mode it is 340 × 140 at (30, 80). Its 5vw = 20px #f5e3b5 border draws a cream frame. Both p get the same border: 240 wide, with no content, they are two cream bars 40px tall. The first one is at y = 165. The first one's −174 bottom margin and the second one's 65 top margin collapse into one −109 margin: the second p moves up to y = 96. A navy H is left inside the cream frame.{% endif %}">
+<div class="scene">
+<div class="t0522-white"></div>
+<div class="t0522-body"></div>
+<div class="t0522-p t0522-p1" style="top:165px"></div>
+<div class="t0522-p t0522-p2" style="top:270px"></div>
+<div class="t0522-mg t0522-m1" style="top:100px;height:65px"></div>
+<div class="t0522-mg t0522-m2"></div>
+<div class="t0522-box t0522-hbox" style="left:0;top:0;width:400px;height:300px"></div>
+<div class="t0522-box t0522-bbox" style="left:30px;top:80px;width:340px;height:140px"></div>
+<span class="zlab" data-l="1">html › head, body › p, p › style</span>
+<span class="zlab" data-l="2">{% if include.lang == "fr" %}fond de html → canevas{% else %}html's background → canvas{% endif %}</span>
+<span class="zlab" data-l="3">body 340 × 140 · margin 80 30</span>
+<span class="zlab" data-l="4">5vw = 400 × 5 % = 20px</span>
+<span class="zlab" data-l="5">p 240 × 40 · margin-top 65</span>
+<span class="zlab" data-l="6">65 + (−174) = −109 · 205 − 109 = 96</span>
+</div>
+</div>
+<div class="legend"><span><i class="t0522-ol" style="--c:#0d2a58"></i>{% if include.lang == "fr" %}#0d2a58, le canevas{% else %}#0d2a58, the canvas{% endif %}</span><span><i class="t0522-ol" style="--c:#f5e3b5"></i>#f5e3b5</span><span><i style="--c:var(--t0522-bb)"></i>{% if include.lang == "fr" %}fond de body{% else %}body's background{% endif %}</span><span><i style="--c:var(--t0522-bd)"></i>{% if include.lang == "fr" %}bordure de body{% else %}body's border{% endif %}</span><span><i style="--c:var(--t0522-p1)"></i>{% if include.lang == "fr" %}premier p{% else %}first p{% endif %}</span><span><i style="--c:var(--t0522-p2)"></i>second p</span><span><i class="t0522-dash"></i>{% if include.lang == "fr" %}boîtes, marges{% else %}boxes, margins{% endif %}</span></div>
+</div>
+<div class="anim-side">
+<pre class="code" aria-hidden="true"><span data-on="1">&lt;p>&lt;p></span>&lt;style>*{<span data-on="2">background:#0d2a58</span>;*{<span data-on="4 5">border:5vw solid#f5e3b5</span>;<span data-on="3">margin:80 30</span>;*{<span data-on="5 6">margin:65 30</span><span data-on="6" data-tone="2">-174</span></pre>
+<div class="now" aria-live="polite">
+<div class="caps">
+{%- if include.lang == "fr" %}
+<div class="cap" data-t="0" data-step="Éléments"><h3>1. Deux p et un style</h3><p>Le second <code>&lt;p></code> ferme le premier : body contient deux p, l'un après l'autre, et le <code>&lt;style></code> va dans le second. <code>*</code> vise tout, <code>*{</code> imbriqué vise head, body, les p et style, et le troisième niveau vise les p et style. head et style ne s'affichent pas.</p></div>
+<div class="cap" data-t="4" data-step="Fond"><h3>2. Un canevas bleu marine</h3><p>Tous les éléments reçoivent <code>background:#0d2a58</code>. Celui de html ne se peint pas dans sa boîte : il passe au canevas, qui devient bleu marine partout.</p></div>
+<div class="cap" data-t="8" data-step="body"><h3>3. La boîte de body</h3><p>body reçoit <code>margin:80 30</code>. Un nombre seul est lu en px. En mode quirks, body remplit la page moins ses marges : 400 − 60 = 340 de large, 300 − 160 = 140 de haut, en (30, 80). Son fond bleu marine se confond avec le canevas.</p></div>
+<div class="cap" data-t="12.5" data-step="Cadre"><h3>4. Un cadre crème</h3><p><code>border:5vw solid#f5e3b5</code> : 5vw, c'est 5 % des 400px de large, soit 20px. La bordure de body dessine un cadre crème. L'intérieur, bleu marine, va de x = 50 à 350 et de y = 100 à 200.</p></div>
+<div class="cap" data-t="17" data-step="Barres"><h3>5. Deux barres crème</h3><p>Les p reçoivent la même bordure de 20px. Ils font 300 − 60 = 240 de large, en x = 80. Leur contenu a une hauteur nulle : il ne reste que la bordure, 40px de haut, toute crème. La marge haute 65 met le premier p en y = 100 + 65 = 165. Avec <code>65 30</code> seul, le second serait en y = 205 + 65 = 270.</p></div>
+<div class="cap" data-t="22" data-step="Fusion"><h3>6. Deux marges n'en font qu'une</h3><p>La marge basse −174 du premier p touche la marge haute 65 du second. Deux marges verticales qui se touchent fusionnent : 65 + (−174) = −109. Le second p remonte en y = 205 − 109 = 96, au-dessus du premier. Il va jusqu'en y = 136.</p></div>
+<div class="cap" data-t="27.5" data-step="Résultat" data-live="91 caractères · 100 % identique"><h3>7. Résultat : 91 caractères</h3><p>Les deux barres débordent un peu sous le cadre, de la même couleur. Il reste un H bleu marine : deux montants de x = 50 à 80 et de 320 à 350, reliés par une barre de y = 136 à 165.</p></div>
+{%- else %}
+<div class="cap" data-t="0" data-step="Elements"><h3>1. Two p and a style</h3><p>The second <code>&lt;p></code> closes the first one: body holds two p, one after the other, and the <code>&lt;style></code> goes into the second one. <code>*</code> matches everything, the nested <code>*{</code> matches head, body, the p and style, and the third level matches the p and style. head and style are not displayed.</p></div>
+<div class="cap" data-t="4" data-step="Background"><h3>2. A navy canvas</h3><p>Every element gets <code>background:#0d2a58</code>. html's is not painted in its box: it goes to the canvas, which turns navy everywhere.</p></div>
+<div class="cap" data-t="8" data-step="body"><h3>3. body's box</h3><p>body gets <code>margin:80 30</code>. A bare number is read in px. In quirks mode, body fills the page minus its margins: 400 − 60 = 340 wide, 300 − 160 = 140 tall, at (30, 80). Its navy background blends with the canvas.</p></div>
+<div class="cap" data-t="12.5" data-step="Frame"><h3>4. A cream frame</h3><p><code>border:5vw solid#f5e3b5</code>: 5vw is 5% of the 400px width, so 20px. body's border draws a cream frame. The navy inside runs from x = 50 to 350 and from y = 100 to 200.</p></div>
+<div class="cap" data-t="17" data-step="Bars"><h3>5. Two cream bars</h3><p>The p get the same 20px border. They are 300 − 60 = 240 wide, at x = 80. Their content has no height: only the border is left, 40px tall, all cream. The 65 top margin puts the first p at y = 100 + 65 = 165. With just <code>65 30</code>, the second one would sit at y = 205 + 65 = 270.</p></div>
+<div class="cap" data-t="22" data-step="Collapse"><h3>6. Two margins become one</h3><p>The first p's −174 bottom margin touches the second p's 65 top margin. Two vertical margins that touch collapse into one: 65 + (−174) = −109. The second p moves up to y = 205 − 109 = 96, above the first one. It ends at y = 136.</p></div>
+<div class="cap" data-t="27.5" data-step="Result" data-live="91 characters · 100% match"><h3>7. Result: 91 characters</h3><p>Both bars run a little under the frame, in the same color. A navy H is left: two posts from x = 50 to 80 and from 320 to 350, joined by a bar from y = 136 to 165.</p></div>
+{%- endif %}
+</div>
+<div class="live"></div>
+</div>
+</div>
+<script>
+(window.AnimScenes = window.AnimScenes || {}).t0522 = (fig) => {
+  const fr = document.documentElement.lang === 'fr';
+  const $ = (s) => fig.querySelector(s);
+  const $$ = (s) => [...fig.querySelectorAll(s)];
+  const live = $('.live');
+  const ease = (x) => (x < 0.5 ? 4 * x * x * x : 1 - Math.pow(-2 * x + 2, 3) / 2);
+  const pr = (t, a, b) => ease(Math.min(1, Math.max(0, (t - a) / (b - a))));
+  const win = (t, a, b) => Math.min(pr(t, a, a + 0.5), 1 - pr(t, b - 0.3, b));
+  const c = fr ? ' :' : ':';
+  const mix = (k, a, b) => (k <= 0 ? b : k >= 1 ? a : `color-mix(in srgb, ${a} ${(k * 100).toFixed(1)}%, ${b})`);
+  const fade = (k, a) => (k >= 1 ? a : `color-mix(in srgb, ${a} ${(k * 100).toFixed(1)}%, transparent)`);
+  // Measured on the official code in local Chrome (400 × 300 iframe, quirks mode, getBoundingClientRect, getComputedStyle, variant renders).
+  // html 0, 0, 400 × 300 (its background goes to the canvas); body 30, 80, 340 × 140, border 20px #f5e3b5;
+  // first p 80, 165, 240 × 40; second p 80, 96, 240 × 40 (margins 65 30 -174: 65 + -174 = -109 between them); style is inside the second p.
+  // With margin:65 30 only, the second p sits at y = 270.
+  const white = $('.t0522-white'), body = $('.t0522-body'), p1 = $('.t0522-p1'), p2 = $('.t0522-p2');
+  const m1 = $('.t0522-m1'), m2 = $('.t0522-m2'), hbox = $('.t0522-hbox'), bbox = $('.t0522-bbox');
+  const labs = $$('.zlab');
+  const ivs = [[0.3, 3.8], [4.3, 7.8], [8.3, 12.3], [12.8, 16.8], [17.3, 21.8], [22.3, 27.3]];
+  return (t, step) => {
+    const teach = fig.dataset.teach === '1';
+    const tw = teach ? 1 - pr(t, 27.7, 28.7) : 0;
+    // step 2: html's background goes to the canvas
+    white.style.opacity = 1 - pr(t, 4.5, 6);
+    // step 3: body's box (its own navy shows only in teaching colors)
+    body.style.background = fade(pr(t, 8.5, 9.5) * tw, 'var(--t0522-bb)');
+    // step 4: the 20px border
+    const bw = 20 * pr(t, 13, 15);
+    body.style.borderWidth = bw > 0.01 ? `${bw.toFixed(3)}px` : '0';
+    body.style.borderColor = mix(tw, 'var(--t0522-bd)', 'var(--t0522-cream)');
+    // step 5: the two bars; step 6: the second one moves up from 270 to 96
+    const pa = pr(t, 17.5, 18.7);
+    p1.style.opacity = p2.style.opacity = pa;
+    p1.style.background = mix(tw, 'var(--t0522-p1)', 'var(--t0522-cream)');
+    p2.style.background = mix(tw, 'var(--t0522-p2)', 'var(--t0522-cream)');
+    const y2 = 270 - 174 * pr(t, 23, 25.5);
+    p2.style.top = `${y2.toFixed(3)}px`;
+    // margins: the first p's top margin, then the margin between the two p (dashed white when positive, red when negative)
+    m1.style.opacity = win(t, 17.3, 21.8);
+    const top = Math.min(205, y2);
+    m2.style.top = `${top.toFixed(3)}px`;
+    m2.style.height = `${(y2 > 205 ? y2 - 205 : 205 - y2).toFixed(3)}px`;
+    m2.classList.toggle('t0522-neg', y2 < 205);
+    m2.style.opacity = Math.max(win(t, 17.3, 21.8), win(t, 22.3, 27.3));
+    // dashed boxes: html in step 1, body in step 3
+    hbox.style.opacity = win(t, 0.3, 3.8);
+    bbox.style.opacity = win(t, 8.3, 12.3);
+    labs.forEach((l) => {
+      l.style.top = 'calc(4px * var(--k, 1))';
+      l.style.left = 'calc(4px * var(--k, 1))';
+      l.style.opacity = win(t, ...ivs[+l.dataset.l - 1]);
+    });
+    let txt;
+    if (step === 0) txt = 'html › head, body › p, p › style';
+    else if (step === 1) txt = `html → canvas #0d2a58`;
+    else if (step === 2) txt = `body${c} 400 − 60 = 340 · 300 − 160 = 140`;
+    else if (step === 3) txt = `5vw = 20px · 50 → 350, 100 → 200`;
+    else if (step === 4) txt = `p${c} 300 − 60 = 240 · 20 + 0 + 20 = 40 · y 100 + 65 = 165`;
+    else if (step === 5) txt = `65 + (−174) = −109 · y 205 − 109 = 96 → 136`;
+    else txt = $$('.caps .cap')[6].dataset.live || '';
+    live.textContent = txt;
+  };
+};
+</script>
+</figure>
