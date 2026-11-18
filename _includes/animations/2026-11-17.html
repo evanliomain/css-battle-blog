@@ -1,0 +1,136 @@
+<figure class="anim t1117" data-duration="31" data-scene="t1117" data-wide="-40 -40 560 380" data-off-label="-36 -36" style="--bg:#1a4341">
+<style>
+.t1117{--t1117-d:#1a4341;--t1117-k:#998235;--t1117-bd:#2c5a85;--t1117-bk:#d9c8f0;--t1117-dash:rgb(255 255 255 / .8)}
+.t1117 .t1117-cv{position:absolute;left:-100px;top:-100px;width:700px;height:500px;background-color:var(--t1117-d)}
+.t1117 .t1117-b{position:absolute}
+.t1117 .t1117-o{position:absolute;box-sizing:border-box;border:1.5px dashed var(--t1117-dash);pointer-events:none;opacity:0}
+.t1117 .t1117-ln{height:0;border-width:1.5px 0 0}
+.t1117 .t1117-dot{position:absolute;width:6px;height:6px;margin:-3px 0 0 -3px;border-radius:50%;background:#fff;box-shadow:0 0 0 1.5px #10201f;opacity:0}
+.t1117 .zlab{color:#fff;background:rgb(8 24 22 / .9);padding:1px 5px;border-radius:3px}
+.t1117 .t1117-n{color:inherit}
+</style>
+<div class="anim-col">
+<div class="stage" role="img" aria-label="{% if include.lang == "fr" %}Animation : html et body reçoivent le même fond, un dégradé radial qui dessine un anneau de rayons 15 et 45 au centre de chaque tuile ; avec font:37%, 55em vaut 325,6px sur html et 120,47px sur le body ; html, réduit par ses marges à 326 × 225, passe son fond au canevas : un anneau centré en (199,8 ; 150) ; le body, 252 × 150, montre deux anneaux en 139,5 et 260, coupés à y = 150 par son bord bas ; il cache le haut de l'anneau du canevas : deux arches et une cuvette forment la vague{% else %}Animation: html and body get the same background, a radial gradient that draws a ring with radii 15 and 45 at the center of each tile; with font:37%, 55em is 325.6px on html and 120.47px on the body; html, reduced by its margins to 326 × 225, gives its background to the canvas: one ring centered at (199.8, 150); the 252 × 150 body shows two rings at 139.5 and 260, cut at y = 150 by its bottom edge; it hides the top of the canvas ring: two arches and a dip make the wave{% endif %}">
+<div class="scene">
+<div class="t1117-cv"></div>
+<div class="t1117-b"></div>
+<div class="t1117-o" data-o="tile"></div>
+<div class="t1117-o" data-o="html"></div>
+<div class="t1117-o" data-o="body"></div>
+<div class="t1117-o t1117-ln" data-o="cut" style="left:74px;top:150px;width:252px"></div>
+<div class="t1117-dot" data-d="h"></div>
+<div class="t1117-dot" data-d="b0"></div>
+<div class="t1117-dot" data-d="b1"></div>
+<span class="zlab t1117-l-g" style="left:12px;top:12px">1q · 5vh = 15 · 45px</span>
+<span class="zlab t1117-l-s" style="left:12px;top:12px">55em × 75vw = 880 × 300</span>
+<span class="zlab t1117-l-f" style="left:12px;top:12px">{% if include.lang == "fr" %}html 5,92px · body 2,19px{% else %}html 5.92px · body 2.19px{% endif %}</span>
+<span class="zlab t1117-l-m" style="left:12px;top:232px">html 326 × 225 · body 252 × 150</span>
+<span class="zlab t1117-l-q" style="left:12px;top:232px">{% if include.lang == "fr" %}4 % × (252 − 120,47) = 5,26{% else %}4% × (252 − 120.47) = 5.26{% endif %}</span>
+<span class="zlab t1117-l-c" style="left:12px;top:232px">y = 150</span>
+</div>
+</div>
+<div class="legend"><span><i style="--c:var(--t1117-k)"></i>{% if include.lang == "fr" %}anneau de html (canevas){% else %}html's ring (canvas){% endif %}</span><span><i style="--c:var(--t1117-bd)"></i>{% if include.lang == "fr" %}fond du body{% else %}the body's background{% endif %}</span><span><i style="--c:var(--t1117-bk)"></i>{% if include.lang == "fr" %}anneaux du body{% else %}the body's rings{% endif %}</span></div>
+</div>
+<div class="anim-side">
+<pre class="code" aria-hidden="true">&lt;style>*{background:<span data-on="1 6">radial-gradient(1q,#1a4341 5vh,#998235 0 45px,#1a4341)</span><span data-on="5"><span class="t1117-n t1117-q">4</span>%0</span>/<span data-on="2 3">55em 75vw</span>;<span data-on="4 6" data-tone="2">margin:0 37 75</span>;<span data-on="3" data-tone="2">font:<span class="t1117-n t1117-f">37</span>%a</span></pre>
+<div class="now" aria-live="polite">
+<div class="caps">
+{%- if include.lang == "fr" %}
+<div class="cap" data-t="0" data-step="Un anneau dans un dégradé"><h3>1. Un anneau dans un dégradé</h3><p><code>*</code> donne ce fond à <code>html</code> et au <code>body</code>. <code>1q</code> est un cercle minuscule, mais les arrêts sont des longueurs fixes : vert jusqu'à <code>5vh</code> = 15px, moutarde de 15 à 45px, vert au-delà. Un anneau au centre de chaque tuile. Sans taille ni marge, les deux anneaux tombent l'un sur l'autre, en (200, 150).</p></div>
+<div class="cap" data-t="4" data-step="55em 75vw : une tuile trop large"><h3>2. <code>55em 75vw</code> : une tuile trop large</h3><p>La taille de la tuile dépend de la police. À 16px, <code>55em</code> fait 880 et <code>75vw</code> fait 300. L'anneau de <code>html</code> part au centre de sa tuile, en x = 440, hors du cadre. Celui du <code>body</code> aussi : sa boîte s'arrête à x = 392 et le cache. Tout le cadre est vert.</p></div>
+<div class="cap" data-t="8" data-step="font:37%a : deux tailles"><h3>3. <code>font:37%a</code> : deux tailles</h3><p>Une police en % se compose. <code>html</code> passe à 37 % de 16 = 5,92px : sa tuile fait 55 × 5,92 = 325,6. Le <code>body</code> prend 37 % de 5,92 = 2,19px : sa tuile ne fait plus que 120,47. Le même code donne une tuile large au canevas et des petites tuiles au <code>body</code>, qui montre une rangée d'anneaux.</p></div>
+<div class="cap" data-t="14" data-step="margin : deux boîtes"><h3>4. <code>margin:0 37 75</code> : deux boîtes</h3><p>Sans unité, en mode quirks. <code>html</code> fait 400 − 74 = 326 de large, et 300 − 75 = 225 de haut. Son fond passe au canevas, mais ses tuiles partent de sa boîte : l'anneau est en 37 + 162,8 = 199,8. Le <code>body</code> fait 326 − 74 = 252 de large et 225 − 75 = 150 de haut, depuis (74, 0). Son bord bas tombe pile sur le centre de ses anneaux.</p></div>
+<div class="cap" data-t="19" data-step="4%0 : le dernier pas"><h3>5. <code>4%0</code> : le dernier pas</h3><p>Une position en % vaut 4 % de l'écart entre la boîte et la tuile. Pour <code>html</code> : 4 % × (326 − 325,6) = 0,016, rien ne bouge. Pour le <code>body</code> : 4 % × (252 − 120,47) = 5,26. Ses anneaux passent en 139,5 et 260. Le même <code>4%</code> ne règle que le <code>body</code>.</p></div>
+<div class="cap" data-t="23" data-step="Trois demi-anneaux"><h3>6. Trois demi-anneaux</h3><p>Le <code>body</code> s'arrête à y = 150 : de ses anneaux, on ne voit que le haut. Deux arches. Il couvre aussi le haut de l'anneau du canevas, centré en (199,8 ; 150) : il n'en reste que le bas, une cuvette. Ses bords tombent sur les pieds des arches, à 0,3px près.</p></div>
+<div class="cap" data-t="27" data-step="Résultat" data-live="112 caractères · 100 % identique"><h3>7. Résultat : 112 caractères</h3><p>Pas une balise à part <code>&lt;style></code>, une seule règle : un dégradé, deux tailles de tuile grâce à la police, et deux boîtes calées par les mêmes marges.</p></div>
+{%- else %}
+<div class="cap" data-t="0" data-step="A ring in a gradient"><h3>1. A ring in a gradient</h3><p><code>*</code> gives this background to <code>html</code> and the <code>body</code>. <code>1q</code> is a tiny circle, but the stops are fixed lengths: green up to <code>5vh</code> = 15px, mustard from 15 to 45px, green after that. One ring at the center of each tile. With no size and no margin, both rings fall on top of each other, at (200, 150).</p></div>
+<div class="cap" data-t="4" data-step="55em 75vw: a tile too wide"><h3>2. <code>55em 75vw</code>: a tile too wide</h3><p>The tile size depends on the font. At 16px, <code>55em</code> is 880 and <code>75vw</code> is 300. <code>html</code>'s ring goes to the center of its tile, at x = 440, off the frame. The <code>body</code>'s too: its box ends at x = 392 and hides it. The whole frame is green.</p></div>
+<div class="cap" data-t="8" data-step="font:37%a: two sizes"><h3>3. <code>font:37%a</code>: two sizes</h3><p>A font size in % compounds. <code>html</code> gets 37% of 16 = 5.92px: its tile is 55 × 5.92 = 325.6. The <code>body</code> gets 37% of 5.92 = 2.19px: its tile is only 120.47. The same code gives a wide tile to the canvas and small tiles to the <code>body</code>, which shows a row of rings.</p></div>
+<div class="cap" data-t="14" data-step="margin: two boxes"><h3>4. <code>margin:0 37 75</code>: two boxes</h3><p>No units, in quirks mode. <code>html</code> is 400 − 74 = 326 wide and 300 − 75 = 225 tall. Its background goes to the canvas, but its tiles start from its box: the ring is at 37 + 162.8 = 199.8. The <code>body</code> is 326 − 74 = 252 wide and 225 − 75 = 150 tall, from (74, 0). Its bottom edge lands right on the center of its rings.</p></div>
+<div class="cap" data-t="19" data-step="4%0: the last nudge"><h3>5. <code>4%0</code>: the last nudge</h3><p>A position in % is 4% of the gap between the box and the tile. For <code>html</code>: 4% × (326 − 325.6) = 0.016, nothing moves. For the <code>body</code>: 4% × (252 − 120.47) = 5.26. Its rings move to 139.5 and 260. The same <code>4%</code> only tunes the <code>body</code>.</p></div>
+<div class="cap" data-t="23" data-step="Three half rings"><h3>6. Three half rings</h3><p>The <code>body</code> stops at y = 150: we only see the top of its rings. Two arches. It also covers the top of the canvas ring, centered at (199.8, 150): only its bottom is left, a dip. Its edges land on the arches' feet, within 0.3px.</p></div>
+<div class="cap" data-t="27" data-step="Result" data-live="112 characters · 100% match"><h3>7. Result: 112 characters</h3><p>Not a single tag besides <code>&lt;style></code>, one rule: a gradient, two tile sizes thanks to the font, and two boxes set by the same margins.</p></div>
+{%- endif %}
+</div>
+<div class="live"></div>
+</div>
+</div>
+<script>
+(window.AnimScenes = window.AnimScenes || {}).t1117 = (fig) => {
+  const fr = document.documentElement.lang === 'fr';
+  const $ = (s) => fig.querySelector(s);
+  const $$ = (s) => [...fig.querySelectorAll(s)];
+  const CV = $('.t1117-cv'), B = $('.t1117-b'), live = $('.live'), FN = $('.t1117-f'), QN = $('.t1117-q');
+  const O = (k) => $(`[data-o="${k}"]`);
+  const D = (k) => $(`[data-d="${k}"]`);
+  const L = (k) => $(`.t1117-l-${k}`);
+  const W = { s: [4.3, 6.3], f: [8.3, 12.3], m: [14.3, 17.3], q: [19.3, 21.3], c: [23.3, 24.3], fin: [27.1, 27.9] };
+  const ease = (x) => (x < 0.5 ? 4 * x * x * x : 1 - Math.pow(-2 * x + 2, 3) / 2);
+  const pr = (t, [a, b]) => ease(Math.min(1, Math.max(0, (t - a) / (b - a))));
+  const lerp = (a, b, m) => a + (b - a) * m;
+  const win = (t, a, b) => Math.min(pr(t, [a, a + 0.5]), 1 - pr(t, [b - 0.4, b]));
+  const num = (v, d) => v.toFixed(d).replace('-', '−').replace('.', fr ? ',' : '.');
+  const c = fr ? ' :' : ':';
+  const grad = (bg, ring) => `radial-gradient(1q,${bg} 15px,${ring} 0 45px,${bg})`;
+  const box = (el, x, y, w, h) => Object.assign(el.style, { left: `${x}px`, top: `${y}px`, width: `${w}px`, height: `${h}px` });
+  const dot = (el, x, y, o) => Object.assign(el.style, { left: `${x}px`, top: `${y}px`, opacity: o });
+  return (t, st) => {
+    const step = st + 1;
+    const teach = fig.dataset.teach === '1';
+    const real = !teach || t >= W.fin[0];
+    const guides = t < W.fin[0] ? 1 : 0;
+    const s = pr(t, W.s), fp = pr(t, W.f), m = pr(t, W.m), q = pr(t, W.q), k = pr(t, W.c);
+    const p = lerp(1, 0.37, fp), X = 0.04 * q;
+    // boxes: html (quirks: fills the viewport minus its margins), body inside it
+    const hx = 37 * m, hy = 0, hw = 400 - 74 * m, hh = 300 - 75 * m;
+    const bx = 8 + 66 * m, by = 8 - 8 * m, bw = 384 - 132 * m, bh = 284 - 134 * m;
+    // tiles: the box itself, then 55em × 75vw (em = 16p on html, 16p² on the body)
+    const tw = lerp(hw, 880 * p, s), th = lerp(hh, 300, s);
+    const bt = lerp(bw, 880 * p * p, s), bth = lerp(bh, 300, s);
+    const x0 = hx + X * (hw - tw), y0 = hy;
+    const bo = X * (bw - bt);
+    CV.style.backgroundImage = grad('var(--t1117-d)', 'var(--t1117-k)');
+    CV.style.backgroundSize = `${tw}px ${th}px`;
+    CV.style.backgroundPosition = `${x0 + 100}px ${y0 + 100}px`;
+    box(B, bx, by, bw, bh);
+    B.style.backgroundImage = real ? grad('var(--t1117-d)', 'var(--t1117-k)') : grad('var(--t1117-bd)', 'var(--t1117-bk)');
+    B.style.backgroundSize = `${bt}px ${bth}px`;
+    B.style.backgroundPosition = `${bo}px 0`;
+    // guides
+    box(O('tile'), x0, y0, tw, th);
+    O('tile').style.opacity = (step === 2 || step === 3 ? 1 : 0) * guides;
+    box(O('html'), hx, hy, hw, hh);
+    O('html').style.opacity = (step === 4 ? m : step === 5 ? 1 : 0) * guides;
+    box(O('body'), bx, by, bw, bh);
+    O('body').style.opacity = (step >= 2 && step <= 6 ? 1 : 0) * guides;
+    O('cut').style.opacity = (step === 6 ? k : 0) * guides;
+    const hcx = x0 + tw / 2, hcy = y0 + th / 2;
+    dot(D('h'), hcx, hcy, (step === 2 || step === 3 || step === 4 || step === 6 ? 1 : 0) * guides);
+    const c0 = bx + bo + bt / 2, cy = by + bth / 2;
+    const first = c0 - Math.floor((c0 - bx) / bt) * bt; // first ring center inside the body box
+    const bdo = (step >= 3 && step <= 6 ? 1 : 0) * guides;
+    dot(D('b0'), first, cy, bdo * (step === 3 ? fp : 1) * (first < bx + bw ? 1 : 0));
+    dot(D('b1'), first + bt, cy, bdo * (step === 3 ? fp : 1) * (first + bt < bx + bw ? 1 : 0));
+    // live digits in the code
+    FN.textContent = Math.round(p * 100);
+    QN.textContent = t < W.q[0] ? '0' : Math.round(4 * q);
+    L('g').style.opacity = win(t, 0.3, W.s[0] - 0.2);
+    L('s').style.opacity = win(t, W.s[0], W.f[0] - 0.2);
+    L('f').style.opacity = win(t, W.f[0], W.m[0] - 0.2);
+    L('m').style.opacity = win(t, W.m[0], W.q[0] - 0.2);
+    L('q').style.opacity = win(t, W.q[0], W.c[0] - 0.2);
+    L('c').style.opacity = win(t, W.c[0], W.fin[0]);
+    let txt = '';
+    if (step === 1) txt = `${fr ? 'anneau' : 'ring'}${c} 15 → 45px`;
+    else if (step === 2) txt = `${fr ? 'tuile' : 'tile'}${c} ${Math.round(tw)} × ${Math.round(th)} · ${fr ? 'anneau' : 'ring'} x ${Math.round(hcx)}`;
+    else if (step === 3) txt = `font${c} ${Math.round(p * 100)}${fr ? ' %' : '%'} · html ${num(tw, 1)} · body ${num(bt, 2)}`;
+    else if (step === 4) txt = `body${c} ${Math.round(bw)} × ${Math.round(bh)} · html ${num(hcx, 1)}`;
+    else if (step === 5) txt = `body${c} ${num(first, 1)} · ${num(first + bt, 1)}`;
+    else if (step === 6) txt = `${fr ? 'centres' : 'centers'}${c} ${num(139.5, 1)} · ${num(199.8, 1)} · 260`;
+    else txt = $$('.caps .cap')[6].dataset.live || '';
+    live.textContent = txt;
+  };
+};
+</script>
+</figure>
