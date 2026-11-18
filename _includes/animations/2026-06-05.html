@@ -1,0 +1,133 @@
+<figure class="anim t0605" data-duration="30" data-scene="t0605" data-wide="-60 -45 520 390" data-off-label="-56 306" style="--bg:#fff">
+<style>
+.t0605{--t0605-box:#ffd166;--t0605-ring:#f59e0b;--t0605-sh:#7dd3fc;--t0605-txt:#e11d48}
+.t0605 .scene .t0605-html{left:60px;top:125px;width:280px;height:50px;border-radius:10.3937px;z-index:1}
+.t0605 .scene .t0605-dot{border-radius:50%;z-index:3}
+.t0605 .scene .t0605-box{box-sizing:border-box;opacity:0;z-index:9;pointer-events:none;outline:calc(1.5px * var(--k, 1)) dashed var(--t0605-box);outline-offset:calc(-0.75px * var(--k, 1))}
+.t0605 .scene .t0605-base{left:70px;top:157px;width:260px;height:0;border-top:calc(1.5px * var(--k, 1)) solid var(--t0605-box);opacity:0;z-index:9}
+.t0605 .scene .zlab{color:#14142a;background:rgb(255 255 255 / .92);box-shadow:0 0 0 1px rgb(20 20 42 / .25);padding:1px 5px;border-radius:3px;opacity:0}
+</style>
+<div class="anim-col">
+<div class="stage" role="img" aria-label="{% if include.lang == "fr" %}Animation : &amp; vise html. margin:125 60 le place en (60, 125), 280 de large. En mode quirks, html remplit la hauteur de la fenêtre : 300 − 2 × 125 = 50. Sa première ombre, sans couleur, prend color:#326 : un anneau de 11q = 10,39px, aux coins arrondis par border-radius:11q. Sa seconde ombre, 9in = 864px de #9C85E2, couvre tout le canevas. Une ombre externe n'est jamais peinte sous sa boîte, et html n'a pas de fond : le blanc du milieu est celui du canevas. body, avec margin:-76 10, fait 260 de large en (70, 49). Son texte, cinq points, passe en gras à 127q = 120px : chaque point avance de 30px et fait 20,27px de large, sur la ligne de base y = 157.{% else %}Animation: &amp; matches html. margin:125 60 puts it at (60, 125), 280 wide. In quirks mode, html fills the window height: 300 − 2 × 125 = 50. Its first shadow has no color, so it uses color:#326: a ring of 11q = 10.39px, its corners rounded by border-radius:11q. Its second shadow, 9in = 864px of #9C85E2, covers the whole canvas. An outer shadow is never painted under its box, and html has no background: the white in the middle is the canvas. body, with margin:-76 10, is 260 wide at (70, 49). Its text, five periods, turns bold at 127q = 120px: each period moves the pen 30px and is 20.27px wide, on the baseline y = 157.{% endif %}">
+<div class="scene">
+<div class="t0605-html"></div>
+<div class="t0605-dot"></div>
+<div class="t0605-dot"></div>
+<div class="t0605-dot"></div>
+<div class="t0605-dot"></div>
+<div class="t0605-dot"></div>
+<div class="t0605-box t0605-hb" style="left:60px;top:125px;width:280px;height:50px"></div>
+<div class="t0605-box t0605-bb" style="left:70px;top:49px;width:260px;height:202px"></div>
+<div class="t0605-box t0605-lb" style="left:70px;top:49px;width:150px;height:138px"></div>
+<div class="t0605-base"></div>
+<span class="zlab" data-l="1" data-r="0">&amp; = html · margin:125 60</span>
+<span class="zlab" data-l="1" data-r="1">{% if include.lang == "fr" %}html : 280 × 50 en (60, 125){% else %}html: 280 × 50 at (60, 125){% endif %}</span>
+<span class="zlab" data-l="2" data-r="0">{% if include.lang == "fr" %}11q = 10,39px{% else %}11q = 10.39px{% endif %}</span>
+<span class="zlab" data-l="2" data-r="1">{% if include.lang == "fr" %}couleur : color:#326{% else %}color: color:#326{% endif %}</span>
+<span class="zlab" data-l="3" data-r="0">9in = 864px</span>
+<span class="zlab" data-l="3" data-r="1">{% if include.lang == "fr" %}milieu : le blanc du canevas{% else %}middle: the canvas's white{% endif %}</span>
+<span class="zlab" data-l="4" data-r="0">125 − 76 = 49</span>
+<span class="zlab" data-l="4" data-r="1">{% if include.lang == "fr" %}body : 260 × 202 en (70, 49){% else %}body: 260 × 202 at (70, 49){% endif %}</span>
+<span class="zlab" data-l="5" data-r="0">127q = 120px · 900</span>
+<span class="zlab" data-l="5" data-r="1">{% if include.lang == "fr" %}ligne de base : 49 + 108 = 157{% else %}baseline: 49 + 108 = 157{% endif %}</span>
+</div>
+</div>
+<div class="legend"><span><i style="--c:#f59e0b"></i>{% if include.lang == "fr" %}1re ombre de html (#326 en vrai){% else %}html's 1st shadow (#326 in reality){% endif %}</span><span><i style="--c:#7dd3fc"></i>{% if include.lang == "fr" %}2e ombre de html (#9c85e2 en vrai){% else %}html's 2nd shadow (#9c85e2 in reality){% endif %}</span><span><i style="--c:#e11d48"></i>{% if include.lang == "fr" %}texte de body (#326 en vrai){% else %}body's text (#326 in reality){% endif %}</span><span><i style="--c:#fff;box-shadow:inset 0 0 0 1px rgb(0 0 0 / .3)"></i>{% if include.lang == "fr" %}canevas, non peint{% else %}canvas, not painted{% endif %}</span><span><i style="--c:transparent;outline:2px dashed currentColor;outline-offset:-2px"></i>{% if include.lang == "fr" %}boîtes{% else %}boxes{% endif %}</span></div>
+</div>
+<div class="anim-side">
+<pre class="code" aria-hidden="true"><span data-on="4 5" data-tone="2">.....</span>&lt;style><span data-on="1" data-tone="2">&amp;{</span><span data-on="1">margin:125 60</span>;<span data-on="2">color:#326</span>;<span data-on="2">border-radius:11q</span>;<span data-on="2">box-shadow:0 0 0 11q</span><span data-on="3">,0 0 0 9in#9C85E2</span>;<span data-on="4" data-tone="2">*{</span><span data-on="4">margin:-76 10</span>;<span data-on="5">font:900 127q'</span></pre>
+<div class="now" aria-live="polite">
+<div class="caps">
+{%- if include.lang == "fr" %}
+<div class="cap" data-t="0" data-step="html"><h3>1. html</h3><p>Au premier niveau, <code>&amp;</code> vise la racine : html. <code>margin:125 60</code> le place en (60, 125), avec 400 − 2 × 60 = 280 de large. La page n'a pas de doctype : elle est en mode quirks, et html y remplit la hauteur de la fenêtre. Il fait 300 − 2 × 125 = 50 de haut, sans <code>height</code>.</p></div>
+<div class="cap" data-t="5" data-step="Anneau"><h3>2. L'anneau</h3><p>La première ombre, <code>0 0 0 11q</code>, n'a pas de couleur à elle : elle prend la <code>color</code> de html, <code>#326</code>. Son étalement de 11q = 10,39px trace un anneau tout autour de la boîte. <code>border-radius:11q</code> arrondit les coins de la boîte, et l'anneau suit leur courbe.</p></div>
+<div class="cap" data-t="10" data-step="Fond"><h3>3. Le fond violet</h3><p>La seconde ombre s'étale de 9in = 864px, en <code>#9C85E2</code>. Elle passe sous l'anneau et déborde largement du canevas. Une ombre externe n'est jamais peinte sous sa propre boîte, et html n'a pas de fond : le blanc du milieu est celui du canevas.</p></div>
+<div class="cap" data-t="15.5" data-step="body"><h3>4. body et ses cinq points</h3><p><code>*{…}</code> vaut <code>&amp; *</code> et vise body. <code>margin:-76 10</code> le place en x = 70, 260 de large, et fait remonter son haut en 125 − 76 = 49. Son texte, les cinq points du début du code, hérite de la couleur <code>#326</code>. Sans police, ils ne font que 16px.</p></div>
+<div class="cap" data-t="20.5" data-step="Police"><h3>5. Des points de 120px</h3><p><code>font:900 127q'</code> met le texte en gras à 127q = 120px. Le <code>'</code> ouvre un nom de police que la fin du code ferme : un nom vide, et Chrome prend la police par défaut. Chaque point avance de 30px. La ligne fait 138 de haut, avec la ligne de base en 49 + 108 = 157 : les points vont de y = 138,43 à 158,70.</p></div>
+<div class="cap" data-t="26" data-step="Résultat" data-live="125 caractères · 100 % identique"><h3>6. Résultat : 125 caractères</h3><p>Un seul élément dessine le champ : html, avec deux ombres. Le texte, cinq points tapés au clavier, fait le mot de passe.</p></div>
+{%- else %}
+<div class="cap" data-t="0" data-step="html"><h3>1. html</h3><p>At the top level, <code>&amp;</code> matches the root: html. <code>margin:125 60</code> puts it at (60, 125), 400 − 2 × 60 = 280 wide. The page has no doctype, so it is in quirks mode, where html fills the window height. It is 300 − 2 × 125 = 50 tall, with no <code>height</code>.</p></div>
+<div class="cap" data-t="5" data-step="Ring"><h3>2. The ring</h3><p>The first shadow, <code>0 0 0 11q</code>, has no color of its own, so it uses html's <code>color</code>, <code>#326</code>. Its 11q = 10.39px spread draws a ring all around the box. <code>border-radius:11q</code> rounds the box's corners, and the ring follows their curve.</p></div>
+<div class="cap" data-t="10" data-step="Background"><h3>3. The purple background</h3><p>The second shadow spreads 9in = 864px, in <code>#9C85E2</code>. It goes under the ring and far past the canvas. An outer shadow is never painted under its own box, and html has no background: the white in the middle is the canvas.</p></div>
+<div class="cap" data-t="15.5" data-step="body"><h3>4. body and its five periods</h3><p><code>*{…}</code> is <code>&amp; *</code> and matches body. <code>margin:-76 10</code> puts it at x = 70, 260 wide, and moves its top up to 125 − 76 = 49. Its text, the five periods at the start of the code, inherits the <code>#326</code> color. With no font set, they are only 16px.</p></div>
+<div class="cap" data-t="20.5" data-step="Font"><h3>5. 120px periods</h3><p><code>font:900 127q'</code> makes the text bold, at 127q = 120px. The <code>'</code> opens a font name that the end of the code closes: an empty name, so Chrome uses the default font. Each period moves the pen 30px. The line is 138 tall, with the baseline at 49 + 108 = 157: the periods go from y = 138.43 to 158.70.</p></div>
+<div class="cap" data-t="26" data-step="Result" data-live="125 characters · 100% match"><h3>6. Result: 125 characters</h3><p>One element draws the field: html, with two shadows. The text, five typed periods, is the password.</p></div>
+{%- endif %}
+</div>
+<div class="live"></div>
+</div>
+</div>
+<script>
+(window.AnimScenes = window.AnimScenes || {}).t0605 = (fig) => {
+  const fr = document.documentElement.lang === 'fr';
+  const $ = (s) => fig.querySelector(s);
+  const $$ = (s) => [...fig.querySelectorAll(s)];
+  const live = $('.live');
+  const ease = (x) => (x < 0.5 ? 4 * x * x * x : 1 - Math.pow(-2 * x + 2, 3) / 2);
+  const pr = (t, [a, b]) => ease(Math.min(1, Math.max(0, (t - a) / (b - a))));
+  const win = (t, a, b) => Math.min(pr(t, [a, a + 0.5]), 1 - pr(t, [b - 0.2, b]));
+  const c = fr ? ' :' : ':';
+  const n = (x) => (fr ? String(x).replace('.', ',') : String(x));
+  const mix = (k, a, b) => (k <= 0 ? b : k >= 1 ? a : `color-mix(in srgb, ${a} ${(k * 100).toFixed(1)}%, ${b})`);
+  // Measured on the official code in local Chrome (400 × 300 iframe, quirks mode, getBoundingClientRect, getComputedStyle,
+  // canvas measureText with body's font).
+  // html: 280 × 50 at (60, 125) (quirks: html fills the window, 300 − 250), radius 10.3937px (11q),
+  // shadows 0 0 0 10.3937px rgb(51 34 102) and 0 0 0 864px rgb(156 133 226).
+  // body: 260 × 202 at (70, 49). Text line box: 150 × 138 at (70, 49), font 900 120px "", ascent 108, descent 30.
+  // One period at 120px: advance 30, ink x 9.55..29.82, y −18.57..+1.70 around the baseline 157.
+  // One period at 16px Times (no font): advance 4, ink x 1.72..3.49, y −1.59..+0.19 around the baseline 63.
+  const Q = 10.3937, FIN = 30;
+  const html = $('.t0605-html'), dots = $$('.t0605-dot');
+  const hb = $('.t0605-hb'), bb = $('.t0605-bb'), lb = $('.t0605-lb'), base = $('.t0605-base');
+  const labs = $$('.zlab');
+  const ivs = [[0.3, 5], [5.3, 10], [10.3, 15.5], [15.8, 20.5], [20.8, 26]];
+  const lerp = (k, a, b) => a + (b - a) * k;
+  return (t, step) => {
+    const teach = fig.dataset.teach === '1';
+    const wide = fig.dataset.view === 'wide';
+    const tw = teach ? 1 - pr(t, [26.3, 27.3]) : 0;
+    // html's two shadows: the ring grows, then the purple band
+    const r = Q * pr(t, [5.6, 7.2]);
+    const s = 864 * pr(t, [10.6, 13.6]);
+    const ringCol = mix(tw, 'var(--t0605-ring)', '#326');
+    const shCol = mix(tw, 'var(--t0605-sh)', '#9c85e2');
+    html.style.boxShadow = `0 0 0 ${r}px ${r > 0 ? ringCol : 'transparent'}, 0 0 0 ${s}px ${s > 0 ? shCol : 'transparent'}`;
+    // body's text: five periods, 16px, then 120px bold
+    const g = pr(t, [21.2, 23.2]);
+    const txtCol = mix(tw, 'var(--t0605-txt)', '#326');
+    dots.forEach((d, i) => {
+      // disc centers on the ink boxes' centers; the 120px period is drawn as a 20px disc (its ink box is 20.27 wide)
+      const x = lerp(g, 70 + 4 * i + 2.6, 70 + 30 * i + 19.69);
+      const y = lerp(g, 63 - 0.7, 157 - 8.44);
+      const w = lerp(g, 1.77, 20);
+      d.style.left = `${x - w / 2}px`;
+      d.style.top = `${y - w / 2}px`;
+      d.style.width = `${w}px`;
+      d.style.height = `${w}px`;
+      d.style.background = txtCol;
+      d.style.opacity = pr(t, [16.6, 17.2]);
+    });
+    hb.style.opacity = win(t, 0.4, 15.5);
+    bb.style.opacity = win(t, 15.8, 26);
+    lb.style.opacity = win(t, 23.4, 26);
+    base.style.opacity = win(t, 23.4, 26);
+    // labels: first row at the top of the frame, second row below it (wide view) or at the bottom (canvas view)
+    const x0 = wide ? -60 : 0, y0 = wide ? -45 : 0;
+    labs.forEach((l) => {
+      const row = +l.dataset.r;
+      l.style.left = `calc(${x0}px + 4px * var(--k, 1))`;
+      l.style.top = row === 0 || wide ? `calc(${y0}px + ${4 + 19 * row}px * var(--k, 1))` : 'calc(300px - 21px * var(--k, 1))';
+      l.style.opacity = win(t, ...ivs[+l.dataset.l - 1]);
+    });
+    let txt;
+    if (step === 0) txt = `html${c} 280 × 50 ${fr ? 'en' : 'at'} (60, 125)`;
+    else if (step === 1) txt = `${fr ? 'anneau' : 'ring'}${c} ${n(10.39)}px · ${fr ? 'rayon' : 'radius'} ${n(10.39)}px`;
+    else if (step === 2) txt = `${fr ? 'ombre violette' : 'purple shadow'}${c} 864px ${fr ? 'tout autour' : 'all around'}`;
+    else if (step === 3) txt = `body${c} 260 × 202 ${fr ? 'en' : 'at'} (70, 49)`;
+    else if (step === 4) txt = `${fr ? 'points' : 'periods'}${c} ${n(20.27)}px · ${fr ? 'pas de' : 'every'} 30px · y ${n(138.43)} → ${n(158.7)}`;
+    else txt = $$('.caps .cap')[5].dataset.live || '';
+    live.textContent = txt;
+  };
+};
+</script>
+</figure>
