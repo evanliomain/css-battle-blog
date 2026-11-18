@@ -1,0 +1,127 @@
+<figure class="anim t0620" data-duration="30" data-scene="t0620" data-wide="-50 -40 500 380" data-off-label="-46 306" style="--bg:#f3ac3c">
+<style>
+.t0620{--t0620-a:#2563eb;--t0620-b:#16a34a;--t0620-c:#7c3aed;--t0620-d:#0e7490;--t0620-p:#db2777;--t0620-gd:#14142a}
+.t0620 .scene .t0620-cl{left:0;top:0;width:400px;height:300px}
+.t0620 .t0620-cl > i{position:absolute;display:block;opacity:0}
+.t0620 .scene .t0620-h{clip-path:polygon(evenodd,-100px -100px,500px -100px,500px 400px,-100px 400px,-100px -100px,160px 110px,240px 110px,240px 190px,160px 190px,160px 110px)}
+.t0620 .scene .t0620-bd{clip-path:polygon(evenodd,-100px -100px,500px -100px,500px 400px,-100px 400px,-100px -100px,161px 111px,239px 111px,239px 189px,161px 189px,161px 111px)}
+.t0620 .scene .t0620-o{opacity:0;outline:calc(1.5px * var(--k, 1)) dashed var(--t0620-gd);outline-offset:calc(-0.75px * var(--k, 1));z-index:4}
+.t0620 .scene .t0620-hb{left:160px;top:110px;width:80px;height:80px;opacity:0;outline:calc(1.5px * var(--k, 1)) dashed var(--t0620-gd);outline-offset:calc(-0.75px * var(--k, 1));z-index:5}
+.t0620 .scene .t0620-bb{left:161px;top:111px;width:78px;height:78px;opacity:0;outline:calc(1.5px * var(--k, 1)) dotted var(--t0620-gd);outline-offset:calc(-0.75px * var(--k, 1));z-index:5}
+.t0620 .zlab{color:#14142a;background:rgb(255 255 255 / .92);padding:1px 5px;border-radius:3px;opacity:0}
+</style>
+<div class="anim-col">
+<div class="stage" role="img" aria-label="{% if include.lang == "fr" %}Animation : en mode quirks, html a 160px de marge à gauche et à droite et 110px en haut et en bas, et remplit le canevas : un carré de 80 × 80 en (160, 110) ; son fond orange couvre tout le canevas ; ses quatre ombres noires sont des copies du carré décalées de 53q = 50,08px vers la droite et le bas, vers la gauche et le haut, vers le bas, et vers la gauche ; une ombre n'est jamais peinte sous sa boîte : il reste un L autour d'un trou de 80 × 80 ; body a 1px de marge et remplit html : 78 × 78 en (161, 111) ; ses quatre ombres, coupées sous sa boîte, ajoutent un anneau de 1px dans le trou, qui passe à 78 × 78{% else %}Animation: in quirks mode, html has 160px of margin on the left and right and 110px at the top and bottom, and fills the canvas: an 80 × 80 square at (160, 110); its orange background covers the whole canvas; its four black shadows are copies of the square moved 53q = 50.08px right and down, left and up, down, and left; a shadow is never painted under its box: an L is left around an 80 × 80 hole; body has a 1px margin and fills html: 78 × 78 at (161, 111); its four shadows, cut under its box, add a 1px ring inside the hole, which becomes 78 × 78{% endif %}">
+<div class="scene">
+<div class="t0620-cl t0620-h"><i data-s="d"></i><i data-s="c"></i><i data-s="b"></i><i data-s="a"></i></div>
+<div class="t0620-cl t0620-bd"><i data-s="d"></i><i data-s="c"></i><i data-s="b"></i><i data-s="a"></i></div>
+<div class="t0620-o" data-s="a"></div>
+<div class="t0620-o" data-s="b"></div>
+<div class="t0620-o" data-s="c"></div>
+<div class="t0620-o" data-s="d"></div>
+<div class="t0620-hb"></div>
+<div class="t0620-bb"></div>
+<span class="zlab t0620-l1" data-l="1">{% if include.lang == "fr" %}html : 400 − 2 × 160 = 80px de large{% else %}html: 400 − 2 × 160 = 80px wide{% endif %}</span>
+<span class="zlab t0620-l2" data-l="1">{% if include.lang == "fr" %}quirks : 300 − 2 × 110 = 80px de haut{% else %}quirks: 300 − 2 × 110 = 80px tall{% endif %}</span>
+<span class="zlab t0620-l1" data-l="2">{% if include.lang == "fr" %}53q = 53 × 0,945 = 50,08px{% else %}53q = 53 × 0.945 = 50.08px{% endif %}</span>
+<span class="zlab t0620-l2" data-l="2">{% if include.lang == "fr" %}pas de couleur : noir{% else %}no color: black{% endif %}</span>
+<span class="zlab t0620-l1" data-l="3">{% if include.lang == "fr" %}-53q -53q : vers la gauche et le haut{% else %}-53q -53q: left and up{% endif %}</span>
+<span class="zlab t0620-l2" data-l="3">{% if include.lang == "fr" %}jamais peinte sous la boîte de html{% else %}never painted under html's box{% endif %}</span>
+<span class="zlab t0620-l1" data-l="4">{% if include.lang == "fr" %}0 53q : en bas · -53q 0 : à gauche{% else %}0 53q: down · -53q 0: left{% endif %}</span>
+<span class="zlab t0620-l2" data-l="4">{% if include.lang == "fr" %}trou : 80 × 80, la boîte de html{% else %}hole: 80 × 80, html's box{% endif %}</span>
+<span class="zlab t0620-l1" data-l="5">{% if include.lang == "fr" %}* * → body : margin:1{% else %}* * → body: margin:1{% endif %}</span>
+<span class="zlab t0620-l2" data-l="5">{% if include.lang == "fr" %}quirks : 80 − 2 × 1 = 78px{% else %}quirks: 80 − 2 × 1 = 78px{% endif %}</span>
+<span class="zlab t0620-l1" data-l="6">{% if include.lang == "fr" %}ombres de body : 78 × 78, par-dessus{% else %}body's shadows: 78 × 78, on top{% endif %}</span>
+<span class="zlab t0620-l2" data-l="6">{% if include.lang == "fr" %}coupées 1px plus loin : un anneau de 1px{% else %}cut 1px further in: a 1px ring{% endif %}</span>
+</div>
+</div>
+<div class="legend"><span><i style="--c:var(--t0620-a)"></i>{% if include.lang == "fr" %}ombre 1 de html{% else %}html shadow 1{% endif %}</span><span><i style="--c:var(--t0620-b)"></i>{% if include.lang == "fr" %}ombre 2{% else %}shadow 2{% endif %}</span><span><i style="--c:var(--t0620-c)"></i>{% if include.lang == "fr" %}ombre 3{% else %}shadow 3{% endif %}</span><span><i style="--c:var(--t0620-d)"></i>{% if include.lang == "fr" %}ombre 4{% else %}shadow 4{% endif %}</span><span><i style="--c:var(--t0620-p)"></i>{% if include.lang == "fr" %}ombres de body{% else %}body's shadows{% endif %}</span><span><i style="--c:transparent;outline:1.5px dashed currentColor;outline-offset:-2px"></i>{% if include.lang == "fr" %}boîte de html{% else %}html's box{% endif %}</span><span><i style="--c:transparent;outline:1.5px dotted currentColor;outline-offset:-2px"></i>{% if include.lang == "fr" %}boîte de body{% else %}body's box{% endif %}</span></div>
+</div>
+<div class="anim-side">
+<pre class="code" aria-hidden="true">&lt;style>*{<span data-on="1">background:#F3AC3C</span>;<span data-on="1">margin:110 160</span>;<span data-on="6" data-tone="2">box-shadow:<span data-on="2">53q 53q</span>,<span data-on="3">-53q -53q</span>,<span data-on="4">0 53q,-53q 0</span></span>;<span data-on="5 6">*{margin:1</span></pre>
+<div class="now" aria-live="polite">
+<div class="caps">
+{%- if include.lang == "fr" %}
+<div class="cap" data-t="0" data-step="html"><h3>1. html, un carré de 80 × 80</h3><p><code>*</code> touche html, head, style et body. head et style sont masqués. Le fond de html s'étend à tout le canevas : orange partout. Les pages de CSS Battle n'ont pas de doctype, donc elles sont en mode quirks : <code>margin:110 160</code> sans unité se lit en px, et html remplit la hauteur du canevas. html fait 400 − 320 = 80px de large et 300 − 220 = 80px de haut, en (160, 110).</p></div>
+<div class="cap" data-t="5" data-step="Ombre 1"><h3>2. Première ombre</h3><p>53q, c'est 53 quarts de millimètre : 50,08px. Sans couleur, l'ombre est noire, la couleur du texte. C'est une copie de la boîte de html, décalée de 50,08px vers la droite et le bas. Une ombre box-shadow n'est jamais peinte sous sa propre boîte : la partie qui tombe sur html est coupée.</p></div>
+<div class="cap" data-t="9" data-step="Ombre 2"><h3>3. -53q -53q</h3><p>La même copie, décalée vers la gauche et le haut. Son coin en bas à droite tombe sur la boîte de html : il est coupé aussi.</p></div>
+<div class="cap" data-t="13" data-step="Ombres 3 et 4"><h3>4. 0 53q et -53q 0</h3><p>Une copie droit vers le bas, une autre droit vers la gauche. Les quatre morceaux forment le L, autour d'un trou de 80 × 80 : la boîte de html.</p></div>
+<div class="cap" data-t="18" data-step="body"><h3>5. body</h3><p><code>*{margin:1</code> est imbriqué : il se lit <code>* *</code>, qui touche head, style et body. Même spécificité que <code>*</code>, mais plus loin : body prend <code>margin:1</code> au lieu de 110 160. En mode quirks, body remplit html : 78 × 78, en (161, 111). Son fond orange sur le canevas orange ne se voit pas.</p></div>
+<div class="cap" data-t="22" data-step="Ombres de body"><h3>6. Les ombres de body</h3><p>body a les mêmes quatre ombres : quatre copies noires de 78 × 78, peintes après celles de html. Elles sont coupées sous la boîte de body, qui a 1px de moins que celle de html de chaque côté. Elles couvrent donc un anneau de 1px dans la boîte de html : le trou passe à 78 × 78.</p></div>
+<div class="cap" data-t="27" data-step="Résultat" data-live="95 caractères · 100 % identique"><h3>7. Résultat : 95 caractères</h3><p>Un L noir sur fond orange. Une seule liste d'ombres, donnée à html pour la forme et à body, 1px plus petit de chaque côté, pour l'anneau.</p></div>
+{%- else %}
+<div class="cap" data-t="0" data-step="html"><h3>1. html, an 80 × 80 square</h3><p><code>*</code> selects html, head, style and body. head and style are hidden. html's background goes to the whole canvas: orange everywhere. CSS Battle pages have no doctype, so they are in quirks mode: <code>margin:110 160</code> with no unit is read as px, and html fills the canvas height. html is 400 − 320 = 80px wide and 300 − 220 = 80px tall, at (160, 110).</p></div>
+<div class="cap" data-t="5" data-step="Shadow 1"><h3>2. First shadow</h3><p>53q is 53 quarter millimeters: 50.08px. With no color, the shadow is black, the text color. It is a copy of html's box, moved 50.08px right and down. A box-shadow is never painted under its own box: the part that falls on html is cut away.</p></div>
+<div class="cap" data-t="9" data-step="Shadow 2"><h3>3. -53q -53q</h3><p>The same copy, moved left and up. Its bottom right corner falls on html's box: it is cut too.</p></div>
+<div class="cap" data-t="13" data-step="Shadows 3 and 4"><h3>4. 0 53q and -53q 0</h3><p>One copy straight down, one straight left. The four pieces make the L, around an 80 × 80 hole: html's box.</p></div>
+<div class="cap" data-t="18" data-step="body"><h3>5. body</h3><p><code>*{margin:1</code> is nested: it reads <code>* *</code>, which selects head, style and body. Same specificity as <code>*</code>, but later: body gets <code>margin:1</code> instead of 110 160. In quirks mode body fills html: 78 × 78, at (161, 111). Its orange background on the orange canvas does not show.</p></div>
+<div class="cap" data-t="22" data-step="body's shadows"><h3>6. body's shadows</h3><p>body has the same four shadows: four black copies of 78 × 78, painted after html's. They are cut under body's box, which is 1px smaller than html's on each side. So they cover a 1px ring inside html's box: the hole becomes 78 × 78.</p></div>
+<div class="cap" data-t="27" data-step="Result" data-live="95 characters · 100% match"><h3>7. Result: 95 characters</h3><p>A black L on an orange background. One list of shadows, given to html for the shape, and to body, 1px smaller on each side, for the ring.</p></div>
+{%- endif %}
+</div>
+<div class="live"></div>
+</div>
+</div>
+<script>
+(window.AnimScenes = window.AnimScenes || {}).t0620 = (fig) => {
+  const fr = document.documentElement.lang === 'fr';
+  const $ = (s) => fig.querySelector(s);
+  const $$ = (s) => [...fig.querySelectorAll(s)];
+  const live = $('.live');
+  const ease = (x) => (x < 0.5 ? 4 * x * x * x : 1 - Math.pow(-2 * x + 2, 3) / 2);
+  const pr = (t, [a, b]) => ease(Math.min(1, Math.max(0, (t - a) / (b - a))));
+  const win = (t, a, b) => Math.min(pr(t, [a, a + 0.5]), 1 - pr(t, [b - 0.2, b]));
+  const c = fr ? ' :' : ':';
+  const num = (v, d = 2) => (fr ? v.toFixed(d).replace('.', ',') : v.toFixed(d));
+  const mix = (k, a, b) => (k <= 0 ? b : k >= 1 ? a : `color-mix(in srgb, ${a} ${(k * 100).toFixed(1)}%, ${b})`);
+  // Measured on the official code in local Chrome (400 × 300 iframe, quirks mode, getBoundingClientRect, getComputedStyle):
+  // html 80 × 80 at (160, 110); body 78 × 78 at (161, 111); both have the shadows 53q = 50.0787px:
+  // (Q, Q), (-Q, -Q), (0, Q), (-Q, 0), black, painted outside each box only.
+  const FIN = 27;
+  const Q = 50.0787;
+  const off = { a: [Q, Q], b: [-Q, -Q], c: [0, Q], d: [-Q, 0] };
+  const box = (e, x, y, w, h) => { e.style.left = `${x}px`; e.style.top = `${y}px`; e.style.width = `${w}px`; e.style.height = `${h}px`; };
+  const H = $$('.t0620-h > i'), BD = $$('.t0620-bd > i'), O = $$('.t0620-o');
+  H.forEach((e) => { const [dx, dy] = off[e.dataset.s]; box(e, 160 + dx, 110 + dy, 80, 80); });
+  BD.forEach((e) => { const [dx, dy] = off[e.dataset.s]; box(e, 161 + dx, 111 + dy, 78, 78); });
+  O.forEach((e) => { const [dx, dy] = off[e.dataset.s]; box(e, 160 + dx, 110 + dy, 80, 80); });
+  const hb = $('.t0620-hb'), bb = $('.t0620-bb');
+  const labs = $$('.zlab');
+  const shIn = { a: [5.4, 6.2], b: [9.4, 10.2], c: [13.4, 14.2], d: [15.4, 16.2] };
+  const oWin = { a: [5.2, 9], b: [9.2, 13], c: [13.2, 15.2], d: [15.2, 18] };
+  return (t, step) => {
+    const wide = fig.dataset.view === 'wide';
+    const teach = fig.dataset.teach === '1';
+    const tw = teach ? 1 - pr(t, [FIN, FIN + 0.8]) : 0;
+    H.forEach((e) => {
+      const k = e.dataset.s;
+      e.style.opacity = pr(t, shIn[k]);
+      e.style.background = mix(tw, `var(--t0620-${k})`, '#000');
+    });
+    BD.forEach((e) => {
+      e.style.opacity = pr(t, [22.4, 23.4]);
+      e.style.background = mix(tw, 'var(--t0620-p)', '#000');
+    });
+    O.forEach((e) => { e.style.opacity = win(t, ...oWin[e.dataset.s]); });
+    hb.style.opacity = Math.min(pr(t, [0.3, 1]), 1 - pr(t, [FIN, FIN + 0.6]));
+    bb.style.opacity = Math.min(pr(t, [18.3, 19]), 1 - pr(t, [FIN, FIN + 0.6]));
+    labs.forEach((l) => {
+      const n = +l.dataset.l, second = l.classList.contains('t0620-l2');
+      l.style.left = wide ? 'calc(-50px + 4px * var(--k, 1))' : 'calc(4px * var(--k, 1))';
+      l.style.top = `calc(${wide ? -40 : 0}px + ${second ? 20 : 4}px * var(--k, 1))`;
+      const ivs = [[0.3, 5], [5.3, 9], [9.3, 13], [13.3, 18], [18.3, 22], [22.3, FIN]];
+      l.style.opacity = win(t, ...ivs[n - 1]);
+    });
+    let txt;
+    if (step === 0) txt = `html${c} 80 × 80 ${fr ? 'en' : 'at'} (160, 110)`;
+    else if (step === 1) txt = `${fr ? 'ombre 1' : 'shadow 1'}${c} x ${num(160 + Q)} → ${num(240 + Q)}`;
+    else if (step === 2) txt = `${fr ? 'ombre 2' : 'shadow 2'}${c} x ${num(160 - Q)} → ${num(240 - Q)}`;
+    else if (step === 3) txt = `${fr ? 'trou' : 'hole'}${c} 80 × 80`;
+    else if (step === 4) txt = `body${c} 78 × 78 ${fr ? 'en' : 'at'} (161, 111)`;
+    else if (step === 5) txt = `${fr ? 'trou' : 'hole'}${c} 78 × 78`;
+    else txt = $$('.caps .cap')[6].dataset.live || '';
+    live.textContent = txt;
+  };
+};
+</script>
+</figure>
