@@ -1,0 +1,127 @@
+<figure class="anim t0518" data-duration="33" data-scene="t0518" data-wide="-50 -40 500 380" data-off-label="-46 -36" style="--bg:#9ff0fb">
+<style>
+.t0518{--t0518-ink:#3f8ba6;--t0518-hi:#6366f1;--t0518-hs:#f59e0b;--t0518-bi:#ec4899;--t0518-bs:#14b8a6}
+.t0518 .scene .t0518-white{left:-60px;top:-50px;width:520px;height:400px;background:#fff;z-index:0}
+.t0518 .scene .t0518-hc{left:185px;top:75px;width:30px;height:30px;opacity:0;z-index:1}
+.t0518 .scene .t0518-hf{left:185px;top:75px;width:30px;height:30px;opacity:0;z-index:2}
+.t0518 .scene .t0518-bc{left:150px;top:40px;width:100px;height:100px;opacity:0;z-index:3}
+.t0518 .scene .t0518-bf{left:150px;top:40px;width:100px;height:100px;opacity:0;z-index:4}
+.t0518 .scene .t0518-box{box-sizing:border-box;outline:calc(1.5px * var(--k, 1)) dashed #fff;outline-offset:calc(-0.75px * var(--k, 1));filter:drop-shadow(0 0 calc(1px * var(--k, 1)) #14142a);opacity:0;z-index:10}
+.t0518 .scene .zlab{left:4px;top:4px;color:#14142a;background:rgb(255 255 255 / .92);box-shadow:0 0 0 1px rgb(20 20 42 / .25);padding:1px 5px;border-radius:3px;opacity:0}
+.t0518 .legend .t0518-ol{box-shadow:0 0 0 1px currentColor}
+.t0518 .legend .t0518-dash{background:none;outline:2px dashed currentColor;outline-offset:-2px}
+</style>
+<div class="anim-col">
+<div class="stage" role="img" aria-label="{% if include.lang == "fr" %}Animation : le style va dans head. html n'a pas de fond : celui de body, #9ff0fb, passe au canevas. html reçoit la marge 75 185 195 : 30 × 30 en (185, 75). body reçoit la marge -35 : 100 × 100 en (150, 40). html et body ont la même liste d'ombres, de couleur #3f8ba6. Sur html, l'ombre inset de 9in remplit le carré, et les trois copies à 8ex, 57,44px en Times de 16px, forment les traits du T. Sur body, border-radius 50 % en fait un disque, l'ombre inset le remplit, et font 204 % porte 8ex à environ 120px : trois disques de plus, à gauche, à droite et en dessous.{% else %}Animation: the style goes into head. html has no background: body's, #9ff0fb, goes to the canvas. html gets the margin 75 185 195: 30 × 30 at (185, 75). body gets the margin -35: 100 × 100 at (150, 40). html and body share one shadow list, in #3f8ba6. On html, the 9in inset shadow fills the square, and the three copies at 8ex, 57.44px in 16px Times, make the bars of the T. On body, border-radius 50% makes a disc, the inset shadow fills it, and font 204% takes 8ex to about 120px: three more discs, left, right and below.{% endif %}">
+<div class="scene">
+<div class="t0518-white"></div>
+<div class="t0518-hc"></div>
+<div class="t0518-hc"></div>
+<div class="t0518-hc"></div>
+<div class="t0518-hf"></div>
+<div class="t0518-bc"></div>
+<div class="t0518-bc"></div>
+<div class="t0518-bc"></div>
+<div class="t0518-bf"></div>
+<div class="t0518-box t0518-xhtml" style="left:185px;top:75px;width:30px;height:30px"></div>
+<div class="t0518-box t0518-xbody" style="left:150px;top:40px;width:100px;height:100px"></div>
+<span class="zlab" data-l="1">html › head › style, body</span>
+<span class="zlab" data-l="2">{% if include.lang == "fr" %}fond de body → canevas #9ff0fb{% else %}body's background → canvas #9ff0fb{% endif %}</span>
+<span class="zlab" data-l="3">html 30 × 30 · body 100 × 100</span>
+<span class="zlab" data-l="4">{% if include.lang == "fr" %}html : 8ex = 57,44px{% else %}html: 8ex = 57.44px{% endif %}</span>
+<span class="zlab" data-l="5">{% if include.lang == "fr" %}body : border-radius 50 %{% else %}body: border-radius 50%{% endif %}</span>
+<span class="zlab" data-l="6">{% if include.lang == "fr" %}body : 8ex ≈ 120px{% else %}body: 8ex ≈ 120px{% endif %}</span>
+</div>
+</div>
+<div class="legend"><span><i class="t0518-ol" style="--c:#9ff0fb"></i>{% if include.lang == "fr" %}#9ff0fb, le canevas{% else %}#9ff0fb, the canvas{% endif %}</span><span><i class="t0518-ol" style="--c:#3f8ba6"></i>#3f8ba6</span><span><i style="--c:var(--t0518-hi)"></i>{% if include.lang == "fr" %}html, ombre inset{% else %}html, inset shadow{% endif %}</span><span><i style="--c:var(--t0518-hs)"></i>{% if include.lang == "fr" %}html, trois ombres{% else %}html, three shadows{% endif %}</span><span><i style="--c:var(--t0518-bi)"></i>{% if include.lang == "fr" %}body, ombre inset{% else %}body, inset shadow{% endif %}</span><span><i style="--c:var(--t0518-bs)"></i>{% if include.lang == "fr" %}body, trois ombres{% else %}body, three shadows{% endif %}</span><span><i class="t0518-dash"></i>{% if include.lang == "fr" %}boîtes{% else %}boxes{% endif %}</span></div>
+</div>
+<div class="anim-side">
+<pre class="code" aria-hidden="true">&lt;style><span data-on="1">*{</span><span data-on="4">color:3F8BA6</span>;<span data-on="4 5 6">box-shadow:inset 9in 0,8ex 0,-8ex 0,0 8ex</span>;<span data-on="3">margin:75 185 195</span>;<span data-on="1">*{</span><span data-on="2">background:#9ff0fb</span>;<span data-on="5">border-radius:50%</span>;<span data-on="3" data-tone="2">margin:-35</span>;<span data-on="6">font:204%"</span></pre>
+<div class="now" aria-live="polite">
+<div class="caps">
+{%- if include.lang == "fr" %}
+<div class="cap" data-t="0" data-step="Éléments"><h3>1. html, head, style, body</h3><p>Le <code>&lt;style></code> va dans head, et body reste vide. <code>*</code> vise html, head, style et body. Le <code>*{</code> imbriqué vise les éléments placés dans un autre : head, style et body. head et style ne s'affichent pas : il reste deux boîtes, html et body.</p></div>
+<div class="cap" data-t="4" data-step="Canevas"><h3>2. Le fond de body passe au canevas</h3><p>La règle imbriquée donne à body <code>background:#9ff0fb</code>. html n'a pas de fond : c'est donc celui de body qui peint tout le canevas, en bleu ciel.</p></div>
+<div class="cap" data-t="8" data-step="Marges"><h3>3. Deux marges, deux carrés</h3><p>html reçoit <code>margin:75 185 195</code> : 75 en haut, 185 sur les côtés, 195 en bas. En mode quirks, il remplit la page moins ses marges : 400 − 370 = 30 sur 300 − 270 = 30, en (185, 75). body reçoit <code>margin:-35</code> : il déborde de 35 de chaque côté de html. 30 + 70 = 100 sur 100, en (150, 40).</p></div>
+<div class="cap" data-t="13" data-step="Ombres de html"><h3>4. Les ombres de html : les traits</h3><p><code>color:3F8BA6</code> marche sans dièse en mode quirks, et les ombres sans couleur la prennent. <code>inset 9in 0</code> décale l'ombre intérieure de 864px : elle remplit tout le carré. Les trois autres le copient à 8ex à droite, à gauche et en dessous. html garde la police par défaut, du Times de 16px : 8ex = 57,44px dans mon Chrome. Ce sont les traits du T.</p></div>
+<div class="cap" data-t="19" data-step="Disque"><h3>5. La même liste sur body</h3><p>body reçoit les mêmes ombres. <code>border-radius:50%</code> arrondit sa boîte de 100 × 100 en disque, et les ombres suivent l'arrondi. L'ombre inset remplit le disque, les trois autres le copient. Avec la police de html, 8ex vaudrait encore 57,44px : les disques se chevaucheraient.</p></div>
+<div class="cap" data-t="24" data-step="Police"><h3>6. Une police plus grande, un ex plus grand</h3><p><code>font:204%"</code> donne à body 204 % de 16px, soit 32,64px. Le <code>"</code> ouvre un nom de police vide, que la fin du code ferme. ex suit la taille de la police : la cible met les disques à 120px l'un de l'autre. Dans mon Chrome, le 8ex de body vaut 117,17px ; l'animation reprend les 120px de la cible.</p></div>
+<div class="cap" data-t="29" data-step="Résultat" data-live="142 caractères · 100 % identique"><h3>7. Résultat : 142 caractères</h3><p>Quatre disques en T, reliés par des traits. Une seule liste d'ombres sert deux fois : sur html, petite, elle trace les traits ; sur body, environ deux fois plus grande, elle trace les disques. Les disques couvrent les bouts des traits.</p></div>
+{%- else %}
+<div class="cap" data-t="0" data-step="Elements"><h3>1. html, head, style, body</h3><p>The <code>&lt;style></code> goes into head, and body stays empty. <code>*</code> matches html, head, style and body. The nested <code>*{</code> matches the elements inside another one: head, style and body. head and style are not displayed: two boxes are left, html and body.</p></div>
+<div class="cap" data-t="4" data-step="Canvas"><h3>2. body's background goes to the canvas</h3><p>The nested rule gives body <code>background:#9ff0fb</code>. html has no background, so body's paints the whole canvas, in light blue.</p></div>
+<div class="cap" data-t="8" data-step="Margins"><h3>3. Two margins, two squares</h3><p>html gets <code>margin:75 185 195</code>: 75 at the top, 185 on the sides, 195 at the bottom. In quirks mode, it fills the page minus its margins: 400 − 370 = 30 by 300 − 270 = 30, at (185, 75). body gets <code>margin:-35</code>: it sticks out 35px on each side of html. 30 + 70 = 100 by 100, at (150, 40).</p></div>
+<div class="cap" data-t="13" data-step="html's shadows"><h3>4. html's shadows: the bars</h3><p><code>color:3F8BA6</code> works without a hash in quirks mode, and shadows with no color take it. <code>inset 9in 0</code> moves the inner shadow 864px: it fills the whole square. The other three copy it 8ex to the right, to the left and below. html keeps the default font, 16px Times: 8ex = 57.44px in my Chrome. These are the bars of the T.</p></div>
+<div class="cap" data-t="19" data-step="Disc"><h3>5. The same list on body</h3><p>body gets the same shadows. <code>border-radius:50%</code> rounds its 100 × 100 box into a disc, and the shadows follow the curve. The inset shadow fills the disc, the other three copy it. With html's font, 8ex would still be 57.44px: the discs would overlap.</p></div>
+<div class="cap" data-t="24" data-step="Font"><h3>6. A bigger font, a bigger ex</h3><p><code>font:204%"</code> gives body 204% of 16px, that is 32.64px. The <code>"</code> opens an empty font name, which the end of the code closes. ex follows the font size: the target puts the discs 120px apart. In my Chrome, body's 8ex is 117.17px; the animation uses the target's 120px.</p></div>
+<div class="cap" data-t="29" data-step="Result" data-live="142 characters · 100% match"><h3>7. Result: 142 characters</h3><p>Four discs in a T, linked by bars. One shadow list works twice: on html, small, it draws the bars; on body, about twice as big, it draws the discs. The discs cover the ends of the bars.</p></div>
+{%- endif %}
+</div>
+<div class="live"></div>
+</div>
+</div>
+<script>
+(window.AnimScenes = window.AnimScenes || {}).t0518 = (fig) => {
+  const fr = document.documentElement.lang === 'fr';
+  const $ = (s) => fig.querySelector(s);
+  const $$ = (s) => [...fig.querySelectorAll(s)];
+  const live = $('.live');
+  const ease = (x) => (x < 0.5 ? 4 * x * x * x : 1 - Math.pow(-2 * x + 2, 3) / 2);
+  const pr = (t, a, b) => ease(Math.min(1, Math.max(0, (t - a) / (b - a))));
+  const win = (t, a, b) => Math.min(pr(t, a, a + 0.5), 1 - pr(t, b - 0.3, b));
+  const c = fr ? ' :' : ':';
+  const n = (x) => (fr ? String(x).replace('.', ',') : String(x));
+  const mix = (k, a, b) => (k <= 0 ? b : k >= 1 ? a : `color-mix(in srgb, ${a} ${(k * 100).toFixed(1)}%, ${b})`);
+  // Measured on the official code in local Chrome 157 (400 × 300 iframe, quirks mode, getBoundingClientRect, getComputedStyle, variant renders).
+  // Canvas #9ff0fb (body's background, html has none). html 185, 75, 30 × 30; body 150, 40, 100 × 100.
+  // html: 16px Times, 8ex = 57.4375px -> bars at x 127.56..157.56 and 242.44..272.44 (y 75..105), and y 132.44..162.44 (x 185..215).
+  // body: 32.64px, 8ex = 117.173px locally; the target's discs are 120px apart (judge), which this scene uses: discs at x 30, 150, 270 (y 40) and (150, 160).
+  const H = 57.4375, B = 120;
+  const white = $('.t0518-white'), hf = $('.t0518-hf'), hc = $$('.t0518-hc'), bf = $('.t0518-bf'), bc = $$('.t0518-bc');
+  const xhtml = $('.t0518-xhtml'), xbody = $('.t0518-xbody');
+  const labs = $$('.zlab');
+  const dirs = [[1, 0], [-1, 0], [0, 1]];
+  const ivs = [[0.3, 3.8], [4.3, 7.8], [8.3, 12.8], [13.3, 18.8], [19.3, 23.8], [24.3, 28.8]];
+  return (t, step) => {
+    const teach = fig.dataset.teach === '1';
+    const tw = teach ? 1 - pr(t, 29.2, 30.2) : 0;
+    const HI = mix(tw, 'var(--t0518-hi)', 'var(--t0518-ink)');
+    const HS = mix(tw, 'var(--t0518-hs)', 'var(--t0518-ink)');
+    const BI = mix(tw, 'var(--t0518-bi)', 'var(--t0518-ink)');
+    const BS = mix(tw, 'var(--t0518-bs)', 'var(--t0518-ink)');
+    // step 2: body's background goes to the canvas
+    white.style.opacity = 1 - pr(t, 4.5, 6);
+    // step 3: the two boxes
+    xhtml.style.opacity = Math.max(win(t, 8.3, 12.8), win(t, 13.3, 15.5));
+    const rad = pr(t, 19.5, 20.7);
+    xbody.style.opacity = Math.max(win(t, 9.3, 12.8), win(t, 19.3, 21.8));
+    xbody.style.borderRadius = `${50 * rad}%`;
+    // step 4: html's inset shadow fills the square from its left edge (offset 0 -> 864px), then three copies move out by 8ex
+    const fill = pr(t, 13.6, 14.8);
+    hf.style.opacity = t < 13.5 ? 0 : 1;
+    hf.style.background = HI;
+    hf.style.clipPath = `inset(0 ${30 * (1 - fill)}px 0 0)`;
+    const ho = H * pr(t, 15.2, 16.8);
+    hc.forEach((e, i) => { e.style.opacity = t < 15.1 ? 0 : 1; e.style.background = HS; e.style.transform = `translate(${dirs[i][0] * ho}px, ${dirs[i][1] * ho}px)`; });
+    // step 5: body's box turns round, its inset shadow fills it (fade: the hole of a rounded inset shadow is round, not a straight edge), its copies move out by html's 8ex; step 6: the 204% font takes them to 120px
+    const r = `${50 * rad}%`;
+    const bfill = pr(t, 20.9, 22);
+    bf.style.opacity = bfill;
+    bf.style.background = BI;
+    bf.style.borderRadius = r;
+    const bo = H * pr(t, 22.2, 23.4) + (B - H) * pr(t, 24.8, 26.6);
+    bc.forEach((e, i) => { e.style.opacity = t < 22.1 ? 0 : 1; e.style.background = BS; e.style.borderRadius = r; e.style.transform = `translate(${dirs[i][0] * bo}px, ${dirs[i][1] * bo}px)`; });
+    labs.forEach((l) => { l.style.opacity = win(t, ...ivs[+l.dataset.l - 1]); });
+    let txt;
+    if (step === 0) txt = '* → html, head, style, body · * * → head, style, body';
+    else if (step === 1) txt = fr ? 'html sans fond → #9ff0fb au canevas' : 'html has no background → #9ff0fb on the canvas';
+    else if (step === 2) txt = `html${c} 400 − 370 = 30 · 300 − 270 = 30 · body${c} 30 + 2 × 35 = 100`;
+    else if (step === 3) txt = `9in = 864px · 8ex = 8 × ${n(7.18)} = ${n(57.44)}px`;
+    else if (step === 4) txt = fr ? 'border-radius : 50 % → rayon 50' : 'border-radius: 50% → radius 50';
+    else if (step === 5) txt = fr ? '204 % × 16 = 32,64px · 8ex ≈ 120px' : '204% × 16 = 32.64px · 8ex ≈ 120px';
+    else txt = $$('.caps .cap')[6].dataset.live || '';
+    live.textContent = txt;
+  };
+};
+</script>
+</figure>
