@@ -1,0 +1,149 @@
+<figure class="anim t0501" data-duration="35" data-scene="t0501" data-wide="-20 -40 440 1080" style="--bg:#7dd8c1">
+<style>
+.t0501{--t0501-red:#a34f50;--t0501-teal:#7dd8c1;--t0501-cream:#fbfae2;--t0501-green:#3a6430;--t0501-hb:#facc15;--t0501-bb:#f472b6;--t0501-bc:#fb923c}
+.t0501 .scene .t0501-white{left:-40px;top:-60px;width:480px;height:1140px;background:#fff;z-index:0}
+.t0501 .scene .t0501-h{left:0;top:300px;width:400px;height:1338px;opacity:0}
+.t0501 .scene .t0501-hr{background:var(--t0501-red);z-index:1}
+.t0501 .scene .t0501-ht{background:var(--t0501-teal);z-index:2}
+.t0501 .scene .t0501-hc{background:var(--t0501-cream);z-index:3}
+.t0501 .scene .t0501-hg{background:var(--t0501-green);z-index:4}
+.t0501 .scene .t0501-b{left:90px;top:914px;width:220px;height:110px;border-radius:110px 110px 0 0;opacity:0}
+.t0501 .scene .t0501-br{background:var(--t0501-red);z-index:5}
+.t0501 .scene .t0501-bt{background:var(--t0501-teal);z-index:6}
+.t0501 .scene .t0501-bg{background:var(--t0501-green);z-index:7}
+.t0501 .scene .t0501-box{box-sizing:border-box;opacity:0;z-index:9}
+.t0501 .scene .t0501-hb{left:0;top:300px;width:400px;height:1338px}
+.t0501 .scene .t0501-bb{left:90px;top:914px;width:220px;height:110px}
+.t0501 .scene .zlab{color:#14142a;background:rgb(255 255 255 / .92);box-shadow:0 0 0 1px rgb(20 20 42 / .25);padding:1px 5px;border-radius:3px;opacity:0}
+@media (max-width:700px){.t0501 .scene .zlab{font-size:8px;padding:0 3px}}
+.t0501 .legend .t0501-ol{box-shadow:0 0 0 1px currentColor}
+</style>
+<div class="anim-col">
+<div class="stage" role="img" aria-label="{% if include.lang == "fr" %}Animation : * vise html, head, style et body, et * * vise head, style et body. html reçoit la marge 75%0-1338 : 75 % de 400 = 300 en haut, donc 400 × 1338 en y = 300, tout sous le canevas. Sa liste d'ombres le copie quatre fois : en rouge 864px plus haut et en sarcelle 480px plus haut, deux copies qui couvrent tout le canevas, la sarcelle par-dessus ; en crème, réduite de 170,08px de chaque côté puis montée de 384px, le pied de 59,84px de large, de x = 170,08 et y = 86,08 ; en vert, montée de 50,08px, le sol à partir de y = 249,92. body reçoit la marge 614 90 : 220 × 110 en (90, 914), et border-radius:9in 9in 0 0 en fait un demi-disque de rayon 110. body a la même liste : sa copie rouge monte de 864px jusqu'en y = 50, c'est le chapeau, peint par-dessus le pied. Ses autres copies tombent sous le canevas.{% else %}Animation: * targets html, head, style and body, and * * targets head, style and body. html gets the margin 75%0-1338: 75% of 400 = 300 on top, so 400 × 1338 at y = 300, all below the canvas. Its shadow list copies it four times: in red 864px up and in teal 480px up, two copies that cover the whole canvas, teal on top; in cream, shrunk by 170.08px on every side and moved 384px up, the 59.84px wide stem, from x = 170.08 and y = 86.08; in green, moved 50.08px up, the ground from y = 249.92. body gets the margin 614 90: 220 × 110 at (90, 914), and border-radius:9in 9in 0 0 makes it a half disc of radius 110. body has the same list: its red copy moves 864px up to y = 50, it is the cap, painted over the stem. Its other copies fall below the canvas.{% endif %}">
+<div class="scene">
+<div class="t0501-white"></div>
+<div class="t0501-h t0501-hr"></div>
+<div class="t0501-h t0501-ht"></div>
+<div class="t0501-h t0501-hc"></div>
+<div class="t0501-h t0501-hg"></div>
+<div class="t0501-b t0501-br"></div>
+<div class="t0501-b t0501-bt"></div>
+<div class="t0501-b t0501-bg"></div>
+<div class="t0501-box t0501-hb"></div>
+<div class="t0501-box t0501-bb"></div>
+<span class="zlab" data-l="1" style="left:200px;top:330px">html 400 × 1338</span>
+<span class="zlab" data-l="1" style="left:250px;top:270px">75% × 400 = 300</span>
+<span class="zlab" data-l="2" style="left:10px;top:12px">0-9in → y = −564</span>
+<span class="zlab" data-l="2" style="left:10px;top:36px">0-5in → y = −180</span>
+<span class="zlab" data-l="3" style="left:10px;top:96px">400 − 2 × {% if include.lang == "fr" %}170,08 = 59,84{% else %}170.08 = 59.84{% endif %}</span>
+<span class="zlab" data-l="3" style="left:10px;top:120px">y = {% if include.lang == "fr" %}470,08 − 384 = 86,08{% else %}470.08 − 384 = 86.08{% endif %}</span>
+<span class="zlab" data-l="4" style="left:10px;top:222px">y = 300 − {% if include.lang == "fr" %}50,08 = 249,92{% else %}50.08 = 249.92{% endif %}</span>
+<span class="zlab" data-l="5" style="left:95px;top:886px">body 220 × 110 · y = 914</span>
+<span class="zlab" data-l="5" style="left:140px;top:985px">9in → 110px</span>
+<span class="zlab" data-l="6" style="left:236px;top:24px">914 − 864 = 50</span>
+<span class="zlab" data-l="6" style="left:236px;top:410px">914 − 480 = 434</span>
+<span class="zlab" data-l="6" style="left:236px;top:840px">914 − {% if include.lang == "fr" %}50,08 = 863,92{% else %}50.08 = 863.92{% endif %}</span>
+</div>
+</div>
+<div class="legend"><span><i class="t0501-ol" style="--c:#a34f50"></i>{% if include.lang == "fr" %}#a34f50 : les copies rouges{% else %}#a34f50: the red copies{% endif %}</span><span><i class="t0501-ol" style="--c:#7dd8c1"></i>{% if include.lang == "fr" %}#7dd8c1 : le fond{% else %}#7dd8c1: the background{% endif %}</span><span><i class="t0501-ol" style="--c:#fbfae2"></i>{% if include.lang == "fr" %}#fbfae2 : le pied{% else %}#fbfae2: the stem{% endif %}</span><span><i class="t0501-ol" style="--c:#3a6430"></i>{% if include.lang == "fr" %}#3a6430 : le sol{% else %}#3a6430: the ground{% endif %}</span><span><i style="--c:#facc15"></i>{% if include.lang == "fr" %}boîte de html{% else %}html's box{% endif %}</span><span><i style="--c:#f472b6"></i>{% if include.lang == "fr" %}boîte de body{% else %}body's box{% endif %}</span><span><i style="--c:#fb923c"></i>{% if include.lang == "fr" %}copies de body{% else %}body's copies{% endif %}</span></div>
+</div>
+<div class="anim-side">
+<pre class="code" aria-hidden="true">&lt;style><span data-on="1">*{margin:75%0-1338;</span>box-shadow:<span data-on="4 6">0-53q#3A6430</span>,<span data-on="3 6">0-4in 0-180q#FBFAE2</span>,<span data-on="2 6">0-5in#7DD8C1</span>,<span data-on="2 6">0-9in#A34F50</span>;<span data-on="5">*{border-radius:9in 9in 0 0;margin:614 90</span></pre>
+<div class="now" aria-live="polite">
+<div class="caps">
+{%- if include.lang == "fr" %}
+<div class="cap" data-t="0" data-step="html"><h3>1. html, sous le canevas</h3><p><code>*</code> vise html, head, style et body. head et style ne s'affichent pas. html reçoit <code>margin:75%0-1338</code>. Un pourcentage de marge se calcule sur la largeur : 75 % de 400 = 300 en haut, 0 sur les côtés, −1338 en bas. En mode quirks, html remplit la page moins ses marges : 300 − 300 + 1338 = 1338 de haut, 400 de large, en y = 300. Il est tout entier sous le canevas. Rien n'a de fond : le canevas est blanc.</p></div>
+<div class="cap" data-t="5" data-step="Le fond"><h3>2. Le fond</h3><p>La liste d'ombres copie html quatre fois. La dernière copie est peinte tout en bas : la rouge, 9in = 864px plus haut, à partir de y = −564. Au-dessus, la sarcelle, 5in = 480px plus haut, à partir de y = −180. Les deux couvrent tout le canevas. La sarcelle cache la rouge : le canevas est sarcelle.</p></div>
+<div class="cap" data-t="10" data-step="Le pied"><h3>3. Le pied</h3><p><code>0-4in 0-180q</code> : le flou vaut 0 et l'étalement −180q = −170,08px. Un étalement négatif réduit la copie de chaque côté : 400 − 2 × 170,08 = 59,84 de large, à partir de x = 170,08. Son haut passe en 300 + 170,08 = 470,08, puis monte de 4in = 384px : y = 86,08.</p></div>
+<div class="cap" data-t="15" data-step="Le sol"><h3>4. Le sol</h3><p>La première copie est peinte au-dessus des autres : la verte, 53q = 50,08px plus haut. Son haut est en y = 300 − 50,08 = 249,92. Elle couvre les 50px du bas, et le bout du pied.</p></div>
+<div class="cap" data-t="20" data-step="body"><h3>5. body</h3><p>Le <code>*</code> imbriqué vise head, style et body. body reçoit <code>margin:614 90</code> : 1338 − 2 × 614 = 110 de haut, 400 − 2 × 90 = 220 de large, en (90, 914). <code>border-radius:9in 9in 0 0</code> demande 864px aux coins du haut. C'est trop : le navigateur réduit tous les rayons du même facteur, jusqu'à ce qu'ils tiennent : 110px. Le haut est un demi-disque.</p></div>
+<div class="cap" data-t="25" data-step="Le chapeau"><h3>6. Les copies de body : le chapeau</h3><p>Le premier <code>*</code> vise aussi body : il a la même liste. Sa copie rouge monte de 864px : 914 − 864 = 50. C'est le chapeau, de y = 50 à 160. body est peint après html : le chapeau couvre le haut du pied. La copie sarcelle tombe en y = 434 et la verte en 863,92, sous le canevas. Avec −170,08px de chaque côté, il ne reste rien de la copie crème : 220 − 340,16 &lt; 0.</p></div>
+<div class="cap" data-t="30" data-step="Résultat" data-live="137 caractères · 100 % identique"><h3>7. Résultat : 137 caractères</h3><p>Quatre ombres, deux boîtes. html donne le fond, le pied et le sol, body donne le chapeau. Ni html ni body n'a de fond : tout ce qu'on voit, ce sont des ombres.</p></div>
+{%- else %}
+<div class="cap" data-t="0" data-step="html"><h3>1. html, below the canvas</h3><p><code>*</code> targets html, head, style and body. head and style are not displayed. html gets <code>margin:75%0-1338</code>. A margin percentage is taken from the width: 75% of 400 = 300 on top, 0 on the sides, −1338 at the bottom. In quirks mode, html fills the page minus its margins: 300 − 300 + 1338 = 1338 tall, 400 wide, at y = 300. All of it is below the canvas. Nothing has a background, so the canvas is white.</p></div>
+<div class="cap" data-t="5" data-step="The background"><h3>2. The background</h3><p>The shadow list copies html four times. The last copy is painted lowest: the red one, 9in = 864px up, from y = −564. Above it, the teal one, 5in = 480px up, from y = −180. Both cover the whole canvas. The teal one hides the red one, so the canvas is teal.</p></div>
+<div class="cap" data-t="10" data-step="The stem"><h3>3. The stem</h3><p><code>0-4in 0-180q</code>: the blur is 0 and the spread is −180q = −170.08px. A negative spread shrinks the copy on every side: 400 − 2 × 170.08 = 59.84 wide, from x = 170.08. Its top moves to 300 + 170.08 = 470.08, then 4in = 384px up: y = 86.08.</p></div>
+<div class="cap" data-t="15" data-step="The ground"><h3>4. The ground</h3><p>The first copy is painted on top of the others: the green one, 53q = 50.08px up. Its top is at y = 300 − 50.08 = 249.92. It covers the bottom 50px, and the end of the stem.</p></div>
+<div class="cap" data-t="20" data-step="body"><h3>5. body</h3><p>The nested <code>*</code> targets head, style and body. body gets <code>margin:614 90</code>: 1338 − 2 × 614 = 110 tall, 400 − 2 × 90 = 220 wide, at (90, 914). <code>border-radius:9in 9in 0 0</code> asks for 864px on the top corners. That is too much, so the browser scales every radius down by the same factor, until they fit: 110px. The top is a half disc.</p></div>
+<div class="cap" data-t="25" data-step="The cap"><h3>6. body's copies: the cap</h3><p>The first <code>*</code> also targets body, so it has the same list. Its red copy moves 864px up: 914 − 864 = 50. That is the cap, from y = 50 to 160. body is painted after html, so the cap covers the top of the stem. The teal copy lands at y = 434 and the green one at 863.92, below the canvas. With −170.08px on each side, nothing is left of the cream copy: 220 − 340.16 &lt; 0.</p></div>
+<div class="cap" data-t="30" data-step="Result" data-live="137 characters · 100% match"><h3>7. Result: 137 characters</h3><p>Four shadows, two boxes. html gives the background, the stem and the ground, body gives the cap. Neither html nor body has a background: everything you see is a shadow.</p></div>
+{%- endif %}
+</div>
+<div class="live"></div>
+</div>
+</div>
+<script>
+(window.AnimScenes = window.AnimScenes || {}).t0501 = (fig) => {
+  const fr = document.documentElement.lang === 'fr';
+  const $ = (s) => fig.querySelector(s);
+  const $$ = (s) => [...fig.querySelectorAll(s)];
+  const live = $('.live');
+  const ease = (x) => (x < 0.5 ? 4 * x * x * x : 1 - Math.pow(-2 * x + 2, 3) / 2);
+  const pr = (t, a, b) => ease(Math.min(1, Math.max(0, (t - a) / (b - a))));
+  const win = (t, a, b) => Math.min(pr(t, a, a + 0.5), 1 - pr(t, b - 0.3, b));
+  const c = fr ? ' :' : ':';
+  const n = (x) => (fr ? String(x).replace('.', ',') : String(x));
+  const mix = (k, a, b) => (k <= 0 ? b : k >= 1 ? a : `color-mix(in srgb, ${a} ${(k * 100).toFixed(1)}%, ${b})`);
+  // Measured on the official code in local Chrome 157 (400 × 300 iframe, quirks mode, getBoundingClientRect, getComputedStyle, variant renders).
+  // html 400 × 1338 at (0, 300); body 220 × 110 at (90, 914), border-radius 864px 864px 0 0 (drawn as 110px: same render as 110px 110px 0 0).
+  // Shadows (same list on both): 0 -50.0787px green, 0 -384px 0 -170.079px cream, 0 -480px teal, 0 -864px red. No background anywhere.
+  // html's copies: red y -564, teal y -180, cream 59.843 × 997.843 at (170.079, 86.079), green y 249.921. body's: red (90, 50), teal y 434, green y 863.921, cream none.
+  const Q = 50.0787, SP = 170.079, IN4 = 384, IN5 = 480, IN9 = 864;
+  const white = $('.t0501-white');
+  const hr = $('.t0501-hr'), ht = $('.t0501-ht'), hc = $('.t0501-hc'), hg = $('.t0501-hg');
+  const br = $('.t0501-br'), bt = $('.t0501-bt'), bg = $('.t0501-bg');
+  const hb = $('.t0501-hb'), bb = $('.t0501-bb');
+  const labs = $$('.zlab');
+  const ivs = [[0.3, 4.8], [5.3, 9.8], [10.3, 14.8], [15.3, 19.8], [20.3, 24.8], [25.3, 29.8]];
+  return (t, step) => {
+    const teach = fig.dataset.teach === '1';
+    const fin = pr(t, 30.2, 31.2);
+    const tw = teach ? 1 - fin : 0;
+    // the two boxes: dashed outline (or teaching color), until the result
+    const rad = pr(t, 22, 23.2) * 110;
+    bb.style.borderRadius = `${rad}px ${rad}px 0 0`;
+    const boxes = [[hb, 'var(--t0501-hb)', pr(t, 0.3, 1)], [bb, 'var(--t0501-bb)', pr(t, 20.3, 21)]];
+    boxes.forEach(([e, col, a]) => {
+      e.style.opacity = a * (1 - fin);
+      e.style.background = teach ? `color-mix(in srgb, ${col} 22%, transparent)` : 'none';
+      e.style.boxShadow = teach ? `inset 0 0 0 calc(2.5px * var(--k, 1)) ${col}` : 'none';
+      e.style.outline = teach ? 'none' : 'calc(1.5px * var(--k, 1)) dashed #fff';
+      e.style.outlineOffset = teach ? '0' : 'calc(-0.75px * var(--k, 1))';
+      e.style.filter = teach ? 'none' : 'drop-shadow(0 0 calc(1px * var(--k, 1)) rgb(0 0 0 / .9))';
+    });
+    // step 2: red then teal copies of html move up over the whole canvas
+    hr.style.opacity = pr(t, 5.3, 5.8);
+    hr.style.transform = `translateY(${-IN9 * pr(t, 5.8, 7.3)}px)`;
+    ht.style.opacity = pr(t, 7.5, 8);
+    ht.style.transform = `translateY(${-IN5 * pr(t, 8, 9.4)}px)`;
+    white.style.opacity = 1 - pr(t, 9.4, 9.8);
+    // step 3: the cream copy shrinks by the spread, then moves up
+    const s = SP * pr(t, 10.8, 12.3);
+    hc.style.opacity = pr(t, 10.3, 10.8);
+    hc.style.left = `${s}px`; hc.style.width = `${400 - 2 * s}px`;
+    hc.style.top = `${300 + s}px`; hc.style.height = `${1338 - 2 * s}px`;
+    hc.style.transform = `translateY(${-IN4 * pr(t, 12.5, 14)}px)`;
+    // step 4: the green copy
+    hg.style.opacity = pr(t, 15.3, 15.8);
+    hg.style.transform = `translateY(${-Q * pr(t, 15.8, 17.3)}px)`;
+    // step 6: body's copies (same list), teaching color until the result
+    const ba = pr(t, 25.3, 25.8), bm = pr(t, 25.8, 28);
+    [[br, IN9, 'var(--t0501-red)'], [bt, IN5, 'var(--t0501-teal)'], [bg, Q, 'var(--t0501-green)']].forEach(([e, d, col]) => {
+      e.style.opacity = ba;
+      e.style.transform = `translateY(${-d * bm}px)`;
+      e.style.background = mix(tw, 'var(--t0501-bc)', col);
+    });
+    labs.forEach((l) => { l.style.opacity = win(t, ...ivs[+l.dataset.l - 1]); });
+    let txt;
+    if (step === 0) txt = `html${c} 75% × 400 = 300 · 300 − 300 + 1338 = 1338`;
+    else if (step === 1) txt = `0-9in${c} 300 − 864 = −564 · 0-5in${c} 300 − 480 = −180`;
+    else if (step === 2) txt = `400 − 2 × ${n(170.08)} = ${n(59.84)} · 300 + ${n(170.08)} − 384 = ${n(86.08)}`;
+    else if (step === 3) txt = `0-53q${c} 300 − ${n(50.08)} = ${n(249.92)}`;
+    else if (step === 4) txt = `body${c} 1338 − 2 × 614 = 110 · 400 − 2 × 90 = 220 · 9in → 110px`;
+    else if (step === 5) txt = `body${c} 914 − 864 = 50 · 914 − 480 = 434 · 914 − ${n(50.08)} = ${n(863.92)}`;
+    else txt = $$('.caps .cap')[6].dataset.live || '';
+    live.textContent = txt;
+  };
+};
+</script>
+</figure>
