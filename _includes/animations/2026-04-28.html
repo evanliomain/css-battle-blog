@@ -1,0 +1,130 @@
+<figure class="anim t0428" data-duration="35" data-scene="t0428" data-wide="-20 -70 440 440" style="--bg:#d6924e">
+<style>
+.t0428{--t0428-can:#d6924e;--t0428-gray:#d9d9d9;--t0428-p1:#38bdf8;--t0428-p2:#f472b6;--t0428-p3:#a3e635;--t0428-hb:#facc15}
+.t0428 .scene .t0428-white{left:0;top:0;width:400px;height:300px;background:#fff;opacity:0;z-index:1}
+.t0428 .scene .t0428-veil{left:0;top:0;width:400px;height:300px;background:rgb(204 119 34 / .8);opacity:0;z-index:2}
+.t0428 .scene .t0428-html{left:0;top:0;width:400px;height:300px;transform-origin:200px 150px;z-index:3}
+.t0428 .scene .t0428-html > *{position:absolute;box-sizing:border-box}
+.t0428 .scene .t0428-p{left:92px;width:216px;height:36px;border:9px solid #000;background:var(--t0428-gray);opacity:0}
+.t0428 .scene .t0428-p1{top:212px}
+.t0428 .scene .t0428-p2{top:132px}
+.t0428 .scene .t0428-p3{top:52px}
+.t0428 .scene .t0428-hbox{left:0;top:0;width:400px;height:300px;opacity:0}
+.t0428 .scene .zlab{color:#14142a;background:rgb(255 255 255 / .92);box-shadow:0 0 0 1px rgb(20 20 42 / .25);padding:1px 5px;border-radius:3px;opacity:0}
+@media (max-width:700px){.t0428 .scene .zlab{font-size:8px;padding:0 3px}}
+.t0428 .legend .t0428-ol{box-shadow:0 0 0 1px currentColor}
+</style>
+<div class="anim-col">
+<div class="stage" role="img" aria-label="{% if include.lang == "fr" %}Animation : le fond de html, #C72C, un orange à 80 %, couvre tout le canevas par-dessus le blanc : (214, 146, 78). Trois paragraphes, chacun avec une espace insécable, font 216 × 36 avec une bordure noire de 9px et un fond gris #d9d9d9, de x = 92 à 308. Leurs marges verticales, 212 et −328, fusionnent en −116 : ils sont en y = 212, 132 et 52. scale:1.111 les agrandit à 240 × 40, bordure de 10. rotate:90deg fait tourner html autour de (200, 150) : les trois barres deviennent verticales, en x = 120, 200 et 280. Le paragraphe du milieu, [x], tourne de 90deg de plus et redevient horizontal : la barre du H, de x = 80 à 320, peinte par-dessus la barre de gauche et sous celle de droite.{% else %}Animation: html's background, #C72C, an orange at 80%, covers the whole canvas over white: (214, 146, 78). Three paragraphs, each with a no-break space, are 216 × 36 with a 9px black border and a gray #d9d9d9 background, from x = 92 to 308. Their vertical margins, 212 and −328, collapse into −116: they sit at y = 212, 132 and 52. scale:1.111 grows them to 240 × 40, with a 10px border. rotate:90deg turns html around (200, 150): the three bars turn vertical, at x = 120, 200 and 280. The middle paragraph, [x], turns 90deg more and is horizontal again: the bar of the H, from x = 80 to 320, painted over the left bar and under the right one.{% endif %}">
+<div class="scene">
+<div class="t0428-white"></div>
+<div class="t0428-veil"></div>
+<div class="t0428-html">
+<div class="t0428-p t0428-p1"></div>
+<div class="t0428-p t0428-p2"></div>
+<div class="t0428-p t0428-p3"></div>
+<div class="t0428-hbox"></div>
+</div>
+<span class="zlab" data-l="1" style="left:12px;top:12px">#C72C → (214, 146, 78)</span>
+<span class="zlab" data-l="1" style="left:270px;top:272px">html · 400 × 300</span>
+<span class="zlab" data-l="2" style="left:100px;top:103px">216 × 36</span>
+<span class="zlab" data-l="2" style="left:100px;top:183px">18 + 2 × 9 = 36</span>
+<span class="zlab" data-l="3" style="left:316px;top:62px">y = 52</span>
+<span class="zlab" data-l="3" style="left:316px;top:142px">y = 132</span>
+<span class="zlab" data-l="3" style="left:316px;top:222px">y = 212</span>
+<span class="zlab" data-l="3" style="left:100px;top:183px">212 − 328 = −116</span>
+<span class="zlab" data-l="4" style="left:100px;top:103px">240 × 40</span>
+<span class="zlab" data-l="4" style="left:100px;top:183px">9 × {% if include.lang == "fr" %}1,111{% else %}1.111{% endif %} = 10</span>
+<span class="zlab" data-l="5" style="left:94px;top:8px">x = 120</span>
+<span class="zlab" data-l="5" style="left:174px;top:8px">x = 200</span>
+<span class="zlab" data-l="5" style="left:254px;top:8px">x = 280</span>
+<span class="zlab" data-l="5" style="left:180px;top:278px">rotate:90deg · (200, 150)</span>
+<span class="zlab" data-l="6" style="left:12px;top:8px">{% if include.lang == "fr" %}peints : p1, puis p x, puis p3{% else %}painted: p1, then p x, then p3{% endif %}</span>
+<span class="zlab" data-l="6" style="left:200px;top:278px">p x · 90 + 90 = 180deg</span>
+</div>
+</div>
+<div class="legend"><span><i class="t0428-ol" style="--c:#d6924e"></i>{% if include.lang == "fr" %}#d6924e : #C72C sur le blanc, le canevas{% else %}#d6924e: #C72C over white, the canvas{% endif %}</span><span><i class="t0428-ol" style="--c:#d9d9d9"></i>{% if include.lang == "fr" %}#d9d9d9 : le fond des paragraphes{% else %}#d9d9d9: the paragraphs' background{% endif %}</span><span><i class="t0428-ol" style="--c:#000"></i>{% if include.lang == "fr" %}#000 : leurs bordures{% else %}#000: their borders{% endif %}</span><span><i style="--c:#38bdf8"></i>{% if include.lang == "fr" %}p1, le premier paragraphe{% else %}p1, the first paragraph{% endif %}</span><span><i style="--c:#f472b6"></i>{% if include.lang == "fr" %}p x, celui du milieu{% else %}p x, the middle one{% endif %}</span><span><i style="--c:#a3e635"></i>{% if include.lang == "fr" %}p3, le dernier{% else %}p3, the last one{% endif %}</span><span><i style="--c:#facc15"></i>{% if include.lang == "fr" %}boîte de html{% else %}html's box{% endif %}</span></div>
+</div>
+<div class="anim-side">
+<pre class="code" aria-hidden="true"><span data-on="2">&lt;p>&nbsp;</span><span data-on="2 6">&lt;p x></span><span data-on="2">&nbsp;&lt;p>&nbsp;</span>&lt;style><span data-on="1 5">&amp;</span><span data-on="6">,[x]</span>{<span data-on="5 6">rotate:90deg;</span><span data-on="1">background:#C72C;</span><span data-on="2">p{</span><span data-on="4">scale:1.111;</span><span data-on="2">background:#D9D9D9;</span><span data-on="2 3">margin:212 84-328;</span><span data-on="2 4">border:9px solid</span></pre>
+<div class="now" aria-live="polite">
+<div class="caps">
+{%- if include.lang == "fr" %}
+<div class="cap" data-t="0" data-step="Le canevas"><h3>1. Le fond de html, sur le blanc</h3><p><code>&amp;</code>, tout en haut de la feuille de style, vise la racine : html. Son fond, <code>#C72C</code>, est <code>#cc7722</code> avec une opacité de 80 % (<code>C</code> = 204 / 255). html est la racine : son fond peint tout le canevas, par-dessus le blanc. 204 × 0,8 + 255 × 0,2 = 214,2 : le canevas est (214, 146, 78). La même règle donne aussi <code>rotate:90deg</code> à html, pour plus tard.</p></div>
+<div class="cap" data-t="5" data-step="Trois p"><h3>2. Trois paragraphes</h3><p>Entre les balises, <code>&lt;p>&nbsp;&lt;p x>&nbsp;&lt;p>&nbsp;</code> met des espaces insécables. Le navigateur les garde comme du texte : chaque p a une ligne, de 18px de haut. Le <code>p{</code> imbriqué vise les trois p, qui sont dans html. Chacun reçoit un fond gris, une bordure noire de 9px (sans couleur, elle prend celle du texte) et des marges de 84 sur les côtés : 400 − 2 × (8 + 84) = 216 de large, 18 + 2 × 9 = 36 de haut, de x = 92 à 308.</p></div>
+<div class="cap" data-t="10" data-step="Les marges"><h3>3. Des marges qui fusionnent</h3><p><code>margin:212 84-328</code> : 212 en haut, −328 en bas. Entre deux paragraphes voisins, les deux marges verticales n'en font qu'une : 212 − 328 = −116. La marge du haut du premier p traverse celle de body, 8px : il commence en y = 212. Le suivant en 212 + 36 − 116 = 132, le dernier en 52. Leurs centres sont en y = 230, 150 et 70, à 80px l'un de l'autre.</p></div>
+<div class="cap" data-t="15" data-step="scale"><h3>4. scale:1.111, un dixième de plus</h3><p>Chaque p grandit autour de son centre : 216 × 1,111 = 239,976, 36 × 1,111 = 39,996, et la bordure 9 × 1,111 = 9,999. Une seule déclaration donne trois mesures presque rondes : 240 × 40, avec une bordure de 10.</p></div>
+<div class="cap" data-t="20" data-step="html tourne"><h3>5. html tourne d'un quart de tour</h3><p><code>rotate:90deg</code> fait tourner html, et tout ce qu'il contient, autour de son centre, (200, 150), dans le sens horaire. Les trois barres deviennent verticales. Le premier p, le plus bas, part à gauche, en x = 120. Le dernier, le plus haut, part à droite, en x = 280. La couleur du canevas, elle, ne tourne pas : elle couvre tout le canevas.</p></div>
+<div class="cap" data-t="25" data-step="p x revient"><h3>6. Le p du milieu revient à l'horizontale</h3><p><code>[x]</code> donne au p du milieu son propre <code>rotate:90deg</code>. Avec celui de html, cela fait 180deg : il redevient horizontal, de x = 80 à 320. C'est la barre du H. <code>[x]</code> reçoit aussi <code>#C72C</code>, mais la règle imbriquée (un attribut et un nom de balise) est plus précise que <code>[x]</code> seul : le gris gagne. Chaque p a une transformation, alors il est peint à part, dans l'ordre du code : p x par-dessus le premier p, le dernier p par-dessus p x.</p></div>
+<div class="cap" data-t="30" data-step="Résultat" data-live="124 caractères · 100 % identique"><h3>7. Résultat : 124 caractères</h3><p>Trois paragraphes empilés à l'horizontale, une page tournée d'un quart de tour, et un quart de tour de plus pour celui du milieu : un H gris cerné de noir.</p></div>
+{%- else %}
+<div class="cap" data-t="0" data-step="The canvas"><h3>1. html's background, over white</h3><p><code>&amp;</code>, at the top level of the stylesheet, targets the root: html. Its background, <code>#C72C</code>, is <code>#cc7722</code> at 80% opacity (<code>C</code> = 204 / 255). html is the root, so its background paints the whole canvas, over white. 204 × 0.8 + 255 × 0.2 = 214.2: the canvas is (214, 146, 78). The same rule also gives html <code>rotate:90deg</code>, for later.</p></div>
+<div class="cap" data-t="5" data-step="Three p"><h3>2. Three paragraphs</h3><p>Between the tags, <code>&lt;p>&nbsp;&lt;p x>&nbsp;&lt;p>&nbsp;</code> has no-break spaces. The browser keeps them as text: each p gets one line, 18px tall. The nested <code>p{</code> targets the three p, which are inside html. Each gets a gray background, a 9px black border (with no color, it takes the text color) and 84px side margins: 400 − 2 × (8 + 84) = 216 wide, 18 + 2 × 9 = 36 tall, from x = 92 to 308.</p></div>
+<div class="cap" data-t="10" data-step="Margins"><h3>3. Margins that merge</h3><p><code>margin:212 84-328</code>: 212 on top, −328 at the bottom. Between two neighbor paragraphs, the two vertical margins become one: 212 − 328 = −116. The first p's top margin goes through body's 8px one: it starts at y = 212. The next one at 212 + 36 − 116 = 132, the last one at 52. Their centers are at y = 230, 150 and 70, 80px apart.</p></div>
+<div class="cap" data-t="15" data-step="scale"><h3>4. scale:1.111, a tenth more</h3><p>Each p grows around its center: 216 × 1.111 = 239.976, 36 × 1.111 = 39.996, and the border 9 × 1.111 = 9.999. One declaration gives three nearly round sizes: 240 × 40, with a 10px border.</p></div>
+<div class="cap" data-t="20" data-step="html turns"><h3>5. html turns a quarter turn</h3><p><code>rotate:90deg</code> turns html, and everything in it, around its center, (200, 150), clockwise. The three bars turn vertical. The first p, the lowest one, goes to the left, at x = 120. The last one, the highest, goes to the right, at x = 280. The canvas color does not turn: it covers the whole canvas.</p></div>
+<div class="cap" data-t="25" data-step="p x turns back"><h3>6. The middle p turns back</h3><p><code>[x]</code> gives the middle p its own <code>rotate:90deg</code>. With html's, that makes 180deg: it is horizontal again, from x = 80 to 320. That is the bar of the H. <code>[x]</code> also gets <code>#C72C</code>, but the nested rule (an attribute and a tag name) is more specific than <code>[x]</code> alone: gray wins. Each p has a transform, so it is painted on its own, in code order: p x over the first p, the last p over p x.</p></div>
+<div class="cap" data-t="30" data-step="Result" data-live="124 characters · 100% match"><h3>7. Result: 124 characters</h3><p>Three paragraphs stacked flat, a page turned a quarter turn, and one more quarter turn for the middle one: a gray H outlined in black.</p></div>
+{%- endif %}
+</div>
+<div class="live"></div>
+</div>
+</div>
+<script>
+(window.AnimScenes = window.AnimScenes || {}).t0428 = (fig) => {
+  const fr = document.documentElement.lang === 'fr';
+  const $ = (s) => fig.querySelector(s);
+  const $$ = (s) => [...fig.querySelectorAll(s)];
+  const live = $('.live');
+  const ease = (x) => (x < 0.5 ? 4 * x * x * x : 1 - Math.pow(-2 * x + 2, 3) / 2);
+  const pr = (t, a, b) => ease(Math.min(1, Math.max(0, (t - a) / (b - a))));
+  const win = (t, a, b) => Math.min(pr(t, a, a + 0.5), 1 - pr(t, b - 0.3, b));
+  const n = (x) => (fr ? String(x).replace('.', ',') : String(x));
+  const mix = (k, a, b) => (k <= 0 ? b : k >= 1 ? a : `color-mix(in srgb, ${a} ${(k * 100).toFixed(1)}%, ${b})`);
+  // Measured on the official code in local Chrome 157 (400 × 300 iframe, quirks mode, getBoundingClientRect, offsetTop, getComputedStyle, pixels, variant renders).
+  // Canvas (214, 146, 78). html 400 × 300, rotate 90deg around (200, 150): rect (50, -50, 300, 400).
+  // Each p 216 × 36 (offsetWidth/Height), x 92..308, offsetTop 212, 132, 52; scale 1.111 around its center.
+  // After the rotations: p1 x 100.002..139.998, p3 x 260.002..299.998, y 30.012..269.988; p x x 80.012..319.988, y 130.002..169.998.
+  // Same geometry here: 216 × 36 boxes at the same places, scaled by 1.111, inside a 400 × 300 box rotated 90deg around (200, 150).
+  const white = $('.t0428-white'), veil = $('.t0428-veil'), html = $('.t0428-html'), hbox = $('.t0428-hbox');
+  const ps = [$('.t0428-p1'), $('.t0428-p2'), $('.t0428-p3')];
+  const tcol = ['var(--t0428-p1)', 'var(--t0428-p2)', 'var(--t0428-p3)'];
+  const labs = $$('.zlab');
+  const ivs = [[0.3, 4.8], [5.3, 9.8], [10.3, 14.8], [15.3, 19.8], [22.6, 24.8], [27.2, 29.8]];
+  return (t, step) => {
+    const teach = fig.dataset.teach === '1';
+    const tw = teach ? 1 - pr(t, 30.2, 31.2) : 0;
+    // step 1: white canvas, then html's 80% orange over it; both go once the canvas color is set (same color as the stage)
+    const pre = t < 5 ? 1 : 0;
+    white.style.opacity = pre;
+    veil.style.opacity = pre * pr(t, 0.8, 2.6);
+    // html's box: steps 1 and 5
+    const hb = win(t, 0.3, 4.8) + win(t, 20.3, 24.8);
+    hbox.style.opacity = hb;
+    hbox.style.boxShadow = teach && hb > 0 ? 'inset 0 0 0 calc(2.5px * var(--k, 1)) var(--t0428-hb)' : 'none';
+    hbox.style.outline = !teach && hb > 0 ? 'calc(1.5px * var(--k, 1)) dashed #fff' : 'none';
+    hbox.style.outlineOffset = 'calc(-0.75px * var(--k, 1))';
+    hbox.style.filter = !teach && hb > 0 ? 'drop-shadow(0 0 calc(1px * var(--k, 1)) rgb(0 0 0 / .9))' : 'none';
+    // step 2: the three paragraphs; step 4: scale; step 5: html turns; step 6: p x turns
+    const s = 1 + 0.111 * pr(t, 15.6, 17.4);
+    html.style.transform = `rotate(${90 * pr(t, 20.6, 22.4)}deg)`;
+    const r2 = 90 * pr(t, 25.6, 27.2);
+    ps.forEach((p, i) => {
+      p.style.opacity = pr(t, 5.4 + 0.4 * i, 6.2 + 0.4 * i);
+      p.style.transform = (i === 1 ? `rotate(${r2}deg) ` : '') + `scale(${s})`;
+      p.style.background = mix(tw, tcol[i], 'var(--t0428-gray)');
+    });
+    labs.forEach((l) => { l.style.opacity = win(t, ...ivs[+l.dataset.l - 1]); });
+    let txt;
+    if (step === 0) txt = `204 × ${n(0.8)} + 255 × ${n(0.2)} = ${n(214.2)} → (214, 146, 78)`;
+    else if (step === 1) txt = `400 − 2 × (8 + 84) = 216 · 18 + 2 × 9 = 36`;
+    else if (step === 2) txt = `212 − 328 = −116 · 212 + 36 − 116 = 132 · 132 + 36 − 116 = 52`;
+    else if (step === 3) txt = `216 × ${n(1.111)} = ${n(239.976)} · 36 × ${n(1.111)} = ${n(39.996)} · 9 × ${n(1.111)} = ${n(9.999)}`;
+    else if (step === 4) txt = `(200, 230) → (120, 150) · (200, 70) → (280, 150)`;
+    else if (step === 5) txt = `90deg + 90deg = 180deg · x = 80 → 320`;
+    else txt = $$('.caps .cap')[6].dataset.live || '';
+    live.textContent = txt;
+  };
+};
+</script>
+</figure>
