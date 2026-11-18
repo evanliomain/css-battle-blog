@@ -1,0 +1,161 @@
+<figure class="anim t0521" data-duration="36" data-scene="t0521" data-wide="-40 -60 480 380" data-off-label="-34 -54" style="--bg:#32360e">
+<style>
+.t0521{--t0521-green:#32360e;--t0521-beige:#e8ad6d;--t0521-red:#a84a4b;--t0521-hb:#6366f1;--t0521-bb:#14b8a6;--t0521-hs:#f59e0b;--t0521-hr:#ec4899;--t0521-bs:#84cc16;--t0521-br:#a855f7}
+.t0521 .scene .t0521-white{left:-80px;top:-100px;width:560px;height:460px;background:#fff;z-index:0}
+.t0521 .scene .t0521-hsq{left:20px;top:-30px;width:240px;height:240px;opacity:0;z-index:1}
+.t0521 .scene .t0521-hred{left:20px;top:-30px;width:240px;height:240px;opacity:0;z-index:2}
+.t0521 .scene .t0521-html{left:20px;top:-30px;width:240px;height:240px;opacity:0;z-index:3}
+.t0521 .scene .t0521-bsq{left:80px;top:30px;width:120px;height:120px;opacity:0;z-index:4}
+.t0521 .scene .t0521-bred{left:80px;top:30px;width:120px;height:120px;opacity:0;z-index:5}
+.t0521 .scene .t0521-body{left:80px;top:30px;width:120px;height:120px;opacity:0;z-index:6}
+.t0521 .scene .t0521-redl{left:199.528px;top:149.528px;width:120.945px;height:120.945px;clip-path:polygon(60.472px 0,100% 0,100% 100%,0 100%,0 60.472px,60.472px 60.472px);opacity:0;z-index:7}
+.t0521 .scene .t0521-dot{left:259.528px;top:209.528px;width:.945px;height:.945px;opacity:0;z-index:8}
+.t0521 .scene .t0521-ring{left:calc(260px - 9px * var(--k, 1));top:calc(210px - 9px * var(--k, 1));width:calc(18px * var(--k, 1));height:calc(18px * var(--k, 1));box-sizing:border-box;border-radius:50%;border:calc(2px * var(--k, 1)) solid #fff;box-shadow:0 0 0 calc(1px * var(--k, 1)) #14142a,inset 0 0 0 calc(1px * var(--k, 1)) #14142a;opacity:0;z-index:9}
+.t0521 .scene .t0521-box{box-sizing:border-box;outline:calc(1.5px * var(--k, 1)) dashed #fff;outline-offset:calc(-0.75px * var(--k, 1));filter:drop-shadow(0 0 calc(1px * var(--k, 1)) #14142a);opacity:0;z-index:10}
+.t0521 .scene .zlab{left:4px;top:4px;color:#14142a;background:rgb(255 255 255 / .92);box-shadow:0 0 0 1px rgb(20 20 42 / .25);padding:1px 5px;border-radius:3px;opacity:0}
+.t0521 .legend .t0521-ol{box-shadow:0 0 0 1px currentColor}
+.t0521 .legend .t0521-dash{background:none;outline:2px dashed currentColor;outline-offset:-2px}
+</style>
+<div class="anim-col">
+<div class="stage" role="img" aria-label="{% if include.lang == "fr" %}Animation : le style va dans head. Le fond #32360e de html passe au canevas, vert très sombre partout. html a les marges −30 140 90 20 : en mode quirks il fait 240 × 240 en (20, −30). Son ombre #e8ad6d décalée de 60px ne se voit que hors de sa boîte : un L beige. Son ombre #a84a4b, décalée de 127q = 120px et réduite de 63q = 59,53px de chaque côté, est au-dessus : un L rouge brun. body a la marge 60 : 120 × 120 en (80, 30). Il reçoit les mêmes ombres : un second L beige, plus petit, et un point rouge de 1q = 0,945px. Il reste un escalier beige de quatre marches et un L rouge brun dans le coin.{% else %}Animation: the style goes into head. html's #32360e background goes to the canvas, very dark green everywhere. html has the margins −30 140 90 20: in quirks mode it is 240 × 240 at (20, −30). Its #e8ad6d shadow, moved by 60px, only shows outside its box: a beige L. Its #a84a4b shadow, moved by 127q = 120px and shrunk by 63q = 59.53px on each side, sits on top: a red-brown L. body has the margin 60: 120 × 120 at (80, 30). It gets the same shadows: a second, smaller beige L, and a red dot 1q = 0.945px wide. A beige staircase of four steps is left, with a red-brown L in the corner.{% endif %}">
+<div class="scene">
+<div class="t0521-white"></div>
+<div class="t0521-hsq"></div>
+<div class="t0521-hred"></div>
+<div class="t0521-html"></div>
+<div class="t0521-bsq"></div>
+<div class="t0521-bred"></div>
+<div class="t0521-body"></div>
+<div class="t0521-redl"></div>
+<div class="t0521-dot"></div>
+<div class="t0521-ring"></div>
+<div class="t0521-box t0521-xhtml" style="left:20px;top:-30px;width:240px;height:240px"></div>
+<div class="t0521-box t0521-xhsq"></div>
+<div class="t0521-box t0521-xhred"></div>
+<div class="t0521-box t0521-xbody" style="left:80px;top:30px;width:120px;height:120px"></div>
+<div class="t0521-box t0521-xbsq"></div>
+<span class="zlab" data-l="1">html › head › style, body</span>
+<span class="zlab" data-l="2">{% if include.lang == "fr" %}fond de html → canevas{% else %}html's background → canvas{% endif %}</span>
+<span class="zlab" data-l="3">html 240 × 240 · (20, −30)</span>
+<span class="zlab" data-l="4">{% if include.lang == "fr" %}ombre 60px 60px → (80, 30){% else %}shadow 60px 60px → (80, 30){% endif %}</span>
+<span class="zlab" data-l="5">{% if include.lang == "fr" %}127q = 120px · 63q = 59,53px{% else %}127q = 120px · 63q = 59.53px{% endif %}</span>
+<span class="zlab" data-l="6">body 120 × 120 · (80, 30)</span>
+<span class="zlab" data-l="7">{% if include.lang == "fr" %}120 − 2 × 59,53 = 0,945px = 1q{% else %}120 − 2 × 59.53 = 0.945px = 1q{% endif %}</span>
+</div>
+</div>
+<div class="legend"><span><i class="t0521-ol" style="--c:#32360e"></i>{% if include.lang == "fr" %}#32360e, le canevas{% else %}#32360e, the canvas{% endif %}</span><span><i class="t0521-ol" style="--c:#e8ad6d"></i>#e8ad6d</span><span><i class="t0521-ol" style="--c:#a84a4b"></i>#a84a4b</span><span><i style="--c:var(--t0521-hb)"></i>{% if include.lang == "fr" %}boîte de html{% else %}html's box{% endif %}</span><span><i style="--c:var(--t0521-hs)"></i>{% if include.lang == "fr" %}ombre beige de html{% else %}html's beige shadow{% endif %}</span><span><i style="--c:var(--t0521-hr)"></i>{% if include.lang == "fr" %}ombre rouge de html{% else %}html's red shadow{% endif %}</span><span><i style="--c:var(--t0521-bb)"></i>{% if include.lang == "fr" %}boîte de body{% else %}body's box{% endif %}</span><span><i style="--c:var(--t0521-bs)"></i>{% if include.lang == "fr" %}ombre beige de body{% else %}body's beige shadow{% endif %}</span><span><i style="--c:var(--t0521-br)"></i>{% if include.lang == "fr" %}ombre rouge de body{% else %}body's red shadow{% endif %}</span><span><i class="t0521-dash"></i>{% if include.lang == "fr" %}boîtes, ombres entières{% else %}boxes, whole shadows{% endif %}</span></div>
+</div>
+<div class="anim-side">
+<pre class="code" aria-hidden="true">&lt;style><span data-on="1">*{</span><span data-on="2">background:#32360e</span>;<span data-on="3">margin:-30 35%90 20</span>;box-shadow:<span data-on="5 7">127q 127q 0-63q#a84a4b</span>,<span data-on="4 7">60px 60px#e8ad6d</span>;<span data-on="1">*{</span><span data-on="6">margin:60</span></pre>
+<div class="now" aria-live="polite">
+<div class="caps">
+{%- if include.lang == "fr" %}
+<div class="cap" data-t="0" data-step="Éléments"><h3>1. html, head, style, body</h3><p>Le <code>&lt;style></code> va dans head, et body reste vide. <code>*</code> vise html, head, style et body. Le <code>*{</code> imbriqué vise les éléments placés dans un autre : head, style et body. head et style ne s'affichent pas : il reste deux boîtes, html et body.</p></div>
+<div class="cap" data-t="4" data-step="Fond"><h3>2. Un canevas vert très sombre</h3><p>Tous les éléments reçoivent <code>background:#32360e</code>. Celui de html ne se peint pas dans sa boîte : il passe au canevas, qui devient vert très sombre partout.</p></div>
+<div class="cap" data-t="8" data-step="html"><h3>3. La boîte de html</h3><p>html reçoit <code>margin:-30 35%90 20</code>. Un nombre seul est lu en px, et 35 % se calcule sur les 400px de large : 140px. html fait 400 − 140 − 20 = 240 de large. En mode quirks, il remplit aussi la hauteur moins ses marges : 300 + 30 − 90 = 240. C'est un carré de 240 en (20, −30), qui dépasse du canevas par le haut.</p></div>
+<div class="cap" data-t="12.5" data-step="Ombre beige"><h3>4. L'ombre beige de html</h3><p><code>60px 60px#e8ad6d</code> copie la boîte de html, décalée de 60px vers la droite et vers le bas : un carré de 240 en (80, 30). Une ombre extérieure n'est jamais peinte sous sa propre boîte. On ne voit qu'un L : une colonne de x = 260 à 320 et une bande de y = 210 à 270.</p></div>
+<div class="cap" data-t="17" data-step="Ombre rouge"><h3>5. L'ombre rouge de html</h3><p><code>127q</code> fait 127 × 0,25 mm = 1,25in = 120px. L'étalement <code>-63q</code>, soit −59,53px, réduit le carré de chaque côté : 240 − 119,06 = 120,94. L'ombre rouge va de 199,53 à 320,47 sur les deux axes. Elle vient en premier dans la liste : elle est peinte au-dessus de la beige. La boîte de html la coupe aussi : il reste un L rouge brun.</p></div>
+<div class="cap" data-t="21.5" data-step="body"><h3>6. La boîte de body</h3><p>Le <code>*{margin:60</code> imbriqué remplace la marge de body. body remplit html moins ses marges : 240 − 120 = 120 dans les deux sens, en (20 + 60, −30 + 60) = (80, 30). Son fond vert se confond avec le canevas.</p></div>
+<div class="cap" data-t="26" data-step="Ombres de body"><h3>7. Les mêmes ombres, pour body</h3><p>body reçoit la même liste d'ombres. La beige est un carré de 120 en (140, 90). Hors de la boîte de body, elle forme deux marches : de x = 200 à 260 sur y = 90 à 150, puis de x = 140 à 260 sur y = 150 à 210. La rouge rétrécit à 120 − 119,06 = 0,945px, soit 1q : un point en (260, 210).</p></div>
+<div class="cap" data-t="31" data-step="Résultat" data-live="110 caractères · 100 % identique"><h3>8. Résultat : 110 caractères</h3><p>Les deux L beiges forment un escalier de quatre marches de 60px. Le L rouge brun remplit le coin en bas à droite. Le point rouge de body teinte un seul pixel, en (259, 209).</p></div>
+{%- else %}
+<div class="cap" data-t="0" data-step="Elements"><h3>1. html, head, style, body</h3><p>The <code>&lt;style></code> goes into head, and body stays empty. <code>*</code> matches html, head, style and body. The nested <code>*{</code> matches the elements inside another one: head, style and body. head and style are not displayed: two boxes are left, html and body.</p></div>
+<div class="cap" data-t="4" data-step="Background"><h3>2. A very dark green canvas</h3><p>Every element gets <code>background:#32360e</code>. html's is not painted in its box: it goes to the canvas, which turns very dark green everywhere.</p></div>
+<div class="cap" data-t="8" data-step="html"><h3>3. html's box</h3><p>html gets <code>margin:-30 35%90 20</code>. A bare number is read in px, and 35% is taken from the 400px width: 140px. html is 400 − 140 − 20 = 240 wide. In quirks mode it also fills the height minus its margins: 300 + 30 − 90 = 240. It is a 240 square at (20, −30), sticking out above the canvas.</p></div>
+<div class="cap" data-t="12.5" data-step="Beige shadow"><h3>4. html's beige shadow</h3><p><code>60px 60px#e8ad6d</code> copies html's box, moved 60px right and 60px down: a 240 square at (80, 30). An outer shadow is never painted under its own box. Only an L shows: a column from x = 260 to 320 and a band from y = 210 to 270.</p></div>
+<div class="cap" data-t="17" data-step="Red shadow"><h3>5. html's red shadow</h3><p><code>127q</code> is 127 × 0.25 mm = 1.25in = 120px. The spread <code>-63q</code>, or −59.53px, shrinks the square on each side: 240 − 119.06 = 120.94. The red shadow runs from 199.53 to 320.47 on both axes. It comes first in the list, so it is painted above the beige one. html's box cuts it too: a red-brown L is left.</p></div>
+<div class="cap" data-t="21.5" data-step="body"><h3>6. body's box</h3><p>The nested <code>*{margin:60</code> replaces body's margin. body fills html minus its margins: 240 − 120 = 120 both ways, at (20 + 60, −30 + 60) = (80, 30). Its green background blends with the canvas.</p></div>
+<div class="cap" data-t="26" data-step="body's shadows"><h3>7. The same shadows, for body</h3><p>body gets the same shadow list. The beige one is a 120 square at (140, 90). Outside body's box it makes two steps: from x = 200 to 260 on y = 90 to 150, then from x = 140 to 260 on y = 150 to 210. The red one shrinks to 120 − 119.06 = 0.945px, which is 1q: a dot at (260, 210).</p></div>
+<div class="cap" data-t="31" data-step="Result" data-live="110 characters · 100% match"><h3>8. Result: 110 characters</h3><p>The two beige Ls make a staircase of four 60px steps. The red-brown L fills the bottom right corner. body's red dot tints a single pixel, at (259, 209).</p></div>
+{%- endif %}
+</div>
+<div class="live"></div>
+</div>
+</div>
+<script>
+(window.AnimScenes = window.AnimScenes || {}).t0521 = (fig) => {
+  const fr = document.documentElement.lang === 'fr';
+  const $ = (s) => fig.querySelector(s);
+  const $$ = (s) => [...fig.querySelectorAll(s)];
+  const live = $('.live');
+  const ease = (x) => (x < 0.5 ? 4 * x * x * x : 1 - Math.pow(-2 * x + 2, 3) / 2);
+  const pr = (t, a, b) => ease(Math.min(1, Math.max(0, (t - a) / (b - a))));
+  const win = (t, a, b) => Math.min(pr(t, a, a + 0.5), 1 - pr(t, b - 0.3, b));
+  const c = fr ? '\u00a0:' : ':';
+  const n = (x) => (fr ? String(x).replace('.', ',') : String(x));
+  const mix = (k, a, b) => (k <= 0 ? b : k >= 1 ? a : `color-mix(in srgb, ${a} ${(k * 100).toFixed(1)}%, ${b})`);
+  // Measured on the official code in local Chrome (400 × 300 iframe, quirks mode, getBoundingClientRect, getComputedStyle, variant renders).
+  // html 20, -30, 240 × 240 (margins -30 140 90 20, its background goes to the canvas); body 80, 30, 120 × 120 (margin 60).
+  // Shadows on both: 120px 120px 0 -59.5276px #a84a4b (127q, -63q), then 60px 60px #e8ad6d.
+  // html: beige 80..320 × 30..270, red 199.528..320.472 on both axes; body: beige 140..260 × 90..210, red 259.528..260.472 × 209.528..210.472.
+  // Outer shadows are not painted under their own box. Without body's red shadow, 1 pixel changes (259, 209).
+  const S = 59.5276;
+  const white = $('.t0521-white'), hsq = $('.t0521-hsq'), hred = $('.t0521-hred'), html = $('.t0521-html');
+  const bsq = $('.t0521-bsq'), bred = $('.t0521-bred'), body = $('.t0521-body'), redl = $('.t0521-redl'), dot = $('.t0521-dot'), ring = $('.t0521-ring');
+  const xhtml = $('.t0521-xhtml'), xhsq = $('.t0521-xhsq'), xhred = $('.t0521-xhred'), xbody = $('.t0521-xbody'), xbsq = $('.t0521-xbsq');
+  const labs = $$('.zlab');
+  const ivs = [[0.3, 3.8], [4.3, 7.8], [8.3, 12.3], [12.8, 16.8], [17.3, 21.3], [21.8, 25.8], [26.3, 30.8]];
+  const place = (el, x, y, w, h) => { el.style.left = `${x.toFixed(3)}px`; el.style.top = `${y.toFixed(3)}px`; el.style.width = `${w.toFixed(3)}px`; el.style.height = `${h.toFixed(3)}px`; };
+  return (t, step) => {
+    const teach = fig.dataset.teach === '1';
+    const tw = teach ? 1 - pr(t, 31.2, 32.2) : 0;
+    // step 2: html's background goes to the canvas
+    white.style.opacity = 1 - pr(t, 4.5, 6);
+    // step 3: html's box (the canvas shows through it; in teaching colors it gets its own color)
+    html.style.opacity = pr(t, 8.5, 9.5);
+    html.style.background = mix(tw, 'var(--t0521-hb)', 'var(--t0521-green)');
+    xhtml.style.opacity = Math.max(win(t, 8.3, 12.3), win(t, 12.8, 16.8), win(t, 17.3, 21.3));
+    // step 4: the beige shadow slides out from under html's box
+    const a = pr(t, 13, 15.5);
+    place(hsq, 20 + 60 * a, -30 + 60 * a, 240, 240);
+    place(xhsq, 20 + 60 * a, -30 + 60 * a, 240, 240);
+    hsq.style.opacity = pr(t, 12.6, 13);
+    hsq.style.background = mix(tw, 'var(--t0521-hs)', 'var(--t0521-beige)');
+    xhsq.style.opacity = win(t, 12.8, 16.8);
+    // step 5: the red shadow moves 120px and shrinks by 59.53px on each side
+    const r = pr(t, 17.5, 20);
+    const hs = 240 - 2 * S * r;
+    place(hred, 20 + (120 + S) * r, -30 + (120 + S) * r, hs, hs);
+    place(xhred, 20 + (120 + S) * r, -30 + (120 + S) * r, hs, hs);
+    hred.style.opacity = pr(t, 17.1, 17.5);
+    hred.style.background = mix(tw, 'var(--t0521-hr)', 'var(--t0521-red)');
+    xhred.style.opacity = win(t, 17.3, 21.3);
+    // step 6: body's box
+    body.style.opacity = pr(t, 22, 23);
+    body.style.background = mix(tw, 'var(--t0521-bb)', 'var(--t0521-green)');
+    xbody.style.opacity = Math.max(win(t, 21.8, 25.8), win(t, 26.3, 30.8));
+    // step 7: body's shadows (beige slides 60px; red moves 120px and shrinks to 0.945px)
+    const b = pr(t, 26.5, 29);
+    const bo = pr(t, 26.1, 26.5);
+    // in real colors, body's beige runs 1px further right and down, under html's red L: no seam at x = 260 and y = 210
+    const ext = 1 - tw;
+    place(bsq, 80 + 60 * b, 30 + 60 * b, 120 + ext * b, 120 + ext * b);
+    place(xbsq, 80 + 60 * b, 30 + 60 * b, 120, 120);
+    bsq.style.opacity = bo;
+    bsq.style.background = mix(tw, 'var(--t0521-bs)', 'var(--t0521-beige)');
+    xbsq.style.opacity = win(t, 26.3, 30.8);
+    const bs = 120 - 2 * S * b;
+    place(bred, 80 + (120 + S) * b, 30 + (120 + S) * b, bs, bs);
+    bred.style.opacity = bo * (1 - pr(t, 29, 29.2));
+    bred.style.background = mix(tw, 'var(--t0521-br)', 'var(--t0521-red)');
+    dot.style.opacity = pr(t, 29, 29.2);
+    dot.style.background = mix(tw, 'var(--t0521-br)', 'var(--t0521-red)');
+    ring.style.opacity = Math.max(win(t, 28.6, 30.8), win(t, 31.4, 35.8));
+    // html's red L again, on top of body's beige: same color, sharp edges
+    redl.style.opacity = bo;
+    redl.style.background = mix(tw, 'var(--t0521-hr)', 'var(--t0521-red)');
+    labs.forEach((l) => { l.style.opacity = win(t, ...ivs[+l.dataset.l - 1]); });
+    let txt;
+    if (step === 0) txt = '* → html, head, style, body · * * → head, style, body';
+    else if (step === 1) txt = 'html → canvas #32360e';
+    else if (step === 2) txt = `html${c} 400 − 140 − 20 = 240 · 300 + 30 − 90 = 240`;
+    else if (step === 3) txt = `(80, 30) · x 260 → 320 · y 210 → 270`;
+    else if (step === 4) txt = `127q = 120px · 63q = ${n(59.53)}px · 240 − ${n(119.06)} = ${n(120.94)}`;
+    else if (step === 5) txt = `body${c} 240 − 120 = 120 · (80, 30)`;
+    else if (step === 6) txt = `(140, 90) · 120 − ${n(119.06)} = ${n(0.945)}px = 1q`;
+    else txt = $$('.caps .cap')[7].dataset.live || '';
+    live.textContent = txt;
+  };
+};
+</script>
+</figure>
