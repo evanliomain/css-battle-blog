@@ -1,0 +1,115 @@
+<figure class="anim t0511" data-duration="27" data-scene="t0511" data-wide="-50 -40 500 380" style="--bg:#ffffff">
+<style>
+.t0511{--t0511-red:#b53733;--t0511-blk:#000000;--t0511-hb:#38bdf8;--t0511-bb:#22c55e;--t0511-o:#fb923c;--t0511-v:#a78bfa}
+.t0511 .scene .t0511-hfill{left:170px;top:24px;width:180px;height:181px;background:var(--t0511-hb);opacity:0;z-index:1}
+.t0511 .scene .t0511-red{left:170px;top:24px;width:180px;height:181px;box-sizing:border-box;border:0 solid var(--t0511-red);z-index:2}
+.t0511 .scene .t0511-ring{left:50px;top:60px;width:180px;height:180px;box-sizing:border-box;border:0 solid var(--t0511-blk);border-radius:50%;z-index:3}
+.t0511 .scene .t0511-box{box-sizing:border-box;outline:calc(1.5px * var(--k, 1)) dashed #fff;outline-offset:calc(-0.75px * var(--k, 1));filter:drop-shadow(0 0 calc(1px * var(--k, 1)) #000);opacity:0;z-index:10}
+.t0511 .scene .zlab{color:#14142a;background:rgb(255 255 255 / .92);box-shadow:0 0 0 1px rgb(20 20 42 / .25);padding:1px 5px;border-radius:3px;opacity:0}
+.t0511 .legend .t0511-ol{box-shadow:0 0 0 1px currentColor}
+.t0511 .legend .t0511-dash{background:none;outline:2px dashed var(--c);outline-offset:-2px}
+</style>
+<div class="anim-col">
+<div class="stage" role="img" aria-label="{% if include.lang == "fr" %}Animation : * vise html. Ses marges, 6 % de 400 = 24 en haut, 50 à droite, 95 en bas, 170 à gauche, en font une boîte de 180 × 181 en (170, 24), car en mode quirks html remplit la fenêtre moins ses marges. border-bottom:5lh lui donne une bordure du bas rouge de 90px, de y = 115 à 205. border-radius:50% arrondit la boîte en ellipse de 90 × 90,5 de rayon ; sans fond ni bordure en haut, il ne reste que la moitié basse : un demi-disque rouge de 180 × 90. Le * imbriqué vise body, dans html. Ses marges 36 120 -125 -120 le placent en (50, 60), et en mode quirks il s'étire à 91 − 36 + 125 = 180 de haut : une boîte de 180 × 180. border:5vw solid lui donne une bordure noire de 20px, et il garde le border-radius:50% de la règle extérieure : un anneau noir, peint par-dessus le demi-disque.{% else %}Animation: * targets html. Its margins, 6% of 400 = 24 at the top, 50 right, 95 bottom, 170 left, make it a 180 × 181 box at (170, 24), because in quirks mode html fills the window minus its margins. border-bottom:5lh gives it a 90px red bottom border, from y = 115 to 205. border-radius:50% rounds the box into an ellipse with radii of 90 × 90.5; with no background and no top border, only the lower half shows: a 180 × 90 red half disc. The nested * targets body, inside html. Its margins 36 120 -125 -120 place it at (50, 60), and in quirks mode it stretches to 91 − 36 + 125 = 180 tall: a 180 × 180 box. border:5vw solid gives it a 20px black border, and it keeps the outer rule's border-radius:50%: a black ring, painted over the half disc.{% endif %}">
+<div class="scene">
+<div class="t0511-hfill"></div>
+<div class="t0511-red"></div>
+<div class="t0511-ring"></div>
+<div class="t0511-box t0511-hb" style="left:170px;top:24px;width:180px;height:181px"></div>
+<div class="t0511-box t0511-bb"></div>
+<span class="zlab" data-l="1" style="left:176px;top:30px">6% × 400 = 24</span>
+<span class="zlab" data-l="1" style="left:190px;top:150px">html · 180 × 181</span>
+<span class="zlab" data-l="2" style="left:228px;top:150px">5lh → 90px</span>
+<span class="zlab" data-l="3" style="left:206px;top:60px">50% → 90 × 90{% if include.lang == "fr" %},{% else %}.{% endif %}5</span>
+<span class="zlab" data-l="4" style="left:56px;top:248px">{% if include.lang == "fr" %}body : (50, 60) · 180 × 180{% else %}body: (50, 60) · 180 × 180{% endif %}</span>
+<span class="zlab" data-l="5" style="left:96px;top:144px">5vw → 20px</span>
+</div>
+</div>
+<div class="legend"><span><i style="--c:#b53733"></i>{% if include.lang == "fr" %}#b53733 : bordure du bas de html{% else %}#b53733: html's bottom border{% endif %}</span><span><i class="t0511-ol" style="--c:#000000"></i>{% if include.lang == "fr" %}#000000 : bordure de body{% else %}#000000: body's border{% endif %}</span><span><i style="--c:var(--t0511-o)"></i>{% if include.lang == "fr" %}bordure du bas de html{% else %}html's bottom border{% endif %}</span><span><i style="--c:var(--t0511-v)"></i>{% if include.lang == "fr" %}bordure de body{% else %}body's border{% endif %}</span><span><i class="t0511-dash" style="--c:var(--t0511-hb)"></i>{% if include.lang == "fr" %}boîte de html{% else %}html's box{% endif %}</span><span><i class="t0511-dash" style="--c:var(--t0511-bb)"></i>{% if include.lang == "fr" %}boîte de body{% else %}body's box{% endif %}</span></div>
+</div>
+<div class="anim-side">
+<pre class="code" aria-hidden="true">&lt;style><span data-on="1">*{margin:6%50 95 170</span>;<span data-on="2">border-bottom:5lh solid#b53733</span>;<span data-on="3 5">border-radius:50%</span>;<span data-on="4">*{</span><span data-on="5">border:5vw solid</span>;<span data-on="4">margin:36 120-125-120</span></pre>
+<div class="now" aria-live="polite">
+<div class="caps">
+{%- if include.lang == "fr" %}
+<div class="cap" data-t="0" data-step="html"><h3>1. * vise html</h3><p><code>*</code> vise tous les éléments, et d'abord la racine, html. Ses marges : <code>6%</code> se calcule sur la largeur, 6 % de 400 = 24 en haut, puis 50 à droite, 95 en bas et 170 à gauche, sans unité en mode quirks. Dans ce mode, html remplit la fenêtre moins ses marges : une boîte de 180 × 181, en (170, 24). Elle n'a pas de fond : rien n'est encore peint.</p></div>
+<div class="cap" data-t="4.5" data-step="Bordure du bas"><h3>2. Une bordure du bas de 90px</h3><p><code>border-bottom:5lh solid#b53733</code>. 1lh est la hauteur d'une ligne : 18px dans mon Chrome, donc 5lh = 90px. La bordure prend sa place dans la boîte de 181px : elle va de y = 115 à 205. C'est la seule bordure de html.</p></div>
+<div class="cap" data-t="9" data-step="Arrondi"><h3>3. Arrondie à 50 %</h3><p><code>border-radius:50%</code> donne aux coins 50 % de la largeur et 50 % de la hauteur : 90 × 90,5. La boîte devient une ellipse. Sa moitié haute n'a ni bordure ni fond : elle reste invisible. La bordure du bas ne garde que la moitié basse : un demi-disque de 180 de large et 90 de haut.</p></div>
+<div class="cap" data-t="13.5" data-step="body"><h3>4. Le * imbriqué vise body</h3><p><code>*{</code> dans la règle veut dire <code>* *</code> : tout élément placé dans un autre. head et style sont cachés, il reste body. Ses marges le déplacent depuis la boîte de contenu de html, 180 × 91 en (170, 24) : 36 vers le bas, 120 vers la gauche, et 120 à droite gardent la largeur à 180. En mode quirks, body s'étire à la hauteur de cette boîte moins ses marges : 91 − 36 + 125 = 180. Il fait 180 × 180, en (50, 60).</p></div>
+<div class="cap" data-t="18.5" data-step="Anneau"><h3>5. Un anneau noir de 20px</h3><p><code>border:5vw solid</code> remplace la bordure du bas rouge : 5vw = 20px, et sans couleur la bordure prend celle du texte, le noir. La règle extérieure vise aussi body : son <code>border-radius:50%</code> reste, et le carré devient un anneau, 180 de diamètre dehors, 140 dedans. body est peint après html : l'anneau passe par-dessus le demi-disque.</p></div>
+<div class="cap" data-t="23" data-step="Résultat" data-live="117 caractères · 100 % identique"><h3>6. Résultat : 117 caractères</h3><p>Deux éléments, deux bordures : la bordure du bas de html fait le demi-disque rouge, la bordure de body fait l'anneau noir. Le même arrondi sert aux deux.</p></div>
+{%- else %}
+<div class="cap" data-t="0" data-step="html"><h3>1. * targets html</h3><p><code>*</code> targets every element, first of all the root, html. Its margins: <code>6%</code> is computed on the width, 6% of 400 = 24 at the top, then 50 right, 95 bottom and 170 left, with no unit in quirks mode. In that mode, html fills the window minus its margins: a 180 × 181 box, at (170, 24). It has no background: nothing is painted yet.</p></div>
+<div class="cap" data-t="4.5" data-step="Bottom border"><h3>2. A 90px bottom border</h3><p><code>border-bottom:5lh solid#b53733</code>. 1lh is the height of one line: 18px in my Chrome, so 5lh = 90px. The border takes its room inside the 181px box: it runs from y = 115 to 205. It is html's only border.</p></div>
+<div class="cap" data-t="9" data-step="Rounding"><h3>3. Rounded at 50%</h3><p><code>border-radius:50%</code> gives the corners 50% of the width and 50% of the height: 90 × 90.5. The box becomes an ellipse. Its top half has no border and no background: it stays invisible. The bottom border keeps only the lower half: a half disc 180 wide and 90 tall.</p></div>
+<div class="cap" data-t="13.5" data-step="body"><h3>4. The nested * targets body</h3><p><code>*{</code> inside the rule means <code>* *</code>: any element inside another one. head and style are hidden, so body is left. Its margins move it from html's content box, 180 × 91 at (170, 24): 36 down, 120 to the left, and 120 on the right keep the width at 180. In quirks mode, body stretches to the height of that box minus its margins: 91 − 36 + 125 = 180. It is 180 × 180, at (50, 60).</p></div>
+<div class="cap" data-t="18.5" data-step="Ring"><h3>5. A 20px black ring</h3><p><code>border:5vw solid</code> replaces the red bottom border: 5vw = 20px, and with no color the border takes the text color, black. The outer rule also matches body: its <code>border-radius:50%</code> stays, and the square becomes a ring, 180 across outside, 140 inside. body is painted after html: the ring goes over the half disc.</p></div>
+<div class="cap" data-t="23" data-step="Result" data-live="117 characters · 100% match"><h3>6. Result: 117 characters</h3><p>Two elements, two borders: html's bottom border is the red half disc, body's border is the black ring. The same rounding works for both.</p></div>
+{%- endif %}
+</div>
+<div class="live"></div>
+</div>
+</div>
+<script>
+(window.AnimScenes = window.AnimScenes || {}).t0511 = (fig) => {
+  const fr = document.documentElement.lang === 'fr';
+  const $ = (s) => fig.querySelector(s);
+  const $$ = (s) => [...fig.querySelectorAll(s)];
+  const live = $('.live');
+  const ease = (x) => (x < 0.5 ? 4 * x * x * x : 1 - Math.pow(-2 * x + 2, 3) / 2);
+  const pr = (t, a, b) => ease(Math.min(1, Math.max(0, (t - a) / (b - a))));
+  const win = (t, a, b) => Math.min(pr(t, a, a + 0.5), 1 - pr(t, b - 0.3, b));
+  const c = fr ? '\u00a0:' : ':';
+  const n = (v) => (fr ? String(v).replace('.', ',') : String(v));
+  // Measured on the official code in local Chrome (400 × 300 iframe, quirks mode, getBoundingClientRect, computed styles):
+  // html 170, 24, 180 × 181 (margin 24px 50px 95px 170px), border-bottom 90px (1lh = 18px), border-radius 50%;
+  // body 50, 60, 180 × 180 (margin 36px 120px -125px -120px), border 20px rgb(0, 0, 0), border-radius 50%.
+  // The two real shapes below use the same CSS as the official code, so the last frame draws the same pixels.
+  const FIN = 23;
+  const RED = [181, 55, 51], BLK = [0, 0, 0], ORANGE = [251, 146, 60], VIOLET = [167, 139, 250];
+  const mix = (a, b, k) => a.map((v, i) => Math.round(v + (b[i] - v) * k));
+  const rgb = (col) => `rgb(${col.join(' ')})`;
+  const fill = $('.t0511-hfill'), red = $('.t0511-red'), ring = $('.t0511-ring');
+  const hb = $('.t0511-hb'), bb = $('.t0511-bb');
+  const labs = $$('.zlab[data-l]');
+  const ivs = [[0.3, 4.2], [5.2, 8.7], [10, 13.2], [15.2, 18.2], [19.4, 22.7]];
+  const lerp = (a, b, k) => a + (b - a) * k;
+  return (t, step) => {
+    const teach = fig.dataset.teach === '1';
+    const fin = pr(t, FIN + 0.2, FIN + 0.9);
+    const tw = teach ? 1 - fin : 0;
+    // step 1: html's box (a light fill with teaching colors)
+    fill.style.opacity = teach ? 0.22 * win(t, 0.3, 4.4) : 0;
+    hb.style.opacity = win(t, 0.3, 18.2);
+    hb.style.outlineColor = teach ? 'var(--t0511-hb)' : '#fff';
+    // step 2: the bottom border grows to 90px; step 3: the box is rounded to 50%
+    const bw = 90 * pr(t, 5, 6.8);
+    const r = 50 * pr(t, 9.5, 11.5);
+    red.style.borderBottomWidth = `${bw.toFixed(2)}px`;
+    red.style.borderRadius = `${r.toFixed(2)}%`;
+    red.style.borderBottomColor = tw > 0 ? rgb(mix(RED, ORANGE, tw)) : 'var(--t0511-red)';
+    hb.style.borderRadius = `${r.toFixed(2)}%`;
+    // step 4: body's box, from html's content box (170, 24, 180 × 91) to (50, 60, 180 × 180)
+    const k = pr(t, 14.5, 16.5);
+    Object.assign(bb.style, { left: `${lerp(170, 50, k)}px`, top: `${lerp(24, 60, k)}px`, width: '180px', height: `${lerp(91, 180, k)}px` });
+    bb.style.borderRadius = `${50 * pr(t, 16.6, 17.4)}%`;
+    bb.style.outlineColor = teach ? 'var(--t0511-bb)' : '#fff';
+    bb.style.opacity = win(t, 14, 22.7);
+    // step 5: body's 20px border, black (violet with teaching colors)
+    ring.style.borderWidth = `${(20 * pr(t, 19, 20.5)).toFixed(2)}px`;
+    ring.style.borderColor = tw > 0 ? rgb(mix(BLK, VIOLET, tw)) : 'var(--t0511-blk)';
+    labs.forEach((l) => {
+      l.style.opacity = win(t, ...ivs[+l.dataset.l - 1]);
+    });
+    let txt;
+    if (step === 0) txt = `html${c} 400 − 170 − 50 = 180 · 300 − 24 − 95 = 181`;
+    else if (step === 1) txt = `5lh = 5 × 18 = 90px · y = 205 − 90 = 115`;
+    else if (step === 2) txt = `50${fr ? '\u00a0%' : '%'} → 90 × ${n(90.5)} · ${fr ? 'demi-disque' : 'half disc'} 180 × 90`;
+    else if (step === 3) txt = `x = 170 − 120 = 50 · y = 24 + 36 = 60 · 91 − 36 + 125 = 180`;
+    else if (step === 4) txt = `5vw = 5${fr ? '\u00a0%' : '%'} × 400 = 20px · 180 − 2 × 20 = 140`;
+    else txt = $$('.caps .cap')[5].dataset.live || '';
+    live.textContent = txt;
+  };
+};
+</script>
+</figure>
