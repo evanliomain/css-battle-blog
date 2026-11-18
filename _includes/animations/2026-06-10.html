@@ -1,0 +1,140 @@
+<figure class="anim t0610" data-duration="30" data-scene="t0610" data-wide="-30 -70 460 440" data-off-label="-26 -66" style="--bg:#4c4c6b">
+<style>
+.t0610{--t0610-b1:#f472b6;--t0610-b2:#38bdf8;--t0610-ib:#a78bfa;--t0610-pb:#34d399;--t0610-box:#ffffff}
+.t0610 .scene .t0610-can{left:0;top:0;width:400px;height:300px;background:#4c4c6b}
+.t0610 .scene .t0610-img{box-sizing:content-box;top:50px;width:0;height:30px;padding:65px 15px;border-style:solid;border-width:0 55px 40px;border-color:#fae29e;background:#4c4c6b;background-clip:padding-box;opacity:0;z-index:2}
+.t0610 .scene .t0610-i1{left:40px}
+.t0610 .scene .t0610-band{left:8px;top:135.453px;width:384px;height:30px;background:#4c4c6b;opacity:0;z-index:3}
+.t0610 .scene .t0610-box{box-sizing:border-box;opacity:0;z-index:6;pointer-events:none;outline:calc(1.5px * var(--k, 1)) dashed var(--t0610-box);outline-offset:calc(-0.75px * var(--k, 1))}
+.t0610 .scene .t0610-line{left:8px;top:119.453px;width:384px;height:0;opacity:0;z-index:6;pointer-events:none;border-top:calc(1.5px * var(--k, 1)) dashed var(--t0610-box)}
+.t0610 .scene .zlab{color:#14142a;background:rgb(255 255 255 / .92);box-shadow:0 0 0 1px rgb(20 20 42 / .25);padding:1px 5px;border-radius:3px;opacity:0;transform-origin:100% 0}
+</style>
+<div class="anim-col">
+<div class="stage" role="img" aria-label="{% if include.lang == "fr" %}Animation : la règle * donne à chaque élément un fond sombre et height:30 ; le fond de html couvre tout le canevas. Une img sans src a une largeur de 0 : sa boîte n'est que bordures et padding, 140 × 200, une bordure jaune en U autour d'un creux sombre de 30px. Les marges placent les deux images en (40, 50) et (220, 50), et la marge du bas de −34 % fait finir la ligne en y = 119,45. scale:-1 retourne la deuxième image. clip-path:inset(0 0 -50% round 1in) arrondit le haut en demi-cercle de rayon 70. Le p arrive après la ligne, en y = 135,45 : une bande sombre de 30px, peinte par-dessus les images grâce à son propre scale:-1.{% else %}Animation: the * rule gives every element a dark background and height:30; html's background covers the whole canvas. An img with no src is 0 wide: its box is only borders and padding, 140 × 200, a yellow U-shaped border around a 30px dark gap. The margins put the two images at (40, 50) and (220, 50), and the −34% bottom margin makes the line end at y = 119.45. scale:-1 flips the second image. clip-path:inset(0 0 -50% round 1in) rounds the top into a half circle of radius 70. The p comes after the line, at y = 135.45: a 30px dark band, painted over the images thanks to its own scale:-1.{% endif %}">
+<div class="scene">
+<div class="t0610-can"></div>
+<div class="t0610-img t0610-i1"></div>
+<div class="t0610-img t0610-i2"></div>
+<div class="t0610-band"></div>
+<div class="t0610-box t0610-bh" style="left:0;top:0;width:400px;height:30px"></div>
+<div class="t0610-box t0610-bb" style="left:8px;top:8px;width:384px;height:30px"></div>
+<div class="t0610-box t0610-c1"></div>
+<div class="t0610-box t0610-c2"></div>
+<div class="t0610-box t0610-bp" style="left:8px;top:135.453px;width:384px;height:30px"></div>
+<div class="t0610-line"></div>
+<span class="zlab" data-pos="b1" data-l="1">{% if include.lang == "fr" %}html : 400 × 30, fond → canevas{% else %}html: 400 × 30, background → canvas{% endif %}</span>
+<span class="zlab" data-pos="b2" data-l="1">{% if include.lang == "fr" %}body : 384 × 30 en (8, 8){% else %}body: 384 × 30 at (8, 8){% endif %}</span>
+<span class="zlab" data-pos="b1" data-l="2">55 + 15 + 0 + 15 + 55 = 140</span>
+<span class="zlab" data-pos="b2" data-l="2">65 + 30 + 65 + 40 = 200</span>
+<span class="zlab" data-l="3" data-pos="b1">{% if include.lang == "fr" %}ligne : 50 + 200 − 130,55 = 119,45{% else %}line: 50 + 200 − 130.55 = 119.45{% endif %}</span>
+<span class="zlab" data-l="3" data-pos="tr">{% if include.lang == "fr" %}x : 40 + 140 + 8 + 32 = 220{% else %}x: 40 + 140 + 8 + 32 = 220{% endif %}</span>
+<span class="zlab" data-pos="b1" data-l="4">{% if include.lang == "fr" %}img + * : la 2e image (et p){% else %}img + *: the 2nd image (and p){% endif %}</span>
+<span class="zlab" data-l="4" data-pos="tr">{% if include.lang == "fr" %}scale:-1 autour de (290, 150){% else %}scale:-1 around (290, 150){% endif %}</span>
+<span class="zlab" data-l="5" data-pos="b1">1in = 96 → 70 = 140 / 2</span>
+<span class="zlab" data-l="5" data-pos="tl">{% if include.lang == "fr" %}-50% : 100px plus bas{% else %}-50%: 100px lower{% endif %}</span>
+<span class="zlab" data-pos="b1" data-l="6">{% if include.lang == "fr" %}p : 119,45 + 16 = 135,45{% else %}p: 119.45 + 16 = 135.45{% endif %}</span>
+<span class="zlab" data-l="6" data-pos="tr">{% if include.lang == "fr" %}scale:-1 → peint par-dessus{% else %}scale:-1 → painted on top{% endif %}</span>
+</div>
+</div>
+<div class="legend"><span><i style="--c:#4c4c6b;outline:1px solid currentColor;outline-offset:-1px"></i>{% if include.lang == "fr" %}fond de html{% else %}html's background{% endif %}</span><span><i style="--c:var(--t0610-b1)"></i>{% if include.lang == "fr" %}bordure de la 1re img{% else %}1st img's border{% endif %}</span><span><i style="--c:var(--t0610-b2)"></i>{% if include.lang == "fr" %}bordure de la 2e img{% else %}2nd img's border{% endif %}</span><span><i style="--c:var(--t0610-ib)"></i>{% if include.lang == "fr" %}fond des img{% else %}img background{% endif %}</span><span><i style="--c:var(--t0610-pb)"></i>{% if include.lang == "fr" %}fond de p{% else %}p's background{% endif %}</span><span><i style="--c:transparent;outline:2px dashed currentColor;outline-offset:-2px"></i>{% if include.lang == "fr" %}boîtes, zone du clip-path{% else %}boxes, clip-path area{% endif %}</span></div>
+</div>
+<div class="anim-side">
+<pre class="code" aria-hidden="true"><span data-on="1 6" data-tone="2">&lt;img>&lt;img>&lt;p></span>&lt;style>*{<span data-on="1">background:#4C4C6B</span>;<span data-on="1 2 6">height:30</span>}img{<span data-on="4 6">+*{scale:-1}</span><span data-on="2">border:solid#FAE29E;border-width:0 55 40;padding:65 15</span>;<span data-on="3">margin:42 8-34%32</span>;<span data-on="5">clip-path:inset(0 0-50%round 1in</span></pre>
+<div class="now" aria-live="polite">
+<div class="caps">
+{%- if include.lang == "fr" %}
+<div class="cap" data-t="0" data-step="Fond"><h3>1. Un fond pour tous</h3><p><code>&lt;img>&lt;img>&lt;p>&lt;style></code> : body contient deux images et un p, et style finit dans le p. <code>*</code> donne à chaque élément un fond sombre et <code>height:30</code>. html ne fait que 400 × 30, mais son fond couvre tout le canevas.</p></div>
+<div class="cap" data-t="4.5" data-step="U"><h3>2. Une image en U</h3><p>Une img sans src n'a pas de largeur : 0. Sa boîte n'est que bordures et padding : 55 + 15 + 0 + 15 + 55 = 140 de large, 65 + 30 + 65 + 40 = 200 de haut. Pas de bordure en haut : le jaune forme un U. Les 30px du milieu montrent le fond sombre de l'image.</p></div>
+<div class="cap" data-t="9" data-step="Marges"><h3>3. Les marges</h3><p><code>margin:42 8-34%32</code>. Les deux images sont côte à côte sur une ligne : x = 8 + 32 = 40, puis 40 + 140 + 8 + 32 = 220. y = 8 + 42 = 50. La marge du bas vaut −34 % des 384px de body : −130,55. La ligne finit en 50 + 200 − 130,55 = 119,45.</p></div>
+<div class="cap" data-t="13.5" data-step="Miroir"><h3>4. Le miroir</h3><p><code>+*</code> dans <code>img</code> veut dire <code>img + *</code> : la deuxième image, et le p. <code>scale:-1</code> retourne la deuxième image autour de son centre, (290, 150). Sa barre du bas passe en haut, son creux s'ouvre vers le bas.</p></div>
+<div class="cap" data-t="18" data-step="clip-path"><h3>5. Le dôme</h3><p><code>inset(0 0 -50% round 1in)</code> ne coupe rien en haut ni sur les côtés, et descend 100px sous la boîte. Des coins de 96px sont trop grands pour 140px : Chrome les ramène à 70, un demi-cercle. Le haut devient un dôme. Les coins du bas tombent 100px sous la boîte, où rien n'est dessiné. Sur la deuxième image, le miroir met le dôme en bas.</p></div>
+<div class="cap" data-t="22.5" data-step="Bande"><h3>6. La bande</h3><p>Le p vient après la ligne : 119,45 + sa marge du haut de 16 = 135,45. Il fait 30 de haut : une bande sombre de y = 135 à 165. Il a aussi reçu <code>scale:-1</code>. Ça ne change pas son dessin, mais il passe sur son propre calque, peint par-dessus les deux images.</p></div>
+<div class="cap" data-t="27" data-step="Résultat" data-live="172 caractères · 100 % identique"><h3>7. Résultat : 172 caractères</h3><p>Deux images en U, une retournée, un clip-path pour les dômes, et une bande par-dessus.</p></div>
+{%- else %}
+<div class="cap" data-t="0" data-step="Background"><h3>1. One background for all</h3><p><code>&lt;img>&lt;img>&lt;p>&lt;style></code>: body holds two images and a p, and style ends up inside the p. <code>*</code> gives every element a dark background and <code>height:30</code>. html is only 400 × 30, but its background covers the whole canvas.</p></div>
+<div class="cap" data-t="4.5" data-step="U"><h3>2. A U-shaped image</h3><p>An img with no src has no width: 0. Its box is only borders and padding: 55 + 15 + 0 + 15 + 55 = 140 wide, 65 + 30 + 65 + 40 = 200 tall. There is no top border, so the yellow is a U. The 30px in the middle show the image's own dark background.</p></div>
+<div class="cap" data-t="9" data-step="Margins"><h3>3. The margins</h3><p><code>margin:42 8-34%32</code>. The two images sit side by side on one line: x = 8 + 32 = 40, then 40 + 140 + 8 + 32 = 220. y = 8 + 42 = 50. The bottom margin is −34% of body's 384px: −130.55. The line ends at 50 + 200 − 130.55 = 119.45.</p></div>
+<div class="cap" data-t="13.5" data-step="Flip"><h3>4. The flip</h3><p><code>+*</code> inside <code>img</code> means <code>img + *</code>: the second image, and the p. <code>scale:-1</code> turns the second image around its center, (290, 150). Its bottom bar goes to the top, and its gap now opens downward.</p></div>
+<div class="cap" data-t="18" data-step="clip-path"><h3>5. The dome</h3><p><code>inset(0 0 -50% round 1in)</code> cuts nothing at the top or on the sides, and goes 100px below the box. 96px corners are too big for 140px: Chrome shrinks them to 70, a half circle. The top becomes a dome. The bottom corners fall 100px below the box, where nothing is drawn. On the second image, the flip puts the dome at the bottom.</p></div>
+<div class="cap" data-t="22.5" data-step="Band"><h3>6. The band</h3><p>The p comes after the line: 119.45 + its 16px top margin = 135.45. It is 30 tall: a dark band from y = 135 to 165. It got <code>scale:-1</code> too. That does not change how it looks, but it gets its own layer, painted over both images.</p></div>
+<div class="cap" data-t="27" data-step="Result" data-live="172 characters · 100% match"><h3>7. Result: 172 characters</h3><p>Two U-shaped images, one flipped, a clip-path for the domes, and a band on top.</p></div>
+{%- endif %}
+</div>
+<div class="live"></div>
+</div>
+</div>
+<script>
+(window.AnimScenes = window.AnimScenes || {}).t0610 = (fig) => {
+  const fr = document.documentElement.lang === 'fr';
+  const $ = (s) => fig.querySelector(s);
+  const $$ = (s) => [...fig.querySelectorAll(s)];
+  const live = $('.live');
+  const ease = (x) => (x < 0.5 ? 4 * x * x * x : 1 - Math.pow(-2 * x + 2, 3) / 2);
+  const pr = (t, [a, b]) => ease(Math.min(1, Math.max(0, (t - a) / (b - a))));
+  const win = (t, a, b) => Math.min(pr(t, [a, a + 0.5]), 1 - pr(t, [b - 0.2, b]));
+  const c = fr ? '\u00a0:' : ':';
+  const at = fr ? 'en' : 'at';
+  const num = (n) => (fr ? String(n).replace('.', ',') : String(n));
+  const mix = (k, a, b) => (k <= 0 ? b : k >= 1 ? a : `color-mix(in srgb, ${a} ${(k * 100).toFixed(1)}%, ${b})`);
+  // Measured on the official code in local Chrome (400 × 300 iframe, quirks mode, getBoundingClientRect, getComputedStyle).
+  // html 400 × 30 at (0, 0), body 384 × 30 at (8, 8). Every element: background #4C4C6B, height 30.
+  // img: width 0, height 30, padding 65 15, border 0 55 40 → 140 × 200, at (40, 50) and (220, 50).
+  // margin-bottom −34% of 384 = −130.547 → the line ends at 119.453; p (margin 16) at (8, 135.453), 384 × 30.
+  // Second img and p: scale −1. clip-path inset(0 0 −50% round 96px) on 140 × 300 → radius 70.
+  const FIN = 27;
+  const i1 = $('.t0610-i1'), i2 = $('.t0610-i2'), band = $('.t0610-band');
+  const bh = $('.t0610-bh'), bb = $('.t0610-bb'), c1 = $('.t0610-c1'), c2 = $('.t0610-c2'), bp = $('.t0610-bp');
+  const line = $('.t0610-line');
+  const labs = $$('.zlab');
+  const ivs = [[0.3, 4.5], [4.8, 9], [9.3, 13.5], [13.8, 18], [18.3, 22.5], [22.8, FIN]];
+  const box = (e, x, y, w, h) => { e.style.left = `${x}px`; e.style.top = `${y}px`; e.style.width = `${w}px`; e.style.height = `${h}px`; };
+  box(c1, 40, 50, 140, 300);
+  box(c2, 220, -50, 140, 300);
+  return (t, step) => {
+    const teach = fig.dataset.teach === '1';
+    const tw = teach ? 1 - pr(t, [FIN, FIN + 0.8]) : 0;
+    i1.style.borderColor = mix(tw, 'var(--t0610-b1)', '#fae29e');
+    i2.style.borderColor = mix(tw, 'var(--t0610-b2)', '#fae29e');
+    i1.style.backgroundColor = i2.style.backgroundColor = mix(tw, 'var(--t0610-ib)', '#4c4c6b');
+    band.style.backgroundColor = mix(tw, 'var(--t0610-pb)', '#4c4c6b');
+    // step 2: the first image; step 3: the second one slides to x = 220
+    i1.style.opacity = pr(t, [4.8, 5.6]);
+    i2.style.opacity = pr(t, [9.4, 10]);
+    i2.style.left = `${40 + 180 * pr(t, [9.6, 11.2])}px`;
+    // step 4: the flip (scale −1 is a half turn)
+    i2.style.transform = `rotate(${180 * pr(t, [14.2, 16.2])}deg)`;
+    // step 5: the clip-path, radius growing to 70 (96 at the end, same shape)
+    const k5 = pr(t, [18.8, 20.6]);
+    const r = k5 >= 1 ? 96 : 70 * k5;
+    i1.style.clipPath = i2.style.clipPath = k5 > 0 ? `inset(0 0 -50% round ${r}px)` : 'none';
+    c1.style.borderRadius = c2.style.borderRadius = `${Math.min(r, 70)}px`;
+    c1.style.opacity = c2.style.opacity = win(t, 18.4, 22.5);
+    // step 6: the band
+    band.style.opacity = pr(t, [23.6, 24.4]);
+    bp.style.opacity = win(t, 23, FIN);
+    line.style.opacity = Math.max(win(t, 10.2, 13.5), win(t, 22.8, FIN));
+    bh.style.opacity = bb.style.opacity = win(t, 0.6, 4.5);
+    labs.forEach((l) => {
+      // b1, b2: in the empty band below the shapes (b2 kept short, the canvas label sits at its left);
+      // tr, tl: in the empty band above them
+      const k = +l.dataset.l, pos = l.dataset.pos;
+      const left = pos === 'tl';
+      l.style.left = left ? 'calc(4px * var(--k, 1))' : 'auto';
+      l.style.right = left ? 'auto' : 'calc(4px * var(--k, 1))';
+      l.style.transformOrigin = left ? '0 0' : '100% 0';
+      l.style.top = pos === 'b2' ? 'calc(256px + 19px * var(--k, 1))' : pos === 'b1' ? '256px' : 'calc(47px - 16px * var(--k, 1))';
+      l.style.opacity = win(t, ...ivs[k - 1]);
+    });
+    let txt;
+    if (step === 0) txt = `html${c} 400 × 30`;
+    else if (step === 1) txt = `img${c} 140 × 200`;
+    else if (step === 2) txt = `(40, 50), (220, 50) · ${fr ? 'fin de ligne' : 'line ends'} ${num(119.45)}`;
+    else if (step === 3) txt = `scale:-1 ${fr ? 'autour de' : 'around'} (290, 150)`;
+    else if (step === 4) txt = `${fr ? 'rayon' : 'radius'} 96 → 70`;
+    else if (step === 5) txt = `p${c} 384 × 30 ${at} (8, ${num(135.45)})`;
+    else txt = $$('.caps .cap')[6].dataset.live || '';
+    live.textContent = txt;
+  };
+};
+</script>
+</figure>
