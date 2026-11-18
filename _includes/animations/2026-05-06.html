@@ -1,0 +1,156 @@
+<figure class="anim t0506" data-duration="30" data-scene="t0506" data-wide="-20 -50 440 400" data-off-label="-16 -46" style="--bg:#4a9a86">
+<style>
+.t0506 .scene .t0506-s{width:100px;height:100px;background:#f3ead2;z-index:1}
+.t0506 .scene .t0506-d{width:70px;height:70px;border-radius:50%;background:#173889;z-index:3}
+.t0506 .scene .t0506-ol{left:185px;top:135px;width:30px;height:30px;outline:70px dotted #173889;opacity:0;z-index:3}
+.t0506 .scene .t0506-band{left:115px;top:65px;width:170px;height:170px;box-sizing:border-box;border:70px solid rgb(23 56 137 / .38);opacity:0;z-index:2}
+.t0506 .scene .t0506-mid{left:150px;top:100px;width:100px;height:100px;box-sizing:border-box;border:calc(1.5px * var(--k, 1)) dashed #fff;filter:drop-shadow(0 0 calc(1px * var(--k, 1)) rgb(0 0 0 / .9));opacity:0;z-index:6}
+.t0506 .scene .t0506-hb{left:185px;top:135px;width:30px;height:30px;box-sizing:border-box;opacity:0;z-index:7}
+.t0506 .scene .t0506-b{left:0;top:0;width:400px;height:300px;transform-origin:200px 150px;z-index:2}
+.t0506 .scene .t0506-b > div{position:absolute;box-sizing:border-box}
+.t0506 .scene .t0506-bb{left:150px;top:100px;width:100px;height:100px}
+.t0506 .scene .zlab{color:#14142a;background:rgb(255 255 255 / .92);box-shadow:0 0 0 1px rgb(20 20 42 / .25);padding:1px 5px;border-radius:3px;opacity:0}
+@media (max-width:700px){.t0506 .scene .zlab{font-size:8px;padding:0 3px}}
+.t0506 .legend .t0506-ol{box-shadow:0 0 0 1px currentColor}
+</style>
+<div class="anim-col">
+<div class="stage" role="img" aria-label="{% if include.lang == "fr" %}Animation : * vise html, head, style et body ; head et style ne sont pas affichés. margin:135 185 laisse à html une boîte de 30 × 30 en (185, 135). html est la racine : son fond #4a9a86 couvre tout le canevas. & vise aussi html : son outline en pointillés de 75Q, tracé sur 70px, pose un disque bleu de rayon 35 à chaque coin de sa ligne médiane, en (150, 100), (250, 100), (150, 200) et (250, 200). Les deux ombres de html, de la couleur crème de color, sont décalées de 100px et grossies de 35px : deux carrés crème de 100 × 100, de (50, 0) à (150, 100) et de (250, 200) à (350, 300), sous les disques. margin:-35 donne à body une boîte verte de 100 × 100 en (150, 100), avec les mêmes ombres en vert, de 170 × 170. scale:1 -1 retourne body autour de (200, 150) : ses ombres passent sur l'autre diagonale et cachent les disques en (250, 100) et (150, 200). body est peint au-dessus de l'outline : sa boîte cache le quart intérieur des deux autres disques.{% else %}Animation: * targets html, head, style and body; head and style are not displayed. margin:135 185 leaves html a 30 × 30 box at (185, 135). html is the root: its #4a9a86 background covers the whole canvas. & also targets html: its 75Q dotted outline, drawn 70px wide, puts a blue disc of radius 35 at each corner of its middle line, at (150, 100), (250, 100), (150, 200) and (250, 200). html's two shadows, in the cream of color, are moved 100px and grown by 35px: two 100 × 100 cream squares, from (50, 0) to (150, 100) and from (250, 200) to (350, 300), under the discs. margin:-35 gives body a 100 × 100 green box at (150, 100), with the same shadows in green, 170 × 170. scale:1 -1 flips body around (200, 150): its shadows move to the other diagonal and hide the discs at (250, 100) and (150, 200). body is painted over the outline: its box hides the inner quarter of the two other discs.{% endif %}">
+<div class="scene">
+<div class="t0506-s" data-i="0"></div>
+<div class="t0506-s" data-i="1"></div>
+<div class="t0506-b"><div class="t0506-bs" data-i="0"></div><div class="t0506-bs" data-i="1"></div><div class="t0506-bb"></div></div>
+<div class="t0506-d" style="left:115px;top:65px"></div>
+<div class="t0506-d" style="left:215px;top:65px"></div>
+<div class="t0506-d" style="left:115px;top:165px"></div>
+<div class="t0506-d" style="left:215px;top:165px"></div>
+<div class="t0506-ol"></div>
+<div class="t0506-band"></div>
+<div class="t0506-mid"></div>
+<div class="t0506-hb"></div>
+<span class="zlab" data-l="1" style="left:10px;top:10px">{% if include.lang == "fr" %}html → canevas{% else %}html → canvas{% endif %}</span>
+<span class="zlab" data-l="1" style="left:222px;top:142px">html 30 × 30</span>
+<span class="zlab" data-l="2" style="left:290px;top:70px">75Q → 70px</span>
+<span class="zlab" data-l="2" style="left:290px;top:208px">r = 35</span>
+<span class="zlab" data-l="3" style="left:160px;top:4px">25vw = 100px</span>
+<span class="zlab" data-l="3" style="left:160px;top:24px">30 + 2 × 35 = 100</span>
+<span class="zlab" data-l="4" style="left:160px;top:140px">body 100 × 100</span>
+<span class="zlab" data-l="4" style="left:296px;top:262px">170 × 170</span>
+<span class="zlab" data-l="5" style="left:300px;top:150px">scale:1 -1</span>
+</div>
+</div>
+<div class="legend"><span><i class="t0506-ol" style="--c:#4a9a86"></i>{% if include.lang == "fr" %}#4a9a86 : fond de html, le canevas{% else %}#4a9a86: html's background, the canvas{% endif %}</span><span><i class="t0506-ol" style="--c:#173889"></i>{% if include.lang == "fr" %}#173889 : outline en pointillés de html{% else %}#173889: html's dotted outline{% endif %}</span><span><i class="t0506-ol" style="--c:#f3ead2"></i>{% if include.lang == "fr" %}#f3ead2 : ombres de html{% else %}#f3ead2: html's shadows{% endif %}</span><span><i style="--c:#facc15"></i>{% if include.lang == "fr" %}boîte de html{% else %}html's box{% endif %}</span><span><i style="--c:#f472b6"></i>{% if include.lang == "fr" %}boîte de body{% else %}body's box{% endif %}</span><span><i style="--c:#22d3ee"></i>{% if include.lang == "fr" %}ombres de body (vertes){% else %}body's shadows (green){% endif %}</span></div>
+</div>
+<div class="anim-side">
+<pre class="code" aria-hidden="true">&lt;style><span data-on="2 6">&amp;{outline:75Q dotted#173889}</span><span data-on="1">*{margin:135 185;background:#4a9a86;</span><span data-on="3">color:f3ead2;</span><span data-on="3 4 6">box-shadow:25vw 25vw 0 35px,-25vw -25vw 0 35px;</span><span data-on="4" data-tone="2">*{color:4A9A86;</span><span data-on="5 6">scale:1-1;</span><span data-on="4" data-tone="2">margin:-35</span></pre>
+<div class="now" aria-live="polite">
+<div class="caps">
+{%- if include.lang == "fr" %}
+<div class="cap" data-t="0" data-step="Une boîte au centre"><h3>1. Une boîte au centre</h3><p><code>*</code> vise html, head, style et body, mais head et style ne sont pas affichés. En mode quirks, html remplit la page moins ses marges. <code>margin:135 185</code> (sans unité, des px) lui laisse 400 − 2 × 185 = 30 de large et 300 − 2 × 135 = 30 de haut : une boîte de 30 × 30 en (185, 135). html est la racine : son fond <code>#4a9a86</code> est peint sur tout le canevas.</p></div>
+<div class="cap" data-t="4.5" data-step="Quatre disques"><h3>2. Quatre disques</h3><p><code>&amp;</code> hors de toute règle vise la racine : html. 75Q = 70,87px, et mon Chrome trace l'outline sur 70px, de 115 à 285. Sa ligne médiane est un carré de (150, 100) à (250, 200). En pointillés, chaque point fait la largeur du trait : un disque de 70px, donc de rayon 35, à chaque coin. Mon rendu n'en dessine pas d'autre.</p></div>
+<div class="cap" data-t="10" data-step="Deux carrés crème"><h3>3. Deux carrés crème</h3><p><code>color:f3ead2</code> se passe de # en mode quirks. <code>box-shadow</code> n'a pas de couleur : il prend celle de <code>color</code>, le crème. 25vw = 100px. Chaque ombre copie la boîte de html à 100px, sans flou, et la grossit de 35px de chaque côté : 30 + 2 × 35 = 100. L'une va de (50, 0) à (150, 100), l'autre de (250, 200) à (350, 300). L'outline est peinte par-dessus.</p></div>
+<div class="cap" data-t="15" data-step="body"><h3>4. body et ses ombres vertes</h3><p>Le <code>*</code> imbriqué vise head, style et body. Il vient après, donc il l'emporte. <code>margin:-35</code> élargit body de 35px de chaque côté de html : une boîte de 100 × 100 en (150, 100). Même fond, mêmes ombres, mais <code>color:4A9A86</code> les rend vertes : deux carrés de 100 + 2 × 35 = 170. Sans retournement, elles couvrent les carrés crème, et body reste sous les disques.</p></div>
+<div class="cap" data-t="20.5" data-step="Le retournement"><h3>5. Le retournement</h3><p><code>scale:1-1</code> garde la largeur et multiplie la hauteur par −1 : body se retourne autour de son centre, (200, 150). Ses ombres passent sur l'autre diagonale, de (215, −35) à (385, 135) et de (15, 165) à (185, 335). Une transformation fait aussi de body un contexte d'empilement : mon Chrome le peint par-dessus l'outline. Sa boîte cache le quart intérieur de deux disques, et ses ombres cachent les deux autres.</p></div>
+<div class="cap" data-t="26" data-step="Résultat" data-live="166 caractères · 100 % identique"><h3>6. Résultat : 166 caractères</h3><p>Une outline en pointillés pour les disques, une liste d'ombres pour deux éléments : crème sur html, verte sur body, qui la retourne pour gommer ce qui est en trop.</p></div>
+{%- else %}
+<div class="cap" data-t="0" data-step="One box in the middle"><h3>1. One box in the middle</h3><p><code>*</code> targets html, head, style and body, but head and style are not displayed. In quirks mode, html fills the page minus its margins. <code>margin:135 185</code> (no unit: px) leaves it 400 − 2 × 185 = 30 wide and 300 − 2 × 135 = 30 high: a 30 × 30 box at (185, 135). html is the root: its <code>#4a9a86</code> background is painted on the whole canvas.</p></div>
+<div class="cap" data-t="4.5" data-step="Four discs"><h3>2. Four discs</h3><p><code>&amp;</code> outside any rule targets the root: html. 75Q = 70.87px, and my Chrome draws the outline 70px wide, from 115 to 285. Its middle line is a square from (150, 100) to (250, 200). In a dotted line, each dot is as wide as the line: a 70px disc, radius 35, at each corner. My render draws no other dot.</p></div>
+<div class="cap" data-t="10" data-step="Two cream squares"><h3>3. Two cream squares</h3><p><code>color:f3ead2</code> needs no # in quirks mode. <code>box-shadow</code> has no color, so it takes the one of <code>color</code>: cream. 25vw = 100px. Each shadow copies html's box 100px away, with no blur, and grows it by 35px on each side: 30 + 2 × 35 = 100. One runs from (50, 0) to (150, 100), the other from (250, 200) to (350, 300). The outline is painted over them.</p></div>
+<div class="cap" data-t="15" data-step="body"><h3>4. body and its green shadows</h3><p>The nested <code>*</code> targets head, style and body. It comes later, so it wins. <code>margin:-35</code> makes body 35px wider than html on each side: a 100 × 100 box at (150, 100). Same background, same shadows, but <code>color:4A9A86</code> makes them green: two squares of 100 + 2 × 35 = 170. Not flipped, they cover the cream squares, and body stays under the discs.</p></div>
+<div class="cap" data-t="20.5" data-step="The flip"><h3>5. The flip</h3><p><code>scale:1-1</code> keeps the width and multiplies the height by −1: body turns upside down around its center, (200, 150). Its shadows move to the other diagonal, from (215, −35) to (385, 135) and from (15, 165) to (185, 335). A transform also makes body a stacking context: my Chrome paints it over the outline. Its box hides the inner quarter of two discs, and its shadows hide the two others.</p></div>
+<div class="cap" data-t="26" data-step="Result" data-live="166 characters · 100% match"><h3>6. Result: 166 characters</h3><p>A dotted outline for the discs, one shadow list for two elements: cream on html, green on body, which flips it to erase what is too much.</p></div>
+{%- endif %}
+</div>
+<div class="live"></div>
+</div>
+</div>
+<script>
+(window.AnimScenes = window.AnimScenes || {}).t0506 = (fig) => {
+  const fr = document.documentElement.lang === 'fr';
+  const $ = (s) => fig.querySelector(s);
+  const $$ = (s) => [...fig.querySelectorAll(s)];
+  const live = $('.live');
+  const ease = (x) => (x < 0.5 ? 4 * x * x * x : 1 - Math.pow(-2 * x + 2, 3) / 2);
+  const pr = (t, a, b) => ease(Math.min(1, Math.max(0, (t - a) / (b - a))));
+  const win = (t, a, b) => Math.min(pr(t, a, a + 0.5), 1 - pr(t, b - 0.3, b));
+  const c = fr ? ' :' : ':';
+  const n = (v) => (fr ? String(v).replace('.', ',') : String(v));
+  const pt = (x, y) => `(${x}, ${y})`;
+  // Measured on the official code in local Chrome (400 × 300 page, quirks mode):
+  // html 30 × 30 at (185, 135); outline-width computes to 70px (75Q = 70.87px); the dots are discs of radius 35
+  // centered at (150, 100), (250, 100), (150, 200), (250, 200) (body hidden: row 100 covered from x = 115 to 185).
+  // html's shadows: cream from (50, 0) to (150, 100) and from (250, 200) to (350, 300), under the outline.
+  // body 100 × 100 at (150, 100). A test copy with body in red and its shadows in blue: flipped, the shadows run
+  // from (215, 0) to (385, 135) and from (15, 165) to (185, 300) on the canvas; without the scale they sit on the
+  // other diagonal and body is painted under the dots.
+  // The last frame swaps the four drawn discs for a real 70px dotted outline around the 30 × 30 box, as in the code.
+  const FIN = 26;
+  const GREEN = [74, 154, 134], PINK = [244, 114, 182], CYAN = [34, 211, 238];
+  const mix = (a, b, k) => a.map((v, i) => Math.round(v + (b[i] - v) * k));
+  const rgb = (col) => `rgb(${col.join(' ')})`;
+  const ol = $('.t0506-ol'), sq = $$('.t0506-s'), dots = $$('.t0506-d'), band = $('.t0506-band'), mid = $('.t0506-mid'), hb = $('.t0506-hb');
+  const body = $('.t0506-b'), bb = $('.t0506-bb'), bs = $$('.t0506-bs');
+  const labs = $$('.zlab[data-l]');
+  const ivs = [[0.3, 4.3], [4.8, 9.8], [10.3, 14.8], [15.3, 20.3], [20.8, 25.8]];
+  return (t, step) => {
+    const teach = fig.dataset.teach === '1';
+    const fin = pr(t, FIN + 0.2, FIN + 0.9);
+    const tw = teach ? 1 - fin : 0;
+    const line = teach ? 0 : 1 - fin;
+    const dash = (a) => (a > 0.001 ? `inset 0 0 0 calc(1.5px * var(--k, 1)) rgb(255 255 255 / ${a.toFixed(3)})` : 'none');
+    // 1. html's box
+    const hbA = win(t, 0.3, 14.8);
+    hb.style.opacity = hbA;
+    hb.style.background = teach ? '#facc15' : 'none';
+    hb.style.border = teach ? '0' : `calc(1.5px * var(--k, 1)) dashed #fff`;
+    // 2. the outline: a band, its middle line, then one dot per corner
+    band.style.opacity = win(t, 4.8, 9.8) * 1;
+    mid.style.opacity = win(t, 5.6, 9.8);
+    const dA = pr(t, 6.4, 7.4);
+    dots.forEach((d, i) => {
+      d.style.opacity = dA * (1 - fin);
+      d.style.transform = `scale(${0.2 + 0.8 * dA})`;
+    });
+    ol.style.opacity = fin;
+    // 3. html's shadows: html's box moved 100px, then grown by 35px
+    const sA = pr(t, 10.3, 10.8), sG = 35 * pr(t, 11, 13);
+    sq.forEach((s, i) => {
+      const x0 = i ? 285 : 85, y0 = i ? 235 : 35, w = 30 + 2 * sG;
+      s.style.left = `${x0 - sG}px`;
+      s.style.top = `${y0 - sG}px`;
+      s.style.width = s.style.height = `${w}px`;
+      s.style.opacity = sA;
+    });
+    // 4. body, its box and its shadows (drawn unflipped, then flipped by the wrapper)
+    const bA = pr(t, 15.3, 15.8), bG = 35 * pr(t, 16.6, 18.6), bsA = pr(t, 16.2, 16.6);
+    bb.style.background = rgb(mix(GREEN, PINK, tw));
+    bb.style.opacity = bA;
+    bb.style.boxShadow = dash(line * bA);
+    bs.forEach((s, i) => {
+      // in the last frame, 1px more of green (on green) so that no edge of the hidden discs shows on the scaled stage
+      const g = bG + fin, x0 = i ? 50 : 250, y0 = i ? 0 : 200, w = 100 + 2 * g;
+      s.style.left = `${x0 - g}px`;
+      s.style.top = `${y0 - g}px`;
+      s.style.width = s.style.height = `${w}px`;
+      s.style.background = rgb(mix(GREEN, CYAN, tw));
+      s.style.opacity = bsA;
+      s.style.boxShadow = dash(line * bsA);
+    });
+    // 5. the flip; body goes over the outline when it is flat
+    const f = pr(t, 21.2, 24.2);
+    body.style.transform = `scale(1, ${(1 - 2 * f).toFixed(4)})`;
+    body.style.zIndex = f >= 0.5 ? 4 : 2;
+    labs.forEach((l) => {
+      l.style.opacity = win(t, ...ivs[+l.dataset.l - 1]);
+    });
+    let txt;
+    if (step === 0) txt = `* → html, head, style, body · html${c} 30 × 30 ${fr ? 'en' : 'at'} ${pt(185, 135)}`;
+    else if (step === 1) txt = `75Q = ${n(70.87)}px → 70px · 4 × r = 35`;
+    else if (step === 2) txt = `25vw = 100px · 30 + 2 × 35 = 100 · ${pt(50, 0)} · ${pt(250, 200)}`;
+    else if (step === 3) txt = `body${c} 30 + 2 × 35 = 100 · ${fr ? 'ombres' : 'shadows'}${c} 100 + 2 × 35 = 170`;
+    else if (step === 4) txt = `scale:1 -1 · ${pt(215, '−35')} → ${pt(385, 135)} · ${pt(15, 165)} → ${pt(185, 335)}`;
+    else txt = $$('.caps .cap')[5].dataset.live || '';
+    live.textContent = txt;
+  };
+};
+</script>
+</figure>
