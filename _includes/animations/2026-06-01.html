@@ -1,0 +1,144 @@
+<figure class="anim t0601" data-duration="38" data-scene="t0601" data-wide="-90 -40 580 380" data-off-label="-86 318" style="--bg:#fef9ce">
+<style>
+.t0601{--t0601-disc:#3b82f6;--t0601-ring:#8b5cf6;--t0601-hole:#10b981;--t0601-box:#14142a}
+.t0601 .scene .t0601-html{left:-120px;top:0;width:640px;height:300px;z-index:1}
+.t0601 .scene .t0601-body{left:120px;top:70px;width:160px;height:160px;z-index:3;opacity:0}
+.t0601 .scene .t0601-box{box-sizing:border-box;outline:calc(1.5px * var(--k, 1)) dashed var(--t0601-box);outline-offset:calc(-0.75px * var(--k, 1));opacity:0;z-index:5}
+.t0601 .scene .t0601-circ{border-radius:50%}
+.t0601 .scene .t0601-pt{width:7px;height:7px;width:calc(7px * var(--k, 1));height:calc(7px * var(--k, 1));transform:translate(-50%, -50%);border-radius:50%;background:var(--t0601-box);box-shadow:0 0 0 calc(1.5px * var(--k, 1)) #fff;opacity:0;z-index:6}
+.t0601 .scene .zlab{color:#14142a;background:rgb(255 255 255 / .92);box-shadow:0 0 0 1px rgb(20 20 42 / .25);padding:1px 5px;border-radius:3px;opacity:0}
+.t0601 .legend .t0601-dash{background:none;outline:2px dashed currentColor;outline-offset:-2px}
+.t0601 .legend .t0601-pale{box-shadow:inset 0 0 0 1px currentColor}
+</style>
+<div class="anim-col">
+<div class="stage" role="img" aria-label="{% if include.lang == "fr" %}Animation : * vise html et body. html garde la police par défaut, Times 16px : 1ex = 7,18px et 1lh = 18px. Son fond, peint sur tout le canevas, est un dégradé radial en cercle de rayon 1Q : moutarde jusqu'à 4.1ex = 29,44px, jaune pâle jusqu'à 53lh = 954px, puis moutarde, jamais atteint. 5ch/40vw place des tuiles de 160 × 300 à partir de x = 40 : des disques moutarde centrés en x = 120 et 280 sur le canevas, et en −40 et 440 en dehors. * * vise body : margin:70 120 en fait un carré de 160 × 160 en (120, 70). font:0/1q donne à body 1ex = 0, 1ch = 0 et 1lh = 1q : le même dégradé n'a plus de disque, il est pâle jusqu'à 50,08px et moutarde au-delà, sur une seule tuile centrée en (200, 150) : le trou. corner-shape:scoop et border-radius:53Q creusent chaque coin d'un quart de cercle de 50,08px. body cache la moitié intérieure des deux disques de html : les bras gauche et droit finissent en demi-disque.{% else %}Animation: * matches html and body. html keeps the default font, 16px Times: 1ex = 7.18px and 1lh = 18px. Its background, painted on the whole canvas, is a circular radial gradient with a 1Q radius: mustard up to 4.1ex = 29.44px, pale yellow up to 53lh = 954px, then mustard, never reached. 5ch/40vw lays 160 × 300 tiles from x = 40: mustard discs centered on x = 120 and 280 on the canvas, and on −40 and 440 outside it. * * matches body: margin:70 120 makes it a 160 × 160 square at (120, 70). font:0/1q gives body 1ex = 0, 1ch = 0 and 1lh = 1q: the same gradient has no disc any more, it is pale up to 50.08px and mustard beyond, on a single tile centered on (200, 150): the hole. corner-shape:scoop and border-radius:53Q cut each corner with a 50.08px quarter circle. body hides the inner half of html's two discs: the left and right arms end in a half disc.{% endif %}">
+<div class="scene">
+<div class="t0601-html"></div>
+<div class="t0601-body"></div>
+<div class="t0601-box t0601-hbox" style="left:0;top:0;width:400px;height:300px"></div>
+<div class="t0601-box t0601-tile" data-i="0" style="left:-120px;top:0;width:160px;height:300px"></div>
+<div class="t0601-box t0601-tile" data-i="1" style="left:40px;top:0;width:160px;height:300px"></div>
+<div class="t0601-box t0601-tile" data-i="2" style="left:200px;top:0;width:160px;height:300px"></div>
+<div class="t0601-box t0601-tile" data-i="3" style="left:360px;top:0;width:160px;height:300px"></div>
+<div class="t0601-box t0601-bbox"></div>
+<div class="t0601-box t0601-circ t0601-hc" style="left:149.92px;top:99.92px;width:100.16px;height:100.16px"></div>
+<div class="t0601-box t0601-circ t0601-sc" style="clip-path:inset(50% 0 0 50%);left:69.92px;top:19.92px;width:100.16px;height:100.16px"></div>
+<div class="t0601-box t0601-circ t0601-sc" style="clip-path:inset(50% 50% 0 0);left:229.92px;top:19.92px;width:100.16px;height:100.16px"></div>
+<div class="t0601-box t0601-circ t0601-sc" style="clip-path:inset(0 0 50% 50%);left:69.92px;top:179.92px;width:100.16px;height:100.16px"></div>
+<div class="t0601-box t0601-circ t0601-sc" style="clip-path:inset(0 50% 50% 0);left:229.92px;top:179.92px;width:100.16px;height:100.16px"></div>
+<div class="t0601-pt t0601-dc" data-i="0" style="left:-40px;top:150px"></div>
+<div class="t0601-pt t0601-dc" data-i="1" style="left:120px;top:150px"></div>
+<div class="t0601-pt t0601-dc" data-i="2" style="left:280px;top:150px"></div>
+<div class="t0601-pt t0601-dc" data-i="3" style="left:440px;top:150px"></div>
+<div class="t0601-pt t0601-bc" style="left:200px;top:150px"></div>
+<span class="zlab" data-l="1" data-r="0">{% if include.lang == "fr" %}html : 1ex = 7,18px · 1lh = 18px{% else %}html: 1ex = 7.18px · 1lh = 18px{% endif %}</span>
+<span class="zlab" data-l="1" data-r="1">{% if include.lang == "fr" %}4.1ex = 29,44px · 53lh = 954px{% else %}4.1ex = 29.44px · 53lh = 954px{% endif %}</span>
+<span class="zlab" data-l="2" data-r="0">5ch = 40px · 40vw = 160px</span>
+<span class="zlab" data-l="2" data-r="1">{% if include.lang == "fr" %}disques : x = −40, 120, 280, 440{% else %}discs: x = −40, 120, 280, 440{% endif %}</span>
+<span class="zlab" data-l="3" data-r="0">{% if include.lang == "fr" %}body : (120, 70), 160 × 160{% else %}body: (120, 70), 160 × 160{% endif %}</span>
+<span class="zlab" data-l="3" data-r="1">{% if include.lang == "fr" %}hauteur : 300 − 70 − 70 = 160{% else %}height: 300 − 70 − 70 = 160{% endif %}</span>
+<span class="zlab" data-l="4" data-r="0">{% if include.lang == "fr" %}body : 1ex = 1ch = 0 · 1lh = 1q{% else %}body: 1ex = 1ch = 0 · 1lh = 1q{% endif %}</span>
+<span class="zlab" data-l="4" data-r="1">{% if include.lang == "fr" %}trou : 53lh = 50,08px{% else %}hole: 53lh = 50.08px{% endif %}</span>
+<span class="zlab" data-l="5" data-r="0">{% if include.lang == "fr" %}border-radius : 53Q = 50,08px{% else %}border-radius: 53Q = 50.08px{% endif %}</span>
+<span class="zlab" data-l="5" data-r="1">{% if include.lang == "fr" %}scoop : coins creusés{% else %}scoop: corners cut inward{% endif %}</span>
+</div>
+</div>
+<div class="legend"><span><i style="--c:var(--t0601-disc);border-radius:50%"></i>{% if include.lang == "fr" %}html : #d19f37 jusqu'à 4.1ex{% else %}html: #d19f37 up to 4.1ex{% endif %}</span><span><i class="t0601-pale" style="--c:#fef9ce"></i>{% if include.lang == "fr" %}html : #fef9ce de 4.1ex à 53lh{% else %}html: #fef9ce from 4.1ex to 53lh{% endif %}</span><span><i style="--c:var(--t0601-hole);border-radius:50%"></i>{% if include.lang == "fr" %}body : #fef9ce jusqu'à 53lh (le trou){% else %}body: #fef9ce up to 53lh (the hole){% endif %}</span><span><i style="--c:var(--t0601-ring)"></i>{% if include.lang == "fr" %}body : #d19f37 après 53lh{% else %}body: #d19f37 after 53lh{% endif %}</span><span><i class="t0601-dash"></i>{% if include.lang == "fr" %}boîtes de html, des tuiles et de body, cercles{% else %}html, tile and body boxes, circles{% endif %}</span></div>
+</div>
+<div class="anim-side">
+<pre class="code" aria-hidden="true">&lt;style><span data-on="1">*</span>{background:radial-gradient(<span data-on="1" data-tone="2">1Q</span>,<span data-on="1 4">#d19f37 4.1ex</span>,<span data-on="1 4">#fef9ce 0 53lh</span>,<span data-on="1 4">#d19f37</span>)<span data-on="2 4" data-tone="2">5ch/40vw</span>;<span data-on="3" data-tone="2">*{</span><span data-on="3">margin:70 120</span>;<span data-on="5">corner-shape:scoop;border-radius:53Q</span>;<span data-on="4" data-tone="2">font:0/1q"</span></pre>
+<div class="now" aria-live="polite">
+<div class="caps">
+{%- if include.lang == "fr" %}
+<div class="cap" data-t="0" data-step="html"><h3>1. Un dégradé sur html</h3><p><code>*</code> vise html, head, body et style. Seuls html et body sont affichés. Le fond de html couvre tout le canevas. html garde la police par défaut, Times 16px : 1ex = 7,18px et 1lh = 18px. <code>radial-gradient(1Q,…)</code> est un cercle de rayon 1Q = 0,945px. <code>#d19f37 4.1ex</code> : moutarde jusqu'à 29,44px. <code>#fef9ce 0 53lh</code> : pâle de là jusqu'à 954px. Le dernier <code>#d19f37</code> se place à 1Q, il remonte donc à 954px : bien au-delà des coins de la tuile, à 170px. Sur html : un petit disque moutarde sur du pâle.</p></div>
+<div class="cap" data-t="7" data-step="Tuiles"><h3>2. Des tuiles de 160px</h3><p><code>5ch/40vw</code> : position 5ch = 40px (1ch vaut 8px), taille 40vw = 160px de large. La hauteur est auto : un dégradé n'a pas de taille propre, il prend la hauteur de html, 300px. Seul x est donné, y est centré. La tuile se répète tous les 160px : des disques centrés en x = 120 et 280 sur le canevas, et en −40 et 440 en dehors.</p></div>
+<div class="cap" data-t="13" data-step="body"><h3>3. body, un carré</h3><p>Le <code>*{</code> imbriqué veut dire <code>* *</code> : head, body et style, mais pas html. body reçoit <code>margin:70 120</code>. En mode quirks, les nombres seuls sont des px, et body remplit la hauteur moins ses marges : 300 − 140 = 160. body est un carré de 160 × 160 en (120, 70).</p></div>
+<div class="cap" data-t="19" data-step="Police"><h3>4. La police change le dégradé</h3><p>body reçoit <code>font:0/1q"</code>. Le <code>"</code> ouvre une chaîne que la fin du code ferme : un nom de police vide. Taille 0 : 1ex = 0 et 1ch = 0. Hauteur de ligne 1q : 1lh = 0,945px. Le même dégradé se lit autrement : pas de disque moutarde (4.1ex = 0), pâle jusqu'à 53lh = 50,08px, moutarde au-delà. 5ch = 0 et 40vw = 160px, la largeur de body : une seule tuile, centrée en (200, 150). C'est le trou.</p></div>
+<div class="cap" data-t="26" data-step="Coins"><h3>5. Des coins creusés</h3><p><code>border-radius:53Q</code> arrondit chaque coin sur 50,08px. <code>corner-shape:scoop</code> tourne la courbe vers l'intérieur : chaque coin est coupé par un quart de cercle centré sur le coin.</p></div>
+<div class="cap" data-t="32" data-step="Résultat" data-live="148 caractères · 100 % identique"><h3>6. Résultat : 148 caractères</h3><p>body cache la moitié intérieure des deux disques de html. Les bras gauche et droit finissent en demi-disque, de x = 90,56 à 120 et de 280 à 309,44. Les bras du haut et du bas restent droits.</p></div>
+{%- else %}
+<div class="cap" data-t="0" data-step="html"><h3>1. One gradient on html</h3><p><code>*</code> matches html, head, body and style. Only html and body are shown. html's background covers the whole canvas. html keeps the default font, 16px Times: 1ex = 7.18px and 1lh = 18px. <code>radial-gradient(1Q,…)</code> is a circle with a 1Q = 0.945px radius. <code>#d19f37 4.1ex</code>: mustard up to 29.44px. <code>#fef9ce 0 53lh</code>: pale from there to 954px. The last <code>#d19f37</code> sits at 1Q, so it moves up to 954px: far past the tile's corners, 170px away. On html: a small mustard disc on pale.</p></div>
+<div class="cap" data-t="7" data-step="Tiles"><h3>2. 160px tiles</h3><p><code>5ch/40vw</code>: position 5ch = 40px (1ch is 8px), size 40vw = 160px wide. The height is auto: a gradient has no size of its own, so it takes html's height, 300px. Only x is given, so y is centered. The tile repeats every 160px: discs centered on x = 120 and 280 on the canvas, and on −40 and 440 outside it.</p></div>
+<div class="cap" data-t="13" data-step="body"><h3>3. body, a square</h3><p>The nested <code>*{</code> means <code>* *</code>: head, body and style, but not html. body gets <code>margin:70 120</code>. In quirks mode, bare numbers are px, and body fills the height minus its margins: 300 − 140 = 160. body is a 160 × 160 square at (120, 70).</p></div>
+<div class="cap" data-t="19" data-step="Font"><h3>4. The font changes the gradient</h3><p>body gets <code>font:0/1q"</code>. The <code>"</code> opens a string that the end of the code closes: an empty font name. Size 0: 1ex = 0 and 1ch = 0. Line height 1q: 1lh = 0.945px. The same gradient now reads differently: no mustard disc (4.1ex = 0), pale up to 53lh = 50.08px, mustard beyond. 5ch = 0 and 40vw = 160px, body's width: one tile, centered on (200, 150). That is the hole.</p></div>
+<div class="cap" data-t="26" data-step="Corners"><h3>5. Scooped corners</h3><p><code>border-radius:53Q</code> rounds each corner over 50.08px. <code>corner-shape:scoop</code> turns the curve inward: each corner is cut by a quarter circle centered on the corner.</p></div>
+<div class="cap" data-t="32" data-step="Result" data-live="148 characters · 100% match"><h3>6. Result: 148 characters</h3><p>body hides the inner half of html's two discs. The left and right arms end in a half disc, from x = 90.56 to 120 and from 280 to 309.44. The top and bottom arms stay straight.</p></div>
+{%- endif %}
+</div>
+<div class="live"></div>
+</div>
+</div>
+<script>
+(window.AnimScenes = window.AnimScenes || {}).t0601 = (fig) => {
+  const fr = document.documentElement.lang === 'fr';
+  const $ = (s) => fig.querySelector(s);
+  const $$ = (s) => [...fig.querySelectorAll(s)];
+  const live = $('.live');
+  const ease = (x) => (x < 0.5 ? 4 * x * x * x : 1 - Math.pow(-2 * x + 2, 3) / 2);
+  const pr = (t, [a, b]) => ease(Math.min(1, Math.max(0, (t - a) / (b - a))));
+  const win = (t, a, b) => Math.min(pr(t, [a, a + 0.5]), 1 - pr(t, [b - 0.2, b]));
+  const c = fr ? ' :' : ':';
+  const n = (x) => (fr ? String(x).replace('.', ',') : String(x));
+  const mix = (k, a, b) => (k <= 0 ? b : k >= 1 ? a : `color-mix(in srgb, ${a} ${(k * 100).toFixed(1)}%, ${b})`);
+  // Measured on the official code in local Chrome (400 × 300 iframe, quirks mode, getBoundingClientRect, getComputedStyle).
+  // html: 0, 0, 400 × 300, font 16px Times. Its background: radial-gradient(1q, #d19f37 29.4367px, #fef9ce 0 954px, #d19f37),
+  // position 40px 50%, size 160px auto (tiles of 160 × 300). body: 120, 70, 160 × 160, font 0px / 0.944882px "".
+  // Its background: radial-gradient(1q, #d19f37 0px, #fef9ce 0 50.0787px, #d19f37), position 0px 50%, size 160px auto.
+  // border-radius 50.0787px, corner-shape superellipse(-1) (scoop).
+  const RD = 29.4367, RH = 50.0787, M = '#d19f37', P = '#fef9ce', T = 'rgb(254 249 206 / 0)';
+  const html = $('.t0601-html'), body = $('.t0601-body'), hbox = $('.t0601-hbox'), bbox = $('.t0601-bbox');
+  const tiles = $$('.t0601-tile'), dcs = $$('.t0601-dc'), hc = $('.t0601-hc'), scs = $$('.t0601-sc'), bc = $('.t0601-bc');
+  const labs = $$('.zlab');
+  const ivs = [[0.3, 7], [7.3, 13], [13.3, 19], [19.3, 26], [26.3, 32]];
+  const cx = [-40, 120, 280, 440];
+  return (t, step) => {
+    const teach = fig.dataset.teach === '1';
+    const wide = fig.dataset.view === 'wide';
+    const tw = teach ? 1 - pr(t, [32.3, 33.3]) : 0;
+    // html: the disc of the tile at x = 40 grows to 4.1ex, then the other tiles show their discs
+    const rd = RD * pr(t, [0.8, 2.6]);
+    const others = pr(t, [8.3, 9.8]);
+    const dc = mix(tw, 'var(--t0601-disc)', M);
+    html.style.background = cx.map((x, i) => {
+      const col = i === 1 ? dc : mix(others, dc, T);
+      return `radial-gradient(circle at ${x + 120}px 150px, ${col} ${i === 1 ? rd : RD}px, ${T} 0)`;
+    }).join(',');
+    hbox.style.opacity = win(t, 0.3, 13.2);
+    tiles.forEach((b) => { b.style.opacity = +b.dataset.i === 1 ? win(t, 0.3, 13.2) : win(t, 7.3, 13.2) * 1; });
+    dcs.forEach((d) => { d.style.opacity = +d.dataset.i === 1 ? win(t, 0.6, 12.8) : win(t, 8.3, 12.8); });
+    // body: its box shrinks from html's box to 160 × 160 at (120, 70)
+    const m = pr(t, [13.6, 15.4]);
+    bbox.style.cssText = `left:${120 * m}px;top:${70 * m}px;width:${400 - 240 * m}px;height:${300 - 140 * m}px;opacity:${win(t, 13.3, 31.8)}`;
+    // body's gradient: mustard, then the hole grows to 53lh; then the corners are scooped
+    const rh = RH * pr(t, [20.8, 22.6]);
+    const rc = RH * pr(t, [26.6, 28.4]);
+    const ring = mix(tw, 'var(--t0601-ring)', M), hole = mix(tw, 'var(--t0601-hole)', P);
+    body.style.opacity = pr(t, [19.4, 20.4]);
+    body.style.background = `radial-gradient(circle at 80px 80px, ${hole} ${rh}px, ${ring} 0)`;
+    const g = (at, pos) => `radial-gradient(circle at ${at}, #0000 ${rc}px, #000 0) ${pos} / 81px 81px no-repeat`;
+    const mk = [g('0 0', '0 0'), g('100% 0', '100% 0'), g('0 100%', '0 100%'), g('100% 100%', '100% 100%')].join(',');
+    body.style.webkitMask = mk;
+    body.style.mask = mk;
+    hc.style.opacity = win(t, 20.8, 25.8);
+    bc.style.opacity = win(t, 19.4, 25.8);
+    scs.forEach((s) => { s.style.opacity = win(t, 26.4, 31.8); });
+    // labels: two rows at the top left (above the canvas in wide view)
+    labs.forEach((l) => {
+      const row = +l.dataset.r;
+      const x0 = wide ? -90 : 0, y0 = wide ? -40 : 0;
+      l.style.left = `calc(${x0}px + 4px * var(--k, 1))`;
+      l.style.top = `calc(${y0}px + ${4 + 22 * row}px * var(--k, 1))`;
+      l.style.opacity = win(t, ...ivs[+l.dataset.l - 1]);
+    });
+    let txt;
+    if (step === 0) txt = `4.1ex = ${n(29.44)}px · 53lh = 954px`;
+    else if (step === 1) txt = `${fr ? 'tuiles' : 'tiles'} 160 × 300 · ${fr ? 'disques en' : 'discs at'} x = 120, 280`;
+    else if (step === 2) txt = `body${c} (120, 70) · 160 × 160`;
+    else if (step === 3) txt = `${fr ? 'trou' : 'hole'}${c} 53lh = 53 × ${n(0.945)}px = ${n(50.08)}px`;
+    else if (step === 4) txt = `53Q = ${n(50.08)}px · scoop`;
+    else txt = $$('.caps .cap')[5].dataset.live || '';
+    live.textContent = txt;
+  };
+};
+</script>
+</figure>
