@@ -1,0 +1,168 @@
+<figure class="anim t0613" data-duration="31" data-scene="t0613" data-wide="-30 -110 460 510" data-off-label="-26 304" style="--bg:#efeade">
+<style>
+.t0613{--t0613-hd:#f59e0b;--t0613-bd:#3b82f6;--t0613-dash:#db2777;--t0613-tile:#7c3aed}
+.t0613 .scene .t0613-can{left:0;top:0;width:400px;height:300px;background:#efeade}
+.t0613 .scene .t0613-disc{width:120px;height:120px;background:radial-gradient(var(--t0613-lh, 0px),var(--t0613-col, #594f7c),139%,#0000);opacity:0}
+.t0613 .scene .t0613-hdisc{z-index:2}
+.t0613 .scene .t0613-band{left:0;top:105px;width:400px;height:90px;z-index:1;background:transparent}
+.t0613 .scene .t0613-clip{left:0;top:105px;width:400px;height:90px;overflow:hidden;z-index:4}
+.t0613 .scene .t0613-clip > .t0613-disc{position:absolute}
+.t0613 .scene .t0613-ghost{z-index:1}
+.t0613 .scene .t0613-dash{box-sizing:border-box;opacity:0;z-index:6;pointer-events:none}
+.t0613 .scene .t0613-bbox{left:0;top:105px;width:400px;height:90px;outline:calc(1.5px * var(--k, 1)) dashed var(--t0613-dash);outline-offset:calc(-0.75px * var(--k, 1))}
+.t0613 .scene .t0613-tile{outline:calc(1.5px * var(--k, 1)) dashed var(--t0613-tile);outline-offset:calc(-0.75px * var(--k, 1))}
+.t0613 .scene .t0613-lh{left:82px;top:52px;width:36px;height:36px;border-radius:50%;outline:calc(1.5px * var(--k, 1)) dashed #fff;outline-offset:calc(-0.75px * var(--k, 1));z-index:7}
+.t0613 .zlab{color:#14142a;background:rgb(255 255 255 / .92);box-shadow:0 0 0 1px rgb(20 20 42 / .25);padding:1px 5px;border-radius:3px;opacity:0}
+</style>
+<div class="anim-col">
+<div class="stage" role="img" aria-label="{% if include.lang == "fr" %}Animation : html remplit la page de crème ; body fait 400 × 90 en y = 105. Le même dégradé radial fait un disque plein de rayon 1,39 × 1lh. Sur html, 1lh vaut 18px : des disques de 25,02px, en (100, 70) et (300, 70) avec des tuiles de 200 × 300 décalées de −80px, et en (200, 230) avec un décalage de +80px. Sur body, 1lh vaut 36px et 5em 45px : des disques de 50,04px en (100, 105), (300, 105) et (200, 195), peints seulement dans la bande de body : trois demi-disques{% else %}Animation: html fills the page with cream; body is 400 × 90 at y = 105. The same radial gradient makes a solid disc of radius 1.39 × 1lh. On html, 1lh is 18px: 25.02px discs, at (100, 70) and (300, 70) with 200 × 300 tiles shifted by −80px, and at (200, 230) with a +80px shift. On body, 1lh is 36px and 5em is 45px: 50.04px discs at (100, 105), (300, 105) and (200, 195), painted only inside body's band: three half discs{% endif %}">
+<div class="scene">
+<div class="t0613-can"></div>
+<div class="t0613-band"></div>
+<div class="t0613-disc t0613-hdisc" data-x="100" data-y="70" data-a="2"></div>
+<div class="t0613-disc t0613-hdisc" data-x="300" data-y="70" data-a="3"></div>
+<div class="t0613-disc t0613-hdisc" data-x="100" data-y="370" data-a="3"></div>
+<div class="t0613-disc t0613-hdisc" data-x="300" data-y="370" data-a="3"></div>
+<div class="t0613-disc t0613-hdisc" data-x="200" data-y="230" data-a="4"></div>
+<div class="t0613-disc t0613-hdisc" data-x="200" data-y="-70" data-a="4"></div>
+<div class="t0613-disc t0613-ghost" data-x="100" data-y="105"></div>
+<div class="t0613-disc t0613-ghost" data-x="300" data-y="105"></div>
+<div class="t0613-disc t0613-ghost" data-x="200" data-y="195"></div>
+<div class="t0613-clip">
+<div class="t0613-disc t0613-bdisc" data-x="100" data-y="105"></div>
+<div class="t0613-disc t0613-bdisc" data-x="300" data-y="105"></div>
+<div class="t0613-disc t0613-bdisc" data-x="200" data-y="195"></div>
+</div>
+<div class="t0613-dash t0613-tile" data-a="3" style="left:0;top:-80px;width:200px;height:300px"></div>
+<div class="t0613-dash t0613-tile" data-a="3" style="left:200px;top:-80px;width:200px;height:300px"></div>
+<div class="t0613-dash t0613-tile" data-a="3" style="left:0;top:220px;width:200px;height:300px"></div>
+<div class="t0613-dash t0613-tile" data-a="3" style="left:200px;top:220px;width:200px;height:300px"></div>
+<div class="t0613-dash t0613-tile" data-a="4" style="left:0;top:80px;width:400px;height:300px"></div>
+<div class="t0613-dash t0613-tile" data-a="4" style="left:0;top:-220px;width:400px;height:300px"></div>
+<div class="t0613-dash t0613-bbox"></div>
+<div class="t0613-dash t0613-lh"></div>
+<span class="zlab t0613-l1" data-l="1">{% if include.lang == "fr" %}html : 400 × 300{% else %}html: 400 × 300{% endif %}</span>
+<span class="zlab t0613-l2" data-l="1">{% if include.lang == "fr" %}body : 400 × 90 en y = 105{% else %}body: 400 × 90 at y = 105{% endif %}</span>
+<span class="zlab t0613-l1" data-l="2">{% if include.lang == "fr" %}html : 1lh = 18px{% else %}html: 1lh = 18px{% endif %}</span>
+<span class="zlab t0613-l2" data-l="2">{% if include.lang == "fr" %}rayon 1,39 × 18 = 25,02{% else %}radius 1.39 × 18 = 25.02{% endif %}</span>
+<span class="zlab t0613-l1" data-l="3">5em = 80px · 50% = 200px</span>
+<span class="zlab t0613-l2" data-l="3">{% if include.lang == "fr" %}tuiles 200 × 300 en y = −80{% else %}200 × 300 tiles at y = −80{% endif %}</span>
+<span class="zlab t0613-l1" data-l="4">{% if include.lang == "fr" %}0 5em : tuile en y = 80{% else %}0 5em: tile at y = 80{% endif %}</span>
+<span class="zlab t0613-l2" data-l="4">{% if include.lang == "fr" %}disque en (200, 230){% else %}disc at (200, 230){% endif %}</span>
+<span class="zlab t0613-l1" data-l="5">{% if include.lang == "fr" %}body : 9px, 1lh = 36px{% else %}body: 9px, 1lh = 36px{% endif %}</span>
+<span class="zlab t0613-l2" data-l="5">{% if include.lang == "fr" %}rayon 50,04 · 5em = 45px{% else %}radius 50.04 · 5em = 45px{% endif %}</span>
+<span class="zlab t0613-l1" data-l="6">{% if include.lang == "fr" %}fixed : repère de la page{% else %}fixed: page coordinates{% endif %}</span>
+<span class="zlab t0613-l2" data-l="6">{% if include.lang == "fr" %}peint dans body seulement{% else %}painted inside body only{% endif %}</span>
+</div>
+</div>
+<div class="legend"><span><i style="--c:#efeade;outline:1px solid currentColor;outline-offset:-1px"></i>{% if include.lang == "fr" %}fond crème{% else %}cream background{% endif %}</span><span><i style="--c:var(--t0613-hd);border-radius:50%"></i>{% if include.lang == "fr" %}disques de html{% else %}html's discs{% endif %}</span><span><i style="--c:var(--t0613-bd);border-radius:50%"></i>{% if include.lang == "fr" %}disques de body{% else %}body's discs{% endif %}</span><span><i style="--c:transparent;outline:2px dashed currentColor;outline-offset:-2px"></i>{% if include.lang == "fr" %}tuiles et boîte de body{% else %}tiles and body's box{% endif %}</span></div>
+</div>
+<div class="anim-side">
+<pre class="code" aria-hidden="true">&lt;style><span data-on="1">*</span>{--g:<span data-on="2 5">radial-gradient(1lh,#594f7c,139%,#0000)</span><span data-on="6">fixed</span>;background:<span data-on="3">var(--g)0-5em/50%</span>,<span data-on="4">var(--g)0 5em</span><span data-on="1" data-tone="2">#efeade</span>;<span data-on="1 5">*{</span><span data-on="1 6">margin:105 0</span>;<span data-on="5">font:3vh/4"</span></pre>
+<div class="now" aria-live="polite">
+<div class="caps">
+{%- if include.lang == "fr" %}
+<div class="cap" data-t="0" data-step="Éléments"><h3>1. html et body</h3><p><code>*</code> touche html, head, style et body ; head et style restent cachés. Tous reçoivent le même <code>background</code>. Celui de html couvre toute la page, avec son crème <code>#efeade</code>. Le <code>*{…}</code> imbriqué touche les enfants : body reçoit <code>margin:105 0</code>, en px (mode quirks). En mode quirks, body remplit la hauteur : 400 × 90 en y = 105.</p></div>
+<div class="cap" data-t="4.5" data-step="Disque"><h3>2. Un disque plein</h3><p><code>radial-gradient(1lh,…)</code> : un cercle de rayon 1lh. <code>139%</code> entre les deux couleurs est un point de transition. Il tire le <code>#0000</code> jusqu'à 139 % : le violet reste plein jusque-là, puis s'arrête net. Sur html, 1lh vaut 18px : un disque de 1,39 × 18 = 25,02px de rayon.</p></div>
+<div class="cap" data-t="9" data-step="Tuiles"><h3>3. Deux têtes en haut</h3><p>Première couche de html : <code>0-5em/50%</code>. html a une police de 16px : 5em = 80px. <code>50%</code> de 400 donne des tuiles de 200 × 300, qui se répètent. Leur centre est en (100, 70) et (300, 70) : deux têtes. Les copies en y = 370 tombent hors du canevas.</p></div>
+<div class="cap" data-t="13.5" data-step="Tête du bas"><h3>4. La tête du bas</h3><p>Deuxième couche : <code>0 5em</code>, taille auto, donc une tuile de 400 × 300 décalée de +80px. Son disque est en (200, 230) : la troisième tête. Sa copie en (200, −70) est hors du canevas.</p></div>
+<div class="cap" data-t="18" data-step="body"><h3>5. Le même fond sur body</h3><p>body peint aussi le fond, car html a déjà le sien. <code>font:3vh/4"</code> lui donne 9px et une hauteur de ligne de 4 × 9 = 36px. Alors 1lh = 36px : des disques de 50,04px. Et 5em = 45px : centres en (100, 105), (300, 105) et (200, 195).</p></div>
+<div class="cap" data-t="22.5" data-step="Bande"><h3>6. Coupés par la bande</h3><p>Avec <code>fixed</code>, les dégradés de body sont placés dans le repère de la page, comme ceux de html. Mais body ne peint que dans sa boîte, de y = 105 à 195. Il ne reste que la moitié basse des deux disques du haut et la moitié haute du disque du bas : les épaules.</p></div>
+<div class="cap" data-t="27" data-step="Résultat" data-live="134 caractères · 100 % identique"><h3>7. Résultat : 134 caractères</h3><p>Une seule liste de fonds sur html et sur body. 1lh et 5em changent d'un élément à l'autre : des têtes de 25px sur html, des épaules de 50px sur body.</p></div>
+{%- else %}
+<div class="cap" data-t="0" data-step="Elements"><h3>1. html and body</h3><p><code>*</code> selects html, head, style and body; head and style stay hidden. They all get the same <code>background</code>. html's covers the whole page, with its cream <code>#efeade</code>. The nested <code>*{…}</code> selects the children: body gets <code>margin:105 0</code>, in px (quirks mode). In quirks mode, body fills the height: 400 × 90 at y = 105.</p></div>
+<div class="cap" data-t="4.5" data-step="Disc"><h3>2. A solid disc</h3><p><code>radial-gradient(1lh,…)</code>: a circle of radius 1lh. <code>139%</code> between the two colors is a color hint. It pulls <code>#0000</code> out to 139%: the purple stays solid up to there, then stops at once. On html, 1lh is 18px: a disc of radius 1.39 × 18 = 25.02px.</p></div>
+<div class="cap" data-t="9" data-step="Tiles"><h3>3. Two heads at the top</h3><p>html's first layer: <code>0-5em/50%</code>. html has a 16px font: 5em = 80px. 50% of 400 gives 200 × 300 tiles, which repeat. Their centers are at (100, 70) and (300, 70): two heads. The copies at y = 370 fall off the canvas.</p></div>
+<div class="cap" data-t="13.5" data-step="Lower head"><h3>4. The lower head</h3><p>Second layer: <code>0 5em</code>, auto size, so one 400 × 300 tile shifted by +80px. Its disc is at (200, 230): the third head. Its copy at (200, −70) is off the canvas.</p></div>
+<div class="cap" data-t="18" data-step="body"><h3>5. The same background on body</h3><p>body paints the background too, because html already has its own. <code>font:3vh/4"</code> gives it 9px and a line height of 4 × 9 = 36px. So 1lh = 36px: 50.04px discs. And 5em = 45px: centers at (100, 105), (300, 105) and (200, 195).</p></div>
+<div class="cap" data-t="22.5" data-step="Band"><h3>6. Cut by the band</h3><p>With <code>fixed</code>, body's gradients are placed in page coordinates, like html's. But body only paints inside its box, from y = 105 to 195. Only the lower half of the two top discs and the upper half of the lower disc are left: the shoulders.</p></div>
+<div class="cap" data-t="27" data-step="Result" data-live="134 characters · 100% match"><h3>7. Result: 134 characters</h3><p>One background list on html and on body. 1lh and 5em change from one element to the other: 25px heads on html, 50px shoulders on body.</p></div>
+{%- endif %}
+</div>
+<div class="live"></div>
+</div>
+</div>
+<script>
+(window.AnimScenes = window.AnimScenes || {}).t0613 = (fig) => {
+  const fr = document.documentElement.lang === 'fr';
+  const $ = (s) => fig.querySelector(s);
+  const $$ = (s) => [...fig.querySelectorAll(s)];
+  const live = $('.live');
+  const ease = (x) => (x < 0.5 ? 4 * x * x * x : 1 - Math.pow(-2 * x + 2, 3) / 2);
+  const pr = (t, [a, b]) => ease(Math.min(1, Math.max(0, (t - a) / (b - a))));
+  const win = (t, a, b) => Math.min(pr(t, [a, a + 0.5]), 1 - pr(t, [b - 0.2, b]));
+  const c = fr ? '\u00a0:' : ':';
+  const n = (v) => (fr ? String(v).replace('.', ',') : String(v));
+  const mix = (k, a, b) => (k <= 0 ? b : k >= 1 ? a : `color-mix(in srgb, ${a} ${(k * 100).toFixed(1)}%, ${b})`);
+  // Measured on the official code in local Chrome (400 × 300 iframe, quirks mode, getComputedStyle, getBoundingClientRect):
+  // html: 400 × 300, font 16px, the gradient computes to radial-gradient(18px, …): 1lh = 18px, 5em = 80px.
+  // body: 400 × 90 at y = 105, font 9px / 36px: 1lh = 36px, 5em = 45px.
+  // The hint at 139% pulls #0000 to 139%: solid disc of radius 1.39 × 1lh (render: same picture as "#594f7c 139%,#0000 0").
+  // html layer 1: tiles 200 × 300 from (0, −80): discs at (100, 70), (300, 70), copies at y = 370. Layer 2: tile 400 × 300 from (0, 80): (200, 230), copy (200, −70).
+  // body (fixed): discs of radius 50.04 at (100, 105), (300, 105), (200, 195), painted only inside 0..400 × 105..195.
+  // Render of the official code: heads span 45..94 and 205..254, shoulders 105..154 and 145..194.
+  const FIN = 27, L1 = 18, L2 = 36;
+  const hd = $$('.t0613-hdisc'), gh = $$('.t0613-ghost'), bd = $$('.t0613-bdisc');
+  const tiles = $$('.t0613-tile'), bbox = $('.t0613-bbox'), lh = $('.t0613-lh'), band = $('.t0613-band');
+  const labs = $$('.zlab');
+  // Each disc is a 120 × 120 box at whole pixels, painted with the official gradient (radius 1.39 × lh): same edges as the official render.
+  const place = (e, lh, dx, dy) => {
+    e.style.left = `${+e.dataset.x - dx - 60}px`;
+    e.style.top = `${+e.dataset.y - dy - 60}px`;
+    e.style.setProperty('--t0613-lh', `${lh}px`);
+  };
+  const ivs = [[0.3, 4.5], [4.8, 9], [9.3, 13.5], [13.8, 18], [18.3, 22.5], [22.8, FIN]];
+  const grow = { 2: [5.6, 7.4], 3: [9.9, 11.4], 4: [14.4, 15.9] };
+  return (t, step) => {
+    const teach = fig.dataset.teach === '1';
+    const tw = teach ? 1 - pr(t, [FIN, FIN + 0.8]) : 0;
+    const out = 1 - pr(t, [FIN, FIN + 0.6]);
+    // html's discs: one in step 2, the rest of layer 1 in step 3, layer 2 in step 4
+    hd.forEach((e) => {
+      const k = pr(t, grow[e.dataset.a]);
+      place(e, Math.max(L1 * k, 0.01), 0, 0);
+      e.style.opacity = k > 0 ? 1 : 0;
+      e.style.setProperty('--t0613-col', mix(tw, 'var(--t0613-hd)', '#594f7c'));
+    });
+    // 1lh ring on html during step 2
+    lh.style.opacity = win(t, 4.9, 9);
+    // tiles: layer 1 in step 3, layer 2 in step 4
+    tiles.forEach((e) => {
+      e.style.opacity = e.dataset.a === '3' ? win(t, 9.4, 13.5) : win(t, 13.9, 18);
+    });
+    // body's box: dashed in step 1 and in steps 5 and 6; tinted in teaching colors until the result
+    bbox.style.opacity = Math.max(win(t, 0.6, 4.5), win(t, 18.4, FIN));
+    band.style.background = mix(tw * pr(t, [0.6, 1.4]), 'rgb(219 39 119 / .12)', 'transparent');
+    // body's discs: they grow in step 5, the parts outside the band fade out in step 6
+    const kb = pr(t, [18.8, 20.6]);
+    const lb = Math.max(L2 * kb, 0.01);
+    bd.forEach((e) => {
+      place(e, lb, 0, 105);
+      e.style.opacity = kb > 0 ? 1 : 0;
+      e.style.setProperty('--t0613-col', mix(tw, 'var(--t0613-bd)', '#594f7c'));
+    });
+    gh.forEach((e) => {
+      place(e, lb, 0, 0);
+      e.style.opacity = kb > 0 ? 0.45 * (1 - pr(t, [23.2, 24.8])) : 0;
+      e.style.setProperty('--t0613-col', mix(tw, 'var(--t0613-bd)', '#594f7c'));
+    });
+    labs.forEach((l) => {
+      const k = +l.dataset.l, second = l.classList.contains('t0613-l2');
+      // top left of the canvas, above the heads (y = 45)
+      l.style.left = 'calc(4px * var(--k, 1))';
+      l.style.top = `calc(${second ? 19 : 3}px * var(--k, 1))`;
+      l.style.opacity = win(t, ...ivs[k - 1]);
+    });
+    let txt;
+    if (step === 0) txt = `html${c} 400 × 300 · body${c} 400 × 90 ${fr ? 'en' : 'at'} y = 105`;
+    else if (step === 1) txt = `html${c} 1lh = 18px · ${fr ? 'rayon' : 'radius'} ${n('25.02')}`;
+    else if (step === 2) txt = `${fr ? 'têtes en' : 'heads at'} (100, 70) ${fr ? 'et' : 'and'} (300, 70)`;
+    else if (step === 3) txt = `${fr ? 'tête en' : 'head at'} (200, 230)`;
+    else if (step === 4) txt = `body${c} 1lh = 36px · ${fr ? 'rayon' : 'radius'} ${n('50.04')} · 5em = 45px`;
+    else if (step === 5) txt = `body${c} y = 105 → 195 · ${fr ? 'trois demi-disques' : 'three half discs'}`;
+    else txt = $$('.caps .cap')[6].dataset.live || '';
+    live.textContent = txt;
+  };
+};
+</script>
+</figure>
