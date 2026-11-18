@@ -1,0 +1,129 @@
+<figure class="anim t0514" data-duration="28" data-scene="t0514" data-wide="-20 -10 440 760" style="--bg:#fff">
+<style>
+.t0514{--t0514-bg:#1a4341;--t0514-y:#ebe77e;--t0514-g:#84be8d;--t0514-html:#38bdf8;--t0514-body:#a855f7;--t0514-copy:#f97316}
+.t0514 .scene .t0514-bgc{left:-40px;top:-30px;width:480px;height:800px;background:var(--t0514-bg);opacity:0;z-index:0}
+.t0514 .scene .t0514-htmlc{left:100px;top:50px;width:200px;height:200px;background:var(--t0514-html);opacity:0;z-index:1}
+.t0514 .scene .t0514-yel{left:100px;top:50px;width:200px;height:0;background:var(--t0514-y);z-index:2}
+.t0514 .scene .t0514-body{left:108px;top:58px;width:184px;height:184px;overflow:hidden;opacity:0;z-index:3}
+.t0514 .scene .t0514-grn{position:absolute;left:0;top:0;width:184px;height:0;background:var(--t0514-g)}
+.t0514 .scene .t0514-box{box-sizing:border-box;outline:calc(1.5px * var(--k, 1)) dashed #fff;outline-offset:calc(-0.75px * var(--k, 1));filter:drop-shadow(0 0 calc(1px * var(--k, 1)) #000);opacity:0;z-index:10}
+.t0514 .scene .t0514-copy{box-sizing:border-box;outline:calc(2px * var(--k, 1)) dashed var(--t0514-copy);outline-offset:calc(-1px * var(--k, 1));opacity:0;z-index:11}
+.t0514 .scene .zlab{color:#14142a;background:rgb(255 255 255 / .92);box-shadow:0 0 0 1px rgb(20 20 42 / .25);padding:1px 5px;border-radius:3px;opacity:0}
+.t0514 .legend .t0514-ol{box-shadow:0 0 0 1px currentColor}
+.t0514 .legend .t0514-dash{background:none;outline:2px dashed currentColor;outline-offset:-2px}
+.t0514 .legend .t0514-cdash{background:none;outline:2px dashed var(--t0514-copy);outline-offset:-2px}
+</style>
+<div class="anim-col">
+<div class="stage" role="img" aria-label="{% if include.lang == "fr" %}Animation : * donne à tous les éléments le fond #1a4341 ; celui de html peint tout le canevas. & vise html, qui reçoit margin:50 100 : sans doctype, html remplit la zone d'affichage moins ses marges, 200 × 200 en (100, 50). html n'a pas de --a : son ombre est 0 5in #ebe77e inset. Une ombre intérieure peint la boîte sauf là où se trouve une copie de la boîte décalée ; 5in = 480px, la copie sort de la boîte, tout html devient jaune. body garde sa marge de 8px : 184 × 184 en (108, 58), centré sur (200, 150), avec le fond vert foncé. body a --a:97Q#84be8d : son ombre verte décalée de 91,65px peint la bande du haut, de y = 58 à 149,65. clip-path:circle(70px) ne garde qu'un disque de rayon 70 au centre de body : vert en haut, vert foncé en bas, dans le carré jaune.{% else %}Animation: * gives every element the background #1a4341; html's paints the whole canvas. & matches html, which gets margin:50 100: with no doctype, html fills the viewport minus its margins, 200 × 200 at (100, 50). html has no --a, so its shadow is 0 5in #ebe77e inset. An inset shadow paints the box except where a copy of the box, moved by the offset, sits; 5in = 480px, so the copy leaves the box and all of html turns yellow. body keeps its 8px margin: 184 × 184 at (108, 58), centered on (200, 150), with the dark green background. body has --a:97Q#84be8d: its green shadow, moved 91.65px, paints the top band, from y = 58 to 149.65. clip-path:circle(70px) keeps only a disc of radius 70 at body's center: green on top, dark green at the bottom, inside the yellow square.{% endif %}">
+<div class="scene">
+<div class="t0514-bgc"></div>
+<div class="t0514-htmlc"></div>
+<div class="t0514-yel"></div>
+<div class="t0514-body"><div class="t0514-grn"></div></div>
+<div class="t0514-box t0514-xhtml" style="left:100px;top:50px;width:200px;height:200px"></div>
+<div class="t0514-box t0514-xbody" style="left:108px;top:58px;width:184px;height:184px"></div>
+<div class="t0514-copy t0514-chtml" style="left:100px;top:50px;width:200px;height:200px"></div>
+<div class="t0514-copy t0514-cbody" style="left:108px;top:58px;width:184px;height:184px"></div>
+<span class="zlab" data-l="1" style="left:4px;top:4px">* → html, head, style, body</span>
+<span class="zlab" data-l="2" style="left:100px;top:31px">{% if include.lang == "fr" %}html 200 × 200 · marge 50 100{% else %}html 200 × 200 · margin 50 100{% endif %}</span>
+<span class="zlab" data-l="3" style="left:104px">{% if include.lang == "fr" %}copie décalée de 5in = 480px{% else %}copy moved 5in = 480px{% endif %}</span>
+<span class="zlab" data-l="4" style="left:112px;top:62px">{% if include.lang == "fr" %}body 184 × 184 · marge 8{% else %}body 184 × 184 · margin 8{% endif %}</span>
+<span class="zlab" data-l="5" style="left:112px">{% if include.lang == "fr" %}copie décalée de 97Q ≈ 91,65px{% else %}copy moved 97Q ≈ 91.65px{% endif %}</span>
+<span class="zlab" data-l="6" style="left:108px;top:257px">{% if include.lang == "fr" %}circle(70px) · centre (200, 150){% else %}circle(70px) · center (200, 150){% endif %}</span>
+</div>
+</div>
+<div class="legend"><span><i class="t0514-ol" style="--c:#1a4341"></i>{% if include.lang == "fr" %}#1a4341, le canevas et body{% else %}#1a4341, the canvas and body{% endif %}</span><span><i class="t0514-ol" style="--c:#ebe77e"></i>{% if include.lang == "fr" %}#ebe77e, l'ombre de html{% else %}#ebe77e, html's shadow{% endif %}</span><span><i class="t0514-ol" style="--c:#84be8d"></i>{% if include.lang == "fr" %}#84be8d, l'ombre de body{% else %}#84be8d, body's shadow{% endif %}</span><span><i style="--c:var(--t0514-html)"></i>html</span><span><i style="--c:var(--t0514-body)"></i>{% if include.lang == "fr" %}fond de body{% else %}body's background{% endif %}</span><span><i class="t0514-dash"></i>{% if include.lang == "fr" %}boîtes{% else %}boxes{% endif %}</span><span><i class="t0514-cdash"></i>{% if include.lang == "fr" %}copies décalées{% else %}moved copies{% endif %}</span></div>
+</div>
+<div class="anim-side">
+<pre class="code" aria-hidden="true">&lt;style><span data-on="1">*{</span><span data-on="1 4" data-tone="2">background:#1a4341</span>;<span data-on="3 5">box-shadow:0 var(--a,</span><span data-on="3">5in#ebe77e</span><span data-on="3 5">)inset</span>}<span data-on="2">&amp;{margin:50 100</span>;<span data-on="4">*{</span><span data-on="5">--a:97Q#84be8d</span>;<span data-on="6">clip-path:circle(70px</span></pre>
+<div class="now" aria-live="polite">
+<div class="caps">
+{%- if include.lang == "fr" %}
+<div class="cap" data-t="0" data-step="Fond"><h3>1. Un fond pour tous</h3><p><code>*</code> vise tous les éléments : html, head, style et body. Tous reçoivent <code>background:#1a4341</code>. Le fond de html peint tout le canevas : vert foncé.</p></div>
+<div class="cap" data-t="4" data-step="html"><h3>2. &amp; vise html</h3><p>Au premier niveau, <code>&amp;</code> vise la racine : html. Il reçoit <code>margin:50 100</code>, en px grâce au mode quirks. Sans doctype, html remplit la zone d'affichage moins ses marges : 400 − 200 = 200 de large, 300 − 100 = 200 de haut, en (100, 50).</p></div>
+<div class="cap" data-t="8" data-step="Ombre jaune"><h3>3. Une ombre décalée de 480px</h3><p>html n'a pas de <code>--a</code> : <code>var()</code> prend sa valeur de repli, et l'ombre vaut <code>0 5in #ebe77e inset</code>. Une ombre intérieure peint la boîte, sauf là où se trouve une copie de la boîte décalée. 5in = 480px, plus que les 200 de html : la copie sort de la boîte, et toute la boîte devient jaune.</p></div>
+<div class="cap" data-t="12" data-step="body"><h3>4. body, 184 × 184</h3><p>Le <code>*</code> imbriqué dans <code>&amp;</code> vaut <code>&amp; *</code> : head, style et body. body garde sa marge par défaut de 8px : 184 × 184 en (108, 58), centré sur (200, 150). Son fond, <code>#1a4341</code>, cache le jaune.</p></div>
+<div class="cap" data-t="16" data-step="Ombre verte"><h3>5. 97Q de vert</h3><p>body a <code>--a:97Q#84be8d</code> : son ombre vaut <code>0 97Q #84be8d inset</code>. 97Q = 97 × 0,945 ≈ 91,65px. La copie descend de 91,65px : seule la bande du haut reste peinte, en vert, de y = 58 à environ 149,65.</p></div>
+<div class="cap" data-t="20" data-step="Cercle"><h3>6. circle(70px)</h3><p><code>clip-path:circle(70px)</code> ne garde de body qu'un disque de rayon 70 autour de son centre, (200, 150). Autour, le jaune de html réapparaît. Le disque est vert au-dessus de y ≈ 150, vert foncé en dessous.</p></div>
+<div class="cap" data-t="24" data-step="Résultat" data-live="120 caractères · 100 % identique"><h3>7. Résultat : 120 caractères</h3><p>Un carré jaune de 200 × 200, avec un disque au milieu : vert en haut, de la couleur du fond en bas. Une seule déclaration d'ombre, deux couleurs grâce à une variable.</p></div>
+{%- else %}
+<div class="cap" data-t="0" data-step="Background"><h3>1. One background for all</h3><p><code>*</code> matches every element: html, head, style and body. They all get <code>background:#1a4341</code>. html's background paints the whole canvas: dark green.</p></div>
+<div class="cap" data-t="4" data-step="html"><h3>2. &amp; is html</h3><p>At the top level, <code>&amp;</code> matches the root: html. It gets <code>margin:50 100</code>, in px thanks to quirks mode. With no doctype, html fills the viewport minus its margins: 400 − 200 = 200 wide, 300 − 100 = 200 tall, at (100, 50).</p></div>
+<div class="cap" data-t="8" data-step="Yellow shadow"><h3>3. A shadow moved 480px</h3><p>html has no <code>--a</code>, so <code>var()</code> uses its fallback and the shadow is <code>0 5in #ebe77e inset</code>. An inset shadow paints the box, except where a copy of the box, moved by the offset, sits. 5in = 480px, more than html's 200: the copy leaves the box, and the whole box turns yellow.</p></div>
+<div class="cap" data-t="12" data-step="body"><h3>4. body, 184 × 184</h3><p>The <code>*</code> nested in <code>&amp;</code> is <code>&amp; *</code>: head, style and body. body keeps its default 8px margin: 184 × 184 at (108, 58), centered on (200, 150). Its background, <code>#1a4341</code>, hides the yellow.</p></div>
+<div class="cap" data-t="16" data-step="Green shadow"><h3>5. 97Q of green</h3><p>body sets <code>--a:97Q#84be8d</code>, so its shadow is <code>0 97Q #84be8d inset</code>. 97Q = 97 × 0.945 ≈ 91.65px. The copy moves down 91.65px: only the top band stays painted, green, from y = 58 to about 149.65.</p></div>
+<div class="cap" data-t="20" data-step="Circle"><h3>6. circle(70px)</h3><p><code>clip-path:circle(70px)</code> keeps only a disc of radius 70 around body's center, (200, 150). Around it, html's yellow shows again. The disc is green above y ≈ 150, dark green below.</p></div>
+<div class="cap" data-t="24" data-step="Result" data-live="120 characters · 100% match"><h3>7. Result: 120 characters</h3><p>A 200 × 200 yellow square with a disc in the middle: green on top, the background color at the bottom. One shadow declaration, two colors thanks to one variable.</p></div>
+{%- endif %}
+</div>
+<div class="live"></div>
+</div>
+</div>
+<script>
+(window.AnimScenes = window.AnimScenes || {}).t0514 = (fig) => {
+  const fr = document.documentElement.lang === 'fr';
+  const $ = (s) => fig.querySelector(s);
+  const $$ = (s) => [...fig.querySelectorAll(s)];
+  const live = $('.live');
+  const ease = (x) => (x < 0.5 ? 4 * x * x * x : 1 - Math.pow(-2 * x + 2, 3) / 2);
+  const pr = (t, a, b) => ease(Math.min(1, Math.max(0, (t - a) / (b - a))));
+  const win = (t, a, b) => Math.min(pr(t, a, a + 0.5), 1 - pr(t, b - 0.3, b));
+  const c = fr ? ' :' : ':';
+  const n = (v) => (fr ? String(v).replace('.', ',') : String(v));
+  const mix = (k, a, b) => (k <= 0 ? b : k >= 1 ? a : `color-mix(in srgb, ${a} ${(k * 100).toFixed(1)}%, ${b})`);
+  // Measured on the official code in local Chrome (400 × 300 iframe, quirks mode, getBoundingClientRect, variant renders).
+  // html 100, 50, 200 × 200 (margin 50 100, fills the viewport minus its margins); box-shadow 0 480px inset: the whole box yellow.
+  // body 108, 58, 184 × 184 (default margin 8); box-shadow 0 91.6535px inset (97Q): green from y 58 to 149.65.
+  // clip-path circle(70px) at body's center (200, 150): x 130 to 270, y 80 to 220.
+  const bgc = $('.t0514-bgc'), htmlc = $('.t0514-htmlc'), yel = $('.t0514-yel');
+  const body = $('.t0514-body'), grn = $('.t0514-grn');
+  const xhtml = $('.t0514-xhtml'), xbody = $('.t0514-xbody');
+  const chtml = $('.t0514-chtml'), cbody = $('.t0514-cbody');
+  const labs = $$('.zlab[data-l]');
+  const ivs = [[0.3, 3.8], [4.4, 11.8], [8.6, 11.8], [12.4, 15.8], [16.6, 19.8], [20.6, 23.8]];
+  const DG = 97 * 96 / 101.6; // 97Q in px
+  return (t, step) => {
+    const teach = fig.dataset.teach === '1';
+    const wide = fig.dataset.view !== 'canvas';
+    const tw = teach ? 1 - pr(t, 24.2, 25.2) : 0;
+    // step 1: the background of html paints the canvas
+    bgc.style.opacity = pr(t, 0.6, 1.6);
+    // step 2: html's box
+    htmlc.style.opacity = 0.45 * tw * pr(t, 4.6, 5.4);
+    xhtml.style.opacity = win(t, 4.3, 11.8);
+    // step 3: the yellow inset shadow, its copy moved down 480px
+    const d = 480 * pr(t, 8.8, 10.6);
+    yel.style.height = `${Math.min(d, 200)}px`;
+    chtml.style.top = `${50 + d}px`;
+    chtml.style.opacity = win(t, 8.5, 11.8);
+    // step 4: body
+    body.style.opacity = pr(t, 12.6, 13.4);
+    body.style.background = mix(tw, 'var(--t0514-body)', 'var(--t0514-bg)');
+    xbody.style.opacity = win(t, 12.3, 23.8);
+    // step 5: the green inset shadow, moved 97Q
+    const d2 = DG * pr(t, 16.8, 18.8);
+    grn.style.height = `${d2}px`;
+    cbody.style.top = `${58 + d2}px`;
+    cbody.style.opacity = win(t, 16.5, 19.8);
+    // step 6: circle(70px); 131 covers the whole 184 box
+    const r = 131 - 61 * pr(t, 20.6, 22.4);
+    body.style.clipPath = `circle(${r}px)`;
+    labs.forEach((l) => {
+      const k = +l.dataset.l;
+      l.style.opacity = win(t, ...ivs[k - 1]);
+    });
+    labs[2].style.top = `${wide ? 54 + d : Math.min(54 + d, 280)}px`;
+    labs[4].style.top = `${62 + d2}px`;
+    let txt;
+    if (step === 0) txt = '* → html, head, style, body · background #1a4341';
+    else if (step === 1) txt = `html${c} 400 − 2 × 100 = 200 · 300 − 2 × 50 = 200`;
+    else if (step === 2) txt = `0 5in #ebe77e inset · 5in = 480px > 200`;
+    else if (step === 3) txt = `body${c} 200 − 2 × 8 = 184 · (108, 58) → (292, 242)`;
+    else if (step === 4) txt = `97Q = 97 × ${n(0.945)} ≈ ${n(91.65)}px · y = 58 → ${n(149.65)}`;
+    else if (step === 5) txt = `circle(70px)${c} x = 130 → 270 · y = 80 → 220`;
+    else txt = $$('.caps .cap')[6].dataset.live || '';
+    live.textContent = txt;
+  };
+};
+</script>
+</figure>
