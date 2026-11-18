@@ -1,0 +1,146 @@
+<figure class="anim t0614" data-duration="27" data-scene="t0614" data-wide="-50 -40 500 380" data-off-label="-46 -36" style="--bg:#ffffff">
+<style>
+.t0614{--t0614-ho:#f59e0b;--t0614-bo:#3b82f6;--t0614-hd:#7c3aed;--t0614-bd:#db2777}
+.t0614 .scene .t0614-can{left:0;top:0;width:400px;height:300px;background:#fff}
+.t0614 .scene .t0614-hring{left:99.59375px;top:50px;width:200.8125px;height:200px;background:#000;opacity:0;z-index:2}
+.t0614 .scene .t0614-bring{box-sizing:border-box;border:0 solid #000;opacity:0;z-index:3}
+.t0614 .scene .t0614-dash{box-sizing:border-box;opacity:0;z-index:6}
+.t0614 .scene .t0614-hbox{left:129.59375px;top:80px;width:140.8125px;height:140px;outline:calc(1.5px * var(--k, 1)) dashed var(--t0614-hd);outline-offset:calc(-0.75px * var(--k, 1))}
+.t0614 .scene .t0614-bbox{left:150.0625px;top:100.46875px;width:99.875px;height:99.0625px;border-radius:49.53px;outline:calc(1.5px * var(--k, 1)) dashed var(--t0614-bd);outline-offset:calc(-0.75px * var(--k, 1))}
+.t0614 .zlab{color:#14142a;background:rgb(255 255 255 / .92);box-shadow:0 0 0 1px rgb(20 20 42 / .25);padding:1px 5px;border-radius:3px;opacity:0}
+</style>
+<div class="anim-col">
+<div class="stage" role="img" aria-label="{% if include.lang == "fr" %}Animation : html, zoomé 1,6, avec la marge 50 81, fait 140,8 × 140 en (129,6, 80) ; son outline de 30px suit ses coins arrondis de 40,8px, puis corner-shape:bevel coupe les coins en biais : un octogone de (99,6, 50) à (300,4, 250) ; body, zoomé 2,56, est un cercle de 49,5px de rayon centré en (200, 150), vide : le trou ; son outline de 48px fait un anneau jusqu'à 97,5px qui remplit l'intérieur de l'octogone{% else %}Animation: html, zoomed 1.6, with the margin 50 81, is 140.8 × 140 at (129.6, 80); its 30px outline follows its 40.8px round corners, then corner-shape:bevel cuts the corners straight: an octagon from (99.6, 50) to (300.4, 250); body, zoomed 2.56, is a circle of radius 49.5px centered on (200, 150), empty: the hole; its 48px outline makes a ring out to 97.5px that fills the inside of the octagon{% endif %}">
+<div class="scene">
+<div class="t0614-can"></div>
+<div class="t0614-hring"></div>
+<div class="t0614-bring"></div>
+<div class="t0614-dash t0614-hbox"></div>
+<div class="t0614-dash t0614-bbox"></div>
+<span class="zlab t0614-l1" data-l="1">{% if include.lang == "fr" %}html : 140,8 × 140 en (129,6, 80){% else %}html: 140.8 × 140 at (129.6, 80){% endif %}</span>
+<span class="zlab t0614-l2" data-l="1">{% if include.lang == "fr" %}marge 50 81 × 1,6 = 80 129,6{% else %}margin 50 81 × 1.6 = 80 129.6{% endif %}</span>
+<span class="zlab t0614-l1" data-l="2">{% if include.lang == "fr" %}outline 20q × 1,6 = 30{% else %}outline 20q × 1.6 = 30{% endif %}</span>
+<span class="zlab t0614-l2" data-l="2">{% if include.lang == "fr" %}rayon 27q × 1,6 = 40,8{% else %}radius 27q × 1.6 = 40.8{% endif %}</span>
+<span class="zlab t0614-l1" data-l="3">corner-shape:bevel</span>
+<span class="zlab t0614-l2" data-l="3">{% if include.lang == "fr" %}coupe : 40,8 dedans, 58,4 dehors{% else %}cut: 40.8 inside, 58.4 outside{% endif %}</span>
+<span class="zlab t0614-l1" data-l="4">{% if include.lang == "fr" %}body : zoom 1,6 × 1,6 = 2,56{% else %}body: zoom 1.6 × 1.6 = 2.56{% endif %}</span>
+<span class="zlab t0614-l2" data-l="4">{% if include.lang == "fr" %}rayon 65,3 → 49,5 : un cercle{% else %}radius 65.3 → 49.5: a circle{% endif %}</span>
+<span class="zlab t0614-l1" data-l="5">{% if include.lang == "fr" %}outline 20q × 2,56 = 48{% else %}outline 20q × 2.56 = 48{% endif %}</span>
+<span class="zlab t0614-l2" data-l="5">{% if include.lang == "fr" %}anneau de 49,5 à 97,5{% else %}ring from 49.5 to 97.5{% endif %}</span>
+</div>
+</div>
+<div class="legend"><span><i style="--c:#ffffff;outline:1px solid currentColor;outline-offset:-1px"></i>{% if include.lang == "fr" %}canevas blanc{% else %}white canvas{% endif %}</span><span><i style="--c:var(--t0614-ho)"></i>{% if include.lang == "fr" %}outline de html{% else %}html's outline{% endif %}</span><span><i style="--c:var(--t0614-bo);border-radius:50%"></i>{% if include.lang == "fr" %}outline de body{% else %}body's outline{% endif %}</span><span><i style="--c:transparent;outline:2px dashed currentColor;outline-offset:-2px"></i>{% if include.lang == "fr" %}boîtes de html et body{% else %}html and body boxes{% endif %}</span></div>
+</div>
+<div class="anim-side">
+<pre class="code" aria-hidden="true">&lt;style><span data-on="1 4">*</span>{<span data-on="2 5">outline:solid 20q</span>;<span data-on="2 4">border-radius:27q</span>;<span data-on="1 2 4 5">zoom:1.6</span>}<span data-on="1 3">&amp;</span>{<span data-on="3">corner-shape:bevel</span>;<span data-on="1">margin:50 81</span></pre>
+<div class="now" aria-live="polite">
+<div class="caps">
+{%- if include.lang == "fr" %}
+<div class="cap" data-t="0" data-step="html"><h3>1. Quatre éléments, deux zooms</h3><p><code>*</code> touche html, head, style et body ; head et style restent cachés. Chacun reçoit <code>zoom:1.6</code>, et les zooms se multiplient : body, dans html, est agrandi 1,6 × 1,6 = 2,56 fois. <code>&amp;</code> seul, c'est html. Sa marge <code>50 81</code> est en px (mode quirks), fois 1,6 : 80 et 129,6. html remplit la hauteur de la page : 140,8 × 140 en (129,6, 80).</p></div>
+<div class="cap" data-t="4.5" data-step="Outline"><h3>2. L'outline de html</h3><p><code>outline:solid 20q</code> : 20q, c'est 18,9px. Fois 1,6, Chrome la trace sur 30px, autour de la boîte de html. <code>border-radius:27q</code> vaut 25,5px, fois 1,6 : 40,8px. L'outline suit les coins arrondis : 40,8px de rayon dedans, 70,8px dehors.</p></div>
+<div class="cap" data-t="9" data-step="Biseau"><h3>3. Les coins en biais</h3><p><code>corner-shape:bevel</code> remplace chaque coin arrondi par une coupe droite. Dedans, elle part à 40,8px du coin. L'outline garde ses 30px d'épaisseur, donc dehors la coupe part à 58,4px du coin. C'est l'octogone, de (99,6, 50) à (300,4, 250). Seul html le reçoit.</p></div>
+<div class="cap" data-t="13.5" data-step="body"><h3>4. body, le trou</h3><p>body est agrandi 2,56 fois. Sa marge par défaut de 8px devient 20,5px : une boîte de 99,9 × 99,1 en (150,1, 100,5), centrée sur (200, 150). Son rayon, 27q × 2,56 = 65,3px, dépasse la moitié de sa taille : le navigateur le réduit à 49,5px. body est un cercle, et rien ne le remplit : c'est le trou blanc.</p></div>
+<div class="cap" data-t="18" data-step="Anneau"><h3>5. L'outline de body</h3><p>20q × 2,56 : Chrome trace une outline de 48px. Elle suit la forme ronde de body : un anneau de 49,5px à 97,5px autour de (200, 150). Il remplit l'intérieur de l'octogone de html, dont les points les plus loin sont à 76px du centre, et passe sur l'outline de html, dans le même noir.</p></div>
+<div class="cap" data-t="22.5" data-step="Résultat" data-live="87 caractères · 100 % identique"><h3>6. Résultat : 87 caractères</h3><p>Deux outlines tirées de la même règle : une en biais sur html fait l'octogone, une ronde sur body le remplit autour du trou.</p></div>
+{%- else %}
+<div class="cap" data-t="0" data-step="html"><h3>1. Four elements, two zooms</h3><p><code>*</code> selects html, head, style and body; head and style stay hidden. Each one gets <code>zoom:1.6</code>, and zooms multiply: body, inside html, is scaled 1.6 × 1.6 = 2.56. <code>&amp;</code> on its own is html. Its margin <code>50 81</code> is in px (quirks mode), times 1.6: 80 and 129.6. html fills the page height: 140.8 × 140 at (129.6, 80).</p></div>
+<div class="cap" data-t="4.5" data-step="Outline"><h3>2. html's outline</h3><p><code>outline:solid 20q</code>: 20q is 18.9px. Times 1.6, Chrome draws it 30px wide, around html's box. <code>border-radius:27q</code> is 25.5px, times 1.6: 40.8px. The outline follows the round corners: a 40.8px radius inside, 70.8px outside.</p></div>
+<div class="cap" data-t="9" data-step="Bevel"><h3>3. Straight cuts</h3><p><code>corner-shape:bevel</code> turns each round corner into a straight cut. Inside, it starts 40.8px from the corner. The outline stays 30px thick, so outside the cut starts 58.4px from the corner. That is the octagon, from (99.6, 50) to (300.4, 250). Only html gets it.</p></div>
+<div class="cap" data-t="13.5" data-step="body"><h3>4. body, the hole</h3><p>body is scaled 2.56. Its default 8px margin becomes 20.5px: a 99.9 × 99.1 box at (150.1, 100.5), centered on (200, 150). Its radius, 27q × 2.56 = 65.3px, is more than half its size: the browser scales it down to 49.5px. body is a circle, and nothing fills it: the white hole.</p></div>
+<div class="cap" data-t="18" data-step="Ring"><h3>5. body's outline</h3><p>20q × 2.56: Chrome draws a 48px outline. It follows body's round shape: a ring from 49.5px to 97.5px around (200, 150). It fills the inside of html's octagon, whose farthest points are 76px from the center, and runs over html's outline, in the same black.</p></div>
+<div class="cap" data-t="22.5" data-step="Result" data-live="87 characters · 100% match"><h3>6. Result: 87 characters</h3><p>Two outlines from the same rule: a beveled one on html makes the octagon, a round one on body fills it around the hole.</p></div>
+{%- endif %}
+</div>
+<div class="live"></div>
+</div>
+</div>
+<script>
+(window.AnimScenes = window.AnimScenes || {}).t0614 = (fig) => {
+  const fr = document.documentElement.lang === 'fr';
+  const $ = (s) => fig.querySelector(s);
+  const $$ = (s) => [...fig.querySelectorAll(s)];
+  const live = $('.live');
+  const ease = (x) => (x < 0.5 ? 4 * x * x * x : 1 - Math.pow(-2 * x + 2, 3) / 2);
+  const pr = (t, [a, b]) => ease(Math.min(1, Math.max(0, (t - a) / (b - a))));
+  const win = (t, a, b) => Math.min(pr(t, [a, a + 0.5]), 1 - pr(t, [b - 0.2, b]));
+  const c = fr ? '\u00a0:' : ':';
+  const n = (v) => (fr ? String(v).replace('.', ',') : String(v));
+  const mix = (k, a, b) => (k <= 0 ? b : k >= 1 ? a : `color-mix(in srgb, ${a} ${(k * 100).toFixed(1)}%, ${b})`);
+  // Measured on the official code in local Chrome (400 × 300 iframe, quirks mode, getBoundingClientRect, getComputedStyle):
+  // html zoom 1.6: box 140.8125 × 140 at (129.59375, 80); outline 30px (computed 18.75px × 1.6); radius 25.5118px × 1.6 = 40.82px.
+  // Outline with round corners: radius 40.8 inside, 70.8 outside (measured on a render without the bevel).
+  // With bevel: inner cut 40.82; the outer edge is parallel at 30px: cut 40.82 + 2 × 30 − 30√2 = 58.39 (render: top edge from x = 157 to 242).
+  // body zoom 2.56: box 99.875 × 99.0625 at (150.0625, 100.46875); radius 65.31 scaled to 49.53 (circle); outline 48px (18.75px × 2.56).
+  const FIN = 22.5, HX = 129.59375, HY = 80, HW = 140.8125, HH = 140, R1 = 40.82, W1 = 30;
+  const BX = 150.0625, BY = 100.46875, BW = 99.875, BH = 99.0625, R2 = 49.53, W2 = 48;
+  const OX = HX - W1, OY = HY - W1;
+  const hring = $('.t0614-hring'), bring = $('.t0614-bring'), hbox = $('.t0614-hbox'), bbox = $('.t0614-bbox');
+  const labs = $$('.zlab');
+  // Contour of a box (x, y, w, h) whose corners go from round (radius rr) to bevel (cut rb) as s goes from 0 to 1.
+  const N = 16;
+  const contour = (x, y, w, h, rr, rb, s) => {
+    const pts = [];
+    const corners = [
+      [x + rr, y + rr, Math.PI, [x, y + rb], [x + rb, y]],
+      [x + w - rr, y + rr, 1.5 * Math.PI, [x + w - rb, y], [x + w, y + rb]],
+      [x + w - rr, y + h - rr, 0, [x + w, y + h - rb], [x + w - rb, y + h]],
+      [x + rr, y + h - rr, 0.5 * Math.PI, [x + rb, y + h], [x, y + h - rb]],
+    ];
+    for (const [cx, cy, a0, p0, p1] of corners) {
+      for (let i = 0; i <= N; i++) {
+        const u = i / N, a = a0 + u * Math.PI / 2;
+        const rx = cx + rr * Math.cos(a), ry = cy + rr * Math.sin(a);
+        const bx = p0[0] + (p1[0] - p0[0]) * u, by = p0[1] + (p1[1] - p0[1]) * u;
+        pts.push([rx + (bx - rx) * s - OX, ry + (by - ry) * s - OY]);
+      }
+    }
+    return pts;
+  };
+  const ring = (w, s) => {
+    const out = contour(HX - w, HY - w, HW + 2 * w, HH + 2 * w, R1 + w, R1 + 2 * w - w * Math.SQRT2, s);
+    const inn = contour(HX, HY, HW, HH, R1, R1, s);
+    const all = out.concat([out[0]], inn, [inn[0]], [out[0]]);
+    return `polygon(evenodd, ${all.map(([a, b]) => `${a.toFixed(2)}px ${b.toFixed(2)}px`).join(', ')})`;
+  };
+  const ivs = [[0.3, 4.5], [4.8, 9], [9.3, 13.5], [13.8, 18], [18.3, FIN]];
+  return (t, step) => {
+        const teach = fig.dataset.teach === '1';
+    const tw = teach ? 1 - pr(t, [FIN, FIN + 0.8]) : 0;
+    const out = 1 - pr(t, [FIN, FIN + 0.6]);
+    // html box, then html's outline: grows to 30px with round corners, then the corners turn into straight cuts
+    hbox.style.opacity = Math.min(pr(t, [0.4, 1.1]), out);
+    const w1 = W1 * pr(t, [5.2, 7.4]);
+    const s = pr(t, [9.8, 12.2]);
+    hring.style.opacity = w1 > 0.05 ? 1 : 0;
+    hring.style.clipPath = ring(Math.max(w1, 0.05), s);
+    hring.style.background = mix(tw, 'var(--t0614-ho)', '#000');
+    // body: its box (a circle), then its 48px outline grows
+    bbox.style.opacity = Math.min(pr(t, [14, 14.7]), out);
+    const w2 = W2 * pr(t, [18.8, 21]);
+    bring.style.opacity = w2 > 0.05 ? 1 : 0;
+    bring.style.left = `${BX - w2}px`;
+    bring.style.top = `${BY - w2}px`;
+    bring.style.width = `${BW + 2 * w2}px`;
+    bring.style.height = `${BH + 2 * w2}px`;
+    bring.style.borderWidth = `${w2}px`;
+    bring.style.borderRadius = `${R2 + w2}px`;
+    bring.style.borderColor = mix(tw, 'var(--t0614-bo)', '#000');
+    labs.forEach((l) => {
+      const k = +l.dataset.l, second = l.classList.contains('t0614-l2');
+      // top left of the canvas, above the octagon (y = 50), clear of the player's canvas label at the bottom
+      l.style.left = 'calc(4px * var(--k, 1))';
+      l.style.top = `calc(${second ? 19 : 3}px * var(--k, 1))`;
+      l.style.opacity = win(t, ...ivs[k - 1]);
+    });
+    let txt;
+    if (step === 0) txt = `html${c} ${n('140.8')} × 140 ${fr ? 'en' : 'at'} (${n('129.6')}, 80) · zoom ${n('1.6')}`;
+    else if (step === 1) txt = `outline${c} 30px · ${fr ? 'rayon' : 'radius'} ${n('40.8')} → ${n('70.8')}`;
+    else if (step === 2) txt = `bevel${c} ${fr ? 'coupe' : 'cut'} ${n('40.8')} → ${n('58.4')} · ${fr ? 'octogone' : 'octagon'} ${n('200.8')} × 200`;
+    else if (step === 3) txt = `body${c} zoom ${n('2.56')} · ${fr ? 'cercle de rayon' : 'circle of radius'} ${n('49.5')}`;
+    else if (step === 4) txt = `${fr ? 'anneau' : 'ring'}${c} ${n('49.5')} → ${n('97.5')} ${fr ? 'autour de' : 'around'} (200, 150)`;
+    else txt = $$('.caps .cap')[5].dataset.live || '';
+    live.textContent = txt;
+  };
+};
+</script>
+</figure>
