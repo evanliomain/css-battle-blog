@@ -1,0 +1,138 @@
+<figure class="anim t0520" data-duration="32" data-scene="t0520" data-wide="-70 -40 540 340" data-off-label="-64 -34" style="--bg:#30383f">
+<style>
+.t0520{--t0520-dark:#30383f;--t0520-cream:#f4dcbf;--t0520-hb:#6366f1;--t0520-ho:#f59e0b;--t0520-bb:#14b8a6;--t0520-bo:#ec4899}
+.t0520 .scene .t0520-white{left:-90px;top:-60px;width:580px;height:420px;background:#fff;z-index:0}
+.t0520 .scene .t0520-hbox{left:-32px;top:125px;width:464px;height:50px;opacity:0;z-index:1}
+.t0520 .scene .t0520-under{width:8px;height:25px;background:var(--t0520-cream);opacity:0;z-index:2}
+.t0520 .scene .t0520-row{left:-57px;width:514px;height:25px;background:repeating-linear-gradient(90deg,var(--t0520-hc,#f4dcbf) 0 50px,transparent 0 77.3333px);opacity:0;z-index:3}
+.t0520 .scene .t0520-side{top:100px;width:25px;height:100px;background:var(--t0520-hc,#f4dcbf);opacity:0;z-index:3}
+.t0520 .scene .t0520-grp{left:160px;top:125px;width:80px;height:50px;transform-origin:50% 50%;z-index:4}
+.t0520 .scene .t0520-grp > *{position:absolute}
+.t0520 .t0520-body{left:0;top:0;width:80px;height:50px;opacity:0}
+.t0520 .t0520-brl{left:-25px;top:-25px;width:50px;height:100px;clip-path:polygon(0 0,50px 0,50px 25px,25px 25px,25px 75px,50px 75px,50px 100px,0 100px);opacity:0}
+.t0520 .t0520-brr{left:55px;top:-25px;width:50px;height:100px;clip-path:polygon(0 0,50px 0,50px 100px,0 100px,0 75px,25px 75px,25px 25px,0 25px);opacity:0}
+.t0520 .scene .t0520-box{box-sizing:border-box;outline:calc(1.5px * var(--k, 1)) dashed #fff;outline-offset:calc(-0.75px * var(--k, 1));filter:drop-shadow(0 0 calc(1px * var(--k, 1)) #14142a);opacity:0;z-index:10}
+.t0520 .scene .zlab{left:4px;top:4px;color:#14142a;background:rgb(255 255 255 / .92);box-shadow:0 0 0 1px rgb(20 20 42 / .25);padding:1px 5px;border-radius:3px;opacity:0}
+.t0520 .legend .t0520-ol{box-shadow:0 0 0 1px currentColor}
+.t0520 .legend .t0520-dash{background:none;outline:2px dashed currentColor;outline-offset:-2px}
+</style>
+<div class="anim-col">
+<div class="stage" role="img" aria-label="{% if include.lang == "fr" %}Animation : le style va dans head. Le fond #30383f de html passe au canevas, anthracite partout. html a les marges 125 −32 : en mode quirks il fait 464 × 50 en (−32, 125). Son outline en tirets #f4dcbf fait 27Q, arrondi à 25px vers le bas : des tirets de 50px séparés de 27,33px, en haut de y = 100 à 125 et en bas de y = 175 à 200. body a les marges 0 192 : 80 × 50 en (160, 125), avec le même outline. scale: 2 le double autour du centre : 160 × 100 en (120, 100), avec un outline de 50px. Son fond cache les tirets du milieu, et son outline forme deux crochets. Deux tirets de html restent de chaque côté.{% else %}Animation: the style goes into head. html's #30383f background goes to the canvas, dark slate everywhere. html has the margins 125 −32: in quirks mode it is 464 × 50 at (−32, 125). Its #f4dcbf dashed outline is 27Q, rounded down to 25px: 50px dashes 27.33px apart, at the top from y = 100 to 125 and at the bottom from y = 175 to 200. body has the margins 0 192: 80 × 50 at (160, 125), with the same outline. scale: 2 doubles it around its center: 160 × 100 at (120, 100), with a 50px outline. Its background hides the middle dashes, and its outline makes two brackets. Two of html's dashes are left on each side.{% endif %}">
+<div class="scene">
+<div class="t0520-white"></div>
+<div class="t0520-hbox"></div>
+<div class="t0520-under" style="left:66px;top:100px"></div>
+<div class="t0520-under" style="left:66px;top:175px"></div>
+<div class="t0520-under" style="left:326px;top:100px"></div>
+<div class="t0520-under" style="left:326px;top:175px"></div>
+<div class="t0520-row" style="top:100px"></div>
+<div class="t0520-row" style="top:175px"></div>
+<div class="t0520-side" style="left:-57px"></div>
+<div class="t0520-side" style="left:432px"></div>
+<div class="t0520-grp"><div class="t0520-body"></div><div class="t0520-brl"></div><div class="t0520-brr"></div></div>
+<div class="t0520-box t0520-xhtml" style="left:-32px;top:125px;width:464px;height:50px"></div>
+<div class="t0520-box t0520-xbody"></div>
+<span class="zlab" data-l="1">html › head › style, body</span>
+<span class="zlab" data-l="2">{% if include.lang == "fr" %}fond de html → canevas{% else %}html's background → canvas{% endif %}</span>
+<span class="zlab" data-l="3">html 464 × 50 · (−32, 125)</span>
+<span class="zlab" data-l="4">{% if include.lang == "fr" %}27Q → 25px · tiret 50 · espace 27,33{% else %}27Q → 25px · dash 50 · gap 27.33{% endif %}</span>
+<span class="zlab" data-l="5">{% if include.lang == "fr" %}body 80 × 50 · (160, 125) · outline 25px{% else %}body 80 × 50 · (160, 125) · outline 25px{% endif %}</span>
+<span class="zlab" data-l="6">{% if include.lang == "fr" %}scale: 2 → 160 × 100 · outline 50px{% else %}scale: 2 → 160 × 100 · outline 50px{% endif %}</span>
+</div>
+</div>
+<div class="legend"><span><i class="t0520-ol" style="--c:#30383f"></i>{% if include.lang == "fr" %}#30383f, le canevas{% else %}#30383f, the canvas{% endif %}</span><span><i class="t0520-ol" style="--c:#f4dcbf"></i>#f4dcbf</span><span><i style="--c:var(--t0520-hb)"></i>{% if include.lang == "fr" %}boîte de html{% else %}html's box{% endif %}</span><span><i style="--c:var(--t0520-ho)"></i>{% if include.lang == "fr" %}outline de html{% else %}html's outline{% endif %}</span><span><i style="--c:var(--t0520-bb)"></i>{% if include.lang == "fr" %}boîte de body{% else %}body's box{% endif %}</span><span><i style="--c:var(--t0520-bo)"></i>{% if include.lang == "fr" %}outline de body{% else %}body's outline{% endif %}</span><span><i class="t0520-dash"></i>{% if include.lang == "fr" %}boîtes{% else %}boxes{% endif %}</span></div>
+</div>
+<div class="anim-side">
+<pre class="code" aria-hidden="true">&lt;style><span data-on="1">*{</span><span data-on="4 5">outline:27Q dashed#f4dcbf</span>;<span data-on="3">margin:125-32</span>;<span data-on="2">background:#30383f</span>;<span data-on="1">*{</span><span data-on="5">margin:0 192</span>;<span data-on="6">scale:2</span></pre>
+<div class="now" aria-live="polite">
+<div class="caps">
+{%- if include.lang == "fr" %}
+<div class="cap" data-t="0" data-step="Éléments"><h3>1. html, head, style, body</h3><p>Le <code>&lt;style></code> va dans head, et body reste vide. <code>*</code> vise html, head, style et body. Le <code>*{</code> imbriqué vise les éléments placés dans un autre : head, style et body. head et style ne s'affichent pas : il reste deux boîtes, html et body.</p></div>
+<div class="cap" data-t="4" data-step="Fond"><h3>2. Un canevas anthracite</h3><p>html et body reçoivent <code>background:#30383f</code>. Celui de html ne se peint pas dans sa boîte : il passe au canevas, qui devient anthracite partout.</p></div>
+<div class="cap" data-t="8" data-step="html"><h3>3. La boîte de html</h3><p>html reçoit <code>margin:125-32</code> : 125px en haut et en bas, −32px à gauche et à droite. Il fait 400 + 64 = 464 de large, de x = −32 à 432. En mode quirks, il remplit la hauteur moins ses marges : 300 − 250 = 50, de y = 125 à 175.</p></div>
+<div class="cap" data-t="12.5" data-step="Outline de html"><h3>4. L'outline en tirets de html</h3><p><code>27Q</code> vaut 25,51px, et Chrome l'arrondit au pixel inférieur : 25px. L'outline entoure la boîte : de −57 à 457 et de y = 100 à 200. Les tirets font 50px. Le côté du haut fait 514px : 7 tirets et 6 espaces étirés à 27,33px, avec un tiret plein à chaque coin. Les côtés gauche et droit font 100px : deux tirets de 50px, sans espace, donc pleins.</p></div>
+<div class="cap" data-t="17.5" data-step="body"><h3>5. body et son outline</h3><p>Le <code>*{margin:0 192</code> imbriqué remplace la marge de body : 464 − 384 = 80 de large, en x = 160. body remplit la hauteur de html : 50, de y = 125 à 175. Il a le même outline de 25px. Son côté du haut fait 130px : deux tirets de 50px et un espace de 30px. Ses côtés font 100px : pleins.</p></div>
+<div class="cap" data-t="22.5" data-step="scale"><h3>6. scale: 2</h3><p><code>scale:2</code> double body autour de son centre (200, 150) : sa boîte fait 160 × 100, de (120, 100) à (280, 200). Son outline double aussi : 50px, de 70 à 330 et de y = 50 à 250. body passe au-dessus de l'outline de html : son fond cache les tirets du milieu.</p></div>
+<div class="cap" data-t="28" data-step="Résultat" data-live="90 caractères · 100 % identique"><h3>7. Résultat : 90 caractères</h3><p>L'outline de body forme deux crochets : des tirets de 100px en haut et en bas, séparés de 60px, et des côtés pleins. Il reste deux tirets de html de chaque côté : de 20,33 à 70,33 et de 329,67 à 379,67.</p></div>
+{%- else %}
+<div class="cap" data-t="0" data-step="Elements"><h3>1. html, head, style, body</h3><p>The <code>&lt;style></code> goes into head, and body stays empty. <code>*</code> matches html, head, style and body. The nested <code>*{</code> matches the elements inside another one: head, style and body. head and style are not displayed: two boxes are left, html and body.</p></div>
+<div class="cap" data-t="4" data-step="Background"><h3>2. A dark slate canvas</h3><p>html and body get <code>background:#30383f</code>. html's is not painted in its box: it goes to the canvas, which turns dark slate everywhere.</p></div>
+<div class="cap" data-t="8" data-step="html"><h3>3. html's box</h3><p>html gets <code>margin:125-32</code>: 125px at the top and bottom, −32px on the left and right. It is 400 + 64 = 464 wide, from x = −32 to 432. In quirks mode it fills the height minus its margins: 300 − 250 = 50, from y = 125 to 175.</p></div>
+<div class="cap" data-t="12.5" data-step="html's outline"><h3>4. html's dashed outline</h3><p><code>27Q</code> is 25.51px, and Chrome rounds it down to 25px. The outline goes around the box: from −57 to 457 and from y = 100 to 200. The dashes are 50px long. The top side is 514px long: 7 dashes and 6 gaps stretched to 27.33px, with a full dash at each corner. The left and right sides are 100px long: two 50px dashes, no gap, so they are solid.</p></div>
+<div class="cap" data-t="17.5" data-step="body"><h3>5. body and its outline</h3><p>The nested <code>*{margin:0 192</code> replaces body's margin: 464 − 384 = 80 wide, at x = 160. body fills html's height: 50, from y = 125 to 175. It has the same 25px outline. Its top side is 130px long: two 50px dashes and a 30px gap. Its sides are 100px long: solid.</p></div>
+<div class="cap" data-t="22.5" data-step="scale"><h3>6. scale: 2</h3><p><code>scale:2</code> doubles body around its center (200, 150): its box is 160 × 100, from (120, 100) to (280, 200). Its outline doubles too: 50px, from 70 to 330 and from y = 50 to 250. body now sits above html's outline: its background hides the middle dashes.</p></div>
+<div class="cap" data-t="28" data-step="Result" data-live="90 characters · 100% match"><h3>7. Result: 90 characters</h3><p>body's outline makes two brackets: 100px dashes at the top and bottom, 60px apart, and solid sides. Two of html's dashes are left on each side: from 20.33 to 70.33 and from 329.67 to 379.67.</p></div>
+{%- endif %}
+</div>
+<div class="live"></div>
+</div>
+</div>
+<script>
+(window.AnimScenes = window.AnimScenes || {}).t0520 = (fig) => {
+  const fr = document.documentElement.lang === 'fr';
+  const $ = (s) => fig.querySelector(s);
+  const $$ = (s) => [...fig.querySelectorAll(s)];
+  const live = $('.live');
+  const ease = (x) => (x < 0.5 ? 4 * x * x * x : 1 - Math.pow(-2 * x + 2, 3) / 2);
+  const pr = (t, a, b) => ease(Math.min(1, Math.max(0, (t - a) / (b - a))));
+  const win = (t, a, b) => Math.min(pr(t, a, a + 0.5), 1 - pr(t, b - 0.3, b));
+  const c = fr ? '\u00a0:' : ':';
+  const n = (x) => (fr ? String(x).replace('.', ',') : String(x));
+  const mix = (k, a, b) => (k <= 0 ? b : k >= 1 ? a : `color-mix(in srgb, ${a} ${(k * 100).toFixed(1)}%, ${b})`);
+  // Measured on the official code in local Chrome (400 × 300 iframe, quirks mode, getBoundingClientRect, getComputedStyle, variant renders).
+  // html -32, 125, 464 × 50 (margins 125 -32; its background goes to the canvas). Outline 27Q, computed 25px:
+  // outer rectangle -57..457 × 100..200; top and bottom sides: dashes of 50 at -57 + 77.333k (k = 0..6); left and right sides solid.
+  // body 160, 125, 80 × 50 (margin 0 192), same outline: 135..185 and 215..265 at the top and bottom, sides solid (100 long).
+  // scale 2 around (200, 150): box 120..280 × 100..200, outline 50px, 70..330 × 50..250; body's background hides html's dashes
+  // (with body's background removed, 5,300 pixels change).
+  const white = $('.t0520-white'), hbox = $('.t0520-hbox'), grp = $('.t0520-grp'), body = $('.t0520-body');
+  const brs = $$('.t0520-brl, .t0520-brr'), rows = $$('.t0520-row, .t0520-side'), under = $$('.t0520-under');
+  const xhtml = $('.t0520-xhtml'), xbody = $('.t0520-xbody');
+  const labs = $$('.zlab');
+  const ivs = [[0.3, 3.8], [4.3, 7.8], [8.3, 12.3], [12.8, 17.3], [17.8, 22.3], [22.8, 27.8]];
+  return (t, step) => {
+    const teach = fig.dataset.teach === '1';
+    const tw = teach ? 1 - pr(t, 28.2, 29.2) : 0;
+    // step 2: html's background goes to the canvas
+    white.style.opacity = 1 - pr(t, 4.5, 6);
+    // step 3: html's box (the canvas shows through it; in teaching colors it gets its own color)
+    hbox.style.opacity = pr(t, 8.5, 9.5);
+    hbox.style.background = mix(tw, 'var(--t0520-hb)', 'var(--t0520-dark)');
+    xhtml.style.opacity = Math.max(win(t, 8.3, 12.3), win(t, 12.8, 17.3));
+    // step 4: html's dashed outline
+    const ho = pr(t, 13, 14);
+    const hc = mix(tw, 'var(--t0520-ho)', 'var(--t0520-cream)');
+    rows.forEach((r) => { r.style.opacity = ho; r.style.setProperty('--t0520-hc', hc); });
+    // step 5: body's box, then its outline
+    body.style.opacity = pr(t, 18, 19);
+    const bo = pr(t, 19.5, 20.5);
+    brs.forEach((b) => { b.style.opacity = bo; b.style.background = mix(tw, 'var(--t0520-bo)', 'var(--t0520-cream)'); });
+    // step 6: scale 2 around the center
+    const g = pr(t, 23, 26);
+    const s = 1 + g;
+    grp.style.transform = `scale(${s.toFixed(4)})`;
+    // in real colors, once body is fully scaled, its box runs 2px further on each side (4px on the canvas, all under the brackets or on the canvas):
+    // no cream hairline of html's dashes along its top and bottom edges
+    const ext = g >= 1 ? (1 - tw) * 2 : 0;
+    body.style.left = `${-ext}px`; body.style.top = `${-ext}px`;
+    body.style.width = `${80 + 2 * ext}px`; body.style.height = `${50 + 2 * ext}px`;
+    body.style.background = mix(tw, 'var(--t0520-bb)', 'var(--t0520-dark)');
+    // same-color underlay where html's dashes meet the brackets (x = 70 and 330), real colors only, once body is fully scaled
+    under.forEach((u) => { u.style.opacity = g >= 1 ? 1 - tw : 0; });
+    xbody.style.left = `${200 - 40 * s}px`; xbody.style.top = `${150 - 25 * s}px`;
+    xbody.style.width = `${80 * s}px`; xbody.style.height = `${50 * s}px`;
+    xbody.style.opacity = Math.max(win(t, 17.8, 22.3), win(t, 22.8, 27.8));
+    labs.forEach((l) => { l.style.opacity = win(t, ...ivs[+l.dataset.l - 1]); });
+    let txt;
+    if (step === 0) txt = '* → html, head, style, body · * * → head, style, body';
+    else if (step === 1) txt = 'html → canvas #30383f';
+    else if (step === 2) txt = `html${c} 400 + 64 = 464 · 300 − 250 = 50`;
+    else if (step === 3) txt = `27Q = ${n(25.51)}px → 25px · 7 × 50 + 6 × ${n(27.33)} = 514`;
+    else if (step === 4) txt = `body${c} 464 − 384 = 80 · 50 + 30 + 50 = 130`;
+    else if (step === 5) txt = `scale 2${c} 160 × 100 · 100 + 60 + 100 = 260`;
+    else txt = $$('.caps .cap')[6].dataset.live || '';
+    live.textContent = txt;
+  };
+};
+</script>
+</figure>
