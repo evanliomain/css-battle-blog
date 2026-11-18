@@ -1,0 +1,134 @@
+<figure class="anim t0513" data-duration="28" data-scene="t0513" data-wide="-40 -30 480 360" style="--bg:#6592cf">
+<style>
+.t0513{--t0513-bg:#6592cf;--t0513-w:#eee;--t0513-d:#173889;--t0513-html:#38bdf8;--t0513-body:#a855f7;--t0513-p:#22c55e;--t0513-ghost:#f97316}
+.t0513 .scene .t0513-el{box-sizing:border-box;border-style:solid;border-width:0 30px;opacity:0}
+.t0513 .scene .t0513-html{left:20px;top:50px;width:360px;height:200px;border-color:var(--t0513-w);z-index:1}
+.t0513 .scene .t0513-body{left:60px;top:80px;width:280px;height:170px;border-color:var(--t0513-d);z-index:2}
+.t0513 .scene .t0513-p{left:100px;top:110px;width:200px;height:140px;border-color:var(--t0513-w);z-index:3}
+.t0513 .scene .t0513-img{top:160px;height:40px;opacity:0;z-index:4}
+.t0513 .scene .t0513-i1{left:129px;width:41px;background:var(--t0513-w)}
+.t0513 .scene .t0513-i2{left:170px;width:40px;background:var(--t0513-d)}
+.t0513 .scene .t0513-box{box-sizing:border-box;outline:calc(1.5px * var(--k, 1)) dashed #fff;outline-offset:calc(-0.75px * var(--k, 1));filter:drop-shadow(0 0 calc(1px * var(--k, 1)) #000);opacity:0;z-index:10}
+.t0513 .scene .t0513-ghost{box-sizing:border-box;outline:calc(2px * var(--k, 1)) dashed var(--t0513-ghost);outline-offset:calc(-1px * var(--k, 1));opacity:0;z-index:11}
+.t0513 .scene .zlab{color:#14142a;background:rgb(255 255 255 / .92);box-shadow:0 0 0 1px rgb(20 20 42 / .25);padding:1px 5px;border-radius:3px;opacity:0}
+.t0513 .legend .t0513-ol{box-shadow:0 0 0 1px currentColor}
+.t0513 .legend .t0513-dash{background:none;outline:2px dashed currentColor;outline-offset:-2px}
+.t0513 .legend .t0513-gdash{background:none;outline:2px dashed var(--t0513-ghost);outline-offset:-2px}
+</style>
+<div class="anim-col">
+<div class="stage" role="img" aria-label="{% if include.lang == "fr" %}Animation : * donne à tous les éléments le fond #6592cf, border-inline:32q solid, color:eee, margin:50 20 et padding:30 0. Le fond de html peint tout le canevas. La bordure n'a pas de couleur : elle prend celle de color. html, 360 × 200 en (20, 50), a deux barres blanches de 30px. * + * vise body, qui prend la couleur 173889 ; * * lui donne margin:0 10 -30 : body, 280 × 170 en (60, 80), a deux barres bleu marine. p, 200 × 140 en (100, 110), a deux barres blanches. La marge de −30 en bas annule le padding de 30 : toutes les barres finissent en y = 250. Les deux images, avec zoom:.67 et margin:30 0, font 40 × 40 en y = 160 : la première blanche, contre la barre de p, la seconde bleu marine. translate:5lh pousse la seconde de x = 170 à 230, contre la barre droite de p.{% else %}Animation: * gives every element the background #6592cf, border-inline:32q solid, color:eee, margin:50 20 and padding:30 0. html's background paints the whole canvas. The border has no color, so it takes color. html, 360 × 200 at (20, 50), gets two 30px white bars. * + * matches body, which gets the color 173889; * * gives it margin:0 10 -30: body, 280 × 170 at (60, 80), gets two navy bars. p, 200 × 140 at (100, 110), gets two white bars. The −30 bottom margin cancels the 30 padding, so every bar ends at y = 250. The two images, with zoom:.67 and margin:30 0, are 40 × 40 at y = 160: the first white, against p's bar, the second navy. translate:5lh moves the second one from x = 170 to 230, against p's right bar.{% endif %}">
+<div class="scene">
+<div class="t0513-el t0513-html"></div>
+<div class="t0513-el t0513-body"></div>
+<div class="t0513-el t0513-p"></div>
+<div class="t0513-img t0513-i1"></div>
+<div class="t0513-img t0513-i2"></div>
+<div class="t0513-box t0513-xhtml" style="left:20px;top:50px;width:360px;height:200px"></div>
+<div class="t0513-box t0513-xbody" style="left:60px;top:80px;width:280px;height:170px"></div>
+<div class="t0513-box t0513-xp" style="left:100px;top:110px;width:200px;height:140px"></div>
+<div class="t0513-box t0513-xi1" style="left:130px;top:160px;width:40px;height:40px"></div>
+<div class="t0513-box t0513-xi2" style="left:170px;top:160px;width:40px;height:40px"></div>
+<div class="t0513-ghost t0513-gbody" style="left:60px;top:80px;width:280px"></div>
+<div class="t0513-ghost t0513-ghtml" style="left:20px;top:50px;width:360px"></div>
+<span class="zlab" data-l="1" style="left:20px;top:30px">{% if include.lang == "fr" %}html 360 × 200 · marge 50 20{% else %}html 360 × 200 · margin 50 20{% endif %}</span>
+<span class="zlab" data-l="2" style="left:62px;top:59px">{% if include.lang == "fr" %}body 280 × 170 · marge 0 10 −30{% else %}body 280 × 170 · margin 0 10 −30{% endif %}</span>
+<span class="zlab" data-l="3" style="left:134px;top:116px">p 200 × 140</span>
+<span class="zlab" data-l="4" style="left:150px;top:253px">{% if include.lang == "fr" %}padding 30 + marge −30 = 0{% else %}padding 30 + margin −30 = 0{% endif %}</span>
+<span class="zlab" data-l="5" style="left:134px;top:207px">zoom .67 · 40 × 40</span>
+<span class="zlab" data-l="6" style="left:150px;top:139px">translate 5lh</span>
+</div>
+</div>
+<div class="legend"><span><i class="t0513-ol" style="--c:#6592cf"></i>{% if include.lang == "fr" %}#6592cf, le fond de tous{% else %}#6592cf, everyone's background{% endif %}</span><span><i class="t0513-ol" style="--c:#eee"></i>{% if include.lang == "fr" %}eee : html, p, 1re image{% else %}eee: html, p, 1st image{% endif %}</span><span><i class="t0513-ol" style="--c:#173889"></i>{% if include.lang == "fr" %}173889 : body, 2e image{% else %}173889: body, 2nd image{% endif %}</span><span><i style="--c:var(--t0513-html)"></i>{% if include.lang == "fr" %}boîte de html{% else %}html's box{% endif %}</span><span><i style="--c:var(--t0513-body)"></i>{% if include.lang == "fr" %}boîte de body{% else %}body's box{% endif %}</span><span><i style="--c:var(--t0513-p)"></i>{% if include.lang == "fr" %}boîte de p{% else %}p's box{% endif %}</span><span><i class="t0513-dash"></i>{% if include.lang == "fr" %}boîtes{% else %}boxes{% endif %}</span><span><i class="t0513-gdash"></i>{% if include.lang == "fr" %}sans le −30{% else %}without the −30{% endif %}</span></div>
+</div>
+<div class="anim-side">
+<pre class="code" aria-hidden="true"><span data-on="3">&lt;p></span><span data-on="5">&lt;img>&lt;img></span>&lt;style><span data-on="1">*{</span><span data-on="1" data-tone="2">background:#6592CF</span>;<span data-on="1 2 3 5">border-inline:32q solid</span>;<span data-on="1 3">color:eee</span>;<span data-on="1">margin:50 20</span>;<span data-on="1 4" data-tone="2">padding:30 0</span>;<span data-on="2">+*{color:173889}</span><span data-on="2">*{</span><span data-on="2 4">margin:0 10-30</span>;<span data-on="5">img{margin:30 0;zoom:.67</span>;<span data-on="6">+*{translate:5lh</span></pre>
+<div class="now" aria-live="polite">
+<div class="caps">
+{%- if include.lang == "fr" %}
+<div class="cap" data-t="0" data-step="html"><h3>1. Une règle pour tous, d'abord html</h3><p><code>*</code> donne à chaque élément le même fond, la même bordure et les mêmes marges. Le fond de html peint tout le canevas. <code>margin:50 20</code> place html en (20, 50), 360 de large. La bordure n'a pas de couleur : elle prend celle de <code>color</code>, ici <code>eee</code>. Deux barres blanches de 32q ≈ 30px.</p></div>
+<div class="cap" data-t="4" data-step="body"><h3>2. body en bleu marine</h3><p><code>+*</code> vaut <code>* + *</code> : un élément qui suit un frère. body suit head, et prend <code>color:173889</code>, donc des barres bleu marine. Le <code>*</code> imbriqué vaut <code>* *</code> : <code>margin:0 10-30</code>. body commence 10 après la barre de html, et 30 plus bas, à cause du padding de html : (60, 80).</p></div>
+<div class="cap" data-t="8" data-step="p"><h3>3. p en blanc</h3><p>p est le premier enfant de body : <code>* + *</code> ne le vise pas, il garde <code>color:eee</code>. Même marge, même padding : 10 plus à l'intérieur, 30 plus bas. p fait 200 × 140 en (100, 110), avec deux barres blanches.</p></div>
+<div class="cap" data-t="12" data-step="Bas aligné"><h3>4. Toutes les barres finissent en y = 250</h3><p>Chaque boîte a 30 de padding en bas. Sans le <code>-30</code>, body descendrait 30 plus bas que p, et html 60 plus bas (pointillés orange). La marge de −30 en bas de p et de body annule le padding du parent : les trois boîtes finissent ensemble.</p></div>
+<div class="cap" data-t="16" data-step="Images"><h3>5. Deux images zoomées</h3><p><code>img</code> reçoit tout ce qui précède, puis <code>zoom:.67</code> : la bordure de 32q devient 20px, le padding de 30 devient 20,1. Une image vide fait donc 40 × 40, ses deux bordures. <code>margin:30 0</code> enlève les marges de côté et met 20,1 en haut : y = 160. La première est blanche, la seconde bleu marine, car elle suit la première.</p></div>
+<div class="cap" data-t="20" data-step="5lh"><h3>6. translate:5lh</h3><p><code>img + *</code> vise la seconde image. Dans la cible, elle se décale de 60px vers la droite : de x = 170 à 230, contre la barre droite de p. <code>5lh</code>, cinq hauteurs de ligne de l'image, écrit ce décalage en 3 caractères.</p></div>
+<div class="cap" data-t="24" data-step="Résultat" data-live="175 caractères · 100 % identique"><h3>7. Résultat : 175 caractères</h3><p>Six barres et deux carrés, symétriques. Une seule bordure, sans couleur, pour cinq boîtes : chacune prend sa propre <code>color</code>.</p></div>
+{%- else %}
+<div class="cap" data-t="0" data-step="html"><h3>1. One rule for all, html first</h3><p><code>*</code> gives every element the same background, border and spacing. html's background paints the whole canvas. <code>margin:50 20</code> puts html at (20, 50), 360 wide. The border has no color, so it takes <code>color</code>, here <code>eee</code>. Two white bars of 32q ≈ 30px.</p></div>
+<div class="cap" data-t="4" data-step="body"><h3>2. body in navy</h3><p><code>+*</code> is <code>* + *</code>: an element that follows a sibling. body follows head, so it gets <code>color:173889</code> and navy bars. The nested <code>*</code> is <code>* *</code>: <code>margin:0 10-30</code>. body starts 10 past html's bar, and 30 lower because of html's padding: (60, 80).</p></div>
+<div class="cap" data-t="8" data-step="p"><h3>3. p in white</h3><p>p is body's first child, so <code>* + *</code> misses it and it keeps <code>color:eee</code>. Same margin, same padding: 10 further in, 30 lower. p is 200 × 140 at (100, 110), with two white bars.</p></div>
+<div class="cap" data-t="12" data-step="Same bottom"><h3>4. Every bar ends at y = 250</h3><p>Every box has 30 of padding at the bottom. Without the <code>-30</code>, body would end 30 lower than p, and html 60 lower (orange dashes). The −30 bottom margin of p and body cancels the parent's padding: the three boxes end together.</p></div>
+<div class="cap" data-t="16" data-step="Images"><h3>5. Two zoomed images</h3><p><code>img</code> gets everything above, then <code>zoom:.67</code>: the 32q border becomes 20px, the 30 padding becomes 20.1. An empty image is then 40 × 40, just its two borders. <code>margin:30 0</code> drops the side margins and puts 20.1 on top: y = 160. The first is white, the second navy, because it follows the first.</p></div>
+<div class="cap" data-t="20" data-step="5lh"><h3>6. translate:5lh</h3><p><code>img + *</code> matches the second image. In the target, it moves 60px to the right: from x = 170 to 230, against p's right bar. <code>5lh</code>, five line heights of the image, writes that shift in 3 characters.</p></div>
+<div class="cap" data-t="24" data-step="Result" data-live="175 characters · 100% match"><h3>7. Result: 175 characters</h3><p>Six bars and two squares, symmetric. One border with no color for five boxes: each one takes its own <code>color</code>.</p></div>
+{%- endif %}
+</div>
+<div class="live"></div>
+</div>
+</div>
+<script>
+(window.AnimScenes = window.AnimScenes || {}).t0513 = (fig) => {
+  const fr = document.documentElement.lang === 'fr';
+  const $ = (s) => fig.querySelector(s);
+  const $$ = (s) => [...fig.querySelectorAll(s)];
+  const live = $('.live');
+  const ease = (x) => (x < 0.5 ? 4 * x * x * x : 1 - Math.pow(-2 * x + 2, 3) / 2);
+  const pr = (t, a, b) => ease(Math.min(1, Math.max(0, (t - a) / (b - a))));
+  const win = (t, a, b) => Math.min(pr(t, a, a + 0.5), 1 - pr(t, b - 0.3, b));
+  const c = fr ? ' :' : ':';
+  const n = (v) => (fr ? String(v).replace('.', ',') : String(v));
+  // Measured on the official code in local Chrome (400 × 300 iframe, quirks mode, getBoundingClientRect, variant renders).
+  // html 20, 50, 360 × 200.375; body 60, 80, 280 × 170.375; p 100, 110, 200 × 140.375 (drawn down to y = 250).
+  // border-inline 32q: drawn 30px wide. imgs zoom .67: 40 × 40.19 at y 160.09, the first at x 130, the second at 170.
+  // translate:5lh: the target has the second image at x 230 (in local Chrome it lands at 235, see the post).
+  // Without the -30 (variant render): body's bars go down to y 280, html's to the bottom of the canvas.
+  const els = ['html', 'body', 'p'].map((k) => $(`.t0513-${k}`));
+  const H = [200, 170, 140];
+  const tints = ['--t0513-html', '--t0513-body', '--t0513-p'];
+  const i1 = $('.t0513-i1'), i2 = $('.t0513-i2');
+  const xs = ['xhtml', 'xbody', 'xp', 'xi1', 'xi2'].map((k) => $(`.t0513-${k}`));
+  const gbody = $('.t0513-gbody'), ghtml = $('.t0513-ghtml');
+  const labs = $$('.zlab[data-l]');
+  const ivs = [[0.3, 3.8], [4.4, 7.8], [8.4, 11.8], [12.4, 15.8], [16.4, 19.8], [20.4, 23.8]];
+  const starts = [0.4, 4.4, 8.4];
+  return (t, step) => {
+    const teach = fig.dataset.teach === '1';
+    const tw = teach ? 1 - pr(t, 24.2, 25.2) : 0;
+    // steps 1 to 3: html, body, p, each box drawn from the top down
+    els.forEach((e, i) => {
+      const s = starts[i];
+      e.style.opacity = pr(t, s, s + 0.6);
+      e.style.height = `${H[i] * pr(t, s + 0.4, s + 2.2)}px`;
+      e.style.background = tw > 0 ? `color-mix(in srgb, var(${tints[i]}) ${(45 * tw).toFixed(1)}%, transparent)` : 'transparent';
+      xs[i].style.opacity = win(t, s, i === 2 ? 15.8 : s + 3.4);
+    });
+    // step 4: without the -30, body would end at y 280 and html at 310
+    const g = 1 - pr(t, 13.6, 15.2);
+    gbody.style.height = `${170 + 30 * g}px`;
+    ghtml.style.height = `${200 + 60 * g}px`;
+    gbody.style.opacity = ghtml.style.opacity = win(t, 12.4, 15.6);
+    // step 5: the two zoomed images
+    i1.style.opacity = pr(t, 16.6, 17.4);
+    i2.style.opacity = pr(t, 17.4, 18.2);
+    xs[3].style.opacity = win(t, 16.4, 19.8);
+    // step 6: translate 5lh, 60px to the right in the target
+    const d = 60 * pr(t, 20.8, 22.6);
+    i2.style.left = `${170 + d}px`;
+    xs[4].style.left = `${170 + d}px`;
+    xs[4].style.opacity = Math.max(win(t, 17.2, 19.8), win(t, 20.4, 23.8));
+    labs.forEach((l) => {
+      const k = +l.dataset.l;
+      l.style.opacity = win(t, ...ivs[k - 1]);
+    });
+    let txt;
+    if (step === 0) txt = `html${c} 400 − 2 × 20 = 360 · 32q = 32 × ${n(0.945)} ≈ ${n(30.24)} → 30px`;
+    else if (step === 1) txt = `body${c} x = 20 + 30 + 10 = 60 · y = 50 + 30 = 80`;
+    else if (step === 2) txt = `p${c} x = 60 + 30 + 10 = 100 · y = 80 + 30 = 110`;
+    else if (step === 3) txt = `30 − 30 = 0 → y = 250`;
+    else if (step === 4) txt = `zoom .67${c} 32q → 20px · 30 × ${n(0.67)} = ${n(20.1)} · y = 140 + ${n(20.1)} ≈ 160`;
+    else if (step === 5) txt = `x = 170 → 230 · 230 + 40 = 270`;
+    else txt = $$('.caps .cap')[6].dataset.live || '';
+    live.textContent = txt;
+  };
+};
+</script>
+</figure>
