@@ -1,0 +1,149 @@
+<figure class="anim t0504" data-duration="30" data-scene="t0504" data-wide="-50 -40 500 380" data-off-label="-46 318" style="--bg:#ebf6ef">
+<style>
+.t0504 .scene .t0504-w{left:0;top:0;width:400px;height:300px;background:#fff;z-index:0}
+.t0504 .scene .t0504-disc{left:0;top:0;width:400px;height:300px;z-index:1}
+.t0504 .scene .t0504-sh{width:100px;height:140px;background:#4a9a86;z-index:2;opacity:0}
+.t0504 .scene .t0504-s1{left:200px;top:150px}
+.t0504 .scene .t0504-s2{left:100px;top:10px}
+.t0504 .scene .t0504-box{box-sizing:border-box;opacity:0;z-index:4}
+.t0504 .scene .t0504-html{left:0;top:0;width:400px;height:300px}
+.t0504 .scene .t0504-body{left:100px;top:150px;width:100px;height:140px}
+.t0504 .scene .t0504-glyph{left:101px;top:162px;width:3px;height:3px;border-radius:50%;background:#4a9a86;z-index:3;opacity:0}
+.t0504 .scene .t0504-ln{box-sizing:border-box;opacity:0;z-index:7;filter:drop-shadow(0 0 calc(1px * var(--k, 1)) rgb(0 0 0 / .9))}
+.t0504 .scene .t0504-ray{left:200px;top:150px;width:100px;height:0;border-top:calc(1.5px * var(--k, 1)) solid #fff}
+.t0504 .scene .t0504-tick{width:0;height:12px;top:144px;border-left:calc(1.5px * var(--k, 1)) solid #fff}
+.t0504 .scene .t0504-mark{left:95px;top:156px;width:14px;height:14px;border-radius:50%;border:calc(1.5px * var(--k, 1)) solid #fff}
+.t0504 .scene .zlab{color:#14142a;background:rgb(255 255 255 / .92);box-shadow:0 0 0 1px rgb(20 20 42 / .25);padding:1px 5px;border-radius:3px;opacity:0}
+@media (max-width:700px){.t0504 .scene .zlab{font-size:8px;padding:0 3px}}
+.t0504 .legend .t0504-ol{box-shadow:0 0 0 1px currentColor}
+</style>
+<div class="anim-col">
+<div class="stage" role="img" aria-label="{% if include.lang == "fr" %}Animation : &amp; vise html, la racine. Son fond est peint sur tout le canevas : radial-gradient(1Q,#4c4c6b,25vw,#6B82). Le cercle de 1Q fait 0,945px de rayon, le repère 25vw est à 100px, et le dernier arrêt, à 100 % du rayon, est avancé jusqu'à 100px : un disque #4c4c6b de rayon 100 centré en (200, 150), puis #6B82, un vert à 13 % qui donne #ebf6ef sur le blanc. Le point du début est du texte : il met le style dans body, et html garde 400 × 300. * dans &amp; vise les éléments dans html ; seul body s'affiche. margin:150 50%10 100 lui laisse 100 × 140 en (100, 150). Il n'a pas de fond : on y voit le quart en bas à gauche du disque. color:4A9A86 et box-shadow:25vw 0,0-35vw posent deux copies vertes en (200, 150) et (100, 10), qui couvrent deux quarts du disque. Résultat : deux rectangles verts et deux quarts de disque, en moulin.{% else %}Animation: &amp; targets html, the root. Its background is painted on the whole canvas: radial-gradient(1Q,#4c4c6b,25vw,#6B82). The 1Q circle has a radius of 0.945px, the 25vw hint is at 100px, and the last stop, at 100% of the radius, moves up to 100px: a #4c4c6b disc of radius 100 centered at (200, 150), then #6B82, a green at 13% opacity that gives #ebf6ef over white. The dot at the start is text: it puts the style in body, and html stays 400 × 300. * inside &amp; targets the elements inside html; only body is displayed. margin:150 50%10 100 leaves it 100 × 140 at (100, 150). It has no background: the bottom-left quarter of the disc shows through it. color:4A9A86 and box-shadow:25vw 0,0-35vw add two green copies at (200, 150) and (100, 10), which cover two quarters of the disc. Result: two green rectangles and two quarter discs, as a pinwheel.{% endif %}">
+<div class="scene">
+<div class="t0504-w"></div>
+<div class="t0504-disc"></div>
+<div class="t0504-sh t0504-s1"></div>
+<div class="t0504-sh t0504-s2"></div>
+<div class="t0504-glyph"></div>
+<div class="t0504-box t0504-html"></div>
+<div class="t0504-box t0504-body"></div>
+<div class="t0504-ln t0504-ray"></div>
+<div class="t0504-ln t0504-tick" style="left:200.9px"></div>
+<div class="t0504-ln t0504-tick" style="left:300px"></div>
+<div class="t0504-ln t0504-mark"></div>
+<span class="zlab" data-l="1" style="left:8px;top:8px">{% if include.lang == "fr" %}html → canevas{% else %}html → canvas{% endif %}</span>
+<span class="zlab" data-l="1" style="left:8px;top:28px">#6B82 → #ebf6ef</span>
+<span class="zlab" data-l="2" style="left:204px;top:118px">{% if include.lang == "fr" %}1Q = 0,945px{% else %}1Q = 0.945px{% endif %}</span>
+<span class="zlab" data-l="2" style="left:236px;top:158px">25vw = 100px</span>
+<span class="zlab" data-l="2" style="left:8px;top:8px">{% if include.lang == "fr" %}centre (200, 150){% else %}center (200, 150){% endif %}</span>
+<span class="zlab" data-l="3" style="left:8px;top:8px">html 400 × 300</span>
+<span class="zlab" data-l="3" style="left:114px;top:176px">"." → body</span>
+<span class="zlab" data-l="4" style="left:136px;top:70px">150</span>
+<span class="zlab" data-l="4" style="left:40px;top:212px">100</span>
+<span class="zlab" data-l="4" style="left:300px;top:212px">50% = 200</span>
+<span class="zlab" data-l="4" style="left:104px;top:154px">body 100 × 140</span>
+<span class="zlab" data-l="5" style="left:206px;top:266px">25vw 0</span>
+<span class="zlab" data-l="5" style="left:106px;top:16px">0-35vw</span>
+</div>
+</div>
+<div class="legend"><span><i class="t0504-ol" style="--c:#ebf6ef"></i>{% if include.lang == "fr" %}#ebf6ef : #6B82 sur le blanc, le canevas{% else %}#ebf6ef: #6B82 over white, the canvas{% endif %}</span><span><i class="t0504-ol" style="--c:#4c4c6b"></i>{% if include.lang == "fr" %}#4c4c6b : le disque du dégradé{% else %}#4c4c6b: the gradient's disc{% endif %}</span><span><i class="t0504-ol" style="--c:#4a9a86"></i>{% if include.lang == "fr" %}#4a9a86 : les ombres de body{% else %}#4a9a86: body's shadows{% endif %}</span><span><i style="--c:#facc15"></i>{% if include.lang == "fr" %}boîte de html{% else %}html's box{% endif %}</span><span><i style="--c:#f472b6"></i>{% if include.lang == "fr" %}boîte de body{% else %}body's box{% endif %}</span><span><i style="--c:#22d3ee"></i>{% if include.lang == "fr" %}ombre 25vw 0{% else %}shadow 25vw 0{% endif %}</span><span><i style="--c:#a78bfa"></i>{% if include.lang == "fr" %}ombre 0-35vw{% else %}shadow 0-35vw{% endif %}</span></div>
+</div>
+<div class="anim-side">
+<pre class="code" aria-hidden="true"><span data-on="3">.</span>&lt;style><span data-on="1">&amp;{</span><span data-on="3 4 5">*{</span><span data-on="4">margin:150 50%10 100;</span><span data-on="5">color:4A9A86;box-shadow:25vw 0,0-35vw}</span><span data-on="1 2">background:radial-gradient(</span><span data-on="2" data-tone="2">1Q,#4c4c6b,25vw,</span><span data-on="1 2">#6B82</span></pre>
+<div class="now" aria-live="polite">
+<div class="caps">
+{%- if include.lang == "fr" %}
+<div class="cap" data-t="0" data-step="html"><h3>1. html et le canevas</h3><p><code>&amp;</code> au premier niveau vise la racine, html. Son fond est peint sur tout le canevas. Hors du disque de l'étape suivante, ce fond est <code>#6B82</code>, la forme courte de <code>#66bb8822</code> : un vert opaque à 13,3 %. Sur le blanc de la page, mon rendu donne <code>#ebf6ef</code>, à un niveau près.</p></div>
+<div class="cap" data-t="4.5" data-step="Le disque"><h3>2. Un disque de 100px</h3><p><code>1Q</code> fait du dégradé un cercle de 0,945px de rayon, centré au milieu de html : (200, 150). <code>#4c4c6b</code> part de 0, puis <code>25vw</code> est un repère à 100px. <code>#6B82</code> n'a pas de position : 100 % du rayon, 0,945px. Un arrêt ne peut pas revenir avant un repère : il est avancé à 100px. Le repère est collé à l'arrêt, donc le bord est net : un disque <code>#4c4c6b</code> de rayon 100.</p></div>
+<div class="cap" data-t="10" data-step="Le point"><h3>3. Le point du début</h3><p>Le code commence par <code>.</code> : du texte. Le texte ouvre body, et le <code>&lt;style></code> qui suit va dans body, avec le point. Mon rendu dessine ce point en vert, 7 pixels en (101..103, 162..164) ; la cible n'en a pas. Sans lui, mon Chrome donne à html 385 × 440 au lieu de 400 × 300, et le disque descend.</p></div>
+<div class="cap" data-t="15" data-step="body"><h3>4. body et ses marges</h3><p><code>*{…}</code> dans <code>&amp;{…}</code> vise les éléments dans html : head, body et style. Seul body s'affiche. Mode quirks : les longueurs sans unité sont des px, et body remplit html moins ses marges. <code>margin:150 50%10 100</code> : 150 en haut, 50 % de 400 = 200 à droite, 10 en bas, 100 à gauche. body fait 100 × 140 en (100, 150). Il n'a pas de fond : on y voit le quart en bas à gauche du disque.</p></div>
+<div class="cap" data-t="20" data-step="Deux ombres"><h3>5. Deux ombres</h3><p><code>color:4A9A86</code> donne la couleur des ombres. <code>25vw 0</code> décale une copie de body de 100px à droite : (200, 150). <code>0-35vw</code> en décale une de 140px vers le haut : (100, 10). Elles couvrent le quart en bas à droite et le quart en haut à gauche du disque. Une ombre n'est pas peinte sous sa boîte : body laisse voir le fond.</p></div>
+<div class="cap" data-t="25.5" data-step="Résultat" data-live="119 caractères · 100 % identique"><h3>6. Résultat : 119 caractères</h3><p>Un disque sur le canevas, une boîte vide et deux ombres. Deux quarts du disque restent visibles : celui en haut à droite, et celui que body laisse voir.</p></div>
+{%- else %}
+<div class="cap" data-t="0" data-step="html"><h3>1. html and the canvas</h3><p><code>&amp;</code> at the top level targets the root, html. Its background is painted on the whole canvas. Outside the disc of the next step, that background is <code>#6B82</code>, the short form of <code>#66bb8822</code>: a green at 13.3% opacity. Over the white page, my render gives <code>#ebf6ef</code>, give or take one level.</p></div>
+<div class="cap" data-t="4.5" data-step="The disc"><h3>2. A 100px disc</h3><p><code>1Q</code> makes the gradient a circle with a radius of 0.945px, centered in html: (200, 150). <code>#4c4c6b</code> starts at 0, then <code>25vw</code> is a hint at 100px. <code>#6B82</code> has no position: 100% of the radius, 0.945px. A stop cannot go back before a hint: it moves up to 100px. The hint sits on the stop, so the edge is hard: a <code>#4c4c6b</code> disc of radius 100.</p></div>
+<div class="cap" data-t="10" data-step="The dot"><h3>3. The dot at the start</h3><p>The code starts with <code>.</code>: text. Text opens body, and the <code>&lt;style></code> after it goes in body, with the dot. My render draws this dot in green, 7 pixels at (101..103, 162..164); the target has none. Without it, my Chrome makes html 385 × 440 instead of 400 × 300, and the disc moves down.</p></div>
+<div class="cap" data-t="15" data-step="body"><h3>4. body and its margins</h3><p><code>*{…}</code> inside <code>&amp;{…}</code> targets the elements inside html: head, body and style. Only body is displayed. Quirks mode: lengths without a unit are px, and body fills html minus its margins. <code>margin:150 50%10 100</code>: 150 on top, 50% of 400 = 200 on the right, 10 at the bottom, 100 on the left. body is 100 × 140 at (100, 150). It has no background: the bottom-left quarter of the disc shows through it.</p></div>
+<div class="cap" data-t="20" data-step="Two shadows"><h3>5. Two shadows</h3><p><code>color:4A9A86</code> sets the shadows' color. <code>25vw 0</code> moves a copy of body 100px to the right: (200, 150). <code>0-35vw</code> moves one 140px up: (100, 10). They cover the bottom-right and the top-left quarters of the disc. A shadow is not painted under its own box: body still shows the background.</p></div>
+<div class="cap" data-t="25.5" data-step="Result" data-live="119 characters · 100% match"><h3>6. Result: 119 characters</h3><p>A disc on the canvas, an empty box and two shadows. Two quarters of the disc stay visible: the top-right one, and the one body lets through.</p></div>
+{%- endif %}
+</div>
+<div class="live"></div>
+</div>
+</div>
+<script>
+(window.AnimScenes = window.AnimScenes || {}).t0504 = (fig) => {
+  const fr = document.documentElement.lang === 'fr';
+  const $ = (s) => fig.querySelector(s);
+  const $$ = (s) => [...fig.querySelectorAll(s)];
+  const live = $('.live');
+  const ease = (x) => (x < 0.5 ? 4 * x * x * x : 1 - Math.pow(-2 * x + 2, 3) / 2);
+  const pr = (t, a, b) => ease(Math.min(1, Math.max(0, (t - a) / (b - a))));
+  const win = (t, a, b) => Math.min(pr(t, a, a + 0.5), 1 - pr(t, b - 0.3, b));
+  const c = fr ? ' :' : ':';
+  const n = (v) => (fr ? String(v).replace('.', ',') : String(v));
+  // Measured on the official code in local Chrome (400 × 300 page, quirks mode):
+  // html 400 × 300 at (0, 0); body 100 × 140 at (100, 150), margin 150px 200px 10px 100px;
+  // shadows 100 × 140 at (200, 150) and (100, 10), color rgb(74, 154, 134);
+  // the gradient: a hard-edged rgb(76, 76, 107) disc of radius 100 centered at (200, 150), drawn here with the same kind of gradient;
+  // the canvas mostly (235, 246, 239) = #ebf6ef. The "." glyph: 7 green pixels at (101..103, 162..164).
+  // Without the ".", html is 385 × 440 in local Chrome.
+  const FIN = 25.5;
+  const TEACH = { html: '#facc15', body: 'rgb(244 114 182 / .5)', s1: '#22d3ee', s2: '#a78bfa' };
+  const white = $('.t0504-w'), disc = $('.t0504-disc');
+  const s1 = $('.t0504-s1'), s2 = $('.t0504-s2');
+  const hb = $('.t0504-html'), bb = $('.t0504-body'), glyph = $('.t0504-glyph');
+  const ray = $('.t0504-ray'), ticks = $$('.t0504-tick'), mark = $('.t0504-mark');
+  const labs = $$('.zlab[data-l]');
+  const ivs = [[0.3, 4.3], [5.2, 9.8], [10.3, 14.8], [15.3, 19.8], [20.6, 25.3]];
+  const dash = 'calc(1.5px * var(--k, 1)) dashed #fff';
+  return (t, step) => {
+    const teach = fig.dataset.teach === '1';
+    const fin = pr(t, FIN + 0.2, FIN + 0.9);
+    // 1. html's background over the white page
+    white.style.opacity = 1 - pr(t, 0.6, 2.4);
+    const hA = Math.max(win(t, 0.3, 4.3), win(t, 10.3, 14.8));
+    hb.style.opacity = hA;
+    hb.style.border = '0';
+    hb.style.boxShadow = teach ? `inset 0 0 0 calc(4px * var(--k, 1)) ${TEACH.html}` : `inset 0 0 0 calc(1.5px * var(--k, 1)) #4c4c6b`;
+    // 2. the disc's edge goes from 1Q (0.945px) to 25vw (100px)
+    const dA = pr(t, 5, 5.4);
+    const r = 0.945 + (100 - 0.945) * pr(t, 6, 8.6);
+    disc.style.opacity = dA;
+    disc.style.background = `radial-gradient(circle at 200px 150px,#4c4c6b ${r.toFixed(3)}px,#0000 0)`;
+    const rA = win(t, 5.2, 9.8);
+    ray.style.opacity = rA;
+    ticks.forEach((k) => { k.style.opacity = rA; });
+    // 3. the "." glyph
+    const gA = win(t, 10.6, 14.8);
+    glyph.style.opacity = gA;
+    mark.style.opacity = gA;
+    // 4. body's box
+    const bA = pr(t, 15.4, 16) * (teach ? 1 - fin : 1 - pr(t, FIN - 0.4, FIN));
+    bb.style.opacity = bA;
+    bb.style.background = teach ? TEACH.body : 'none';
+    bb.style.border = teach ? '0' : dash;
+    bb.style.filter = teach ? 'none' : 'drop-shadow(0 0 calc(1px * var(--k, 1)) rgb(0 0 0 / .9))';
+    // 5. the two shadows, s1 then s2
+    const a1 = pr(t, 20.6, 21.6), a2 = pr(t, 21.8, 22.8);
+    s1.style.opacity = a1;
+    s2.style.opacity = a2;
+    s1.style.transform = `translateX(${(-100 * (1 - a1)).toFixed(2)}px)`;
+    s2.style.transform = `translateY(${(140 * (1 - a2)).toFixed(2)}px)`;
+    s1.style.background = teach && fin < 1 ? `color-mix(in srgb, ${TEACH.s1} ${((1 - fin) * 100).toFixed(1)}%, #4a9a86)` : '#4a9a86';
+    s2.style.background = teach && fin < 1 ? `color-mix(in srgb, ${TEACH.s2} ${((1 - fin) * 100).toFixed(1)}%, #4a9a86)` : '#4a9a86';
+    labs.forEach((l) => {
+      l.style.opacity = win(t, ...ivs[+l.dataset.l - 1]);
+    });
+    let txt;
+    if (step === 0) txt = `html${c} 400 × 300 · #6B82 = #66bb8822 → #ebf6ef`;
+    else if (step === 1) txt = `1Q = ${n(0.945)}px → 25vw = 100px · r = ${n(r.toFixed(1))}px`;
+    else if (step === 2) txt = `"." → <style> ${fr ? 'dans' : 'in'} body · html${c} 400 × 300`;
+    else if (step === 3) txt = `body${c} 400 − 100 − 200 = 100 · 300 − 150 − 10 = 140`;
+    else if (step === 4) txt = `25vw 0 → (200, 150) · 0-35vw → (100, 10)`;
+    else txt = $$('.caps .cap')[5].dataset.live || '';
+    live.textContent = txt;
+  };
+};
+</script>
+</figure>
