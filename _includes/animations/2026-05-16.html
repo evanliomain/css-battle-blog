@@ -1,0 +1,157 @@
+<figure class="anim t0516" data-duration="32" data-scene="t0516" data-wide="-50 -40 500 380" data-off-label="-46 311" style="--bg:#fff">
+<style>
+.t0516{--t0516-pink:#cf596a;--t0516-cream:#f3ead2;--t0516-bd:#6366f1;--t0516-p1:#14b8a6;--t0516-p1c:#99f6e4;--t0516-hr:#f59e0b;--t0516-p2:#a855f7;--t0516-p2c:#e9d5ff}
+.t0516 .scene .t0516-bg{left:-60px;top:-50px;width:520px;height:400px;background:var(--t0516-pink);opacity:0;z-index:0}
+.t0516 .scene .t0516-body{left:74px;top:66px;width:252px;height:168px;box-sizing:border-box;border:24px solid var(--t0516-cream);opacity:0;z-index:1}
+.t0516 .scene .t0516-p{left:164px;width:72px;height:72px;box-sizing:border-box;border:solid var(--t0516-cream);border-width:0 24px;opacity:0}
+.t0516 .scene .t0516-c{left:188px;width:24px;height:72px;opacity:0}
+.t0516 .scene .t0516-p1{top:162px;z-index:2}
+.t0516 .scene .t0516-c1{top:162px;z-index:2}
+.t0516 .scene .t0516-hr{left:164px;top:126px;width:72px;height:48px;background:var(--t0516-cream);opacity:0;z-index:3}
+.t0516 .scene .t0516-p2{top:66px;z-index:4}
+.t0516 .scene .t0516-c2{top:66px;z-index:4}
+.t0516 .scene .t0516-mt{left:164px;top:90px;width:72px;height:72px;box-sizing:border-box;background:rgb(255 255 255 / .35);outline:calc(1.5px * var(--k, 1)) dashed #14142a;outline-offset:calc(-0.75px * var(--k, 1));opacity:0;z-index:9}
+.t0516 .scene .t0516-v{left:245px;width:0;border-left:calc(2px * var(--k, 1)) solid #14142a;filter:drop-shadow(0 0 calc(1px * var(--k, 1)) #fff);opacity:0;z-index:12}
+.t0516 .scene .t0516-box{box-sizing:border-box;outline:calc(1.5px * var(--k, 1)) dashed #14142a;outline-offset:calc(-0.75px * var(--k, 1));filter:drop-shadow(0 0 calc(1px * var(--k, 1)) #fff);opacity:0;z-index:10}
+.t0516 .scene .zlab{color:#14142a;background:rgb(255 255 255 / .92);box-shadow:0 0 0 1px rgb(20 20 42 / .25);padding:1px 5px;border-radius:3px;opacity:0}
+.t0516 .legend .t0516-ol{box-shadow:0 0 0 1px currentColor}
+.t0516 .legend .t0516-dash{background:none;outline:2px dashed currentColor;outline-offset:-2px}
+</style>
+<div class="anim-col">
+<div class="stage" role="img" aria-label="{% if include.lang == "fr" %}Animation : le premier p ouvre body, le hr le ferme, le second p reçoit le style. body reçoit une bordure crème de 24px et la marge 66 74 : 252 × 168 en (74, 66). Son fond rose passe au canevas. p, hr et p reçoivent la marge 72 66 -180 et font 72 de large. Le premier p, sans bordure en haut ni en bas et haut de 72, est en (164, 162) : crème, rose, crème. La marge de -180 et la suivante de 72 n'en font qu'une, de -108 : le hr, 72 × 48 tout crème, est en (164, 126), puis le second p en (164, 66), sur la bordure du haut de body. scale .33 .5 réduit le hr à 23,76 × 24 au centre. Il reste deux cadres crème reliés par un damier.{% else %}Animation: the first p opens body, the hr closes it, the second p gets the style. body gets a 24px cream border and the margin 66 74: 252 × 168 at (74, 66). Its pink background goes to the canvas. p, hr and p get the margin 72 66 -180 and are 72 wide. The first p, with no top or bottom border and 72 tall, sits at (164, 162): cream, pink, cream. The -180 margin and the next 72 margin collapse into one, -108: the hr, 72 × 48 and all cream, sits at (164, 126), then the second p at (164, 66), over body's top border. scale .33 .5 shrinks the hr to 23.76 × 24 in the center. Two cream frames are left, joined by a checkerboard.{% endif %}">
+<div class="scene">
+<div class="t0516-bg"></div>
+<div class="t0516-body"></div>
+<div class="t0516-p t0516-p1"></div>
+<div class="t0516-c t0516-c1"></div>
+<div class="t0516-hr"></div>
+<div class="t0516-p t0516-p2"></div>
+<div class="t0516-c t0516-c2"></div>
+<div class="t0516-mt"></div>
+<div class="t0516-box t0516-xbody" style="left:74px;top:66px;width:252px;height:168px"></div>
+<div class="t0516-box t0516-xp1" style="left:164px;top:162px;width:72px;height:72px"></div>
+<div class="t0516-box t0516-xhr" style="left:164px;top:126px;width:72px;height:48px"></div>
+<div class="t0516-box t0516-xp2" style="left:164px;top:66px;width:72px;height:72px"></div>
+<div class="t0516-v t0516-v1"></div>
+<div class="t0516-v t0516-v2"></div>
+<span class="zlab" data-l="1">html › body › p, hr, p › style</span>
+<span class="zlab" data-l="2">body 252 × 168 · 6vw = 24px</span>
+<span class="zlab" data-l="3">p 72 × 72</span>
+<span class="zlab" data-l="4">hr 72 × 48</span>
+<span class="zlab" data-l="5">p 72 × 72</span>
+<span class="zlab" data-l="6">{% if include.lang == "fr" %}hr 23,76 × 24{% else %}hr 23.76 × 24{% endif %}</span>
+<span class="zlab t0516-m" data-m="1" style="left:168px;top:120px">margin 72</span>
+<span class="zlab t0516-m" data-m="2" style="left:251px;top:173px">72 − 180 = −108</span>
+<span class="zlab t0516-m" data-m="3" style="left:251px;top:113px">72 − 180 = −108</span>
+</div>
+</div>
+<div class="legend"><span><i class="t0516-ol" style="--c:#cf596a"></i>{% if include.lang == "fr" %}#cf596a, le canevas et le centre des p{% else %}#cf596a, the canvas and the centers of the p's{% endif %}</span><span><i class="t0516-ol" style="--c:#f3ead2"></i>{% if include.lang == "fr" %}#f3ead2, les bordures{% else %}#f3ead2, the borders{% endif %}</span><span><i style="--c:var(--t0516-bd)"></i>{% if include.lang == "fr" %}bordure de body{% else %}body's border{% endif %}</span><span><i style="--c:var(--t0516-p1)"></i>{% if include.lang == "fr" %}premier p{% else %}first p{% endif %}</span><span><i style="--c:var(--t0516-hr)"></i>hr</span><span><i style="--c:var(--t0516-p2)"></i>{% if include.lang == "fr" %}second p{% else %}second p{% endif %}</span><span><i class="t0516-dash"></i>{% if include.lang == "fr" %}boîtes{% else %}boxes{% endif %}</span></div>
+</div>
+<div class="anim-side">
+<pre class="code" aria-hidden="true"><span data-on="1">&lt;p>&lt;hr>&lt;p></span>&lt;style><span data-on="1">*{*{</span><span data-on="2 3">border:6vw solid#f3ead2</span>;<span data-on="2">margin:66 74</span>;<span data-on="2" data-tone="2">background:#cf596a</span>;<span data-on="3">p{border-block:0;height:72}</span><span data-on="3 4 5">*{margin:72 66-180}</span><span data-on="6">hr{scale:.33.5</span></pre>
+<div class="now" aria-live="polite">
+<div class="caps">
+{%- if include.lang == "fr" %}
+<div class="cap" data-t="0" data-step="Éléments"><h3>1. body, p, hr, p</h3><p>Le premier <code>&lt;p></code> ouvre body. Un p ne peut pas contenir de hr : <code>&lt;hr></code> ferme le p, qui reste vide. Le second <code>&lt;p></code> reçoit le style. Le <code>*</code> extérieur n'a pas de déclaration à lui. Le <code>*</code> intérieur, <code>* *</code>, vise tout ce qui est sous html : head, body, p, hr, p et style.</p></div>
+<div class="cap" data-t="4.5" data-step="body"><h3>2. body : le cadre</h3><p><code>6vw</code> vaut 6 % de 400 : une bordure crème de 24px. <code>margin:66 74</code> donne 400 − 148 = 252 de large ; en mode quirks, body remplit la hauteur : 300 − 132 = 168. Le fond rose de body passe au canevas. Sa boîte de contenu fait 204 × 120, en (98, 90).</p></div>
+<div class="cap" data-t="9" data-step="Premier p"><h3>3. Le premier p : crème, rose, crème</h3><p><code>* * *</code> vise p, hr et p. Sa marge vient après <code>margin:66 74</code> : elle la remplace. 204 − 2 × 66 = 72 de large. <code>border-block:0</code> ne garde que les bordures de côté, 24px chacune, et <code>height:72</code> en fait un carré. Il descend de 72 : en (164, 162).</p></div>
+<div class="cap" data-t="13.5" data-step="hr"><h3>4. Une marge de -108 : le hr monte</h3><p>La marge du bas du p, -180, et celle du haut du hr, 72, se touchent : elles fusionnent en une seule, 72 − 180 = −108. Le hr commence 108px au-dessus du bas du p : 234 − 108 = 126. Bordure de 24px tout autour d'un contenu de 24 × 0 : un bloc crème de 72 × 48.</p></div>
+<div class="cap" data-t="18" data-step="Second p"><h3>5. Encore -108 : le second p</h3><p>Même chose sous le hr : 174 − 108 = 66. Le second p est en (164, 66), sur la bordure du haut de body. Peint après body, il la coupe : son centre rose fait une encoche entre les deux cadres. Le premier p fait pareil en bas.</p></div>
+<div class="cap" data-t="22.5" data-step="scale"><h3>6. Le hr rétrécit</h3><p><code>scale:.33.5</code> veut dire <code>.33 .5</code>, autour du centre du hr, (200, 150) : 72 × 0,33 = 23,76 de large, 48 × 0,5 = 24 de haut. Le bloc crème tombe au centre, entre les deux p, en (188,12, 138).</p></div>
+<div class="cap" data-t="27" data-step="Résultat" data-live="137 caractères · 100 % identique"><h3>7. Résultat : 137 caractères</h3><p>Deux cadres crème reliés par un damier de 3 × 3. Une seule marge, <code>72 66-180</code>, empile les trois boîtes de bas en haut.</p></div>
+{%- else %}
+<div class="cap" data-t="0" data-step="Elements"><h3>1. body, p, hr, p</h3><p>The first <code>&lt;p></code> opens body. A p cannot hold an hr: <code>&lt;hr></code> closes the p, which stays empty. The second <code>&lt;p></code> gets the style. The outer <code>*</code> has no declarations of its own. The inner <code>*</code>, <code>* *</code>, matches everything under html: head, body, p, hr, p and style.</p></div>
+<div class="cap" data-t="4.5" data-step="body"><h3>2. body: the frame</h3><p><code>6vw</code> is 6% of 400: a 24px cream border. <code>margin:66 74</code> makes body 400 − 148 = 252 wide; in quirks mode, it fills the height: 300 − 132 = 168. body's pink background goes to the canvas. Its content box is 204 × 120, at (98, 90).</p></div>
+<div class="cap" data-t="9" data-step="First p"><h3>3. The first p: cream, pink, cream</h3><p><code>* * *</code> matches p, hr and p. Its margin comes after <code>margin:66 74</code>, so it replaces it. 204 − 2 × 66 = 72 wide. <code>border-block:0</code> keeps only the side borders, 24px each, and <code>height:72</code> makes it a square. It goes 72 down: at (164, 162).</p></div>
+<div class="cap" data-t="13.5" data-step="hr"><h3>4. A -108 margin: the hr goes up</h3><p>The p's bottom margin, -180, and the hr's top margin, 72, touch: they collapse into one, 72 − 180 = −108. The hr starts 108px above the bottom of the p: 234 − 108 = 126. A 24px border around a 24 × 0 content box: a 72 × 48 cream block.</p></div>
+<div class="cap" data-t="18" data-step="Second p"><h3>5. -108 again: the second p</h3><p>The same below the hr: 174 − 108 = 66. The second p sits at (164, 66), over body's top border. It paints after body, so it cuts that border: its pink center makes a notch between the two frames. The first p does the same at the bottom.</p></div>
+<div class="cap" data-t="22.5" data-step="scale"><h3>6. The hr shrinks</h3><p><code>scale:.33.5</code> means <code>.33 .5</code>, around the hr's center, (200, 150): 72 × 0.33 = 23.76 wide, 48 × 0.5 = 24 tall. The cream block lands in the center, between the two p's, at (188.12, 138).</p></div>
+<div class="cap" data-t="27" data-step="Result" data-live="137 characters · 100% match"><h3>7. Result: 137 characters</h3><p>Two cream frames joined by a 3 × 3 checkerboard. One margin, <code>72 66-180</code>, stacks the three boxes from the bottom up.</p></div>
+{%- endif %}
+</div>
+<div class="live"></div>
+</div>
+</div>
+<script>
+(window.AnimScenes = window.AnimScenes || {}).t0516 = (fig) => {
+  const fr = document.documentElement.lang === 'fr';
+  const $ = (s) => fig.querySelector(s);
+  const $$ = (s) => [...fig.querySelectorAll(s)];
+  const live = $('.live');
+  const ease = (x) => (x < 0.5 ? 4 * x * x * x : 1 - Math.pow(-2 * x + 2, 3) / 2);
+  const pr = (t, a, b) => ease(Math.min(1, Math.max(0, (t - a) / (b - a))));
+  const win = (t, a, b) => Math.min(pr(t, a, a + 0.5), 1 - pr(t, b - 0.3, b));
+  const c = fr ? '\u00a0:' : ':';
+  const n = (v) => (fr ? String(v).replace('.', ',') : String(v));
+  const mix = (k, a, b) => (k <= 0 ? b : k >= 1 ? a : `color-mix(in srgb, ${a} ${(k * 100).toFixed(1)}%, ${b})`);
+  // Measured on the official code in local Chrome 157 (400 × 300 iframe, quirks mode, getBoundingClientRect, variant renders).
+  // body 74, 66, 252 × 168, border 24px (6vw), content 98, 90, 204 × 120; its background goes to the canvas.
+  // p, hr, p: margin 72 66 -180, so 72 wide at x = 164. First p 164, 162, 72 × 72 (border-inline 24, content 24 × 72).
+  // Collapsed margins 72 - 180 = -108: hr layout box 164, 126, 72 × 48 (border 24, content 24 × 0), second p 164, 66, 72 × 72.
+  // hr scale .33 .5 around (200, 150): 188.12, 138, 23.76 × 24.
+  const bg = $('.t0516-bg'), body = $('.t0516-body'), p1 = $('.t0516-p1'), hr = $('.t0516-hr'), p2 = $('.t0516-p2'), c1 = $('.t0516-c1'), c2 = $('.t0516-c2');
+  const mt = $('.t0516-mt'), v1 = $('.t0516-v1'), v2 = $('.t0516-v2');
+  const xbody = $('.t0516-xbody'), xp1 = $('.t0516-xp1'), xhr = $('.t0516-xhr'), xp2 = $('.t0516-xp2');
+  const labs = $$('.zlab[data-l]'), mlabs = $$('.zlab[data-m]');
+  const ivs = [[0.3, 4.3], [4.8, 8.8], [9.3, 13.3], [13.8, 17.8], [18.3, 22.3], [22.8, 26.8]];
+  const mivs = [[10.2, 13.3], [14.6, 17.8], [19.1, 22.3]];
+  return (t, step) => {
+    const teach = fig.dataset.teach === '1';
+    const wide = fig.dataset.view !== 'canvas';
+    const tw = teach ? 1 - pr(t, 27.2, 28.2) : 0;
+    const P = 'var(--t0516-pink)', C = 'var(--t0516-cream)';
+    // step 2: body's background fills the canvas, then its border appears
+    bg.style.opacity = pr(t, 5, 6.2);
+    body.style.opacity = pr(t, 6.4, 7.4);
+    body.style.borderColor = mix(tw, 'var(--t0516-bd)', C);
+    xbody.style.opacity = win(t, 0.3, 8.8);
+    // step 3: the first p, 72 below body's content top
+    mt.style.opacity = 0.9 * win(t, 9.6, 13.3);
+    p1.style.opacity = pr(t, 10.6, 11.6);
+    p1.style.borderColor = mix(tw, 'var(--t0516-p1)', C);
+    c1.style.opacity = p1.style.opacity;
+    c1.style.background = mix(tw, 'var(--t0516-p1c)', P);
+    c1.style.height = tw > 0 ? '72px' : '74px'; // real colors: 2px of pink past the bottom, so no cream seam on body's border
+    xp1.style.opacity = win(t, 9.3, 13.3);
+    // step 4: -108 from the p's bottom (234) up to 126, then the hr
+    const g1 = pr(t, 14.3, 15.5);
+    v1.style.opacity = win(t, 14.2, 17.8);
+    v1.style.top = `${234 - 108 * g1}px`;
+    v1.style.height = `${108 * g1}px`;
+    hr.style.opacity = pr(t, 15.6, 16.6);
+    xhr.style.opacity = win(t, 13.8, 26.8);
+    // step 5: -108 from the hr's bottom (174) up to 66, then the second p
+    const g2 = pr(t, 18.8, 20);
+    v2.style.opacity = win(t, 18.7, 22.3);
+    v2.style.top = `${174 - 108 * g2}px`;
+    v2.style.height = `${108 * g2}px`;
+    p2.style.opacity = pr(t, 20.1, 21.1);
+    p2.style.borderColor = mix(tw, 'var(--t0516-p2)', C);
+    c2.style.opacity = p2.style.opacity;
+    c2.style.background = mix(tw, 'var(--t0516-p2c)', P);
+    c2.style.top = tw > 0 ? '66px' : '64px'; // real colors: 2px of pink past the top
+    c2.style.height = tw > 0 ? '72px' : '74px';
+    xp2.style.opacity = win(t, 18.3, 22.3);
+    // step 6: scale .33 .5 around the hr's center
+    const k = pr(t, 23.6, 25.4);
+    hr.style.transform = `scale(${1 - 0.67 * k}, ${1 - 0.5 * k})`;
+    hr.style.background = mix(tw, 'var(--t0516-hr)', C);
+    labs.forEach((l) => {
+      l.style.opacity = win(t, ...ivs[+l.dataset.l - 1]);
+      l.style.left = wide ? '-46px' : '4px';
+      l.style.top = wide ? '-36px' : '3px';
+    });
+    mlabs.forEach((l) => { l.style.opacity = win(t, ...mivs[+l.dataset.m - 1]); });
+    let txt;
+    if (step === 0) txt = '* * → head, body, p, hr, p, style · * * * → p, hr, p, style';
+    else if (step === 1) txt = `body${c} 400 − 2 × 74 = 252 · 300 − 2 × 66 = 168 · 6vw = 24px`;
+    else if (step === 2) txt = `p${c} 204 − 2 × 66 = 72 · 90 + 72 = 162`;
+    else if (step === 3) txt = `hr${c} 234 + 72 − 180 = 126 · 72 × 48`;
+    else if (step === 4) txt = `p${c} 174 + 72 − 180 = 66`;
+    else if (step === 5) txt = `72 × ${n(0.33)} = ${n(23.76)} · 48 × ${n(0.5)} = 24`;
+    else txt = $$('.caps .cap')[6].dataset.live || '';
+    live.textContent = txt;
+  };
+};
+</script>
+</figure>
