@@ -1,0 +1,148 @@
+<figure class="anim t0503" data-duration="36" data-scene="t0503" data-wide="-30 -60 460 420" data-off-label="-26 -58" style="--bg:#f9d2d2">
+<style>
+.t0503 .scene .t0503-w{left:0;top:0;width:400px;height:300px;background:#fff;z-index:0}
+.t0503 .scene .t0503-g{transform-origin:50% 50%;opacity:0}
+.t0503 .scene .t0503-html{left:10px;top:120px;width:380px;height:60px;z-index:1}
+.t0503 .scene .t0503-body{left:170px;top:10px;width:60px;height:280px;z-index:2}
+.t0503 .scene .t0503-d1{left:20px;top:-40px;width:360px;height:380px;z-index:3}
+.t0503 .scene .t0503-d2{left:60px;top:20px;width:280px;height:260px;z-index:4}
+.t0503 .scene .t0503-p{left:140px;top:60px;width:120px;height:180px;z-index:5}
+.t0503 .scene .t0503-g > *{position:absolute}
+.t0503 .scene .t0503-bar{background:#529caf}
+.t0503 .scene .t0503-dot{width:30px;height:30px;border-radius:50%;background:#f8d2d1}
+.t0503 .scene .t0503-box{left:0;top:0;right:0;bottom:0;box-sizing:border-box;z-index:2}
+.t0503 .scene .t0503-mark{left:196px;top:146px;width:8px;height:8px;border-radius:50%;background:#fff;box-shadow:0 0 0 calc(1.5px * var(--k, 1)) #14142a;z-index:8;opacity:0}
+.t0503 .scene .zlab{color:#14142a;background:rgb(255 255 255 / .92);box-shadow:0 0 0 1px rgb(20 20 42 / .25);padding:1px 5px;border-radius:3px;opacity:0}
+@media (max-width:700px){.t0503 .scene .zlab{font-size:8px;padding:0 3px}}
+.t0503 .legend .t0503-ol{box-shadow:0 0 0 1px currentColor}
+</style>
+<div class="anim-col">
+<div class="stage" role="img" aria-label="{% if include.lang == "fr" %}Animation : * donne à tous les éléments rotate:90deg, une marge var(--m,-40 170) et border-block:solid 30vw#529CAF, deux bandes bleues de 120px. html, sans --m, prend la marge -40 170 : 60 × 380 en (170, −40), puis tourne de 90° autour de (200, 150) : ses bandes deviennent les barres de gauche et de droite. body reçoit background:#E775, qui colore le canevas en (249, 210, 210), et --m:-70 0 : 60 × 280 en (170, 10) ; 90° + 90° = 180°, il est vertical : barres du haut et du bas. Les éléments dans body reçoivent border:dotted#F8D2D1 32q, des points roses de 30px. Le dl extérieur (--m:-160) finit à 270°, 360 × 380 en (20, −40) ; le dl intérieur (--m:20) à 360°, 280 × 260 en (60, 20) ; p (--m:40 20, height:60) à 450°, 120 × 180 en (140, 60). Toutes ces boîtes ont le même centre. Les points sont de la couleur du fond, à un niveau près : seuls les huit posés sur le bleu se voient.{% else %}Animation: * gives every element rotate:90deg, a margin var(--m,-40 170) and border-block:solid 30vw#529CAF, two blue bands of 120px. html, with no --m, gets the margin -40 170: 60 × 380 at (170, −40), then turns 90° around (200, 150): its bands become the left and right bars. body gets background:#E775, which colors the canvas (249, 210, 210), and --m:-70 0: 60 × 280 at (170, 10); 90° + 90° = 180°, so it is vertical: the top and bottom bars. The elements inside body get border:dotted#F8D2D1 32q, pink dots of 30px. The outer dl (--m:-160) ends at 270°, 360 × 380 at (20, −40); the inner dl (--m:20) at 360°, 280 × 260 at (60, 20); p (--m:40 20, height:60) at 450°, 120 × 180 at (140, 60). All these boxes share one center. The dots are the background's color, give or take one level: only the eight on the blue show.{% endif %}">
+<div class="scene">
+<div class="t0503-w"></div>
+<div class="t0503-g t0503-html" data-g="html"><div class="t0503-bar" style="left:0;top:0;width:120px;height:60px"></div><div class="t0503-bar" style="left:260px;top:0;width:120px;height:60px"></div><div class="t0503-box"></div></div>
+<div class="t0503-g t0503-body" data-g="body"><div class="t0503-bar" style="left:0;top:0;width:60px;height:120px"></div><div class="t0503-bar" style="left:0;top:160px;width:60px;height:120px"></div><div class="t0503-box"></div></div>
+<div class="t0503-g t0503-d1" data-g="d1"><div class="t0503-box"></div></div>
+<div class="t0503-g t0503-d2" data-g="d2"><div class="t0503-box"></div></div>
+<div class="t0503-g t0503-p" data-g="p"><div class="t0503-box"></div></div>
+<div class="t0503-mark"></div>
+<span class="zlab" data-l="1" style="left:240px;top:30px">30vw = 120px</span>
+<span class="zlab" data-l="1" style="left:240px;top:143px">html 60 × 380</span>
+<span class="zlab" data-l="1" style="left:8px;top:143px">margin:-40 170</span>
+<span class="zlab" data-l="2" style="left:140px;top:94px">rotate:90deg</span>
+<span class="zlab" data-l="2" style="left:140px;top:192px">{% if include.lang == "fr" %}centre (200, 150){% else %}center (200, 150){% endif %}</span>
+<span class="zlab" data-l="3" style="left:8px;top:8px">#E775 → #f9d2d2</span>
+<span class="zlab" data-l="3" style="left:240px;top:60px">body 60 × 280</span>
+<span class="zlab" data-l="3" style="left:240px;top:226px">90° + 90° = 180°</span>
+<span class="zlab" data-l="4" style="left:60px;top:60px">32q → 30px</span>
+<span class="zlab" data-l="4" style="left:184px;top:143px">270°</span>
+<span class="zlab" data-l="5" style="left:184px;top:143px">360°</span>
+<span class="zlab" data-l="6" style="left:184px;top:143px">450°</span>
+</div>
+</div>
+<div class="legend"><span><i class="t0503-ol" style="--c:#529caf"></i>{% if include.lang == "fr" %}#529caf : les bandes bleues{% else %}#529caf: the blue bands{% endif %}</span><span><i class="t0503-ol" style="--c:#f9d2d2"></i>{% if include.lang == "fr" %}#f9d2d2 : #E775 sur le blanc, le canevas{% else %}#f9d2d2: #E775 over white, the canvas{% endif %}</span><span><i class="t0503-ol" style="--c:#f8d2d1"></i>{% if include.lang == "fr" %}#f8d2d1 : les points{% else %}#f8d2d1: the dots{% endif %}</span><span><i style="--c:#facc15"></i>{% if include.lang == "fr" %}boîte de html{% else %}html's box{% endif %}</span><span><i style="--c:#f472b6"></i>{% if include.lang == "fr" %}boîte de body{% else %}body's box{% endif %}</span><span><i style="--c:#fb923c"></i>{% if include.lang == "fr" %}dl extérieur et ses points{% else %}outer dl and its dots{% endif %}</span><span><i style="--c:#22d3ee"></i>{% if include.lang == "fr" %}dl intérieur et ses points{% else %}inner dl and its dots{% endif %}</span><span><i style="--c:#a78bfa"></i>{% if include.lang == "fr" %}p et ses points{% else %}p and its dots{% endif %}</span></div>
+</div>
+<div class="anim-side">
+<pre class="code" aria-hidden="true"><span data-on="4">&lt;dl></span><span data-on="5">&lt;dl></span><span data-on="6">&lt;p></span>&lt;style><span data-on="1">*{</span><span data-on="2">rotate:90deg;</span><span data-on="1">margin:var(--m,-40 170);border-block:solid 30vw#529CAF;</span><span data-on="3">+*{background:#E775;--m:-70 0;</span><span data-on="4">*{border:dotted#F8D2D1 32q;--m:-160;</span><span data-on="5">*{--m:20;</span><span data-on="6">*{--m:40 20;height:60</span></pre>
+<div class="now" aria-live="polite">
+<div class="caps">
+{%- if include.lang == "fr" %}
+<div class="cap" data-t="0" data-step="Tous les éléments"><h3>1. Une règle pour tous</h3><p><code>*</code> vise les sept éléments : html, head, body, les deux dl, p et style. head et style ne s'affichent pas. Chacun reçoit <code>rotate:90deg</code>, une marge et <code>border-block:solid 30vw#529CAF</code> : une bande bleue de 30vw = 120px en haut et en bas. html n'a pas de <code>--m</code> : sa marge est le repli <code>-40 170</code>. En mode quirks, html remplit la page moins ses marges : 60 × 380 en (170, −40).</p></div>
+<div class="cap" data-t="5" data-step="Un quart de tour"><h3>2. html tourne</h3><p>html tourne de 90° autour de son centre, (200, 150). Ses deux bandes bleues deviennent les barres de gauche et de droite : 120 × 60 en (10, 120) et en (270, 120). Entre elles, les 140px du contenu de html.</p></div>
+<div class="cap" data-t="10" data-step="body"><h3>3. body</h3><p><code>+*</code> dans <code>*</code>, c'est <code>*+*</code> : un élément qui suit un autre élément. Seul body convient, il vient après head. <code>background:#E775</code> passe au canevas : (249, 210, 210) sur le blanc. <code>--m:-70 0</code> donne à body 60 × 280 en (170, 10). Il a ses bandes bleues et son propre quart de tour : 90° + 90° = 180°, il est vertical. Ce sont les barres du haut et du bas.</p></div>
+<div class="cap" data-t="15.5" data-step="Le dl extérieur"><h3>4. Le dl extérieur</h3><p>Le <code>*</code> suivant vise tout ce qui est dans body. <code>border:dotted#F8D2D1 32q</code> remplace les bandes bleues par une bordure à points roses : 32q = 30,24px, mon Chrome trace 30px, des points de 30px. <code>--m:-160</code> : 380 × 360, et 270° : debout, 360 × 380 en (20, −40). Chaque côté a un nombre impair de points, donc un point au milieu : (35, 150) et (365, 150), sur les barres.</p></div>
+<div class="cap" data-t="21" data-step="Le dl intérieur"><h3>5. Le dl intérieur</h3><p><code>--m:20</code> : 280 × 260 en (60, 20). 360° : un tour complet, il reste droit. Ses quatre points du milieu tombent sur les quatre barres : (75, 150), (325, 150), (200, 35) et (200, 265).</p></div>
+<div class="cap" data-t="26" data-step="p"><h3>6. p</h3><p><code>--m:40 20</code> et <code>height:60</code> : 180 × 120, et 450° : 120 × 180 en (140, 60). En haut et en bas, trois points ; celui du milieu, en (200, 75) et en (200, 225), tombe sur les barres du haut et du bas. Ses côtés ont quatre points chacun, tous sur le fond.</p></div>
+<div class="cap" data-t="31" data-step="Résultat" data-live="184 caractères · 100 % identique"><h3>7. Résultat : 184 caractères</h3><p>Cinq boîtes autour du même centre. Les points sont <code>#f8d2d1</code>, à un niveau du canevas : sur le fond, ils disparaissent. Seuls les huit posés sur le bleu se voient.</p></div>
+{%- else %}
+<div class="cap" data-t="0" data-step="Every element"><h3>1. One rule for all</h3><p><code>*</code> targets the seven elements: html, head, body, the two dl, p and style. head and style are not displayed. Each one gets <code>rotate:90deg</code>, a margin and <code>border-block:solid 30vw#529CAF</code>: a blue band of 30vw = 120px on top and at the bottom. html has no <code>--m</code>: its margin is the fallback <code>-40 170</code>. In quirks mode, html fills the page minus its margins: 60 × 380 at (170, −40).</p></div>
+<div class="cap" data-t="5" data-step="A quarter turn"><h3>2. html turns</h3><p>html turns 90° around its center, (200, 150). Its two blue bands become the left and right bars: 120 × 60 at (10, 120) and (270, 120). Between them sit the 140px of html's content.</p></div>
+<div class="cap" data-t="10" data-step="body"><h3>3. body</h3><p><code>+*</code> inside <code>*</code> is <code>*+*</code>: an element that follows another element. Only body matches: it comes after head. <code>background:#E775</code> goes to the canvas: (249, 210, 210) over white. <code>--m:-70 0</code> makes body 60 × 280 at (170, 10). It has its own blue bands and its own quarter turn: 90° + 90° = 180°, so it is vertical. These are the top and bottom bars.</p></div>
+<div class="cap" data-t="15.5" data-step="The outer dl"><h3>4. The outer dl</h3><p>The next <code>*</code> targets everything inside body. <code>border:dotted#F8D2D1 32q</code> replaces the blue bands with a border of pink dots: 32q = 30.24px, my Chrome draws 30px, so the dots are 30px wide. <code>--m:-160</code>: 380 × 360, and 270°: standing, 360 × 380 at (20, −40). Each side has an odd number of dots, so one sits in the middle: (35, 150) and (365, 150), on the bars.</p></div>
+<div class="cap" data-t="21" data-step="The inner dl"><h3>5. The inner dl</h3><p><code>--m:20</code>: 280 × 260 at (60, 20). 360°: a full turn, it stays upright. Its four middle dots land on the four bars: (75, 150), (325, 150), (200, 35) and (200, 265).</p></div>
+<div class="cap" data-t="26" data-step="p"><h3>6. p</h3><p><code>--m:40 20</code> and <code>height:60</code>: 180 × 120, and 450°: 120 × 180 at (140, 60). Its top and bottom rows have three dots; the middle ones, at (200, 75) and (200, 225), land on the top and bottom bars. Its sides have four dots each, all on the background.</p></div>
+<div class="cap" data-t="31" data-step="Result" data-live="184 characters · 100% match"><h3>7. Result: 184 characters</h3><p>Five boxes around one center. The dots are <code>#f8d2d1</code>, one level away from the canvas: on the background, they vanish. Only the eight on the blue show.</p></div>
+{%- endif %}
+</div>
+<div class="live"></div>
+</div>
+</div>
+<script>
+(window.AnimScenes = window.AnimScenes || {}).t0503 = (fig) => {
+  const fr = document.documentElement.lang === 'fr';
+  const $ = (s) => fig.querySelector(s);
+  const $$ = (s) => [...fig.querySelectorAll(s)];
+  const live = $('.live');
+  const ease = (x) => (x < 0.5 ? 4 * x * x * x : 1 - Math.pow(-2 * x + 2, 3) / 2);
+  const pr = (t, a, b) => ease(Math.min(1, Math.max(0, (t - a) / (b - a))));
+  const win = (t, a, b) => Math.min(pr(t, a, a + 0.5), 1 - pr(t, b - 0.3, b));
+  const c = fr ? ' :' : ':';
+  // Measured on the official code in local Chrome (400 × 300 page, quirks mode), getBoundingClientRect after all rotations:
+  // html 380 × 60 at (10, 120) (layout 60 × 380 at (170, -40), content 140 high); body 60 × 280 at (170, 10);
+  // outer dl 360 × 380 at (20, -40); inner dl 280 × 260 at (60, 20); p 120 × 180 at (140, 60). Same center (200, 150).
+  // Dotted borders: 30px (32q). Dot centers, from renders with each border recolored (and html shifted ±70px for the off-canvas ones):
+  // outer dl: x 35 / 365 at y -25, 33.3, 91.7, 150, 208.3, 266.7, 325; y -25 / 325 at x 35, 90, 145, 200, 255, 310, 365.
+  // inner dl: x 75 / 325 at y 35, 92.5, 150, 207.5, 265; y 35 / 265 at x 75, 137.5, 200, 262.5, 325.
+  // p: x 155 / 245 at y 75, 125, 175, 225; y 75 / 225 at x 155, 200, 245.
+  // Canvas (249, 210, 210) = #E775 over white; dots (248, 210, 209) = #f8d2d1; bars (82, 156, 175) = #529caf.
+  const FIN = 31;
+  const TEACH = { html: '#facc15', body: '#f472b6', d1: '#fb923c', d2: '#22d3ee', p: '#a78bfa' };
+  const G = {};
+  $$('.t0503-g').forEach((g) => { G[g.dataset.g] = g; });
+  const ring = (box, xs, ys) => {
+    // dots on the four sides of a box, in its own px (final orientation)
+    const pts = [];
+    for (const x of xs) for (const y of [ys[0], ys[ys.length - 1]]) pts.push([x, y]);
+    for (const y of ys.slice(1, -1)) for (const x of [xs[0], xs[xs.length - 1]]) pts.push([x, y]);
+    pts.forEach(([x, y]) => {
+      const d = document.createElement('div');
+      d.className = 't0503-dot';
+      d.style.left = (x - 15) + 'px';
+      d.style.top = (y - 15) + 'px';
+      box.insertBefore(d, box.lastElementChild);
+    });
+  };
+  const seq = (a, b, n) => Array.from({ length: n }, (_, i) => a + ((b - a) * i) / (n - 1));
+  ring(G.d1, seq(15, 345, 7), seq(15, 365, 7));
+  ring(G.d2, seq(15, 265, 5), seq(15, 245, 5));
+  ring(G.p, seq(15, 105, 3), seq(15, 165, 4));
+  const white = $('.t0503-w'), mark = $('.t0503-mark');
+  const labs = $$('.zlab[data-l]');
+  const ivs = [[0.3, 4.8], [5.3, 9.8], [10.3, 15.3], [15.8, 20.8], [21.3, 25.8], [26.3, 30.8]];
+  // [appear, turn start, turn end, own step window]
+  const T = { html: [0.2, 6, 8.5, [0.2, 9.8]], body: [10.3, 12.2, 14.2, [10.3, 15.3]], d1: [15.8, 17.2, 19.4, [15.8, 20.8]], d2: [21.3, 22.7, 24.7, [21.3, 25.8]], p: [26.3, 27.7, 29.7, [26.3, 30.8]] };
+  const dash = 'calc(1.5px * var(--k, 1)) dashed #fff';
+  return (t, step) => {
+    const teach = fig.dataset.teach === '1';
+    const fin = pr(t, FIN + 0.2, FIN + 1);
+    white.style.opacity = 1 - pr(t, 10.6, 12.2);
+    for (const k of Object.keys(G)) {
+      const g = G[k], [a, r0, r1, w] = T[k];
+      g.style.opacity = pr(t, a, a + 0.6);
+      g.style.transform = `rotate(${(-90 * (1 - pr(t, r0, r1))).toFixed(2)}deg)`;
+      const box = g.lastElementChild;
+      const own = win(t, w[0], w[1]);
+      box.style.opacity = teach ? Math.max(own, k === 'html' || k === 'body' ? 0 : (1 - fin) * pr(t, a, a + 0.6) * 0.9) : own;
+      box.style.border = teach ? '0' : dash;
+      box.style.boxShadow = teach ? `inset 0 0 0 calc(3px * var(--k, 1)) ${TEACH[k]}` : 'none';
+      box.style.filter = teach ? 'none' : 'drop-shadow(0 0 calc(1px * var(--k, 1)) rgb(0 0 0 / .9))';
+      g.querySelectorAll('.t0503-dot').forEach((d) => {
+        d.style.background = teach && fin < 1 ? `color-mix(in srgb, ${TEACH[k]} ${((1 - fin) * 100).toFixed(1)}%, #f8d2d1)` : '#f8d2d1';
+        d.style.boxShadow = !teach && fin < 1 ? `0 0 0 calc(1px * var(--k, 1)) rgb(60 30 30 / ${(0.45 * (1 - fin)).toFixed(3)})` : 'none';
+      });
+    }
+    mark.style.opacity = win(t, 5.3, 9.8);
+    labs.forEach((l) => { l.style.opacity = win(t, ...ivs[+l.dataset.l - 1]); });
+    let txt;
+    if (step === 0) txt = `html${c} 400 − 2 × 170 = 60 · 120 + 140 + 120 = 380`;
+    else if (step === 1) txt = `rotate:90deg → html 380 × 60 ${fr ? 'en' : 'at'} (10, 120)`;
+    else if (step === 2) txt = `*+* = body · 60 × 280 ${fr ? 'en' : 'at'} (170, 10) · 180°`;
+    else if (step === 3) txt = `dl${c} 60 + 2 × 160 = 380 × 360 · 270° → 360 × 380`;
+    else if (step === 4) txt = `dl${c} 320 − 2 × 20 = 280 × 260 · 360°`;
+    else if (step === 5) txt = `p${c} 180 × 120 · 450° → 120 × 180`;
+    else txt = $$('.caps .cap')[6].dataset.live || '';
+    live.textContent = txt;
+  };
+};
+</script>
+</figure>
