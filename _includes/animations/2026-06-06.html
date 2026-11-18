@@ -1,0 +1,162 @@
+<figure class="anim t0606" data-duration="39" data-scene="t0606" data-wide="-20 -20 440 530" style="--bg:#0d2a58">
+<style>
+.t0606{--t0606-box:#ffd166;--t0606-p1:#f59e0b;--t0606-p2:#22d3ee}
+.t0606 .scene .t0606-cv{left:-1000px;top:-1000px;width:2400px;height:2400px;background:#fff;z-index:0}
+.t0606 .scene .t0606-body{left:165px;top:35px;width:70px;height:230px;z-index:2}
+.t0606 .scene .t0606-dl{left:165px;top:35px;width:70px;height:230px;z-index:3;transform-origin:35px 115px}
+.t0606 .scene .t0606-dl > *{position:absolute}
+.t0606 .scene .t0606-mask{left:165px;top:34px;width:70px;height:232px;background:#0d2a58;z-index:4;opacity:0}
+.t0606 .scene .t0606-p{left:-155px;top:0;width:380px;height:230px;border-radius:115px;opacity:0;transform-origin:190px 115px}
+.t0606 .scene .t0606-box{box-sizing:border-box;opacity:0;z-index:9;pointer-events:none;outline:calc(1.5px * var(--k, 1)) dashed var(--t0606-box);outline-offset:calc(-0.75px * var(--k, 1))}
+.t0606 .scene .t0606-dot{left:197px;top:147px;width:6px;height:6px;border-radius:50%;background:var(--t0606-box);opacity:0;z-index:9}
+.t0606 .scene .zlab{color:#14142a;background:rgb(255 255 255 / .92);box-shadow:0 0 0 1px rgb(20 20 42 / .25);padding:1px 5px;border-radius:3px;opacity:0}
+</style>
+<div class="anim-col">
+<div class="stage" role="img" aria-label="{% if include.lang == "fr" %}Animation : &amp; vise html. Son fond bleu nuit peint tout le canevas, et margin:257 157 le place en (157, 257), 86px de large. body, avec sa marge de 8px, serait en (165, 265). Mais la marge de −230 des p se fond avec la sienne : 8 − 230 = −222, et body remonte en (165, 35), 70 × 230. dl a la même boîte. Les deux ombres de body, vertes, font une barre de 30,24px juste à droite de la boîte et une barre de 30 × 190 en (275, 55). dl a les mêmes ombres, en gris. Les deux p font 380 × 230 en (10, 35), avec un rayon de 115px et un anneau intérieur de 32q = 30,24px. clip-path:inset(0 0 0 7cm) ne garde que x ≥ 274,57 : un D. scale:-1 retourne dl autour de (200, 150) : ses ombres grises et le premier p, vert, passent à gauche. Le second p est retourné une seconde fois par p+p : il revient à droite, gris.{% else %}Animation: &amp; matches html. Its navy background paints the whole canvas, and margin:257 157 puts it at (157, 257), 86px wide. body, with its 8px margin, would be at (165, 265). But the p's −230 margin merges with it: 8 − 230 = −222, and body moves up to (165, 35), 70 × 230. dl has the same box. body's two green shadows make a 30.24px bar just right of the box and a 30 × 190 bar at (275, 55). dl has the same shadows, in gray. Both p are 380 × 230 at (10, 35), with a 115px radius and an inner ring of 32q = 30.24px. clip-path:inset(0 0 0 7cm) keeps only x ≥ 274.57: a D. scale:-1 flips dl around (200, 150): its gray shadows and the first p, green, go to the left. The second p is flipped a second time by p+p: it comes back to the right, gray.{% endif %}">
+<div class="scene">
+<div class="t0606-cv"></div>
+<div class="t0606-body"></div>
+<div class="t0606-dl">
+<div class="t0606-p t0606-p1"></div>
+<div class="t0606-p t0606-p2"></div>
+</div>
+<div class="t0606-mask"></div>
+<div class="t0606-box t0606-hb" style="left:157px;top:257px;width:86px;height:16px"></div>
+<div class="t0606-box t0606-bb" style="left:165px;top:35px;width:70px;height:230px"></div>
+<div class="t0606-box t0606-g1" style="top:35px;width:70px;height:230px"></div>
+<div class="t0606-box t0606-g2"></div>
+<div class="t0606-box t0606-pb" style="left:10px;top:35px;width:380px;height:230px"></div>
+<div class="t0606-dot"></div>
+<span class="zlab" data-l="1" data-r="0">&amp; = html</span>
+<span class="zlab" data-l="1" data-r="1">{% if include.lang == "fr" %}html : 86 de large en (157, 257){% else %}html: 86 wide at (157, 257){% endif %}</span>
+<span class="zlab" data-l="2" data-r="0">8 − 230 = −222</span>
+<span class="zlab" data-l="2" data-r="1">{% if include.lang == "fr" %}body, dl : 70 × 230 en (165, 35){% else %}body, dl: 70 × 230 at (165, 35){% endif %}</span>
+<span class="zlab" data-l="3" data-r="0">{% if include.lang == "fr" %}32q = 30,24px{% else %}32q = 30.24px{% endif %}</span>
+<span class="zlab" data-l="3" data-r="1">5lh = 90px · −5vw = −20px</span>
+<span class="zlab" data-l="4" data-r="0">{% if include.lang == "fr" %}dl : même boîte, mêmes ombres{% else %}dl: same box, same shadows{% endif %}</span>
+<span class="zlab" data-l="4" data-r="1">color:D9D9D9</span>
+<span class="zlab" data-l="5" data-r="0">{% if include.lang == "fr" %}p : 380 × 230 en (10, 35){% else %}p: 380 × 230 at (10, 35){% endif %}</span>
+<span class="zlab" data-l="5" data-r="1">{% if include.lang == "fr" %}9in → rayon 115px{% else %}9in → 115px radius{% endif %}</span>
+<span class="zlab" data-l="6" data-r="0">{% if include.lang == "fr" %}7cm = 264,57px{% else %}7cm = 264.57px{% endif %}</span>
+<span class="zlab" data-l="6" data-r="1">{% if include.lang == "fr" %}gardé : x ≥ 274,57{% else %}kept: x ≥ 274.57{% endif %}</span>
+<span class="zlab" data-l="7" data-r="0">{% if include.lang == "fr" %}dl : scale:-1 autour de (200, 150){% else %}dl: scale:-1 around (200, 150){% endif %}</span>
+<span class="zlab" data-l="7" data-r="1">{% if include.lang == "fr" %}p+p : encore scale:-1{% else %}p+p: scale:-1 again{% endif %}</span>
+</div>
+</div>
+<div class="legend"><span><i style="--c:#5a9f48"></i>{% if include.lang == "fr" %}ombres de body{% else %}body's shadows{% endif %}</span><span><i style="--c:#d9d9d9;box-shadow:inset 0 0 0 1px rgb(0 0 0 / .3)"></i>{% if include.lang == "fr" %}ombres de dl{% else %}dl's shadows{% endif %}</span><span><i style="--c:#f59e0b"></i>{% if include.lang == "fr" %}premier p (vert en vrai){% else %}first p (green in reality){% endif %}</span><span><i style="--c:#22d3ee"></i>{% if include.lang == "fr" %}second p (gris en vrai){% else %}second p (gray in reality){% endif %}</span><span><i style="--c:transparent;outline:2px dashed currentColor;outline-offset:-2px"></i>{% if include.lang == "fr" %}boîtes{% else %}boxes{% endif %}</span></div>
+</div>
+<div class="anim-side">
+<pre class="code" aria-hidden="true"><span data-on="2 5">&lt;dl>&lt;p>&lt;p></span>&lt;style><span data-on="1" data-tone="2">&amp;{</span><span data-on="1">background:#0d2a58</span>;<span data-on="1">margin:257 157</span>;<span data-on="2" data-tone="2">*{</span><span data-on="3">color:5A9F48</span>;<span data-on="2">height:230</span>;<span data-on="3 4">box-shadow:32q 0,5lh 0 0-5vw</span>;<span data-on="4 7" data-tone="2">dl,p+p{</span><span data-on="7">scale:-1</span>;<span data-on="4">color:D9D9D9</span>;<span data-on="5" data-tone="2">*{</span><span data-on="2 5">margin:-230-155</span>;<span data-on="5">border-radius:9in</span>;<span data-on="5">box-shadow:inset 0 0 0 32q</span>;<span data-on="6">clip-path:inset(0 0 0 7cm</span></pre>
+<div class="now" aria-live="polite">
+<div class="caps">
+{%- if include.lang == "fr" %}
+<div class="cap" data-t="0" data-step="html"><h3>1. html</h3><p>Au premier niveau, <code>&amp;</code> vise la racine : html. Son <code>background:#0d2a58</code> peint tout le canevas, comme tout fond posé sur html. <code>margin:257 157</code> le place en (157, 257), et lui laisse 400 − 2 × 157 = 86 de large.</p></div>
+<div class="cap" data-t="4.5" data-step="body"><h3>2. body remonte</h3><p><code>&amp;{*{…}}</code> vaut <code>&amp; *</code> : tout ce qui est dans html. body garde sa marge de 8px : il ferait 86 − 16 = 70 de large en (165, 265). Mais le premier p, dans dl, a une marge de −230 en haut. Elle se fond avec celle de body : 8 − 230 = −222. En mode quirks, la marge par défaut de dl, en haut de body, ne compte pas. body remonte en (165, 35), et <code>height:230</code> lui donne 230 de haut. dl a la même boîte.</p></div>
+<div class="cap" data-t="10" data-step="Ombres de body"><h3>3. Les ombres de body</h3><p><code>color:5A9F48</code> donne à body une couleur de texte verte. Ses ombres n'ont pas de couleur à elles : elles prennent celle-là. <code>32q 0</code> décale une copie de la boîte de 30,24px vers la droite. Une ombre externe n'est jamais peinte sous sa boîte : il reste une barre de 30,24px, de x = 235 à 265,24. <code>5lh 0 0-5vw</code> décale une copie de 90px et la réduit de 20px de chaque côté : 30 × 190 en (275, 55).</p></div>
+<div class="cap" data-t="15.5" data-step="dl"><h3>4. dl, les mêmes ombres en gris</h3><p><code>&amp; *</code> vise aussi dl. Il a la même boîte que body, donc les mêmes deux barres. Mais <code>dl,p+p</code> lui donne <code>color:D9D9D9</code> : ses barres sont grises. dl est dans body, elles sont peintes par-dessus les vertes.</p></div>
+<div class="cap" data-t="20" data-step="Anneaux"><h3>5. Deux anneaux</h3><p>La dernière règle vise les deux p, enfants de dl. <code>margin:-230-155</code> les élargit de 155 de chaque côté : 380 × 230 en (10, 35). Le second p remonte sur le premier : les deux marges de −230 entre eux se fondent en une seule. <code>border-radius:9in</code> est trop grand : le rayon est réduit à la moitié de la hauteur, 115. L'ombre <code>inset 0 0 0 32q</code> trace un anneau de 30,24px à l'intérieur.</p></div>
+<div class="cap" data-t="25" data-step="Découpe"><h3>6. Un D</h3><p><code>clip-path:inset(0 0 0 7cm)</code> coupe 7cm = 264,57px à gauche de chaque p. Il ne reste que x ≥ 274,57 : la moitié droite de l'anneau, un D. Le centre de l'arrondi est en x = 390 − 115 = 275.</p></div>
+<div class="cap" data-t="29.5" data-step="Miroirs"><h3>7. Retourné une fois, puis deux</h3><p><code>scale:-1</code> retourne dl autour de son centre, (200, 150). Tout ce qu'il contient passe de l'autre côté : ses ombres grises et le premier p, vert, à gauche. Le second p reçoit lui aussi <code>scale:-1</code> par <code>p+p</code>, et sa couleur grise. Retourné deux fois, il revient à sa place, à droite.</p></div>
+<div class="cap" data-t="35" data-step="Résultat" data-live="225 caractères · 100 % identique"><h3>8. Résultat : 225 caractères</h3><p>Une seule liste d'ombres dessine les barres des deux côtés, verte sur body et grise sur dl retourné. Un seul anneau, coupé en D, sert deux fois.</p></div>
+{%- else %}
+<div class="cap" data-t="0" data-step="html"><h3>1. html</h3><p>At the top level, <code>&amp;</code> matches the root: html. Its <code>background:#0d2a58</code> paints the whole canvas, like any background on html. <code>margin:257 157</code> puts it at (157, 257), 400 − 2 × 157 = 86 wide.</p></div>
+<div class="cap" data-t="4.5" data-step="body"><h3>2. body moves up</h3><p><code>&amp;{*{…}}</code> is <code>&amp; *</code>: everything inside html. body keeps its 8px margin: it would be 86 − 16 = 70 wide at (165, 265). But the first p, inside dl, has a −230 top margin. It merges with body's: 8 − 230 = −222. In quirks mode, dl's default margin at the top of body does not count. body moves up to (165, 35), and <code>height:230</code> makes it 230 tall. dl has the same box.</p></div>
+<div class="cap" data-t="10" data-step="body's shadows"><h3>3. body's shadows</h3><p><code>color:5A9F48</code> gives body a green text color. Its shadows have no color of their own, so they use that one. <code>32q 0</code> moves a copy of the box 30.24px to the right. An outer shadow is never painted under its box: what is left is a 30.24px bar, from x = 235 to 265.24. <code>5lh 0 0-5vw</code> moves a copy 90px and shrinks it by 20px on each side: 30 × 190 at (275, 55).</p></div>
+<div class="cap" data-t="15.5" data-step="dl"><h3>4. dl, the same shadows in gray</h3><p><code>&amp; *</code> matches dl too. It has the same box as body, so the same two bars. But <code>dl,p+p</code> gives it <code>color:D9D9D9</code>: its bars are gray. dl is inside body, so they are painted over the green ones.</p></div>
+<div class="cap" data-t="20" data-step="Rings"><h3>5. Two rings</h3><p>The last rule matches the two p, children of dl. <code>margin:-230-155</code> widens them by 155 on each side: 380 × 230 at (10, 35). The second p moves up onto the first: the two −230 margins between them merge into one. <code>border-radius:9in</code> is too big: the radius is cut down to half the height, 115. The <code>inset 0 0 0 32q</code> shadow draws a 30.24px ring inside.</p></div>
+<div class="cap" data-t="25" data-step="Cut"><h3>6. A D</h3><p><code>clip-path:inset(0 0 0 7cm)</code> cuts 7cm = 264.57px off the left of each p. Only x ≥ 274.57 is left: the right half of the ring, a D. The center of the round end is at x = 390 − 115 = 275.</p></div>
+<div class="cap" data-t="29.5" data-step="Mirrors"><h3>7. Flipped once, then twice</h3><p><code>scale:-1</code> flips dl around its center, (200, 150). Everything inside it goes to the other side: its gray shadows and the first p, green, to the left. The second p also gets <code>scale:-1</code> from <code>p+p</code>, and its gray color. Flipped twice, it comes back to its place, on the right.</p></div>
+<div class="cap" data-t="35" data-step="Result" data-live="225 characters · 100% match"><h3>8. Result: 225 characters</h3><p>One shadow list draws the bars on both sides, green on body and gray on the flipped dl. One ring, cut into a D, is used twice.</p></div>
+{%- endif %}
+</div>
+<div class="live"></div>
+</div>
+</div>
+<script>
+(window.AnimScenes = window.AnimScenes || {}).t0606 = (fig) => {
+  const fr = document.documentElement.lang === 'fr';
+  const $ = (s) => fig.querySelector(s);
+  const $$ = (s) => [...fig.querySelectorAll(s)];
+  const live = $('.live');
+  const ease = (x) => (x < 0.5 ? 4 * x * x * x : 1 - Math.pow(-2 * x + 2, 3) / 2);
+  const pr = (t, [a, b]) => ease(Math.min(1, Math.max(0, (t - a) / (b - a))));
+  const win = (t, a, b) => Math.min(pr(t, [a, a + 0.5]), 1 - pr(t, [b - 0.2, b]));
+  const c = fr ? ' :' : ':';
+  const n = (x) => (fr ? String(x).replace('.', ',') : String(x));
+  const mix = (k, a, b) => (k <= 0 ? b : k >= 1 ? a : `color-mix(in srgb, ${a} ${(k * 100).toFixed(1)}%, ${b})`);
+  // Measured on the official code in local Chrome (400 × 300 iframe, quirks mode, getBoundingClientRect, getComputedStyle).
+  // html: margin 257px 157px, 86 wide at (157, 257). body and dl: 70 × 230 at (165, 35) (8 − 230 = −222 collapsed margin).
+  // Shadows: 30.2362px 0 (32q) and 90px 0 0 −20px (5lh, −5vw): bars 235..265.24 × 35..265 and 275..305 × 55..245.
+  // p, p: 380 × 230 at (10, 35), radius 864px used as 115, inset ring 30.2362px, clip inset(0 0 0 264.567px).
+  const Q = 30.2362, CUT = 264.567, FIN = 35;
+  const cv = $('.t0606-cv'), bo = $('.t0606-body'), dl = $('.t0606-dl');
+  const p1 = $('.t0606-p1'), p2 = $('.t0606-p2');
+  const hb = $('.t0606-hb'), bb = $('.t0606-bb'), g1 = $('.t0606-g1'), g2 = $('.t0606-g2'), pb = $('.t0606-pb'), mask = $('.t0606-mask'), dot = $('.t0606-dot');
+  const labs = $$('.zlab');
+  const ivs = [[0.3, 4.5], [4.8, 10], [10.3, 15.5], [15.8, 20], [20.3, 25], [25.3, 29.5], [29.8, FIN]];
+  return (t, step) => {
+    const teach = fig.dataset.teach === '1';
+    const wide = fig.dataset.view === 'wide';
+    cv.style.opacity = 1 - pr(t, [1.2, 2.2]);
+    // html's box, then body's box moving up
+    hb.style.opacity = win(t, 0.4, 10);
+    bb.style.opacity = win(t, 4.8, 20);
+    bb.style.top = `${265 - 230 * pr(t, [6.5, 8.5])}px`;
+    // body's shadows: the first one slides out from under the box, the second one shrinks and moves
+    const s1 = pr(t, [11, 12.5]);
+    g1.style.left = `${165 + Q * s1}px`;
+    g1.style.opacity = win(t, 10.8, 15.5);
+    const sh = pr(t, [12.8, 13.6]), mv = pr(t, [13.8, 15]);
+    g2.style.left = `${165 + 20 * sh + 90 * mv}px`;
+    g2.style.top = `${35 + 20 * sh}px`;
+    g2.style.width = `${70 - 40 * sh}px`;
+    g2.style.height = `${230 - 40 * sh}px`;
+    g2.style.opacity = win(t, 12.6, 15.5);
+    // real box-shadows: an outer shadow is never painted under its box
+    const k2 = pr(t, [12.8, 13.3]);
+    const sh2 = (col) => `${90 * mv}px 0 0 ${-20 * sh}px ${col}`;
+    bo.style.boxShadow = `${Q * s1}px 0 ${s1 > 0 ? '#5a9f48' : 'transparent'}, ${sh2(`rgb(90 159 72 / ${k2})`)}`;
+    // dl's gray shadows, on top
+    const dk = pr(t, [16.3, 17.3]);
+    dl.style.boxShadow = `${Q}px 0 rgb(217 217 217 / ${dk}), 90px 0 0 -20px rgb(217 217 217 / ${dk})`;
+    // the two p: rings, then the cut
+    const tw = teach ? 1 - pr(t, [33.6, 34.6]) : 0;
+    p1.style.opacity = pr(t, [20.6, 21.3]);
+    p2.style.opacity = pr(t, [22.3, 23]);
+    p1.style.boxShadow = `inset 0 0 0 ${Q}px ${mix(tw, 'var(--t0606-p1)', '#5a9f48')}`;
+    p2.style.boxShadow = `inset 0 0 0 ${Q}px ${mix(tw, 'var(--t0606-p2)', '#d9d9d9')}`;
+    const cx = CUT * pr(t, [25.8, 27.6]);
+    const cut = `inset(0 0 0 ${cx}px)`;
+    p1.style.clipPath = cut;
+    p2.style.clipPath = cut;
+    pb.style.opacity = win(t, 20.3, 29.5);
+    // dl flips with everything inside it, then p+p flips back
+    const f1 = pr(t, [30.3, 31.9]), f2 = pr(t, [32.3, 33.9]);
+    dl.style.transform = `rotate(${180 * f1}deg)`;
+    p2.style.transform = `rotate(${-180 * f2}deg)`;
+    // A canvas-colored patch over body's box, only while nothing else is drawn there: at a scaled stage size,
+    // Chrome leaves a hairline where the shadows are clipped under the box. The official render has nothing there.
+    mask.style.opacity = (t >= 10.3 && t < 20.3) || (cx >= 150 && (t < 30.3 || t >= 33.9)) ? 1 : 0;
+    dot.style.opacity = win(t, 29.8, FIN);
+    // labels: first row at the top of the frame, second row below it (wide view) or at the bottom (canvas view)
+    const x0 = wide ? -20 : 0, y0 = wide ? -20 : 0;
+    labs.forEach((l) => {
+      const row = +l.dataset.r;
+      l.style.left = `calc(${x0}px + 4px * var(--k, 1))`;
+      l.style.top = row === 0 || wide ? `calc(${y0}px + ${4 + 19 * row}px * var(--k, 1))` : 'calc(300px - 21px * var(--k, 1))';
+      l.style.opacity = win(t, ...ivs[+l.dataset.l - 1]);
+    });
+    let txt;
+    if (step === 0) txt = `html${c} 86 ${fr ? 'de large en' : 'wide at'} (157, 257)`;
+    else if (step === 1) txt = `body, dl${c} 70 × 230 ${fr ? 'en' : 'at'} (165, 35)`;
+    else if (step === 2) txt = `${fr ? 'barres' : 'bars'}${c} 235 → ${n(265.24)} · 275 → 305`;
+    else if (step === 3) txt = `dl${c} ${fr ? 'mêmes ombres, en gris, par-dessus' : 'same shadows, gray, on top'}`;
+    else if (step === 4) txt = `${fr ? 'anneaux' : 'rings'}${c} 380 × 230 · ${fr ? 'rayon' : 'radius'} 115 · ${fr ? 'épaisseur' : 'thickness'} ${n(30.24)}`;
+    else if (step === 5) txt = `${fr ? 'gardé' : 'kept'}${c} x ≥ ${n(274.57)}`;
+    else if (step === 6) txt = fr ? 'dl retourné · p+p retourné deux fois' : 'dl flipped · p+p flipped twice';
+    else txt = $$('.caps .cap')[7].dataset.live || '';
+    live.textContent = txt;
+  };
+};
+</script>
+</figure>
