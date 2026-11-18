@@ -1,0 +1,144 @@
+<figure class="anim t0427" data-duration="35" data-scene="t0427" data-wide="-10 -10 420 440" style="--bg:#6592cf">
+<style>
+.t0427{--t0427-blue:#6592cf;--t0427-dot:#282342;--t0427-hb:#38bdf8;--t0427-bb:#a3e635;--t0427-ho:#facc15;--t0427-bo:#f472b6}
+.t0427 .scene .t0427-white{left:0;top:0;width:400px;height:300px;background:#fff;box-shadow:inset 0 0 0 calc(1px * var(--k, 1)) rgb(20 20 42 / .18);z-index:1}
+.t0427 .scene .t0427-dot{width:30px;height:30px;border-radius:50%;background:var(--t0427-dot);opacity:0;z-index:3}
+.t0427 .scene .t0427-band{opacity:0;z-index:4}
+.t0427 .scene .t0427-hband{left:165px;top:70px;width:70px;height:160px}
+.t0427 .scene .t0427-body,.t0427 .scene .t0427-refl{left:240px;top:135px;width:100px;height:280px;z-index:5}
+.t0427 .scene .t0427-refl{transform-origin:-40px 0}
+.t0427 .scene .t0427-body > *,.t0427 .scene .t0427-refl > *{position:absolute}
+.t0427 .scene .t0427-bband{left:15px;top:15px;width:70px;height:250px}
+.t0427 .scene .t0427-box{opacity:0;z-index:6}
+.t0427 .scene .t0427-hbox{left:150px;top:55px;width:100px;height:190px}
+.t0427 .scene .t0427-bbox{left:240px;top:135px;width:100px;height:280px}
+.t0427 .scene .zlab{color:#14142a;background:rgb(255 255 255 / .92);box-shadow:0 0 0 1px rgb(20 20 42 / .25);padding:1px 5px;border-radius:3px;opacity:0;z-index:8}
+@media (max-width:700px){.t0427 .scene .zlab{font-size:8px;padding:0 3px}}
+.t0427 .legend .t0427-ol{box-shadow:0 0 0 1px currentColor}
+</style>
+<div class="anim-col">
+<div class="stage" role="img" aria-label="{% if include.lang == "fr" %}Animation : la règle * touche html et body. html, avec margin:55 150, va de (150, 55) à (250, 245). Sa bordure pointillée de 30px, en haut et en bas seulement, donne deux disques de 30px par bord, aux quatre coins. Son outline de 35px, décalé de −50px, couvre de x = 165 à 235 et de y = 70 à 230 : il croque le quart de chaque disque tourné vers le milieu. body, avec margin:50 -90 -200 90, va de (240, 135) à (340, 415) : ses deux disques du haut sont croqués de la même façon, ceux du bas sont hors du canevas. -webkit-box-reflect:left 5em le recopie en miroir à gauche, de x = 60 à 160. Enfin le fond de body, #6592CF, passe sur tout le canevas : les outlines, de la même couleur, disparaissent et il reste huit disques croqués.{% else %}Animation: the * rule hits html and body. html, with margin:55 150, runs from (150, 55) to (250, 245). Its 30px dotted border, on the top and bottom only, gives two 30px discs per edge, at the four corners. Its 35px outline, offset by −50px, covers x = 165 to 235 and y = 70 to 230: it bites the quarter of each disc that faces the middle. body, with margin:50 -90 -200 90, runs from (240, 135) to (340, 415): its two top discs are bitten the same way, the bottom ones are off the canvas. -webkit-box-reflect:left 5em copies it as a mirror image on the left, from x = 60 to 160. Last, body's background, #6592CF, moves to the whole canvas: the outlines, of the same color, vanish, and eight bitten discs remain.{% endif %}">
+<div class="scene">
+<div class="t0427-white"></div>
+<div class="t0427-dot t0427-hdot" style="left:150px;top:55px"></div>
+<div class="t0427-dot t0427-hdot" style="left:220px;top:55px"></div>
+<div class="t0427-dot t0427-hdot" style="left:150px;top:215px"></div>
+<div class="t0427-dot t0427-hdot" style="left:220px;top:215px"></div>
+<div class="t0427-band t0427-hband"></div>
+<div class="t0427-refl">
+<div class="t0427-dot t0427-rdot" style="left:0;top:0"></div>
+<div class="t0427-dot t0427-rdot" style="left:70px;top:0"></div>
+<div class="t0427-dot t0427-rdot" style="left:0;top:250px"></div>
+<div class="t0427-dot t0427-rdot" style="left:70px;top:250px"></div>
+<div class="t0427-band t0427-rband t0427-bband"></div>
+</div>
+<div class="t0427-body">
+<div class="t0427-dot t0427-bdot" style="left:0;top:0"></div>
+<div class="t0427-dot t0427-bdot" style="left:70px;top:0"></div>
+<div class="t0427-dot t0427-bdot" style="left:0;top:250px"></div>
+<div class="t0427-dot t0427-bdot" style="left:70px;top:250px"></div>
+<div class="t0427-band t0427-bband t0427-bband0"></div>
+</div>
+<div class="t0427-box t0427-hbox"></div>
+<div class="t0427-box t0427-bbox"></div>
+<span class="zlab" data-l="1" style="left:154px;top:250px">html · 100 × 190</span>
+<span class="zlab" data-l="2" style="left:70px;top:30px">32q → 30px</span>
+<span class="zlab" data-l="2" style="left:258px;top:62px">x = 150 · 220</span>
+<span class="zlab" data-l="3" style="left:240px;top:110px">x = 165 → 235</span>
+<span class="zlab" data-l="3" style="left:240px;top:200px">y = 70 → 230</span>
+<span class="zlab" data-l="4" style="left:244px;top:268px">body · 100 × 280</span>
+<span class="zlab" data-l="4" style="left:252px;top:360px">y = 385 → 415</span>
+<span class="zlab" data-l="5" style="left:166px;top:252px">5em = 80px</span>
+<span class="zlab" data-l="5" style="left:62px;top:110px">x → 400 − x</span>
+<span class="zlab" data-l="6" style="left:12px;top:12px">{% if include.lang == "fr" %}fond de body → canevas{% else %}body's background → canvas{% endif %}</span>
+</div>
+</div>
+<div class="legend"><span><i class="t0427-ol" style="--c:#6592cf"></i>{% if include.lang == "fr" %}#6592cf : le fond de body, passé au canevas, et les outlines{% else %}#6592cf: body's background, moved to the canvas, and the outlines{% endif %}</span><span><i class="t0427-ol" style="--c:#282342"></i>{% if include.lang == "fr" %}#282342 : les disques des bordures pointillées{% else %}#282342: the discs of the dotted borders{% endif %}</span><span><i style="--c:#38bdf8"></i>{% if include.lang == "fr" %}boîte de html{% else %}html's box{% endif %}</span><span><i style="--c:#facc15"></i>{% if include.lang == "fr" %}outline de html{% else %}html's outline{% endif %}</span><span><i style="--c:#a3e635"></i>{% if include.lang == "fr" %}boîte de body{% else %}body's box{% endif %}</span><span><i style="--c:#f472b6"></i>{% if include.lang == "fr" %}outline de body, et son reflet{% else %}body's outline, and its reflection{% endif %}</span></div>
+</div>
+<div class="anim-side">
+<pre class="code" aria-hidden="true">&lt;style><span data-on="1 4">*{</span><span data-on="2 4">border-block:32q dotted#282342;</span><span data-on="1">margin:55 150;</span><span data-on="3 4">outline:38q solid#6592CF;outline-offset:-53q;</span><span data-on="4" data-tone="2">*{margin:50-90-200 90;</span><span data-on="5">-webkit-box-reflect:left 5em;</span><span data-on="6">background:#6592CF</span></pre>
+<div class="now" aria-live="polite">
+<div class="caps">
+{%- if include.lang == "fr" %}
+<div class="cap" data-t="0" data-step="html"><h3>1. html, en mode quirks</h3><p><code>*</code> vise tous les éléments : html, head, style et body. head et style ne sont pas affichés. Il n'y a pas de doctype : la page est en mode quirks, donc <code>55 150</code> est lu en px, et html s'étire sur toute la hauteur du cadre. Avec <code>margin:55 150</code>, html fait 400 − 2 × 150 = 100 de large et 300 − 2 × 55 = 190 de haut, de (150, 55) à (250, 245).</p></div>
+<div class="cap" data-t="5" data-step="Pointillés"><h3>2. Des pointillés en haut et en bas</h3><p><code>border-block</code> ne règle que les bordures du haut et du bas. 32q = 32 × 0,945 = 30,24px ; mon Chrome trace 30px. Une bordure <code>dotted</code> de 30px dessine des disques de 30px. Sur un bord de 100px, mon Chrome en met deux, un à chaque bout : des disques en x = 150 et 220, en haut (y = 55) et en bas (y = 215).</p></div>
+<div class="cap" data-t="10" data-step="outline"><h3>3. Un outline qui croque</h3><p>Dans mon Chrome, <code>outline:38q</code> fait 35px et <code>outline-offset:-53q</code> vaut −50px. L'outline part de 50px à l'intérieur du bord de html et s'épaissit de 35px vers l'extérieur : il couvre de 15px à 50px du bord. 15px, c'est le centre des disques. Sur la largeur, les deux côtés se rejoignent au milieu : c'est un rectangle plein, de x = 165 à 235 et de y = 70 à 230. Chaque disque perd le quart tourné vers le milieu.</p></div>
+<div class="cap" data-t="15" data-step="body"><h3>4. body : la même règle, plus une imbriquée</h3><p>Le <code>*{</code> imbriqué veut dire « un élément dans un élément » : head, style et body, pas html. body reçoit aussi la première règle, bordure et outline compris. Sa marge est remplacée par <code>margin:50-90-200 90</code> : même spécificité, la dernière gagne. body fait 100 − 90 + 90 = 100 de large, à partir de x = 240, et commence en 55 + 30 + 50 = 135. En mode quirks, il s'étire aussi dans l'intérieur de html, 190 − 2 × 30 = 130 de haut : 130 − 50 + 200 = 280 de haut, jusqu'à y = 415. Ses disques du bas sont hors du canevas. Son outline croque les deux du haut.</p></div>
+<div class="cap" data-t="20" data-step="Reflet"><h3>5. Un miroir à gauche</h3><p><code>-webkit-box-reflect:left 5em</code> dessine une copie de body en miroir sur sa gauche, à 5em = 80px. Le miroir est la ligne x = 200 : un point en x passe en 400 − x. La copie garde les disques et l'outline : deux disques en x = 60 et 130, croqués du côté du milieu.</p></div>
+<div class="cap" data-t="25" data-step="Le fond"><h3>6. Le fond de body, c'est le canevas</h3><p>html n'a pas de fond : celui de body, <code>#6592CF</code>, passe sur tout le canevas. La boîte de body ne peint plus de fond. Ni elle ni son reflet ne cachent les disques du bas de html, qui débordent dedans de 10px (x = 240 à 250, et 150 à 160). Les outlines ont maintenant la couleur du canevas : ils disparaissent, il ne reste que les quarts croqués.</p></div>
+<div class="cap" data-t="30" data-step="Résultat" data-live="168 caractères · 100 % identique"><h3>7. Résultat : 168 caractères</h3><p>Une seule règle pour deux boîtes, deux bordures pointillées, deux outlines couleur du fond qui croquent un quart de chaque disque, et un miroir : huit Pac-Man.</p></div>
+{%- else %}
+<div class="cap" data-t="0" data-step="html"><h3>1. html, in quirks mode</h3><p><code>*</code> targets every element: html, head, style and body. head and style are not displayed. There is no doctype: the page is in quirks mode, so <code>55 150</code> is read in px, and html stretches to the full height of the frame. With <code>margin:55 150</code>, html is 400 − 2 × 150 = 100 wide and 300 − 2 × 55 = 190 tall, from (150, 55) to (250, 245).</p></div>
+<div class="cap" data-t="5" data-step="Dots"><h3>2. Dots on the top and bottom</h3><p><code>border-block</code> sets only the top and bottom borders. 32q = 32 × 0.945 = 30.24px; my Chrome draws 30px. A 30px <code>dotted</code> border draws 30px discs. On a 100px edge, my Chrome fits two, one at each end: discs at x = 150 and 220, on the top (y = 55) and the bottom (y = 215).</p></div>
+<div class="cap" data-t="10" data-step="outline"><h3>3. An outline that bites</h3><p>In my Chrome, <code>outline:38q</code> is 35px and <code>outline-offset:-53q</code> is −50px. The outline starts 50px inside html's edge and grows 35px outward: it covers from 15px to 50px in from the edge. 15px is the center of the discs. Across the width, the two sides meet in the middle: it is a solid rectangle, from x = 165 to 235 and y = 70 to 230. Each disc loses the quarter that faces the middle.</p></div>
+<div class="cap" data-t="15" data-step="body"><h3>4. body: the same rule, plus a nested one</h3><p>The nested <code>*{</code> means "an element inside an element": head, style and body, not html. body also gets the first rule, border and outline included. Its margin is replaced by <code>margin:50-90-200 90</code>: same specificity, the last one wins. body is 100 − 90 + 90 = 100 wide, from x = 240, and starts at 55 + 30 + 50 = 135. In quirks mode, it also stretches inside html, whose inside is 190 − 2 × 30 = 130 tall: 130 − 50 + 200 = 280 tall, down to y = 415. Its bottom discs are off the canvas. Its outline bites the two top ones.</p></div>
+<div class="cap" data-t="20" data-step="Reflection"><h3>5. A mirror on the left</h3><p><code>-webkit-box-reflect:left 5em</code> draws a mirrored copy of body on its left, 5em = 80px away. The mirror is the line x = 200: a point at x goes to 400 − x. The copy keeps the discs and the outline: two discs at x = 60 and 130, bitten on the side that faces the middle.</p></div>
+<div class="cap" data-t="25" data-step="Background"><h3>6. body's background is the canvas</h3><p>html has no background, so body's <code>#6592CF</code> moves to the whole canvas. body's own box paints no background. Neither it nor its reflection hides html's bottom discs, which reach 10px into them (x = 240 to 250, and 150 to 160). The outlines now have the canvas color: they vanish, and only the bites stay.</p></div>
+<div class="cap" data-t="30" data-step="Result" data-live="168 characters · 100% match"><h3>7. Result: 168 characters</h3><p>One rule for two boxes, two dotted borders, two outlines in the background color that bite a quarter of each disc, and a mirror: eight Pac-Men.</p></div>
+{%- endif %}
+</div>
+<div class="live"></div>
+</div>
+</div>
+<script>
+(window.AnimScenes = window.AnimScenes || {}).t0427 = (fig) => {
+  const fr = document.documentElement.lang === 'fr';
+  const $ = (s) => fig.querySelector(s);
+  const $$ = (s) => [...fig.querySelectorAll(s)];
+  const live = $('.live');
+  const ease = (x) => (x < 0.5 ? 4 * x * x * x : 1 - Math.pow(-2 * x + 2, 3) / 2);
+  const pr = (t, a, b) => ease(Math.min(1, Math.max(0, (t - a) / (b - a))));
+  const win = (t, a, b) => Math.min(pr(t, a, a + 0.5), 1 - pr(t, b - 0.3, b));
+  const n = (x) => (fr ? String(x).replace('.', ',') : String(x));
+  const mix = (k, a, b) => (k <= 0 ? b : k >= 1 ? a : `color-mix(in srgb, ${a} ${(k * 100).toFixed(1)}%, ${b})`);
+  // Measured on the official code in local Chrome (400 × 300 iframe, quirks mode, getBoundingClientRect, getComputedStyle, pixels, variant renders).
+  // html: border box (150, 55) 100 × 190; border-top/bottom 30px dotted; outline 35px, offset -50px → (165, 70) to (235, 230).
+  // body: border box (240, 135) 100 × 280; outline → (255, 150) to (325, 400); reflection left 80px: x → 400 - x.
+  // Dark discs (30 × 30 boxes): (150, 55), (220, 55), (60, 135), (130, 135), (240, 135), (310, 135), (150, 215), (220, 215).
+  const white = $('.t0427-white'), refl = $('.t0427-refl');
+  const hdots = $$('.t0427-hdot'), bdots = $$('.t0427-bdot'), rdots = $$('.t0427-rdot');
+  const hband = $('.t0427-hband'), bband = $('.t0427-bband0'), rband = $('.t0427-rband');
+  const hbox = $('.t0427-hbox'), bbox = $('.t0427-bbox');
+  const labs = $$('.zlab');
+  const ivs = [[0.3, 4.8], [5.3, 9.8], [10.3, 14.8], [15.3, 19.8], [22.6, 24.8], [26.4, 29.8]];
+  const box = (el, o, col, teach) => {
+    el.style.opacity = o;
+    el.style.boxShadow = teach && o > 0 ? `inset 0 0 0 calc(2.5px * var(--k, 1)) ${col}` : 'none';
+    el.style.outline = !teach && o > 0 ? 'calc(1.5px * var(--k, 1)) dashed #fff' : 'none';
+    el.style.outlineOffset = 'calc(-0.75px * var(--k, 1))';
+    el.style.filter = !teach && o > 0 ? 'drop-shadow(0 0 calc(1px * var(--k, 1)) rgb(0 0 0 / .9))' : 'none';
+  };
+  return (t, step) => {
+    const teach = fig.dataset.teach === '1';
+    const tw = teach ? 1 - pr(t, 30.2, 31.2) : 0;
+    // the canvas is white until body's background moves to it (step 6)
+    white.style.opacity = t < 30 ? 1 - pr(t, 25.6, 27.2) : 0;
+    box(hbox, win(t, 0.3, 14.8), 'var(--t0427-hb)', teach);
+    box(bbox, win(t, 15.3, 24.8), 'var(--t0427-bb)', teach);
+    hdots.forEach((d, i) => { d.style.opacity = pr(t, 5.4 + 0.3 * i, 6.2 + 0.3 * i); });
+    hband.style.opacity = pr(t, 10.6, 11.8);
+    hband.style.background = mix(tw, 'var(--t0427-ho)', 'var(--t0427-blue)');
+    const b = pr(t, 16.6, 17.4);
+    bdots.forEach((d) => { d.style.opacity = b; });
+    bband.style.opacity = pr(t, 17.6, 18.6);
+    bband.style.background = mix(tw, 'var(--t0427-bo)', 'var(--t0427-blue)');
+    // the reflection: a copy of body that flips around x = 200
+    const r = t >= 20.4 ? 1 : 0;
+    rdots.forEach((d) => { d.style.opacity = r * b; });
+    rband.style.opacity = r * pr(t, 17.6, 18.6);
+    rband.style.background = mix(tw, 'var(--t0427-bo)', 'var(--t0427-blue)');
+    refl.style.transform = `scaleX(${1 - 2 * pr(t, 20.6, 22.4)})`;
+    labs.forEach((l) => { l.style.opacity = win(t, ...ivs[+l.dataset.l - 1]); });
+    let txt;
+    if (step === 0) txt = `400 − 2 × 150 = 100 · 300 − 2 × 55 = 190`;
+    else if (step === 1) txt = `32q = 32 × ${n(0.945)} = ${n(30.24)}px → 30px`;
+    else if (step === 2) txt = `38q → 35px · −53q → −50px · 50 − 35 = 15`;
+    else if (step === 3) txt = `150 + 90 = 240 · 55 + 30 + 50 = 135 · 130 − 50 + 200 = 280`;
+    else if (step === 4) txt = `5em = 80px · 255 → 145 · 325 → 75`;
+    else if (step === 5) txt = `body · #6592CF → ${fr ? 'canevas' : 'canvas'}`;
+    else txt = $$('.caps .cap')[6].dataset.live || '';
+    live.textContent = txt;
+  };
+};
+</script>
+</figure>
