@@ -1,0 +1,141 @@
+<figure class="anim t0602" data-duration="34" data-scene="t0602" data-wide="-690 -20 1110 340" style="--bg:#668884">
+<style>
+.t0602{--t0602-in:#3b82f6;--t0602-ring:#f59e0b;--t0602-out:#10b981;--t0602-body:#8b5cf6;--t0602-bring:#ef4444;--t0602-box:#14142a}
+.t0602 .scene .t0602-white{left:0;top:0;width:400px;height:300px;background:#fff;z-index:0}
+.t0602 .scene .t0602-html{left:0;top:0;width:400px;height:300px;z-index:1}
+.t0602 .scene .t0602-body{z-index:3}
+.t0602 .scene .t0602-box{box-sizing:border-box;outline:calc(1.5px * var(--k, 1)) dashed var(--t0602-box);outline-offset:calc(-0.75px * var(--k, 1));opacity:0;z-index:5}
+.t0602 .scene .t0602-circ{border-radius:50%}
+.t0602 .scene .t0602-ln{height:1.5px;height:calc(1.5px * var(--k, 1));margin-top:calc(-0.75px * var(--k, 1));background:var(--t0602-box);opacity:0;z-index:5}
+.t0602 .scene .t0602-pt{width:7px;height:7px;width:calc(7px * var(--k, 1));height:calc(7px * var(--k, 1));transform:translate(-50%, -50%);border-radius:50%;background:var(--t0602-box);box-shadow:0 0 0 calc(1.5px * var(--k, 1)) #fff;opacity:0;z-index:6}
+.t0602 .scene .zlab{color:#14142a;background:rgb(255 255 255 / .92);box-shadow:0 0 0 1px rgb(20 20 42 / .25);padding:1px 5px;border-radius:3px;opacity:0}
+.t0602 .legend .t0602-dash{background:none;outline:2px dashed currentColor;outline-offset:-2px}
+@media (min-width:701px){.t0602{container-type:inline-size}.t0602 .anim-col{grid-template-columns:minmax(0,1fr)}.t0602[data-view="wide"] .stage{width:100cqw}.t0602[data-view="wide"] .anim-side{margin-top:calc(100cqw * 340 / 1110 + 14px)}}
+</style>
+<div class="anim-col">
+<div class="stage" role="img" aria-label="{% if include.lang == "fr" %}Animation : * vise html et body. html fait 400 × 300 et son fond est peint sur tout le canevas : un dégradé radial en cercle de rayon 1q, centré en (200, 150). Vert jusqu'à 74q = 69,9px, rose translucide #A443 jusqu'à 15ch = 120px, puis vert : le dernier arrêt, placé à 1q, est ramené à 120px. Sur du blanc, #A443 donne #eed9d9. L'espace insécable ouvre body avant le style. * * vise body, qui reçoit margin:150 0 80-666 : en mode quirks, il va de y = 150 à 220 et de x = -666 à 400. body a le même dégradé, centré en (-133, 185) : son anneau reste à gauche du canevas, et body est tout vert sur le canevas. Il cache le milieu de l'anneau de html : il reste une arche en haut et une tranche de disque en bas.{% else %}Animation: * matches html and body. html is 400 × 300 and its background is painted on the whole canvas: a circular radial gradient with a 1q radius, centered on (200, 150). Green up to 74q = 69.9px, translucent pink #A443 up to 15ch = 120px, then green: the last stop, placed at 1q, is moved up to 120px. Over white, #A443 gives #eed9d9. The no-break space opens body before the style. * * matches body, which gets margin:150 0 80-666: in quirks mode, it runs from y = 150 to 220 and from x = -666 to 400. body has the same gradient, centered on (-133, 185): its ring stays left of the canvas, and body is all green on the canvas. It hides the middle of html's ring: an arch is left at the top and a slice of the disc at the bottom.{% endif %}">
+<div class="scene">
+<div class="t0602-white"></div>
+<div class="t0602-html"></div>
+<div class="t0602-body"></div>
+<div class="t0602-box t0602-hbox" style="left:0;top:0;width:400px;height:300px"></div>
+<div class="t0602-box t0602-bbox"></div>
+<div class="t0602-box t0602-circ t0602-c1" style="left:-202.92px;top:115.08px;width:139.84px;height:139.84px"></div>
+<div class="t0602-box t0602-circ t0602-c2" style="left:-253px;top:65px;width:240px;height:240px"></div>
+<div class="t0602-ln" style="left:200px;top:150px;width:0"></div>
+<div class="t0602-pt t0602-hc" style="left:200px;top:150px"></div>
+<div class="t0602-pt t0602-r1" style="top:150px"></div>
+<div class="t0602-pt t0602-r2" style="top:150px"></div>
+<div class="t0602-pt t0602-bc"></div>
+<span class="zlab" data-l="1" data-r="0">{% if include.lang == "fr" %}html : centre (200, 150){% else %}html: center (200, 150){% endif %}</span>
+<span class="zlab" data-l="1" data-r="1">{% if include.lang == "fr" %}rayon 1q = 0,945px{% else %}radius 1q = 0.945px{% endif %}</span>
+<span class="zlab" data-l="2" data-r="0">{% if include.lang == "fr" %}74q = 69,9px · 15ch = 120px{% else %}74q = 69.9px · 15ch = 120px{% endif %}</span>
+<span class="zlab" data-l="2" data-r="1">{% if include.lang == "fr" %}dernier arrêt : 1q → 120px{% else %}last stop: 1q → 120px{% endif %}</span>
+<span class="zlab" data-l="3" data-r="0">#A443 = rgba(170, 68, 68, .2)</span>
+<span class="zlab" data-l="3" data-r="1">{% if include.lang == "fr" %}sur du blanc → #eed9d9{% else %}over white → #eed9d9{% endif %}</span>
+<span class="zlab" data-l="4" data-r="0">{% if include.lang == "fr" %}body : y 150 → 220, hauteur 70{% else %}body: y 150 → 220, height 70{% endif %}</span>
+<span class="zlab" data-l="4" data-r="1">{% if include.lang == "fr" %}x −666 → 400, largeur 1066{% else %}x −666 → 400, width 1066{% endif %}</span>
+<span class="zlab" data-l="5" data-r="0">{% if include.lang == "fr" %}centre de body (−133, 185){% else %}body center (−133, 185){% endif %}</span>
+<span class="zlab" data-l="5" data-r="1">{% if include.lang == "fr" %}anneau : x −253 → −13{% else %}ring: x −253 → −13{% endif %}</span>
+<span class="zlab" data-l="6" data-r="0">{% if include.lang == "fr" %}y 150 → 220 : le vert de body{% else %}y 150 → 220: body's green{% endif %}</span>
+<span class="zlab" data-l="6" data-r="1">{% if include.lang == "fr" %}bas : trou 219,9, body 220{% else %}bottoms: hole 219.9, body 220{% endif %}</span>
+</div>
+</div>
+<div class="legend"><span><i style="--c:var(--t0602-in);border-radius:50%"></i>{% if include.lang == "fr" %}html : #668884 jusqu'à 74q{% else %}html: #668884 up to 74q{% endif %}</span><span><i style="--c:var(--t0602-ring)"></i>{% if include.lang == "fr" %}html : #A443 de 74q à 15ch (#eed9d9 en vrai){% else %}html: #A443 from 74q to 15ch (#eed9d9 in reality){% endif %}</span><span><i style="--c:var(--t0602-out)"></i>{% if include.lang == "fr" %}html : #668884 après 15ch{% else %}html: #668884 after 15ch{% endif %}</span><span><i style="--c:var(--t0602-body)"></i>{% if include.lang == "fr" %}body : le même dégradé, parties vertes (#668884 en vrai){% else %}body: the same gradient, green parts (#668884 in reality){% endif %}</span><span><i style="--c:var(--t0602-bring)"></i>{% if include.lang == "fr" %}body : son anneau, hors du canevas{% else %}body: its ring, off canvas{% endif %}</span><span><i class="t0602-dash"></i>{% if include.lang == "fr" %}boîtes de html et body, cercles de body{% else %}html and body boxes, body's circles{% endif %}</span></div>
+</div>
+<div class="anim-side">
+<pre class="code" aria-hidden="true"><span data-on="4" data-tone="2">&nbsp;</span>&lt;style><span data-on="1">*</span>{<span data-on="4" data-tone="2">*{</span><span data-on="4">margin:150 0 80-666</span>}<span data-on="5">background:radial-gradient(<span data-on="1 2" data-tone="2">1q</span>,<span data-on="2">#668884 74q</span>,<span data-on="2 3"><span data-on="3" data-tone="2">#A443</span> 0 15ch</span>,<span data-on="2">#668884</span></span></pre>
+<div class="now" aria-live="polite">
+<div class="caps">
+{%- if include.lang == "fr" %}
+<div class="cap" data-t="0" data-step="1q"><h3>1. Un cercle de 1q</h3><p><code>*</code> vise tous les éléments : html, head, body et style. Seuls html et body sont affichés. Le fond de html est peint sur tout le canevas. html fait 400 × 300 : le dégradé est centré en (200, 150). <code>radial-gradient(1q,…)</code> : une seule longueur donne un cercle de ce rayon. Ici, le rayon ne fait que 1q = 0,945px.</p></div>
+<div class="cap" data-t="5" data-step="Arrêts"><h3>2. Des arrêts au-delà du rayon</h3><p>Les arrêts peuvent dépasser le rayon. <code>#668884 74q</code> : vert jusqu'à 69,9px. <code>#A443 0 15ch</code> commence à 0, qui ne peut pas être avant 74q : il commence donc à 69,9px, avec un bord net, et va jusqu'à 15ch = 120px (1ch vaut 8px en Times 16px). Le dernier <code>#668884</code> n'a pas de position : il se place à 100 % du rayon, 1q. C'est avant 120px, donc il remonte à 120px : un second bord net.</p></div>
+<div class="cap" data-t="12" data-step="Rose"><h3>3. Un rose translucide</h3><p><code>#A443</code> est une couleur hexadécimale à 4 chiffres : rgba(170, 68, 68, 0,2). Le fond de html est peint sur du blanc, et les 80 % qui restent le laissent voir. Le rose visible est #eed9d9.</p></div>
+<div class="cap" data-t="17" data-step="body"><h3>4. body, une longue bande</h3><p>Le code commence par une espace insécable. Pour l'analyseur, c'est du texte : body s'ouvre avant le <code>&lt;style></code>. <code>*{*{…}}</code> veut dire <code>* *</code> : tout élément dans un autre, donc head, body et style, mais pas html. body reçoit <code>margin:150 0 80-666</code>. En mode quirks, body remplit la hauteur de html moins ses marges : 300 − 150 − 80 = 70. Il va de y = 150 à 220. Sa marge gauche vaut −666 : il commence en x = −666 et fait 1066 de large.</p></div>
+<div class="cap" data-t="23" data-step="Dégradé de body"><h3>5. Le dégradé de body</h3><p><code>*</code> donne aussi le même fond à body. Son dégradé est centré dans la boîte de body : en (−133, 185). Son anneau va de x = −253 à −13, à gauche du canevas. Sur le canevas, body est tout vert. Il cache le milieu de l'anneau de html, de y = 150 à 220.</p></div>
+<div class="cap" data-t="29" data-step="Résultat" data-live="94 caractères · 100 % identique"><h3>6. Résultat : 94 caractères</h3><p>Un seul dégradé, sur deux boîtes. html dessine l'anneau. body, poussé vers la gauche, pose une bande verte sur son milieu. Sous la bande, le trou s'arrête en y = 219,9 : la partie du bas est une tranche pleine du disque.</p></div>
+{%- else %}
+<div class="cap" data-t="0" data-step="1q"><h3>1. A 1q circle</h3><p><code>*</code> matches every element: html, head, body and style. Only html and body are displayed. html's background is painted on the whole canvas. html is 400 × 300, so the gradient is centered on (200, 150). <code>radial-gradient(1q,…)</code>: one length makes a circle with that radius. Here the radius is only 1q = 0.945px.</p></div>
+<div class="cap" data-t="5" data-step="Stops"><h3>2. Stops past the radius</h3><p>Stops can go past the radius. <code>#668884 74q</code>: green up to 69.9px. <code>#A443 0 15ch</code> starts at 0, which can't be before 74q: so it starts at 69.9px, with a sharp edge, and goes to 15ch = 120px (1ch is 8px in 16px Times). The last <code>#668884</code> has no position: it goes at 100% of the radius, 1q. That is before 120px, so it moves up to 120px: a second sharp edge.</p></div>
+<div class="cap" data-t="12" data-step="Pink"><h3>3. A translucent pink</h3><p><code>#A443</code> is a 4-digit hex color: rgba(170, 68, 68, 0.2). html's background is painted over white, and the 80% left lets it show. The pink you see is #eed9d9.</p></div>
+<div class="cap" data-t="17" data-step="body"><h3>4. body, a long band</h3><p>The code starts with a no-break space. For the parser it is text, so body opens before the <code>&lt;style></code>. <code>*{*{…}}</code> means <code>* *</code>: any element inside another one, so head, body and style, but not html. body gets <code>margin:150 0 80-666</code>. In quirks mode, body fills html's height minus its margins: 300 − 150 − 80 = 70. It runs from y = 150 to 220. Its left margin is −666: it starts at x = −666 and is 1066 wide.</p></div>
+<div class="cap" data-t="23" data-step="body's gradient"><h3>5. body's own gradient</h3><p><code>*</code> also gives body the same background. Its gradient is centered in body's box: on (−133, 185). Its ring goes from x = −253 to −13, left of the canvas. On the canvas, body is all green. It hides the middle of html's ring, from y = 150 to 220.</p></div>
+<div class="cap" data-t="29" data-step="Result" data-live="94 characters · 100% match"><h3>6. Result: 94 characters</h3><p>One gradient on two boxes. html draws the ring. body, pushed to the left, lays a green band over its middle. Below the band, the hole ends at y = 219.9, so the bottom part is a full slice of the disc.</p></div>
+{%- endif %}
+</div>
+<div class="live"></div>
+</div>
+</div>
+<script>
+(window.AnimScenes = window.AnimScenes || {}).t0602 = (fig) => {
+  const fr = document.documentElement.lang === 'fr';
+  const $ = (s) => fig.querySelector(s);
+  const $$ = (s) => [...fig.querySelectorAll(s)];
+  const live = $('.live');
+  const ease = (x) => (x < 0.5 ? 4 * x * x * x : 1 - Math.pow(-2 * x + 2, 3) / 2);
+  const pr = (t, [a, b]) => ease(Math.min(1, Math.max(0, (t - a) / (b - a))));
+  const win = (t, a, b) => Math.min(pr(t, [a, a + 0.5]), 1 - pr(t, [b - 0.2, b]));
+  const c = fr ? '\u00a0:' : ':';
+  const n = (x) => (fr ? String(x).replace('.', ',') : String(x));
+  const mix = (k, a, b) => (k <= 0 ? b : k >= 1 ? a : `color-mix(in srgb, ${a} ${(k * 100).toFixed(1)}%, ${b})`);
+  // Measured on the official code in local Chrome (400 × 300 iframe, quirks mode, getBoundingClientRect, getComputedStyle,
+  // variant renders). html: 0, 0, 400 × 300. body: -666, 150, 1066 × 70 (margin 150px 0px 80px -666px).
+  // background (html and body): radial-gradient(1q, rgb(102, 136, 132) 74q, rgba(170, 68, 68, 0.2) 0px, rgba(170, 68, 68, 0.2) 120px,
+  // rgb(102, 136, 132)); 1ch = 8px (16px Times), 74q = 69.92px. The pink is seen as #eed9d9 (#eed9d9 instead of #A443: same picture).
+  const R1 = 69.9213, R2 = 120, G = '#668884', P = 'rgb(170 68 68 / .2)';
+  const html = $('.t0602-html'), body = $('.t0602-body'), hbox = $('.t0602-hbox'), bbox = $('.t0602-bbox');
+  const c1 = $('.t0602-c1'), c2 = $('.t0602-c2'), ln = $('.t0602-ln');
+  const hc = $('.t0602-hc'), p1 = $('.t0602-r1'), p2 = $('.t0602-r2'), bc = $('.t0602-bc');
+  const labs = $$('.zlab');
+  const ivs = [[0.3, 5], [5.3, 12], [12.3, 17], [17.3, 23], [23.3, 29], [29.3, 34]];
+  return (t, step) => {
+    const teach = fig.dataset.teach === '1';
+    const wide = fig.dataset.view === 'wide';
+    const tw = teach ? 1 - pr(t, [29.3, 30.3]) : 0;
+    const twR = teach ? 1 - pr(t, [12.4, 13.4]) : 0;
+    // html: the green disc grows to 74q, then the pink ring to 15ch, then the green outside fills in
+    const r1 = R1 * pr(t, [5.4, 7.2]);
+    const r2 = r1 + (R2 - R1) * pr(t, [7.8, 9.6]);
+    const oa = pr(t, [10.1, 11.3]);
+    const cIn = mix(tw, 'var(--t0602-in)', G), cRing = mix(twR, 'var(--t0602-ring)', P);
+    const cOut = mix(oa, mix(tw, 'var(--t0602-out)', G), 'rgb(255 255 255 / 0)');
+    html.style.background = `radial-gradient(circle at 200px 150px, ${cIn} ${r1}px, ${cRing} 0 ${r2}px, ${cOut} 0)`;
+    hbox.style.opacity = win(t, 0.3, 17.6);
+    hc.style.opacity = win(t, 0.3, 16.8);
+    ln.style.width = `${r2}px`;
+    ln.style.opacity = win(t, 5.4, 16.8);
+    p1.style.left = `${200 + r1}px`;
+    p1.style.opacity = win(t, 5.4, 16.8);
+    p2.style.left = `${200 + r2}px`;
+    p2.style.opacity = win(t, 7.8, 16.8);
+    // body: top and bottom margins, then the left margin
+    const m = pr(t, [17.6, 19.2]), ml = pr(t, [19.8, 21.6]);
+    const L = -666 * ml, T = 150 * m, B = 300 - 80 * m, W = 400 - L, H = B - T;
+    const bx = W / 2, by = H / 2;
+    const bG = mix(tw, 'var(--t0602-body)', G), bP = mix(tw, 'var(--t0602-bring)', P);
+    body.style.cssText = `left:${L}px;top:${T}px;width:${W}px;height:${H}px;opacity:${pr(t, [23.4, 24.8])};background:radial-gradient(circle at ${bx}px ${by}px, ${bG} ${R1}px, ${bP} 0 ${R2}px, ${bG} 0)`;
+    bbox.style.cssText = `left:${L}px;top:${T}px;width:${W}px;height:${H}px;opacity:${win(t, 17.4, 29.8)}`;
+    bc.style.left = `${L + bx}px`;
+    bc.style.top = `${T + by}px`;
+    bc.style.opacity = win(t, 17.4, 29.8);
+    c1.style.opacity = c2.style.opacity = win(t, 23.6, 29.8);
+    // labels: one row at the top left (below the off-canvas label in wide view), one at the bottom left
+    labs.forEach((l) => {
+      const row = +l.dataset.r;
+      l.style.left = `calc(${wide ? -690 : 0}px + 4px * var(--k, 1))`;
+      const yb = wide ? 320 : 300;
+      l.style.top = row ? `calc(${yb}px - 22px * var(--k, 1))` : wide ? 'calc(4px + 22px * var(--k, 1))' : 'calc(4px * var(--k, 1))';
+      l.style.opacity = win(t, ...ivs[+l.dataset.l - 1]);
+    });
+    let txt;
+    if (step === 0) txt = `${fr ? 'rayon' : 'radius'}${c} 1q = ${n(0.945)}px · ${fr ? 'centre' : 'center'} (200, 150)`;
+    else if (step === 1) txt = `${fr ? 'vert' : 'green'} → ${n(69.9)}px · ${fr ? 'rose' : 'pink'} → 120px · ${fr ? 'puis vert' : 'then green'}`;
+    else if (step === 2) txt = `#A443 ${fr ? 'sur du blanc' : 'over white'} = #eed9d9`;
+    else if (step === 3) txt = `body${c} (−666, 150) · 1066 × 70`;
+    else if (step === 4) txt = `${fr ? 'anneau de body' : "body's ring"}${c} ${fr ? 'centre' : 'center'} (−133, 185) · x −253 → −13`;
+    else txt = $$('.caps .cap')[5].dataset.live || '';
+    live.textContent = txt;
+  };
+};
+</script>
+</figure>
