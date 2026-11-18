@@ -1,0 +1,129 @@
+<figure class="anim t0426" data-duration="30" data-scene="t0426" data-wide="-12 -12 512 344" data-off-label="-8 305" style="--bg:#f9ddc6">
+<style>
+.t0426{--t0426-peach:#f9ddc6;--t0426-ink:#594c94;--t0426-in:#38bdf8;--t0426-out:#f472b6;--t0426-pb:#facc15;--t0426-mb:#fb923c;--t0426-bb:#a3e635}
+.t0426 .scene .t0426-white{left:0;top:0;width:400px;height:300px;background:#fff;box-shadow:inset 0 0 0 calc(1px * var(--k, 1)) rgb(20 20 42 / .18);z-index:1}
+.t0426 .scene .t0426-body{left:8px;top:8px;width:384px;height:284px;opacity:0;z-index:2}
+.t0426 .scene .t0426-m{width:60px;height:40px;opacity:0;z-index:3}
+.t0426 .scene .t0426-m > *{position:absolute}
+.t0426 .scene .t0426-mb{left:-22px;top:-62px;width:120px;height:100px;opacity:0;outline:calc(1px * var(--k, 1)) dashed rgb(40 30 60 / .55);outline-offset:calc(-.5px * var(--k, 1))}
+.t0426[data-teach="1"] .scene .t0426-mb{background:rgb(251 146 60 / .16);outline-color:var(--t0426-mb)}
+.t0426 .scene .t0426-sh{left:0;top:0;width:60px;height:40px}
+.t0426 .scene .t0426-pb{left:0;top:0;width:60px;height:40px;opacity:0}
+.t0426 .scene .t0426-ghost{left:40px;top:20px;width:60px;height:40px;opacity:0;outline:calc(1.5px * var(--k, 1)) dashed #14142a;outline-offset:calc(-.75px * var(--k, 1))}
+.t0426[data-teach="1"] .scene .t0426-ghost{outline-color:var(--t0426-out)}
+.t0426 .scene .t0426-line{left:-12px;top:108px;width:512px;height:0;border-top:calc(1.5px * var(--k, 1)) dashed var(--t0426-mb);opacity:0;z-index:4}
+.t0426 .scene .zlab{color:#14142a;background:rgb(255 255 255 / .92);box-shadow:0 0 0 1px rgb(20 20 42 / .25);padding:1px 5px;border-radius:3px;opacity:0;z-index:8}
+@media (max-width:700px){.t0426 .scene .zlab{font-size:8px;padding:0 3px}}
+.t0426 .legend .t0426-ol{box-shadow:0 0 0 1px currentColor}
+</style>
+<div class="anim-col">
+<div class="stage" role="img" aria-label="{% if include.lang == "fr" %}Animation : la règle &amp;{ vise html. Son fond #E955, un orange à un tiers d'opacité, donne #f9ddc6 sur le blanc et passe sur tout le canevas. Les six paragraphes vides deviennent des boîtes de 60 × 40 avec padding:20 30. Ils flottent à gauche avec margin:62 38 -2 22 : chacun prend 120px de large, trois tiennent dans les 384px de body, en x = 30, 150 et 270, y = 70. Le quatrième ne tient pas et descend sous le bas des marges, en y = 108, puis 62px plus bas : la seconde rangée est en y = 170. L'ombre inset 5ch 5vw, décalée de 40px et 20px, remplit chaque boîte sauf le carré de 20 × 20 en bas à droite. L'ombre extérieure 5ch 5vw est une copie de la boîte décalée de (40, 20), peinte seulement hors de la boîte. Les deux ombres prennent la couleur color:594C94 : six paires de rectangles violets, chacune avec un trou carré.{% else %}Animation: the &amp;{ rule targets html. Its #E955 background, an orange at one third opacity, gives #f9ddc6 over white and moves to the whole canvas. The six empty paragraphs become 60 × 40 boxes with padding:20 30. They float left with margin:62 38 -2 22: each one takes 120px, three fit in body's 384px, at x = 30, 150 and 270, y = 70. The fourth does not fit and drops below the bottom of the margins, at y = 108, then 62px lower: the second row is at y = 170. The inset shadow 5ch 5vw, offset by 40px and 20px, fills each box except the 20 × 20 square at the bottom right. The outer shadow 5ch 5vw is a copy of the box offset by (40, 20), painted only outside the box. Both shadows take the color color:594C94: six pairs of purple rectangles, each with a square hole.{% endif %}">
+<div class="scene">
+<div class="t0426-white"></div>
+<div class="t0426-body"></div>
+<div class="t0426-m" style="left:30px;top:70px"><div class="t0426-mb"></div><div class="t0426-sh"></div><div class="t0426-pb"></div><div class="t0426-ghost"></div></div>
+<div class="t0426-m" style="left:150px;top:70px"><div class="t0426-mb"></div><div class="t0426-sh"></div><div class="t0426-pb"></div></div>
+<div class="t0426-m" style="left:270px;top:70px"><div class="t0426-mb"></div><div class="t0426-sh"></div><div class="t0426-pb"></div></div>
+<div class="t0426-m" style="left:30px;top:170px"><div class="t0426-mb"></div><div class="t0426-sh"></div><div class="t0426-pb"></div></div>
+<div class="t0426-m" style="left:150px;top:170px"><div class="t0426-mb"></div><div class="t0426-sh"></div><div class="t0426-pb"></div></div>
+<div class="t0426-m" style="left:270px;top:170px"><div class="t0426-mb"></div><div class="t0426-sh"></div><div class="t0426-pb"></div></div>
+<div class="t0426-line"></div>
+<span class="zlab" data-l="1" style="left:130px;top:140px">#E955 → #f9ddc6</span>
+<span class="zlab" data-l="2" style="left:32px;top:116px">60 × 40</span>
+<span class="zlab" data-l="2" style="left:12px;top:150px">22 + 60 + 38 = 120</span>
+<span class="zlab" data-l="2" style="left:12px;top:190px">{% if include.lang == "fr" %}body : x = 8 → 392{% else %}body: x = 8 → 392{% endif %}</span>
+<span class="zlab" data-l="3" style="left:180px;top:128px">488 > 392</span>
+<span class="zlab" data-l="3" style="left:332px;top:112px">y = 108</span>
+<span class="zlab" data-l="3" style="left:12px;top:230px">108 + 62 = 170</span>
+<span class="zlab" data-l="4" style="left:30px;top:30px">5ch = 40px · 5vw = 20px</span>
+<span class="zlab" data-l="4" style="left:30px;top:140px">{% if include.lang == "fr" %}trou : 20 × 20{% else %}hole: 20 × 20{% endif %}</span>
+<span class="zlab" data-l="5" style="left:30px;top:140px">(70, 90) → (130, 130)</span>
+</div>
+</div>
+<div class="legend"><span><i class="t0426-ol" style="--c:#f9ddc6"></i>{% if include.lang == "fr" %}#f9ddc6 : le fond #E955 de html, sur le blanc, passé au canevas{% else %}#f9ddc6: html's #E955 background over white, moved to the canvas{% endif %}</span><span><i class="t0426-ol" style="--c:#594c94"></i>{% if include.lang == "fr" %}#594c94 : les deux ombres, couleur de color{% else %}#594c94: both shadows, in the color of color{% endif %}</span><span><i style="--c:#a3e635"></i>{% if include.lang == "fr" %}boîte de body{% else %}body's box{% endif %}</span><span><i style="--c:#fb923c"></i>{% if include.lang == "fr" %}marges des paragraphes{% else %}the paragraphs' margins{% endif %}</span><span><i style="--c:#facc15"></i>{% if include.lang == "fr" %}boîtes des paragraphes, 60 × 40{% else %}the paragraphs' boxes, 60 × 40{% endif %}</span><span><i style="--c:#38bdf8"></i>{% if include.lang == "fr" %}ombre inset{% else %}inset shadow{% endif %}</span><span><i style="--c:#f472b6"></i>{% if include.lang == "fr" %}ombre extérieure{% else %}outer shadow{% endif %}</span></div>
+</div>
+<div class="anim-side">
+<pre class="code" aria-hidden="true"><span data-on="2 3">&lt;p>&lt;p>&lt;p>&lt;p>&lt;p>&lt;p></span>&lt;style><span data-on="1">&amp;{background:#E955;</span><span data-on="4 5" data-tone="2">color:594C94;</span><span data-on="2 3">p{float:left;padding:20 30;margin:62 38-2 22;</span><span data-on="4 5">box-shadow:</span><span data-on="4">inset 5ch 5vw</span>,<span data-on="5">5ch 5vw</span></pre>
+<div class="now" aria-live="polite">
+<div class="caps">
+{%- if include.lang == "fr" %}
+<div class="cap" data-t="0" data-step="Le fond"><h3>1. html et son fond</h3><p>Au premier niveau, <code>&amp;</code> désigne la racine : dans mon Chrome, getComputedStyle donne le fond à html. <code>#E955</code>, c'est <code>#EE9955</code> avec une opacité de 0x55 = 85/255, un tiers. Le fond de html passe sur tout le canevas, par-dessus le blanc : 238 + (255 − 238) × 2/3 ≈ 249, et de même pour le vert et le bleu. Mon rendu donne <code>#f9ddc6</code>, la couleur de la cible.</p></div>
+<div class="cap" data-t="5" data-step="Flottants"><h3>2. Six paragraphes flottants</h3><p>Le <code>p{</code> imbriqué vise les six paragraphes de html. Ils sont vides : 0 × 0. <code>padding:20 30</code> en fait des boîtes de 60 × 40 (mode quirks : un nombre seul est lu en px). <code>float:left</code> les range depuis la gauche. Avec 22 à gauche et 38 à droite, chacun prend 22 + 60 + 38 = 120px. body commence en x = 8 et fait 384 de large : trois tiennent, en x = 30, 150 et 270, et y = 8 + 62 = 70.</p></div>
+<div class="cap" data-t="10" data-step="Rangée 2"><h3>3. La seconde rangée</h3><p>Le quatrième finirait en x = 8 + 4 × 120 = 488, après le bord droit de body, en 392. Il descend sous le bas des marges des trois premiers : 8 + 62 + 40 − 2 = 108. Sa marge du haut ajoute 62 : sa boîte est en y = 170, en x = 30. Les deux derniers suivent, en x = 150 et 270.</p></div>
+<div class="cap" data-t="15" data-step="inset"><h3>4. L'ombre inset</h3><p>Les ombres n'ont pas de couleur : elles prennent <code>color</code>, hérité de html. En mode quirks, mon Chrome lit <code>594C94</code> sans <code>#</code>. Dans <code>inset 5ch 5vw</code>, 5ch = 40px (un « 0 » fait 8px de large dans la police par défaut de mon Chrome, Times en 16px) et 5vw = 5 % de 400 = 20px. Une ombre inset peint l'intérieur de la boîte, sauf là où serait la boîte décalée de (40, 20). Il reste un carré vide de 20 × 20 en bas à droite.</p></div>
+<div class="cap" data-t="20" data-step="Ombre"><h3>5. L'ombre extérieure</h3><p><code>5ch 5vw</code>, sans inset : une copie de la boîte décalée de (40, 20), de (70, 90) à (130, 130) pour le premier motif. Une ombre extérieure n'est jamais peinte sous sa propre boîte : le coin de la copie qui recouvre la boîte, le même carré de 20 × 20, reste vide. Les deux ombres font deux rectangles autour d'un seul trou.</p></div>
+<div class="cap" data-t="25" data-step="Résultat" data-live="134 caractères · 100 % identique"><h3>6. Résultat : 134 caractères</h3><p>Un fond transparent sur le blanc, six paragraphes vides qui flottent, et deux ombres par boîte, une dedans et une dehors : six paires de rectangles avec leur trou.</p></div>
+{%- else %}
+<div class="cap" data-t="0" data-step="Background"><h3>1. html and its background</h3><p>At the top level, <code>&amp;</code> stands for the root: in my Chrome, getComputedStyle gives the background to html. <code>#E955</code> is <code>#EE9955</code> at an opacity of 0x55 = 85/255, one third. html's background moves to the whole canvas, over white: 238 + (255 − 238) × 2/3 ≈ 249, and the same for green and blue. My render gives <code>#f9ddc6</code>, the target's color.</p></div>
+<div class="cap" data-t="5" data-step="Floats"><h3>2. Six floating paragraphs</h3><p>The nested <code>p{</code> targets the six paragraphs inside html. They are empty: 0 × 0. <code>padding:20 30</code> turns them into 60 × 40 boxes (quirks mode: a bare number is read in px). <code>float:left</code> lines them up from the left. With 22 on the left and 38 on the right, each one takes 22 + 60 + 38 = 120px. body starts at x = 8 and is 384 wide: three fit, at x = 30, 150 and 270, and y = 8 + 62 = 70.</p></div>
+<div class="cap" data-t="10" data-step="Row 2"><h3>3. The second row</h3><p>The fourth one would end at x = 8 + 4 × 120 = 488, past body's right edge at 392. It drops below the bottom of the first three's margins: 8 + 62 + 40 − 2 = 108. Its top margin adds 62: its box is at y = 170, x = 30. The last two follow, at x = 150 and 270.</p></div>
+<div class="cap" data-t="15" data-step="inset"><h3>4. The inset shadow</h3><p>The shadows have no color: they use <code>color</code>, inherited from html. In quirks mode, my Chrome reads <code>594C94</code> without a <code>#</code>. In <code>inset 5ch 5vw</code>, 5ch = 40px (a "0" is 8px wide in my Chrome's default font, Times at 16px) and 5vw = 5% of 400 = 20px. An inset shadow paints the inside of the box, except where the box moved by (40, 20) would be. That leaves an empty 20 × 20 square at the bottom right.</p></div>
+<div class="cap" data-t="20" data-step="Shadow"><h3>5. The outer shadow</h3><p><code>5ch 5vw</code>, without inset: a copy of the box moved by (40, 20), from (70, 90) to (130, 130) for the first motif. An outer shadow is never painted under its own box: the corner of the copy that overlaps the box, the same 20 × 20 square, stays empty. The two shadows make two rectangles around one hole.</p></div>
+<div class="cap" data-t="25" data-step="Result" data-live="134 characters · 100% match"><h3>6. Result: 134 characters</h3><p>A see-through background over white, six empty floating paragraphs, and two shadows per box, one inside and one outside: six pairs of rectangles with their hole.</p></div>
+{%- endif %}
+</div>
+<div class="live"></div>
+</div>
+</div>
+<script>
+(window.AnimScenes = window.AnimScenes || {}).t0426 = (fig) => {
+  const fr = document.documentElement.lang === 'fr';
+  const $ = (s) => fig.querySelector(s);
+  const $$ = (s) => [...fig.querySelectorAll(s)];
+  const live = $('.live');
+  const ease = (x) => (x < 0.5 ? 4 * x * x * x : 1 - Math.pow(-2 * x + 2, 3) / 2);
+  const pr = (t, a, b) => ease(Math.min(1, Math.max(0, (t - a) / (b - a))));
+  const win = (t, a, b) => Math.min(pr(t, a, a + 0.5), 1 - pr(t, b - 0.3, b));
+  const mix = (k, a, b) => (k <= 0 ? b : k >= 1 ? a : `color-mix(in srgb, ${a} ${(k * 100).toFixed(1)}%, ${b})`);
+  // Measured on the official code in local Chrome (400 × 300 iframe, quirks mode, getBoundingClientRect, getComputedStyle, pixels, variant renders).
+  // html: background rgba(238, 153, 85, .333) → canvas (249, 221, 198) = #f9ddc6. body: (8, 8) 384 × 284.
+  // p boxes 60 × 40 (padding only), margins 62 38 -2 22: (30, 70), (150, 70), (270, 70), (30, 170), (150, 170), (270, 170).
+  // box-shadow: rgb(89, 76, 148) 40px 20px 0 0 inset, rgb(89, 76, 148) 40px 20px 0 0 (5ch = 40px, 5vw = 20px).
+  const white = $('.t0426-white'), body = $('.t0426-body'), line = $('.t0426-line');
+  const ms = $$('.t0426-m'), mbs = $$('.t0426-mb'), shs = $$('.t0426-sh'), pbs = $$('.t0426-pb');
+  const ghost = $('.t0426-ghost');
+  const labs = $$('.zlab');
+  const ivs = [[0.3, 4.8], [5.3, 9.8], [10.3, 14.8], [15.3, 19.8], [20.3, 24.8]];
+  const box = (el, o, col, teach) => {
+    el.style.opacity = o;
+    el.style.boxShadow = teach && o > 0 ? `inset 0 0 0 calc(2px * var(--k, 1)) ${col}` : 'none';
+    el.style.outline = !teach && o > 0 ? 'calc(1.5px * var(--k, 1)) dashed #fff' : 'none';
+    el.style.outlineOffset = 'calc(-0.75px * var(--k, 1))';
+    el.style.filter = !teach && o > 0 ? 'drop-shadow(0 0 calc(1px * var(--k, 1)) rgb(0 0 0 / .9))' : 'none';
+  };
+  // when each paragraph shows up (the fourth one first tries x = 390, then drops)
+  const app = [5.6, 6.2, 6.8, 10.5, 13.8, 14.2];
+  return (t, step) => {
+    const teach = fig.dataset.teach === '1';
+    const tw = teach ? 1 - pr(t, 25.2, 26.2) : 0;
+    white.style.opacity = 1 - pr(t, 1, 2.6);
+    box(body, win(t, 5.3, 14.8), 'var(--t0426-bb)', teach);
+    ms.forEach((m, i) => { m.style.opacity = pr(t, app[i], app[i] + 0.5); });
+    // the fourth paragraph: at x = 390 it does not fit, it goes down to y = 170, then to the left edge
+    const dy = pr(t, 11.8, 12.6), dx = pr(t, 12.6, 13.4);
+    ms[3].style.left = `${390 - 360 * dx}px`;
+    ms[3].style.top = `${70 + 100 * dy}px`;
+    mbs.forEach((b) => { b.style.opacity = win(t, 5.3, 14.8); });
+    pbs.forEach((b) => box(b, t < 25 ? 1 - pr(t, 24.4, 24.9) : 0, 'var(--t0426-pb)', teach));
+    line.style.opacity = win(t, 12, 14.8);
+    // the two shadows: offsets grow from 0 to (40, 20), the real mechanism
+    const a = pr(t, 15.6, 17.4), b = pr(t, 20.6, 22.4);
+    const cin = mix(tw, 'var(--t0426-in)', 'var(--t0426-ink)'), cout = mix(tw, 'var(--t0426-out)', 'var(--t0426-ink)');
+    const sh = [];
+    if (a > 0) sh.push(`inset ${40 * a}px ${20 * a}px 0 0 ${cin}`);
+    if (b > 0) sh.push(`${40 * b}px ${20 * b}px 0 0 ${cout}`);
+    shs.forEach((s) => { s.style.boxShadow = sh.length ? sh.join(',') : 'none'; });
+    ghost.style.opacity = win(t, 16.8, 21);
+    labs.forEach((l) => { l.style.opacity = win(t, ...ivs[+l.dataset.l - 1]); });
+    let txt;
+    if (step === 0) txt = `rgba(238, 153, 85, ⅓) + ${fr ? 'blanc' : 'white'} = #f9ddc6`;
+    else if (step === 1) txt = `22 + 60 + 38 = 120 · 3 × 120 = 360 ≤ 384`;
+    else if (step === 2) txt = `8 + 4 × 120 = 488 > 392 · 8 + 62 + 40 − 2 = 108 · 108 + 62 = 170`;
+    else if (step === 3) txt = `5ch = 5 × 8 = 40px · 5vw = 20px`;
+    else if (step === 4) txt = `(30, 70) + (40, 20) = (70, 90)`;
+    else txt = $$('.caps .cap')[5].dataset.live || '';
+    live.textContent = txt;
+  };
+};
+</script>
+</figure>
