@@ -1,0 +1,123 @@
+<figure class="anim t0607" data-duration="31" data-scene="t0607" data-wide="-50 -40 500 380" data-off-label="-45 316" style="--bg:#f4dcbf">
+<style>
+.t0607{--t0607-box:#14142a}
+.t0607 .scene .t0607-cv{left:-1000px;top:-1000px;width:2400px;height:2400px;background:#fff;z-index:0}
+.t0607 .scene .t0607-html{left:180px;top:50px;width:120px;height:120px;box-sizing:border-box;border:40px solid #d24444;z-index:1;opacity:0;transform:translateZ(0)}
+.t0607 .scene .t0607-body{left:100px;top:130px;width:120px;height:120px;box-sizing:border-box;border:40px solid #d24444;background:#f4dcbf;z-index:2;opacity:0}
+.t0607 .scene .t0607-box{box-sizing:border-box;opacity:0;z-index:9;pointer-events:none;outline:calc(1.5px * var(--k, 1)) dashed var(--t0607-box);outline-offset:calc(-0.75px * var(--k, 1))}
+.t0607 .scene .t0607-dot{left:157px;top:187px;width:6px;height:6px;border-radius:50%;background:var(--t0607-box);opacity:0;z-index:9}
+.t0607 .scene .zlab{color:#14142a;background:rgb(255 255 255 / .92);box-shadow:0 0 0 1px rgb(20 20 42 / .25);padding:1px 5px;border-radius:3px;opacity:0}
+</style>
+<div class="anim-col">
+<div class="stage" role="img" aria-label="{% if include.lang == "fr" %}Animation : les marges de * font de html un carré de 120 × 120 en (180, 50), et son fond beige peint tout le canevas. Une bordure rouge de 5ch = 40px laisse un trou de 40 × 40 en (220, 90). border-radius arrondit trois coins à 60px et laisse le coin du bas à gauche carré : une goutte rouge. La règle imbriquée donne à body la même bordure et le même arrondi, et des marges qui en font un carré de 120 × 120 en (100, 130), sa pointe en bas à gauche. scale:-1 le fait tourner d'un demi-tour autour de (160, 190) : sa pointe vient en (220, 130), sur le coin carré de html. opacity:.5 rend body rose sur le beige, mais rouge sur le rouge de html : le carré commun reste rouge.{% else %}Animation: the * margins make html a 120 × 120 square at (180, 50), and its beige background paints the whole canvas. A red border of 5ch = 40px leaves a 40 × 40 hole at (220, 90). border-radius rounds three corners to 60px and leaves the bottom left one square: a red teardrop. The nested rule gives body the same border and radius, and margins that make it a 120 × 120 square at (100, 130), its point at the bottom left. scale:-1 turns it half a turn around (160, 190): its point moves to (220, 130), on html's square corner. opacity:.5 makes body pink on the beige, but red on html's red: the shared square stays red.{% endif %}">
+<div class="scene">
+<div class="t0607-cv"></div>
+<div class="t0607-html"></div>
+<div class="t0607-body"></div>
+<div class="t0607-box t0607-hb" style="left:180px;top:50px;width:120px;height:120px"></div>
+<div class="t0607-box t0607-hc" style="left:220px;top:90px;width:40px;height:40px"></div>
+<div class="t0607-box t0607-bb" style="left:100px;top:130px;width:120px;height:120px"></div>
+<div class="t0607-box t0607-ov" style="left:180px;top:130px;width:40px;height:40px"></div>
+<div class="t0607-dot"></div>
+<span class="zlab" data-l="1" data-r="0">25% = 100px</span>
+<span class="zlab" data-l="1" data-r="1">{% if include.lang == "fr" %}html : 120 × 120 en (180, 50){% else %}html: 120 × 120 at (180, 50){% endif %}</span>
+<span class="zlab" data-l="2" data-r="0">5ch = 40px</span>
+<span class="zlab" data-l="2" data-r="1">{% if include.lang == "fr" %}trou : 40 × 40 en (220, 90){% else %}hole: 40 × 40 at (220, 90){% endif %}</span>
+<span class="zlab" data-l="3" data-r="0">{% if include.lang == "fr" %}50 % de 120 = 60{% else %}50% of 120 = 60{% endif %}</span>
+<span class="zlab" data-l="3" data-r="1">{% if include.lang == "fr" %}en bas à gauche : 0{% else %}bottom left: 0{% endif %}</span>
+<span class="zlab" data-l="4" data-r="0">margin:40 40-120-120</span>
+<span class="zlab" data-l="4" data-r="1">{% if include.lang == "fr" %}body : 120 × 120 en (100, 130){% else %}body: 120 × 120 at (100, 130){% endif %}</span>
+<span class="zlab" data-l="5" data-r="0">{% if include.lang == "fr" %}scale:-1 = un demi-tour{% else %}scale:-1 = a half turn{% endif %}</span>
+<span class="zlab" data-l="5" data-r="1">{% if include.lang == "fr" %}autour de (160, 190){% else %}around (160, 190){% endif %}</span>
+<span class="zlab" data-l="6" data-r="0">{% if include.lang == "fr" %}rouge à 50 % sur beige : rose{% else %}red at 50% on beige: pink{% endif %}</span>
+<span class="zlab" data-l="6" data-r="1">{% if include.lang == "fr" %}rouge à 50 % sur rouge : rouge{% else %}red at 50% on red: red{% endif %}</span>
+</div>
+</div>
+<div class="legend"><span><i style="--c:#d24444"></i>{% if include.lang == "fr" %}bordure de html{% else %}html's border{% endif %}</span><span><i style="--c:#2563eb"></i>{% if include.lang == "fr" %}bordure de body (rouge en vrai){% else %}body's border (red in reality){% endif %}</span><span><i style="--c:#93c5fd"></i>{% if include.lang == "fr" %}fond de body (beige en vrai){% else %}body's background (beige in reality){% endif %}</span><span><i style="--c:transparent;outline:2px dashed currentColor;outline-offset:-2px"></i>{% if include.lang == "fr" %}boîtes{% else %}boxes{% endif %}</span></div>
+</div>
+<div class="anim-side">
+<pre class="code" aria-hidden="true">&lt;style>*{<span data-on="1">background:#f4dcbf</span>;<span data-on="2 4">border:5ch solid#d24444</span>;<span data-on="3 4">border-radius:50%50%50%0</span>;<span data-on="1">margin:50 25%130 180</span>;<span data-on="4" data-tone="2">*{</span><span data-on="4">margin:40 40-120-120</span>;<span data-on="5">scale:-1</span>;<span data-on="6">opacity:.5</span></pre>
+<div class="now" aria-live="polite">
+<div class="caps">
+{%- if include.lang == "fr" %}
+<div class="cap" data-t="0" data-step="html"><h3>1. html, le cadre</h3><p><code>*</code> vise html, head, style et body. html reçoit <code>margin:50 25%130 180</code>. Une marge en % est une part de la largeur du canevas : 25 % de 400 = 100. html fait 400 − 180 − 100 = 120 de large. En mode quirks, il remplit la hauteur du canevas moins ses marges : 300 − 50 − 130 = 120. C'est un carré de 120 × 120 en (180, 50). Son <code>background:#f4dcbf</code> peint tout le canevas, comme tout fond posé sur html.</p></div>
+<div class="cap" data-t="4.5" data-step="Bordure"><h3>2. Une bordure rouge</h3><p><code>border:5ch solid#d24444</code> : 1ch est la largeur d'un 0 dans la police par défaut, 8px. La bordure fait donc 40px. Il reste au milieu un trou de 40 × 40 en (220, 90). Le fond de html est sur le canevas : le trou montre le beige.</p></div>
+<div class="cap" data-t="9" data-step="Goutte"><h3>3. Une goutte</h3><p><code>border-radius:50%50%50%0</code> donne aux coins du haut et à celui du bas à droite un rayon de 50 % de 120 = 60. Le coin du bas à gauche reste carré. Le trou suit : ses coins ont un rayon de 60 − 40 = 20, il est rond avec un coin carré.</p></div>
+<div class="cap" data-t="13.5" data-step="body"><h3>4. body, la même goutte</h3><p><code>*{*{…}}</code> vaut <code>* *</code> : head, style et body. body reçoit le même fond, la même bordure et le même arrondi, et ses propres marges, <code>margin:40 40-120-120</code>. Il est placé dans le trou de html. Les marges négatives à gauche et en bas l'étirent : 40 + 120 − 40 = 120 de large, et en mode quirks 40 − 40 + 120 = 120 de haut. body est un carré de 120 × 120 en (100, 130) : la même goutte, pointe en bas à gauche.</p></div>
+<div class="cap" data-t="18" data-step="Demi-tour"><h3>5. Un demi-tour</h3><p><code>scale:-1</code> retourne les deux axes autour du centre de body, (160, 190) : c'est un demi-tour. La pointe passe en haut à droite, en (220, 130), juste sur le coin carré de html. Les deux coins carrés couvrent le même carré de 40 × 40, de (180, 130) à (220, 170).</p></div>
+<div class="cap" data-t="22.5" data-step="Opacité"><h3>6. À moitié transparent</h3><p><code>opacity:.5</code> rend body à moitié transparent. Sur le beige, son rouge devient rose, (226, 143, 129) dans mon rendu. Sur le rouge de html, un rouge à moitié reste rouge : le carré commun reste rouge. Le fond beige de body ne remplit que son trou, sur le canevas beige.</p></div>
+<div class="cap" data-t="27" data-step="Résultat" data-live="140 caractères · 100 % identique"><h3>7. Résultat : 140 caractères</h3><p>Une règle dessine une goutte sur html. La règle imbriquée la reprend sur body, la déplace, la tourne et la pâlit.</p></div>
+{%- else %}
+<div class="cap" data-t="0" data-step="html"><h3>1. html, the frame</h3><p><code>*</code> matches html, head, style and body. html gets <code>margin:50 25%130 180</code>. A margin in % is a share of the canvas width: 25% of 400 = 100. html is 400 − 180 − 100 = 120 wide. In quirks mode it fills the canvas height minus its margins: 300 − 50 − 130 = 120. It is a 120 × 120 square at (180, 50). Its <code>background:#f4dcbf</code> paints the whole canvas, like any background on html.</p></div>
+<div class="cap" data-t="4.5" data-step="Border"><h3>2. A red border</h3><p><code>border:5ch solid#d24444</code>: 1ch is the width of a 0 in the default font, 8px. So the border is 40px. A 40 × 40 hole is left in the middle, at (220, 90). html's background is on the canvas, so the hole shows the beige.</p></div>
+<div class="cap" data-t="9" data-step="Teardrop"><h3>3. A teardrop</h3><p><code>border-radius:50%50%50%0</code> gives the top corners and the bottom right one a radius of 50% of 120 = 60. The bottom left corner stays square. The hole follows: its corners are 60 − 40 = 20 in radius, so it is round with one square corner.</p></div>
+<div class="cap" data-t="13.5" data-step="body"><h3>4. body, the same teardrop</h3><p><code>*{*{…}}</code> is <code>* *</code>: head, style and body. body gets the same background, border and radius, and its own margins, <code>margin:40 40-120-120</code>. It is placed in html's hole. The negative left and bottom margins stretch it: 40 + 120 − 40 = 120 wide, and in quirks mode 40 − 40 + 120 = 120 tall. body is a 120 × 120 square at (100, 130): the same teardrop, point at the bottom left.</p></div>
+<div class="cap" data-t="18" data-step="Half turn"><h3>5. A half turn</h3><p><code>scale:-1</code> flips both axes around body's center, (160, 190): that is a half turn. The point moves to the top right, at (220, 130), right on html's square corner. The two square corners cover the same 40 × 40 square, from (180, 130) to (220, 170).</p></div>
+<div class="cap" data-t="22.5" data-step="Opacity"><h3>6. Half transparent</h3><p><code>opacity:.5</code> makes body half transparent. On the beige, its red turns pink, (226, 143, 129) in my render. On html's red, half red is still red: the shared square stays red. body's beige background only fills its hole, over the beige canvas.</p></div>
+<div class="cap" data-t="27" data-step="Result" data-live="140 characters · 100% match"><h3>7. Result: 140 characters</h3><p>One rule draws a teardrop on html. The nested rule takes it again on body, moves it, turns it and fades it.</p></div>
+{%- endif %}
+</div>
+<div class="live"></div>
+</div>
+</div>
+<script>
+(window.AnimScenes = window.AnimScenes || {}).t0607 = (fig) => {
+  const fr = document.documentElement.lang === 'fr';
+  const $ = (s) => fig.querySelector(s);
+  const $$ = (s) => [...fig.querySelectorAll(s)];
+  const live = $('.live');
+  const ease = (x) => (x < 0.5 ? 4 * x * x * x : 1 - Math.pow(-2 * x + 2, 3) / 2);
+  const pr = (t, [a, b]) => ease(Math.min(1, Math.max(0, (t - a) / (b - a))));
+  const win = (t, a, b) => Math.min(pr(t, [a, a + 0.5]), 1 - pr(t, [b - 0.2, b]));
+  const c = fr ? ' :' : ':';
+  const mix = (k, a, b) => (k <= 0 ? b : k >= 1 ? a : `color-mix(in srgb, ${a} ${(k * 100).toFixed(1)}%, ${b})`);
+  // Measured on the official code in local Chrome (400 × 300, quirks mode, getBoundingClientRect, getComputedStyle).
+  // html: margin 50px 100px 130px 180px, 120 × 120 at (180, 50), border 40px, radius 50% 50% 50% 0 (60px).
+  // body: margin 40px 40px −120px −120px, 120 × 120 at (100, 130), same border and radius, scale −1, opacity .5.
+  // Rendered pink: rgb(226, 143, 129). Shared square: (180, 130) to (220, 170), red.
+  const FIN = 27;
+  const cv = $('.t0607-cv'), ht = $('.t0607-html'), bd = $('.t0607-body');
+  const hb = $('.t0607-hb'), hc = $('.t0607-hc'), bb = $('.t0607-bb'), ov = $('.t0607-ov'), dot = $('.t0607-dot');
+  const labs = $$('.zlab');
+  const ivs = [[0.3, 4.5], [4.8, 9], [9.3, 13.5], [13.8, 18], [18.3, 22.5], [22.8, FIN]];
+  return (t, step) => {
+    const teach = fig.dataset.teach === '1';
+    const wide = fig.dataset.view === 'wide';
+    cv.style.opacity = 1 - pr(t, [1.5, 2.5]);
+    ht.style.opacity = pr(t, [4.8, 5.6]);
+    const r = 60 * pr(t, [9.5, 11]);
+    const rad = `${r}px ${r}px ${r}px 0`;
+    ht.style.borderRadius = rad;
+    bd.style.borderRadius = rad;
+    // body: appears with step 4, turns with step 5, fades with step 6
+    const tw = teach ? 1 - pr(t, [22.8, 23.6]) : 0;
+    bd.style.opacity = pr(t, [14.2, 15]) * (1 - 0.5 * pr(t, [23.8, 25.3]));
+    bd.style.transform = `rotate(${180 * pr(t, [18.8, 20.8])}deg)`;
+    bd.style.borderColor = mix(tw, '#2563eb', '#d24444');
+    bd.style.background = mix(tw, '#93c5fd', '#f4dcbf');
+    hb.style.opacity = win(t, 0.4, 13.5);
+    hc.style.opacity = Math.max(win(t, 5.2, 9), win(t, 13.8, 18));
+    bb.style.opacity = win(t, 14.2, FIN);
+    ov.style.opacity = win(t, 21, FIN);
+    dot.style.opacity = win(t, 18.3, 22.5);
+    // labels: two rows in the top left corner of the frame
+    const x0 = wide ? -50 : 0, y0 = wide ? -40 : 0;
+    labs.forEach((l) => {
+      const row = +l.dataset.r;
+      l.style.left = `calc(${x0}px + 4px * var(--k, 1))`;
+      l.style.top = `calc(${y0}px + ${4 + 19 * row}px * var(--k, 1))`;
+      l.style.opacity = win(t, ...ivs[+l.dataset.l - 1]);
+    });
+    let txt;
+    if (step === 0) txt = `html${c} 120 × 120 ${fr ? 'en' : 'at'} (180, 50)`;
+    else if (step === 1) txt = `${fr ? 'bordure' : 'border'} 40px · ${fr ? 'trou' : 'hole'} 40 × 40 ${fr ? 'en' : 'at'} (220, 90)`;
+    else if (step === 2) txt = `${fr ? 'rayon' : 'radius'} 60 · ${fr ? 'en bas à gauche' : 'bottom left'} 0`;
+    else if (step === 3) txt = `body${c} 120 × 120 ${fr ? 'en' : 'at'} (100, 130)`;
+    else if (step === 4) txt = `${fr ? 'pointe en' : 'point at'} (220, 130)`;
+    else if (step === 5) txt = `${fr ? 'rose' : 'pink'}${c} (226, 143, 129) · ${fr ? 'carré commun rouge' : 'shared square red'}`;
+    else txt = $$('.caps .cap')[6].dataset.live || '';
+    live.textContent = txt;
+  };
+};
+</script>
+</figure>
