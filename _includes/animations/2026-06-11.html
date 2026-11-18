@@ -1,0 +1,160 @@
+<figure class="anim t0611" data-duration="30" data-scene="t0611" data-wide="-50 -40 500 380" style="--bg:#55c085">
+<style>
+.t0611{--t0611-ht:#f472b6;--t0611-bd:#a78bfa;--t0611-hq:#fde047;--t0611-box:#14142a}
+.t0611 .scene .t0611-can{left:0;top:0;width:400px;height:300px;background:#fff}
+.t0611 .scene .t0611-r{opacity:0}
+.t0611 .scene .t0611-hd{background:#333}
+.t0611 .scene .t0611-bb{background:#333;z-index:2}
+.t0611 .scene .t0611-qb{background:#fff;z-index:3}
+.t0611 .scene .t0611-box{box-sizing:border-box;z-index:6;pointer-events:none;outline:calc(1.5px * var(--k, 1)) dashed var(--t0611-box);outline-offset:calc(-0.75px * var(--k, 1))}
+.t0611 .scene .zlab{color:#14142a;background:rgb(255 255 255 / .92);box-shadow:0 0 0 1px rgb(20 20 42 / .25);padding:1px 5px;border-radius:3px;opacity:0;transform-origin:100% 0}
+</style>
+<div class="anim-col">
+<div class="stage" role="img" aria-label="{% if include.lang == "fr" %}Animation : la règle * donne à html une boîte de 38 × 110 en (181, 95), avec deux bordures latérales en tirets de 10px. scale:10 1 l'étire dix fois en largeur : chaque tiret devient une barre de 100 × 20. body reçoit le fond vert, qui passe à tout le canevas. Son scale:.2 5 s'ajoute à celui de html : 2 en largeur, 5 en hauteur, deux colonnes sombres de 20px. h3, dans body, prend une bordure blanche de 2px et garde scale:10 1 : 20 fois en largeur, deux colonnes blanches de 40px. Les trois éléments font 110px de haut sur l'écran.{% else %}Animation: the * rule gives html a 38 × 110 box at (181, 95), with two dashed side borders 10px wide. scale:10 1 stretches it ten times in width: each dash becomes a 100 × 20 bar. body gets the green background, which goes to the whole canvas. Its scale:.2 5 adds up with html's: 2 in width, 5 in height, two 20px dark columns. h3, inside body, gets a 2px white border and keeps scale:10 1: 20 times in width, two 40px white columns. All three elements are 110px tall on screen.{% endif %}">
+<div class="scene">
+<div class="t0611-can"></div>
+<div class="t0611-r t0611-hd"></div>
+<div class="t0611-r t0611-hd"></div>
+<div class="t0611-r t0611-hd"></div>
+<div class="t0611-r t0611-hd"></div>
+<div class="t0611-r t0611-hd"></div>
+<div class="t0611-r t0611-hd"></div>
+<div class="t0611-r t0611-hd"></div>
+<div class="t0611-r t0611-hd"></div>
+<div class="t0611-r t0611-bb"></div>
+<div class="t0611-r t0611-bb"></div>
+<div class="t0611-r t0611-qb"></div>
+<div class="t0611-r t0611-qb"></div>
+<div class="t0611-r t0611-box t0611-bh"></div>
+<div class="t0611-r t0611-box t0611-bo"></div>
+<div class="t0611-r t0611-box t0611-bq"></div>
+<span class="zlab t0611-l1" data-l="1">{% if include.lang == "fr" %}html : 38 × 110 en (181, 95){% else %}html: 38 × 110 at (181, 95){% endif %}</span>
+<span class="zlab t0611-l2" data-l="1">{% if include.lang == "fr" %}11Q = 10px, en tirets{% else %}11Q = 10px, dashed{% endif %}</span>
+<span class="zlab t0611-l1" data-l="2">{% if include.lang == "fr" %}scale:10 1 → 10 fois plus large{% else %}scale:10 1 → 10 times wider{% endif %}</span>
+<span class="zlab t0611-l2" data-l="2">{% if include.lang == "fr" %}tiret 10 × 20 → barre 100 × 20{% else %}10 × 20 dash → 100 × 20 bar{% endif %}</span>
+<span class="zlab t0611-l1" data-l="3">{% if include.lang == "fr" %}body : 30 × 22, étiré par html{% else %}body: 30 × 22, stretched by html{% endif %}</span>
+<span class="zlab t0611-l2" data-l="3">{% if include.lang == "fr" %}son fond → tout le canevas{% else %}its background → the whole canvas{% endif %}</span>
+<span class="zlab t0611-l1" data-l="4">10 × .2 = 2, 1 × 5 = 5</span>
+<span class="zlab t0611-l2" data-l="4">{% if include.lang == "fr" %}body : 60 × 110 en (170, 95){% else %}body: 60 × 110 at (170, 95){% endif %}</span>
+<span class="zlab t0611-l1" data-l="5">{% if include.lang == "fr" %}h3 : 3Q solid #fff = 2px{% else %}h3: 3Q solid #fff = 2px{% endif %}</span>
+<span class="zlab t0611-l2" data-l="5">10 × .2 × 10 = 20</span>
+<span class="zlab t0611-l1" data-l="6">{% if include.lang == "fr" %}html : 300 − 95 − 95 = 110{% else %}html: 300 − 95 − 95 = 110{% endif %}</span>
+<span class="zlab t0611-l2" data-l="6">{% if include.lang == "fr" %}body, h3 : 22 × 5 = 110{% else %}body, h3: 22 × 5 = 110{% endif %}</span>
+</div>
+</div>
+<div class="legend"><span><i style="--c:var(--t0611-ht)"></i>{% if include.lang == "fr" %}bordure de html{% else %}html's border{% endif %}</span><span><i style="--c:var(--t0611-bd)"></i>{% if include.lang == "fr" %}bordure de body{% else %}body's border{% endif %}</span><span><i style="--c:var(--t0611-hq)"></i>{% if include.lang == "fr" %}bordure de h3{% else %}h3's border{% endif %}</span><span><i style="--c:#55c085;outline:1px solid currentColor;outline-offset:-1px"></i>{% if include.lang == "fr" %}fond de body{% else %}body's background{% endif %}</span><span><i style="--c:transparent;outline:2px dashed currentColor;outline-offset:-2px"></i>{% if include.lang == "fr" %}boîtes des éléments{% else %}element boxes{% endif %}</span></div>
+</div>
+<div class="anim-side">
+<pre class="code" aria-hidden="true"><span data-on="1 6" data-tone="2">&lt;h3>&nbsp;</span>&lt;style>*{<span data-on="1">border-inline:var(--y,11Q dashed#333)</span>;<span data-on="1 6">margin:95 181</span>;<span data-on="2 5">scale:10 1</span>;<span data-on="3">+*{</span><span data-on="4">scale:.2 5</span>;<span data-on="3">background:#55c085</span>;<span data-on="3 6">margin:44-6</span>;<span data-on="5">*{--y:3Q solid#fff;margin:1</span></pre>
+<div class="now" aria-live="polite">
+<div class="caps">
+{%- if include.lang == "fr" %}
+<div class="cap" data-t="0" data-step="html"><h3>1. Une règle pour tous</h3><p><code>&lt;h3>&nbsp;&lt;style></code> : body contient un h3, et style finit dans le h3. <code>*</code> donne à chaque élément une bordure à gauche et à droite, <code>margin:95 181</code> et <code>scale:10 1</code>. html est une boîte de 38 × 110 en (181, 95). 11Q vaut 10,39px, Chrome dessine 10px. Chaque côté de 110px reçoit quatre tirets de 20px.</p></div>
+<div class="cap" data-t="4.5" data-step="×10"><h3>2. html étiré 10 fois</h3><p><code>scale:10 1</code> étire html dix fois en largeur, autour de son centre, x = 200. Ses 38px deviennent 380, de x = 10 à 390. Chaque tiret de 10 × 20 devient une barre de 100 × 20 : quatre barres de chaque côté.</p></div>
+<div class="cap" data-t="9" data-step="body"><h3>3. body</h3><p><code>+*</code> touche un élément qui en suit un autre : seulement body, après head. html n'a pas de fond, alors celui de body couvre tout le canevas. <code>margin:44-6</code> : body fait 18 + 6 + 6 = 30px de large, avec ses deux bordures de 10px. Dans html étiré 10 fois, il fait 300px à l'écran.</p></div>
+<div class="cap" data-t="13.5" data-step="Scale"><h3>4. Le scale de body</h3><p><code>scale:.2 5</code> s'ajoute à celui de html : 10 × 0,2 = 2 en largeur, 5 en hauteur. body fait 60 × 110 en (170, 95). Ses bordures de 10px deviennent deux colonnes sombres de 20px. Sur un côté de 22px, la bordure en tirets reste un trait plein.</p></div>
+<div class="cap" data-t="18" data-step="h3"><h3>5. h3</h3><p>Le <code>*</code> imbriqué touche h3, dans body. <code>--y</code> change sa bordure : <code>3Q solid#fff</code>, 2px. <code>margin:1</code> remplace <code>95 181</code> : h3 fait 8 × 22. Il garde <code>scale:10 1</code> : 10 × 0,2 × 10 = 20 en largeur, 5 en hauteur. 160 × 110 en (120, 95) : deux colonnes blanches de 40px.</p></div>
+<div class="cap" data-t="22.5" data-step="Hauteurs"><h3>6. Une seule hauteur : 110</h3><p>Aucune hauteur n'est écrite. En mode quirks, html remplit le cadre de 300px moins ses marges : 300 − 95 − 95 = 110. body remplit html moins ses marges : 110 − 44 − 44 = 22. h3 tient ses 22px de la ligne de son espace insécable. 22 × 5 = 110 : tout s'aligne.</p></div>
+<div class="cap" data-t="27" data-step="Résultat" data-live="149 caractères · 100 % identique"><h3>7. Résultat : 149 caractères</h3><p>Trois scale emboîtés font de trois paires de bordures latérales un code-barres.</p></div>
+{%- else %}
+<div class="cap" data-t="0" data-step="html"><h3>1. One rule for all</h3><p><code>&lt;h3>&nbsp;&lt;style></code>: body holds an h3, and style ends up inside the h3. <code>*</code> gives every element a border on the left and the right, <code>margin:95 181</code> and <code>scale:10 1</code>. html is a 38 × 110 box at (181, 95). 11Q is 10.39px, Chrome draws 10px. Each 110px side gets four 20px dashes.</p></div>
+<div class="cap" data-t="4.5" data-step="×10"><h3>2. html stretched 10 times</h3><p><code>scale:10 1</code> stretches html ten times in width, around its center, x = 200. Its 38px become 380, from x = 10 to 390. Each 10 × 20 dash becomes a 100 × 20 bar: four bars on each side.</p></div>
+<div class="cap" data-t="9" data-step="body"><h3>3. body</h3><p><code>+*</code> selects an element that follows another one: only body, after head. html has no background, so body's covers the whole canvas. <code>margin:44-6</code>: body is 18 + 6 + 6 = 30px wide, with its two 10px borders. Inside html, stretched 10 times, it is 300px wide on screen.</p></div>
+<div class="cap" data-t="13.5" data-step="Scale"><h3>4. body's own scale</h3><p><code>scale:.2 5</code> adds up with html's: 10 × 0.2 = 2 in width, 5 in height. body is 60 × 110 at (170, 95). Its 10px borders become two 20px dark columns. On a 22px side, the dashed border stays one full line.</p></div>
+<div class="cap" data-t="18" data-step="h3"><h3>5. h3</h3><p>The nested <code>*</code> selects h3, inside body. <code>--y</code> swaps its border: <code>3Q solid#fff</code>, 2px. <code>margin:1</code> replaces <code>95 181</code>: h3 is 8 × 22. It keeps <code>scale:10 1</code>: 10 × 0.2 × 10 = 20 in width, 5 in height. 160 × 110 at (120, 95): two 40px white columns.</p></div>
+<div class="cap" data-t="22.5" data-step="Heights"><h3>6. One height: 110</h3><p>No height is written. In quirks mode, html fills the 300px frame minus its margins: 300 − 95 − 95 = 110. body fills html minus its margins: 110 − 44 − 44 = 22. h3 gets its 22px from the line of its no-break space. 22 × 5 = 110: everything lines up.</p></div>
+<div class="cap" data-t="27" data-step="Result" data-live="149 characters · 100% match"><h3>7. Result: 149 characters</h3><p>Three nested scales turn three pairs of side borders into a barcode.</p></div>
+{%- endif %}
+</div>
+<div class="live"></div>
+</div>
+</div>
+<script>
+(window.AnimScenes = window.AnimScenes || {}).t0611 = (fig) => {
+  const fr = document.documentElement.lang === 'fr';
+  const $ = (s) => fig.querySelector(s);
+  const $$ = (s) => [...fig.querySelectorAll(s)];
+  const live = $('.live');
+  const ease = (x) => (x < 0.5 ? 4 * x * x * x : 1 - Math.pow(-2 * x + 2, 3) / 2);
+  const pr = (t, [a, b]) => ease(Math.min(1, Math.max(0, (t - a) / (b - a))));
+  const win = (t, a, b) => Math.min(pr(t, [a, a + 0.5]), 1 - pr(t, [b - 0.2, b]));
+  const c = fr ? '\u00a0:' : ':';
+  const at = fr ? 'en' : 'at';
+  const mix = (k, a, b) => (k <= 0 ? b : k >= 1 ? a : `color-mix(in srgb, ${a} ${(k * 100).toFixed(1)}%, ${b})`);
+  // Measured on the official code in local Chrome (400 × 300 iframe, quirks mode, getBoundingClientRect with and
+  // without the scales, getComputedStyle). Every box is centered on (200, 150), so every scale is around that point.
+  // html: 38 × 110 at (181, 95), borders 10px dashed #333 (11Q), dashes y = 95-115, 125-145, 155-175, 185-205; scale 10 1.
+  // body: 30 × 22 at (185, 139), borders 10px (one full line on a 22px side); scale .2 5 → 60 × 110 at (170, 95).
+  // h3: 8 × 22 at (196, 139), borders 2px solid #fff (3Q); scale 10 1 → 160 × 110 at (120, 95).
+  // body's background #55c085 goes to the whole canvas (html has none).
+  const FIN = 27;
+  const can = $('.t0611-can');
+  const hd = $$('.t0611-hd'), bb = $$('.t0611-bb'), qb = $$('.t0611-qb');
+  const bh = $('.t0611-bh'), bo = $('.t0611-bo'), bq = $('.t0611-bq');
+  const labs = $$('.zlab');
+  const ivs = [[0.3, 4.5], [4.8, 9], [9.3, 13.5], [13.8, 18], [18.3, 22.5], [22.8, FIN]];
+  const DASH = [95, 125, 155, 185];
+  // place a box given in untransformed px, scaled by (kx, ky) around (200, 150)
+  const put = (e, x0, y0, w, h, kx, ky) => {
+    const x1 = 200 + (x0 - 200) * kx, x2 = 200 + (x0 + w - 200) * kx;
+    const y1 = 150 + (y0 - 150) * ky, y2 = 150 + (y0 + h - 150) * ky;
+    e.style.left = `${x1}px`; e.style.top = `${y1}px`;
+    e.style.width = `${x2 - x1}px`; e.style.height = `${y2 - y1}px`;
+  };
+  return (t, step) => {
+    const teach = fig.dataset.teach === '1';
+    const tw = teach ? 1 - pr(t, [FIN, FIN + 0.8]) : 0;
+    const kh = 1 + 9 * pr(t, [5, 7]);
+    const kb = pr(t, [14, 16]), bx = 1 - 0.8 * kb, by = 1 + 4 * kb;
+    const kq = 1 + 9 * pr(t, [19.2, 21.2]);
+    // step 3: body's background goes to the canvas
+    can.style.background = mix(pr(t, [9.6, 10.8]), '#55c085', '#ffffff');
+    // html's dashes
+    const oh = pr(t, [0.6, 1.6]);
+    hd.forEach((e, i) => {
+      put(e, i < 4 ? 181 : 209, DASH[i % 4], 10, 20, kh, 1);
+      e.style.opacity = oh;
+      e.style.background = mix(tw, 'var(--t0611-ht)', '#333');
+    });
+    // body's borders
+    const ob = pr(t, [9.6, 10.6]);
+    bb.forEach((e, i) => {
+      put(e, i ? 205 : 185, 139, 10, 22, kh * bx, by);
+      e.style.opacity = ob;
+      e.style.background = mix(tw, 'var(--t0611-bd)', '#333');
+    });
+    // h3's borders
+    const oq = pr(t, [18.4, 19]);
+    qb.forEach((e, i) => {
+      put(e, i ? 202 : 196, 139, 2, 22, kh * bx * kq, by);
+      e.style.opacity = oq;
+      e.style.background = mix(tw, 'var(--t0611-hq)', '#fff');
+    });
+    // element boxes (dashed)
+    put(bh, 181, 95, 38, 110, kh, 1);
+    put(bo, 185, 139, 30, 22, kh * bx, by);
+    put(bq, 196, 139, 8, 22, kh * bx * kq, by);
+    bh.style.opacity = Math.max(win(t, 0.6, 9), win(t, 22.8, FIN));
+    bo.style.opacity = Math.max(win(t, 9.6, 18), win(t, 22.8, FIN));
+    bq.style.opacity = Math.max(win(t, 18.4, 22.5), win(t, 22.8, FIN));
+    labs.forEach((l) => {
+      const k = +l.dataset.l, second = l.classList.contains('t0611-l2');
+      // in the empty bands of the canvas: just above the bars (y < 95) and just below them (y > 205)
+      l.style.left = 'auto';
+      l.style.right = 'calc(4px * var(--k, 1))';
+      l.style.top = second ? '214px' : 'calc(86px - 19px * var(--k, 1))';
+      l.style.opacity = win(t, ...ivs[k - 1]);
+    });
+    let txt;
+    if (step === 0) txt = `html${c} 38 × 110 ${at} (181, 95)`;
+    else if (step === 1) txt = `html${c} 380 × 110 ${at} (10, 95)`;
+    else if (step === 2) txt = `body${c} 30 × 22 ${at} (185, 139) → 300 × 22`;
+    else if (step === 3) txt = `body${c} 60 × 110 ${at} (170, 95)`;
+    else if (step === 4) txt = `h3${c} 8 × 22 → 160 × 110 ${at} (120, 95)`;
+    else if (step === 5) txt = '300 − 95 − 95 = 110 = 22 × 5';
+    else txt = $$('.caps .cap')[6].dataset.live || '';
+    live.textContent = txt;
+  };
+};
+</script>
+</figure>
