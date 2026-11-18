@@ -1,0 +1,140 @@
+<figure class="anim t0429" data-duration="31" data-scene="t0429" data-wide="-50 -40 500 380" style="--bg:#e3dcd1">
+<style>
+.t0429{--t0429-beige:#e3dcd1;--t0429-navy:#0d2a58;--t0429-red:#d95f5b;--t0429-cyan:#5cf2f7;--t0429-hb:#38bdf8;--t0429-bb:#facc15;--t0429-tb:#fb923c;--t0429-hole:#a3e635;--t0429-ring:#f472b6}
+.t0429 .scene .t0429-box{box-sizing:border-box;opacity:0;z-index:9}
+.t0429 .scene .t0429-html{left:0;top:0;width:400px;height:300px}
+.t0429 .scene .t0429-body{left:30px;top:120px;width:340px;height:140px;background:var(--t0429-navy);opacity:0;z-index:1}
+.t0429 .scene .t0429-tile{left:60px;top:150px;width:280px;height:79.8px;background:linear-gradient(90deg,var(--t0429-red) 50%,var(--t0429-cyan) 0);opacity:0;z-index:2}
+.t0429 .scene .t0429-tb{left:60px;top:150px;width:280px;height:79.8px}
+.t0429 .scene .t0429-bb{left:30px;top:120px;width:340px;height:140px}
+.t0429 .scene .t0429-ring{left:130.08px;top:190.08px;width:139.84px;height:139.84px;border-radius:50%;background:var(--t0429-navy);clip-path:inset(0 0 calc(50% + .5px) 0);opacity:0;z-index:3}
+.t0429 .scene .t0429-hole{left:160px;top:220px;width:80px;height:80px;border-radius:50%;background:var(--t0429-beige);opacity:0;z-index:4}
+.t0429 .scene .t0429-guide{box-sizing:border-box;border-radius:50%;opacity:0;z-index:8}
+.t0429 .scene .t0429-g40{left:160px;top:220px;width:80px;height:80px}
+.t0429 .scene .t0429-g70{left:130.08px;top:190.08px;width:139.84px;height:139.84px}
+.t0429 .scene .zlab{color:#14142a;background:rgb(255 255 255 / .92);box-shadow:0 0 0 1px rgb(20 20 42 / .25);padding:1px 5px;border-radius:3px;opacity:0}
+@media (max-width:700px){.t0429 .scene .zlab{font-size:8px;padding:0 3px}}
+.t0429 .legend .t0429-ol{box-shadow:0 0 0 1px currentColor}
+</style>
+<div class="anim-col">
+<div class="stage" role="img" aria-label="{% if include.lang == "fr" %}Animation : * vise html, head, style et body, et leur donne le même fond à trois couches. Sur html, la police fait 16px : 50em = 800px, et le dégradé radial, beige #e3dcd1 jusqu'à 800px, couvre tout le canevas. Le * imbriqué donne à body la marge 30%30 40 : une boîte de 340 × 140 en (30, 120), avec la couleur de fond #0d2a58, la monture bleu marine. Le dégradé conique fait une tuile de 70vw × 57%, soit 280 × 79,8, que space ne répète pas et que 50% centre : le verre rouge #d95f5b à gauche, le verre cyan #5cf2f7 à droite. font:5%' donne à body une police de 0,8px : sur body, 50em = 40px. Le dégradé radial, un cercle centré au milieu du bas de body, en (200, 260), est beige jusqu'à 40px, bleu marine jusqu'à 74q = 69,92px, puis transparent : un trou en demi-cercle et un anneau bleu marine, le pont des lunettes.{% else %}Animation: * targets html, head, style and body, and gives them the same three-layer background. On html, the font size is 16px: 50em = 800px, and the radial gradient, beige #e3dcd1 up to 800px, covers the whole canvas. The nested * gives body the margin 30%30 40: a 340 × 140 box at (30, 120), with the background color #0d2a58, the navy frame. The conic gradient makes a 70vw × 57% tile, 280 × 79.8, that space does not repeat and 50% centers: the red lens #d95f5b on the left, the cyan lens #5cf2f7 on the right. font:5%' gives body a 0.8px font size: on body, 50em = 40px. The radial gradient, a circle centered on the middle of body's bottom edge, at (200, 260), is beige up to 40px, navy up to 74q = 69.92px, then transparent: a half-disc hole and a navy ring, the bridge of the glasses.{% endif %}">
+<div class="scene">
+<div class="t0429-body"></div>
+<div class="t0429-tile"></div>
+<div class="t0429-ring"></div>
+<div class="t0429-hole"></div>
+<div class="t0429-box t0429-html"></div>
+<div class="t0429-box t0429-bb"></div>
+<div class="t0429-box t0429-tb"></div>
+<div class="t0429-guide t0429-g40"></div>
+<div class="t0429-guide t0429-g70"></div>
+<span class="zlab" data-l="1" style="left:40px;top:34px">html · 50em = 800px</span>
+<span class="zlab" data-l="2" style="left:34px;top:80px">body 340 × 140</span>
+<span class="zlab" data-l="2" style="left:34px;top:98px">x = 30 · y = 120</span>
+<span class="zlab" data-l="3" style="left:64px;top:80px">70vw 57% → 280 × {% if include.lang == "fr" %}79,8{% else %}79.8{% endif %}</span>
+<span class="zlab" data-l="3" style="left:64px;top:98px">50% → x = 60</span>
+<span class="zlab" data-l="4" style="left:40px;top:34px">html · 50em = 800px</span>
+<span class="zlab" data-l="4" style="left:252px;top:270px">body · 50em = 40px</span>
+<span class="zlab" data-l="5" style="left:282px;top:259px">50em = 40px</span>
+<span class="zlab" data-l="5" style="left:282px;top:281px">74q = {% if include.lang == "fr" %}69,92{% else %}69.92{% endif %}px</span>
+</div>
+</div>
+<div class="legend"><span><i class="t0429-ol" style="--c:#e3dcd1"></i>{% if include.lang == "fr" %}#e3dcd1 : le fond de html, le trou{% else %}#e3dcd1: html's background, the hole{% endif %}</span><span><i class="t0429-ol" style="--c:#0d2a58"></i>{% if include.lang == "fr" %}#0d2a58 : la monture, l'anneau{% else %}#0d2a58: the frame, the ring{% endif %}</span><span><i class="t0429-ol" style="--c:#d95f5b"></i>{% if include.lang == "fr" %}#d95f5b : le verre gauche{% else %}#d95f5b: the left lens{% endif %}</span><span><i class="t0429-ol" style="--c:#5cf2f7"></i>{% if include.lang == "fr" %}#5cf2f7 : le verre droit{% else %}#5cf2f7: the right lens{% endif %}</span><span><i style="--c:#38bdf8"></i>{% if include.lang == "fr" %}boîte de html{% else %}html's box{% endif %}</span><span><i style="--c:#facc15"></i>{% if include.lang == "fr" %}boîte de body{% else %}body's box{% endif %}</span><span><i style="--c:#fb923c"></i>{% if include.lang == "fr" %}tuile conique{% else %}conic tile{% endif %}</span><span><i style="--c:#a3e635"></i>{% if include.lang == "fr" %}beige du radial : le trou{% else %}radial beige: the hole{% endif %}</span><span><i style="--c:#f472b6"></i>{% if include.lang == "fr" %}bleu marine du radial : l'anneau{% else %}radial navy: the ring{% endif %}</span></div>
+</div>
+<div class="anim-side">
+<pre class="code" aria-hidden="true"><span data-on="1">&lt;style>*{background:</span><span data-on="5">radial-gradient(1q at bottom,</span><span data-on="1 4 5">#E3DCD1 50em</span><span data-on="5">,#0D2A58 0 74q,#0000)</span>,<span data-on="3">conic-gradient(#5CF2F7 50%,#D95F5B 0)50%/70vw 57%space</span><span data-on="2">#0D2A58</span>;*{<span data-on="2">margin:30%30 40;</span><span data-on="4">font:5%'</span></pre>
+<div class="now" aria-live="polite">
+<div class="caps">
+{%- if include.lang == "fr" %}
+<div class="cap" data-t="0" data-step="html"><h3>1. Un fond pour tous, beige sur html</h3><p><code>*</code> vise html, head, style et body, et leur donne le même fond à trois couches : un dégradé radial, un dégradé conique et la couleur <code>#0D2A58</code>. head et style ne sont pas affichés. La première couche est peinte au-dessus : un cercle, beige jusqu'à <code>50em</code>. html garde la police par défaut, 16px : 50em = 800px. Tout le canevas est à moins de 800px du centre du cercle : html est beige partout, et son fond remplit tout le canevas. Les deux autres couches sont dessous : on ne les voit pas.</p></div>
+<div class="cap" data-t="5" data-step="body"><h3>2. La boîte de body, la monture</h3><p>Le <code>*</code> imbriqué vise head, style et body. body reçoit <code>margin:30%30 40</code> : en haut, 30 % de la largeur de 400, soit 120 ; 30 à droite et à gauche ; 40 en bas. Il fait 400 − 30 − 30 = 340 de large et, en mode quirks, 300 − 120 − 40 = 140 de haut, en (30, 120). Sa couleur de fond, <code>#0D2A58</code>, tout en bas de la pile, fait la monture bleu marine.</p></div>
+<div class="cap" data-t="10" data-step="Les verres"><h3>3. Une tuile conique, les verres</h3><p>Le dégradé conique a une taille de <code>70vw 57%</code> : 280 de large, et 57 % des 140 de body, soit 79,8 de haut. <code>space</code> ne répète que des tuiles entières : une seule tient dans chaque sens, alors la position la place. <code>50%</code> la centre : en x = 60. Le cône part du haut et tourne dans le sens horaire : cyan sur la première moitié, à droite, puis rouge, à gauche. Autour, la couleur de fond reste visible.</p></div>
+<div class="cap" data-t="15" data-step="font:5%'"><h3>4. font:5%', un em de 0,8px</h3><p>Le <code>*</code> imbriqué donne aussi <code>font:5%'</code> à body : une taille de 5 % des 16px de html, soit 0,8px. L'apostrophe ouvre une chaîne que la fin du code referme : un nom de police vide, sans lequel <code>font</code> n'est pas valide. Sur body, 50em = 50 × 0,8 = 40px. Sur html, la même valeur fait toujours 800px.</p></div>
+<div class="cap" data-t="20" data-step="L'anneau"><h3>5. Le cercle radial, le trou et l'anneau</h3><p>Sur body, le cercle est centré au milieu du bas de la boîte, en (200, 260). Il est beige jusqu'à 40px : le trou. Puis <code>#0D2A58 0 74q</code> : le 0 est ramené à 40px, et le bleu marine va jusqu'à 74 × 0,945 = 69,92px. Au-delà, <code>#0000</code> est transparent : les verres restent visibles. Le fond s'arrête au bord de body : il n'en reste que la moitié du haut.</p></div>
+<div class="cap" data-t="25" data-step="Résultat" data-live="171 caractères · 100 % identique"><h3>6. Résultat : 171 caractères</h3><p>Un seul fond, donné à html et à body. Une police de 0,8px sur body suffit à changer 50em de 800px en 40px : html reste beige, et body dessine les lunettes 3D.</p></div>
+{%- else %}
+<div class="cap" data-t="0" data-step="html"><h3>1. One background for all, beige on html</h3><p><code>*</code> targets html, head, style and body, and gives them the same three-layer background: a radial gradient, a conic gradient and the color <code>#0D2A58</code>. head and style are not displayed. The first layer is painted on top: a circle, beige up to <code>50em</code>. html keeps the default font size, 16px: 50em = 800px. The whole canvas is less than 800px from the circle's center: html is beige everywhere, and its background fills the whole canvas. The two other layers are underneath, so you don't see them.</p></div>
+<div class="cap" data-t="5" data-step="body"><h3>2. body's box, the frame</h3><p>The nested <code>*</code> targets head, style and body. body gets <code>margin:30%30 40</code>: on top, 30% of the 400 width, so 120; 30 on the right and on the left; 40 at the bottom. It is 400 − 30 − 30 = 340 wide and, in quirks mode, 300 − 120 − 40 = 140 tall, at (30, 120). Its background color, <code>#0D2A58</code>, at the bottom of the stack, makes the navy frame.</p></div>
+<div class="cap" data-t="10" data-step="The lenses"><h3>3. A conic tile, the lenses</h3><p>The conic gradient has the size <code>70vw 57%</code>: 280 wide, and 57% of body's 140, so 79.8 tall. <code>space</code> only repeats whole tiles: just one fits each way, so the position places it. <code>50%</code> centers it: at x = 60. The cone starts at the top and turns clockwise: cyan on the first half, on the right, then red, on the left. Around it, the background color still shows.</p></div>
+<div class="cap" data-t="15" data-step="font:5%'"><h3>4. font:5%', a 0.8px em</h3><p>The nested <code>*</code> also gives body <code>font:5%'</code>: a size of 5% of html's 16px, so 0.8px. The quote opens a string that the end of the code closes: an empty font name, without which <code>font</code> is not valid. On body, 50em = 50 × 0.8 = 40px. On html, the same value is still 800px.</p></div>
+<div class="cap" data-t="20" data-step="The ring"><h3>5. The radial circle, the hole and the ring</h3><p>On body, the circle is centered on the middle of the box's bottom edge, at (200, 260). It is beige up to 40px: the hole. Then <code>#0D2A58 0 74q</code>: the 0 is pushed up to 40px, and the navy goes on to 74 × 0.945 = 69.92px. Beyond that, <code>#0000</code> is transparent, so the lenses still show. The background stops at body's edge: only the top half is left.</p></div>
+<div class="cap" data-t="25" data-step="Result" data-live="171 characters · 100% match"><h3>6. Result: 171 characters</h3><p>One background, given to html and body. A 0.8px font on body is enough to turn 50em from 800px into 40px: html stays beige, and body draws the 3D glasses.</p></div>
+{%- endif %}
+</div>
+<div class="live"></div>
+</div>
+</div>
+<script>
+(window.AnimScenes = window.AnimScenes || {}).t0429 = (fig) => {
+  const fr = document.documentElement.lang === 'fr';
+  const $ = (s) => fig.querySelector(s);
+  const $$ = (s) => [...fig.querySelectorAll(s)];
+  const live = $('.live');
+  const ease = (x) => (x < 0.5 ? 4 * x * x * x : 1 - Math.pow(-2 * x + 2, 3) / 2);
+  const pr = (t, a, b) => ease(Math.min(1, Math.max(0, (t - a) / (b - a))));
+  const win = (t, a, b) => Math.min(pr(t, a, a + 0.5), 1 - pr(t, b - 0.3, b));
+  const c = fr ? '\u00a0:' : ':';
+  const n = (x) => (fr ? String(x).replace('.', ',') : String(x));
+  const mix = (k, a, b) => (k <= 0 ? b : k >= 1 ? a : `color-mix(in srgb, ${a} ${(k * 100).toFixed(1)}%, ${b})`);
+  // Measured on the official code in local Chrome 157 (400 × 300 iframe, quirks mode, getBoundingClientRect, getComputedStyle, pixels, variant renders).
+  // body 340 × 140 at (30, 120), background-color rgb(13, 42, 88). body's 50em computes to 40px, html's to 800px: html is beige on the whole canvas.
+  // Conic tile 280px × 57%, space, 50%: red x 60..199, cyan x 200..339; row 150 fully colored, row 229 only 80% colored (79.8px tall), drawn here at y = 150.
+  // Radial circle centered at (200, 260): beige up to 40px (x 160..239 on y = 259, y 220..259 on x = 200), navy up to 74q = 69.92px (y 190 on x = 200), then transparent.
+  const body = $('.t0429-body'), tile = $('.t0429-tile'), ring = $('.t0429-ring'), hole = $('.t0429-hole');
+  const hb = $('.t0429-html'), bb = $('.t0429-bb'), tb = $('.t0429-tb');
+  const g40 = $('.t0429-g40'), g70 = $('.t0429-g70');
+  const labs = $$('.zlab');
+  const ivs = [[0.3, 4.8], [5.3, 9.8], [10.3, 14.8], [15.3, 19.8], [20.3, 24.8]];
+  // a box outline: teaching color (inset line and light fill) or white dashes
+  const box = (e, col, show, fill, teach) => {
+    e.style.opacity = show;
+    e.style.background = teach && fill ? `color-mix(in srgb, ${col} 18%, transparent)` : 'none';
+    e.style.boxShadow = teach && show > 0 ? `inset 0 0 0 calc(2.5px * var(--k, 1)) ${col}` : 'none';
+    e.style.outline = !teach && show > 0 ? 'calc(1.5px * var(--k, 1)) dashed #fff' : 'none';
+    e.style.outlineOffset = 'calc(-0.75px * var(--k, 1))';
+    e.style.filter = !teach && show > 0 ? 'drop-shadow(0 0 calc(1px * var(--k, 1)) rgb(0 0 0 / .9))' : 'none';
+  };
+  const guide = (e, col, show, teach) => {
+    e.style.opacity = show;
+    e.style.border = `calc(1.5px * var(--k, 1)) dashed ${teach ? col : '#fff'}`;
+    e.style.filter = show > 0 ? 'drop-shadow(0 0 calc(1px * var(--k, 1)) rgb(0 0 0 / .9))' : 'none';
+  };
+  return (t, step) => {
+    const teach = fig.dataset.teach === '1';
+    const fin = pr(t, 25.2, 26.2);
+    const tw = teach ? 1 - fin : 0;
+    // step 1: html's box
+    box(hb, 'var(--t0429-hb)', win(t, 0.3, 4.8) + win(t, 15.3, 19.8), false, teach);
+    // step 2: body's box and its navy color
+    body.style.opacity = pr(t, 5.6, 6.6);
+    box(bb, 'var(--t0429-bb)', teach ? pr(t, 5.3, 5.8) * (1 - fin) : win(t, 5.3, 9.8), false, teach);
+    // step 3: the conic tile, centered
+    const tk = pr(t, 10.6, 12);
+    tile.style.opacity = tk;
+    tile.style.transform = `scale(${0.7 + 0.3 * tk})`;
+    box(tb, 'var(--t0429-tb)', teach ? pr(t, 10.3, 10.8) * (1 - fin) : win(t, 10.3, 14.8), false, teach);
+    // step 4: the 40px circle, as a guide
+    guide(g40, 'var(--t0429-hole)', pr(t, 16.3, 16.9) * (1 - pr(t, 21, 21.5)), teach);
+    // step 5: the hole and the ring; the ring grows from 40px to 69.92px
+    const ra = pr(t, 20.6, 21.2), rg = pr(t, 21.2, 23);
+    ring.style.opacity = ra;
+    ring.style.transform = `scale(${(40 + 29.92 * rg) / 69.92})`;
+    ring.style.background = mix(tw, 'var(--t0429-ring)', 'var(--t0429-navy)');
+    hole.style.opacity = ra;
+    hole.style.background = mix(tw, 'var(--t0429-hole)', 'var(--t0429-beige)');
+    // in teaching colors, the hole is cut at body's bottom edge, like the real gradient
+    hole.style.clipPath = tw > 0 ? 'inset(0 0 50% 0)' : 'none';
+    guide(g70, 'var(--t0429-ring)', pr(t, 23, 23.5) * (1 - fin), teach);
+    labs.forEach((l) => { l.style.opacity = win(t, ...ivs[+l.dataset.l - 1]); });
+    let txt;
+    if (step === 0) txt = `50em = 50 × 16 = 800px · html${c} #E3DCD1`;
+    else if (step === 1) txt = `30% × 400 = 120 · 400 − 30 − 30 = 340 · 300 − 120 − 40 = 140`;
+    else if (step === 2) txt = `70vw = 280 · 57% × 140 = ${n(79.8)} · (340 − 280) / 2 = 30`;
+    else if (step === 3) txt = `5% × 16 = ${n(0.8)}px · 50em = 50 × ${n(0.8)} = 40px`;
+    else if (step === 4) txt = `${fr ? 'centre' : 'center'} (200, 260) · 74q = 74 × ${n(0.945)} = ${n(69.92)}px`;
+    else txt = $$('.caps .cap')[5].dataset.live || '';
+    live.textContent = txt;
+  };
+};
+</script>
+</figure>
