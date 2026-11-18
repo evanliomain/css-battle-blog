@@ -1,0 +1,125 @@
+<figure class="anim t0502" data-duration="31" data-scene="t0502" data-wide="-20 -345 440 820" data-off-label="-16 -341" style="--bg:#525142">
+<style>
+.t0502{--t0502-red:#e25c57;--t0502-green:#84be8d;--t0502-hb:#facc15;--t0502-bb:#f472b6;--t0502-br:#fb923c;--t0502-bg:#22d3ee}
+.t0502 .scene .t0502-white{left:-40px;top:-360px;width:480px;height:860px;background:#fff;z-index:0}
+.t0502 .scene .t0502-hr{left:170px;top:-332px;width:60px;height:632px;background:var(--t0502-red);opacity:0;z-index:1}
+.t0502 .scene .t0502-hg{left:170px;top:-332px;width:60px;height:632px;background:var(--t0502-green);opacity:0;z-index:1}
+.t0502 .scene .t0502-pr{left:124px;top:-46px;width:152px;height:60px;border-radius:30px;background:var(--t0502-red);opacity:0;z-index:2}
+.t0502 .scene .t0502-pg{left:124px;top:-46px;width:152px;height:60px;border-radius:30px;background:var(--t0502-green);opacity:0;z-index:2}
+.t0502 .scene .t0502-box{box-sizing:border-box;opacity:0;z-index:5}
+.t0502 .scene .t0502-hb{left:170px;top:-332px;width:60px;height:632px}
+.t0502 .scene .t0502-bb{left:124px;top:-46px;width:152px;height:60px;border-radius:30px}
+.t0502 .scene .zlab{color:#14142a;background:rgb(255 255 255 / .92);box-shadow:0 0 0 1px rgb(20 20 42 / .25);padding:1px 5px;border-radius:3px;opacity:0}
+@media (max-width:700px){.t0502 .scene .zlab{font-size:8px;padding:0 3px}}
+.t0502 .legend .t0502-ol{box-shadow:0 0 0 1px currentColor}
+</style>
+<div class="anim-col">
+<div class="stage" role="img" aria-label="{% if include.lang == "fr" %}Animation : * vise html, head, style et body, et * * vise head, style et body. html reçoit la marge -83%170 0 : -83 % de 400 = -332 en haut, 170 à gauche et à droite, 0 en bas, donc 60 × 632 en (170, −332). body reçoit la marge 286-46 : 152 × 60 en (124, −46), aux bouts ronds, et son fond #525142 passe au canevas. La liste box-shadow:15ex 176q#84BE8D,-15ex 1in#E25C57 copie html en vert à droite et en rouge à gauche : deux colonnes de 60px qui couvrent toute la hauteur. body a la même liste : une pilule rouge 96px plus bas, en y = 50, et une verte 166,3px plus bas, en y = 120,3. Avec font:7q', le 15ex de body tombe à 44,49px dans mon Chrome (la cible place les pilules à 46px) : les pilules glissent vers le milieu et leurs bouts entrent dans les colonnes.{% else %}Animation: * targets html, head, style and body, and * * targets head, style and body. html gets the margin -83%170 0: -83% of 400 = -332 on top, 170 left and right, 0 at the bottom, so 60 × 632 at (170, −332). body gets the margin 286-46: 152 × 60 at (124, −46), with round ends, and its background #525142 goes to the canvas. The list box-shadow:15ex 176q#84BE8D,-15ex 1in#E25C57 copies html in green on the right and in red on the left: two 60px columns that cover the whole height. body has the same list: a red pill 96px lower, at y = 50, and a green one 166.3px lower, at y = 120.3. With font:7q', body's 15ex shrinks to 44.49px in my Chrome (the target puts the pills 46px out): the pills slide toward the middle and their ends go into the columns.{% endif %}">
+<div class="scene">
+<div class="t0502-white"></div>
+<div class="t0502-hr"></div>
+<div class="t0502-hg"></div>
+<div class="t0502-pr"></div>
+<div class="t0502-pg"></div>
+<div class="t0502-box t0502-hb"></div>
+<div class="t0502-box t0502-bb"></div>
+<span class="zlab" data-l="1" style="left:236px;top:20px">html 60 × 632</span>
+<span class="zlab" data-l="1" style="left:236px;top:-320px">-83% × 400 = −332</span>
+<span class="zlab" data-l="1" style="left:236px;top:40px">-83% → y = −332</span>
+<span class="zlab" data-l="2" style="left:-14px;top:-40px">−332 + 286 = −46</span>
+<span class="zlab" data-l="2" style="left:130px;top:24px">body 152 × 60</span>
+<span class="zlab" data-l="2" style="left:8px;top:44px">#525142 → {% if include.lang == "fr" %}canevas{% else %}canvas{% endif %}</span>
+<span class="zlab" data-l="3" style="left:126px;top:96px">-15ex · 1in = 96px</span>
+<span class="zlab" data-l="3" style="left:126px;top:150px">15ex · 176q = {% if include.lang == "fr" %}166,3px{% else %}166.3px{% endif %}</span>
+<span class="zlab" data-l="4" style="left:126px;top:200px">15ex · {% if include.lang == "fr" %}cible : 110px{% else %}target: 110px{% endif %}</span>
+<span class="zlab" data-l="5" style="left:126px;top:200px">7q = {% if include.lang == "fr" %}6,61px{% else %}6.61px{% endif %} · {% if include.lang == "fr" %}cible : 46px{% else %}target: 46px{% endif %}</span>
+</div>
+</div>
+<div class="legend"><span><i class="t0502-ol" style="--c:#e25c57"></i>{% if include.lang == "fr" %}#e25c57 : les copies rouges{% else %}#e25c57: the red copies{% endif %}</span><span><i class="t0502-ol" style="--c:#84be8d"></i>{% if include.lang == "fr" %}#84be8d : les copies vertes{% else %}#84be8d: the green copies{% endif %}</span><span><i class="t0502-ol" style="--c:#525142"></i>{% if include.lang == "fr" %}#525142 : le fond de body, sur le canevas{% else %}#525142: body's background, on the canvas{% endif %}</span><span><i style="--c:#facc15"></i>{% if include.lang == "fr" %}boîte de html{% else %}html's box{% endif %}</span><span><i style="--c:#f472b6"></i>{% if include.lang == "fr" %}boîte de body{% else %}body's box{% endif %}</span><span><i style="--c:#fb923c"></i>{% if include.lang == "fr" %}ombre rouge de body{% else %}body's red shadow{% endif %}</span><span><i style="--c:#22d3ee"></i>{% if include.lang == "fr" %}ombre verte de body{% else %}body's green shadow{% endif %}</span></div>
+</div>
+<div class="anim-side">
+<pre class="code" aria-hidden="true">&lt;style><span data-on="1">*{margin:-83%170 0;</span><span data-on="3 4">box-shadow:15ex 176q#84BE8D,-15ex 1in#E25C57;</span><span data-on="2">*{margin:286-46;border-radius:1in;background:#525142;</span><span data-on="5">font:7q'</span></pre>
+<div class="now" aria-live="polite">
+<div class="caps">
+{%- if include.lang == "fr" %}
+<div class="cap" data-t="0" data-step="html"><h3>1. Une boîte très haute</h3><p><code>*</code> vise html, head, style et body. head et style ne s'affichent pas. html reçoit <code>margin:-83%170 0</code>. Un pourcentage de marge se calcule sur la largeur, même en haut : −83 % de 400 = −332. En mode quirks, html remplit la page moins ses marges : 400 − 340 = 60 de large, 300 + 332 = 632 de haut, en (170, −332).</p></div>
+<div class="cap" data-t="5" data-step="body"><h3>2. body</h3><p>Le <code>*</code> imbriqué vise ce qui est dans un autre élément : head, style et body. body reçoit <code>margin:286-46</code> : 632 − 2 × 286 = 60 de haut, 60 + 2 × 46 = 152 de large, en (124, −46), presque tout au-dessus du canevas. <code>border-radius:1in</code>, 96px, est plus que la moitié de 60 : les bouts sont des demi-cercles. html n'a pas de fond : celui de body, <code>#525142</code>, passe au canevas.</p></div>
+<div class="cap" data-t="10" data-step="Les colonnes"><h3>3. Les ombres de html</h3><p>La liste d'ombres copie html deux fois. Le vert va de 15ex à droite et de 176q = 166,3px vers le bas, le rouge de 15ex à gauche et de 1in = 96px vers le bas. La cible place les colonnes à 110px de html. html fait 632px de haut : ses copies couvrent encore tout le canevas, de x = 60 à 120 et de 280 à 340.</p></div>
+<div class="cap" data-t="15.5" data-step="La même liste"><h3>4. Les ombres de body</h3><p>Le premier <code>*</code> vise aussi body : il a la même liste. Ses copies sont des pilules de 152 × 60, 96px et 166,3px plus bas que lui : en y = 50 et en y = 120,3. Avec la police par défaut, 15ex serait aussi long que sur html : chaque pilule serait centrée sur sa colonne.</p></div>
+<div class="cap" data-t="21" data-step="La police"><h3>5. La police règle 15ex</h3><p><code>font:7q'</code> donne à body une police de 7q = 6,61px. ex suit la taille de la police : le même 15ex est bien plus court : 44,49px dans mon Chrome, et la cible place les pilules à 46px. Les pilules glissent vers le milieu : la rouge de x = 78 à 230, la verte de 170 à 322. Les vides de 176q et de 1in ne bougent pas : ce sont des longueurs fixes.</p></div>
+<div class="cap" data-t="26.5" data-step="Résultat" data-live="132 caractères · 100 % identique"><h3>6. Résultat : 132 caractères</h3><p>Le bout gauche de la pilule rouge est dans la colonne rouge, le bout droit de la verte dans la colonne verte. Même couleur : on ne voit pas où l'une finit et où l'autre commence.</p></div>
+{%- else %}
+<div class="cap" data-t="0" data-step="html"><h3>1. A very tall box</h3><p><code>*</code> targets html, head, style and body. head and style are not displayed. html gets <code>margin:-83%170 0</code>. A margin percentage is taken from the width, even on top: −83% of 400 = −332. In quirks mode, html fills the page minus its margins: 400 − 340 = 60 wide, 300 + 332 = 632 tall, at (170, −332).</p></div>
+<div class="cap" data-t="5" data-step="body"><h3>2. body</h3><p>The nested <code>*</code> targets what is inside another element: head, style and body. body gets <code>margin:286-46</code>: 632 − 2 × 286 = 60 tall, 60 + 2 × 46 = 152 wide, at (124, −46), almost all above the canvas. <code>border-radius:1in</code>, 96px, is more than half of 60: the ends are half circles. html has no background, so body's, <code>#525142</code>, goes to the canvas.</p></div>
+<div class="cap" data-t="10" data-step="The columns"><h3>3. html's shadows</h3><p>The shadow list copies html twice. The green one moves 15ex right and 176q = 166.3px down, the red one 15ex left and 1in = 96px down. The target puts the columns 110px from html. html is 632px tall, so its copies still cover the whole canvas, from x = 60 to 120 and from 280 to 340.</p></div>
+<div class="cap" data-t="15.5" data-step="The same list"><h3>4. body's shadows</h3><p>The first <code>*</code> also targets body, so it has the same list. Its copies are 152 × 60 pills, 96px and 166.3px below it: at y = 50 and y = 120.3. With the default font, 15ex would be as long as on html: each pill would sit centered on its column.</p></div>
+<div class="cap" data-t="21" data-step="The font"><h3>5. The font sets 15ex</h3><p><code>font:7q'</code> gives body a 7q = 6.61px font. ex follows the font size, so the same 15ex is much shorter: 44.49px in my Chrome, and the target puts the pills 46px out. The pills slide toward the middle: the red one from x = 78 to 230, the green one from 170 to 322. The 176q and 1in drops do not move: they are fixed lengths.</p></div>
+<div class="cap" data-t="26.5" data-step="Result" data-live="132 characters · 100% match"><h3>6. Result: 132 characters</h3><p>The left end of the red pill is inside the red column, the right end of the green pill inside the green column. Same color: you cannot see where one ends and the other starts.</p></div>
+{%- endif %}
+</div>
+<div class="live"></div>
+</div>
+</div>
+<script>
+(window.AnimScenes = window.AnimScenes || {}).t0502 = (fig) => {
+  const fr = document.documentElement.lang === 'fr';
+  const $ = (s) => fig.querySelector(s);
+  const $$ = (s) => [...fig.querySelectorAll(s)];
+  const live = $('.live');
+  const ease = (x) => (x < 0.5 ? 4 * x * x * x : 1 - Math.pow(-2 * x + 2, 3) / 2);
+  const pr = (t, a, b) => ease(Math.min(1, Math.max(0, (t - a) / (b - a))));
+  const win = (t, a, b) => Math.min(pr(t, a, a + 0.5), 1 - pr(t, b - 0.3, b));
+  const c = fr ? ' :' : ':';
+  const n = (x) => (fr ? String(x).replace('.', ',') : String(x));
+  const mix = (k, a, b) => (k <= 0 ? b : k >= 1 ? a : `color-mix(in srgb, ${a} ${(k * 100).toFixed(1)}%, ${b})`);
+  // Measured on the official code in local Chrome 157 (400 × 300 iframe, quirks mode, getBoundingClientRect, getComputedStyle, variant renders).
+  // html 60 × 632 at (170, -332); body 152 × 60 at (124, -46), border-radius 96px (clamped to 30). Canvas #525142 (body's background, html has none).
+  // Shadow offsets: 176q = 166.299px, 1in = 96px. 15ex locally: 107.695px on html (16px Times), 44.4916px on body (7q = 6.61417px).
+  // The target puts the columns at x 60..120 and 280..340 (110px from html) and the pills at x 78..230 and 170..322 (46px from body): this scene uses those.
+  const HX = 110, BX0 = 110, BX = 46, R = 96, G = 166.3;
+  const white = $('.t0502-white'), hr = $('.t0502-hr'), hg = $('.t0502-hg'), pr_ = $('.t0502-pr'), pg = $('.t0502-pg');
+  const hb = $('.t0502-hb'), bb = $('.t0502-bb');
+  const labs = $$('.zlab');
+  const ivs = [[0.3, 4.8], [5.3, 9.8], [10.3, 15.3], [15.8, 20.8], [21.3, 26.3]];
+  return (t, step) => {
+    const teach = fig.dataset.teach === '1';
+    const fin = pr(t, 26.7, 27.7);
+    const tw = teach ? 1 - fin : 0;
+    // step 2: body's background goes to the canvas
+    white.style.opacity = 1 - pr(t, 6, 7.5);
+    // the two boxes: dashed outline (or teaching color), until the result
+    const boxes = [[hb, 'var(--t0502-hb)', pr(t, 0.3, 1)], [bb, 'var(--t0502-bb)', pr(t, 5.3, 6)]];
+    boxes.forEach(([e, col, a]) => {
+      e.style.opacity = a * (1 - fin);
+      e.style.background = teach ? `color-mix(in srgb, ${col} 22%, transparent)` : 'none';
+      e.style.boxShadow = teach ? `inset 0 0 0 calc(2.5px * var(--k, 1)) ${col}` : 'none';
+      e.style.outline = teach ? 'none' : 'calc(1.5px * var(--k, 1)) dashed #fff';
+      e.style.outlineOffset = teach ? '0' : 'calc(-0.75px * var(--k, 1))';
+      e.style.filter = teach ? 'none' : 'drop-shadow(0 0 calc(1px * var(--k, 1)) rgb(0 0 0 / .9))';
+    });
+    // step 3: html's copies move out
+    const ha = pr(t, 10.4, 11), hm = pr(t, 11, 13.2);
+    hr.style.opacity = ha; hg.style.opacity = ha;
+    hr.style.transform = `translate(${-HX * hm}px, ${R * hm}px)`;
+    hg.style.transform = `translate(${HX * hm}px, ${G * hm}px)`;
+    // step 4: body's copies, same list, with html's 15ex; step 5: the font takes 15ex to 46px
+    const ba = pr(t, 15.9, 16.5), bm = pr(t, 16.5, 18.7), bf = pr(t, 22, 24.4);
+    const bx = BX0 * bm - (BX0 - BX) * bf;
+    pr_.style.opacity = ba; pg.style.opacity = ba;
+    pr_.style.transform = `translate(${-bx}px, ${R * bm}px)`;
+    pg.style.transform = `translate(${bx}px, ${G * bm}px)`;
+    pr_.style.background = mix(tw, 'var(--t0502-br)', 'var(--t0502-red)');
+    pg.style.background = mix(tw, 'var(--t0502-bg)', 'var(--t0502-green)');
+    labs.forEach((l) => { l.style.opacity = win(t, ...ivs[+l.dataset.l - 1]); });
+    let txt;
+    if (step === 0) txt = `html${c} 400 − 2 × 170 = 60 · 300 + 332 = 632`;
+    else if (step === 1) txt = `body${c} 632 − 2 × 286 = 60 · 60 + 2 × 46 = 152`;
+    else if (step === 2) txt = `html${c} 15ex · ${fr ? 'cible' : 'target'}${c} 110px · 1in = 96px · 176q = ${n(166.3)}px`;
+    else if (step === 3) txt = `body${c} y = −46 + 96 = 50 · −46 + ${n(166.3)} = ${n(120.3)}`;
+    else if (step === 4) txt = `7q = ${n(6.61)}px · 15ex · ${fr ? 'cible' : 'target'}${c} 46px`;
+    else txt = $$('.caps .cap')[5].dataset.live || '';
+    live.textContent = txt;
+  };
+};
+</script>
+</figure>
