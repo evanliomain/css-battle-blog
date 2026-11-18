@@ -1,0 +1,131 @@
+<figure class="anim t0612" data-duration="28" data-scene="t0612" data-wide="-30 -40 460 380" style="--bg:#317080">
+<style>
+.t0612{--t0612-bd:#f472b6;--t0612-p1:#a78bfa;--t0612-p2:#4ade80;--t0612-dash:#fde68a}
+.t0612 .scene .t0612-can{left:0;top:0;width:400px;height:300px;background:#317080}
+.t0612 .scene .t0612-bar{left:105px;top:30px;width:80px;height:240px;background:#f5bb60;opacity:0}
+.t0612 .scene .t0612-p{left:195px;width:100px;height:100px;background:#f5bb60;opacity:0}
+.t0612 .scene .t0612-p1{top:30px}
+.t0612 .scene .t0612-p2{top:170px}
+.t0612 .scene .t0612-dash{box-sizing:border-box;opacity:0;z-index:6;pointer-events:none}
+.t0612 .scene .t0612-html{left:97px;top:-10px;width:96px;height:320px;outline:calc(1.5px * var(--k, 1)) dashed var(--t0612-dash);outline-offset:calc(-0.75px * var(--k, 1))}
+.t0612 .scene .t0612-gap{left:195px;width:100px;outline:calc(1.5px * var(--k, 1)) dashed var(--t0612-dash);outline-offset:calc(-0.75px * var(--k, 1))}
+.t0612 .scene .t0612-ml{left:105px;width:90px;height:0;top:80px;border-top:calc(1.5px * var(--k, 1)) dashed var(--t0612-dash)}
+.t0612 .scene .zlab{color:#14142a;background:rgb(255 255 255 / .92);box-shadow:0 0 0 1px rgb(20 20 42 / .25);padding:1px 5px;border-radius:3px;opacity:0;transform-origin:100% 0}
+</style>
+<div class="anim-col">
+<div class="stage" role="img" aria-label="{% if include.lang == "fr" %}Animation : html reçoit #267e, un bleu-vert à 93 % d'opacité, qui donne #317080 sur la page blanche. Ses marges en font une boîte de 96px de large en x = 97, qui commence en y = −10. body garde sa marge de 8px : une barre jaune de 80 × 240 en (105, 30). Les deux p font 100 × 100 grâce au padding, en x = 195, y = 30 et 170. Un rayon de 2in sur deux coins opposés, ramené à 100px, en fait des feuilles. scale:1-1 retourne la deuxième.{% else %}Animation: html gets #267e, a blue-green at 93% opacity, which gives #317080 over the white page. Its margins make it a 96px-wide box at x = 97, starting at y = −10. body keeps its 8px margin: an 80 × 240 yellow bar at (105, 30). The two p are 100 × 100 from their padding, at x = 195, y = 30 and 170. A 2in radius on two opposite corners, scaled down to 100px, turns them into leaves. scale:1-1 flips the second one.{% endif %}">
+<div class="scene">
+<div class="t0612-can"></div>
+<div class="t0612-bar"></div>
+<div class="t0612-p t0612-p1"></div>
+<div class="t0612-p t0612-p2"></div>
+<div class="t0612-dash t0612-html"></div>
+<div class="t0612-dash t0612-gap" style="top:-10px;height:40px"></div>
+<div class="t0612-dash t0612-gap" style="top:130px;height:40px"></div>
+<div class="t0612-dash t0612-ml"></div>
+<span class="zlab t0612-l1" data-l="1">{% if include.lang == "fr" %}html : #267e sur blanc{% else %}html: #267e over white{% endif %}</span>
+<span class="zlab t0612-l2" data-l="1">= #317080</span>
+<span class="zlab t0612-l1" data-l="2">{% if include.lang == "fr" %}html : 96 de large en x = 97{% else %}html: 96 wide at x = 97{% endif %}</span>
+<span class="zlab t0612-l2" data-l="2">{% if include.lang == "fr" %}haut en y = −10{% else %}top at y = −10{% endif %}</span>
+<span class="zlab t0612-l1" data-l="3">{% if include.lang == "fr" %}body : 80 × 240 en (105, 30){% else %}body: 80 × 240 at (105, 30){% endif %}</span>
+<span class="zlab t0612-l2" data-l="3">{% if include.lang == "fr" %}marge de 8px par défaut{% else %}default 8px margin{% endif %}</span>
+<span class="zlab t0612-l1" data-l="4">{% if include.lang == "fr" %}p : 100 × 100 en x = 195{% else %}p: 100 × 100 at x = 195{% endif %}</span>
+<span class="zlab t0612-l2" data-l="4">{% if include.lang == "fr" %}marges de 40 et 90{% else %}40 and 90 margins{% endif %}</span>
+<span class="zlab t0612-l1" data-l="5">{% if include.lang == "fr" %}2in = 192px → 100px{% else %}2in = 192px → 100px{% endif %}</span>
+<span class="zlab t0612-l2" data-l="5">{% if include.lang == "fr" %}deux coins sur quatre{% else %}two corners out of four{% endif %}</span>
+<span class="zlab t0612-l1" data-l="6">scale:1-1 = scale(1, −1)</span>
+<span class="zlab t0612-l2" data-l="6">{% if include.lang == "fr" %}le deuxième p, à l'envers{% else %}the second p, upside down{% endif %}</span>
+</div>
+</div>
+<div class="legend"><span><i style="--c:#317080;outline:1px solid currentColor;outline-offset:-1px"></i>{% if include.lang == "fr" %}fond de html{% else %}html's background{% endif %}</span><span><i style="--c:transparent;outline:2px dashed currentColor;outline-offset:-2px"></i>{% if include.lang == "fr" %}boîte de html, marges{% else %}html's box, margins{% endif %}</span><span><i style="--c:var(--t0612-bd)"></i>body</span><span><i style="--c:var(--t0612-p1)"></i>{% if include.lang == "fr" %}premier p{% else %}first p{% endif %}</span><span><i style="--c:var(--t0612-p2)"></i>{% if include.lang == "fr" %}deuxième p{% else %}second p{% endif %}</span></div>
+</div>
+<div class="anim-side">
+<pre class="code" aria-hidden="true"><span data-on="1" data-tone="2">&lt;p>&lt;p></span>&lt;style><span data-on="1">&amp;{background:#267e</span>;<span data-on="2">margin:-10 207 0 97</span>;<span data-on="3">*{background:#f5bb60</span>;<span data-on="4">*{padding:50</span>;<span data-on="5">border-radius:2in 0</span>;<span data-on="3 4">margin:40 90</span>;<span data-on="6">+*{scale:1-1</span></pre>
+<div class="now" aria-live="polite">
+<div class="caps">
+{%- if include.lang == "fr" %}
+<div class="cap" data-t="0" data-step="Fond"><h3>1. Le fond de html</h3><p><code>&lt;p>&lt;p></code> crée deux paragraphes dans body ; style finit dans le deuxième. Au premier niveau, <code>&amp;</code> touche html, et seulement lui. <code>#267e</code> vaut <code>#226677</code> à 93 % d'opacité. Le fond de html couvre toute la page, par-dessus le blanc : on voit <code>#317080</code>.</p></div>
+<div class="cap" data-t="4" data-step="html"><h3>2. La boîte de html</h3><p><code>margin:-10 207 0 97</code>, en px (mode quirks). html fait 400 − 97 − 207 = 96px de large, de x = 97 à 193. Son haut est en y = −10, hors du canevas. Il ne peint rien lui-même : son fond est sur toute la page.</p></div>
+<div class="cap" data-t="8" data-step="body"><h3>3. La barre : body</h3><p>Le <code>*</code> imbriqué touche tout ce qui est dans html : body, les deux p, et head et style, cachés. Tous deviennent jaunes. body garde sa marge par défaut de 8px : 96 − 16 = 80px de large, en x = 105. La marge de 40px du premier p traverse celle de body : body commence en −10 + 40 = 30.</p></div>
+<div class="cap" data-t="12" data-step="Carrés"><h3>4. Deux carrés</h3><p>Le <code>*</code> suivant touche ce qui est dans body : les deux p. <code>padding:50</code> en fait des carrés de 100 × 100. La marge de gauche, 90, les pousse en x = 105 + 90 = 195. Leur largeur tombe à 0. 40px au-dessus et entre eux : y = 30 et 170. body fait 100 + 40 + 100 = 240 de haut.</p></div>
+<div class="cap" data-t="16" data-step="Feuilles"><h3>5. Deux coins arrondis</h3><p><code>border-radius:2in 0</code> : 192px en haut à gauche et en bas à droite, 0 ailleurs. 192 dépasse les 100px du côté, alors le navigateur réduit les deux rayons à 100px. Deux quarts de cercle qui se rejoignent aux coins pointus : une feuille.</p></div>
+<div class="cap" data-t="20" data-step="Miroir"><h3>6. Le deuxième p à l'envers</h3><p><code>+*</code> touche l'élément qui suit un p : le deuxième p. <code>scale:1-1</code> se lit <code>1 -1</code>, le signe moins sépare les deux nombres. Le deuxième p est retourné de haut en bas, autour de son centre : sa feuille va du haut à gauche au bas à droite.</p></div>
+<div class="cap" data-t="24" data-step="Résultat" data-live="131 caractères · 100 % identique"><h3>7. Résultat : 131 caractères</h3><p>Une barre et deux feuilles, toutes jaunes. Les marges placent tout, deux coins arrondis font la feuille, et un miroir la retourne.</p></div>
+{%- else %}
+<div class="cap" data-t="0" data-step="Background"><h3>1. html's background</h3><p><code>&lt;p>&lt;p></code> makes two paragraphs in body; style ends up in the second one. At the top level, <code>&amp;</code> selects html, and only html. <code>#267e</code> is <code>#226677</code> at 93% opacity. html's background covers the whole page, over white: it shows as <code>#317080</code>.</p></div>
+<div class="cap" data-t="4" data-step="html"><h3>2. html's box</h3><p><code>margin:-10 207 0 97</code>, in px (quirks mode). html is 400 − 97 − 207 = 96px wide, from x = 97 to 193. Its top is at y = −10, off the canvas. It paints nothing itself: its background is on the whole page.</p></div>
+<div class="cap" data-t="8" data-step="body"><h3>3. The bar: body</h3><p>The nested <code>*</code> selects everything inside html: body, the two p, and head and style, hidden. They all turn yellow. body keeps its default 8px margin: 96 − 16 = 80px wide, at x = 105. The first p's 40px margin goes through body's: body starts at −10 + 40 = 30.</p></div>
+<div class="cap" data-t="12" data-step="Squares"><h3>4. Two squares</h3><p>The next <code>*</code> selects what is inside body: the two p. <code>padding:50</code> makes them 100 × 100 squares. The left margin, 90, pushes them to x = 105 + 90 = 195. Their width drops to 0. 40px above and between them: y = 30 and 170. body is 100 + 40 + 100 = 240 tall.</p></div>
+<div class="cap" data-t="16" data-step="Leaves"><h3>5. Two round corners</h3><p><code>border-radius:2in 0</code>: 192px at the top left and the bottom right, 0 elsewhere. 192 is more than the 100px side, so the browser scales both radii down to 100px. Two quarter circles that meet at the sharp corners: a leaf.</p></div>
+<div class="cap" data-t="20" data-step="Flip"><h3>6. The second p upside down</h3><p><code>+*</code> selects the element right after a p: the second p. <code>scale:1-1</code> reads as <code>1 -1</code>, the minus sign splits the two numbers. The second p is flipped top to bottom, around its center: its leaf goes from the top left to the bottom right.</p></div>
+<div class="cap" data-t="24" data-step="Result" data-live="131 characters · 100% match"><h3>7. Result: 131 characters</h3><p>A bar and two leaves, all yellow. The margins place everything, two round corners make the leaf, and a flip turns it over.</p></div>
+{%- endif %}
+</div>
+<div class="live"></div>
+</div>
+</div>
+<script>
+(window.AnimScenes = window.AnimScenes || {}).t0612 = (fig) => {
+  const fr = document.documentElement.lang === 'fr';
+  const $ = (s) => fig.querySelector(s);
+  const $$ = (s) => [...fig.querySelectorAll(s)];
+  const live = $('.live');
+  const ease = (x) => (x < 0.5 ? 4 * x * x * x : 1 - Math.pow(-2 * x + 2, 3) / 2);
+  const pr = (t, [a, b]) => ease(Math.min(1, Math.max(0, (t - a) / (b - a))));
+  const win = (t, a, b) => Math.min(pr(t, [a, a + 0.5]), 1 - pr(t, [b - 0.2, b]));
+  const c = fr ? ' :' : ':';
+  const mix = (k, a, b) => (k <= 0 ? b : k >= 1 ? a : `color-mix(in srgb, ${a} ${(k * 100).toFixed(1)}%, ${b})`);
+  // Measured on the official code in local Chrome (400 × 300 iframe, quirks mode, getBoundingClientRect, getComputedStyle):
+  // html: 96 × 320 at (97, −10), background rgba(34, 102, 119, .933): the canvas shows #317080.
+  // body: 80 × 240 at (105, 30), margin 8px, #f5bb60. p: 100 × 100 at (195, 30) and (195, 170), radius 192px 0,
+  // the second one with scale 1 −1. The DOM is html > head, body > p, p > style.
+  const FIN = 24;
+  const can = $('.t0612-can'), bar = $('.t0612-bar'), p1 = $('.t0612-p1'), p2 = $('.t0612-p2');
+  const html = $('.t0612-html'), gaps = $$('.t0612-gap'), ml = $('.t0612-ml');
+  const labs = $$('.zlab');
+  const ivs = [[0.3, 4], [4.3, 8], [8.3, 12], [12.3, 16], [16.3, 20], [20.3, FIN]];
+  return (t, step) => {
+    const teach = fig.dataset.teach === '1';
+    const tw = teach ? 1 - pr(t, [FIN, FIN + 0.8]) : 0;
+    // step 1: the page goes from white to html's background
+    can.style.background = mix(pr(t, [0.6, 2.2]), '#317080', '#ffffff');
+    // step 2: html's box (dashed), shown again for the result's teaching view until FIN
+    html.style.opacity = Math.max(win(t, 4.4, 12), teach ? win(t, 12.3, FIN + 0.6) * 0.6 : 0);
+    // step 3: body's bar
+    bar.style.opacity = pr(t, [8.6, 9.6]);
+    bar.style.background = mix(tw, 'var(--t0612-bd)', '#f5bb60');
+    // step 4: the two squares, with their 40px margins and the 90px left margin
+    const kp = pr(t, [12.5, 13.5]);
+    p1.style.opacity = kp;
+    p2.style.opacity = kp;
+    p1.style.background = mix(tw, 'var(--t0612-p1)', '#f5bb60');
+    p2.style.background = mix(tw, 'var(--t0612-p2)', '#f5bb60');
+    gaps.forEach((g) => { g.style.opacity = win(t, 12.8, 16); });
+    ml.style.opacity = win(t, 12.8, 16);
+    // step 5: the radius grows from 0 to 192px on the top left and bottom right corners
+    const r = 192 * pr(t, [16.6, 18.6]);
+    p1.style.borderRadius = p2.style.borderRadius = `${r}px 0`;
+    // step 6: the second p flips, scale 1 → −1
+    const sy = 1 - 2 * pr(t, [20.6, 22.6]);
+    p2.style.transform = sy === 1 ? 'none' : `scale(1, ${sy})`;
+    labs.forEach((l) => {
+      const k = +l.dataset.l, second = l.classList.contains('t0612-l2');
+      // right side of the canvas: above the top leaf (y = 30) and below the bottom one (y = 270)
+      l.style.left = 'auto';
+      l.style.right = 'calc(4px * var(--k, 1))';
+      l.style.top = second ? 'calc(300px - 19px * var(--k, 1))' : 'calc(3px * var(--k, 1))';
+      l.style.opacity = win(t, ...ivs[k - 1]);
+    });
+    let txt;
+    if (step === 0) txt = `#267e = #226677 ${fr ? 'à 93\u00a0%' : 'at 93%'} → #317080`;
+    else if (step === 1) txt = `html${c} 96 × 320 ${fr ? 'en' : 'at'} (97, −10)`;
+    else if (step === 2) txt = `body${c} 80 × 240 ${fr ? 'en' : 'at'} (105, 30)`;
+    else if (step === 3) txt = `p${c} 100 × 100 ${fr ? 'en' : 'at'} (195, 30) ${fr ? 'et' : 'and'} (195, 170)`;
+    else if (step === 4) txt = `${fr ? 'rayon' : 'radius'} 192px → 100px`;
+    else if (step === 5) txt = `${fr ? 'deuxième p' : 'second p'}${c} scale(1, −1)`;
+    else txt = $$('.caps .cap')[6].dataset.live || '';
+    live.textContent = txt;
+  };
+};
+</script>
+</figure>
