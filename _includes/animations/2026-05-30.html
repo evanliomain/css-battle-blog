@@ -1,0 +1,107 @@
+<figure class="anim t0530" data-duration="37" data-scene="t0530" data-wide="-40 -240 480 720" data-off-label="-36 446" style="--bg:#fff">
+<style>
+.t0530{--t0530-hg:#f9a8d4;--t0530-hw:#f59e0b;--t0530-ht:#8b5cf6;--t0530-bt:#2563eb;--t0530-bg:#22d3ee;--t0530-box:#14142a}
+.t0530 .scene .t0530-html{left:90px;top:65px;width:220px;height:80px;border-radius:40px;z-index:2}
+.t0530 .scene .t0530-body{left:190px;top:-223px;width:20px;height:170px;z-index:3}
+.t0530 .scene .t0530-box{box-sizing:border-box;outline:calc(1.5px * var(--k, 1)) dashed var(--t0530-box);outline-offset:calc(-0.75px * var(--k, 1));filter:drop-shadow(0 0 calc(1px * var(--k, 1)) rgb(255 255 255 / .8));opacity:0;z-index:5}
+.t0530 .scene .zlab{color:#14142a;background:rgb(255 255 255 / .92);box-shadow:0 0 0 1px rgb(20 20 42 / .25);padding:1px 5px;border-radius:3px;opacity:0}
+.t0530 .legend .t0530-dash{background:none;outline:2px dashed currentColor;outline-offset:-2px}
+.t0530 .legend .t0530-cv{box-shadow:inset 0 0 0 1px currentColor}
+</style>
+<div class="anim-col">
+<div class="stage" role="img" aria-label="{% if include.lang == "fr" %}Animation : * vise html. margin:65 90 155 en fait une boîte de 220 × 80 en (90, 65). border-radius:3lh vaut 54px, plus que la moitié de 80 : la boîte devient une pilule. html n'a pas de fond : le canevas reste blanc. La troisième ombre, 0 3in 0 53em, descend de 288px et s'étale de 848px : elle couvre tout le canevas en vert, sauf sous la boîte de html, car une ombre extérieure n'est jamais peinte sous sa propre boîte. Les deux pilules du haut sont donc le canevas blanc, vu par ce trou. La première ombre, 0 5lh #fff, descend de 90px : ce sont les deux pilules du bas. La deuxième, 0 3in #317080, tombe en y = 353, hors du canevas. Le * imbriqué vise body : margin:-288 100 198 en fait une boîte de 20 × 170 en (190, −223), hors du canevas. Sa police de 0,2Q rend lh nul et em minuscule. Sa première ombre reste cachée sous sa boîte. Sa deuxième descend de 288px : c'est la barre bleu sarcelle, de y = 65 à 235. Sa troisième s'étale de 10px seulement : une bande verte de 40px de large qui coupe les pilules en deux.{% else %}Animation: * matches html. margin:65 90 155 makes it a 220 × 80 box at (90, 65). border-radius:3lh is 54px, more than half of 80: the box becomes a pill. html has no background: the canvas stays white. The third shadow, 0 3in 0 53em, moves down 288px and spreads 848px: it covers the whole canvas in green, except under html's box, because an outer shadow is never painted under its own box. So the two top pills are the white canvas, seen through that hole. The first shadow, 0 5lh #fff, moves down 90px: it makes the two bottom pills. The second one, 0 3in #317080, lands at y = 353, off the canvas. The nested * matches body: margin:-288 100 198 makes it a 20 × 170 box at (190, −223), off the canvas. Its 0.2Q font makes lh zero and em tiny. Its first shadow stays hidden under its box. Its second one moves down 288px: it is the teal bar, from y = 65 to 235. Its third one spreads only 10px: a 40px wide green band that cuts the pills in two.{% endif %}">
+<div class="scene">
+<div class="t0530-html"></div>
+<div class="t0530-body"></div>
+<div class="t0530-box t0530-hbox" style="left:90px;top:65px;width:220px;height:80px;border-radius:40px"></div>
+<div class="t0530-box t0530-bbox" style="left:190px;top:-223px;width:20px;height:170px"></div>
+<span class="zlab" data-l="1">{% if include.lang == "fr" %}html : (90, 65), 220 × 80{% else %}html: (90, 65), 220 × 80{% endif %}</span>
+<span class="zlab" data-l="2">53em = 53 × 16 = 848px</span>
+<span class="zlab" data-l="3">5lh = 5 × 18 = 90px</span>
+<span class="zlab" data-l="4">{% if include.lang == "fr" %}body : (190, −223), 20 × 170{% else %}body: (190, −223), 20 × 170{% endif %}</span>
+<span class="zlab" data-l="5">−223 + 288 = 65</span>
+<span class="zlab" data-l="6">{% if include.lang == "fr" %}53em = 53 × 0,19 = 10px{% else %}53em = 53 × 0.19 = 10px{% endif %}</span>
+</div>
+</div>
+<div class="legend"><span><i class="t0530-cv" style="--c:#fff"></i>{% if include.lang == "fr" %}canevas, blanc par défaut{% else %}canvas, white by default{% endif %}</span><span><i style="--c:var(--t0530-hg)"></i>{% if include.lang == "fr" %}html : 3e ombre (53em){% else %}html: 3rd shadow (53em){% endif %}</span><span><i style="--c:var(--t0530-hw)"></i>{% if include.lang == "fr" %}html : 1re ombre (5lh){% else %}html: 1st shadow (5lh){% endif %}</span><span><i style="--c:var(--t0530-ht)"></i>{% if include.lang == "fr" %}html : 2e ombre (3in){% else %}html: 2nd shadow (3in){% endif %}</span><span><i style="--c:var(--t0530-bt)"></i>{% if include.lang == "fr" %}body : 2e ombre (3in){% else %}body: 2nd shadow (3in){% endif %}</span><span><i style="--c:var(--t0530-bg)"></i>{% if include.lang == "fr" %}body : 3e ombre (53em){% else %}body: 3rd shadow (53em){% endif %}</span><span><i class="t0530-dash"></i>{% if include.lang == "fr" %}boîtes de html et de body{% else %}html and body boxes{% endif %}</span></div>
+</div>
+<div class="anim-side">
+<pre class="code" aria-hidden="true">&lt;style><span data-on="1 4">*</span>{<span data-on="1">border-radius:3lh</span>;<span data-on="1">margin:65 90 155</span>;box-shadow:<span data-on="3">0 5lh#fff</span>,<span data-on="3 5">0 3in#317080</span>,<span data-on="2 6">0 3in 0 53em#59cfa0</span>;<span data-on="4" data-tone="2">*{</span><span data-on="4 5">margin:-288 100 198</span>;<span data-on="4 6">font:.2Q"</span></pre>
+<div class="now" aria-live="polite">
+<div class="caps">
+{%- if include.lang == "fr" %}
+<div class="cap" data-t="0" data-step="html"><h3>1. La boîte de html</h3><p><code>*</code> vise html, head, body et style. head et style ne s'affichent pas. Ici, html d'abord. <code>margin:65 90 155</code> en fait une boîte de 220 × 80 en (90, 65) : en mode quirks, html remplit la page moins ses marges. <code>border-radius:3lh</code> vaut 3 × 18 = 54px, plus que la moitié de 80 : les coins s'arrêtent à 40px, et la boîte devient une pilule. html n'a pas de fond : le canevas reste blanc.</p></div>
+<div class="cap" data-t="5" data-step="Trou"><h3>2. Une ombre géante, avec un trou</h3><p>La troisième ombre, <code>0 3in 0 53em #59cfa0</code>, descend de 3in = 288px et s'étale de 53em = 53 × 16 = 848px. Elle couvre tout le canevas. Mais une ombre extérieure n'est jamais peinte sous sa propre boîte : sous la pilule de html, elle laisse un trou. Le canevas blanc s'y voit : ce sont les pilules du haut.</p></div>
+<div class="cap" data-t="11" data-step="Pilule du bas"><h3>3. La pilule du bas</h3><p>La première ombre, <code>0 5lh #fff</code>, descend de 5 × 18 = 90px : de y = 155 à 235. Elle passe devant le vert : c'est la pilule blanche du bas. La deuxième, <code>0 3in #317080</code>, descend de 288px : elle tombe de y = 353 à 433, hors du canevas.</p></div>
+<div class="cap" data-t="17" data-step="body"><h3>4. body, très haut et très petit</h3><p>Le <code>*{</code> imbriqué vise head, body et style, pas html. <code>margin:-288 100 198</code> fait de body une boîte de 20 × 170 en (190, −223), hors du canevas. <code>font:.2Q"</code> lui donne une police de 0,19px : em vaut 0,19px, et lh vaut 0. body reçoit les mêmes ombres : avec <code>5lh</code> = 0, la blanche reste cachée sous sa boîte, et <code>3lh</code> = 0 garde des coins carrés.</p></div>
+<div class="cap" data-t="22" data-step="Barre"><h3>5. La barre</h3><p>La deuxième ombre de body, <code>0 3in #317080</code>, descend de 288px : de y = −223 + 288 = 65 à 235, de x = 190 à 210. Le <code>-288</code> de la marge et le <code>3in</code> de l'ombre s'annulent. La barre bleu sarcelle va du haut des pilules du haut au bas des pilules du bas.</p></div>
+<div class="cap" data-t="27" data-step="Coupure"><h3>6. La coupure</h3><p>La troisième ombre de body, <code>0 3in 0 53em</code>, ne s'étale plus que de 53 × 0,19 = 10px. Elle fait une bande verte de 40 × 190, en (180, 55), sous la barre mais par-dessus les pilules de html. Elle les coupe en deux, avec des bouts droits contre la barre.</p></div>
+<div class="cap" data-t="32" data-step="Résultat" data-live="129 caractères · 100 % identique"><h3>7. Résultat : 129 caractères</h3><p>Une seule liste de trois ombres, pour deux boîtes. Sur html, elle dessine le fond vert, garde un trou pour les pilules du haut et peint celles du bas. Sur body, avec une police minuscule, elle dessine la barre et la coupure.</p></div>
+{%- else %}
+<div class="cap" data-t="0" data-step="html"><h3>1. html's box</h3><p><code>*</code> matches html, head, body and style. head and style are not displayed. html first. <code>margin:65 90 155</code> makes it a 220 × 80 box at (90, 65): in quirks mode, html fills the page minus its margins. <code>border-radius:3lh</code> is 3 × 18 = 54px, more than half of 80: the corners stop at 40px, and the box becomes a pill. html has no background: the canvas stays white.</p></div>
+<div class="cap" data-t="5" data-step="Hole"><h3>2. A giant shadow, with a hole</h3><p>The third shadow, <code>0 3in 0 53em #59cfa0</code>, moves down 3in = 288px and spreads 53em = 53 × 16 = 848px. It covers the whole canvas. But an outer shadow is never painted under its own box: under html's pill, it leaves a hole. The white canvas shows through: these are the top pills.</p></div>
+<div class="cap" data-t="11" data-step="Bottom pill"><h3>3. The bottom pill</h3><p>The first shadow, <code>0 5lh #fff</code>, moves down 5 × 18 = 90px: from y = 155 to 235. It sits in front of the green: it is the white bottom pill. The second one, <code>0 3in #317080</code>, moves down 288px: it lands from y = 353 to 433, off the canvas.</p></div>
+<div class="cap" data-t="17" data-step="body"><h3>4. body, high up and tiny</h3><p>The nested <code>*{</code> matches head, body and style, not html. <code>margin:-288 100 198</code> makes body a 20 × 170 box at (190, −223), off the canvas. <code>font:.2Q"</code> gives it a 0.19px font: em is 0.19px, and lh is 0. body gets the same shadows: with <code>5lh</code> = 0, the white one stays hidden under its box, and <code>3lh</code> = 0 keeps square corners.</p></div>
+<div class="cap" data-t="22" data-step="Bar"><h3>5. The bar</h3><p>body's second shadow, <code>0 3in #317080</code>, moves down 288px: from y = −223 + 288 = 65 to 235, from x = 190 to 210. The margin's <code>-288</code> and the shadow's <code>3in</code> cancel out. The teal bar runs from the top of the top pills to the bottom of the bottom pills.</p></div>
+<div class="cap" data-t="27" data-step="Cut"><h3>6. The cut</h3><p>body's third shadow, <code>0 3in 0 53em</code>, now spreads only 53 × 0.19 = 10px. It makes a 40 × 190 green band at (180, 55), under the bar but over html's pills. It cuts them in two, with straight ends next to the bar.</p></div>
+<div class="cap" data-t="32" data-step="Result" data-live="129 characters · 100% match"><h3>7. Result: 129 characters</h3><p>One list of three shadows, for two boxes. On html, it draws the green background, keeps a hole for the top pills and paints the bottom ones. On body, with a tiny font, it draws the bar and the cut.</p></div>
+{%- endif %}
+</div>
+<div class="live"></div>
+</div>
+</div>
+<script>
+(window.AnimScenes = window.AnimScenes || {}).t0530 = (fig) => {
+  const fr = document.documentElement.lang === 'fr';
+  const $ = (s) => fig.querySelector(s);
+  const $$ = (s) => [...fig.querySelectorAll(s)];
+  const live = $('.live');
+  const ease = (x) => (x < 0.5 ? 4 * x * x * x : 1 - Math.pow(-2 * x + 2, 3) / 2);
+  const pr = (t, [a, b]) => ease(Math.min(1, Math.max(0, (t - a) / (b - a))));
+  const win = (t, a, b) => Math.min(pr(t, [a, a + 0.5]), 1 - pr(t, [b - 0.2, b]));
+  const c = fr ? ' :' : ':';
+  const n = (x) => (fr ? String(x).replace('.', ',') : String(x));
+  const mix = (k, a, b) => (k <= 0 ? b : k >= 1 ? a : `color-mix(in srgb, ${a} ${(k * 100).toFixed(1)}%, ${b})`);
+  // Measured on the official code in local Chrome (400 × 300 iframe, quirks mode, getBoundingClientRect, getComputedStyle).
+  // html: 90, 65, 220 × 80, font 16px, 3lh = 54px (radius clamped to 40), shadows 0 90px #fff, 0 288px #317080, 0 288px 0 848px #59cfa0. No background: the canvas is white.
+  // body: 190, -223, 20 × 170, font 0.188976px, radius 0, shadows 0 0 #fff, 0 288px #317080, 0 288px 0 10.0157px #59cfa0.
+  const html = $('.t0530-html'), body = $('.t0530-body'), hbox = $('.t0530-hbox'), bbox = $('.t0530-bbox');
+  const labs = $$('.zlab');
+  const ivs = [[0.3, 4.8], [5.3, 10.8], [11.3, 16.8], [17.3, 21.8], [22.3, 26.8], [27.3, 31.8]];
+  const sh = (y, col, s) => `0 ${y}px 0 ${s}px ${col}`;
+  return (t, step) => {
+    const teach = fig.dataset.teach === '1';
+    const wide = fig.dataset.view === 'wide';
+    const tw = teach ? 1 - pr(t, [32.3, 33.3]) : 0;
+    const col = (v, real, k) => mix(k, mix(tw, `var(--t0530-${v})`, real), 'transparent');
+    hbox.style.opacity = win(t, 0.3, 31.8);
+    // step 2: html's third shadow, 288px down, then spreading to 848px
+    const gs = 848 * pr(t, [6.3, 9.3]);
+    // step 3: html's first shadow slides out from under the box, then the second one appears off the canvas
+    const wy = 90 * pr(t, [11.8, 13.6]);
+    html.style.boxShadow = [sh(wy, col('hw', '#fff', pr(t, [11.3, 11.8])), 0), sh(288, col('ht', '#317080', pr(t, [14.2, 15])), 0), sh(288, col('hg', '#59cfa0', pr(t, [5.3, 5.9])), gs)].join(',');
+    // steps 4 to 6: body's box, its second shadow sliding 288px down, its third one spreading 10px
+    bbox.style.opacity = win(t, 17.3, 31.8);
+    const by = 288 * pr(t, [22.9, 25.2]);
+    const bs = 10.0157 * pr(t, [27.6, 29.4]);
+    body.style.boxShadow = [sh(0, '#fff', 0), sh(by, col('bt', '#317080', pr(t, [22.3, 22.8])), 0), sh(288, col('bg', '#59cfa0', pr(t, [27.3, 27.7])), bs)].join(',');
+    // labels: one per step, at the top left of the frame
+    labs.forEach((l) => {
+      const x0 = wide ? -40 : 0, y0 = wide ? -240 : 0;
+      l.style.left = `calc(${x0}px + 4px * var(--k, 1))`;
+      l.style.top = `calc(${y0}px + 4px * var(--k, 1))`;
+      l.style.opacity = win(t, ...ivs[+l.dataset.l - 1]);
+    });
+    let txt;
+    if (step === 0) txt = `3lh = 54px → 40px · 220 × 80`;
+    else if (step === 1) txt = `3in = 288px · 53em = 848px`;
+    else if (step === 2) txt = `5lh = 90px · y = 155–235`;
+    else if (step === 3) txt = `body${c} 20 × 170 · ${n(0.2)}Q = ${n(0.19)}px · lh = 0`;
+    else if (step === 4) txt = `${fr ? 'barre' : 'bar'}${c} x = 190–210, y = 65–235`;
+    else if (step === 5) txt = `${fr ? 'coupure' : 'cut'}${c} x = 180–220, y = 55–245`;
+    else txt = $$('.caps .cap')[6].dataset.live || '';
+    live.textContent = txt;
+  };
+};
+</script>
+</figure>
