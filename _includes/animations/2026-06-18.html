@@ -1,0 +1,127 @@
+<figure class="anim t0618" data-duration="32" data-scene="t0618" data-wide="-100 -80 600 460" data-off-label="-96 352" style="--bg:#81be48">
+<style>
+.t0618{--t0618-hw:#60a5fa;--t0618-bd:#f59e0b;--t0618-gd:#14142a}
+.t0618 .scene .t0618-blank{left:0;top:0;width:400px;height:300px;background:#fff;z-index:1}
+.t0618 .scene .t0618-html{left:110px;top:60px;width:180px;height:180px;box-sizing:border-box;border:0 solid #fff;z-index:2}
+.t0618 .scene .t0618-body{left:168px;top:118px;width:64px;height:64px;transform-origin:50% 50%;background:#81be48;opacity:0;z-index:3}
+.t0618 .scene .t0618-bo{transform-origin:50% 50%;opacity:0}
+.t0618 .scene .t0618-box{box-sizing:border-box;outline:calc(1.5px * var(--k, 1)) dashed var(--t0618-gd);outline-offset:calc(-0.75px * var(--k, 1));opacity:0;z-index:4}
+.t0618 .zlab{color:#14142a;background:rgb(255 255 255 / .92);padding:1px 5px;border-radius:3px;opacity:0}
+.t0618 .scene .zlab.t0618-lab{transform:scale(var(--k, 1)) translateX(-100%)}
+</style>
+<div class="anim-col">
+<div class="stage" role="img" aria-label="{% if include.lang == "fr" %}Animation : * donne le fond vert à tous les éléments ; celui de html couvre tout le canevas ; html a des marges de 60px et 110px : en mode quirks, c'est une boîte de 180 × 180 en (110, 60) ; sa bordure blanche de 53Q, dessinée sur 50px, laisse au centre un trou vert de 80 × 80 ; border-radius de 32Q arrondit les coins extérieurs ; body, carré vert de 64 × 64 au centre, est étiré par scale:9 .8 en une bande de 576 × 51,2, puis tourné de 45° : il passe par les coins en haut à gauche et en bas à droite de html et coupe le cadre blanc en deux{% else %}Animation: * gives the green background to every element; html's goes to the whole canvas; html has margins of 60px and 110px: in quirks mode it is a 180 × 180 box at (110, 60); its 53Q white border, drawn 50px wide, leaves an 80 × 80 green hole in the middle; border-radius 32Q rounds the outer corners; body, a 64 × 64 green square at the center, is stretched by scale:9 .8 into a 576 × 51.2 band, then turned 45°: it goes through html's top left and bottom right corners and cuts the white frame in two{% endif %}">
+<div class="scene">
+<div class="t0618-blank"></div>
+<div class="t0618-html"></div>
+<div class="t0618-body"></div>
+<div class="t0618-box t0618-bo"></div>
+<div class="t0618-box t0618-hb" style="left:110px;top:60px;width:180px;height:180px"></div>
+<div class="t0618-box t0618-hc" style="left:160px;top:110px;width:80px;height:80px"></div>
+<span class="zlab t0618-lab t0618-l1" data-l="1">{% if include.lang == "fr" %}*{background} : html, head, style, body{% else %}*{background}: html, head, style, body{% endif %}</span>
+<span class="zlab t0618-lab t0618-l2" data-l="1">{% if include.lang == "fr" %}fond de html → tout le canevas{% else %}html's background → whole canvas{% endif %}</span>
+<span class="zlab t0618-lab t0618-l1" data-l="2">{% if include.lang == "fr" %}margin : 60px · 110px{% else %}margin: 60px · 110px{% endif %}</span>
+<span class="zlab t0618-lab t0618-l2" data-l="2">{% if include.lang == "fr" %}html : 180 × 180 en (110, 60){% else %}html: 180 × 180 at (110, 60){% endif %}</span>
+<span class="zlab t0618-lab t0618-l1" data-l="3">{% if include.lang == "fr" %}53Q = 50,08px, dessiné sur 50px{% else %}53Q = 50.08px, drawn 50px wide{% endif %}</span>
+<span class="zlab t0618-lab t0618-l2" data-l="3">{% if include.lang == "fr" %}contenu : 80 × 80 en (160, 110){% else %}content: 80 × 80 at (160, 110){% endif %}</span>
+<span class="zlab t0618-lab t0618-l1" data-l="4">{% if include.lang == "fr" %}32Q = 30,24px{% else %}32Q = 30.24px{% endif %}</span>
+<span class="zlab t0618-lab t0618-l2" data-l="4">{% if include.lang == "fr" %}rayon intérieur : 30,24 − 50 &lt; 0 → 0{% else %}inner radius: 30.24 − 50 &lt; 0 → 0{% endif %}</span>
+<span class="zlab t0618-lab t0618-l1" data-l="5">{% if include.lang == "fr" %}body : 80 − 2 × 8 = 64{% else %}body: 80 − 2 × 8 = 64{% endif %}</span>
+<span class="zlab t0618-lab t0618-l2" data-l="5">{% if include.lang == "fr" %}64 × 64 en (168, 118){% else %}64 × 64 at (168, 118){% endif %}</span>
+<span class="zlab t0618-lab t0618-l1" data-l="6">{% if include.lang == "fr" %}9 × 64 = 576 · 0,8 × 64 = 51,2{% else %}9 × 64 = 576 · 0.8 × 64 = 51.2{% endif %}</span>
+<span class="zlab t0618-lab t0618-l2" data-l="6">{% if include.lang == "fr" %}autour du centre, (200, 150){% else %}around the center, (200, 150){% endif %}</span>
+<span class="zlab t0618-lab t0618-l1" data-l="7">{% if include.lang == "fr" %}rotate:45deg autour de (200, 150){% else %}rotate:45deg around (200, 150){% endif %}</span>
+<span class="zlab t0618-lab t0618-l2" data-l="7">{% if include.lang == "fr" %}diagonale de html{% else %}html's diagonal{% endif %}</span>
+</div>
+</div>
+<div class="legend"><span><i style="--c:#81be48;outline:1px solid currentColor;outline-offset:-1px"></i>{% if include.lang == "fr" %}canevas : fond de html{% else %}canvas: html's background{% endif %}</span><span><i style="--c:var(--t0618-hw)"></i>{% if include.lang == "fr" %}bordure de html{% else %}html's border{% endif %}</span><span><i style="--c:var(--t0618-bd)"></i>body</span><span><i style="--c:transparent;outline:2px dashed currentColor;outline-offset:-2px"></i>{% if include.lang == "fr" %}contours des boîtes{% else %}box outlines{% endif %}</span></div>
+</div>
+<div class="anim-side">
+<pre class="code" aria-hidden="true">&lt;style><span data-on="1 5">*{background:#81be48}</span><span data-on="2">&amp;</span>{<span data-on="3" data-tone="2">border:53Q solid#fff</span>;<span data-on="4" data-tone="2">border-radius:32Q</span>;<span data-on="2">margin:60 110</span>;<span data-on="5">*</span>{<span data-on="7" data-tone="2">rotate:45deg</span>;<span data-on="6" data-tone="2">scale:9 .8</span></pre>
+<div class="now" aria-live="polite">
+<div class="caps">
+{%- if include.lang == "fr" %}
+<div class="cap" data-t="0" data-step="Fond vert"><h3>1. Tout en vert</h3><p><code>*</code> touche html, head, style et body, et leur donne à tous le fond vert. html est la racine : son fond s'étend à tout le canevas. head et style sont masqués. body aura aussi son fond vert, plus tard.</p></div>
+<div class="cap" data-t="4" data-step="html"><h3>2. html, une boîte de 180 × 180</h3><p>Au premier niveau, <code>&amp;</code> désigne la racine : html. Sa marge n'a pas d'unité : en mode quirks, 60 et 110 se lisent en px. html fait 400 − 2 × 110 = 180px de large, et remplit la hauteur du canevas : 300 − 2 × 60 = 180px. Une boîte de 180 × 180 en (110, 60).</p></div>
+<div class="cap" data-t="8" data-step="border"><h3>3. Une bordure de 53Q</h3><p>53Q, c'est 53 quarts de millimètre : 50,08px. Chrome la dessine sur 50px. La bordure blanche occupe le bord de la boîte. Au centre, la boîte de contenu de 80 × 80, en (160, 110), n'a pas de fond à elle : on y voit le canevas vert.</p></div>
+<div class="cap" data-t="12" data-step="border-radius"><h3>4. Des coins de 32Q</h3><p>32Q = 30,24px arrondit les quatre coins extérieurs. Le rayon intérieur vaut 30,24 − 50, moins que 0 : le trou garde des coins carrés.</p></div>
+<div class="cap" data-t="16" data-step="body"><h3>5. body, un carré de 64 × 64</h3><p>Le <code>*</code> imbriqué, c'est <code>&amp; *</code> : les descendants de html, dont body, le seul affiché. body est dans la boîte de contenu de html, avec sa marge de 8px par défaut : 80 − 16 = 64px de large, et 64px de haut en mode quirks. Un carré vert de 64 × 64 au centre, en (168, 118). Vert sur vert : invisible pour l'instant.</p></div>
+<div class="cap" data-t="20" data-step="scale"><h3>6. scale:9 .8</h3><p><code>scale</code> étire body autour de son centre : 9 × 64 = 576px de large, 0,8 × 64 = 51,2px de haut. La bande dépasse du canevas de 88px de chaque côté.</p></div>
+<div class="cap" data-t="24" data-step="rotate"><h3>7. rotate:45deg</h3><p><code>rotate</code> tourne la bande de 45° autour de (200, 150). Elle suit la diagonale de html, qui passe par ses coins en haut à gauche et en bas à droite. body est peint par-dessus la bordure de html : il coupe le cadre blanc en deux et cache ces deux coins.</p></div>
+<div class="cap" data-t="28" data-step="Résultat" data-live="108 caractères · 100 % identique"><h3>8. Résultat : 108 caractères</h3><p>Un cadre blanc arrondi, coupé par une bande verte en diagonale, avec un carré vert au centre. Le même fond vert sert au canevas et à la bande.</p></div>
+{%- else %}
+<div class="cap" data-t="0" data-step="Green background"><h3>1. Everything green</h3><p><code>*</code> selects html, head, style and body, and gives them all the green background. html is the root: its background goes to the whole canvas. head and style are hidden. body gets its green background too, for later.</p></div>
+<div class="cap" data-t="4" data-step="html"><h3>2. html, a 180 × 180 box</h3><p>At the top level, <code>&amp;</code> means the root: html. Its margin has no unit: in quirks mode, 60 and 110 are read as px. html is 400 − 2 × 110 = 180px wide, and fills the canvas height: 300 − 2 × 60 = 180px. A 180 × 180 box at (110, 60).</p></div>
+<div class="cap" data-t="8" data-step="border"><h3>3. A 53Q border</h3><p>53Q is 53 quarter millimeters: 50.08px. Chrome draws it 50px wide. The white border fills the edge of the box. In the middle, the 80 × 80 content box at (160, 110) has no background of its own: it shows the green canvas.</p></div>
+<div class="cap" data-t="12" data-step="border-radius"><h3>4. 32Q corners</h3><p>32Q = 30.24px rounds the four outer corners. The inner radius is 30.24 − 50, below 0: the hole keeps square corners.</p></div>
+<div class="cap" data-t="16" data-step="body"><h3>5. body, a 64 × 64 square</h3><p>The nested <code>*</code> is <code>&amp; *</code>: html's descendants, among them body, the only one shown. body sits in html's content box, with its default 8px margin: 80 − 16 = 64px wide, and 64px tall in quirks mode. A 64 × 64 green square at the center, at (168, 118). Green on green: invisible for now.</p></div>
+<div class="cap" data-t="20" data-step="scale"><h3>6. scale:9 .8</h3><p><code>scale</code> stretches body around its center: 9 × 64 = 576px wide, 0.8 × 64 = 51.2px tall. The band sticks out of the canvas by 88px on each side.</p></div>
+<div class="cap" data-t="24" data-step="rotate"><h3>7. rotate:45deg</h3><p><code>rotate</code> turns the band 45° around (200, 150). It follows html's diagonal, which goes through its top left and bottom right corners. body is painted over html's border: it cuts the white frame in two and hides those two corners.</p></div>
+<div class="cap" data-t="28" data-step="Result" data-live="108 characters · 100% match"><h3>8. Result: 108 characters</h3><p>A rounded white frame, cut by a green diagonal band, with a green square in the middle. The same green background paints the canvas and the band.</p></div>
+{%- endif %}
+</div>
+<div class="live"></div>
+</div>
+</div>
+<script>
+(window.AnimScenes = window.AnimScenes || {}).t0618 = (fig) => {
+  const fr = document.documentElement.lang === 'fr';
+  const $ = (s) => fig.querySelector(s);
+  const $$ = (s) => [...fig.querySelectorAll(s)];
+  const live = $('.live');
+  const ease = (x) => (x < 0.5 ? 4 * x * x * x : 1 - Math.pow(-2 * x + 2, 3) / 2);
+  const pr = (t, [a, b]) => ease(Math.min(1, Math.max(0, (t - a) / (b - a))));
+  const win = (t, a, b) => Math.min(pr(t, [a, a + 0.5]), 1 - pr(t, [b - 0.2, b]));
+  const c = fr ? ' :' : ':';
+  const n2 = (v) => (fr ? String(v).replace('.', ',') : String(v));
+  const mix = (k, a, b) => (k <= 0 ? b : k >= 1 ? a : `color-mix(in srgb, ${a} ${(k * 100).toFixed(1)}%, ${b})`);
+  // Measured on the official code in local Chrome (400 × 300 iframe, quirks mode, getBoundingClientRect, getComputedStyle):
+  // html border box 180 × 180 at (110, 60), margin 60px 110px, border 50px #fff (53Q), radius 30.2362px (32Q), content 80 × 80;
+  // body 64 × 64 (margin 8px) centered at (200, 150), rotate 45deg, scale 9 0.8: bounding box (-21.749, -71.749) 443.497 × 443.497.
+  const FIN = 28;
+  const blank = $('.t0618-blank'), html = $('.t0618-html'), body = $('.t0618-body');
+  const hb = $('.t0618-hb'), hc = $('.t0618-hc'), bo = $('.t0618-bo');
+  const labs = $$('.zlab');
+  return (t, step) => {
+    const wide = fig.dataset.view === 'wide';
+    const teach = fig.dataset.teach === '1';
+    const tw = teach ? 1 - pr(t, [FIN, FIN + 0.8]) : 0;
+    blank.style.opacity = 1 - pr(t, [0.4, 1.6]);
+    hb.style.opacity = win(t, 4.3, 10);
+    hc.style.opacity = win(t, 8.6, 20.4);
+    html.style.borderWidth = `${50 * pr(t, [8.4, 9.8])}px`;
+    html.style.borderRadius = `${30.2362 * pr(t, [12.4, 13.6])}px`;
+    html.style.borderColor = mix(tw, 'var(--t0618-hw)', '#fff');
+    const sc = pr(t, [20.4, 22]);
+    const w = 64 * (1 + 8 * sc), h = 64 * (1 - 0.2 * sc);
+    const rot = `rotate(${45 * pr(t, [24.4, 26])}deg)`;
+    body.style.transform = `${rot} scale(${1 + 8 * sc}, ${1 - 0.2 * sc})`;
+    bo.style.left = `${200 - w / 2}px`;
+    bo.style.top = `${150 - h / 2}px`;
+    bo.style.width = `${w}px`;
+    bo.style.height = `${h}px`;
+    bo.style.transform = rot;
+    body.style.opacity = pr(t, [16.4, 17.2]);
+    body.style.background = mix(tw, 'var(--t0618-bd)', '#81be48');
+    bo.style.opacity = Math.min(pr(t, [16.4, 17.2]), 1 - pr(t, [FIN, FIN + 0.6]));
+    labs.forEach((l) => {
+      const n = +l.dataset.l, second = l.classList.contains('t0618-l2');
+      l.style.left = `calc(${wide ? 500 : 400}px - 4px * var(--k, 1))`;
+      l.style.top = `calc(${wide ? -80 : 0}px + ${second ? 20 : 4}px * var(--k, 1))`;
+      const ivs = [[0.3, 4], [4.3, 8], [8.3, 12], [12.3, 16], [16.3, 20], [20.3, 24], [24.3, FIN]];
+      l.style.opacity = win(t, ...ivs[n - 1]);
+    });
+    let txt;
+    if (step === 0) txt = fr ? 'canevas : #81be48' : 'canvas: #81be48';
+    else if (step === 1) txt = `html${c} 180 × 180 ${fr ? 'en' : 'at'} (110, 60)`;
+    else if (step === 2) txt = fr ? 'bordure : 50px · trou : 80 × 80' : 'border: 50px · hole: 80 × 80';
+    else if (step === 3) txt = `${fr ? 'coins' : 'corners'}${c} ${n2(30.24)}px`;
+    else if (step === 4) txt = `body${c} 64 × 64 ${fr ? 'en' : 'at'} (168, 118)`;
+    else if (step === 5) txt = `body${c} 576 × ${n2(51.2)}`;
+    else if (step === 6) txt = `body${c} 576 × ${n2(51.2)}, 45°`;
+    else txt = $$('.caps .cap')[7].dataset.live || '';
+    live.textContent = txt;
+  };
+};
+</script>
+</figure>
