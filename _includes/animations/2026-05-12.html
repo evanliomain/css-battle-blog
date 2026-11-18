@@ -1,0 +1,138 @@
+<figure class="anim t0512" data-duration="30" data-scene="t0512" data-wide="-40 -30 480 360" style="--bg:#556d7f">
+<style>
+.t0512{--t0512-blue:#556d7f;--t0512-cream:#f4dcbf;--t0512-q:#38bdf8;--t0512-b:#fb923c}
+.t0512 .scene .t0512-tiles{left:0;top:0;width:400px;height:300px;z-index:1}
+.t0512 .scene .t0512-r{z-index:1;opacity:0}
+.t0512 .scene .t0512-rc{left:60px;top:60px;width:280px;height:180px;background:var(--t0512-cream)}
+.t0512 .scene .t0512-rs{left:200px;width:160px;height:20px;background:var(--t0512-blue)}
+.t0512 .scene .t0512-bd{left:0;top:0;width:400px;height:300px;box-sizing:border-box;border:60px solid var(--t0512-blue);opacity:0;z-index:2}
+.t0512 .scene .t0512-box{box-sizing:border-box;outline:calc(1.5px * var(--k, 1)) dashed #fff;outline-offset:calc(-0.75px * var(--k, 1));filter:drop-shadow(0 0 calc(1px * var(--k, 1)) #000);opacity:0;z-index:10}
+.t0512 .scene .zlab{color:#14142a;background:rgb(255 255 255 / .92);box-shadow:0 0 0 1px rgb(20 20 42 / .25);padding:1px 5px;border-radius:3px;opacity:0}
+.t0512 .legend .t0512-ol{box-shadow:0 0 0 1px currentColor}
+.t0512 .legend .t0512-dash{background:none;outline:2px dashed currentColor;outline-offset:-2px}
+</style>
+<div class="anim-col">
+<div class="stage" role="img" aria-label="{% if include.lang == "fr" %}Animation : & vise html, qui remplit tout le canevas en mode quirks, 400 × 300. border:64q lui donne une bordure de 60px, couleur du canevas ; il reste au milieu une boîte de 280 × 180 en (60, 60), où se cale le fond. Le conic-gradient part du haut et tourne : ses premiers 25 %, soit 90°, sont bleus, le reste crème. Sur toute la boîte, c'est le quart en haut à droite. La taille 100% 5ch réduit la tuile à 280 × 40, avec un quart bleu de 140 × 20 ; la position 0 5vw la descend de 20px, en (60, 80). Le fond se répète tous les 40px vers le bas et tous les 280px de côté, sur tout le canevas. La bordure recouvre tout ce qui dépasse : il reste un rectangle crème de 280 × 180 dont la moitié droite a quatre fentes bleues de 140 × 20, en y = 80, 120, 160 et 200.{% else %}Animation: & targets html, which fills the whole canvas in quirks mode, 400 × 300. border:64q gives it a 60px border in the canvas color; a 280 × 180 box is left in the middle, at (60, 60), and the background is placed on it. The conic-gradient starts at the top and turns: its first 25%, 90°, is blue, the rest cream. Over the whole box, that is the top-right quarter. The size 100% 5ch shrinks the tile to 280 × 40, with a 140 × 20 blue quarter; the position 0 5vw moves it 20px down, to (60, 80). The background repeats every 40px down and every 280px across, over the whole canvas. The border covers everything outside: a 280 × 180 cream rectangle is left, whose right half has four 140 × 20 blue slits, at y = 80, 120, 160 and 200.{% endif %}">
+<div class="scene">
+<div class="t0512-tiles"></div>
+<div class="t0512-r t0512-rc"></div>
+<div class="t0512-r t0512-rs" style="top:80px"></div>
+<div class="t0512-r t0512-rs" style="top:120px"></div>
+<div class="t0512-r t0512-rs" style="top:160px"></div>
+<div class="t0512-r t0512-rs" style="top:200px"></div>
+<div class="t0512-bd"></div>
+<div class="t0512-box t0512-xh" style="left:0;top:0;width:400px;height:300px"></div>
+<div class="t0512-box t0512-xp" style="left:60px;top:60px;width:280px;height:180px"></div>
+<div class="t0512-box t0512-xt"></div>
+<span class="zlab" data-l="1" style="left:136px;top:140px">&amp;{ → html · 400 × 300</span>
+<span class="zlab" data-l="2" style="left:160px;top:22px">64q → 60px</span>
+<span class="zlab" data-l="2" style="left:66px;top:66px">{% if include.lang == "fr" %}reste : 280 × 180 en (60, 60){% else %}left: 280 × 180 at (60, 60){% endif %}</span>
+<span class="zlab" data-l="3" style="left:206px;top:156px">25% = 90°</span>
+<span class="zlab" data-l="4" style="left:66px;top:150px">100%5ch → 280 × 40</span>
+<span class="zlab" data-l="5" style="left:66px;top:150px">0 5vw → y = 80</span>
+<span class="zlab" data-l="6" style="left:50px;top:30px">{% if include.lang == "fr" %}une tuile tous les 40px ↓ · 280px ↔{% else %}a tile every 40px ↓ · 280px ↔{% endif %}</span>
+</div>
+</div>
+<div class="legend"><span><i class="t0512-ol" style="--c:#556d7f"></i>{% if include.lang == "fr" %}#556d7f : bordure et quart bleu{% else %}#556d7f: border and blue quarter{% endif %}</span><span><i class="t0512-ol" style="--c:#f4dcbf"></i>{% if include.lang == "fr" %}#f4dcbf : le reste du dégradé{% else %}#f4dcbf: the rest of the gradient{% endif %}</span><span><i style="--c:var(--t0512-q)"></i>{% if include.lang == "fr" %}premiers 25 % du dégradé{% else %}first 25% of the gradient{% endif %}</span><span><i style="--c:var(--t0512-b)"></i>{% if include.lang == "fr" %}bordure de html{% else %}html's border{% endif %}</span><span><i class="t0512-dash"></i>{% if include.lang == "fr" %}boîtes et tuile{% else %}boxes and tile{% endif %}</span></div>
+</div>
+<div class="anim-side">
+<pre class="code" aria-hidden="true">&lt;style><span data-on="1">&amp;{</span><span data-on="3 6">background:conic-gradient(#556D7F 25%,#F4DCBF 0)</span><span data-on="5">0 5vw</span><span data-on="4">/100%5ch</span>;<span data-on="2 7">border:64q solid#556D7F</span></pre>
+<div class="now" aria-live="polite">
+<div class="caps">
+{%- if include.lang == "fr" %}
+<div class="cap" data-t="0" data-step="html"><h3>1. &amp; vise html</h3><p>Au premier niveau, <code>&amp;</code> vise la racine de la page : html. Pas de doctype, donc mode quirks : html remplit toute la fenêtre, 400 × 300. Son fond est peint sur tout le canevas.</p></div>
+<div class="cap" data-t="4" data-step="Bordure"><h3>2. Une bordure de 60px</h3><p><code>border:64q solid#556D7F</code>. 1q vaut un quart de millimètre, environ 0,945px : 64q ≈ 60,47px, et mon Chrome la dessine sur 60px. Elle a la couleur du canevas. Il reste au milieu une boîte de 280 × 180, en (60, 60) : c'est sur elle que le fond se cale.</p></div>
+<div class="cap" data-t="8.5" data-step="Dégradé"><h3>3. Un dégradé conique : un quart bleu</h3><p><code>conic-gradient</code> part du haut et tourne dans le sens des aiguilles d'une montre. Les premiers 25 %, soit 90°, sont bleus. <code>0</code> place l'arrêt crème juste à 25 % : la limite est nette. Sans taille, l'image couvre la boîte de 280 × 180 : le quart bleu va de (200, 60) à (340, 150).</p></div>
+<div class="cap" data-t="13" data-step="100%5ch"><h3>4. Une tuile de 280 × 40</h3><p><code>/100%5ch</code> donne la taille de l'image : toute la largeur de la boîte, 280px, et 5ch de haut. 1ch est la largeur du chiffre 0 ; dans mon Chrome, en Times à 16px, elle fait 8px, donc 5ch = 40px. Le quart bleu fait maintenant 140 × 20.</p></div>
+<div class="cap" data-t="17" data-step="0 5vw"><h3>5. Descendue de 20px</h3><p><code>0 5vw</code> place la tuile : 0 de côté, 5vw = 5 % de 400 = 20px vers le bas. Elle commence en (60, 80) : sa moitié haute, à droite, est la première fente bleue, de y = 80 à 100.</p></div>
+<div class="cap" data-t="21" data-step="Répétition"><h3>6. Le fond se répète</h3><p>Un fond se répète dans les deux sens : une tuile tous les 40px vers le bas, et tous les 280px de côté. Le fond de html couvre tout le canevas, donc les tuiles aussi, même sous la bordure. Dans la boîte, la moitié gauche reste crème, la moitié droite alterne 20px de bleu et 20px de crème.</p></div>
+<div class="cap" data-t="26" data-step="Résultat" data-live="94 caractères · 100 % identique"><h3>7. Résultat : 94 caractères</h3><p>La bordure, de la couleur du quart bleu, recouvre tout ce qui dépasse de la boîte. Il reste un rectangle crème de 280 × 180, avec quatre fentes bleues à droite : cinq bandes crème. Une seule règle, deux couleurs.</p></div>
+{%- else %}
+<div class="cap" data-t="0" data-step="html"><h3>1. &amp; targets html</h3><p>At the top level, <code>&amp;</code> targets the root of the page: html. There is no doctype, so the page is in quirks mode, and html fills the whole window, 400 × 300. Its background is painted on the whole canvas.</p></div>
+<div class="cap" data-t="4" data-step="Border"><h3>2. A 60px border</h3><p><code>border:64q solid#556D7F</code>. 1q is a quarter of a millimeter, about 0.945px: 64q ≈ 60.47px, and my Chrome draws it 60px wide. It has the canvas color. A 280 × 180 box is left in the middle, at (60, 60): the background is placed on that box.</p></div>
+<div class="cap" data-t="8.5" data-step="Gradient"><h3>3. A conic gradient: one blue quarter</h3><p><code>conic-gradient</code> starts at the top and turns clockwise. The first 25%, 90°, is blue. <code>0</code> puts the cream stop right at 25%: a sharp edge. With no size, the image covers the 280 × 180 box: the blue quarter runs from (200, 60) to (340, 150).</p></div>
+<div class="cap" data-t="13" data-step="100%5ch"><h3>4. A 280 × 40 tile</h3><p><code>/100%5ch</code> sets the image size: the full width of the box, 280px, and 5ch tall. 1ch is the width of the digit 0; in my Chrome, in Times at 16px, it is 8px, so 5ch = 40px. The blue quarter is now 140 × 20.</p></div>
+<div class="cap" data-t="17" data-step="0 5vw"><h3>5. Moved 20px down</h3><p><code>0 5vw</code> places the tile: 0 across, 5vw = 5% of 400 = 20px down. It starts at (60, 80): its top half, on the right, is the first blue slit, from y = 80 to 100.</p></div>
+<div class="cap" data-t="21" data-step="Repeat"><h3>6. The background repeats</h3><p>A background repeats both ways: a tile every 40px down, and every 280px across. html's background covers the whole canvas, so the tiles do too, even under the border. In the box, the left half stays cream, and the right half alternates 20px of blue and 20px of cream.</p></div>
+<div class="cap" data-t="26" data-step="Result" data-live="94 characters · 100% match"><h3>7. Result: 94 characters</h3><p>The border, in the color of the blue quarter, covers everything outside the box. A 280 × 180 cream rectangle is left, with four blue slits on the right: five cream bands. One rule, two colors.</p></div>
+{%- endif %}
+</div>
+<div class="live"></div>
+</div>
+</div>
+<script>
+(window.AnimScenes = window.AnimScenes || {}).t0512 = (fig) => {
+  const fr = document.documentElement.lang === 'fr';
+  const $ = (s) => fig.querySelector(s);
+  const $$ = (s) => [...fig.querySelectorAll(s)];
+  const live = $('.live');
+  const ease = (x) => (x < 0.5 ? 4 * x * x * x : 1 - Math.pow(-2 * x + 2, 3) / 2);
+  const pr = (t, a, b) => ease(Math.min(1, Math.max(0, (t - a) / (b - a))));
+  const win = (t, a, b) => Math.min(pr(t, a, a + 0.5), 1 - pr(t, b - 0.3, b));
+  const c = fr ? '\u00a0:' : ':';
+  const n = (v) => (fr ? String(v).replace('.', ',') : String(v));
+  // Measured on the official code in local Chrome (400 × 300 iframe, quirks mode, getBoundingClientRect, computed styles):
+  // html 0, 0, 400 × 300; border 60px (64q); background-position 0px 20px; background-size 100% 40px (Times 16px, 1ch = 8px).
+  // Variant renders with a transparent border and no-repeat: with no size, the blue quarter is x 200..340, y 60..150;
+  // with 0 0/100%5ch, x 200..340, y 60..80; with 0 5vw/100%5ch, x 200..340, y 80..100 (tile 60..340 × 80..120).
+  // With a transparent border, the tiles cover the whole canvas (blue at x 0..60 and 200..340, every 40px from y = 0).
+  // The tiles below draw the same picture at the same place. At the end they give way to plain boxes of the same
+  // shapes (cream 60..340 x 60..240, slits x 200..340 at y 80, 120, 160, 200, drawn on to x 360 under the border),
+  // because a scaled conic gradient leaves a 1px step near its center; the last frame matches the official render.
+  const FIN = 26;
+  const BLUE = [85, 109, 127], CREAM = [244, 220, 191], SKY = [56, 189, 248], ORANGE = [251, 146, 60];
+  const mix = (a, b, k) => a.map((v, i) => Math.round(v + (b[i] - v) * k));
+  const rgba = (col, a) => `rgb(${col.join(' ')} / ${a.toFixed(3)})`;
+  const tiles = $('.t0512-tiles'), bd = $('.t0512-bd');
+  const xh = $('.t0512-xh'), xp = $('.t0512-xp'), xt = $('.t0512-xt');
+  const real = $$('.t0512-r');
+  const labs = $$('.zlab[data-l]');
+  const ivs = [[0.3, 3.8], [4.4, 8.2], [9.4, 12.8], [13.4, 16.8], [17.4, 20.8], [21.4, 25.8]];
+  return (t, step) => {
+    const teach = fig.dataset.teach === '1';
+    const fin = pr(t, FIN + 0.2, FIN + 0.9);
+    const tw = teach ? 1 - fin : 0;
+    const Q = mix(BLUE, SKY, tw);
+    // the single tile: steps 3 to 5
+    const a1 = pr(t, 8.6, 9.2) * (1 - pr(t, 23.4, 23.6));
+    const sweep = 25 * pr(t, 9.2, 10.8);
+    const h = 180 - 140 * pr(t, 13.6, 15.4);
+    const y = 60 + 20 * pr(t, 17.6, 19.2);
+    // step 6: the repeated tiles
+    const a2 = pr(t, 21.6, 23.2);
+    // once the sweep is done, the tile is drawn with two linear gradients (cream left half over blue top / cream bottom):
+    // the same picture, without the 1px step that a scaled conic gradient leaves near its center
+    const lin = (a, pos, rep) => `linear-gradient(90deg, ${rgba(CREAM, a)} 50%, #0000 0) ${pos} ${rep}, linear-gradient(${rgba(Q, a)} 50%, ${rgba(CREAM, a)} 0) ${pos} ${rep}`;
+    const pos1 = `60px ${y.toFixed(2)}px / 280px ${h.toFixed(2)}px`;
+    const one = t < 10.9 ? `conic-gradient(${rgba(Q, a1)} ${sweep.toFixed(2)}%, ${rgba(CREAM, a1)} 0) ${pos1} no-repeat` : lin(a1, pos1, 'no-repeat');
+    const all = lin(a2, '60px 80px / 280px 40px', 'repeat');
+    tiles.style.background = `${one}, ${all}`;
+    const done = t >= FIN + 0.9;
+    tiles.style.opacity = done ? 0 : 1;
+    real.forEach((e) => (e.style.opacity = done ? 1 : 0));
+    // outside the box, the tiles only show under the see-through teaching border; otherwise they are clipped to the box
+    tiles.style.clipPath = teach && t < FIN + 0.9 ? 'none' : 'inset(60px)';
+    // step 2: the border; see-through orange with teaching colors, then the real blue
+    bd.style.opacity = pr(t, 4.4, 5.2);
+    bd.style.borderColor = tw > 0 ? rgba(mix(BLUE, ORANGE, tw), 1 - 0.45 * tw) : 'var(--t0512-blue)';
+    xh.style.opacity = win(t, 0.2, 3.9);
+    xp.style.opacity = win(t, 4.6, 20.8);
+    Object.assign(xt.style, { left: '60px', top: `${y}px`, width: '280px', height: `${h}px` });
+    xt.style.opacity = win(t, 9.2, 23.4);
+    labs.forEach((l) => {
+      const k = +l.dataset.l;
+      l.style.opacity = win(t, ...ivs[k - 1]);
+    });
+    let txt;
+    if (step === 0) txt = `html${c} 400 × 300`;
+    else if (step === 1) txt = `64q ≈ 64 × ${n(0.945)} ≈ ${n(60.47)} → 60px · 400 − 2 × 60 = 280`;
+    else if (step === 2) txt = `25${fr ? '\u00a0%' : '%'} × 360° = 90° · ${fr ? 'centre' : 'center'} (200, 150)`;
+    else if (step === 3) txt = `5ch = 5 × 8 = 40px · ${fr ? 'tuile' : 'tile'} 280 × 40`;
+    else if (step === 4) txt = `5vw = 5${fr ? '\u00a0%' : '%'} × 400 = 20px · y = 60 + 20 = 80`;
+    else if (step === 5) txt = `${fr ? 'fentes' : 'slits'}${c} y = 80, 120, 160, 200 · 140 × 20`;
+    else txt = $$('.caps .cap')[6].dataset.live || '';
+    live.textContent = txt;
+  };
+};
+</script>
+</figure>
