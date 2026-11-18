@@ -1,0 +1,125 @@
+<figure class="anim t0529" data-duration="32" data-scene="t0529" data-wide="-40 -30 480 360" data-off-label="-36 307" style="--bg:#cf596a">
+<style>
+.t0529{--t0529-hf:#f59e0b;--t0529-bd:#3b82f6;--t0529-box:#14142a}
+.t0529 .scene .t0529-blank{left:-60px;top:-60px;width:520px;height:420px;background:#fff;z-index:1}
+.t0529 .scene .t0529-html{left:90px;top:40px;width:220px;height:220px;box-sizing:border-box;border:40px solid #f3ead2;z-index:2}
+.t0529 .scene .t0529-body{left:130px;top:133px;width:140px;height:140px;box-sizing:border-box;border:0 solid #f3ead2;transform-origin:70px 70px;z-index:3}
+.t0529 .scene .t0529-body > *{position:absolute}
+.t0529 .scene .t0529-fix{width:2px;opacity:0;z-index:2}
+.t0529 .scene .t0529-box{box-sizing:border-box;outline:calc(1.5px * var(--k, 1)) dashed var(--t0529-box);outline-offset:calc(-0.75px * var(--k, 1));filter:drop-shadow(0 0 calc(1px * var(--k, 1)) rgb(255 255 255 / .8));opacity:0;z-index:5}
+.t0529 .scene .zlab{color:#14142a;background:rgb(255 255 255 / .92);box-shadow:0 0 0 1px rgb(20 20 42 / .25);padding:1px 5px;border-radius:3px;opacity:0}
+.t0529 .legend .t0529-dash{background:none;outline:2px dashed currentColor;outline-offset:-2px}
+.t0529 .legend .t0529-cv{box-shadow:inset 0 0 0 1px currentColor}
+</style>
+<div class="anim-col">
+<div class="stage" role="img" aria-label="{% if include.lang == "fr" %}Animation : * vise html. margin:40 90 en fait une boîte de 220 × 220 en (90, 40). border:5ch lui donne une bordure crème de 40px, car un ch vaut 8px dans la police par défaut : un cadre, avec un trou de 140 × 140 en (130, 80). html n'a pas de fond : celui de body, #CF596A, passe au canevas, et la boîte de body reste transparente. Le * imbriqué vise body. margin:53 0-53 en fait une boîte de 140 × 140 en (130, 133), qui déborde de 53px sous le trou. body a aussi la bordure crème, mais border-width:40 0 0 40 ne garde que le haut et la gauche : un L. rotate:45deg tourne body autour de son centre, (200, 203) : le coin du L monte en y = 104, et le L devient un chevron. Dans le chevron, body est transparent : au-dessus de y = 220, on voit le canevas rose par le trou de html, c'est le triangle ; en dessous, la bordure crème du bas de html.{% else %}Animation: * matches html. margin:40 90 makes it a 220 × 220 box at (90, 40). border:5ch gives it a 40px cream border, because a ch is 8px in the default font: a frame, with a 140 × 140 hole at (130, 80). html has no background: body's background, #CF596A, goes to the canvas, and body's box stays clear. The nested * matches body. margin:53 0-53 makes it a 140 × 140 box at (130, 133), running 53px below the hole. body gets the cream border too, but border-width:40 0 0 40 keeps only the top and the left: an L. rotate:45deg turns body around its center, (200, 203): the corner of the L goes up to y = 104, and the L becomes a chevron. Inside the chevron, body is clear: above y = 220, the pink canvas shows through html's hole, which makes the triangle; below it, html's cream bottom border shows.{% endif %}">
+<div class="scene">
+<div class="t0529-blank"></div>
+<div class="t0529-html"></div>
+<div class="t0529-fix" style="left:129px;top:133px;height:87px"></div>
+<div class="t0529-fix" style="left:269px;top:133px;height:40px"></div>
+<div class="t0529-box t0529-hbox" style="left:90px;top:40px;width:220px;height:220px"></div>
+<div class="t0529-body">
+<div class="t0529-box t0529-bbox" style="left:0;top:0;width:140px;height:140px"></div>
+</div>
+<span class="zlab" data-l="1">{% if include.lang == "fr" %}html : (90, 40), 220 × 220 · 5ch = 40px{% else %}html: (90, 40), 220 × 220 · 5ch = 40px{% endif %}</span>
+<span class="zlab" data-l="2">{% if include.lang == "fr" %}fond de body → canevas{% else %}body's background → canvas{% endif %}</span>
+<span class="zlab" data-l="3">{% if include.lang == "fr" %}body : (130, 133), 140 × 140{% else %}body: (130, 133), 140 × 140{% endif %}</span>
+<span class="zlab" data-l="4">border-width:40 0 0 40</span>
+<span class="zlab" data-l="5">{% if include.lang == "fr" %}rotate:45deg · pointe en y = 104{% else %}rotate:45deg · tip at y = 104{% endif %}</span>
+<span class="zlab" data-l="6">{% if include.lang == "fr" %}triangle : y = 160,6 → 220{% else %}triangle: y = 160.6 → 220{% endif %}</span>
+</div>
+</div>
+<div class="legend"><span><i style="--c:var(--t0529-hf)"></i>{% if include.lang == "fr" %}html : bordure de 5ch{% else %}html: 5ch border{% endif %}</span><span><i style="--c:var(--t0529-bd)"></i>{% if include.lang == "fr" %}body : bordures du haut et de gauche{% else %}body: top and left borders{% endif %}</span><span><i class="t0529-cv" style="--c:#cf596a"></i>{% if include.lang == "fr" %}fond de body, peint sur le canevas{% else %}body's background, painted on the canvas{% endif %}</span><span><i class="t0529-dash"></i>{% if include.lang == "fr" %}boîtes de html et de body{% else %}html and body boxes{% endif %}</span></div>
+</div>
+<div class="anim-side">
+<pre class="code" aria-hidden="true">&lt;style><span data-on="1">*</span>{<span data-on="1">margin:40 90</span>;<span data-on="1 4">border:5ch solid#F3EAD2</span>;<span data-on="3" data-tone="2">*{</span><span data-on="3">margin:53 0-53</span>;<span data-on="4">border-width:40 0 0 40</span>;<span data-on="5">rotate:45deg</span>;<span data-on="2 6">background:#CF596A</span></pre>
+<div class="now" aria-live="polite">
+<div class="caps">
+{%- if include.lang == "fr" %}
+<div class="cap" data-t="0" data-step="Cadre"><h3>1. Le cadre de html</h3><p><code>*</code> vise html, head, body et style. head et style ne s'affichent pas. Ici, html d'abord. <code>margin:40 90</code> en fait une boîte de 220 × 220 en (90, 40). <code>border:5ch solid#F3EAD2</code> lui donne une bordure crème : dans la police par défaut, Times en 16px, un <code>ch</code> vaut 8px, donc 5ch = 40px. Le trou du cadre fait 140 × 140, en (130, 80). html n'a pas de fond.</p></div>
+<div class="cap" data-t="5" data-step="Canevas"><h3>2. Le fond passe au canevas</h3><p><code>background:#CF596A</code> est dans la règle imbriquée : seul body le reçoit. html n'a pas de fond, alors le navigateur peint celui de body sur tout le canevas. La boîte de body, elle, reste transparente.</p></div>
+<div class="cap" data-t="10" data-step="body"><h3>3. La boîte de body</h3><p>Le <code>*{</code> imbriqué vise head, body et style, pas html. <code>margin:53 0-53</code> met 53px en haut, 0 sur les côtés et −53px en bas. En mode quirks, body remplit la boîte de contenu de html moins ses marges verticales : 140 − (53 − 53) = 140. body fait donc 140 × 140, en (130, 133) : il déborde de 53px sous le trou, sur la bordure du bas de html.</p></div>
+<div class="cap" data-t="15" data-step="Bordures"><h3>4. Deux bordures</h3><p>body est visé par les deux règles : il reçoit aussi la bordure crème de 40px. <code>border-width:40 0 0 40</code> ne garde que le haut et la gauche. Les deux bordures forment un L.</p></div>
+<div class="cap" data-t="19" data-step="Rotation"><h3>5. Un huitième de tour</h3><p><code>rotate:45deg</code> tourne body autour de son centre, (200, 203). Le coin du L monte : la pointe extérieure en y = 203 − 70√2 = 104, la pointe intérieure en 203 − 30√2 = 160,6. Les coins des côtés tombent en x = 101 et 299, dans les bordures de html. Le coin du bas descend en y = 302, hors du canevas.</p></div>
+<div class="cap" data-t="24" data-step="Triangle"><h3>6. Le triangle</h3><p>L'intérieur de body est transparent. Au-dessus de y = 220, on y voit le canevas rose par le trou de html : c'est le triangle, de x = 140,6 à 259,4. En dessous, on voit la bordure crème du bas de html, puis de nouveau le canevas sous y = 260.</p></div>
+<div class="cap" data-t="28" data-step="Résultat" data-live="117 caractères · 100 % identique"><h3>7. Résultat : 117 caractères</h3><p>Une seule bordure pour deux boîtes. Sur html, elle fait un cadre complet. Sur body, deux de ses côtés, tournés d'un huitième de tour, font le chevron. Le fond de body peint le canevas.</p></div>
+{%- else %}
+<div class="cap" data-t="0" data-step="Frame"><h3>1. html's frame</h3><p><code>*</code> matches html, head, body and style. head and style are not displayed. html first. <code>margin:40 90</code> makes it a 220 × 220 box at (90, 40). <code>border:5ch solid#F3EAD2</code> gives it a cream border: in the default font, Times at 16px, a <code>ch</code> is 8px, so 5ch = 40px. The frame's hole is 140 × 140, at (130, 80). html has no background.</p></div>
+<div class="cap" data-t="5" data-step="Canvas"><h3>2. The background goes to the canvas</h3><p><code>background:#CF596A</code> is in the nested rule: only body gets it. html has no background, so the browser paints body's background on the whole canvas. body's own box stays clear.</p></div>
+<div class="cap" data-t="10" data-step="body"><h3>3. body's box</h3><p>The nested <code>*{</code> matches head, body and style, not html. <code>margin:53 0-53</code> sets 53px at the top, 0 on the sides and −53px at the bottom. In quirks mode, body fills html's content box minus its vertical margins: 140 − (53 − 53) = 140. So body is 140 × 140, at (130, 133): it runs 53px below the hole, over html's bottom border.</p></div>
+<div class="cap" data-t="15" data-step="Borders"><h3>4. Two borders</h3><p>body matches both rules: it gets the 40px cream border too. <code>border-width:40 0 0 40</code> keeps only the top and the left. The two borders make an L.</p></div>
+<div class="cap" data-t="19" data-step="Turn"><h3>5. An eighth of a turn</h3><p><code>rotate:45deg</code> turns body around its center, (200, 203). The corner of the L goes up: the outer tip to y = 203 − 70√2 = 104, the inner tip to 203 − 30√2 = 160.6. The side corners land at x = 101 and 299, inside html's borders. The bottom corner goes down to y = 302, off the canvas.</p></div>
+<div class="cap" data-t="24" data-step="Triangle"><h3>6. The triangle</h3><p>The inside of body is clear. Above y = 220, it shows the pink canvas through html's hole: that is the triangle, from x = 140.6 to 259.4. Below, it shows html's cream bottom border, then the canvas again below y = 260.</p></div>
+<div class="cap" data-t="28" data-step="Result" data-live="117 characters · 100% match"><h3>7. Result: 117 characters</h3><p>One border for two boxes. On html, it makes a full frame. On body, two of its sides, turned an eighth of a turn, make the chevron. body's background paints the canvas.</p></div>
+{%- endif %}
+</div>
+<div class="live"></div>
+</div>
+</div>
+<script>
+(window.AnimScenes = window.AnimScenes || {}).t0529 = (fig) => {
+  const fr = document.documentElement.lang === 'fr';
+  const $ = (s) => fig.querySelector(s);
+  const $$ = (s) => [...fig.querySelectorAll(s)];
+  const live = $('.live');
+  const ease = (x) => (x < 0.5 ? 4 * x * x * x : 1 - Math.pow(-2 * x + 2, 3) / 2);
+  const pr = (t, [a, b]) => ease(Math.min(1, Math.max(0, (t - a) / (b - a))));
+  const win = (t, a, b) => Math.min(pr(t, [a, a + 0.5]), 1 - pr(t, [b - 0.2, b]));
+  const c = fr ? ' :' : ':';
+  const n = (x) => (fr ? String(x).replace('.', ',') : String(x));
+  const mix = (k, a, b) => (k <= 0 ? b : k >= 1 ? a : `color-mix(in srgb, ${a} ${(k * 100).toFixed(1)}%, ${b})`);
+  // Measured on the official code in local Chrome (400 × 300 iframe, quirks mode, getBoundingClientRect, getComputedStyle).
+  // html: 90, 40, 220 × 220, border 40px solid #f3ead2 (5ch, Times 16px), no background.
+  // body: layout box 130, 133, 140 × 140 (offset 140 × 140), border 40px 0 0 40px, margin 53px 0 -53px,
+  // background #cf596a (painted on the canvas), rotate 45deg around 70px 70px = (200, 203).
+  // Turned bounding box: 101.005, 104.005, 197.99 × 197.99. Inner tip y = 160.57; triangle base at y = 220: x = 140.57–259.43.
+  const R = '#f3ead2';
+  const blank = $('.t0529-blank'), html = $('.t0529-html'), body = $('.t0529-body'), hbox = $('.t0529-hbox'), bbox = $('.t0529-bbox');
+  const fixes = $$('.t0529-fix');
+  const labs = $$('.zlab');
+  const ivs = [[0.3, 4.8], [5.3, 9.8], [10.3, 14.8], [15.3, 18.8], [19.3, 23.8], [24.3, 27.8]];
+  return (t, step) => {
+    const teach = fig.dataset.teach === '1';
+    const wide = fig.dataset.view === 'wide';
+    const tw = teach ? 1 - pr(t, [28.3, 29.3]) : 0;
+    // step 1: html's box, then its 40px border growing inward
+    hbox.style.opacity = win(t, 0.3, 27.8);
+    html.style.borderWidth = `${40 * pr(t, [1, 3])}px`;
+    html.style.borderColor = mix(tw, 'var(--t0529-hf)', R);
+    // step 2: body's background reaches the canvas
+    blank.style.opacity = 1 - pr(t, [5.6, 7.4]);
+    // step 3: body's box; step 4: its top and left borders
+    bbox.style.opacity = win(t, 10.3, 27.8);
+    const bw = 40 * pr(t, [15.6, 17.4]);
+    body.style.borderWidth = `${bw}px 0 0 ${bw}px`;
+    // the dashed box sits on body's padding edge: pull it back over the borders
+    bbox.style.left = bbox.style.top = `${-bw}px`;
+    body.style.borderColor = mix(tw, 'var(--t0529-bd)', R);
+    // step 5: the eighth of a turn around (200, 203)
+    body.style.transform = `rotate(${45 * pr(t, [19.6, 22])}deg)`;
+    // same-color underlay where body's straight edges sit on the hole's edges (x = 130 and 270), until the turn starts
+    fixes.forEach((f) => {
+      f.style.background = html.style.borderColor;
+      f.style.opacity = t >= 17.4 && t < 19.6 ? 1 : 0;
+    });
+    // labels: one per step, at the top left of the frame
+    labs.forEach((l) => {
+      const x0 = wide ? -40 : 0, y0 = wide ? -30 : 0;
+      l.style.left = `calc(${x0}px + 4px * var(--k, 1))`;
+      l.style.top = `calc(${y0}px + 4px * var(--k, 1))`;
+      l.style.opacity = win(t, ...ivs[+l.dataset.l - 1]);
+    });
+    let txt;
+    if (step === 0) txt = `5ch = 5 × 8 = 40px · ${fr ? 'trou' : 'hole'} 140 × 140`;
+    else if (step === 1) txt = `${fr ? 'canevas' : 'canvas'}${c} #cf596a`;
+    else if (step === 2) txt = `body${c} 140 − (53 − 53) = 140`;
+    else if (step === 3) txt = `${fr ? 'haut et gauche' : 'top and left'}${c} 40px`;
+    else if (step === 4) txt = `${fr ? 'pointes' : 'tips'}${c} y = 104, ${n(160.6)}`;
+    else if (step === 5) txt = `y = 220${c} x = ${n(140.6)}–${n(259.4)}`;
+    else txt = $$('.caps .cap')[6].dataset.live || '';
+    live.textContent = txt;
+  };
+};
+</script>
+</figure>
