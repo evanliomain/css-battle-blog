@@ -1,0 +1,143 @@
+<figure class="anim t0515" data-duration="28" data-scene="t0515" data-wide="-50 -40 500 380" data-off-label="-46 311" style="--bg:#fff">
+<style>
+.t0515{--t0515-bg:#1f1446;--t0515-y:#ffca00;--t0515-html:#38bdf8;--t0515-body:#a855f7;--t0515-pc:#14b8a6;--t0515-side:#f97316;--t0515-bot:#ec4899}
+.t0515 .scene .t0515-bgc{left:-60px;top:-50px;width:520px;height:400px;background:var(--t0515-bg);opacity:0;z-index:0}
+.t0515 .scene .t0515-html{left:56px;top:10px;width:288px;height:280px;background:var(--t0515-html);opacity:0;z-index:1}
+.t0515 .scene .t0515-body{left:96.3125px;top:20px;width:207.375px;height:260px;background:var(--t0515-body);opacity:0;z-index:2}
+.t0515 .scene .t0515-u{left:125px;width:150px;height:80px;background:linear-gradient(var(--t0515-y) 0 0) 0 0/35px 100% no-repeat,linear-gradient(var(--t0515-y) 0 0) 100% 0/35px 100% no-repeat,linear-gradient(var(--t0515-y) 0 0) 0 100%/100% 30px no-repeat;opacity:0;z-index:3}
+.t0515 .scene .t0515-p{left:125px;width:150px;height:50px;box-sizing:border-box;border:0 solid var(--t0515-y);background-clip:padding-box;opacity:0;z-index:4}
+.t0515 .scene .t0515-box{box-sizing:border-box;outline:calc(1.5px * var(--k, 1)) dashed #fff;outline-offset:calc(-0.75px * var(--k, 1));filter:drop-shadow(0 0 calc(1px * var(--k, 1)) #000);opacity:0;z-index:10}
+.t0515 .scene .zlab{color:#14142a;background:rgb(255 255 255 / .92);box-shadow:0 0 0 1px rgb(20 20 42 / .25);padding:1px 5px;border-radius:3px;opacity:0}
+.t0515 .legend .t0515-ol{box-shadow:0 0 0 1px currentColor}
+.t0515 .legend .t0515-dash{background:none;outline:2px dashed currentColor;outline-offset:-2px}
+</style>
+<div class="anim-col">
+<div class="stage" role="img" aria-label="{% if include.lang == "fr" %}Animation : chaque p ferme le précédent, body contient trois p et le style va dans le troisième. * donne à tous margin:10 14% et un fond indigo. html : 14 % de 400 = 56, 288 de large en (56, 10) ; son fond peint tout le canevas. body : 14 % de 288 = 40,32, environ 207,4 de large. Les p : 14 % de 207,4, environ 29,03, donc environ 149,3 de large, centrés, 50 de haut, à 10px les uns des autres. border:solid#ffca00 leur donne une bordure jaune de 3px. border-width:0 35 30 : rien en haut, 35 sur les côtés, 30 en bas. Chaque p devient un U jaune de 80 de haut, en y = 20, 110 et 200.{% else %}Animation: each p closes the one before, so body holds three p's and the style goes into the third. * gives every element margin:10 14% and an indigo background. html: 14% of 400 = 56, 288 wide at (56, 10); its background paints the whole canvas. body: 14% of 288 = 40.32, about 207.4 wide. The p's: 14% of 207.4, about 29.03, so about 149.3 wide, centered, 50 tall, 10px apart. border:solid#ffca00 gives them a 3px yellow border. border-width:0 35 30: nothing on top, 35 on the sides, 30 at the bottom. Each p becomes a yellow U, 80 tall, at y = 20, 110 and 200.{% endif %}">
+<div class="scene">
+<div class="t0515-bgc"></div>
+<div class="t0515-html"></div>
+<div class="t0515-body"></div>
+<div class="t0515-u"></div>
+<div class="t0515-u"></div>
+<div class="t0515-u"></div>
+<div class="t0515-p"></div>
+<div class="t0515-p"></div>
+<div class="t0515-p"></div>
+<div class="t0515-box t0515-xhtml" style="left:56px;top:10px;width:288px;height:280px"></div>
+<div class="t0515-box t0515-xbody" style="left:96.3125px;top:20px;width:207.375px;height:260px"></div>
+<div class="t0515-box t0515-xp" style="left:125.34375px;width:149.3125px"></div>
+<div class="t0515-box t0515-xp" style="left:125.34375px;width:149.3125px"></div>
+<div class="t0515-box t0515-xp" style="left:125.34375px;width:149.3125px"></div>
+<span class="zlab" data-l="1" data-x="4" data-y="3">html › body › p, p, p › style</span>
+<span class="zlab" data-l="2" data-x="62" data-y="16">{% if include.lang == "fr" %}html 288 de large · 14 % de 400 = 56{% else %}html 288 wide · 14% of 400 = 56{% endif %}</span>
+<span class="zlab" data-l="3" data-x="102" data-y="26">{% if include.lang == "fr" %}body ≈ 207,4 · 14 % de 288 = 40,32{% else %}body ≈ 207.4 · 14% of 288 = 40.32{% endif %}</span>
+<span class="zlab" data-l="4" data-x="128" data-y="200">{% if include.lang == "fr" %}p ≈ 149,3 × 50{% else %}p ≈ 149.3 × 50{% endif %}</span>
+<span class="zlab" data-l="5" data-x="128" data-y="222">{% if include.lang == "fr" %}border : medium = 3px{% else %}border: medium = 3px{% endif %}</span>
+<span class="zlab" data-l="6" data-x="4" data-y="2">border-width: 0 35 30</span>
+</div>
+</div>
+<div class="legend"><span><i class="t0515-ol" style="--c:#1f1446"></i>{% if include.lang == "fr" %}#1f1446, le canevas{% else %}#1f1446, the canvas{% endif %}</span><span><i class="t0515-ol" style="--c:#ffca00"></i>{% if include.lang == "fr" %}#ffca00, les bordures{% else %}#ffca00, the borders{% endif %}</span><span><i style="--c:var(--t0515-html)"></i>html</span><span><i style="--c:var(--t0515-body)"></i>body</span><span><i style="--c:var(--t0515-pc)"></i>{% if include.lang == "fr" %}contenu des p{% else %}content of the p's{% endif %}</span><span><i style="--c:var(--t0515-side)"></i>{% if include.lang == "fr" %}bordures de côté{% else %}side borders{% endif %}</span><span><i style="--c:var(--t0515-bot)"></i>{% if include.lang == "fr" %}bordure du bas{% else %}bottom border{% endif %}</span><span><i class="t0515-dash"></i>{% if include.lang == "fr" %}boîtes{% else %}boxes{% endif %}</span></div>
+</div>
+<div class="anim-side">
+<pre class="code" aria-hidden="true"><span data-on="1">&lt;p>&lt;p>&lt;p></span>&lt;style><span data-on="1">*{</span><span data-on="2 3 4">margin:10 14%</span>;<span data-on="2" data-tone="2">background:#1F1446</span>;<span data-on="1">p{</span><span data-on="4">height:50</span>;<span data-on="5">border:solid#ffca00</span>;<span data-on="6">border-width:0 35 30</span></pre>
+<div class="now" aria-live="polite">
+<div class="caps">
+{%- if include.lang == "fr" %}
+<div class="cap" data-t="0" data-step="Éléments"><h3>1. html, body et trois p</h3><p>Chaque <code>&lt;p></code> ferme le précédent : body contient trois p vides. Le <code>&lt;style></code> va dans le troisième. <code>*</code> vise tous les éléments : html, head, body, les trois p et style. Le <code>p{</code> imbriqué vise les trois p.</p></div>
+<div class="cap" data-t="4" data-step="html"><h3>2. html : 14 % de 400</h3><p>Une marge en % se calcule sur la largeur du bloc qui contient l'élément. Pour html, c'est le canevas de 400px : 14 % de 400 = 56. html fait 400 − 112 = 288 de large, en (56, 10). Son fond, <code>#1F1446</code>, peint tout le canevas.</p></div>
+<div class="cap" data-t="8" data-step="body"><h3>3. body : 14 % de 288</h3><p>body reçoit la même marge. Le bloc qui le contient est html, de 288 de large : 14 % de 288 = 40,32. body fait 288 − 2 × 40,32, environ 207,4 de large. Il a le même fond indigo que le canevas : il ne se voit pas.</p></div>
+<div class="cap" data-t="12" data-step="p"><h3>4. Les p : 14 % de 207,4</h3><p>Les p aussi : 14 % de 207,4, environ 29,03. Chaque p fait environ 149,3 de large, centré. <code>height:50</code> leur donne 50 de haut. Leurs marges de 10 fusionnent : avec celle de body, donc le premier p commence en y = 20, et entre elles, donc les p sont à 10px les uns des autres.</p></div>
+<div class="cap" data-t="16" data-step="border"><h3>5. border : plein, jaune, 3px</h3><p><code>border:solid#ffca00</code> donne le style et la couleur. Pas d'épaisseur : chaque côté prend celle par défaut, medium, qui vaut 3px dans Chrome. Chaque p fait maintenant 56 de haut.</p></div>
+<div class="cap" data-t="20" data-step="border-width"><h3>6. border-width : 0 35 30</h3><p>Trois valeurs : 0 en haut, 35 à gauche et à droite, 30 en bas. Le p garde sa largeur : les côtés de 35px mordent sur son contenu. Chaque p fait 50 + 30 = 80 de haut : un U. Toujours à 10px d'écart : en y = 20, 110 et 200.</p></div>
+<div class="cap" data-t="24" data-step="Résultat" data-live="103 caractères · 100 % identique"><h3>7. Résultat : 103 caractères</h3><p>Trois U jaunes de 150 × 80, centrés, à 10px d'écart. Une seule marge, <code>10 14%</code>, réduit chaque niveau de 28 % : 400 → 288 → 207,4 → 149,3.</p></div>
+{%- else %}
+<div class="cap" data-t="0" data-step="Elements"><h3>1. html, body and three p's</h3><p>Each <code>&lt;p></code> closes the one before, so body holds three empty p's. The <code>&lt;style></code> goes into the third one. <code>*</code> matches every element: html, head, body, the three p's and style. The nested <code>p{</code> matches the three p's.</p></div>
+<div class="cap" data-t="4" data-step="html"><h3>2. html: 14% of 400</h3><p>A margin in % is a share of the width of the element's containing block. For html, that is the 400px canvas: 14% of 400 = 56. html is 400 − 112 = 288 wide, at (56, 10). Its background, <code>#1F1446</code>, paints the whole canvas.</p></div>
+<div class="cap" data-t="8" data-step="body"><h3>3. body: 14% of 288</h3><p>body gets the same margin. Its containing block is html, 288 wide: 14% of 288 = 40.32. body is 288 − 2 × 40.32, about 207.4 wide. It has the same indigo background as the canvas, so it does not show.</p></div>
+<div class="cap" data-t="12" data-step="p"><h3>4. The p's: 14% of 207.4</h3><p>The p's too: 14% of 207.4 is about 29.03. Each p is about 149.3 wide, centered. <code>height:50</code> makes them 50 tall. Their 10px margins collapse: with body's, so the first p starts at y = 20, and with each other, so the p's are 10px apart.</p></div>
+<div class="cap" data-t="16" data-step="border"><h3>5. border: solid, yellow, 3px</h3><p><code>border:solid#ffca00</code> sets the style and the color. It gives no width, so each side gets the default, medium: 3px in Chrome. Each p is now 56 tall.</p></div>
+<div class="cap" data-t="20" data-step="border-width"><h3>6. border-width: 0 35 30</h3><p>Three values: 0 on top, 35 on the left and right, 30 at the bottom. The p keeps its width, so the 35px sides eat into its content. Each p is 50 + 30 = 80 tall: a U. Still 10px apart: at y = 20, 110 and 200.</p></div>
+<div class="cap" data-t="24" data-step="Result" data-live="103 characters · 100% match"><h3>7. Result: 103 characters</h3><p>Three yellow U's, 150 × 80, centered and 10px apart. One margin, <code>10 14%</code>, shrinks each level by 28%: 400 → 288 → 207.4 → 149.3.</p></div>
+{%- endif %}
+</div>
+<div class="live"></div>
+</div>
+</div>
+<script>
+(window.AnimScenes = window.AnimScenes || {}).t0515 = (fig) => {
+  const fr = document.documentElement.lang === 'fr';
+  const $ = (s) => fig.querySelector(s);
+  const $$ = (s) => [...fig.querySelectorAll(s)];
+  const live = $('.live');
+  const ease = (x) => (x < 0.5 ? 4 * x * x * x : 1 - Math.pow(-2 * x + 2, 3) / 2);
+  const pr = (t, a, b) => ease(Math.min(1, Math.max(0, (t - a) / (b - a))));
+  const win = (t, a, b) => Math.min(pr(t, a, a + 0.5), 1 - pr(t, b - 0.3, b));
+  const c = fr ? '\u00a0:' : ':';
+  const pc = fr ? '\u00a0%' : '%';
+  const n = (v) => (fr ? String(v).replace('.', ',') : String(v));
+  const mix = (k, a, b) => (k <= 0 ? b : k >= 1 ? a : `color-mix(in srgb, ${a} ${(k * 100).toFixed(1)}%, ${b})`);
+  // Measured on the official code in local Chrome 157 (400 × 300 iframe, quirks mode, getBoundingClientRect, variant renders).
+  // html 56, 10, 288 × 280 (margin 10 56); its background paints the canvas.
+  // body 96.3125, 20, 207.375 × 260 (margin 10 40.3125). p's 125.34375 wide 149.3125 (margin 10 29.03125).
+  // height 50 only: p's at y 20, 80, 140. + border:solid (medium = 3px): 56 tall at 20, 86, 152.
+  // + border-width 0 35 30: 80 tall at 20, 110, 200. Painted on whole pixels: x 125 to 275, arms 125-160 and 240-275.
+  // The painted U's use those whole pixels (left 125, width 150); the dashed boxes use the layout values.
+  const bgc = $('.t0515-bgc'), html = $('.t0515-html'), body = $('.t0515-body');
+  const us = $$('.t0515-u'), ps = $$('.t0515-p'), xps = $$('.t0515-xp');
+  const xhtml = $('.t0515-xhtml'), xbody = $('.t0515-xbody');
+  const labs = $$('.zlab[data-l]');
+  const ivs = [[0.3, 3.8], [4.4, 7.8], [8.4, 11.8], [12.4, 15.8], [16.4, 19.8], [20.4, 23.8]];
+  return (t, step) => {
+    const teach = fig.dataset.teach === '1';
+    const wide = fig.dataset.view !== 'canvas';
+    const tw = teach ? 1 - pr(t, 24.2, 25.2) : 0;
+    const Y = 'var(--t0515-y)', B = 'var(--t0515-bg)';
+    // step 2: html's background fills the canvas; html's own box in teaching colors
+    bgc.style.opacity = pr(t, 4.6, 5.6);
+    html.style.opacity = 0.45 * tw * pr(t, 5.6, 6.4);
+    xhtml.style.opacity = win(t, 4.3, 11.8);
+    // step 3: body
+    body.style.opacity = 0.55 * tw * pr(t, 8.6, 9.4);
+    xbody.style.opacity = win(t, 8.3, 15.8);
+    // step 4: the p's, 50 tall; steps 5 and 6: their borders
+    const g5 = pr(t, 16.6, 17.6), g6 = pr(t, 20.6, 22.4);
+    const bt = 3 * g5 * (1 - g6), bs = 3 * g5 + 32 * g6, bb = 3 * g5 + 27 * g6;
+    const h = 50 + bt + bb;
+    const ts = teach ? Math.min(pr(t, 20.4, 21), tw) : 0;
+    const side = mix(ts, 'var(--t0515-side)', Y), bot = mix(ts, 'var(--t0515-bot)', Y);
+    const po = pr(t, 12.6, 13.4);
+    const done = tw === 0 && g6 === 1;
+    ps.forEach((p, i) => {
+      const top = 20 + i * (h + 10);
+      p.style.opacity = po;
+      p.style.top = `${top}px`;
+      p.style.height = `${h}px`;
+      p.style.borderWidth = `${bt}px ${bs}px ${bb}px`;
+      p.style.borderColor = `${Y} ${side} ${bot}`;
+      p.style.background = mix(tw, 'var(--t0515-pc)', B);
+      xps[i].style.top = `${top}px`;
+      xps[i].style.height = `${h}px`;
+      xps[i].style.opacity = win(t, 12.3, 23.8);
+      // real colors, borders done: a yellow U (two arms and the bottom bar, overlapping) under each p, so no seam where the sides meet the bottom
+      us[i].style.top = `${top}px`;
+      us[i].style.opacity = done ? 1 : 0;
+    });
+    labs.forEach((l) => {
+      const k = +l.dataset.l;
+      l.style.opacity = win(t, ...ivs[k - 1]);
+      l.style.left = wide ? '-46px' : `${l.dataset.x}px`;
+      l.style.top = wide ? '-36px' : `${l.dataset.y}px`;
+    });
+    let txt;
+    if (step === 0) txt = '* → html, head, body, p, p, p, style · * p → p, p, p';
+    else if (step === 1) txt = `html${c} 14${pc} × 400 = 56 · 400 − 2 × 56 = 288`;
+    else if (step === 2) txt = `body${c} 14${pc} × 288 = ${n(40.32)} · 288 − 2 × ${n(40.32)} ≈ ${n(207.4)}`;
+    else if (step === 3) txt = `p${c} 14${pc} × ${n(207.4)} ≈ ${n(29.03)} · ≈ ${n(149.3)} × 50 · y = 20, 80, 140`;
+    else if (step === 4) txt = `medium = 3px · 3 + 50 + 3 = 56 · y = 20, 86, 152`;
+    else if (step === 5) txt = `0 + 50 + 30 = 80 · y = 20, 110, 200`;
+    else txt = $$('.caps .cap')[6].dataset.live || '';
+    live.textContent = txt;
+  };
+};
+</script>
+</figure>
