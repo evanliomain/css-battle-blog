@@ -1,0 +1,135 @@
+<figure class="anim t0604" data-duration="30" data-scene="t0604" data-wide="-260 -60 920 420" data-off-label="-256 318" style="--bg:#fae29e">
+<style>
+.t0604{--t0604-box:#1e293b;--t0604-far:#bae6fd;--t0604-ell:#8b5cf6;--t0604-body:#f97316}
+.t0604 .scene .t0604-far{left:-800px;top:-600px;width:2000px;height:1500px;z-index:0}
+.t0604 .scene .t0604-body{left:40px;top:50px;width:320px;height:200px;z-index:3;opacity:0}
+.t0604 .scene .t0604-tile{box-sizing:border-box;width:220px;height:300px;opacity:0;z-index:4;pointer-events:none;outline:calc(1.5px * var(--k, 1)) dashed var(--t0604-box);outline-offset:calc(-0.75px * var(--k, 1))}
+.t0604 .scene .t0604-call{width:36px;height:36px;margin:-18px 0 0 -18px;border-radius:50%;box-sizing:border-box;border:calc(1.5px * var(--k, 1)) dashed var(--t0604-box);opacity:0;z-index:5}
+.t0604 .scene .t0604-ray{background:#fff;box-shadow:0 0 0 calc(0.75px * var(--k, 1)) #1e293b;opacity:0;z-index:5}
+.t0604 .scene .zlab{color:#14142a;background:rgb(255 255 255 / .92);box-shadow:0 0 0 1px rgb(20 20 42 / .25);padding:1px 5px;border-radius:3px;opacity:0}
+</style>
+<div class="anim-col">
+<div class="stage" role="img" aria-label="{% if include.lang == "fr" %}Animation : &amp; vise html, dont le fond est peint sur tout le canevas. -5vw/55% en fait une tuile de 220 × 300 qui commence en x = −20 et se répète : des copies commencent en x = −20 et 200. radial-gradient(1%4q,…) a une forme de fin minuscule, de rayons 2,2 et 3,78px, au centre de chaque tuile : (90, 150) et (310, 150). Le repère de transition 74q pousse le dernier arrêt jusqu'à 74q = 69,9px : le bleu-gris garde un bord net et devient une ellipse de rayons 69,9 et 120px, de x = 20 à 160 et de y = 30 à 270, puis de x = 240 à 380. Le reste du dégradé est jaune. body, avec margin:50 40, fait 320 × 200 en (40, 50), en vert. border-radius:17%/52% donne des rayons de 54,4 et 104px, réduits par 200 / 208 à 52,3 et 100px : les côtés de body deviennent des demi-ellipses.{% else %}Animation: &amp; matches html, whose background is painted on the whole canvas. -5vw/55% makes it a 220 × 300 tile that starts at x = −20 and repeats: copies start at x = −20 and 200. radial-gradient(1%4q,…) has a tiny ending shape, with radii of 2.2 and 3.78px, at the center of each tile: (90, 150) and (310, 150). The transition hint 74q pushes the last stop to 74q = 69.9px: the blue-gray keeps a sharp edge and becomes an ellipse with radii of 69.9 and 120px, from x = 20 to 160 and y = 30 to 270, then from x = 240 to 380. The rest of the gradient is yellow. body, with margin:50 40, is 320 × 200 at (40, 50), in green. border-radius:17%/52% gives radii of 54.4 and 104px, scaled by 200 / 208 to 52.3 and 100px: body's sides become half-ellipses.{% endif %}">
+<div class="scene">
+<div class="t0604-far"></div>
+<div class="t0604-body"></div>
+<div class="t0604-tile" style="left:-240px;top:-300px"></div>
+<div class="t0604-tile" style="left:-20px;top:-300px"></div>
+<div class="t0604-tile" style="left:200px;top:-300px"></div>
+<div class="t0604-tile" style="left:420px;top:-300px"></div>
+<div class="t0604-tile" style="left:-240px;top:0"></div>
+<div class="t0604-tile" style="left:-20px;top:0"></div>
+<div class="t0604-tile" style="left:200px;top:0"></div>
+<div class="t0604-tile" style="left:420px;top:0"></div>
+<div class="t0604-tile" style="left:-240px;top:300px"></div>
+<div class="t0604-tile" style="left:-20px;top:300px"></div>
+<div class="t0604-tile" style="left:200px;top:300px"></div>
+<div class="t0604-tile" style="left:420px;top:300px"></div>
+<div class="t0604-call" style="left:90px;top:150px"></div>
+<div class="t0604-call" style="left:310px;top:150px"></div>
+<div class="t0604-ray t0604-rx"></div>
+<div class="t0604-ray t0604-ry"></div>
+<span class="zlab" data-l="1" data-r="0">{% if include.lang == "fr" %}&amp; = html · tuile 55% = 220 × 300{% else %}&amp; = html · tile 55% = 220 × 300{% endif %}</span>
+<span class="zlab" data-l="1" data-r="1">{% if include.lang == "fr" %}-5vw = −20px · répétée{% else %}-5vw = −20px · repeated{% endif %}</span>
+<span class="zlab" data-l="2" data-r="0">{% if include.lang == "fr" %}1%4q : rayons 2,2 et 3,78px{% else %}1%4q: radii 2.2 and 3.78px{% endif %}</span>
+<span class="zlab" data-l="2" data-r="1">{% if include.lang == "fr" %}centres : (90, 150) et (310, 150){% else %}centers: (90, 150) and (310, 150){% endif %}</span>
+<span class="zlab" data-l="3" data-r="0">{% if include.lang == "fr" %}74q = 69,9px{% else %}74q = 69.9px{% endif %}</span>
+<span class="zlab" data-l="3" data-r="1">{% if include.lang == "fr" %}69,9 × 3,78 / 2,2 ≈ 120px{% else %}69.9 × 3.78 / 2.2 ≈ 120px{% endif %}</span>
+<span class="zlab" data-l="4" data-r="0">&amp; * = body · margin:50 40</span>
+<span class="zlab" data-l="4" data-r="1">{% if include.lang == "fr" %}body : 320 × 200 en (40, 50){% else %}body: 320 × 200 at (40, 50){% endif %}</span>
+<span class="zlab" data-l="5" data-r="0">{% if include.lang == "fr" %}17%/52% = 54,4px / 104px{% else %}17%/52% = 54.4px / 104px{% endif %}</span>
+<span class="zlab" data-l="5" data-r="1">{% if include.lang == "fr" %}× 200 / 208 → 52,3px / 100px{% else %}× 200 / 208 → 52.3px / 100px{% endif %}</span>
+</div>
+</div>
+<div class="legend"><span><i style="--c:#bae6fd"></i>{% if include.lang == "fr" %}dégradé de html, dernière couleur (#fae29e en vrai){% else %}html's gradient, last color (#fae29e in reality){% endif %}</span><span><i style="--c:#8b5cf6"></i>{% if include.lang == "fr" %}dégradé de html, première couleur (#4c4c6b en vrai){% else %}html's gradient, first color (#4c4c6b in reality){% endif %}</span><span><i style="--c:#f97316"></i>{% if include.lang == "fr" %}body (#4a9a86 en vrai){% else %}body (#4a9a86 in reality){% endif %}</span><span><i style="--c:transparent;outline:2px dashed currentColor;outline-offset:-2px"></i>{% if include.lang == "fr" %}tuiles du fond{% else %}background tiles{% endif %}</span></div>
+</div>
+<div class="anim-side">
+<pre class="code" aria-hidden="true">&lt;STYLE><span data-on="1" data-tone="2">&amp;{</span><span data-on="4" data-tone="2">*{</span><span data-on="4">background:#4A9A86</span>;<span data-on="4">margin:50 40</span>;<span data-on="5">border-radius:17%/52%</span>}<span data-on="1">background:-5vw/55%</span><span data-on="2">radial-gradient(1%4q,#4C4C6B,</span><span data-on="3">74q</span><span data-on="2 3" data-tone="2">,#FAE29E</span></pre>
+<div class="now" aria-live="polite">
+<div class="caps">
+{%- if include.lang == "fr" %}
+<div class="cap" data-t="0" data-step="Tuile"><h3>1. La tuile du fond</h3><p>Au premier niveau, <code>&amp;</code> vise html. Le fond de html est peint sur tout le canevas. <code>-5vw/55%</code> règle sa tuile : 55 % de 400 = 220 de large et, sans hauteur, la hauteur de html : 300. <code>-5vw</code> = −20px décale la première tuile à gauche. La tuile se répète : des copies commencent en x = −20 et 200, et d'autres hors du canevas.</p></div>
+<div class="cap" data-t="5" data-step="Forme de fin"><h3>2. Une forme de fin minuscule</h3><p><code>radial-gradient(1%4q,…)</code> est une ellipse de rayon horizontal 1 % de la tuile, 2,2px, et de rayon vertical 4q, 3,78px. Elle est au centre de chaque tuile : (90, 150) et (310, 150). Sans le <code>74q</code>, le dégradé s'arrêterait là : un point bleu-gris de 2,2px, puis du jaune.</p></div>
+<div class="cap" data-t="10" data-step="Repère"><h3>3. Le repère de transition</h3><p><code>74q</code> n'a pas de couleur : c'est un repère de transition. Le dernier arrêt, sans position, irait à 100 %, les 2,2px de la forme de fin. Un arrêt ne peut pas venir avant ce qui le précède : il remonte à 74q = 69,9px. Repère et arrêt au même endroit, le bord est net. L'ellipse garde ses proportions : 69,9 × 3,78 / 2,2 ≈ 120px de rayon vertical.</p></div>
+<div class="cap" data-t="15.5" data-step="body"><h3>4. body</h3><p><code>*{…}</code> vaut <code>&amp; *</code> : tout élément dans html. head et style ne s'affichent pas, body si. <code>margin:50 40</code> le place en (40, 50), 400 − 80 = 320 de large. En mode quirks, body remplit la hauteur de la fenêtre moins ses marges : 300 − 100 = 200. Son vert, <code>#4A9A86</code>, couvre le milieu des deux ellipses.</p></div>
+<div class="cap" data-t="20.5" data-step="Côtés bombés"><h3>5. Les côtés bombés</h3><p><code>border-radius:17%/52%</code> : rayons horizontaux de 17 % de 320 = 54,4px, rayons verticaux de 52 % de 200 = 104px. Deux rayons verticaux font 208px de chaque côté, plus que les 200 de haut : tous les rayons sont réduits par 200 / 208. Ils deviennent 52,3 × 100px, et chaque côté est une demi-ellipse.</p></div>
+<div class="cap" data-t="26" data-step="Résultat" data-live="124 caractères · 100 % identique"><h3>6. Résultat : 124 caractères</h3><p>Deux éléments. Le dégradé de html, répété, fait le jaune et les deux ellipses bleu-gris. body pose le tonneau vert par-dessus.</p></div>
+{%- else %}
+<div class="cap" data-t="0" data-step="Tile"><h3>1. The background tile</h3><p>At the top level, <code>&amp;</code> matches html. html's background is painted on the whole canvas. <code>-5vw/55%</code> sets its tile: 55% of 400 = 220 wide and, with no height, as tall as html: 300. <code>-5vw</code> = −20px moves the first tile left. The tile repeats: copies start at x = −20 and 200, and more outside the canvas.</p></div>
+<div class="cap" data-t="5" data-step="Ending shape"><h3>2. A tiny ending shape</h3><p><code>radial-gradient(1%4q,…)</code> is an ellipse with a horizontal radius of 1% of the tile, 2.2px, and a vertical radius of 4q, 3.78px. It sits at the center of each tile: (90, 150) and (310, 150). Without the <code>74q</code>, the gradient would end there: a 2.2px blue-gray dot, then yellow.</p></div>
+<div class="cap" data-t="10" data-step="Hint"><h3>3. The transition hint</h3><p><code>74q</code> has no color: it is a transition hint. The last stop has no position, so it would go at 100%, the 2.2px of the ending shape. A stop can't come before what precedes it, so it moves up to 74q = 69.9px. Hint and stop at the same place make a sharp edge. The ellipse keeps its proportions: a vertical radius of 69.9 × 3.78 / 2.2 ≈ 120px.</p></div>
+<div class="cap" data-t="15.5" data-step="body"><h3>4. body</h3><p><code>*{…}</code> is <code>&amp; *</code>: every element inside html. head and style are not displayed, body is. <code>margin:50 40</code> puts it at (40, 50), 400 − 80 = 320 wide. In quirks mode, body fills the window height minus its margins: 300 − 100 = 200. Its green, <code>#4A9A86</code>, covers the middle of both ellipses.</p></div>
+<div class="cap" data-t="20.5" data-step="Bulging sides"><h3>5. The bulging sides</h3><p><code>border-radius:17%/52%</code>: horizontal radii of 17% of 320 = 54.4px, vertical radii of 52% of 200 = 104px. Two vertical radii make 208px on each side, more than the 200 of height, so every radius is scaled by 200 / 208. They become 52.3 × 100px, and each side is a half-ellipse.</p></div>
+<div class="cap" data-t="26" data-step="Result" data-live="124 characters · 100% match"><h3>6. Result: 124 characters</h3><p>Two elements. html's gradient, repeated, makes the yellow and both blue-gray ellipses. body puts the green barrel on top.</p></div>
+{%- endif %}
+</div>
+<div class="live"></div>
+</div>
+</div>
+<script>
+(window.AnimScenes = window.AnimScenes || {}).t0604 = (fig) => {
+  const fr = document.documentElement.lang === 'fr';
+  const $ = (s) => fig.querySelector(s);
+  const $$ = (s) => [...fig.querySelectorAll(s)];
+  const live = $('.live');
+  const ease = (x) => (x < 0.5 ? 4 * x * x * x : 1 - Math.pow(-2 * x + 2, 3) / 2);
+  const pr = (t, [a, b]) => ease(Math.min(1, Math.max(0, (t - a) / (b - a))));
+  const win = (t, a, b) => Math.min(pr(t, [a, a + 0.5]), 1 - pr(t, [b - 0.2, b]));
+  const c = fr ? ' :' : ':';
+  const n = (x) => (fr ? String(x).replace('.', ',') : String(x));
+  const mix = (k, a, b) => (k <= 0 ? b : k >= 1 ? a : `color-mix(in srgb, ${a} ${(k * 100).toFixed(1)}%, ${b})`);
+  // Measured on the official code in local Chrome (400 × 300 iframe, quirks mode, getBoundingClientRect, getComputedStyle,
+  // variant renders).
+  // html: 400 × 300 at (0, 0); background -20px 50% / 55% auto, repeat: tiles 220 × 300 at x = -20 + 220k
+  // (/220px 300px gives the same picture). Ending shape radii: 1% of 220 = 2.2px and 4q = 3.78px.
+  // The last stop moves up to the hint 74q = 69.92px (#FAE29E 74q gives the same picture): sharp ellipses
+  // centered at (90, 150) and (310, 150), rx 69.92, ry 69.92 × 3.7795 / 2.2 = 120.12 (rendered x 20..159, y 30..269).
+  // body: 320 × 200 at (40, 50), border-radius 17% / 52% = 54.4 / 104, scaled by 200 / 208 to 52.31 / 100
+  // (52.3px/100px gives the same picture).
+  const RX = 69.92, RY = 120.12, R0X = 2.2, R0Y = 3.7795;
+  const far = $('.t0604-far'), body = $('.t0604-body');
+  const tiles = $$('.t0604-tile'), calls = $$('.t0604-call'), rx = $('.t0604-rx'), ry = $('.t0604-ry');
+  const labs = $$('.zlab');
+  const ivs = [[0.3, 5], [5.3, 10], [10.3, 15.5], [15.8, 20.5], [20.8, 26]];
+  return (t, step) => {
+    const teach = fig.dataset.teach === '1';
+    const wide = fig.dataset.view === 'wide';
+    const tw = teach ? 1 - pr(t, [26.3, 27.3]) : 0;
+    // html's gradient on one big layer, tiled like the real one: 220 × 300 tiles from (-20, 0), so from (780, 600)
+    // in the layer. The first color runs to the hint, where the last stop moves up: a tiny ending shape, then 74q.
+    const g = pr(t, [10.6, 12.8]);
+    const L = R0X + (RX - R0X) * g;
+    const farCol = mix(tw, 'var(--t0604-far)', '#fae29e');
+    const ellCol = pr(t, [5.6, 6.2]) > 0 ? mix(tw, 'var(--t0604-ell)', '#4c4c6b') : farCol;
+    far.style.background = `radial-gradient(${R0X}px ${R0Y}px, ${ellCol}, ${L}px, ${farCol}) 780px 600px / 220px 300px, ${farCol}`;
+    tiles.forEach((b) => (b.style.opacity = win(t, 0.4, 15.5)));
+    calls.forEach((b) => (b.style.opacity = win(t, 5.6, 10.6) * (1 - g)));
+    // the two radii of the left ellipse, once stretched
+    const rv = win(t, 13, 15.5);
+    rx.style.cssText = `left:90px;top:calc(150px - 1px * var(--k, 1));width:${RX}px;height:2px;height:calc(2px * var(--k, 1));opacity:${rv}`;
+    ry.style.cssText = `left:calc(90px - 1px * var(--k, 1));top:${150 - RY}px;width:2px;width:calc(2px * var(--k, 1));height:${RY}px;opacity:${rv}`;
+    // body: square, then rounded
+    const r = pr(t, [21.2, 23.2]);
+    body.style.background = mix(tw, 'var(--t0604-body)', '#4a9a86');
+    body.style.opacity = pr(t, [16.2, 16.9]);
+    body.style.borderRadius = `${52.31 * r}px / ${100 * r}px`;
+    // labels: first row at the top of the frame, second row below it (wide view) or at the bottom (canvas view)
+    const x0 = wide ? -260 : 0, y0 = wide ? -60 : 0;
+    labs.forEach((l) => {
+      const row = +l.dataset.r;
+      l.style.left = `calc(${x0}px + 4px * var(--k, 1))`;
+      l.style.top = row === 0 || wide ? `calc(${y0}px + ${4 + 19 * row}px * var(--k, 1))` : 'calc(300px - 21px * var(--k, 1))';
+      l.style.opacity = win(t, ...ivs[+l.dataset.l - 1]);
+    });
+    let txt;
+    if (step === 0) txt = `${fr ? 'tuile' : 'tile'}${c} 220 × 300 · x = −20, 200`;
+    else if (step === 1) txt = `${fr ? 'forme de fin' : 'ending shape'}${c} ${n(2.2)} × ${n(3.78)}px`;
+    else if (step === 2) txt = `${fr ? 'rayons' : 'radii'}${c} ${n(69.9)}px / 120px · ${fr ? 'centres' : 'centers'} x 90, 310`;
+    else if (step === 3) txt = `body${c} 320 × 200 ${fr ? 'en' : 'at'} (40, 50)`;
+    else if (step === 4) txt = `${fr ? 'rayons' : 'radii'}${c} ${n(52.3)}px / 100px`;
+    else txt = $$('.caps .cap')[5].dataset.live || '';
+    live.textContent = txt;
+  };
+};
+</script>
+</figure>
