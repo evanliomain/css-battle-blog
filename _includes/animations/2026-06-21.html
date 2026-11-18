@@ -1,0 +1,139 @@
+<figure class="anim t0621" data-duration="32" data-scene="t0621" data-wide="-30 -20 460 440" data-off-label="-26 404" style="--bg:#fff">
+<style>
+.t0621{--t0621-r:#ec1d25;--t0621-bl:#004b8e;--t0621-h:#ea580c;--t0621-b:#16a34a;--t0621-d:#7c3aed;--t0621-p:#db2777;--t0621-w:#fcd34d;--t0621-gd:#14142a}
+.t0621 .scene .t0621-g{width:0;height:0;transform-origin:0 0;opacity:0}
+.t0621 .t0621-g > i{position:absolute;display:block}
+.t0621 .scene .t0621-mb{left:0;top:0;width:400px;height:400px;opacity:0;outline:calc(1.5px * var(--k, 1)) dashed var(--t0621-gd);outline-offset:calc(-0.75px * var(--k, 1))}
+.t0621 .scene .t0621-x{width:0;height:0;opacity:0;z-index:5}
+.t0621 .t0621-x::before,.t0621 .t0621-x::after{content:"";position:absolute;background:#14142a;box-shadow:0 0 0 calc(1px * var(--k, 1)) #fff}
+.t0621 .t0621-x::before{left:-8px;top:calc(-1px * var(--k, 1));width:16px;height:calc(2px * var(--k, 1))}
+.t0621 .t0621-x::after{top:-8px;left:calc(-1px * var(--k, 1));height:16px;width:calc(2px * var(--k, 1))}
+.t0621 .zlab{color:#14142a;background:rgb(255 255 255 / .92);padding:1px 5px;border-radius:3px;opacity:0}
+</style>
+<div class="anim-col">
+<div class="stage" role="img" aria-label="{% if include.lang == "fr" %}Animation : &lt;dt>&lt;p> donne quatre boîtes emboîtées, html, body, dt et p ; margin:50% donne à html 200px de chaque côté, même en haut et en bas, donc une boîte de 0 × 0 en (200, 200), et 0 aux autres : les quatre boîtes sont des points ; html porte trois ombres : un carré bleu de 60,47px, un carré blanc de 119,06px, et un carré rouge de 74,83px décalé de 52,91px vers la droite et le bas, dont le blanc cache l'intérieur : une équerre ; offset: ray(0deg) remonte html au centre du canevas, (200, 150), et le tourne de -90° : l'équerre passe en haut à droite ; body, dans html, prend son quart de tour en plus : -180°, équerre en haut à gauche ; dt est à -270°, en bas à gauche ; p à -360°, en bas à droite ; le carré blanc et le carré bleu de p couvrent le milieu{% else %}Animation: &lt;dt>&lt;p> gives four nested boxes, html, body, dt and p; margin:50% gives html 200px on every side, even at the top and bottom, so a 0 × 0 box at (200, 200), and 0 to the others: the four boxes are points; html has three shadows: a 60.47px blue square, a 119.06px white square, and a 74.83px red square moved 52.91px right and down, whose inner part is hidden by the white: a corner bracket; offset: ray(0deg) moves html up to the canvas center, (200, 150), and turns it -90°: the bracket goes to the top right; body, inside html, adds its own quarter turn: -180°, bracket at the top left; dt is at -270°, bottom left; p at -360°, bottom right; p's white and blue squares cover the middle{% endif %}">
+<div class="scene">
+<div class="t0621-mb"></div>
+<div class="t0621-g" data-e="h"><i data-s="r"></i><i data-s="w"></i><i data-s="b"></i></div>
+<div class="t0621-g" data-e="b"><i data-s="r"></i><i data-s="w"></i><i data-s="b"></i></div>
+<div class="t0621-g" data-e="d"><i data-s="r"></i><i data-s="w"></i><i data-s="b"></i></div>
+<div class="t0621-g" data-e="p"><i data-s="r"></i><i data-s="w"></i><i data-s="b"></i></div>
+<div class="t0621-x"></div>
+<span class="zlab t0621-l1" data-l="1">{% if include.lang == "fr" %}html : 50 % de 400 = 200px de chaque côté{% else %}html: 50% of 400 = 200px on every side{% endif %}</span>
+<span class="zlab t0621-l2" data-l="1">{% if include.lang == "fr" %}html, body, dt, p : 0 × 0 en (200, 200){% else %}html, body, dt, p: 0 × 0 at (200, 200){% endif %}</span>
+<span class="zlab t0621-l1" data-l="2">{% if include.lang == "fr" %}32Q = 30,24 · 63Q = 59,53{% else %}32Q = 30.24 · 63Q = 59.53{% endif %}</span>
+<span class="zlab t0621-l2" data-l="2">{% if include.lang == "fr" %}56q = 52,91 · ,99cm = 37,42{% else %}56q = 52.91 · .99cm = 37.42{% endif %}</span>
+<span class="zlab t0621-l1" data-l="3">{% if include.lang == "fr" %}offset-position normal → centre (200, 150){% else %}offset-position normal → center (200, 150){% endif %}</span>
+<span class="zlab t0621-l2" data-l="3">{% if include.lang == "fr" %}offset-rotate auto, ray(0deg) → −90°{% else %}offset-rotate auto, ray(0deg) → −90°{% endif %}</span>
+<span class="zlab t0621-l1" data-l="4">{% if include.lang == "fr" %}body : −90° − 90° = −180°{% else %}body: −90° − 90° = −180°{% endif %}</span>
+<span class="zlab t0621-l1" data-l="5">{% if include.lang == "fr" %}dt : −180° − 90° = −270°{% else %}dt: −180° − 90° = −270°{% endif %}</span>
+<span class="zlab t0621-l1" data-l="6">{% if include.lang == "fr" %}p : −270° − 90° = −360°{% else %}p: −270° − 90° = −360°{% endif %}</span>
+</div>
+</div>
+<div class="legend"><span><i style="--c:var(--t0621-h)"></i>{% if include.lang == "fr" %}ombre rouge de html{% else %}html red shadow{% endif %}</span><span><i style="--c:var(--t0621-b)"></i>{% if include.lang == "fr" %}de body{% else %}body's{% endif %}</span><span><i style="--c:var(--t0621-d)"></i>{% if include.lang == "fr" %}de dt{% else %}dt's{% endif %}</span><span><i style="--c:var(--t0621-p)"></i>{% if include.lang == "fr" %}de p{% else %}p's{% endif %}</span><span><i style="--c:var(--t0621-w)"></i>{% if include.lang == "fr" %}ombres blanches{% else %}white shadows{% endif %}</span><span><i style="--c:var(--t0621-bl)"></i>{% if include.lang == "fr" %}ombres bleues{% else %}blue shadows{% endif %}</span><span><i style="--c:transparent;outline:1.5px dashed currentColor;outline-offset:-2px"></i>{% if include.lang == "fr" %}boîte de marge de html{% else %}html margin box{% endif %}</span></div>
+</div>
+<div class="anim-side">
+<pre class="code" aria-hidden="true"><span data-on="1 5">&lt;dt></span><span data-on="1 6">&lt;p></span>&lt;style>*{<span data-on="1">margin:50%</span>;<span data-on="2">box-shadow:0 0 0 32Q#004b8e,0 0 0 63Q#fff,</span><span data-on="2" data-tone="2">56q 56q.0.99cm#ec1d25</span>;<span data-on="3 4 5 6">offset:ray(0deg</span></pre>
+<div class="now" aria-live="polite">
+<div class="caps">
+{%- if include.lang == "fr" %}
+<div class="cap" data-t="0" data-step="Boîtes"><h3>1. Quatre points</h3><p><code>&lt;dt>&lt;p></code> ajoute deux blocs, l'un dans l'autre : html, body, dt et p sont emboîtés. head et style sont masqués. Une marge en % se calcule toujours sur la largeur du parent, même en haut et en bas. html a 50 % de 400 = 200px de chaque côté : sa boîte fait 0 × 0, en (200, 200). Les autres ont 50 % de 0 = 0 : des boîtes de 0 × 0, au même endroit.</p></div>
+<div class="cap" data-t="5" data-step="Ombres"><h3>2. Trois ombres</h3><p>Sur une boîte de 0 × 0, une ombre est un carré de deux fois son étalement. Rouge : <code>.99cm</code> = 37,42px, un carré de 74,83px, décalé de <code>56q</code> = 52,91px vers la droite et le bas. Blanc : 63Q = 59,53px, un carré de 119,06px. Bleu : 32Q = 30,24px, un carré de 60,47px. La première ombre est dessus : le blanc cache l'intérieur du rouge, il reste une équerre.</p></div>
+<div class="cap" data-t="10" data-step="offset"><h3>3. offset: ray(0deg)</h3><p>La boîte se place au centre de son bloc conteneur, le canevas pour html : elle remonte de (200, 200) à (200, 150). Le rayon de 0deg pointe vers le haut, et <code>offset-rotate</code> vaut <code>auto</code> : la boîte le suit, et tourne d'un quart de tour vers la gauche, −90°. L'équerre passe en haut à droite.</p></div>
+<div class="cap" data-t="15.5" data-step="body"><h3>4. body : un quart de tour de plus</h3><p>body est dans html. Il a les mêmes trois ombres et le même <code>offset</code>. Son centre va au centre de html, déjà en (200, 150). Sa rotation s'ajoute à celle de html : −180°. Son équerre passe en haut à gauche.</p></div>
+<div class="cap" data-t="20" data-step="dt"><h3>5. dt</h3><p>dt est dans body : −270°. Son équerre passe en bas à gauche.</p></div>
+<div class="cap" data-t="24.5" data-step="p"><h3>6. p</h3><p>p est dans dt : −360°, un tour complet. Son équerre est en bas à droite, comme sans rotation. Ses carrés blanc et bleu sont peints en dernier, au même endroit que les autres.</p></div>
+<div class="cap" data-t="29" data-step="Résultat" data-live="106 caractères · 100 % identique"><h3>7. Résultat : 106 caractères</h3><p>Quatre équerres rouges autour d'un carré bleu. Une seule liste d'ombres, quatre boîtes qui tournent chacune d'un quart de tour de plus que leur parent.</p></div>
+{%- else %}
+<div class="cap" data-t="0" data-step="Boxes"><h3>1. Four points</h3><p><code>&lt;dt>&lt;p></code> adds two blocks, one inside the other: html, body, dt and p are nested. head and style are hidden. A margin in % always uses the parent's width, even at the top and bottom. html gets 50% of 400 = 200px on every side: its box is 0 × 0, at (200, 200). The others get 50% of 0 = 0: 0 × 0 boxes, at the same place.</p></div>
+<div class="cap" data-t="5" data-step="Shadows"><h3>2. Three shadows</h3><p>On a 0 × 0 box, a shadow is a square twice its spread. Red: <code>.99cm</code> = 37.42px, a 74.83px square, moved <code>56q</code> = 52.91px right and down. White: 63Q = 59.53px, a 119.06px square. Blue: 32Q = 30.24px, a 60.47px square. The first shadow is on top: the white hides the inner part of the red, and a corner bracket is left.</p></div>
+<div class="cap" data-t="10" data-step="offset"><h3>3. offset: ray(0deg)</h3><p>The box goes to the center of its containing block, the canvas for html: it moves up from (200, 200) to (200, 150). The 0deg ray points up, and <code>offset-rotate</code> is <code>auto</code>: the box follows it, and turns a quarter turn counterclockwise, −90°. The bracket goes to the top right.</p></div>
+<div class="cap" data-t="15.5" data-step="body"><h3>4. body: one more quarter turn</h3><p>body is inside html. It has the same three shadows and the same <code>offset</code>. Its center goes to html's center, already at (200, 150). Its turn adds to html's: −180°. Its bracket goes to the top left.</p></div>
+<div class="cap" data-t="20" data-step="dt"><h3>5. dt</h3><p>dt is inside body: −270°. Its bracket goes to the bottom left.</p></div>
+<div class="cap" data-t="24.5" data-step="p"><h3>6. p</h3><p>p is inside dt: −360°, a full turn. Its bracket is at the bottom right, as with no turn at all. Its white and blue squares are painted last, at the same place as the others.</p></div>
+<div class="cap" data-t="29" data-step="Result" data-live="106 characters · 100% match"><h3>7. Result: 106 characters</h3><p>Four red corner brackets around a blue square. One list of shadows, and four boxes, each turned a quarter turn more than its parent.</p></div>
+{%- endif %}
+</div>
+<div class="live"></div>
+</div>
+</div>
+<script>
+(window.AnimScenes = window.AnimScenes || {}).t0621 = (fig) => {
+  const fr = document.documentElement.lang === 'fr';
+  const $ = (s) => fig.querySelector(s);
+  const $$ = (s) => [...fig.querySelectorAll(s)];
+  const live = $('.live');
+  const ease = (x) => (x < 0.5 ? 4 * x * x * x : 1 - Math.pow(-2 * x + 2, 3) / 2);
+  const pr = (t, [a, b]) => ease(Math.min(1, Math.max(0, (t - a) / (b - a))));
+  const win = (t, a, b) => Math.min(pr(t, [a, a + 0.5]), 1 - pr(t, [b - 0.2, b]));
+  const c = fr ? ' :' : ':';
+  const num = (v, d = 2) => (fr ? v.toFixed(d).replace('.', ',') : v.toFixed(d));
+  const mix = (k, a, b) => (k <= 0 ? b : k >= 1 ? a : `color-mix(in srgb, ${a} ${(k * 100).toFixed(1)}%, ${b})`);
+  // Measured on the official code in local Chrome (400 × 300 iframe, getBoundingClientRect, getComputedStyle, variant renders):
+  // html, body, dt, p: 0 × 0 boxes; html's margin is 200px on every side. Without offset they all sit at (200, 200);
+  // with it, at (200, 150). Shadows: 30.2362px blue, 59.5276px white, 52.9134px 52.9134px 0 37.4173px red.
+  // One red color per element: html's bracket is at the top right (-90°), body's top left (-180°),
+  // dt's bottom left (-270°), p's bottom right (-360°). offset-rotate: 0deg puts all four at the bottom right.
+  const FIN = 29;
+  const BL = 30.2362, WH = 59.5276, OF = 52.9134, RD = 37.4173;
+  const els = ['h', 'b', 'd', 'p'];
+  const G = Object.fromEntries($$('.t0621-g').map((g) => [g.dataset.e, g]));
+  const sq = (e, x, y, r) => { e.style.left = `${x - r}px`; e.style.top = `${y - r}px`; e.style.width = `${2 * r}px`; e.style.height = `${2 * r}px`; };
+  els.forEach((k) => {
+    const [r, w, b] = G[k].children;
+    sq(r, OF, OF, RD); sq(w, 0, 0, WH); sq(b, 0, 0, BL);
+  });
+  const mb = $('.t0621-mb'), cross = $('.t0621-x');
+  const labs = $$('.zlab');
+  return (t, step) => {
+    const wide = fig.dataset.view === 'wide';
+    const teach = fig.dataset.teach === '1';
+    const tw = teach ? 1 - pr(t, [FIN, FIN + 0.8]) : 0;
+    // 1. html's margin box, the four boxes as one point.
+    mb.style.opacity = win(t, 0.5, 10.6);
+    // 2. html's three shadows, at (200, 200). 3. offset: up to (200, 150), then -90°.
+    const y = 200 - 50 * pr(t, [10.6, 12]);
+    const turn = (k, a, b) => -90 * (k + pr(t, [a, b]));
+    const ang = {
+      h: turn(0, 12.4, 14.2),
+      b: turn(1, 16.6, 18.4),
+      d: turn(2, 21.1, 22.9),
+      p: turn(3, 25.6, 27.4),
+    };
+    const show = { h: 1, b: pr(t, [15.8, 16.3]), d: pr(t, [20.3, 20.8]), p: pr(t, [24.8, 25.3]) };
+    els.forEach((k) => {
+      const g = G[k];
+      const [r, w, b] = g.children;
+      g.style.left = '200px';
+      g.style.top = `${y}px`;
+      g.style.transform = `rotate(${ang[k]}deg)`;
+      g.style.opacity = show[k];
+      r.style.background = mix(tw, `var(--t0621-${k})`, 'var(--t0621-r)');
+      w.style.background = mix(tw, 'var(--t0621-w)', '#fff');
+      b.style.background = 'var(--t0621-bl)';
+      if (k === 'h') { r.style.opacity = pr(t, [5.4, 6.2]); w.style.opacity = pr(t, [6.6, 7.4]); b.style.opacity = pr(t, [7.8, 8.6]); }
+    });
+    cross.style.left = '200px';
+    cross.style.top = `${y}px`;
+    cross.style.opacity = 1 - pr(t, [FIN, FIN + 0.6]);
+    labs.forEach((l) => {
+      const n = +l.dataset.l, second = l.classList.contains('t0621-l2');
+      l.style.left = wide ? 'calc(-30px + 4px * var(--k, 1))' : 'calc(4px * var(--k, 1))';
+      l.style.top = `calc(${wide ? -20 : 0}px + ${second ? 20 : 4}px * var(--k, 1))`;
+      const ivs = [[0.3, 5], [5.3, 10], [10.3, 15.5], [15.8, 20], [20.3, 24.5], [24.8, FIN]];
+      l.style.opacity = win(t, ...ivs[n - 1]);
+    });
+    const deg = (a) => `${a < -0.05 ? '−' : ''}${Math.abs(a).toFixed(0)}°`;
+    let txt;
+    if (step === 0) txt = `html${c} 0 × 0 ${fr ? 'en' : 'at'} (200, 200)`;
+    else if (step === 1) txt = `${fr ? 'carré rouge' : 'red square'}${c} ${num(OF - RD + 200)} → ${num(OF + RD + 200)}`;
+    else if (step === 2) txt = `html${c} (200, ${num(y, 0)}) · ${deg(ang.h)}`;
+    else if (step === 3) txt = `body${c} ${deg(ang.b)}`;
+    else if (step === 4) txt = `dt${c} ${deg(ang.d)}`;
+    else if (step === 5) txt = `p${c} ${deg(ang.p)}`;
+    else txt = $$('.caps .cap')[6].dataset.live || '';
+    live.textContent = txt;
+  };
+};
+</script>
+</figure>
