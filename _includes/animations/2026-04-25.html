@@ -1,0 +1,129 @@
+<figure class="anim t0425" data-duration="30" data-scene="t0425" data-wide="-50 -40 500 380" data-off-label="-46 -36" style="--bg:#405c48">
+<style>
+.t0425{--t0425-yel:#f7ec7d;--t0425-grn:#405c48;--t0425-hbox:#a3e635;--t0425-hbd:#38bdf8;--t0425-bbox:#fb923c;--t0425-bbd:#f472b6;--t0425-nb:#c4b5fd}
+.t0425 .scene .t0425-white{left:0;top:0;width:400px;height:300px;background:#fff;box-shadow:inset 0 0 0 calc(1px * var(--k, 1)) rgb(20 20 42 / .18);z-index:1}
+.t0425 .scene .t0425-html{left:44px;top:20px;width:312px;height:260px;opacity:0;z-index:3}
+.t0425 .scene .t0425-hb{top:20px;width:40px;height:260px;z-index:2}
+.t0425 .scene .t0425-body{opacity:0;z-index:5}
+.t0425 .scene .t0425-bb{z-index:4}
+.t0425 .scene .t0425-nb{opacity:0;z-index:6}
+.t0425 .scene .zlab{color:#14142a;background:rgb(255 255 255 / .92);box-shadow:0 0 0 1px rgb(20 20 42 / .25);padding:1px 5px;border-radius:3px;opacity:0;z-index:8}
+@media (max-width:700px){.t0425 .scene .zlab{font-size:8px;padding:0 3px}}
+.t0425 .legend .t0425-ol{box-shadow:0 0 0 1px currentColor}
+</style>
+<div class="anim-col">
+<div class="stage" role="img" aria-label="{% if include.lang == "fr" %}Animation : la règle *{ vise tous les éléments, la règle imbriquée *{ tous sauf html. Le fond #405C48 est dans la règle imbriquée : il va à body, puis passe sur tout le canevas, car html n'a pas de fond. html garde margin:5%44 : 20px en haut et en bas, 44px sur les côtés. En mode quirks, il remplit la hauteur du canevas : 260px, de y = 20 à 280. border-inline:solid 5ch#F7EC7D lui donne deux bordures jaunes de 40px, à gauche et à droite. body, qui contient l'espace insécable du début, prend la même bordure et margin:64 4 0. Sans zoom, il serait en (88, 84), 224 × 196, avec des bordures de 40px. zoom:2.5 multiplie tout : marges de 160 et 10, bordures de 100. body passe en (94, 180), 212 de large, et remplit html jusqu'en bas : 100 de haut. Deux carrés jaunes de 100 × 100, séparés de 12px, entre les deux hautes barres.{% else %}Animation: the *{ rule matches every element, the nested *{ rule every element but html. The #405C48 background is in the nested rule: it goes to body, then moves to the whole canvas, since html has no background. html keeps margin:5%44: 20px at the top and bottom, 44px on the sides. In quirks mode, it fills the canvas height: 260px, from y = 20 to 280. border-inline:solid 5ch#F7EC7D gives it two 40px yellow borders, left and right. body, which holds the leading no-break space, gets the same border and margin:64 4 0. Without zoom, it would be at (88, 84), 224 × 196, with 40px borders. zoom:2.5 multiplies everything: margins of 160 and 10, borders of 100. body moves to (94, 180), 212 wide, and fills html down to the bottom: 100 tall. Two 100 × 100 yellow squares, 12px apart, between the two tall bars.{% endif %}">
+<div class="scene">
+<div class="t0425-white"></div>
+<div class="t0425-hb"></div>
+<div class="t0425-hb"></div>
+<div class="t0425-html"></div>
+<div class="t0425-bb"></div>
+<div class="t0425-bb"></div>
+<div class="t0425-body"></div>
+<div class="t0425-nb"></div>
+<span class="zlab" data-l="1" style="left:120px;top:140px">{% if include.lang == "fr" %}fond de body → canevas{% else %}body's background → canvas{% endif %}</span>
+<span class="zlab" data-l="2" style="left:128px;top:3px">5% × 400 = 20</span>
+<span class="zlab" data-l="2" style="left:3px;top:140px">44</span>
+<span class="zlab" data-l="2" style="left:138px;top:140px">300 − 2 × 20 = 260</span>
+<span class="zlab" data-l="3" style="left:90px;top:30px">5ch = 40px</span>
+<span class="zlab" data-l="3" style="left:150px;top:140px">312 − 80 = 232</span>
+<span class="zlab" data-l="4" style="left:134px;top:30px">x = 88 · y = 84</span>
+<span class="zlab" data-l="4" style="left:134px;top:58px">{% if include.lang == "fr" %}espace insécable{% else %}no-break space{% endif %}</span>
+<span class="zlab" data-l="4" style="left:150px;top:180px">224 × 196</span>
+<span class="zlab" data-l="5" style="left:112px;top:60px">{% if include.lang == "fr" %}× 2,5 : 160 · 10 · 100{% else %}× 2.5: 160 · 10 · 100{% endif %}</span>
+<span class="zlab" data-l="5" style="left:112px;top:90px">260 − 160 = 100</span>
+<span class="zlab" data-l="5" style="left:186px;top:150px">12</span>
+</div>
+</div>
+<div class="legend"><span><i class="t0425-ol" style="--c:#f7ec7d"></i>{% if include.lang == "fr" %}#f7ec7d : les bordures gauche et droite de html et de body{% else %}#f7ec7d: html's and body's left and right borders{% endif %}</span><span><i class="t0425-ol" style="--c:#405c48"></i>{% if include.lang == "fr" %}#405c48 : le fond de body, passé au canevas{% else %}#405c48: body's background, moved to the canvas{% endif %}</span><span><i style="--c:#a3e635"></i>{% if include.lang == "fr" %}boîte de html{% else %}html's box{% endif %}</span><span><i style="--c:#38bdf8"></i>{% if include.lang == "fr" %}bordures de html, 40px{% else %}html's borders, 40px{% endif %}</span><span><i style="--c:#fb923c"></i>{% if include.lang == "fr" %}boîte de body{% else %}body's box{% endif %}</span><span><i style="--c:#f472b6"></i>{% if include.lang == "fr" %}bordures de body{% else %}body's borders{% endif %}</span><span><i style="--c:#c4b5fd"></i>{% if include.lang == "fr" %}l'espace insécable, dans body{% else %}the no-break space, in body{% endif %}</span></div>
+</div>
+<div class="anim-side">
+<pre class="code" aria-hidden="true"><span data-on="4">&nbsp;</span>&lt;style><span data-on="2 3">*{</span><span data-on="3 5">border-inline:solid 5ch#F7EC7D;</span><span data-on="2">margin:5%44;</span><span data-on="1 4" data-tone="2">*{</span><span data-on="4">margin:64 4 0;</span><span data-on="5">zoom:2.5;</span><span data-on="1">background:#405C48</span></pre>
+<div class="now" aria-live="polite">
+<div class="caps">
+{%- if include.lang == "fr" %}
+<div class="cap" data-t="0" data-step="Le fond"><h3>1. Deux règles, un fond</h3><p><code>*{</code> vise tous les éléments. Le <code>*{</code> imbriqué veut dire <code>* *</code> : tout élément placé dans un autre, donc tous sauf html. Le fond vert est dans cette règle-là : html n'en a pas, body reçoit <code>#405C48</code>. Quand html n'a pas de fond, celui de body passe sur tout le canevas.</p></div>
+<div class="cap" data-t="5" data-step="html"><h3>2. La boîte de html</h3><p>Seul html garde <code>margin:5%44</code> : sur les autres, la règle imbriquée la remplace (même spécificité, écrite après). Un pourcentage de marge se prend sur la largeur : 5 % × 400 = 20 en haut et en bas. 44 sur les côtés (mode quirks : un nombre seul est lu en px). En mode quirks, html remplit la hauteur du canevas : 300 − 2 × 20 = 260. Sa boîte va de x = 44 à 356 et de y = 20 à 280.</p></div>
+<div class="cap" data-t="10" data-step="Bordures"><h3>3. Deux bordures</h3><p><code>border-inline:solid 5ch#F7EC7D</code> ne pose que les bordures gauche et droite. <code>5ch</code>, c'est cinq largeurs de « 0 » : 40px dans la police par défaut de mon Chrome. Deux barres de 40 × 260, de x = 44 à 84 et de 316 à 356. Il reste 312 − 80 = 232 au milieu.</p></div>
+<div class="cap" data-t="15" data-step="body"><h3>4. body, sans zoom</h3><p>La règle imbriquée vise head, style et body ; head et style ne s'affichent pas. La règle du dehors vise aussi body : il a la même bordure. L'espace insécable du début est du texte : il va dans body, sur une ligne. Sans zoom, <code>margin:64 4 0</code> mettrait body en x = 84 + 4 = 88, y = 20 + 64 = 84, sur 232 − 8 = 224 de large. En mode quirks, il remplit html jusqu'en y = 280 : 196 de haut. Ses bordures feraient 40px.</p></div>
+<div class="cap" data-t="20" data-step="zoom"><h3>5. zoom:2.5</h3><p><code>zoom:2.5</code> multiplie tout sur body : les marges, 64 × 2,5 = 160 et 4 × 2,5 = 10, et les bordures, 40 × 2,5 = 100. body est en x = 94, y = 20 + 160 = 180, sur 212 de large. Il remplit toujours html : 260 − 160 = 100 de haut. Deux carrés de 100 × 100, de x = 94 à 194 et de 206 à 306. Entre les deux, 12px : le contenu de body, où l'espace insécable prend 10px.</p></div>
+<div class="cap" data-t="25" data-step="Résultat" data-live="96 caractères · 100 % identique"><h3>6. Résultat : 96 caractères</h3><p>Une seule bordure, écrite une fois : 40px sur html, 100px sur body grâce au zoom. Les deux hautes barres et les deux carrés.</p></div>
+{%- else %}
+<div class="cap" data-t="0" data-step="Background"><h3>1. Two rules, one background</h3><p><code>*{</code> matches every element. The nested <code>*{</code> means <code>* *</code>: every element inside another one, so all of them but html. The green background is in that rule: html gets none, body gets <code>#405C48</code>. When html has no background, body's moves to the whole canvas.</p></div>
+<div class="cap" data-t="5" data-step="html"><h3>2. html's box</h3><p>Only html keeps <code>margin:5%44</code>: on the others, the nested rule replaces it (same specificity, written later). A margin percentage is taken from the width: 5% × 400 = 20 at the top and bottom. 44 on the sides (quirks mode: a bare number is read in px). In quirks mode, html fills the canvas height: 300 − 2 × 20 = 260. Its box runs from x = 44 to 356 and from y = 20 to 280.</p></div>
+<div class="cap" data-t="10" data-step="Borders"><h3>3. Two borders</h3><p><code>border-inline:solid 5ch#F7EC7D</code> only sets the left and right borders. <code>5ch</code> is five widths of a "0": 40px in my Chrome's default font. Two 40 × 260 bars, from x = 44 to 84 and from 316 to 356. That leaves 312 − 80 = 232 in the middle.</p></div>
+<div class="cap" data-t="15" data-step="body"><h3>4. body, without zoom</h3><p>The nested rule matches head, style and body; head and style are not displayed. The outer rule matches body too: it gets the same border. The no-break space at the start is text: it goes into body, on one line. Without zoom, <code>margin:64 4 0</code> would put body at x = 84 + 4 = 88, y = 20 + 64 = 84, 232 − 8 = 224 wide. In quirks mode, it fills html down to y = 280: 196 tall. Its borders would be 40px.</p></div>
+<div class="cap" data-t="20" data-step="zoom"><h3>5. zoom:2.5</h3><p><code>zoom:2.5</code> multiplies everything on body: the margins, 64 × 2.5 = 160 and 4 × 2.5 = 10, and the borders, 40 × 2.5 = 100. body is at x = 94, y = 20 + 160 = 180, 212 wide. It still fills html: 260 − 160 = 100 tall. Two 100 × 100 squares, from x = 94 to 194 and from 206 to 306. Between them, 12px: body's content, where the no-break space takes 10px.</p></div>
+<div class="cap" data-t="25" data-step="Result" data-live="96 characters · 100% match"><h3>6. Result: 96 characters</h3><p>One border, written once: 40px on html, 100px on body thanks to the zoom. The two tall bars and the two squares.</p></div>
+{%- endif %}
+</div>
+<div class="live"></div>
+</div>
+</div>
+<script>
+(window.AnimScenes = window.AnimScenes || {}).t0425 = (fig) => {
+  const fr = document.documentElement.lang === 'fr';
+  const $ = (s) => fig.querySelector(s);
+  const $$ = (s) => [...fig.querySelectorAll(s)];
+  const live = $('.live');
+  const ease = (x) => (x < 0.5 ? 4 * x * x * x : 1 - Math.pow(-2 * x + 2, 3) / 2);
+  const pr = (t, a, b) => ease(Math.min(1, Math.max(0, (t - a) / (b - a))));
+  const win = (t, a, b) => Math.min(pr(t, a, a + 0.5), 1 - pr(t, b - 0.3, b));
+  const mix = (k, a, b) => (k <= 0 ? b : k >= 1 ? a : `color-mix(in srgb, ${a} ${(k * 100).toFixed(1)}%, ${b})`);
+  // Measured on the official code in local Chrome (400 × 300 iframe, quirks mode, getBoundingClientRect, getComputedStyle, pixels).
+  // html: (44, 20) 312 × 260, margin 20px 44px, borders 40px (5ch), no background. body: background rgb(64, 92, 72), zoom 2.5,
+  // (94, 180) 212 × 100 on screen, borders 100px on screen. No-break space: (194, 180) 10 × 46.
+  // Without zoom:2.5 (variant render): body (88, 84) 224 × 196, borders 40px, no-break space (128, 84) 4 × 18.
+  // In between, body follows the zoom z: x = 84 + 4z, y = 20 + 64z, width 232 − 8z, height 260 − 64z, borders 40z.
+  const white = $('.t0425-white'), html = $('.t0425-html'), body = $('.t0425-body'), nb = $('.t0425-nb');
+  const hbs = $$('.t0425-hb'), bbs = $$('.t0425-bb');
+  const labs = $$('.zlab');
+  const ivs = [[0.3, 4.8], [5.3, 9.8], [10.3, 14.8], [15.3, 19.8], [23.2, 24.8]];
+  const box = (el, o, col, teach) => {
+    el.style.opacity = o;
+    el.style.boxShadow = teach && o > 0 ? `inset 0 0 0 calc(2px * var(--k, 1)) ${col}` : 'none';
+    el.style.outline = !teach && o > 0 ? 'calc(1.5px * var(--k, 1)) dashed #fff' : 'none';
+    el.style.outlineOffset = 'calc(-0.75px * var(--k, 1))';
+    el.style.filter = !teach && o > 0 ? 'drop-shadow(0 0 calc(1px * var(--k, 1)) rgb(0 0 0 / .9))' : 'none';
+  };
+  return (t, step) => {
+    const teach = fig.dataset.teach === '1';
+    const tw = teach ? 1 - pr(t, 25.2, 26.2) : 0;
+    white.style.opacity = 1 - pr(t, 1, 2.6);
+    box(html, win(t, 5.3, 14.8), 'var(--t0425-hbox)', teach);
+    // html's borders grow from the outer edge to 5ch = 40px
+    const hw = 40 * pr(t, 10.6, 12.2);
+    const hc = mix(tw, 'var(--t0425-hbd)', 'var(--t0425-yel)');
+    hbs[0].style.left = '44px';
+    hbs[1].style.left = `${356 - hw}px`;
+    hbs.forEach((b) => { b.style.width = `${hw}px`; b.style.background = hc; b.style.opacity = hw > 0 ? 1 : 0; });
+    // body: appears without zoom, then the zoom goes from 1 to 2.5
+    const ob = pr(t, 15.4, 16.2);
+    const z = 1 + 1.5 * pr(t, 20.6, 23);
+    const x = 84 + 4 * z, y = 20 + 64 * z, w = 232 - 8 * z, h = 260 - 64 * z, bw = 40 * z;
+    body.style.left = `${x}px`; body.style.top = `${y}px`; body.style.width = `${w}px`; body.style.height = `${h}px`;
+    box(body, t < 25 ? win(t, 15.3, 25) : 0, 'var(--t0425-bbox)', teach);
+    const bc = mix(tw, 'var(--t0425-bbd)', 'var(--t0425-yel)');
+    bbs[0].style.left = `${x}px`;
+    bbs[1].style.left = `${x + w - bw}px`;
+    bbs.forEach((b) => { b.style.top = `${y}px`; b.style.width = `${bw}px`; b.style.height = `${h}px`; b.style.background = bc; b.style.opacity = ob; });
+    // the no-break space: 4 × 18.4 at zoom 1, 10 × 46 at zoom 2.5
+    nb.style.left = `${x + bw}px`; nb.style.top = `${y}px`; nb.style.width = `${4 * z}px`; nb.style.height = `${18.4 * z}px`;
+    box(nb, teach ? win(t, 15.3, 25) : 0, 'var(--t0425-nb)', teach);
+    if (teach) nb.style.background = 'rgb(196 181 253 / .35)'; else nb.style.background = 'none';
+    labs.forEach((l) => { l.style.opacity = win(t, ...ivs[+l.dataset.l - 1]); });
+    let txt;
+    if (step === 0) txt = fr ? 'html\u00a0: aucun fond · body\u00a0: #405C48 → canevas' : 'html: no background · body: #405C48 → canvas';
+    else if (step === 1) txt = fr ? '5\u00a0% × 400 = 20 · 300 − 2 × 20 = 260' : '5% × 400 = 20 · 300 − 2 × 20 = 260';
+    else if (step === 2) txt = '5ch = 5 × 8 = 40px · 312 − 2 × 40 = 232';
+    else if (step === 3) txt = 'x = 84 + 4 = 88 · y = 20 + 64 = 84 · 260 − 64 = 196';
+    else if (step === 4) {
+      const f = (n) => (fr ? n.toFixed(1).replace('.', ',') : n.toFixed(1));
+      txt = `zoom ${f(z)} · ${fr ? 'bordure' : 'border'} ${f(40 * z)}px · margin-top ${f(64 * z)}px`;
+    } else txt = $$('.caps .cap')[5].dataset.live || '';
+    live.textContent = txt;
+  };
+};
+</script>
+</figure>
