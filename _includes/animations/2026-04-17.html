@@ -1,0 +1,124 @@
+<figure class="anim t0417" data-duration="36" data-scene="t0417" data-wide="-200 -250 800 800" style="--bg:#3f4869">
+<style>
+.t0417{--t0417-bo:#f472b6;--t0417-bb:#38bdf8;--t0417-line:#ffffff}
+.t0417 .scene .t0417-white{left:-200px;top:-250px;width:800px;height:800px;background:#fff;z-index:2}
+.t0417 .scene .t0417-html{left:-200px;top:-250px;width:800px;height:800px;background:radial-gradient(circle at 400px 400px,#b5bd49 50.08px,#3f4869 0 394.88px,#b5bd49 0);z-index:1}
+.t0417 .scene .t0417-ghost{left:0;top:0;width:400px;height:300px;z-index:3;opacity:0}
+.t0417 .scene .t0417-body{left:85px;top:35px;width:135px;height:126px;z-index:4;opacity:0}
+.t0417 .scene .t0417-ring{box-sizing:border-box;border-radius:50%;border:calc(1.5px * var(--k, 1)) dashed var(--t0417-line);filter:drop-shadow(0 0 calc(1px * var(--k, 1)) #14142a);opacity:0;z-index:6}
+.t0417 .scene .t0417-box{left:85px;top:35px;width:135px;height:126px;box-sizing:border-box;outline:calc(1.5px * var(--k, 1)) dashed #14142a;outline-offset:calc(-0.75px * var(--k, 1));filter:drop-shadow(0 0 calc(1px * var(--k, 1)) #fff);opacity:0;z-index:7}
+.t0417 .scene .t0417-pt{width:calc(7px * var(--k, 1));height:calc(7px * var(--k, 1));transform:translate(-50%, -50%);border-radius:50%;background:#14142a;box-shadow:0 0 0 calc(1.5px * var(--k, 1)) #fff;opacity:0;z-index:8}
+.t0417 .scene .zlab{left:var(--x);top:var(--y);color:#14142a;background:rgb(255 255 255 / .92);box-shadow:0 0 0 1px rgb(20 20 42 / .25);padding:1px 5px;border-radius:3px;opacity:0}
+.t0417[data-view="wide"] .scene .zlab{left:var(--wx);top:var(--wy)}
+@media (max-width:700px){.t0417 .scene .zlab{font-size:8px;padding:0 3px}}
+.t0417 .legend .t0417-ol{box-shadow:0 0 0 1px currentColor}
+.t0417 .legend .t0417-dash{background:none;outline:2px dashed currentColor;outline-offset:-2px}
+</style>
+<div class="anim-col">
+<div class="stage" role="img" aria-label="{% if include.lang == "fr" %}Animation : * vise html, head, body et style ; le *{ imbriqué vise head, body et style. head et style ne s'affichent pas. body, avec margin:35 45%139 85 en mode quirks, va de x = 85 à 220 et de y = 35 à 161. html et body reçoivent le même fond : radial-gradient(1Q,#b5bd49,53Q,#3f4869 0 55ex,#B5BD49)fixed. 1Q en fait un cercle. Le vert olive #b5bd49 va jusqu'à 53Q, soit 50,08px : un disque. Le bleu #3f4869 va jusqu'à 55ex, puis le vert olive reprend. Pour html, avec sa police de 16px, mon Chrome calcule 55ex à 394,88px : hors du canevas, dont les coins sont à 250px du centre. Pour body, avec font:4q, soit 3,78px, mon Chrome calcule 55ex à 93,04px, et la cible place ce bord à 95px du centre : les coins de la boîte de body sont vert olive. fixed centre les deux dégradés sur la fenêtre, en (200, 150) : le disque de body tombe sur celui de html.{% else %}Animation: * matches html, head, body and style; the nested *{ matches head, body and style. head and style are not displayed. body, with margin:35 45%139 85 in quirks mode, runs from x = 85 to 220 and from y = 35 to 161. html and body get the same background: radial-gradient(1Q,#b5bd49,53Q,#3f4869 0 55ex,#B5BD49)fixed. 1Q makes it a circle. Olive #b5bd49 runs up to 53Q, that is 50.08px: a disc. Blue #3f4869 runs up to 55ex, then olive again. For html, with its 16px font, my Chrome computes 55ex as 394.88px: off the canvas, whose corners are 250px from the center. For body, with font:4q, 3.78px, my Chrome computes 55ex as 93.04px, and the target puts that edge 95px from the center: the corners of body's box are olive. fixed centers both gradients on the viewport, at (200, 150): body's disc falls on html's.{% endif %}">
+<div class="scene">
+<div class="t0417-html"></div>
+<div class="t0417-white"></div>
+<div class="t0417-ghost"></div>
+<div class="t0417-body"></div>
+<div class="t0417-ring t0417-r53" style="left:149.92px;top:99.92px;width:100.16px;height:100.16px"></div>
+<div class="t0417-ring t0417-rh" style="left:-194.88px;top:-244.88px;width:789.76px;height:789.76px"></div>
+<div class="t0417-ring t0417-rb" style="left:105px;top:55px;width:190px;height:190px"></div>
+<div class="t0417-ring t0417-rnf" style="left:102.42px;top:47.92px;width:100.16px;height:100.16px"></div>
+<div class="t0417-box"></div>
+<div class="t0417-pt t0417-c" style="left:200px;top:150px"></div>
+<div class="t0417-pt t0417-cb" style="left:152.5px;top:98px"></div>
+<span class="zlab" data-l="1" style="--x:8px;--y:232px;--wx:-195px;--wy:-240px">{% if include.lang == "fr" %}body : 135 × 126 en (85, 35){% else %}body: 135 × 126 at (85, 35){% endif %}</span>
+<span class="zlab" data-l="1" style="--x:8px;--y:256px;--wx:-195px;--wy:-205px">45% × 400 = 180 · 300 − 35 − 139 = 126</span>
+<span class="zlab" data-l="2" style="--x:8px;--y:232px;--wx:-195px;--wy:-240px">{% if include.lang == "fr" %}1Q : rayon de 0,945px{% else %}1Q: a 0.945px ray{% endif %}</span>
+<span class="zlab" data-l="2" style="--x:8px;--y:256px;--wx:-195px;--wy:-205px">{% if include.lang == "fr" %}disque : 53Q = 50,08px{% else %}disc: 53Q = 50.08px{% endif %}</span>
+<span class="zlab" data-l="3" style="--x:8px;--y:232px;--wx:-195px;--wy:-240px">{% if include.lang == "fr" %}html : 55ex = 394,88px (mon Chrome){% else %}html: 55ex = 394.88px (my Chrome){% endif %}</span>
+<span class="zlab" data-l="3" style="--x:8px;--y:256px;--wx:-195px;--wy:-205px">{% if include.lang == "fr" %}coins du canevas : 250px{% else %}canvas corners: 250px{% endif %}</span>
+<span class="zlab" data-l="4" style="--x:8px;--y:232px;--wx:-195px;--wy:-240px">{% if include.lang == "fr" %}body : 4q = 3,78px · 55ex{% else %}body: 4q = 3.78px · 55ex{% endif %}</span>
+<span class="zlab" data-l="4" style="--x:8px;--y:256px;--wx:-195px;--wy:-205px">{% if include.lang == "fr" %}bord dans la cible : 95px{% else %}target edge: 95px{% endif %}</span>
+<span class="zlab" data-l="5" style="--x:8px;--y:232px;--wx:-195px;--wy:-240px">{% if include.lang == "fr" %}fixed : centre (200, 150){% else %}fixed: center (200, 150){% endif %}</span>
+<span class="zlab" data-l="5" style="--x:8px;--y:256px;--wx:-195px;--wy:-205px">{% if include.lang == "fr" %}sans fixed : x = 152,5 ; y = 98{% else %}without fixed: (152.5, 98){% endif %}</span>
+</div>
+</div>
+<div class="legend"><span><i class="t0417-ol" style="--c:#b5bd49"></i>{% if include.lang == "fr" %}#b5bd49 : les deux dégradés{% else %}#b5bd49: both gradients{% endif %}</span><span><i class="t0417-ol" style="--c:#3f4869"></i>{% if include.lang == "fr" %}#3f4869 : les deux dégradés{% else %}#3f4869: both gradients{% endif %}</span><span><i style="--c:#f472b6"></i>{% if include.lang == "fr" %}vert olive de body{% else %}body's olive{% endif %}</span><span><i style="--c:#38bdf8"></i>{% if include.lang == "fr" %}bleu de body{% else %}body's blue{% endif %}</span><span><i class="t0417-dash"></i>{% if include.lang == "fr" %}boîte de body, bords des couleurs{% else %}body's box, color edges{% endif %}</span></div>
+</div>
+<div class="anim-side">
+<pre class="code" aria-hidden="true">&lt;style>*{background:radial-gradient(<span data-on="2">1Q,#b5bd49,53Q,#3f4869 0 </span><span data-on="3 4" data-tone="2">55ex</span><span data-on="3">,#B5BD49</span>)<span data-on="5">fixed</span>;*{<span data-on="1">margin:35 45%139 85;</span><span data-on="4" data-tone="2">font:4q"</span></pre>
+<div class="now" aria-live="polite">
+<div class="caps">
+{%- if include.lang == "fr" %}
+<div class="cap" data-t="0" data-step="La boîte de body"><h3>1. body : 135 × 126</h3><p>Pas de doctype : mode quirks, les marges sans unité sont des px. <code>*</code> vise html, head, body et style ; le <code>*{</code> imbriqué vise head, body et style. head et style ne s'affichent pas : il reste html et body. body reçoit <code>margin:35 45%139 85</code>. 45 % des 400px de large font 180 : body va de x = 85 à 400 − 180 = 220. En mode quirks, il prend la hauteur de la fenêtre moins ses marges : 300 − 35 − 139 = 126, de y = 35 à 161.</p></div>
+<div class="cap" data-t="6" data-step="Un disque"><h3>2. Un cercle de rayon 1Q</h3><p>html et body reçoivent le même fond. <code>1Q</code>, une seule longueur, fait du dégradé un cercle de rayon 0,945px. Les arrêts sont des distances au centre, et vont plus loin que le rayon. #b5bd49 part de 0. <code>53Q</code> seul est un repère : le milieu du passage à la couleur suivante. #3f4869 demande 0, trop tôt : il recule à 53Q, soit 50,08px. Le passage et son milieu tombent au même endroit : un bord net. Le fond de html se peint sur tout le canevas : un disque vert olive sur du bleu.</p></div>
+<div class="cap" data-t="12" data-step="55ex pour html"><h3>3. html : 55ex, c'est loin</h3><p>Le bleu va jusqu'à <code>55ex</code>. La dernière couleur n'a pas de position : elle serait à 100 %, au bout du rayon de 1Q, donc elle recule à 55ex. Le vert olive reprend là, sans fondu, et continue à l'infini. ex suit la police : html garde la police de 16px du navigateur, et mon Chrome calcule 55ex à 394,88px. Les coins du canevas sont à 250px du centre : le vert olive extérieur de html n'atteint jamais le canevas.</p></div>
+<div class="cap" data-t="18" data-step="55ex pour body"><h3>4. body : une police de 4q</h3><p><code>font:4q"</code> donne à body une police de 3,78px. Le même 55ex y est bien plus court : 93,04px dans mon Chrome. La cible place ce bord à 95px du centre, et l'animation suit la cible. body ne peint que sa boîte : dans ses coins, au-delà de ce bord, du vert olive. Le quart d'anneau et le coin carré sont les coins de body.</p></div>
+<div class="cap" data-t="24" data-step="Un seul centre"><h3>5. <code>fixed</code> : un seul centre</h3><p><code>fixed</code> place les deux dégradés sur la fenêtre, pas sur leur propre boîte. Les deux sont centrés en (200, 150) : le disque de body tombe pile sur celui de html, et son anneau bleu sur le bleu de html. Sans <code>fixed</code>, le dégradé de body serait centré sur sa boîte, en x = 152,5 et y = 98.</p></div>
+<div class="cap" data-t="30" data-step="Résultat" data-live="110 caractères · 100 % identique"><h3>6. Résultat : 110 caractères</h3><p>Un seul fond pour deux éléments. L'unité ex lui donne deux rayons : hors du canevas pour html, dans le canevas pour body, dont la boîte découpe le coin.</p></div>
+{%- else %}
+<div class="cap" data-t="0" data-step="body's box"><h3>1. body: 135 × 126</h3><p>No doctype: quirks mode, unitless margins are px. <code>*</code> matches html, head, body and style; the nested <code>*{</code> matches head, body and style. head and style are not displayed: html and body are left. body gets <code>margin:35 45%139 85</code>. 45% of the 400px width is 180: body runs from x = 85 to 400 − 180 = 220. In quirks mode, it takes the viewport's height minus its margins: 300 − 35 − 139 = 126, from y = 35 to 161.</p></div>
+<div class="cap" data-t="6" data-step="A disc"><h3>2. A circle with a 1Q ray</h3><p>html and body get the same background. <code>1Q</code>, a single length, makes the gradient a circle with a 0.945px ray. The stops are distances from the center, and they go past the ray. #b5bd49 starts at 0. <code>53Q</code> alone is a hint: the middle of the change to the next color. #3f4869 asks for 0, too early: it moves up to 53Q, 50.08px. The change and its middle are at the same place: a hard edge. html's background is painted on the whole canvas: an olive disc on blue.</p></div>
+<div class="cap" data-t="12" data-step="55ex for html"><h3>3. html: 55ex is far away</h3><p>Blue runs up to <code>55ex</code>. The last color has no position: it would sit at 100%, the end of the 1Q ray, so it moves up to 55ex. Olive starts there, with no fade, and goes on forever. ex follows the font: html keeps the browser's 16px font, and my Chrome computes 55ex as 394.88px. The canvas corners are 250px from the center: html's outer olive never reaches the canvas.</p></div>
+<div class="cap" data-t="18" data-step="55ex for body"><h3>4. body: a 4q font</h3><p><code>font:4q"</code> gives body a 3.78px font. The same 55ex is much shorter there: 93.04px in my Chrome. The target puts that edge 95px from the center, and the animation follows the target. body only paints its box: in its corners, past that edge, olive. The quarter ring and the square corner are body's corners.</p></div>
+<div class="cap" data-t="24" data-step="One center"><h3>5. <code>fixed</code>: one center</h3><p><code>fixed</code> places both gradients on the viewport, not on their own box. Both are centered at (200, 150): body's disc falls right on html's, and its blue ring on html's blue. Without <code>fixed</code>, body's gradient would be centered on its box, at (152.5, 98).</p></div>
+<div class="cap" data-t="30" data-step="Result" data-live="110 characters · 100% match"><h3>6. Result: 110 characters</h3><p>One background for two elements. The ex unit gives it two radii: off the canvas for html, inside the canvas for body, whose box cuts out the corner.</p></div>
+{%- endif %}
+</div>
+<div class="live"></div>
+</div>
+</div>
+<script>
+(window.AnimScenes = window.AnimScenes || {}).t0417 = (fig) => {
+  const fr = document.documentElement.lang === 'fr';
+  const $ = (s) => fig.querySelector(s);
+  const $$ = (s) => [...fig.querySelectorAll(s)];
+  const live = $('.live');
+  const ease = (x) => (x < 0.5 ? 4 * x * x * x : 1 - Math.pow(-2 * x + 2, 3) / 2);
+  const pr = (t, a, b) => ease(Math.min(1, Math.max(0, (t - a) / (b - a))));
+  const win = (t, a, b) => Math.min(pr(t, a, a + 0.5), 1 - pr(t, b - 0.3, b));
+  const c = fr ? ' :' : ':';
+  const n = (s) => (fr ? s.replace(/(\d)\.(\d)/g, '$1,$2') : s);
+  const mix = (k, a, b) => (k <= 0 ? b : k >= 1 ? a : `color-mix(in srgb, ${a} ${(k * 100).toFixed(1)}%, ${b})`);
+  // Measured on the official code in local Chrome 157 (400 × 300 iframe, quirks mode, getBoundingClientRect, getComputedStyle):
+  // html 0, 0, 400 × 300, font 16px, 55ex = 394.883px; body 85, 35, 135 × 126, font 3.77953px, 55ex = 93.0443px.
+  // The target puts body's outer edge 95px from (200, 150): the animation draws it there.
+  const A = '#b5bd49', B = '#3f4869';
+  const white = $('.t0417-white'), ghost = $('.t0417-ghost'), body = $('.t0417-body'), box = $('.t0417-box');
+  const r53 = $('.t0417-r53'), rh = $('.t0417-rh'), rb = $('.t0417-rb'), rnf = $('.t0417-rnf');
+  const pc = $('.t0417-c'), pcb = $('.t0417-cb');
+  const labs = $$('.zlab');
+  const ivs = { 1: [0.3, 5.8], 2: [6.3, 11.8], 3: [12.3, 17.8], 4: [18.3, 23.8], 5: [24.3, 29.8] };
+  // body's gradient, in its own box (center 200 − 85 = 115, 150 − 35 = 115) or on the whole canvas (center 200, 150)
+  const grad = (o, b, cx, cy) => `radial-gradient(circle at ${cx}px ${cy}px, ${o} 50.08px, ${b} 0 95px, ${o} 0)`;
+  return (t, step) => {
+    const teach = fig.dataset.teach === '1';
+    const tw = teach ? 1 - pr(t, 30.2, 31.2) : 0;
+    const bo = mix(tw, 'var(--t0417-bo)', A), bb = mix(tw, 'var(--t0417-bb)', B);
+    // step 1: body's box on a blank canvas
+    white.style.opacity = 1 - pr(t, 6.5, 8);
+    box.style.opacity = Math.max(win(t, 0.3, 5.8), win(t, 18.3, 23.8));
+    // step 2: html's gradient, the 53Q disc
+    r53.style.opacity = win(t, 8, 11.8);
+    // step 3: html's 55ex
+    rh.style.opacity = win(t, 12.5, 17.8);
+    // step 4: body's gradient: the whole of it faintly, then only its box
+    ghost.style.background = grad(bo, bb, 200, 150);
+    ghost.style.opacity = teach ? 0.3 * win(t, 18.5, 23.6) : 0;
+    body.style.background = grad(bo, bb, 115, 115);
+    body.style.opacity = pr(t, 19.5, 20.5);
+    rb.style.opacity = win(t, 18.5, 23.8);
+    // step 5: one center
+    pc.style.opacity = win(t, 24.3, 29.8);
+    pcb.style.opacity = win(t, 25.3, 29.8);
+    rnf.style.opacity = win(t, 25.3, 29.8);
+    labs.forEach((l) => { const iv = ivs[l.dataset.l]; l.style.opacity = iv ? win(t, ...iv) : 0; });
+    let txt;
+    if (step === 0) txt = `400 − 85 − 180 = 135 · 300 − 35 − 139 = 126`;
+    else if (step === 1) txt = n(`1Q = 0.945px · 53 × 0.945 = 50.08px`);
+    else if (step === 2) txt = n(`html${c} 16px → 55ex = 394.88px · √(200² + 150²) = 250`);
+    else if (step === 3) txt = n(`body${c} 4q = 3.78px → 55ex = 93.04px · ${fr ? 'cible' : 'target'}${c} 95px`);
+    else if (step === 4) txt = n(`(85 + 220) / 2 = 152.5 · (35 + 161) / 2 = 98`);
+    else txt = $$('.caps .cap')[5].dataset.live || '';
+    live.textContent = txt;
+  };
+};
+</script>
+</figure>
