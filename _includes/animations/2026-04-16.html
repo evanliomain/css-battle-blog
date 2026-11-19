@@ -1,0 +1,130 @@
+<figure class="anim t0416" data-duration="30" data-scene="t0416" data-wide="-70 -50 540 400" data-off-label="-64 318" style="--bg:#fff">
+<style>
+.t0416{--t0416-red:#f472b6;--t0416-white:#38bdf8;--t0416-spread:#a78bfa}
+.t0416 .scene .t0416-spread{z-index:1}
+.t0416 .scene .t0416-sh{width:100px;height:100px;z-index:2}
+.t0416 .scene .t0416-box{left:40px;top:45px;width:100px;height:100px;background:#fff;z-index:9}
+.t0416 .scene .t0416-ol{box-sizing:border-box;outline:calc(1.5px * var(--k, 1)) dashed #14142a;outline-offset:calc(-0.75px * var(--k, 1));filter:drop-shadow(0 0 calc(1px * var(--k, 1)) #fff);opacity:0;z-index:10;pointer-events:none}
+.t0416 .scene .zlab{left:var(--x);top:var(--y);color:#14142a;background:rgb(255 255 255 / .92);box-shadow:0 0 0 1px rgb(20 20 42 / .25);padding:1px 5px;border-radius:3px;opacity:0}
+.t0416[data-view="wide"] .scene .zlab{left:var(--wx);top:var(--wy)}
+@media (max-width:700px){.t0416 .scene .zlab{font-size:8px;padding:0 3px}}
+.t0416 .legend .t0416-dash{background:none;outline:2px dashed currentColor;outline-offset:-2px}
+</style>
+<div class="anim-col">
+<div class="stage" role="img" aria-label="{% if include.lang == "fr" %}Animation : & vise la racine, html. Avec margin:45 65%155 40 en mode quirks, la boîte de html fait 100 × 100 en (40, 45). Elle n'a pas de fond : le canevas blanc se voit au travers, c'est le carré blanc en haut à gauche. color:A84A4B, sans dièse, est accepté en mode quirks, et les ombres sans couleur prennent ce rouge. 116q 0 et 55vw 0#FFF posent un carré rouge et un carré blanc sur la première rangée ; 0 116q, 116q 116q#FFF et 55vw 116q posent la seconde rangée. 116q vaut 109,61px et 55vw 220px ; la cible place les carrés en x = 150 et 260, et la seconde rangée en y = 155. La dernière ombre, 0 0 0 9in#E8AD6D, s'étale de 864px tout autour : elle couvre tout le canevas, sous les autres ombres, mais pas sous la boîte de html. border-radius:5vw arrondit la boîte et ses six ombres de 20px.{% else %}Animation: & matches the root, html. With margin:45 65%155 40 in quirks mode, html's box is 100 × 100 at (40, 45). It has no background: the white canvas shows through, and that is the white square at the top left. color:A84A4B, with no hash, is accepted in quirks mode, and the shadows with no color take that red. 116q 0 and 55vw 0#FFF put a red square and a white square on the first row; 0 116q, 116q 116q#FFF and 55vw 116q put the second row. 116q is 109.61px and 55vw is 220px; the target puts the squares at x = 150 and 260, and the second row at y = 155. The last shadow, 0 0 0 9in#E8AD6D, spreads 864px all around: it covers the whole canvas, under the other shadows, but not under html's box. border-radius:5vw rounds the box and its six shadows by 20px.{% endif %}">
+<div class="scene">
+<div class="t0416-spread"></div>
+<div class="t0416-sh t0416-s5"></div>
+<div class="t0416-sh t0416-s4"></div>
+<div class="t0416-sh t0416-s3"></div>
+<div class="t0416-sh t0416-s2"></div>
+<div class="t0416-sh t0416-s1"></div>
+<div class="t0416-box"></div>
+<div class="t0416-ol t0416-obox" style="left:40px;top:45px;width:100px;height:100px"></div>
+<div class="t0416-ol t0416-o1" style="left:150px;top:45px;width:100px;height:100px"></div>
+<div class="t0416-ol t0416-o2" style="left:260px;top:45px;width:100px;height:100px"></div>
+<div class="t0416-ol t0416-o3" style="left:40px;top:155px;width:100px;height:100px"></div>
+<div class="t0416-ol t0416-o4" style="left:150px;top:155px;width:100px;height:100px"></div>
+<div class="t0416-ol t0416-o5" style="left:260px;top:155px;width:100px;height:100px"></div>
+<span class="zlab" data-l="1" style="--x:8px;--y:4px;--wx:-64px;--wy:-44px">{% if include.lang == "fr" %}html : 100 × 100 en (40, 45){% else %}html: 100 × 100 at (40, 45){% endif %}</span>
+<span class="zlab" data-l="1" style="--x:8px;--y:23px;--wx:-64px;--wy:-24px">{% if include.lang == "fr" %}pas de fond : le canevas blanc{% else %}no background: the white canvas{% endif %}</span>
+<span class="zlab" data-l="2" style="--x:8px;--y:4px;--wx:-64px;--wy:-44px">{% if include.lang == "fr" %}116q = 109,61px · bord dans la cible : x = 150{% else %}116q = 109.61px · target edge: x = 150{% endif %}</span>
+<span class="zlab" data-l="2" style="--x:8px;--y:23px;--wx:-64px;--wy:-24px">55vw = 220px</span>
+<span class="zlab" data-l="3" style="--x:8px;--y:4px;--wx:-64px;--wy:-44px">{% if include.lang == "fr" %}116q = 109,61px · bord dans la cible : y = 155{% else %}116q = 109.61px · target edge: y = 155{% endif %}</span>
+<span class="zlab" data-l="3" style="--x:8px;--y:23px;--wx:-64px;--wy:-24px">{% if include.lang == "fr" %}ombre sans couleur → color : #a84a4b{% else %}shadow with no color → color: #a84a4b{% endif %}</span>
+<span class="zlab" data-l="4" style="--x:8px;--y:4px;--wx:-64px;--wy:-44px">{% if include.lang == "fr" %}9in = 864px tout autour{% else %}9in = 864px all around{% endif %}</span>
+<span class="zlab" data-l="4" style="--x:8px;--y:23px;--wx:-64px;--wy:-24px">{% if include.lang == "fr" %}dernière ombre : sous les autres{% else %}last shadow: under the others{% endif %}</span>
+<span class="zlab" data-l="5" style="--x:8px;--y:4px;--wx:-64px;--wy:-44px">5vw = 20px</span>
+<span class="zlab" data-l="5" style="--x:8px;--y:23px;--wx:-64px;--wy:-24px">{% if include.lang == "fr" %}rayon de l'étalement : 20 + 864 = 884px{% else %}spread's radius: 20 + 864 = 884px{% endif %}</span>
+</div>
+</div>
+<div class="legend"><span><i class="t0416-dash"></i>{% if include.lang == "fr" %}boîte de html : le canevas blanc{% else %}html's box: the white canvas{% endif %}</span><span><i style="--c:#f472b6"></i>{% if include.lang == "fr" %}#a84a4b : trois ombres sans couleur{% else %}#a84a4b: three shadows with no color{% endif %}</span><span><i style="--c:#38bdf8"></i>{% if include.lang == "fr" %}#fff : deux ombres{% else %}#fff: two shadows{% endif %}</span><span><i style="--c:#a78bfa"></i>{% if include.lang == "fr" %}#e8ad6d : l'ombre de 9in{% else %}#e8ad6d: the 9in shadow{% endif %}</span></div>
+</div>
+<div class="anim-side">
+<pre class="code" aria-hidden="true">&lt;style><span data-on="1" data-tone="2">&amp;</span>{<span data-on="1">margin:45 65%155 40;</span>box-shadow:<span data-on="2">116q 0,55vw 0#FFF,</span><span data-on="3">0 116q,116q 116q#FFF,55vw 116q,</span><span data-on="4">0 0 0 9in#E8AD6D</span>;<span data-on="2 3" data-tone="2">color:A84A4B;</span><span data-on="5">border-radius:5vw</span></pre>
+<div class="now" aria-live="polite">
+<div class="caps">
+{%- if include.lang == "fr" %}
+<div class="cap" data-t="0" data-step="La boîte de html"><h3>1. html : 100 × 100</h3><p><code>&amp;</code> seul, hors de toute règle, vise la racine : html. Pas de doctype : mode quirks, les marges sans unité sont des px. 65 % des 400px de large font 260 : html va de x = 40 à 400 − 260 = 140. En mode quirks, html prend la hauteur de la fenêtre moins ses marges : 300 − 45 − 155 = 100, de y = 45 à 145. html n'a pas de fond : le canevas, blanc, se voit au travers. C'est déjà le carré blanc en haut à gauche.</p></div>
+<div class="cap" data-t="5" data-step="Première rangée"><h3>2. Deux ombres sur la première rangée</h3><p>Une ombre est une copie de la boîte, décalée. <code>color:A84A4B</code> n'a pas de dièse, et le mode quirks l'accepte quand même. Une ombre sans couleur prend <code>color</code> : <code>116q 0</code> est un carré rouge. 116q valent 29mm, soit 109,61px ; la cible place ce carré en x = 150. <code>55vw 0#FFF</code> est un carré blanc décalé de 220px, en x = 260.</p></div>
+<div class="cap" data-t="10" data-step="Seconde rangée"><h3>3. Trois ombres sur la seconde rangée</h3><p>Les mêmes décalages, vers le bas cette fois : <code>0 116q</code> en rouge sous la boîte, <code>116q 116q#FFF</code> en blanc au milieu, <code>55vw 116q</code> en rouge à droite. La cible place la seconde rangée en y = 155. Le damier est complet. En vraies couleurs, sur le canevas blanc, les deux ombres blanches ne se voient pas encore.</p></div>
+<div class="cap" data-t="15" data-step="Le fond orange"><h3>4. Le fond est une ombre</h3><p><code>0 0 0 9in#E8AD6D</code> n'a pas de décalage mais un étalement de 9in, soit 864px tout autour de la boîte. Le bord droit du canevas est à 260px de la boîte : tout le canevas est couvert. C'est la dernière ombre de la liste, donc celle du dessous : les cinq autres restent visibles. Une ombre ne se peint jamais sous sa propre boîte : le carré de html reste blanc.</p></div>
+<div class="cap" data-t="20" data-step="Coins arrondis"><h3>5. Des coins de 20px</h3><p><code>border-radius:5vw</code> arrondit la boîte de 20px. Les ombres copient ses coins : les cinq carrés s'arrondissent pareil. L'étalement agrandit le rayon : 20 + 864 = 884px. Le trou qu'il laisse sous la boîte suit le bord arrondi de html : dans les coins du carré blanc, de l'orange.</p></div>
+<div class="cap" data-t="25" data-step="Résultat" data-live="136 caractères · 100 % identique"><h3>6. Résultat : 136 caractères</h3><p>Une seule boîte vide. Le canevas blanc fait le premier carré, cinq ombres font les autres, et une sixième ombre, la plus grande, fait le fond.</p></div>
+{%- else %}
+<div class="cap" data-t="0" data-step="html's box"><h3>1. html: 100 × 100</h3><p><code>&amp;</code> alone, outside any rule, matches the root: html. No doctype: quirks mode, unitless margins are px. 65% of the 400px width is 260: html runs from x = 40 to 400 − 260 = 140. In quirks mode, html takes the viewport's height minus its margins: 300 − 45 − 155 = 100, from y = 45 to 145. html has no background: the white canvas shows through. That is already the white square at the top left.</p></div>
+<div class="cap" data-t="5" data-step="First row"><h3>2. Two shadows on the first row</h3><p>A shadow is a copy of the box, moved. <code>color:A84A4B</code> has no hash, and quirks mode takes it anyway. A shadow with no color takes <code>color</code>: <code>116q 0</code> is a red square. 116q is 29mm, 109.61px; the target puts that square at x = 150. <code>55vw 0#FFF</code> is a white square moved 220px, at x = 260.</p></div>
+<div class="cap" data-t="10" data-step="Second row"><h3>3. Three shadows on the second row</h3><p>The same offsets, downward this time: <code>0 116q</code> in red under the box, <code>116q 116q#FFF</code> in white in the middle, <code>55vw 116q</code> in red on the right. The target puts the second row at y = 155. The checkerboard is complete. In real colors, on the white canvas, the two white shadows don't show yet.</p></div>
+<div class="cap" data-t="15" data-step="The orange"><h3>4. The background is a shadow</h3><p><code>0 0 0 9in#E8AD6D</code> has no offset but a 9in spread: 864px all around the box. The right edge of the canvas is 260px from the box: the whole canvas is covered. It is the last shadow in the list, so the bottom one: the five others stay visible. A shadow is never painted under its own box: html's square stays white.</p></div>
+<div class="cap" data-t="20" data-step="Round corners"><h3>5. 20px corners</h3><p><code>border-radius:5vw</code> rounds the box by 20px. The shadows copy its corners: the five squares get the same curve. The spread makes the radius bigger: 20 + 864 = 884px. The hole it leaves under the box follows html's round edge: in the corners of the white square, orange.</p></div>
+<div class="cap" data-t="25" data-step="Result" data-live="136 characters · 100% match"><h3>6. Result: 136 characters</h3><p>One empty box. The white canvas makes the first square, five shadows make the others, and a sixth shadow, the biggest one, makes the background.</p></div>
+{%- endif %}
+</div>
+<div class="live"></div>
+</div>
+</div>
+<script>
+(window.AnimScenes = window.AnimScenes || {}).t0416 = (fig) => {
+  const fr = document.documentElement.lang === 'fr';
+  const $ = (s) => fig.querySelector(s);
+  const $$ = (s) => [...fig.querySelectorAll(s)];
+  const live = $('.live');
+  const ease = (x) => (x < 0.5 ? 4 * x * x * x : 1 - Math.pow(-2 * x + 2, 3) / 2);
+  const pr = (t, a, b) => ease(Math.min(1, Math.max(0, (t - a) / (b - a))));
+  const win = (t, a, b) => Math.min(pr(t, a, a + 0.5), 1 - pr(t, b - 0.3, b));
+  const n = (s) => (fr ? s.replace(/(\d)\.(\d)/g, '$1,$2') : s);
+  const mix = (k, a, b) => (k <= 0 ? b : k >= 1 ? a : `color-mix(in srgb, ${a} ${(k * 100).toFixed(1)}%, ${b})`);
+  // Measured on the official code in local Chrome 157 (400 × 300 iframe, quirks mode, getBoundingClientRect, getComputedStyle):
+  // html 40, 45, 100 × 100, margin 45px 260px 155px 40px, radius 20px, no background;
+  // shadows 109.606px 0 / 220px 0 / 0 109.606px / 109.606px 109.606px / 220px 109.606px, spread 864px.
+  // The target puts the squares at x = 40, 150, 260 and y = 45, 155: the animation draws them there.
+  const R = '#a84a4b', W = '#fff', O = '#e8ad6d';
+  const sp = $('.t0416-spread'), box = $('.t0416-box');
+  const sh = [1, 2, 3, 4, 5].map((i) => $('.t0416-s' + i));
+  const ob = $('.t0416-obox'), os = [1, 2, 3, 4, 5].map((i) => $('.t0416-o' + i));
+  // offsets in the animation (target positions), color, step where it appears
+  const S = [[110, 0, 'r', 5.5], [220, 0, 'w', 5.5], [0, 110, 'r', 10.5], [110, 110, 'w', 10.5], [220, 110, 'r', 10.5]];
+  const labs = $$('.zlab');
+  const ivs = { 1: [0.3, 4.8], 2: [5.3, 9.8], 3: [10.3, 14.8], 4: [15.3, 19.8], 5: [20.3, 24.8] };
+  return (t, step) => {
+    const teach = fig.dataset.teach === '1';
+    const tw = teach ? 1 - pr(t, 25.2, 26.2) : 0;
+    const cr = mix(tw, 'var(--t0416-red)', R), cw = mix(tw, 'var(--t0416-white)', W), co = mix(tw, 'var(--t0416-spread)', O);
+    const r = 20 * pr(t, 20.5, 22);
+    // html's box: the canvas seen through it
+    box.style.borderRadius = r + 'px';
+    ob.style.borderRadius = r + 'px';
+    ob.style.opacity = Math.max(win(t, 0.3, 4.8), win(t, 16.5, 19.8));
+    // the five shadows slide out from under the box
+    S.forEach(([dx, dy, c, a], i) => {
+      const k = pr(t, a, a + 1.5);
+      const e = sh[i];
+      e.style.left = 40 + dx * k + 'px';
+      e.style.top = 45 + dy * k + 'px';
+      e.style.background = c === 'r' ? cr : cw;
+      e.style.borderRadius = r + 'px';
+      e.style.opacity = t >= a ? 1 : 0;
+      os[i].style.borderRadius = r + 'px';
+      os[i].style.opacity = win(t, a + 1.5, a + 4.3);
+    });
+    // the 9in spread grows around the box, under the other shadows
+    const s = 864 * pr(t, 15.5, 17.5);
+    sp.style.left = 40 - s + 'px';
+    sp.style.top = 45 - s + 'px';
+    sp.style.width = sp.style.height = 100 + 2 * s + 'px';
+    sp.style.borderRadius = r + s + 'px';
+    sp.style.background = co;
+    sp.style.opacity = t >= 15.5 ? 1 : 0;
+    labs.forEach((l) => { const iv = ivs[l.dataset.l]; l.style.opacity = iv ? win(t, ...iv) : 0; });
+    let txt;
+    if (step === 0) txt = `400 − 40 − 260 = 100 · 300 − 45 − 155 = 100`;
+    else if (step === 1) txt = n(`116q = 29mm = 109.61px · 55vw = 0.55 × 400 = 220px`);
+    else if (step === 2) txt = n(`45 + 109.61 = 154.61 · ${fr ? 'cible' : 'target'}${fr ? '\u00a0:' : ':'} 155`);
+    else if (step === 3) txt = `9in = 9 × 96 = 864px · 400 − 140 = 260`;
+    else if (step === 4) txt = n(`5vw = 0.05 × 400 = 20px · 20 + 864 = 884px`);
+    else txt = $$('.caps .cap')[5].dataset.live || '';
+    live.textContent = txt;
+  };
+};
+</script>
+</figure>
