@@ -1,0 +1,106 @@
+<figure class="anim t0422" data-duration="30" data-scene="t0422" data-wide="-146 -96 692 492" data-off-label="-142 -92" style="--bg:#fff">
+<style>
+.t0422{--t0422-p:#66284a;--t0422-k:#f7bed9;--t0422-hfc:#66284a;--t0422-rc:#66284a;--t0422-hbox:#a3e635;--t0422-bbox:#fb923c}
+.t0422[data-teach="1"]:not([data-step="6"]){--t0422-hfc:#818cf8;--t0422-rc:#38bdf8}
+.t0422 .scene .t0422-pink{left:0;top:0;width:400px;height:300px;background:var(--t0422-k);z-index:1}
+.t0422 .scene .t0422-white{left:0;top:0;width:400px;height:300px;background:#fff;z-index:2}
+.t0422 .scene .t0422-hf{left:40px;top:90px;width:320px;height:120px;outline:186px solid var(--t0422-hfc);z-index:3}
+.t0422[data-step="6"] .scene .t0422-hf{z-index:5}
+.t0422 .scene .t0422-b{left:50.8px;top:114.3px;width:298.4px;height:71.4px;outline:50px solid var(--t0422-rc);transform-origin:50% 50%;opacity:0;z-index:4}
+.t0422 .scene .t0422-b .t0422-bb{position:absolute;left:0;top:0;width:100%;height:100%;box-sizing:border-box;opacity:0}
+.t0422 .scene .t0422-hb{left:40px;top:90px;width:320px;height:120px;box-sizing:border-box;opacity:0;z-index:6}
+.t0422 .scene .zlab{color:#14142a;background:rgb(255 255 255 / .92);box-shadow:0 0 0 1px rgb(20 20 42 / .25);padding:1px 5px;border-radius:3px;opacity:0}
+@media (max-width:700px){.t0422 .scene .zlab{font-size:8px;padding:0 3px}}
+.t0422 .legend .t0422-ol{box-shadow:0 0 0 1px currentColor}
+</style>
+<div class="anim-col">
+<div class="stage" role="img" aria-label="{% if include.lang == "fr" %}Animation : *{ vise html, head, style et body ; head et style ne s'affichent pas. En mode quirks, margin:90 40 place html en (40, 90), 320 × 120. Son outline de 62vh = 186px, prune, couvre tout le canevas autour de sa boîte. html n'a pas de fond : le fond rose de body passe au canevas, et se voit dans la boîte de html. Sur body, zoom:.27 réduit la marge à 24,3 et 10,8, d'où une boîte de 298,4 × 71,4 centrée en (200, 150), et l'outline à 50px. Cet anneau prune couvre la boîte de html sauf celle de body. rotate:120deg le tourne autour du centre : ses deux grands côtés traversent la boîte de html en deux bandes penchées de 57,7px de large sur une ligne, séparées par 82,4px de rose. Ses petits côtés restent hors de la boîte de html, sur l'outline de html. La bande rose est coupée en trois.{% else %}Animation: *{ matches html, head, style and body; head and style are not displayed. In quirks mode, margin:90 40 puts html at (40, 90), 320 × 120. Its 62vh = 186px plum outline covers the whole canvas around its box. html has no background, so body's pink background goes to the canvas, and shows inside html's box. On body, zoom:.27 shrinks the margin to 24.3 and 10.8, which gives a 298.4 × 71.4 box centered at (200, 150), and the outline to 50px. This plum ring covers html's box except body's box. rotate:120deg turns it around the center: its two long sides cross html's box as two slanted stripes, 57.7px wide along a row, with 82.4px of pink between them. Its short sides stay out of html's box, on html's outline. The pink band is cut in three.{% endif %}">
+<div class="scene">
+<div class="t0422-pink"></div>
+<div class="t0422-white"></div>
+<div class="t0422-hf"></div>
+<div class="t0422-b"><i class="t0422-bb"></i></div>
+<div class="t0422-hb"></div>
+<span class="zlab" data-l="1" style="left:44px;top:94px">html · 320 × 120</span>
+<span class="zlab" data-l="1" style="left:204px;top:38px">margin 90</span>
+<span class="zlab" data-l="1" style="left:4px;top:120px">40</span>
+<span class="zlab" data-l="2" style="left:44px;top:38px">outline 62vh = 186px</span>
+<span class="zlab" data-l="3" style="left:44px;top:94px">{% if include.lang == "fr" %}canevas : #F7BED9{% else %}canvas: #F7BED9{% endif %}</span>
+<span class="zlab" data-l="4" style="left:55px;top:118px">{% if include.lang == "fr" %}body · 298,4 × 71,4{% else %}body · 298.4 × 71.4{% endif %}</span>
+<span class="zlab" data-l="4" style="left:55px;top:72px">outline 50px</span>
+<span class="zlab" data-l="5" style="left:126px;top:120px">{% if include.lang == "fr" %}57,7{% else %}57.7{% endif %}</span>
+<span class="zlab" data-l="5" style="left:180px;top:150px">{% if include.lang == "fr" %}82,4{% else %}82.4{% endif %}</span>
+<span class="zlab" data-l="5" style="left:232px;top:180px">{% if include.lang == "fr" %}57,7{% else %}57.7{% endif %}</span>
+</div>
+</div>
+<div class="legend"><span><i class="t0422-ol" style="--c:#66284a"></i>{% if include.lang == "fr" %}#66284a : l'outline de html et celui de body{% else %}#66284a: html's outline and body's outline{% endif %}</span><span><i class="t0422-ol" style="--c:#f7bed9"></i>{% if include.lang == "fr" %}#f7bed9 : le fond de body, peint sur le canevas{% else %}#f7bed9: body's background, painted on the canvas{% endif %}</span><span><i style="--c:#818cf8"></i>{% if include.lang == "fr" %}l'outline de html, 186px{% else %}html's outline, 186px{% endif %}</span><span><i style="--c:#38bdf8"></i>{% if include.lang == "fr" %}l'outline de body, 50px{% else %}body's outline, 50px{% endif %}</span><span><i style="--c:#a3e635"></i>{% if include.lang == "fr" %}boîte de html{% else %}html's box{% endif %}</span><span><i style="--c:#fb923c"></i>{% if include.lang == "fr" %}boîte de body{% else %}body's box{% endif %}</span></div>
+</div>
+<div class="anim-side">
+<pre class="code" aria-hidden="true">&lt;style><span data-on="1">*{</span><span data-on="2">outline:solid 62vh#66284A</span>;<span data-on="1">margin:90 40</span>;<span data-on="3 4 5" data-tone="2">*{</span><span data-on="3">background:#F7BED9</span>;<span data-on="4">zoom:.27</span>;<span data-on="5">rotate:120deg</span></pre>
+<div class="now" aria-live="polite">
+<div class="caps">
+{%- if include.lang == "fr" %}
+<div class="cap" data-t="0" data-step="La boîte de html"><h3>1. La boîte de html</h3><p><code>*{</code> vise html, head, style et body ; head et style ne s'affichent pas. Il n'y a pas de doctype : en mode quirks, <code>margin:90 40</code> compte en px, et html s'étire sur la hauteur du cadre, marges ôtées. html va de (40, 90) à (360, 210) : 320 × 120.</p></div>
+<div class="cap" data-t="5" data-step="L'outline de html"><h3>2. L'outline de html</h3><p><code>62vh</code>, c'est 62 % des 300px du cadre : 186px. Un outline ne prend pas de place et se dessine autour de la boîte. Il suffit de 90px pour atteindre les bords du canevas : tout ce qui est hors de la boîte de html devient prune.</p></div>
+<div class="cap" data-t="10" data-step="Le canevas rose"><h3>3. Le fond de body passe au canevas</h3><p>Le fond est posé par la règle imbriquée, qui vise tout sauf html. html n'a donc pas de fond, et dans ce cas le fond de body est peint sur tout le canevas, pas dans la boîte de body. Il se voit là où l'outline de html laisse un trou : dans la boîte de html.</p></div>
+<div class="cap" data-t="15" data-step="Le zoom"><h3>4. zoom:.27 sur body</h3><p>body reçoit aussi la marge et l'outline, mais <code>zoom:.27</code> les réduit. La marge passe à 24,3 et 10,8 : la boîte de body fait 298,4 × 71,4, centrée en (200, 150). L'outline passe à 186 × 0,27 = 50,22px, et Chrome l'arrondit à 50px. Cet anneau prune couvre toute la boîte de html, sauf celle de body.</p></div>
+<div class="cap" data-t="20" data-step="La rotation"><h3>5. rotate:120deg</h3><p>body tourne autour de son centre, et son outline avec lui. Les deux grands côtés de l'anneau traversent la boîte de html en deux bandes penchées à 60°. Sur une ligne, chaque bande fait 50 / sin 60° = 57,7px, et le rose du milieu 71,4 / sin 60° = 82,4px. Les petits côtés sont à 149,2px du centre, le long de la barre : la boîte de html ne va pas plus loin que 132px. Ils tombent sur l'outline de html.</p></div>
+<div class="cap" data-t="25" data-step="Résultat" data-live="91 caractères · 100 % identique"><h3>6. Résultat : 91 caractères</h3><p>Deux outlines de la même valeur : en entier, celui de html cadre la bande ; zoomé et tourné, celui de body la coupe en trois.</p></div>
+{%- else %}
+<div class="cap" data-t="0" data-step="html's box"><h3>1. html's box</h3><p><code>*{</code> matches html, head, style and body; head and style are not displayed. There is no doctype: in quirks mode, <code>margin:90 40</code> counts in px, and html stretches to the height of the frame, minus its margins. html runs from (40, 90) to (360, 210): 320 × 120.</p></div>
+<div class="cap" data-t="5" data-step="html's outline"><h3>2. html's outline</h3><p><code>62vh</code> is 62% of the 300px frame: 186px. An outline takes no room and is drawn around the box. 90px is enough to reach the edges of the canvas: everything outside html's box turns plum.</p></div>
+<div class="cap" data-t="10" data-step="Pink canvas"><h3>3. body's background goes to the canvas</h3><p>The background is set by the nested rule, which matches everything but html. So html has no background, and in that case body's background is painted on the whole canvas, not in body's box. It shows where html's outline leaves a hole: inside html's box.</p></div>
+<div class="cap" data-t="15" data-step="Zoom"><h3>4. zoom:.27 on body</h3><p>body gets the margin and the outline too, but <code>zoom:.27</code> shrinks them. The margin becomes 24.3 and 10.8: body's box is 298.4 × 71.4, centered at (200, 150). The outline becomes 186 × 0.27 = 50.22px, and Chrome rounds it to 50px. This plum ring covers all of html's box except body's box.</p></div>
+<div class="cap" data-t="20" data-step="Rotation"><h3>5. rotate:120deg</h3><p>body turns around its center, and its outline turns with it. The two long sides of the ring cross html's box as two stripes slanted at 60°. Along a row, each stripe is 50 / sin 60° = 57.7px wide, and the pink in the middle 71.4 / sin 60° = 82.4px. The short sides are 149.2px from the center, along the bar: html's box reaches no farther than 132px. They land on html's outline.</p></div>
+<div class="cap" data-t="25" data-step="Result" data-live="91 characters · 100% match"><h3>6. Result: 91 characters</h3><p>Two outlines with the same value: at full size, html's frames the band; zoomed and turned, body's cuts it in three.</p></div>
+{%- endif %}
+</div>
+<div class="live"></div>
+</div>
+</div>
+<script>
+(window.AnimScenes = window.AnimScenes || {}).t0422 = (fig) => {
+  const fr = document.documentElement.lang === 'fr';
+  const $ = (s) => fig.querySelector(s);
+  const $$ = (s) => [...fig.querySelectorAll(s)];
+  const live = $('.live');
+  const ease = (x) => (x < 0.5 ? 4 * x * x * x : 1 - Math.pow(-2 * x + 2, 3) / 2);
+  const pr = (t, a, b) => ease(Math.min(1, Math.max(0, (t - a) / (b - a))));
+  const win = (t, a, b) => Math.min(pr(t, a, a + 0.5), 1 - pr(t, b - 0.3, b));
+  // Measured on the official code in local Chrome (400 × 300 iframe, quirks mode, getBoundingClientRect, getComputedStyle).
+  // html: (40, 90) 320 × 120, outline 186px. body: zoom .27, width 1105.21px × .27 = 298.4, height 264.468px × .27 = 71.4,
+  // margins 24.3 / 10.8, so (50.8, 114.3), centered at (200, 150); outline-width 185.185px (= 50px once zoomed); rotate 120deg.
+  // html's background is transparent: body's #F7BED9 is painted on the canvas.
+  const white = $('.t0422-white'), hf = $('.t0422-hf'), b = $('.t0422-b'), bb = $('.t0422-bb'), hb = $('.t0422-hb');
+  const labs = $$('.zlab');
+  const ivs = { 1: [0.3, 4.8], 2: [5.3, 9.8], 3: [10.3, 14.8], 4: [15.3, 19.8], 5: [23.4, 24.8] };
+  const box = (el, o, col, teach) => {
+    el.style.opacity = o;
+    el.style.boxShadow = teach && o > 0 ? `inset 0 0 0 calc(2px * var(--k, 1)) ${col}` : 'none';
+    el.style.outline = !teach && o > 0 ? 'calc(1.5px * var(--k, 1)) dashed #fff' : 'none';
+    el.style.outlineOffset = 'calc(-0.75px * var(--k, 1))';
+    el.style.filter = !teach && o > 0 ? 'drop-shadow(0 0 calc(1px * var(--k, 1)) rgb(0 0 0 / .9))' : 'none';
+  };
+  return (t, step) => {
+    const teach = fig.dataset.teach === '1';
+    // step 2: html's outline; step 3: the canvas turns pink
+    hf.style.opacity = pr(t, 5.3, 6.3);
+    white.style.opacity = 1 - pr(t, 10.4, 11.4);
+    // step 4: body's ring; step 5: it turns
+    b.style.opacity = pr(t, 15.3, 16.3);
+    b.style.transform = `rotate(${120 * pr(t, 20.6, 23.2)}deg)`;
+    box(hb, Math.max(win(t, 0.3, 9.8), win(t, 20.3, 24.8)), 'var(--t0422-hbox)', teach);
+    box(bb, win(t, 15.3, 24.8), 'var(--t0422-bbox)', teach);
+    labs.forEach((l) => { const iv = ivs[l.dataset.l]; l.style.opacity = iv ? win(t, ...iv) : 0; });
+    let txt;
+    if (step === 0) txt = fr ? 'html : (40, 90) · 320 × 120' : 'html: (40, 90) · 320 × 120';
+    else if (step === 1) txt = fr ? '62vh = 186px · boîte de html : x 40 → 360, y 90 → 210' : "62vh = 186px · html's box: x 40 → 360, y 90 → 210";
+    else if (step === 2) txt = fr ? 'html : pas de fond · #F7BED9 de body → canevas' : "html: no background · body's #F7BED9 → canvas";
+    else if (step === 3) txt = fr ? 'zoom .27 : 90 → 24,3 · 40 → 10,8 · 186 → 50' : 'zoom .27: 90 → 24.3 · 40 → 10.8 · 186 → 50';
+    else if (step === 4) txt = fr ? 'ligne y = 150 : bandes de 57,7px · rose de 82,4px' : 'row y = 150: stripes 57.7px · pink 82.4px';
+    else txt = $$('.caps .cap')[5].dataset.live || '';
+    live.textContent = txt;
+  };
+};
+</script>
+</figure>
