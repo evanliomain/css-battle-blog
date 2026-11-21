@@ -1,0 +1,132 @@
+<figure class="anim t1120" data-duration="32" data-scene="t1120" data-wide="-20 -170 440 510" data-off-label="-16 -164" style="--bg:#998235">
+<style>
+.t1120{--t1120-d:#0b2429;--t1120-v:#17504d;--t1120-o:#998235;--t1120-p:#7048e8;--t1120-body:#2b8a3e;--t1120-img:#e8590c}
+.t1120 .t1120-cv{position:absolute;left:0;top:0;width:400px;height:300px;background:#fff}
+.t1120 .t1120-cm{position:absolute;inset:0;background:var(--t1120-o);opacity:0}
+.t1120 .t1120-tile{position:absolute;left:0;top:0;width:400px;height:300px;box-sizing:border-box;background:var(--t1120-v);opacity:0}
+.t1120 .t1120-tile span{position:absolute;left:50%;top:250px;transform:translateX(-50%);font:600 11px/1 ui-monospace,monospace;color:#fff;white-space:nowrap;opacity:0}
+.t1120 .t1120-b{position:absolute;left:8px;width:384px}
+.t1120 .t1120-p{position:absolute;left:0;width:384px;background:var(--t1120-d)}
+.t1120 .t1120-bo{position:absolute;left:8px;width:384px;box-sizing:border-box;border:2px dashed var(--t1120-body);opacity:0}
+.t1120 .t1120-bo span{position:absolute;right:6px;bottom:6px;font:600 11px/1 ui-monospace,monospace;color:#fff;background:var(--t1120-body);padding:2px 4px;border-radius:3px}
+.t1120 .zlab{color:#fff;background:rgb(20 30 34 / .9);padding:1px 5px;border-radius:3px;white-space:nowrap}
+.t1120 .t1120-k{color:inherit}
+</style>
+<div class="anim-col">
+<div class="stage" role="img" aria-label="{% if include.lang == "fr" %}Animation : trois p vides avec border:solid 5vh deviennent trois barres de 30 px sur toute la largeur du body ; margin:65 0 -25 les place en y = 65, 135 et 205, la marge haute traversant le body ; en mode quirks, le body s'étire de y = 65 à y = 317 ; son fond image(#17504D), une image unie sans taille propre, part au canevas et prend la taille de html, 400 × 300 ; 0 -50vh la remonte de 150 px et space l'empêche de se répéter : la moitié basse prend la couleur #998235 ; clip-path:inset(0 140q) coupe 132,28 px de chaque côté du body : les barres font 120 de large ; round 1in arrondit les coins, ramenés à 59,72 px : le haut du body devient un demi-cercle, et la première barre une calotte{% else %}Animation: three empty p elements with border:solid 5vh become three 30px bars across the body's width; margin:65 0 -25 puts them at y = 65, 135 and 205, the top margin going through the body; in quirks mode, the body stretches from y = 65 to y = 317; its background image(#17504D), a plain-color image with no size of its own, goes to the canvas and takes html's size, 400 × 300; 0 -50vh moves it up by 150px and space stops it from repeating: the bottom half gets the #998235 color; clip-path:inset(0 140q) cuts 132.28px off each side of the body: the bars are 120 wide; round 1in rounds the corners, scaled down to 59.72px: the top of the body becomes a half-circle, and the first bar a dome{% endif %}">
+<div class="scene">
+<div class="t1120-cv"><div class="t1120-cm"></div></div>
+<div class="t1120-tile"><span>image(#17504D)</span></div>
+<div class="t1120-b">
+<div class="t1120-p"></div>
+<div class="t1120-p"></div>
+<div class="t1120-p"></div>
+</div>
+<div class="t1120-bo"><span>body</span></div>
+<span class="zlab t1120-l-a" style="left:6px;top:244px">{% if include.lang == "fr" %}5vh = 15 → 15 + 15 = 30{% else %}5vh = 15 → 15 + 15 = 30{% endif %}</span>
+<span class="zlab t1120-l-b" style="left:6px;top:244px">{% if include.lang == "fr" %}65 − 25 = 40 entre deux barres{% else %}65 − 25 = 40 between two bars{% endif %}</span>
+<span class="zlab t1120-l-c" style="left:6px;top:244px">300 − 65 − (8 − 25) = 252</span>
+<span class="zlab t1120-l-d" style="left:6px;top:10px">{% if include.lang == "fr" %}image(#17504D) : 400 × 300{% else %}image(#17504D): 400 × 300{% endif %}</span>
+<span class="zlab t1120-l-e" style="left:6px;top:10px">{% if include.lang == "fr" %}0 -50vh : y = −150 → 150{% else %}0 -50vh: y = −150 → 150{% endif %}</span>
+<span class="zlab t1120-l-f" style="left:6px;top:10px">{% if include.lang == "fr" %}140q = 132,28 → x 140,28 … 259,72{% else %}140q = 132.28 → x 140.28 … 259.72{% endif %}</span>
+<span class="zlab t1120-l-g" style="left:6px;top:10px">{% if include.lang == "fr" %}1in = 96 → 59,72{% else %}1in = 96 → 59.72{% endif %}</span>
+</div>
+</div>
+<div class="legend"><span><i style="--c:var(--t1120-p)"></i>&lt;p&gt;</span><span><i style="--c:var(--t1120-body)"></i>body</span><span><i style="--c:var(--t1120-img)"></i>image()</span></div>
+</div>
+<div class="anim-side">
+<pre class="code" aria-hidden="true"><span data-on="1">&lt;p>&lt;p>&lt;p></span>&lt;style>p{<span data-on="1">border:solid <span class="t1120-k t1120-k1">5</span>vh#0B2429</span>;<span data-on="2">margin:<span class="t1120-k t1120-k2">65</span> 0<span class="t1120-k t1120-k3">-25</span></span>}<span data-on="3" data-tone="2">&amp;>*</span>{<span data-on="4">background:image(#17504D)</span><span data-on="5">0<span class="t1120-k t1120-k4">-50</span>vh space#998235</span>;<span data-on="6">clip-path:inset(0 <span class="t1120-k t1120-k5">140</span>q</span><span data-on="7"> round <span class="t1120-k t1120-k6">1</span>in</span></pre>
+<div class="now" aria-live="polite">
+<div class="caps">
+{%- if include.lang == "fr" %}
+<div class="cap" data-t="0" data-step="Trois p vides, trois barres"><h3>1. Trois <code>&lt;p&gt;</code> vides, trois barres</h3><p>Un <code>&lt;p&gt;</code> vide n'a pas de contenu : 0 de haut. <code>border:solid 5vh</code> lui met une bordure de 5vh = 15px sur ses quatre côtés : 15 en haut + 15 en bas = une barre de 30 de haut, sombre. Elle prend toute la largeur du <code>body</code> : 384, de x = 8 à 392.</p></div>
+<div class="cap" data-t="4" data-step="margin:65 0 -25"><h3>2. <code>margin:65 0 -25</code></h3><p>En mode quirks, les nombres sans unité sont des px. La marge haute du premier <code>&lt;p&gt;</code> fusionne avec celle du <code>body</code> (8) : il reste 65, et le <code>body</code> descend avec, en y = 65. Entre deux <code>&lt;p&gt;</code>, une marge de 65 rencontre une marge de −25 : 65 − 25 = 40. Les barres tombent en y = 65, 135 et 205.</p></div>
+<div class="cap" data-t="8" data-step="Le body s'étire sous le canevas"><h3>3. Le <code>body</code> s'étire sous le canevas</h3><p>Seul en haut de la feuille, <code>&amp;</code> désigne la racine : <code>&amp;&gt;*</code> vise les enfants de <code>html</code>, <code>head</code> (invisible) et le <code>body</code>. En mode quirks, le <code>body</code> remplit la hauteur de <code>html</code> moins ses marges. En haut, 65. En bas, sa marge de 8 fusionne avec le −25 du dernier <code>&lt;p&gt;</code> : 8 − 25 = −17. 300 − 65 + 17 = 252 : le <code>body</code> va de y = 65 à y = 317.</p></div>
+<div class="cap" data-t="12" data-step="image() : un aplat à la taille de html"><h3>4. <code>image()</code> : un aplat à la taille de <code>html</code></h3><p><code>html</code> n'a pas de fond : celui du <code>body</code> part au canevas, placé sur la boîte de <code>html</code>, 400 × 300. <code>image(#17504D)</code> est une image unie, sans taille propre. Sans <code>background-size</code>, elle prend toute la zone de placement : une tuile verte de 400 × 300, qui couvre tout.</p></div>
+<div class="cap" data-t="16" data-step="0 -50vh space : une seule tuile, remontée"><h3>5. <code>0 -50vh space</code> : une seule tuile, remontée</h3><p>La position <code>0 -50vh</code> remonte la tuile de 150 : elle va de y = −150 à y = 150. Normalement, la tuile se répéterait et recouvrirait le trou. Avec <code>space</code>, une tuile de la taille de la zone ne tient qu'une fois : pas de répétition. Sous y = 150, on voit la couleur du raccourci, <code>#998235</code>.</p></div>
+<div class="cap" data-t="20" data-step="clip-path:inset(0 140q)"><h3>6. <code>clip-path:inset(0 140q)</code></h3><p>1Q = un quart de millimètre, soit 0,945px : 140q = 132,28px. La découpe garde le <code>body</code> entier en hauteur et retire 132,28 de chaque côté : 384 − 264,56 = 119,44 de large, de x = 140,28 à 259,72. Le fond est déjà parti au canevas : la découpe ne coupe que les barres.</p></div>
+<div class="cap" data-t="24" data-step="round 1in : le dôme"><h3>7. <code>round 1in</code> : le dôme</h3><p><code>round</code> arrondit les coins de la découpe : 1in = 96px. Deux rayons de 96 ne tiennent pas dans 119,44 de large : le navigateur les réduit tous dans le même rapport, 119,44 / 192, soit 59,72. En haut, les deux coins se rejoignent au milieu : un demi-cercle de rayon 59,72, centré en (200, 124,72). La première barre, de y = 65 à 95, n'en garde que le sommet : une calotte. Les coins du bas tombent sous le canevas, loin des barres.</p></div>
+<div class="cap" data-t="29" data-step="Résultat" data-live="138 caractères · 100 % identique"><h3>8. Résultat : 138 caractères</h3><p>Trois <code>&lt;p&gt;</code> vides pour les barres, une image unie remontée pour le fond, et une seule découpe arrondie sur le <code>body</code> pour la largeur et le dôme.</p></div>
+{%- else %}
+<div class="cap" data-t="0" data-step="Three empty p, three bars"><h3>1. Three empty <code>&lt;p&gt;</code>, three bars</h3><p>An empty <code>&lt;p&gt;</code> has no content: it is 0 tall. <code>border:solid 5vh</code> gives it a 5vh = 15px border on all four sides: 15 on top + 15 at the bottom = a dark bar, 30 tall. It spans the <code>body</code>'s width: 384, from x = 8 to 392.</p></div>
+<div class="cap" data-t="4" data-step="margin:65 0 -25"><h3>2. <code>margin:65 0 -25</code></h3><p>In quirks mode, numbers with no unit are px. The first <code>&lt;p&gt;</code>'s top margin merges with the <code>body</code>'s (8): 65 is left, and the <code>body</code> moves down with it, to y = 65. Between two <code>&lt;p&gt;</code>, a 65 margin meets a −25 margin: 65 − 25 = 40. The bars land at y = 65, 135 and 205.</p></div>
+<div class="cap" data-t="8" data-step="The body stretches below the canvas"><h3>3. The <code>body</code> stretches below the canvas</h3><p>At the top level of a style sheet, <code>&amp;</code> is the root: <code>&amp;&gt;*</code> targets <code>html</code>'s children, <code>head</code> (hidden) and the <code>body</code>. In quirks mode, the <code>body</code> fills <code>html</code>'s height minus its margins. At the top, 65. At the bottom, its 8 margin merges with the last <code>&lt;p&gt;</code>'s −25: 8 − 25 = −17. 300 − 65 + 17 = 252: the <code>body</code> goes from y = 65 to y = 317.</p></div>
+<div class="cap" data-t="12" data-step="image(): a flat tile as big as html"><h3>4. <code>image()</code>: a flat tile as big as <code>html</code></h3><p><code>html</code> has no background, so the <code>body</code>'s goes to the canvas, placed on <code>html</code>'s box, 400 × 300. <code>image(#17504D)</code> is a plain-color image with no size of its own. With no <code>background-size</code>, it takes the whole positioning area: a 400 × 300 green tile that covers everything.</p></div>
+<div class="cap" data-t="16" data-step="0 -50vh space: one tile, moved up"><h3>5. <code>0 -50vh space</code>: one tile, moved up</h3><p>The position <code>0 -50vh</code> moves the tile up by 150: it now runs from y = −150 to y = 150. Normally, the tile would repeat and fill the gap. With <code>space</code>, a tile as big as the area only fits once: no repeat. Below y = 150, you see the shorthand's color, <code>#998235</code>.</p></div>
+<div class="cap" data-t="20" data-step="clip-path:inset(0 140q)"><h3>6. <code>clip-path:inset(0 140q)</code></h3><p>1Q is a quarter of a millimeter, 0.945px: 140q = 132.28px. The cut keeps the <code>body</code>'s full height and takes 132.28 off each side: 384 − 264.56 = 119.44 wide, from x = 140.28 to 259.72. The background already went to the canvas, so the cut only trims the bars.</p></div>
+<div class="cap" data-t="24" data-step="round 1in: the dome"><h3>7. <code>round 1in</code>: the dome</h3><p><code>round</code> rounds the cut's corners: 1in = 96px. Two 96 radii don't fit in 119.44: the browser scales all of them by the same ratio, 119.44 / 192, which gives 59.72. At the top, the two corners meet in the middle: a half-circle of radius 59.72, centered on (200, 124.72). The first bar, from y = 65 to 95, only keeps its top: a dome. The bottom corners fall below the canvas, far from the bars.</p></div>
+<div class="cap" data-t="29" data-step="Result" data-live="138 characters · 100% match"><h3>8. Result: 138 characters</h3><p>Three empty <code>&lt;p&gt;</code> for the bars, a moved-up plain-color image for the background, and one rounded cut on the <code>body</code> for the width and the dome.</p></div>
+{%- endif %}
+</div>
+<div class="live"></div>
+</div>
+</div>
+<script>
+(window.AnimScenes = window.AnimScenes || {}).t1120 = (fig) => {
+  const fr = document.documentElement.lang === 'fr';
+  const $ = (s) => fig.querySelector(s);
+  const $$ = (s) => [...fig.querySelectorAll(s)];
+  const CM = $('.t1120-cm'), T = $('.t1120-tile'), B = $('.t1120-b'), BO = $('.t1120-bo'), live = $('.live');
+  const P = $$('.t1120-p');
+  const K = (n) => $$(`.t1120-k${n}`);
+  const L = (k) => $(`.t1120-l-${k}`);
+  // measured in Chrome: 5vh = 15px, 140q = 132.28125px, 1in = 96px; body 384 × 252 at (8, 65); radii 96 → 59.72
+  const Q140 = 132.28125, R = 96;
+  const W = { b: [0.4, 2.4], m: [4.3, 6.8], c: [8.3, 9.5], d: [12.3, 13.3], e: [16.3, 18.8], f: [20.3, 22.8], g: [24.3, 26.8], fin: [29.1, 29.8] };
+  const ease = (x) => (x < 0.5 ? 4 * x * x * x : 1 - Math.pow(-2 * x + 2, 3) / 2);
+  const pr = (t, [a, b]) => ease(Math.min(1, Math.max(0, (t - a) / (b - a))));
+  const win = (t, a, b) => Math.min(pr(t, [a, a + 0.5]), 1 - pr(t, [b - 0.4, b]));
+  const num = (v, d) => v.toFixed(d).replace('.', fr ? ',' : '.').replace('-', '−');
+  const c = fr ? ' :' : ':';
+  return (t, st) => {
+    const step = st + 1;
+    const teach = fig.dataset.teach === '1';
+    const fin = t >= W.fin[0];
+    const real = !teach || fin;
+    const b = pr(t, W.b), m = pr(t, W.m), cc = pr(t, W.c), d = pr(t, W.d), e = pr(t, W.e), f = pr(t, W.f), g = pr(t, W.g);
+    // bars: border 15 on top and bottom; margins 65m / −25m, the first top margin merges with the body's 8
+    const top = Math.max(8, 65 * m), gap = 40 * m, h = 30 * b;
+    const bh = 300 - top - (8 - 25 * m);
+    Object.assign(B.style, { top: `${top}px`, height: `${bh}px`, clipPath: `inset(0 ${Q140 * f}px round ${R * g}px)` });
+    P.forEach((p, i) => Object.assign(p.style, { top: `${i * (h + gap)}px`, height: `${h}px`, background: real ? 'var(--t1120-d)' : 'var(--t1120-p)' }));
+    // body outline (not clipped)
+    Object.assign(BO.style, { top: `${top}px`, height: `${bh}px`, opacity: fin ? 0 : cc, borderRadius: '0' });
+    BO.firstElementChild.textContent = `body 384 × ${Math.round(bh)}`;
+    // background: a 400 × 300 plain tile, moved up by 150; the shorthand's color below it
+    T.style.opacity = d;
+    T.style.top = `${-150 * e}px`;
+    T.style.outline = teach && !fin ? '2px dashed var(--t1120-img)' : 'none';
+    T.style.outlineOffset = '-2px';
+    T.firstElementChild.style.opacity = teach && !fin && step >= 4 ? 1 : 0;
+    CM.style.opacity = e > 0 ? 1 : 0;
+    // digits in the code
+    K(1).forEach((k) => (k.textContent = String(Math.round(5 * b))));
+    K(2).forEach((k) => (k.textContent = String(Math.round(65 * m))));
+    K(3).forEach((k) => (k.textContent = m <= 0 ? ' 0' : `-${Math.round(25 * m)}`));
+    K(4).forEach((k) => (k.textContent = e <= 0 ? ' 0' : `-${Math.round(50 * e)}`));
+    K(5).forEach((k) => (k.textContent = String(Math.round(140 * f))));
+    K(6).forEach((k) => (k.textContent = g <= 0 ? '0' : g >= 1 ? '1' : g.toFixed(1).replace('.', fr ? ',' : '.')));
+    L('a').style.opacity = win(t, 0.3, W.m[0] - 0.2);
+    L('b').style.opacity = win(t, W.m[0], W.c[0] - 0.2);
+    L('c').style.opacity = win(t, W.c[0], W.d[0] - 0.2);
+    L('d').style.opacity = win(t, W.d[0], W.e[0] - 0.2);
+    L('e').style.opacity = win(t, W.e[0], W.f[0] - 0.2);
+    L('f').style.opacity = win(t, W.f[0], W.g[0] - 0.2);
+    L('g').style.opacity = win(t, W.g[0], W.fin[0]);
+    // live line
+    const w = 384 - 2 * Q140 * f;
+    const r = Math.min(R * g, w / 2);
+    let txt = '';
+    if (step === 1) txt = `p${c} 384 × ${Math.round(h)}`;
+    else if (step === 2) txt = `p${c} y = ${Math.round(top)} · ${Math.round(top + h + gap)} · ${Math.round(top + 2 * (h + gap))}`;
+    else if (step === 3) txt = `body${c} y = 65 → ${Math.round(65 + 252 * cc)}`;
+    else if (step === 4) txt = `image()${c} 400 × 300`;
+    else if (step === 5) txt = `${fr ? 'tuile' : 'tile'}${c} y = ${num(-150 * e, 0)} → ${num(300 - 150 * e, 0)}`;
+    else if (step === 6) txt = `${fr ? 'découpe' : 'cut'}${c} x ${num(8 + Q140 * f, 2)} → ${num(392 - Q140 * f, 2)}`;
+    else if (step === 7) txt = `${fr ? 'rayon' : 'radius'}${c} ${num(R * g, 0)} → ${num(r, 2)}`;
+    else txt = $$('.caps .cap')[7].dataset.live || '';
+    live.textContent = txt;
+  };
+};
+</script>
+</figure>
