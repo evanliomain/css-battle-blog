@@ -1,0 +1,134 @@
+<figure class="anim t1121" data-duration="28" data-scene="t1121" data-wide="-20 -30 440 420" data-off-label="-16 366" style="--bg:#90d3a6">
+<style>
+.t1121{--t1121-d:#024817;--t1121-l:#90d3a6;--t1121-html:#7048e8;--t1121-body:#e8590c;--t1121-h1:#1c7ed6;--t1121-bl:#ffe8a3;--t1121-hl:#b9dcff}
+.t1121 .t1121-hb{position:absolute;left:-60px;top:-60px;width:520px;height:520px;background-color:var(--t1121-l)}
+.t1121 .t1121-bd,.t1121 .t1121-h1{position:absolute;opacity:0}
+.t1121 .t1121-o{position:absolute;box-sizing:border-box;border:2px dashed;pointer-events:none}
+.t1121 .t1121-o span{position:absolute;font:600 11px/1 ui-monospace,monospace;color:#fff;padding:2px 4px;border-radius:3px;white-space:nowrap}
+.t1121 .t1121-oh{border-color:var(--t1121-html)}
+.t1121 .t1121-oh span{left:1px;top:200px;background:var(--t1121-html)}
+.t1121 .t1121-ob{border-color:var(--t1121-body)}
+.t1121 .t1121-ob span{right:4px;bottom:4px;background:var(--t1121-body)}
+.t1121 .t1121-o1{border-color:var(--t1121-h1)}
+.t1121 .t1121-o1 span{left:50%;top:202px;transform:translateX(-50%);background:var(--t1121-h1)}
+.t1121 .zlab{color:#fff;background:rgb(12 40 22 / .92);padding:1px 5px;border-radius:3px;white-space:nowrap;opacity:0}
+.t1121 .t1121-k{color:inherit}
+</style>
+<div class="anim-col">
+<div class="stage" role="img" aria-label="{% if include.lang == "fr" %}Animation : la règle * donne les mêmes marges et le même fond à html, au body et au h1 ; 2.06em vaut 32,96 px sur html et le body, 65,92 px sur le h1, d'où trois boîtes de plus en plus étroites ; height:8.75em donne 140 px au body et 280 px au h1 ; le fond est un dégradé radial répété, un demi-disque sombre de 24,56 px de rayon en bas de chaque tuile de 69,92 px de large et de la moitié de la hauteur de la boîte ; la marge basse de -6in étire html à 853 px, ses demi-disques tombent en y = 356, sous le canevas ; le body dessine deux rangées de quatre demi-disques ; le h1, deux fois plus haut, repasse par-dessus : il cache les deux demi-disques du milieu de la deuxième rangée et en ajoute deux sur une troisième rangée{% else %}Animation: the * rule gives the same margins and the same background to html, the body and the h1; 2.06em is 32.96px on html and the body, 65.92px on the h1, hence three boxes, each narrower than the last; height:8.75em makes the body 140px tall and the h1 280px tall; the background is a repeated radial gradient, a dark half-disc of radius 24.56px at the bottom of each tile, 69.92px wide and half the box tall; the -6in bottom margin stretches html to 853px, so its half-discs land at y = 356, below the canvas; the body draws two rows of four half-discs; the h1, twice as tall, paints over it: it hides the two middle half-discs of the second row and adds two on a third row{% endif %}">
+<div class="scene">
+<div class="t1121-hb"></div>
+<div class="t1121-bd"></div>
+<div class="t1121-h1"></div>
+<div class="t1121-o t1121-oh"><span>html</span></div>
+<div class="t1121-o t1121-ob"><span>body</span></div>
+<div class="t1121-o t1121-o1"><span>h1</span></div>
+<span class="zlab t1121-l-a" style="left:4px;top:3px">2.06em = 32.96 (html, body) · 65.92 (h1)</span>
+<span class="zlab t1121-l-b" style="left:4px;top:3px">8.75em = 140 (body) · 280 (h1)</span>
+<span class="zlab t1121-l-c" style="left:4px;top:3px">{% if include.lang == "fr" %}tuile : 74q × 50% = 69,92 × 138,5{% else %}tile: 74q × 50% = 69.92 × 138.5{% endif %}</span>
+<span class="zlab t1121-l-d" style="left:4px;top:3px">{% if include.lang == "fr" %}300 − 23 + 576 = 853 → tuile de 426,5{% else %}300 − 23 + 576 = 853 → 426.5 tile{% endif %}</span>
+<span class="zlab t1121-l-e" style="left:4px;top:3px">{% if include.lang == "fr" %}body : 50% = 70 → y = 92,46 · 162,46{% else %}body: 50% = 70 → y = 92.46 · 162.46{% endif %}</span>
+<span class="zlab t1121-l-f" style="left:4px;top:3px">{% if include.lang == "fr" %}h1 : 50% = 140 → y = 92,46 · 232,46{% else %}h1: 50% = 140 → y = 92.46 · 232.46{% endif %}</span>
+</div>
+</div>
+<div class="legend"><span><i style="--c:var(--t1121-html)"></i>html</span><span><i style="--c:var(--t1121-body)"></i>body</span><span><i style="--c:var(--t1121-h1)"></i>&lt;h1&gt;</span></div>
+</div>
+<div class="anim-side">
+<pre class="code" aria-hidden="true"><span data-on="1" data-tone="2">&lt;h1></span>&lt;style><span data-on="1" data-tone="2">*</span>{<span data-on="1">margin:<span class="t1121-k t1121-k1">23</span> <span class="t1121-k t1121-k2">2.06</span>em</span><span data-on="4"> <span class="t1121-k t1121-k3">-6</span>in</span>;<span data-on="3 5 6">background:radial-gradient(1q at bottom,#024817 <span class="t1121-k t1121-k5">26</span>q,#90D3A6)-3%-99q/74q 50%</span>;<span data-on="2">*{height:<span class="t1121-k t1121-k4">8.75</span>em</span></pre>
+<div class="now" aria-live="polite">
+<div class="caps">
+{%- if include.lang == "fr" %}
+<div class="cap" data-t="0" data-step="Une règle, trois boîtes"><h3>1. Une règle, trois boîtes</h3><p><code>*</code> vise tout : <code>html</code>, le <code>body</code> et le <code>&lt;h1&gt;</code>. <code>margin:23 2.06em</code> met 23 en haut et 2,06em sur les côtés. Un em, c'est la taille du texte de l'élément : 16 sur <code>html</code> et le <code>body</code>, donc 32,96. Un <code>&lt;h1&gt;</code> écrit deux fois plus gros : 65,92. Chaque boîte est plus étroite que la précédente : 334, 268 puis 136 de large.</p></div>
+<div class="cap" data-t="4" data-step="height:8.75em"><h3>2. <code>height:8.75em</code></h3><p>Le <code>*</code> imbriqué vise tout élément placé dans un autre : le <code>body</code> et le <code>&lt;h1&gt;</code>, pas <code>html</code>. Encore l'em : 8,75 × 16 = 140 pour le <code>body</code>, 8,75 × 32 = 280 pour le <code>&lt;h1&gt;</code>. Les deux partent de y = 46. Le <code>&lt;h1&gt;</code> descend jusqu'à 326, sous le canevas.</p></div>
+<div class="cap" data-t="8" data-step="Le fond : un demi-disque par tuile"><h3>3. Le fond : un demi-disque par tuile</h3><p>Le dégradé est un cercle centré au milieu du bord bas de la tuile : sombre jusqu'à 26q = 24,56px, vert clair ensuite, sans transition. Seule la moitié haute tient dans la tuile : un demi-disque. La tuile fait 74q = 69,92 de large et 50 % de la hauteur de la boîte. Le fond de <code>html</code> part au canevas : avec ses 277 de haut, des demi-disques partout.</p></div>
+<div class="cap" data-t="12" data-step="-6in : html s'étire"><h3>4. <code>-6in</code> : <code>html</code> s'étire</h3><p>La troisième valeur de <code>margin</code> est la marge basse : −6in = −576. En mode quirks, <code>html</code> remplit la fenêtre moins ses marges : 300 − 23 + 576 = 853. Sa tuile fait donc 426,5 de haut. Elle commence en y = −70,54 : ses demi-disques tombent en y = 356, sous le canevas. Le canevas est uni.</p></div>
+<div class="cap" data-t="16" data-step="Le body : deux rangées de quatre"><h3>5. Le <code>body</code> : deux rangées de quatre</h3><p>Même fond, sur une boîte de 268 × 140. 50 % font 70 : deux rangées. <code>-99q</code> remonte les tuiles de 93,54 : leurs bas tombent en y = 92,46 et 162,46. <code>-3%</code> les décale de 5,95 vers la gauche : quatre tuiles entières, centrées en x = 95, 165, 235 et 305.</p></div>
+<div class="cap" data-t="20" data-step="Le h1 repasse par-dessus"><h3>6. Le <code>&lt;h1&gt;</code> repasse par-dessus</h3><p>Même fond, sur une boîte de 136 × 280. 50 % font 140 : ses demi-disques tombent en y = 92,46 et 232,46, sur deux colonnes, centrées en x = 165 et 235. Son fond est opaque et peint par-dessus le <code>body</code>. Il redessine les deux demi-disques du milieu de la première rangée, cache ceux de la deuxième et en ajoute deux sur une troisième.</p></div>
+<div class="cap" data-t="24" data-step="Résultat" data-live="126 caractères · 100 % identique"><h3>7. Résultat : 126 caractères</h3><p>Une seule règle, un seul fond, trois boîtes. L'em change la taille du <code>&lt;h1&gt;</code>, et les pourcentages font le reste.</p></div>
+{%- else %}
+<div class="cap" data-t="0" data-step="One rule, three boxes"><h3>1. One rule, three boxes</h3><p><code>*</code> targets everything: <code>html</code>, the <code>body</code> and the <code>&lt;h1&gt;</code>. <code>margin:23 2.06em</code> puts 23 on top and 2.06em on the sides. One em is the element's own text size: 16 on <code>html</code> and the <code>body</code>, so 32.96. An <code>&lt;h1&gt;</code> writes twice as big: 65.92. Each box is narrower than the one before: 334, 268, then 136 wide.</p></div>
+<div class="cap" data-t="4" data-step="height:8.75em"><h3>2. <code>height:8.75em</code></h3><p>The nested <code>*</code> targets any element inside another one: the <code>body</code> and the <code>&lt;h1&gt;</code>, not <code>html</code>. The em again: 8.75 × 16 = 140 for the <code>body</code>, 8.75 × 32 = 280 for the <code>&lt;h1&gt;</code>. Both start at y = 46. The <code>&lt;h1&gt;</code> goes down to 326, below the canvas.</p></div>
+<div class="cap" data-t="8" data-step="The background: one half-disc per tile"><h3>3. The background: one half-disc per tile</h3><p>The gradient is a circle centered on the middle of the tile's bottom edge: dark up to 26q = 24.56px, light green after that, with no blend. Only its top half fits in the tile: a half-disc. The tile is 74q = 69.92 wide and 50% of the box's height. <code>html</code>'s background goes to the canvas: with its 277 of height, half-discs everywhere.</p></div>
+<div class="cap" data-t="12" data-step="-6in: html stretches"><h3>4. <code>-6in</code>: <code>html</code> stretches</h3><p>The third <code>margin</code> value is the bottom margin: −6in = −576. In quirks mode, <code>html</code> fills the window minus its margins: 300 − 23 + 576 = 853. So its tile is 426.5 tall. It starts at y = −70.54: its half-discs land at y = 356, below the canvas. The canvas is plain.</p></div>
+<div class="cap" data-t="16" data-step="The body: two rows of four"><h3>5. The <code>body</code>: two rows of four</h3><p>Same background, on a 268 × 140 box. 50% is 70: two rows. <code>-99q</code> moves the tiles up by 93.54: their bottoms land at y = 92.46 and 162.46. <code>-3%</code> shifts them 5.95 to the left: four whole tiles, centered on x = 95, 165, 235 and 305.</p></div>
+<div class="cap" data-t="20" data-step="The h1 paints over it"><h3>6. The <code>&lt;h1&gt;</code> paints over it</h3><p>Same background, on a 136 × 280 box. 50% is 140: its half-discs land at y = 92.46 and 232.46, in two columns, centered on x = 165 and 235. Its background is opaque and painted over the <code>body</code>. It redraws the two middle half-discs of the first row, hides those of the second and adds two on a third.</p></div>
+<div class="cap" data-t="24" data-step="Result" data-live="126 characters · 100% match"><h3>7. Result: 126 characters</h3><p>One rule, one background, three boxes. The em changes the size of the <code>&lt;h1&gt;</code>, and the percentages do the rest.</p></div>
+{%- endif %}
+</div>
+<div class="live"></div>
+</div>
+</div>
+<script>
+(window.AnimScenes = window.AnimScenes || {}).t1121 = (fig) => {
+  const fr = document.documentElement.lang === 'fr';
+  const $ = (s) => fig.querySelector(s);
+  const $$ = (s) => [...fig.querySelectorAll(s)];
+  const HB = $('.t1121-hb'), BD = $('.t1121-bd'), H1 = $('.t1121-h1'), OH = $('.t1121-oh'), OB = $('.t1121-ob'), O1 = $('.t1121-o1'), live = $('.live');
+  const K = (n) => $$(`.t1121-k${n}`);
+  const L = (k) => $(`.t1121-l-${k}`);
+  // measured in Chrome: 2.06em = 32.953125px at 16px; 26q = 24.5625px; 74q = 69.9213px; 99q = 93.5433px
+  // html 334.09 × 853 at (32.95, 23); body 268.19 × 140 at (65.91, 46); h1 136.38 × 280 at (131.81, 46)
+  const EM = 32.953125, R26 = 24.5625, TW = 69.9213, UP = 93.5433;
+  const W = { m: [0.4, 2.8], h: [4.3, 6.8], g: [8.5, 10.6], b: [12.3, 15.2], e: [16.3, 17.6], f: [20.3, 21.6], fin: [24.1, 24.8] };
+  const ease = (x) => (x < 0.5 ? 4 * x * x * x : 1 - Math.pow(-2 * x + 2, 3) / 2);
+  const pr = (t, [a, b]) => ease(Math.min(1, Math.max(0, (t - a) / (b - a))));
+  const win = (t, a, b) => Math.min(pr(t, [a, a + 0.5]), 1 - pr(t, [b - 0.4, b]));
+  const num = (v, d) => v.toFixed(d).replace('.', fr ? ',' : '.').replace('-', '−');
+  const c = fr ? '\u00a0:' : ':';
+  const grad = (r, light) => `radial-gradient(circle 1px at bottom,var(--t1121-d) ${r}px,${light} 0)`;
+  return (t, st) => {
+    const step = st + 1;
+    const teach = fig.dataset.teach === '1';
+    const fin = t >= W.fin[0];
+    const real = !teach || fin;
+    const m = pr(t, W.m), hh = pr(t, W.h), g = pr(t, W.g), b = pr(t, W.b), e = pr(t, W.e), f = pr(t, W.f);
+    // boxes: margins 23 / 2.06em (twice as much on the h1), heights 8.75em, html's bottom margin 0 → −576
+    const hx = EM * m, hy = 23 * m, hw = 400 - 2 * hx, hH = 300 - hy + 576 * b;
+    const bx = 2 * EM * m, by = 46 * m, bw = 400 - 4 * EM * m, bH = (300 - 46 * m) + (140 - (300 - 46 * m)) * hh;
+    const x1 = 4 * EM * m, w1 = 400 - 8 * EM * m, H1h = 280 * hh;
+    const r = R26 * g;
+    // html's background, painted by the canvas: tiles 69.92 × 50% of html, origin −3% / −99q from html's corner
+    const th = hH / 2;
+    HB.style.backgroundImage = g > 0 ? grad(r, 'var(--t1121-l)') : 'none';
+    HB.style.backgroundSize = `${TW}px ${th}px`;
+    HB.style.backgroundPosition = `${hx - 0.03 * (hw - TW) + 60}px ${hy - UP + 60}px`;
+    const bg = (light) => `${grad(R26, light)} -3% ${-UP}px / ${TW}px 50%`;
+    Object.assign(BD.style, { left: `${bx}px`, top: `${by}px`, width: `${bw}px`, height: `${bH}px`, opacity: e, background: bg(real ? 'var(--t1121-l)' : 'var(--t1121-bl)') });
+    Object.assign(H1.style, { left: `${x1}px`, top: `${by}px`, width: `${w1}px`, height: `${H1h}px`, opacity: f, background: bg(real ? 'var(--t1121-l)' : 'var(--t1121-hl)') });
+    // outlines
+    const oo = fin ? 0 : 1;
+    Object.assign(OH.style, { left: `${hx}px`, top: `${hy}px`, width: `${hw}px`, height: `${hH}px`, opacity: oo });
+    Object.assign(OB.style, { left: `${bx}px`, top: `${by}px`, width: `${bw}px`, height: `${bH}px`, opacity: oo });
+    Object.assign(O1.style, { left: `${x1}px`, top: `${by}px`, width: `${w1}px`, height: `${Math.max(H1h, 2)}px`, opacity: oo });
+    OH.firstElementChild.textContent = `html ${Math.round(hw)} × ${Math.round(hH)}`;
+    OB.firstElementChild.textContent = `body ${Math.round(bw)} × ${Math.round(bH)}`;
+    O1.firstElementChild.textContent = `h1 ${Math.round(w1)} × ${Math.round(H1h)}`;
+    O1.firstElementChild.style.opacity = H1h > 230 ? 1 : 0;
+    OH.firstElementChild.style.opacity = m > 0.9 ? 1 : 0;
+    // digits in the code
+    const dec = (v, d) => (v <= 0 ? '0' : v.toFixed(d));
+    K(1).forEach((k) => (k.textContent = String(Math.round(23 * m))));
+    K(2).forEach((k) => (k.textContent = m >= 1 ? '2.06' : dec(2.06 * m, 2)));
+    K(3).forEach((k) => (k.textContent = b <= 0 ? '0' : b >= 1 ? '-6' : `-${(6 * b).toFixed(1)}`));
+    K(4).forEach((k) => (k.textContent = hh >= 1 ? '8.75' : dec(8.75 * hh, 2)));
+    K(5).forEach((k) => (k.textContent = step < 3 ? '26' : String(Math.round(26 * g))));
+    L('a').style.opacity = win(t, 0.3, W.h[0] - 0.2);
+    L('b').style.opacity = win(t, W.h[0], W.g[0] - 0.4);
+    L('c').style.opacity = win(t, W.g[0], W.b[0] - 0.2);
+    L('d').style.opacity = win(t, W.b[0], W.e[0] - 0.2);
+    L('e').style.opacity = win(t, W.e[0], W.f[0] - 0.2);
+    L('f').style.opacity = win(t, W.f[0], W.fin[0]);
+    // live line
+    let txt = '';
+    if (step === 1) txt = `x = ${num(hx, 2)} · ${num(bx, 2)} · ${num(x1, 2)}`;
+    else if (step === 2) txt = `body${c} ${Math.round(bH)} · h1${c} ${Math.round(H1h)}`;
+    else if (step === 3) txt = `${fr ? 'rayon' : 'radius'}${c} ${num(r, 2)}`;
+    else if (step === 4) txt = `html${c} ${Math.round(hH)} → y = ${num(hy - UP + th, 2)}`;
+    else if (step === 5) txt = `body${c} y = ${num(92.46, 2)} · ${num(162.46, 2)}`;
+    else if (step === 6) txt = `h1${c} y = ${num(92.46, 2)} · ${num(232.46, 2)}`;
+    else txt = $$('.caps .cap')[6].dataset.live || '';
+    live.textContent = txt;
+  };
+};
+</script>
+</figure>
