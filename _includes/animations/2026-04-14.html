@@ -1,0 +1,112 @@
+<figure class="anim t0414" data-duration="30" data-scene="t0414" data-wide="-50 -40 500 380" data-off-label="-46 306" style="--bg:#ee7766">
+<style>
+.t0414{--t0414-hb:#38bdf8;--t0414-bd:#a78bfa}
+.t0414 .scene .t0414-html{left:95px;top:60px;width:210px;height:90px;box-sizing:border-box;border:0 solid #f2eaa8;border-left:0;z-index:2}
+.t0414 .scene .t0414-body{left:185px;top:90px;width:30px;height:30px;background:#f2eaa8;opacity:0;z-index:3}
+.t0414 .scene .t0414-band{left:95px;top:90px;width:90px;height:30px;background:repeating-linear-gradient(135deg,rgb(255 255 255 / .55) 0 calc(2px * var(--k, 1)),transparent calc(2px * var(--k, 1)) calc(6px * var(--k, 1)));opacity:0;z-index:4}
+.t0414 .scene .t0414-ol{box-sizing:border-box;outline:calc(1.5px * var(--k, 1)) dashed #fff;outline-offset:calc(-0.75px * var(--k, 1));filter:drop-shadow(0 0 calc(1px * var(--k, 1)) #14142a);opacity:0;z-index:10;pointer-events:none}
+.t0414 .scene .zlab{left:var(--x);top:var(--y);color:#14142a;background:rgb(255 255 255 / .92);box-shadow:0 0 0 1px rgb(20 20 42 / .25);padding:1px 5px;border-radius:3px;opacity:0}
+.t0414[data-view="wide"] .scene .zlab{left:var(--wx);top:var(--wy)}
+@media (max-width:700px){.t0414 .scene .zlab{font-size:8px;padding:0 3px}}
+.t0414 .legend .t0414-dash{background:none;outline:2px dashed currentColor;outline-offset:-2px}
+.t0414 .legend .t0414-hatch{background:repeating-linear-gradient(135deg,currentColor 0 2px,transparent 2px 5px);outline:1px solid currentColor;outline-offset:-1px}
+</style>
+<div class="anim-col">
+<div class="stage" role="img" aria-label="{% if include.lang == "fr" %}Animation : & vise la racine, html. Avec margin:60 95 150 en mode quirks, la boîte de html fait 210 × 90 en (95, 60). Son fond, #E76, est celui de la racine : il peint tout le canevas en corail. * donne à html et à body une bordure de 32q, crème, sans bordure gauche : mon Chrome la dessine sur 30px. Pour html, cela fait une barre en haut, une barre en bas et un côté droit, ouvert à gauche. border-radius:0 1in 1in 0 demande 96px aux deux coins droits ; 96 + 96 dépasse les 90px de haut, et les rayons sont ramenés à 45px : le côté droit devient un demi-anneau. body prend la marge de * : 0 en haut, 90 à gauche et à droite, −120 en bas. Il commence en x = 185, et sa largeur de contenu tombe à 0 : il ne fait plus que 30px de large, la largeur de sa bordure droite. En mode quirks, il fait 30 + 120 = 150px de haut, de y = 90 à 240 : c'est le pied du P.{% else %}Animation: & matches the root, html. With margin:60 95 150 in quirks mode, html's box is 210 × 90 at (95, 60). Its background, #E76, is the root's: it paints the whole canvas coral. * gives html and body a 32q cream border with no left border: my Chrome draws it 30px wide. For html, that is a bar at the top, a bar at the bottom and a right side, open on the left. border-radius:0 1in 1in 0 asks for 96px on both right corners; 96 + 96 is more than the 90px height, so the radii come down to 45px: the right side turns into a half ring. body takes the margin of *: 0 at the top, 90 left and right, −120 at the bottom. It starts at x = 185, and its content width falls to 0: it is only 30px wide, the width of its right border. In quirks mode, it is 30 + 120 = 150px tall, from y = 90 to 240: the stem of the P.{% endif %}">
+<div class="scene">
+<div class="t0414-html"></div>
+<div class="t0414-body"></div>
+<div class="t0414-band"></div>
+<div class="t0414-ol t0414-ohtml" style="left:95px;top:60px;width:210px;height:90px"></div>
+<div class="t0414-ol t0414-ocont" style="left:95px;top:90px;width:180px;height:30px"></div>
+<div class="t0414-ol t0414-obody" style="left:185px;top:90px;width:30px;height:150px"></div>
+<span class="zlab" data-l="1" style="--x:6px;--y:4px;--wx:-46px;--wy:-36px">{% if include.lang == "fr" %}html : 210 × 90 en (95, 60){% else %}html: 210 × 90 at (95, 60){% endif %}</span>
+<span class="zlab" data-l="1" style="--x:6px;--y:22px;--wx:-46px;--wy:-14px">{% if include.lang == "fr" %}fond de la racine → tout le canevas{% else %}root background → the whole canvas{% endif %}</span>
+<span class="zlab" data-l="2" style="--x:6px;--y:4px;--wx:-46px;--wy:-36px">{% if include.lang == "fr" %}32q = 30,24px · mon Chrome : 30px{% else %}32q = 30.24px · my Chrome: 30px{% endif %}</span>
+<span class="zlab" data-l="2" style="--x:6px;--y:22px;--wx:-46px;--wy:-14px">{% if include.lang == "fr" %}border-left:0 → ouvert à gauche{% else %}border-left:0 → open on the left{% endif %}</span>
+<span class="zlab" data-l="3" style="--x:6px;--y:4px;--wx:-46px;--wy:-36px">{% if include.lang == "fr" %}1in = 96px · 96 + 96 > 90 → 45px{% else %}1in = 96px · 96 + 96 > 90 → 45px{% endif %}</span>
+<span class="zlab" data-l="3" style="--x:6px;--y:22px;--wx:-46px;--wy:-14px">{% if include.lang == "fr" %}rayon intérieur : 45 − 30 = 15{% else %}inner radius: 45 − 30 = 15{% endif %}</span>
+<span class="zlab" data-l="4" style="--x:6px;--y:4px;--wx:-46px;--wy:-36px">{% if include.lang == "fr" %}body : x = 95 + 90 = 185{% else %}body: x = 95 + 90 = 185{% endif %}</span>
+<span class="zlab" data-l="4" style="--x:6px;--y:22px;--wx:-46px;--wy:-14px">{% if include.lang == "fr" %}contenu : 180 − 90 − 90 − 30 &lt; 0 → 0{% else %}content: 180 − 90 − 90 − 30 &lt; 0 → 0{% endif %}</span>
+<span class="zlab" data-l="5" style="--x:6px;--y:4px;--wx:-46px;--wy:-36px">{% if include.lang == "fr" %}body : 30 + 120 = 150 de haut{% else %}body: 30 + 120 = 150 tall{% endif %}</span>
+<span class="zlab" data-l="5" style="--x:6px;--y:22px;--wx:-46px;--wy:-14px">{% if include.lang == "fr" %}pied dans la cible : jusqu'à y = 240{% else %}stem in the target: down to y = 240{% endif %}</span>
+</div>
+</div>
+<div class="legend"><span><i class="t0414-dash"></i>{% if include.lang == "fr" %}boîtes{% else %}boxes{% endif %}</span><span><i style="--c:#38bdf8"></i>{% if include.lang == "fr" %}bordure de html{% else %}html's border{% endif %}</span><span><i style="--c:#a78bfa"></i>{% if include.lang == "fr" %}bordure de body{% else %}body's border{% endif %}</span><span><i class="t0414-hatch"></i>{% if include.lang == "fr" %}marge gauche de body{% else %}body's left margin{% endif %}</span></div>
+</div>
+<div class="anim-side">
+<pre class="code" aria-hidden="true">&lt;style><span data-on="2 4" data-tone="2">*</span>{<span data-on="4">margin:0 90</span><span data-on="5">-120</span>;<span data-on="2">border:32q solid#F2EAA8;border-left:0</span>}<span data-on="1" data-tone="2">&amp;</span>{<span data-on="1">margin:60 95 150</span>;<span data-on="3">border-radius:0 1in 1in 0</span>;<span data-on="1">background:#E76</span></pre>
+<div class="now" aria-live="polite">
+<div class="caps">
+{%- if include.lang == "fr" %}
+<div class="cap" data-t="0" data-step="La boîte de html"><h3>1. html : 210 × 90</h3><p><code>&amp;</code> seul, hors de toute règle, vise la racine : html. Pas de doctype : mode quirks, les marges sans unité sont des px. <code>margin:60 95 150</code> laisse 400 − 95 − 95 = 210px de large. En mode quirks, html prend la hauteur de la fenêtre moins ses marges : 300 − 60 − 150 = 90, de y = 60 à 150. Le fond de la racine se peint sur tout le canevas : tout est corail.</p></div>
+<div class="cap" data-t="5" data-step="Trois bordures"><h3>2. Une bordure, sauf à gauche</h3><p><code>*</code> donne à chaque élément une bordure crème de 32q. 1q vaut un quart de millimètre : 32q font 30,24px, et mon Chrome la dessine sur 30px. <code>border-left:0</code> retire le côté gauche. Pour html, il reste une barre en haut, de y = 60 à 90, une barre en bas, de y = 120 à 150, et le côté droit. Le tout est ouvert à gauche.</p></div>
+<div class="cap" data-t="10" data-step="Le rayon"><h3>3. Deux coins arrondis</h3><p><code>border-radius:0 1in 1in 0</code> demande 96px aux deux coins droits. 96 + 96 = 192, plus que les 90px de haut : le navigateur réduit tous les rayons dans le même rapport, jusqu'à 45px. Le bord extérieur devient un demi-cercle de 45px de rayon. À l'intérieur, le rayon vaut 45 − 30 = 15 : le côté droit est un demi-anneau.</p></div>
+<div class="cap" data-t="15" data-step="La largeur de body"><h3>4. body : 30px de large</h3><p>body a la bordure de <code>*</code>, et sa marge : <code>0 90-120</code>, soit 0 en haut, 90 à gauche et à droite, −120 en bas. Il se place dans le contenu de html, 180px de large à partir de x = 95. La marge gauche, hachurée, le met en x = 185. Il resterait 180 − 90 − 90 − 30 pour son contenu : moins que rien, donc 0. body ne fait que la largeur de sa bordure droite : de x = 185 à 215.</p></div>
+<div class="cap" data-t="20" data-step="La hauteur de body"><h3>5. body descend jusqu'à y = 240</h3><p>En mode quirks, body prend la hauteur du contenu de html, 30px, moins ses marges du haut et du bas : 30 − 0 − (−120) = 150. Il va de y = 90 à 240, et croise la barre du bas. Sa boîte de marge fait 150 − 120 = 30px, la hauteur du contenu de html : html reste à 90px. Le pied du P va de y = 60 à 240.</p></div>
+<div class="cap" data-t="25" data-step="Résultat" data-live="123 caractères · 100 % identique"><h3>6. Résultat : 123 caractères</h3><p>Deux boîtes, une seule bordure écrite une fois. Celle de html fait les deux barres et l'arrondi, celle de body le pied. Le fond de html peint tout le canevas.</p></div>
+{%- else %}
+<div class="cap" data-t="0" data-step="html's box"><h3>1. html: 210 × 90</h3><p><code>&amp;</code> alone, outside any rule, matches the root: html. No doctype: quirks mode, unitless margins are px. <code>margin:60 95 150</code> leaves 400 − 95 − 95 = 210px of width. In quirks mode, html takes the viewport's height minus its margins: 300 − 60 − 150 = 90, from y = 60 to 150. The root's background is painted on the whole canvas: everything is coral.</p></div>
+<div class="cap" data-t="5" data-step="Three borders"><h3>2. A border, except on the left</h3><p><code>*</code> gives every element a 32q cream border. 1q is a quarter millimeter: 32q is 30.24px, and my Chrome draws it 30px wide. <code>border-left:0</code> removes the left side. For html, that leaves a bar at the top, from y = 60 to 90, a bar at the bottom, from y = 120 to 150, and the right side. It is all open on the left.</p></div>
+<div class="cap" data-t="10" data-step="The radius"><h3>3. Two round corners</h3><p><code>border-radius:0 1in 1in 0</code> asks for 96px on both right corners. 96 + 96 = 192, more than the 90px height: the browser scales every radius down by the same ratio, to 45px. The outer edge turns into a half circle of radius 45. Inside, the radius is 45 − 30 = 15: the right side is a half ring.</p></div>
+<div class="cap" data-t="15" data-step="body's width"><h3>4. body: 30px wide</h3><p>body has the border of <code>*</code>, and its margin: <code>0 90-120</code>, that is 0 at the top, 90 left and right, −120 at the bottom. It sits in html's content, 180px wide from x = 95. The left margin, hatched, puts it at x = 185. That would leave 180 − 90 − 90 − 30 for its content: less than nothing, so 0. body is only as wide as its right border: from x = 185 to 215.</p></div>
+<div class="cap" data-t="20" data-step="body's height"><h3>5. body runs down to y = 240</h3><p>In quirks mode, body takes the height of html's content, 30px, minus its top and bottom margins: 30 − 0 − (−120) = 150. It runs from y = 90 to 240 and crosses the bottom bar. Its margin box is 150 − 120 = 30px tall, the height of html's content: html stays 90px tall. The stem of the P runs from y = 60 to 240.</p></div>
+<div class="cap" data-t="25" data-step="Result" data-live="123 characters · 100% match"><h3>6. Result: 123 characters</h3><p>Two boxes, one border written once. html's border makes the two bars and the round end, body's the stem. html's background paints the whole canvas.</p></div>
+{%- endif %}
+</div>
+<div class="live"></div>
+</div>
+</div>
+<script>
+(window.AnimScenes = window.AnimScenes || {}).t0414 = (fig) => {
+  const fr = document.documentElement.lang === 'fr';
+  const $ = (s) => fig.querySelector(s);
+  const $$ = (s) => [...fig.querySelectorAll(s)];
+  const live = $('.live');
+  const ease = (x) => (x < 0.5 ? 4 * x * x * x : 1 - Math.pow(-2 * x + 2, 3) / 2);
+  const pr = (t, a, b) => ease(Math.min(1, Math.max(0, (t - a) / (b - a))));
+  const win = (t, a, b) => Math.min(pr(t, a, a + 0.5), 1 - pr(t, b - 0.3, b));
+  const n = (s) => (fr ? s.replace(/(\d)\.(\d)/g, '$1,$2') : s);
+  const mix = (k, a, b) => (k <= 0 ? b : k >= 1 ? a : `color-mix(in srgb, ${a} ${(k * 100).toFixed(1)}%, ${b})`);
+  // Measured on the official code in local Chrome 157 (400 × 300 iframe, quirks mode, getBoundingClientRect, getComputedStyle):
+  // html 95, 60, 210 × 90, margin 60px 95px 150px, borders 30px 30px 30px 0px (32q = 30.236px, drawn 30px), radii 96px, background rgb(238, 119, 102);
+  // body 185, 90, 30 × 150, margin 0px 90px -120px, borders 30px 30px 30px 0px. Same edges as the target (x = 95, 185, 215, 305; y = 60, 90, 120, 150, 240).
+  // In real colors, body is drawn from y = 89, under the top bar's edge, so that no seam shows at y = 90.
+  const C = '#f2eaa8';
+  const H = $('.t0414-html'), B = $('.t0414-body'), band = $('.t0414-band');
+  const ol = (k) => $('.t0414-o' + k);
+  const labs = $$('.zlab');
+  const ivs = { 1: [0.3, 4.8], 2: [5.3, 9.8], 3: [10.3, 14.8], 4: [15.3, 19.8], 5: [20.3, 24.8] };
+  return (t, step) => {
+    const teach = fig.dataset.teach === '1';
+    const tw = teach ? 1 - pr(t, 25.2, 26.2) : 0;
+    ol('html').style.opacity = win(t, 0.3, 4.8);
+    // html's border grows to 30px, then its right corners round to 45px
+    const bw = 30 * pr(t, 5.5, 7.5);
+    H.style.borderWidth = `${bw}px ${bw}px ${bw}px 0`;
+    H.style.borderColor = mix(tw, 'var(--t0414-hb)', C);
+    const r = 45 * pr(t, 10.5, 12.5);
+    H.style.borderRadius = `0 ${r}px ${r}px 0`;
+    // body: its right border, 30px wide, then 150px tall
+    const ov = 1 - tw;
+    const bh = 30 + 120 * pr(t, 20.5, 22.5);
+    B.style.top = 90 - ov + 'px';
+    B.style.height = bh + ov + 'px';
+    B.style.opacity = pr(t, 15.5, 16.5);
+    B.style.background = mix(tw, 'var(--t0414-bd)', C);
+    band.style.opacity = win(t, 15.5, 19.8);
+    ol('cont').style.opacity = win(t, 15.5, 19.8);
+    ol('body').style.opacity = win(t, 22.5, 24.8);
+    labs.forEach((l) => { const iv = ivs[l.dataset.l]; l.style.opacity = iv ? win(t, ...iv) : 0; });
+    let txt;
+    if (step === 0) txt = `400 − 95 − 95 = 210 · 300 − 60 − 150 = 90`;
+    else if (step === 1) txt = `32q = 8mm = 30.24px · 60 + 30 = 90 · 150 − 30 = 120`;
+    else if (step === 2) txt = `96 × 90 / 192 = 45 · 45 − 30 = 15`;
+    else if (step === 3) txt = `95 + 90 = 185 · 185 + 30 = 215`;
+    else if (step === 4) txt = `30 − 0 + 120 = 150 · 90 + 150 = 240 · 150 − 120 = 30`;
+    else txt = $$('.caps .cap')[5].dataset.live || '';
+    live.textContent = n(txt);
+  };
+};
+</script>
+</figure>
