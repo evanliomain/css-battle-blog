@@ -1,0 +1,136 @@
+<figure class="anim t0413" data-duration="35" data-scene="t0413" data-wide="-50 -40 500 410" data-off-label="-46 -36" style="--bg:#588a95">
+<style>
+.t0413{--t0413-hb:#38bdf8;--t0413-bd:#a78bfa;--t0413-p1:#f472b6;--t0413-p2:#34d399}
+.t0413 .scene .t0413-html{left:55px;top:50px;width:290px;height:200px;box-sizing:border-box;border:0 solid transparent;z-index:2}
+.t0413 .scene .t0413-body{left:135px;top:50px;width:200px;height:200px;box-sizing:border-box;border:100px solid transparent;background:linear-gradient(90deg,transparent 1px,#588a95 1px);opacity:0;z-index:3}
+.t0413 .scene .t0413-p{left:235px;width:110px;height:0;box-sizing:border-box;opacity:0;z-index:4}
+.t0413 .scene .t0413-ol{box-sizing:border-box;outline:calc(1.5px * var(--k, 1)) dashed #fff;outline-offset:calc(-0.75px * var(--k, 1));filter:drop-shadow(0 0 calc(1px * var(--k, 1)) #14142a);opacity:0;z-index:10;pointer-events:none}
+.t0413 .scene .t0413-line{height:0;border-top:calc(1.5px * var(--k, 1)) dashed #fff;filter:drop-shadow(0 0 calc(1px * var(--k, 1)) #14142a);opacity:0;z-index:10;pointer-events:none}
+.t0413 .scene .t0413-dot{width:calc(7px * var(--k, 1));height:calc(7px * var(--k, 1));margin:calc(-3.5px * var(--k, 1)) 0 0 calc(-3.5px * var(--k, 1));border-radius:50%;background:#fff;box-shadow:0 0 0 calc(1.5px * var(--k, 1)) #14142a;opacity:0;z-index:11}
+.t0413 .scene .zlab{left:var(--x);top:var(--y);color:#14142a;background:rgb(255 255 255 / .92);box-shadow:0 0 0 1px rgb(20 20 42 / .25);padding:1px 5px;border-radius:3px;opacity:0}
+.t0413[data-view="wide"] .scene .zlab{left:var(--wx);top:var(--wy)}
+@media (max-width:700px){.t0413 .scene .zlab{font-size:8px;padding:0 3px}}
+.t0413 .legend .t0413-dash{background:none;outline:2px dashed currentColor;outline-offset:-2px}
+</style>
+<div class="anim-col">
+<div class="stage" role="img" aria-label="{% if include.lang == "fr" %}Animation : le premier * vise tous les éléments. html a margin:50 55 : en mode quirks, sa boîte fait 290 × 200 en (55, 50). Son fond, #588A95, est celui de la racine : il peint tout le canevas. Chaque élément reçoit une bordure de 75pt, soit 100px, transparente (#0000). Le contenu de html fait 90 × 0. border-left-color:E8AD6D, une couleur sans #, que le mode quirks accepte, rend le côté gauche orange : sans hauteur de contenu, il devient un triangle de 100px de large, pointe en (155, 150). body prend la marge de * * : −100 en haut et en bas, −20 à gauche et à droite. Sa bordure de 200px ne tient pas dans les 130px disponibles : il fait 200 × 200 en (135, 50), et son côté gauche orange est un second triangle, pointe en (235, 150). Les deux p prennent la marge de * * * et une bordure de 59q, que mon Chrome dessine sur 55px, en #0257, un bleu translucide. Leur marge droite de −110 leur donne 110px de large : ce sont deux carrés de 110px. Le premier est en (235, 160). Le second commence 10 − 250 = −240px sous le bas du premier : en (235, 30). Le bleu translucide sur le fond #588A95 donne #2f5977.{% else %}Animation: the first * matches every element. html has margin:50 55: in quirks mode, its box is 290 × 200 at (55, 50). Its background, #588A95, is the root's: it paints the whole canvas. Every element gets a 75pt border, 100px, transparent (#0000). html's content is 90 × 0. border-left-color:E8AD6D, a color with no #, which quirks mode accepts, turns the left side orange: with no content height, it becomes a triangle 100px wide, tip at (155, 150). body takes the margin of * *: −100 at the top and bottom, −20 left and right. Its 200px of border does not fit in the 130px it has: it is 200 × 200 at (135, 50), and its orange left side is a second triangle, tip at (235, 150). The two p take the margin of * * * and a 59q border, drawn 55px wide in my Chrome, in #0257, a translucent blue. Their −110 right margin makes them 110px wide: they are two 110px squares. The first is at (235, 160). The second starts 10 − 250 = −240px below the bottom of the first: at (235, 30). The translucent blue over the #588A95 background gives #2f5977.{% endif %}">
+<div class="scene">
+<div class="t0413-html"></div>
+<div class="t0413-body"></div>
+<div class="t0413-p t0413-p1" style="top:160px"></div>
+<div class="t0413-p t0413-p2" style="top:30px"></div>
+<div class="t0413-ol t0413-ohtml" style="left:55px;top:50px;width:290px;height:200px"></div>
+<div class="t0413-line t0413-ocont" style="left:155px;top:150px;width:90px"></div>
+<div class="t0413-ol t0413-obody" style="left:135px;top:50px;width:200px;height:200px"></div>
+<div class="t0413-ol t0413-op1" style="left:235px;top:160px;width:110px;height:110px"></div>
+<div class="t0413-ol t0413-op2" style="left:235px;top:30px;width:110px;height:110px"></div>
+<div class="t0413-dot t0413-d1" style="left:155px;top:150px"></div>
+<div class="t0413-dot t0413-d2" style="left:235px;top:150px"></div>
+<span class="zlab" data-l="1" style="--x:6px;--y:256px;--wx:-46px;--wy:306px">{% if include.lang == "fr" %}html : 290 × 200 en (55, 50){% else %}html: 290 × 200 at (55, 50){% endif %}</span>
+<span class="zlab" data-l="1" style="--x:6px;--y:276px;--wx:-46px;--wy:334px">{% if include.lang == "fr" %}fond de la racine → tout le canevas{% else %}root background → the whole canvas{% endif %}</span>
+<span class="zlab" data-l="2" style="--x:6px;--y:256px;--wx:-46px;--wy:306px">75pt = 100px · #0000</span>
+<span class="zlab" data-l="2" style="--x:6px;--y:276px;--wx:-46px;--wy:334px">{% if include.lang == "fr" %}contenu : 90 × 0{% else %}content: 90 × 0{% endif %}</span>
+<span class="zlab" data-l="3" style="--x:6px;--y:256px;--wx:-46px;--wy:306px">{% if include.lang == "fr" %}E8AD6D sans # : accepté en mode quirks{% else %}E8AD6D with no #: quirks mode takes it{% endif %}</span>
+<span class="zlab" data-l="3" style="--x:6px;--y:276px;--wx:-46px;--wy:334px">{% if include.lang == "fr" %}pointe en (155, 150){% else %}tip at (155, 150){% endif %}</span>
+<span class="zlab" data-l="4" style="--x:6px;--y:256px;--wx:-46px;--wy:306px">{% if include.lang == "fr" %}body : 200 × 200 en (135, 50){% else %}body: 200 × 200 at (135, 50){% endif %}</span>
+<span class="zlab" data-l="4" style="--x:6px;--y:276px;--wx:-46px;--wy:334px">{% if include.lang == "fr" %}pointe en (235, 150){% else %}tip at (235, 150){% endif %}</span>
+<span class="zlab" data-l="5" style="--x:6px;--y:256px;--wx:-46px;--wy:306px">{% if include.lang == "fr" %}59q = 55,75px · mon Chrome : 55px{% else %}59q = 55.75px · my Chrome: 55px{% endif %}</span>
+<span class="zlab" data-l="5" style="--x:6px;--y:276px;--wx:-46px;--wy:334px">{% if include.lang == "fr" %}p : 110 × 110 en (235, 160){% else %}p: 110 × 110 at (235, 160){% endif %}</span>
+<span class="zlab" data-l="6" style="--x:6px;--y:256px;--wx:-46px;--wy:306px">270 + 10 − 250 = 30</span>
+<span class="zlab" data-l="6" style="--x:6px;--y:276px;--wx:-46px;--wy:334px">{% if include.lang == "fr" %}#0257 sur #588A95 → #2f5977{% else %}#0257 over #588A95 → #2f5977{% endif %}</span>
+</div>
+</div>
+<div class="legend"><span><i class="t0413-dash"></i>{% if include.lang == "fr" %}boîtes{% else %}boxes{% endif %}</span><span><i style="--c:#38bdf8"></i>{% if include.lang == "fr" %}bordure de html{% else %}html's border{% endif %}</span><span><i style="--c:#a78bfa"></i>{% if include.lang == "fr" %}bordure de body{% else %}body's border{% endif %}</span><span><i style="--c:#f472b6"></i>{% if include.lang == "fr" %}premier p{% else %}first p{% endif %}</span><span><i style="--c:#34d399"></i>{% if include.lang == "fr" %}second p{% else %}second p{% endif %}</span></div>
+</div>
+<div class="anim-side">
+<pre class="code" aria-hidden="true"><span data-on="5 6" data-tone="2">&lt;p>&lt;p></span>&lt;style><span data-on="1 2 3" data-tone="2">*</span>{<span data-on="1">background:#588A95</span>;<span data-on="1">margin:50 55</span>;<span data-on="2 4">border:75pt solid#0000</span>;<span data-on="3 4">border-left-color:E8AD6D</span>;<span data-on="4" data-tone="2">*</span>{<span data-on="4">margin:-100-20</span>;<span data-on="5 6" data-tone="2">*</span>{<span data-on="5 6">margin:10</span><span data-on="5">-110</span><span data-on="6">-250</span><span data-on="5"> 0</span>;<span data-on="5 6">border:59q solid#0257</span></pre>
+<div class="now" aria-live="polite">
+<div class="caps">
+{%- if include.lang == "fr" %}
+<div class="cap" data-t="0" data-step="La boîte de html"><h3>1. html : 290 × 200</h3><p>Le premier <code>*</code> vise tous les éléments, html compris. Pas de doctype : mode quirks, les marges sans unité sont des px. <code>margin:50 55</code> laisse 400 − 55 − 55 = 290px de large. En mode quirks, html prend la hauteur de la fenêtre moins ses marges : 300 − 50 − 50 = 200. Le fond de la racine se peint sur tout le canevas.</p></div>
+<div class="cap" data-t="5" data-step="Une bordure transparente"><h3>2. 100px de bordure invisible</h3><p><code>border:75pt solid#0000</code> donne à chaque élément une bordure de 75pt, soit 100px, transparente : <code>#0000</code> est un noir d'opacité 0. Pour html, il reste 290 − 200 = 90px de large pour le contenu, et 200 − 200 = 0 de haut. Le contenu se réduit à un trait, en y = 150.</p></div>
+<div class="cap" data-t="10" data-step="Le côté gauche"><h3>3. Un côté gauche en triangle</h3><p><code>border-left-color:E8AD6D</code> n'a pas de <code>#</code>. En mode quirks, la couleur est quand même acceptée : le côté gauche devient orange. Les côtés du haut et du bas font 100px, et le contenu 0 de haut : leurs coins en biseau se rejoignent au milieu. Le côté gauche est un triangle, de 100px de large, pointe en (155, 150).</p></div>
+<div class="cap" data-t="15" data-step="body"><h3>4. body, un second triangle</h3><p>body a la même bordure, et la marge de <code>* *</code> : −100 en haut et en bas, −20 à gauche et à droite. Le contenu de html fait 90 de large, plus 20 + 20 : 130px pour body. Sa bordure de 200px n'y tient pas : il fait 200 de large, en x = 155 − 20 = 135. En mode quirks, il fait 0 + 100 + 100 = 200 de haut. Son côté gauche est un second triangle, pointe en (235, 150). Il couvre la pointe du premier, dans le même orange.</p></div>
+<div class="cap" data-t="20" data-step="Le premier p"><h3>5. Le premier p : un carré de bordure</h3><p>Les deux p prennent la marge de <code>* * *</code> et une nouvelle bordure : 59q, soit 55,75px, que mon Chrome dessine sur 55px. Le contenu de body fait 0 × 0, en (235, 150). La marge droite de −110 donne au p 0 + 110 = 110px de large, bordures comprises : le contenu fait 110 − 55 − 55 = 0. Le premier p est un carré de 110px, en (235, 150 + 10).</p></div>
+<div class="cap" data-t="25" data-step="Le second p"><h3>6. Le second p remonte</h3><p>Le premier p finit en y = 270. Sa marge du bas, −250, et la marge du haut du second, 10, fusionnent en 10 − 250 = −240. Le second p commence en 270 − 240 = 30. La bordure <code>#0257</code> est un bleu translucide, d'opacité 0x77 / 255 = 0,47, sur le fond des p, #588A95 : on voit #2f5977.</p></div>
+<div class="cap" data-t="30" data-step="Résultat" data-live="155 caractères · 100 % identique"><h3>7. Résultat : 155 caractères</h3><p>Une seule bordure, écrite pour tous les éléments, fait les deux triangles. Une seconde, pour les p, fait les deux carrés.</p></div>
+{%- else %}
+<div class="cap" data-t="0" data-step="html's box"><h3>1. html: 290 × 200</h3><p>The first <code>*</code> matches every element, html included. No doctype: quirks mode, unitless margins are px. <code>margin:50 55</code> leaves 400 − 55 − 55 = 290px of width. In quirks mode, html takes the viewport's height minus its margins: 300 − 50 − 50 = 200. The root's background is painted on the whole canvas.</p></div>
+<div class="cap" data-t="5" data-step="A transparent border"><h3>2. 100px of invisible border</h3><p><code>border:75pt solid#0000</code> gives every element a 75pt border, 100px, transparent: <code>#0000</code> is black with opacity 0. For html, that leaves 290 − 200 = 90px of width for the content, and 200 − 200 = 0 of height. The content shrinks to a line, at y = 150.</p></div>
+<div class="cap" data-t="10" data-step="The left side"><h3>3. A triangle for a left side</h3><p><code>border-left-color:E8AD6D</code> has no <code>#</code>. Quirks mode takes the color anyway: the left side turns orange. The top and bottom sides are 100px tall, and the content 0: their mitered corners meet in the middle. The left side is a triangle, 100px wide, tip at (155, 150).</p></div>
+<div class="cap" data-t="15" data-step="body"><h3>4. body, a second triangle</h3><p>body has the same border, and the margin of <code>* *</code>: −100 at the top and bottom, −20 left and right. html's content is 90 wide, plus 20 + 20: 130px for body. Its 200px of border does not fit: it is 200 wide, at x = 155 − 20 = 135. In quirks mode, it is 0 + 100 + 100 = 200 tall. Its left side is a second triangle, tip at (235, 150). It covers the tip of the first, in the same orange.</p></div>
+<div class="cap" data-t="20" data-step="The first p"><h3>5. The first p: a square of border</h3><p>The two p take the margin of <code>* * *</code> and a new border: 59q, 55.75px, drawn 55px wide in my Chrome. body's content is 0 × 0, at (235, 150). The −110 right margin makes the p 0 + 110 = 110px wide, borders included: the content is 110 − 55 − 55 = 0. The first p is a 110px square, at (235, 150 + 10).</p></div>
+<div class="cap" data-t="25" data-step="The second p"><h3>6. The second p moves up</h3><p>The first p ends at y = 270. Its bottom margin, −250, and the second's top margin, 10, collapse into 10 − 250 = −240. The second p starts at 270 − 240 = 30. The <code>#0257</code> border is a translucent blue, opacity 0x77 / 255 = 0.47, over the p's background, #588A95: what shows is #2f5977.</p></div>
+<div class="cap" data-t="30" data-step="Result" data-live="155 characters · 100% match"><h3>7. Result: 155 characters</h3><p>One border, written for every element, makes the two triangles. A second one, for the p, makes the two squares.</p></div>
+{%- endif %}
+</div>
+<div class="live"></div>
+</div>
+</div>
+<script>
+(window.AnimScenes = window.AnimScenes || {}).t0413 = (fig) => {
+  const fr = document.documentElement.lang === 'fr';
+  const $ = (s) => fig.querySelector(s);
+  const $$ = (s) => [...fig.querySelectorAll(s)];
+  const live = $('.live');
+  const ease = (x) => (x < 0.5 ? 4 * x * x * x : 1 - Math.pow(-2 * x + 2, 3) / 2);
+  const pr = (t, a, b) => ease(Math.min(1, Math.max(0, (t - a) / (b - a))));
+  const win = (t, a, b) => Math.min(pr(t, a, a + 0.5), 1 - pr(t, b - 0.3, b));
+  const n = (s) => (fr ? s.replace(/(\d)\.(\d)/g, '$1,$2') : s);
+  const mix = (k, a, b) => (k <= 0 ? b : k >= 1 ? a : `color-mix(in srgb, ${a} ${(k * 100).toFixed(1)}%, ${b})`);
+  const tint = (k, c) => (k <= 0 ? 'transparent' : `color-mix(in srgb, ${c} ${(k * 35).toFixed(1)}%, transparent)`);
+  // Measured on the official code in local Chrome 157 (400 × 300 page, quirks mode, getBoundingClientRect, getComputedStyle):
+  // html 55, 50, 290 × 200, borders 100px (75pt), transparent, left rgb(232, 173, 109); background rgb(88, 138, 149) (canvas).
+  // body 135, 50, 200 × 200, margin -100px -20px, same border and background.
+  // p 235, 160, 110 × 110 and p 235, 30, 110 × 110, margin 10px -110px -250px 0px, borders 55px (59q = 55.75px) rgba(0, 34, 85, 0.467).
+  // body's background starts 1px right of its left edge, so that it never tints the edge pixels of its orange side (no seam over html's triangle).
+  // Rendered colors: #588a95, #e8ad6d, #2f5977 (rgba(0, 34, 85, 0.467) over #588a95).
+  const OR = '#e8ad6d', BL = '#2f5977';
+  const H = $('.t0413-html'), B = $('.t0413-body'), P1 = $('.t0413-p1'), P2 = $('.t0413-p2');
+  const ol = (k) => $('.t0413-o' + k);
+  const labs = $$('.zlab');
+  const ivs = { 1: [0.3, 4.8], 2: [5.3, 9.8], 3: [10.3, 14.8], 4: [15.3, 19.8], 5: [20.3, 24.8], 6: [25.3, 29.8] };
+  return (t, step) => {
+    const teach = fig.dataset.teach === '1';
+    const tw = teach ? 1 - pr(t, 30.2, 31.2) : 0;
+    ol('html').style.opacity = win(t, 0.3, 14.8);
+    ol('cont').style.opacity = win(t, 5.3, 9.8);
+    // html's border: 100px, transparent, then its left side turns orange
+    const bw = 100 * pr(t, 5.5, 7.5);
+    H.style.borderWidth = bw + 'px';
+    const side = tint(tw, 'var(--t0413-hb)');
+    const lk = pr(t, 10.5, 11.5);
+    H.style.borderColor = side;
+    H.style.borderLeftColor = lk <= 0 ? side : mix(tw, 'var(--t0413-hb)', OR);
+    $('.t0413-d1').style.opacity = win(t, 11.5, 14.8);
+    // body: same border, 200 × 200 at (135, 50); its background is the canvas color
+    B.style.opacity = pr(t, 15.5, 16.5);
+    B.style.borderColor = tint(tw, 'var(--t0413-bd)');
+    B.style.borderLeftColor = mix(tw, 'var(--t0413-bd)', OR);
+    ol('body').style.opacity = win(t, 15.5, 19.8);
+    $('.t0413-d2').style.opacity = win(t, 16.5, 19.8);
+    // the p: 110px wide, as tall as their two 55px borders
+    const p1 = 110 * pr(t, 20.5, 22.5);
+    P1.style.height = p1 + 'px';
+    P1.style.opacity = pr(t, 20.5, 21);
+    P1.style.background = mix(tw, 'var(--t0413-p1)', BL);
+    const p2 = 110 * pr(t, 25.5, 27.5);
+    P2.style.height = p2 + 'px';
+    P2.style.opacity = pr(t, 25.5, 26);
+    P2.style.background = mix(tw, 'var(--t0413-p2)', BL);
+    ol('p1').style.opacity = win(t, 20.5, 24.8);
+    ol('p2').style.opacity = win(t, 25.5, 29.8);
+    labs.forEach((l) => { const iv = ivs[l.dataset.l]; l.style.opacity = iv ? win(t, ...iv) : 0; });
+    let txt;
+    if (step === 0) txt = `400 − 55 − 55 = 290 · 300 − 50 − 50 = 200`;
+    else if (step === 1) txt = `75pt = 100px · 290 − 200 = 90 · 200 − 200 = 0`;
+    else if (step === 2) txt = `55 + 100 = 155 · 50 + 100 = 150`;
+    else if (step === 3) txt = `155 − 20 = 135 · 0 + 100 + 100 = 200 · 135 + 100 = 235`;
+    else if (step === 4) txt = `59q = 55.75px · 0 + 110 − 55 − 55 = 0 · 150 + 10 = 160`;
+    else if (step === 5) txt = `160 + 110 = 270 · 270 + 10 − 250 = 30`;
+    else txt = $$('.caps .cap')[6].dataset.live || '';
+    live.textContent = n(txt);
+  };
+};
+</script>
+</figure>
