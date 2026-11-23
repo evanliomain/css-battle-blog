@@ -1,0 +1,136 @@
+<figure class="anim t1122" data-duration="28" data-scene="t1122" data-wide="-40 -30 480 360" data-off-label="-36 318" style="--bg:#1d025e">
+<style>
+.t1122{--t1122-d:#1d025e;--t1122-y:#ffdd99;--t1122-b:#3fb1ce;--t1122-html:#ff922b;--t1122-body:#f06595;--t1122-veil:#ffffff}
+.t1122 .t1122-hb{position:absolute;left:-60px;top:-60px;width:520px;height:420px;background:var(--t1122-d)}
+.t1122 .t1122-bd{position:absolute;opacity:0}
+.t1122 .t1122-o{position:absolute;box-sizing:border-box;border:2px dashed;pointer-events:none}
+.t1122 .t1122-o span{position:absolute;font:600 11px/1 ui-monospace,monospace;color:#fff;padding:2px 4px;border-radius:3px;white-space:nowrap}
+.t1122 .t1122-oh{border-color:var(--t1122-html)}
+.t1122 .t1122-oh span{right:4px;bottom:4px;background:#c25e0a}
+.t1122 .t1122-ob{border-color:var(--t1122-body)}
+.t1122 .t1122-ob span{left:50%;top:4px;transform:translateX(-50%);background:#b02a62}
+.t1122 .t1122-tl{border:2px dotted #fff;opacity:0}
+.t1122 .t1122-tl span{left:4px;bottom:4px;background:rgb(0 0 0 / .7)}
+.t1122 .zlab{color:#fff;background:rgb(10 4 40 / .92);padding:1px 5px;border-radius:3px;white-space:nowrap;opacity:0}
+.t1122 .t1122-k{color:inherit}
+</style>
+<div class="anim-col">
+<div class="stage" role="img" aria-label="{% if include.lang == "fr" %}Animation : la règle * donne le même fond à deux couches à html et au body ; le * imbriqué donne au body ses marges de 25 et 125 px, d'où une boîte de 150 × 250 ; la couche du bas, image(#3fb1ce) décalée de 9ch = 72 px avec space, peint le body en jaune à gauche et en bleu à droite ; la couche du haut, un dégradé radial de taille 2% 3px, est un cercle de 69,92 px de rayon sur le body, presque transparent dedans et violet foncé autour, répété sur des tuiles de 150 × 80 ; la position 33em 45lh, 528 et 810 px, pose les centres des cercles sur les bords du body, en y = 35, 115 et 195 : il reste six quarts de disque ; sur html, 2 % font 8 px et le cercle devient une ellipse de 69,92 × 26,22, cachée sous le body ; le voile #7f61 ramène #fd9 et #3fb1ce aux couleurs exactes de la cible{% else %}Animation: the * rule gives the same two-layer background to html and the body; the nested * gives the body its 25 and 125px margins, so a 150 × 250 box; the bottom layer, image(#3fb1ce) moved by 9ch = 72px with space, paints the body yellow on the left and blue on the right; the top layer, a radial gradient sized 2% 3px, is a circle of radius 69.92px on the body, almost transparent inside and dark violet around, repeated on 150 × 80 tiles; the 33em 45lh position, 528 and 810px, puts the circle centers on the body's edges, at y = 35, 115 and 195: six quarter discs remain; on html, 2% is 8px and the circle becomes a 69.92 × 26.22 ellipse, hidden under the body; the #7f61 veil turns #fd9 and #3fb1ce into the exact colors of the target{% endif %}">
+<div class="scene">
+<div class="t1122-hb"></div>
+<div class="t1122-bd"></div>
+<div class="t1122-o t1122-oh"><span>html</span></div>
+<div class="t1122-o t1122-ob"><span>body</span></div>
+<div class="t1122-o t1122-tl"><span>150 × 80</span></div>
+<span class="zlab t1122-l-a" style="left:4px;top:4px">margin: 25 125 → 150 × 250</span>
+<span class="zlab t1122-l-b" style="left:4px;top:4px">9ch = 72px</span>
+<span class="zlab t1122-l-c" style="left:4px;top:4px">{% if include.lang == "fr" %}2% de 150 = 3px → cercle · 74q = 69,92{% else %}2% of 150 = 3px → circle · 74q = 69.92{% endif %}</span>
+<span class="zlab t1122-l-d" style="left:4px;top:4px">528 = 3 × 150 + 78 · 810 = 10 × 80 + 10</span>
+<span class="zlab t1122-l-e" style="left:4px;top:4px">{% if include.lang == "fr" %}html : 2% de 400 = 8px → 69,92 × 26,22{% else %}html: 2% of 400 = 8px → 69.92 × 26.22{% endif %}</span>
+<span class="zlab t1122-l-f" style="left:4px;top:4px">{% if include.lang == "fr" %}#7f61 : 17/255 = 6,7 % de vert{% else %}#7f61: 17/255 = 6.7% green{% endif %}</span>
+</div>
+</div>
+<div class="legend"><span><i style="--c:var(--t1122-html)"></i>html</span><span><i style="--c:var(--t1122-body)"></i>body</span><span><i style="--c:var(--t1122-veil)"></i>{% if include.lang == "fr" %}voile #7f61{% else %}#7f61 veil{% endif %}</span></div>
+</div>
+<div class="anim-side">
+<pre class="code" aria-hidden="true">&lt;style><span data-on="1" data-tone="2">*</span>{background:<span data-on="3">radial-gradient(<span data-on="5" data-tone="2">2%3px</span> at 76q+0,<span data-on="6" data-tone="2">#7f61</span> <span class="t1122-k t1122-k4">74</span>q,#1D025E)</span><span data-on="4"><span class="t1122-k t1122-k5">33</span>em <span class="t1122-k t1122-k6">45</span>lh</span><span data-on="3">/100%32%</span>,<span data-on="2">image(<span data-on="6" data-tone="2">#3fb1ce</span>)<span class="t1122-k t1122-k3">9</span>ch space<span data-on="6" data-tone="2">#fd9</span></span>;<span data-on="1">*{margin:<span class="t1122-k t1122-k1">25</span> <span class="t1122-k t1122-k2">125</span></span></pre>
+<div class="now" aria-live="polite">
+<div class="caps">
+{%- if include.lang == "fr" %}
+<div class="cap" data-t="0" data-step="Deux boîtes"><h3>1. Deux boîtes</h3><p><code>*</code> vise tous les éléments, le <code>*</code> imbriqué seulement ceux qui sont dans un autre : le <code>body</code>, pas <code>html</code>. <code>html</code> couvre tout le canevas, 400 × 300. En mode quirks, le <code>body</code> remplit la fenêtre moins ses marges : 150 × 250, de x = 125 à 275 et de y = 25 à 275. Les deux reçoivent le même fond à deux couches.</p></div>
+<div class="cap" data-t="4" data-step="Couche du bas : deux aplats"><h3>2. Couche du bas : deux aplats</h3><p><code>image(#3fb1ce)</code> est une image unie sans taille propre : elle est grande comme la boîte. <code>space</code> n'en garde qu'une, et <code>9ch</code> = 72px la pousse à droite. À sa gauche, on voit la couleur de fond <code>#fd9</code>. Sur le <code>body</code> : jaune de x = 125 à 197, bleu de 197 à 275.</p></div>
+<div class="cap" data-t="8" data-step="Couche du haut : un cercle par tuile"><h3>3. Couche du haut : un cercle par tuile</h3><p>La tuile fait <code>100%32%</code> : 150 × 80. <code>2%3px</code> est la taille de la forme : 2 % de 150 = 3px de large, 3px de haut, donc un cercle. Sa première couleur, <code>#7f61</code>, presque transparente, va jusqu'à 74q = 69,92px, puis vient le violet foncé. Le cercle est centré en <code>76q+0</code> : x = 71,80, y = 0. Seule sa moitié basse est dans la tuile.</p></div>
+<div class="cap" data-t="12" data-step="Placer les tuiles"><h3>4. Placer les tuiles</h3><p><code>33em 45lh</code> = 528 et 810px. Les tuiles se répètent : seul le reste compte. 528 = 3 × 150 + 78 et 810 = 10 × 80 + 10. Les centres des cercles tombent en x = 124,80 et 274,80, sur les bords du <code>body</code>, et en y = 35, 115 et 195. Le <code>body</code> coupe chaque demi-disque en deux : six quarts de disque, à 10px d'écart.</p></div>
+<div class="cap" data-t="16" data-step="html a le même fond"><h3>5. <code>html</code> a le même fond</h3><p>Sur <code>html</code>, 100 % font 400 : 2 % donnent 8px de large, toujours 3px de haut. Le cercle devient une ellipse de 69,92 × 26,22. Les tuiles font 400 × 96 : 528 = 400 + 128 et 810 = 8 × 96 + 42 centrent les ellipses en x = 199,80, y = 42, 138 et 234. Elles restent entre x = 130 et 270, y = 42 et 261 : toutes sous le <code>body</code>. Ailleurs, la tuile est violet foncé : le canevas est uni.</p></div>
+<div class="cap" data-t="20" data-step="Le voile corrige deux couleurs"><h3>6. Le voile corrige deux couleurs</h3><p><code>#7f61</code>, c'est du vert à 17/255 = 6,7 % d'opacité. Posé sur <code>#fd9</code>, il donne <code>#f6df96</code>. Posé sur <code>#3fb1ce</code>, il donne <code>#43b6c7</code>. Ce sont exactement les couleurs de la cible.</p></div>
+<div class="cap" data-t="24" data-step="Résultat" data-live="130 caractères · 100 % identique"><h3>7. Résultat : 130 caractères</h3><p>Une règle, deux couches, deux boîtes. Les mêmes nombres dessinent des cercles sur le <code>body</code> et cachent des ellipses plates sur <code>html</code>.</p></div>
+{%- else %}
+<div class="cap" data-t="0" data-step="Two boxes"><h3>1. Two boxes</h3><p><code>*</code> targets every element, the nested <code>*</code> only those inside another one: the <code>body</code>, not <code>html</code>. <code>html</code> covers the whole canvas, 400 × 300. In quirks mode, the <code>body</code> fills the window minus its margins: 150 × 250, from x = 125 to 275 and y = 25 to 275. Both get the same two-layer background.</p></div>
+<div class="cap" data-t="4" data-step="Bottom layer: two flat colors"><h3>2. Bottom layer: two flat colors</h3><p><code>image(#3fb1ce)</code> is a plain image with no size of its own: it is as big as the box. <code>space</code> keeps a single copy, and <code>9ch</code> = 72px pushes it right. On its left, the background color <code>#fd9</code> shows. On the <code>body</code>: yellow from x = 125 to 197, blue from 197 to 275.</p></div>
+<div class="cap" data-t="8" data-step="Top layer: one circle per tile"><h3>3. Top layer: one circle per tile</h3><p>The tile is <code>100%32%</code>: 150 × 80. <code>2%3px</code> is the shape's size: 2% of 150 = 3px wide, 3px tall, so a circle. Its first color, <code>#7f61</code>, almost transparent, runs to 74q = 69.92px, then comes the dark violet. The circle is centered at <code>76q+0</code>: x = 71.80, y = 0. Only its bottom half is in the tile.</p></div>
+<div class="cap" data-t="12" data-step="Placing the tiles"><h3>4. Placing the tiles</h3><p><code>33em 45lh</code> = 528 and 810px. The tiles repeat: only the remainder counts. 528 = 3 × 150 + 78 and 810 = 10 × 80 + 10. The circle centers land at x = 124.80 and 274.80, on the <code>body</code>'s edges, and at y = 35, 115 and 195. The <code>body</code> cuts each half-disc in two: six quarter discs, 10px apart.</p></div>
+<div class="cap" data-t="16" data-step="html gets the same background"><h3>5. <code>html</code> gets the same background</h3><p>On <code>html</code>, 100% is 400: 2% is 8px wide, still 3px tall. The circle becomes a 69.92 × 26.22 ellipse. The tiles are 400 × 96: 528 = 400 + 128 and 810 = 8 × 96 + 42 center the ellipses at x = 199.80, y = 42, 138 and 234. They stay between x = 130 and 270, y = 42 and 261: all under the <code>body</code>. Everywhere else the tile is dark violet: the canvas is plain.</p></div>
+<div class="cap" data-t="20" data-step="The veil fixes two colors"><h3>6. The veil fixes two colors</h3><p><code>#7f61</code> is green at 17/255 = 6.7% opacity. Over <code>#fd9</code>, it gives <code>#f6df96</code>. Over <code>#3fb1ce</code>, it gives <code>#43b6c7</code>. Those are exactly the target's colors.</p></div>
+<div class="cap" data-t="24" data-step="Result" data-live="130 characters · 100% match"><h3>7. Result: 130 characters</h3><p>One rule, two layers, two boxes. The same numbers draw circles on the <code>body</code> and hide flat ellipses on <code>html</code>.</p></div>
+{%- endif %}
+</div>
+<div class="live"></div>
+</div>
+</div>
+<script>
+(window.AnimScenes = window.AnimScenes || {}).t1122 = (fig) => {
+  const fr = document.documentElement.lang === 'fr';
+  const $ = (s) => fig.querySelector(s);
+  const $$ = (s) => [...fig.querySelectorAll(s)];
+  const HB = $('.t1122-hb'), BD = $('.t1122-bd'), OH = $('.t1122-oh'), OB = $('.t1122-ob'), TL = $('.t1122-tl'), live = $('.live');
+  const K = (n) => $$(`.t1122-k${n}`);
+  const L = (k) => $(`.t1122-l-${k}`);
+  // measured in Chrome: body 150 × 250 at (125, 25); 9ch = 72px; 74q = 69.9213px; 76q = 71.7969px; 33em = 528px; 45lh = 810px
+  // body tiles 150 × 80, offset 528 mod 150 = 78, 810 mod 80 = 10; html tiles 400 × 96, offset 128 and 42
+  // html: 2% of 400 = 8px by 3px, so the 74q stop gives an ellipse 69.92 × 26.22
+  const R = 69.9213, CX = 71.7969, RY = R * 3 / 8;
+  const W = { m: [0.4, 2.8], i: [4.4, 6.6], r: [8.5, 10.6], p: [12.4, 15.0], h: [16.8, 18.0], v: [20.5, 22.2], fin: [24.1, 24.8] };
+  const ease = (x) => (x < 0.5 ? 4 * x * x * x : 1 - Math.pow(-2 * x + 2, 3) / 2);
+  const pr = (t, [a, b]) => ease(Math.min(1, Math.max(0, (t - a) / (b - a))));
+  const win = (t, a, b) => Math.min(pr(t, [a, a + 0.5]), 1 - pr(t, [b - 0.4, b]));
+  const num = (v, d) => v.toFixed(d).replace('.', fr ? ',' : '.');
+  const c = fr ? ' :' : ':';
+  const REAL = [119, 255, 102, 17 / 255], TEACH = [255, 255, 255, 0.4];
+  const rgba = (k) => `rgba(${TEACH.map((x, j) => (j < 3 ? Math.round(x + (REAL[j] - x) * k) : (x + (REAL[j] - x) * k).toFixed(4))).join(',')})`;
+  return (t, st) => {
+    const step = st + 1;
+    const teach = fig.dataset.teach === '1';
+    const fin = t >= W.fin[0];
+    const m = pr(t, W.m), i = pr(t, W.i), r = pr(t, W.r), p = pr(t, W.p), h = pr(t, W.h), v = pr(t, W.v);
+    const veil = teach && !fin ? rgba(v) : rgba(1);
+    // the body box: margins 25 and 125, the quirks body fills the window minus its margins
+    const bx = 125 * m, by = 25 * m, bw = 400 - 250 * m, bh = 300 - 50 * m;
+    // step 5: the body turns see-through for a moment, to show html's ellipses under it
+    const see = Math.min(pr(t, [16.2, 16.8]), 1 - pr(t, [19.0, 19.7]));
+    // html's background, painted by the canvas: ellipses on 400 × 96 tiles, offset 128 / 42 from html's corner
+    const hv = teach && !fin ? 'var(--t1122-html)' : veil;
+    HB.style.background = h > 0
+      ? `radial-gradient(${R * h}px ${RY * h}px at ${CX}px 0px,${hv} 100%,var(--t1122-d) 0) ${128 + 60}px ${42 + 60}px / 400px 96px,linear-gradient(90deg,var(--t1122-y) ${72 + 60}px,var(--t1122-b) 0)`
+      : 'var(--t1122-d)';
+    // the body's background: circles on 150 × 80 tiles over yellow | blue
+    const top = r > 0 ? `radial-gradient(${R * r}px ${R * r}px at ${CX}px 0px,${veil} 100%,var(--t1122-d) 0) ${78 * p}px ${10 * p}px / 150px 80px,` : '';
+    Object.assign(BD.style, {
+      left: `${bx}px`, top: `${by}px`, width: `${bw}px`, height: `${bh}px`,
+      opacity: pr(t, [4.2, 4.8]) * (1 - 0.8 * see),
+      background: `${top}linear-gradient(90deg,var(--t1122-y) ${72 * i}px,var(--t1122-b) 0)`,
+    });
+    // one tile, outlined, during steps 3 and 4
+    Object.assign(TL.style, { left: `${125 + 78 * p}px`, top: `${25 + 10 * p}px`, width: '150px', height: '80px', opacity: win(t, 8.4, 15.9) });
+    // outlines
+    const oo = fin ? 0 : 1;
+    Object.assign(OH.style, { left: '0px', top: '0px', width: '400px', height: '300px', opacity: oo });
+    Object.assign(OB.style, { left: `${bx}px`, top: `${by}px`, width: `${bw}px`, height: `${bh}px`, opacity: oo * (m > 0.05 ? 1 : 0) });
+    OH.firstElementChild.textContent = 'html 400 × 300';
+    OB.firstElementChild.textContent = `body ${Math.round(bw)} × ${Math.round(bh)}`;
+    // digits in the code
+    K(1).forEach((k) => (k.textContent = String(Math.round(25 * m))));
+    K(2).forEach((k) => (k.textContent = String(Math.round(125 * m))));
+    K(3).forEach((k) => (k.textContent = step < 2 ? '9' : String(Math.round(9 * i))));
+    K(4).forEach((k) => (k.textContent = step < 3 ? '74' : String(Math.round(74 * r))));
+    K(5).forEach((k) => (k.textContent = step < 4 ? '33' : String(Math.round(33 * p))));
+    K(6).forEach((k) => (k.textContent = step < 4 ? '45' : String(Math.round(45 * p))));
+    L('a').style.opacity = win(t, 0.3, W.i[0] - 0.3);
+    L('b').style.opacity = win(t, W.i[0], W.r[0] - 0.3);
+    L('c').style.opacity = win(t, W.r[0], W.p[0] - 0.3);
+    L('d').style.opacity = win(t, W.p[0], W.h[0] - 0.6);
+    L('e').style.opacity = win(t, W.h[0] - 0.4, W.v[0] - 0.3);
+    L('f').style.opacity = win(t, W.v[0], W.fin[0]);
+    // live line
+    let txt = '';
+    if (step === 1) txt = `body${c} ${Math.round(bw)} × ${Math.round(bh)}`;
+    else if (step === 2) txt = `9ch = ${Math.round(72 * i)}px → x = ${Math.round(125 + 72 * i)}`;
+    else if (step === 3) txt = `74q = ${num(R * r, 2)}px`;
+    else if (step === 4) txt = `33em = ${Math.round(528 * p)} · 45lh = ${Math.round(810 * p)}`;
+    else if (step === 5) txt = `html${c} ${num(R * h, 2)} × ${num(RY * h, 2)}`;
+    else if (step === 6) txt = '#fd9 → #f6df96 · #3fb1ce → #43b6c7';
+    else txt = $$('.caps .cap')[6].dataset.live || '';
+    live.textContent = txt;
+  };
+};
+</script>
+</figure>
