@@ -1,0 +1,129 @@
+<figure class="anim t1124" data-duration="26" data-scene="t1124" data-wide="-30 -20 460 350" style="--bg:#0d1335">
+<style>
+.t1124{--t1124-n:#0d1335;--t1124-c:#fbfae2;--t1124-h:#4dabf7;--t1124-b:#f783ac;--t1124-d:#69db7c;--t1124-p:#ffa94d}
+.t1124 .t1124-bar{position:absolute;box-sizing:border-box;border:0 solid var(--t1124-c);transform-origin:50% 50%}
+.t1124 .t1124-ring{position:absolute;box-sizing:border-box;border:2px dashed #fff;border-radius:50%;opacity:0;pointer-events:none}
+.t1124 .t1124-oct{position:absolute;left:0;top:0;width:400px;height:300px;overflow:visible;opacity:0;pointer-events:none}
+.t1124 .zlab{color:#fff;background:rgb(10 10 30 / .88);padding:1px 5px;border-radius:3px;white-space:nowrap;opacity:0}
+.t1124 .t1124-k{color:inherit}
+</style>
+<div class="anim-col">
+<div class="stage" role="img" aria-label="{% if include.lang == "fr" %}Animation : la règle * donne à html, au body, au dl et au p la même barre de 20 × 139,67 : 50 px de crème, 39,67 px de bleu nuit, 50 px de crème ; sans offset, elles s'empilent en haut à gauche ; offset:ray() pose chacune par son centre au centre de son bloc parent, donc toutes en (200, 150) ; ray(45deg) les tourne de −45° de plus à chaque niveau : html −45°, body −90°, dl −135°, p −180° ; les huit bordures font huit branches de 20 × 50 entre 19,84 et 69,84 px du centre, et leurs bouts ferment un trou octogonal{% else %}Animation: the * rule gives html, the body, the dl and the p the same 20 × 139.67 bar: 50px of cream, 39.67px of navy, 50px of cream; without offset, they stack in the top left corner; offset:ray() puts each one's center on the center of its parent block, so all of them on (200, 150); ray(45deg) turns them −45° more at each level: html −45°, body −90°, dl −135°, p −180°; the eight borders make eight 20 × 50 arms between 19.84 and 69.84px from the center, and their tips close an octagonal hole{% endif %}">
+<div class="scene">
+<div class="t1124-bar t1124-b0"></div>
+<div class="t1124-bar t1124-b1"></div>
+<div class="t1124-bar t1124-b2"></div>
+<div class="t1124-bar t1124-b3"></div>
+<div class="t1124-ring t1124-r1"></div>
+<div class="t1124-ring t1124-r2"></div>
+<svg class="t1124-oct" viewBox="0 0 400 300" aria-hidden="true"><polygon points="" fill="none" stroke="#fff" stroke-width="1.5" stroke-dasharray="3 2"/></svg>
+<span class="zlab t1124-l-a" style="left:40px;top:6px">{% if include.lang == "fr" %}20 × (50 + 39,67 + 50){% else %}20 × (50 + 39.67 + 50){% endif %}</span>
+<span class="zlab t1124-l-b" style="left:40px;top:6px">{% if include.lang == "fr" %}centres → (200, 150){% else %}centers → (200, 150){% endif %}</span>
+<span class="zlab t1124-l-c" style="left:40px;top:6px">−45° · −90° · −135° · −180°</span>
+<span class="zlab t1124-l-d" style="left:40px;top:6px">{% if include.lang == "fr" %}r 19,84 → 69,84{% else %}r 19.84 → 69.84{% endif %}</span>
+<span class="zlab t1124-l-e" style="left:40px;top:6px">{% if include.lang == "fr" %}apothème 19,84 · côté 16,43{% else %}apothem 19.84 · side 16.43{% endif %}</span>
+</div>
+</div>
+<div class="legend"><span><i style="--c:var(--t1124-h)"></i>html</span><span><i style="--c:var(--t1124-b)"></i>body</span><span><i style="--c:var(--t1124-d)"></i>dl</span><span><i style="--c:var(--t1124-p)"></i>p</span></div>
+</div>
+<div class="anim-side">
+<pre class="code" aria-hidden="true"><span data-on="1">&lt;dl>&lt;p></span>&lt;style><span data-on="1" data-tone="2">*</span>{<span data-on="5">background:#0D1335</span>;<span data-on="1 4">border-block:<span class="t1124-k t1124-k1">53</span>q solid#FBFAE2</span>;<span data-on="1">width:<span class="t1124-k t1124-k2">20</span></span>;<span data-on="1 5">height:<span class="t1124-k t1124-k3">42</span>q</span>;<span data-on="2 3">offset:ray(<span class="t1124-k t1124-k4">45</span>deg</span></pre>
+<div class="now" aria-live="polite">
+<div class="caps">
+{%- if include.lang == "fr" %}
+<div class="cap" data-t="0" data-step="Quatre barres identiques"><h3>1. Quatre barres identiques</h3><p><code>&lt;dl>&lt;p></code> ajoute deux boîtes : <code>html</code> > <code>body</code> > <code>dl</code> > <code>p</code>, chacune dans la précédente. <code>*</code> leur donne la même règle. En mode quirks, <code>width:20</code> vaut 20px. <code>42q</code> = 39,69px, posé à 39,67. <code>53q</code> = 50,08px, et Chrome dessine la bordure à 50. Chaque boîte est une barre de 20 × 139,67 : 50 de crème, 39,67 de bleu nuit, 50 de crème. Sans <code>offset</code>, elles s'empilent en haut à gauche.</p></div>
+<div class="cap" data-t="5" data-step="Toutes au même centre"><h3>2. Toutes au même centre</h3><p><code>offset:ray()</code> pose le centre de la boîte sur le centre de son bloc parent, quelles que soient ses marges. Pour <code>html</code>, c'est le cadre de 400 × 300 : (200, 150). Pour les autres, c'est la boîte de contenu du parent, déjà centrée au même point. Les quatre barres se superposent en (200, 150). Avec <code>ray(90deg)</code>, le rayon pointe à droite et elles restent debout.</p></div>
+<div class="cap" data-t="10" data-step="−45° par niveau"><h3>3. −45° par niveau</h3><p><code>ray(45deg)</code> pointe en haut à droite. La boîte aligne son axe horizontal sur le rayon : elle tourne de 45° − 90° = −45°. Un enfant tourne dans le repère de son parent : les rotations s'additionnent. <code>html</code> −45°, <code>body</code> −90°, <code>dl</code> −135°, <code>p</code> −180°. Quatre barres, quatre directions.</p></div>
+<div class="cap" data-t="15" data-step="Huit branches"><h3>4. Huit branches</h3><p>Chaque barre porte deux bordures, une à chaque bout : huit branches crème de 20 × 50, tous les 45°. Le milieu de 39,67 laisse un vide : chaque branche va de 19,84 à 69,84px du centre. Debout, ça donne y = 80,16 à 219,84.</p></div>
+<div class="cap" data-t="19" data-step="Le trou octogonal"><h3>5. Le trou octogonal</h3><p>Les huit bouts sont à 19,84px du centre, et chacun fait 20 de large. Un octogone régulier d'apothème 19,84 a des côtés de 16,43 : les bouts se chevauchent et ferment le trou. Le fond de <code>html</code> passe au canevas ; sur les trois autres, il peint le milieu des barres, de la même couleur.</p></div>
+<div class="cap" data-t="23" data-step="Résultat" data-live="101 caractères · 100 % identique"><h3>6. Résultat : 101 caractères</h3><p>Une seule règle, quatre boîtes, aucune marge : <code>offset</code> centre et tourne à la fois.</p></div>
+{%- else %}
+<div class="cap" data-t="0" data-step="Four identical bars"><h3>1. Four identical bars</h3><p><code>&lt;dl>&lt;p></code> adds two boxes: <code>html</code> > <code>body</code> > <code>dl</code> > <code>p</code>, each inside the one before. <code>*</code> gives them the same rule. In quirks mode, <code>width:20</code> means 20px. <code>42q</code> is 39.69px, laid out at 39.67. <code>53q</code> is 50.08px, and Chrome draws the border at 50. Each box is a 20 × 139.67 bar: 50 of cream, 39.67 of navy, 50 of cream. Without <code>offset</code>, they stack in the top left corner.</p></div>
+<div class="cap" data-t="5" data-step="All on one center"><h3>2. All on one center</h3><p><code>offset:ray()</code> puts the box's center on the center of its parent block, whatever its margins. For <code>html</code>, that block is the 400 × 300 frame: (200, 150). For the others, it is the parent's content box, already centered on the same point. The four bars pile up on (200, 150). With <code>ray(90deg)</code>, the ray points right and they stay upright.</p></div>
+<div class="cap" data-t="10" data-step="−45° per level"><h3>3. −45° per level</h3><p><code>ray(45deg)</code> points up and to the right. The box lines up its horizontal axis with the ray: it turns by 45° − 90° = −45°. A child turns inside its parent's frame, so the rotations add up. <code>html</code> −45°, <code>body</code> −90°, <code>dl</code> −135°, <code>p</code> −180°. Four bars, four directions.</p></div>
+<div class="cap" data-t="15" data-step="Eight arms"><h3>4. Eight arms</h3><p>Each bar has two borders, one at each end: eight 20 × 50 cream arms, every 45°. The 39.67 middle leaves a gap: each arm runs from 19.84 to 69.84px from the center. Upright, that is y = 80.16 to 219.84.</p></div>
+<div class="cap" data-t="19" data-step="The octagonal hole"><h3>5. The octagonal hole</h3><p>The eight tips sit 19.84px from the center, and each one is 20 wide. A regular octagon with a 19.84 apothem has 16.43 sides: the tips overlap and close the hole. <code>html</code>'s background goes to the canvas; on the other three, it paints the middle of the bars, in the same color.</p></div>
+<div class="cap" data-t="23" data-step="Result" data-live="101 characters · 100% match"><h3>6. Result: 101 characters</h3><p>One rule, four boxes, no margin: <code>offset</code> centers and turns at the same time.</p></div>
+{%- endif %}
+</div>
+<div class="live"></div>
+</div>
+</div>
+<script>
+(window.AnimScenes = window.AnimScenes || {}).t1124 = (fig) => {
+  const fr = document.documentElement.lang === 'fr';
+  const $ = (s) => fig.querySelector(s);
+  const $$ = (s) => [...fig.querySelectorAll(s)];
+  const live = $('.live');
+  const BARS = [0, 1, 2, 3].map((i) => $(`.t1124-b${i}`));
+  const R1 = $('.t1124-r1'), R2 = $('.t1124-r2'), OCT = $('.t1124-oct'), POLY = OCT.querySelector('polygon');
+  const K = (n) => $$(`.t1124-k${n}`);
+  const L = (k) => $(`.t1124-l-${k}`);
+  // measured in Chrome (quirks mode, 400 × 300): every box is 20 wide, 39.671875 tall (42q) with 50px borders (53q = 50.08)
+  // without offset: html at (0, 0), body at (8, 58), dl at (8, 108), p at (8, 174)
+  // with offset:ray(45deg): every center on (200, 150), html −45°, body −90°, dl −135°, p −180°
+  const W = 20, H = 39.671875, B = 50, CX = 200, CY = 150;
+  const TEACH = ['var(--t1124-h)', 'var(--t1124-b)', 'var(--t1124-d)', 'var(--t1124-p)'];
+  const T = { g: [0.4, 3.4], m: [5.4, 8.2], r: [10.4, 13.6], a: [15.4, 16.4], o: [19.4, 20.4], fin: [23.1, 23.8] };
+  const ease = (x) => (x < 0.5 ? 4 * x * x * x : 1 - Math.pow(-2 * x + 2, 3) / 2);
+  const pr = (t, [a, b]) => ease(Math.min(1, Math.max(0, (t - a) / (b - a))));
+  const win = (t, a, b) => Math.min(pr(t, [a, a + 0.5]), 1 - pr(t, [b - 0.4, b]));
+  const num = (v, d) => v.toFixed(d).replace('.', fr ? ',' : '.');
+  const c = fr ? ' :' : ':';
+  // the octagon: apothem H / 2, vertices every 45° from 22.5°
+  const ap = H / 2, rv = ap / Math.cos(Math.PI / 8);
+  POLY.setAttribute('points', Array.from({ length: 8 }, (_, k) => {
+    const a = Math.PI / 8 + (k * Math.PI) / 4;
+    return `${(CX + rv * Math.cos(a)).toFixed(2)},${(CY + rv * Math.sin(a)).toFixed(2)}`;
+  }).join(' '));
+  return (t, st) => {
+    const step = st + 1;
+    const teach = fig.dataset.teach === '1';
+    const fin = t >= T.fin[0];
+    const g = pr(t, T.g), m = pr(t, T.m), r = pr(t, T.r);
+    const w = W * g, h = H * g, b = B * g, tall = h + 2 * b;
+    // layout positions without offset (top left corners), following the sizes as they grow
+    const lay = [[0, 0], [8, 8 + b], [8, 8 + 2 * b], [8, 24 + 3 * b]];
+    const theta = 90 - 45 * r;
+    BARS.forEach((el, i) => {
+      const lx = lay[i][0] + w / 2, ly = lay[i][1] + tall / 2;
+      const cx = lx + (CX - lx) * m, cy = ly + (CY - ly) * m;
+      const rot = (i + 1) * (theta - 90);
+      const col = teach && !fin ? TEACH[i] : 'var(--t1124-c)';
+      const mid = i === 0 ? 'transparent' : teach && !fin ? `color-mix(in srgb, ${TEACH[i]} 30%, var(--t1124-n))` : 'var(--t1124-n)';
+      // a bar at a multiple of 90° is drawn without a transform, so its edges stay as sharp as Chrome's own
+      const q = ((rot % 180) + 180) % 180;
+      const flat = Math.abs(q - 90) < 1e-6, up = q < 1e-6;
+      const bw = flat ? tall : w, bh = flat ? w : tall;
+      Object.assign(el.style, {
+        left: `${cx - bw / 2}px`, top: `${cy - bh / 2}px`, width: `${bw}px`, height: `${bh}px`,
+        borderWidth: flat ? `0 ${b}px` : `${b}px 0`, borderColor: col, background: mid,
+        transform: flat || up ? 'none' : `rotate(${rot}deg)`,
+      });
+    });
+    // radii of the arms (step 4) and the octagon (step 5)
+    const ra = win(t, T.a[0], T.o[0] + 0.2);
+    [[R1, ap], [R2, ap + B]].forEach(([el, rr]) => Object.assign(el.style, { left: `${CX - rr}px`, top: `${CY - rr}px`, width: `${2 * rr}px`, height: `${2 * rr}px`, opacity: ra }));
+    OCT.style.opacity = win(t, T.o[0], T.fin[0]);
+    // digits in the code
+    K(1).forEach((k) => (k.textContent = String(Math.round(53 * g))));
+    K(2).forEach((k) => (k.textContent = String(Math.round(20 * g))));
+    K(3).forEach((k) => (k.textContent = String(Math.round(42 * g))));
+    K(4).forEach((k) => (k.textContent = step === 2 ? '90' : step === 3 ? String(Math.round(theta)) : '45'));
+    L('a').style.opacity = win(t, 0.3, T.m[0] - 0.4);
+    L('b').style.opacity = win(t, T.m[0], T.r[0] - 0.3);
+    L('c').style.opacity = win(t, T.r[0] + 1.6, T.a[0] - 0.3);
+    L('d').style.opacity = win(t, T.a[0], T.o[0] - 0.3);
+    L('e').style.opacity = win(t, T.o[0], T.fin[0]);
+    let txt = '';
+    if (step === 1) txt = `${fr ? 'barre' : 'bar'}${c} ${num(w, 0)} × ${num(tall, 2)}`;
+    else if (step === 2) txt = `${fr ? 'centres' : 'centers'}${c} (200, 150) · ray(90deg) → 0°`;
+    else if (step === 3) txt = `ray(${Math.round(theta)}deg) → html ${Math.round(theta - 90)}° · p ${Math.round(4 * (theta - 90))}°`;
+    else if (step === 4) txt = `${fr ? '8 branches' : '8 arms'} · 20 × 50 · r ${num(ap, 2)} → ${num(ap + B, 2)}`;
+    else if (step === 5) txt = `${fr ? 'apothème' : 'apothem'} ${num(ap, 2)} · ${fr ? 'côté' : 'side'} ${num(2 * ap * Math.tan(Math.PI / 8), 2)}`;
+    else txt = $$('.caps .cap')[5].dataset.live || '';
+    live.textContent = txt;
+  };
+};
+</script>
+</figure>
