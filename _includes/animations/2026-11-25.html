@@ -1,0 +1,132 @@
+<figure class="anim t1125" data-duration="31" data-scene="t1125" data-wide="-30 60 460 200" style="--bg:#6da78a">
+<style>
+.t1125{--t1125-w:#fff;--t1125-h:#4dabf7;--t1125-b:#f783ac;--t1125-i:#ffd43b;--t1125-g:#6da78a}
+.t1125 .t1125-box{position:absolute;box-sizing:border-box;border:0 solid var(--t1125-w);border-top:0;border-bottom:0}
+.t1125 .t1125-out{position:absolute;box-sizing:border-box;border:1.5px dashed transparent;pointer-events:none}
+.t1125 .t1125-sheet{position:absolute;left:0;top:0;width:400px;height:300px;background:#fff;opacity:0}
+.t1125 .t1125-tint{position:absolute;left:0;top:0;width:400px;height:300px;background:#597d;opacity:0}
+.t1125 .zlab{color:#fff;background:rgb(10 30 20 / .85);padding:1px 5px;border-radius:3px;white-space:nowrap;opacity:0}
+.t1125 .t1125-k{color:inherit}
+</style>
+<div class="anim-col">
+<div class="stage" role="img" aria-label="{% if include.lang == "fr" %}Animation : la règle * donne à html, au body et à une img vide les mêmes bordures latérales blanches de 66q ; sans zoom, elles font toutes 62 px ; zoom:.9 se compose, ×0,9, ×0,81, ×0,729, et les ramène à 56, 50 et 45 px ; la marge -7 de html élargit la bande de 6,3 px de chaque côté ; le body fait 50,75 de haut, l'img 90 × 69,26 ; le fond #597d posé sur le canevas blanc donne le vert{% else %}Animation: the * rule gives html, the body and an empty img the same 66q white side borders; without zoom, they are all 62px; zoom:.9 compounds, ×0.9, ×0.81, ×0.729, and brings them to 56, 50 and 45px; html's -7 margin widens the band by 6.3px on each side; the body is 50.75 tall, the img 90 × 69.26; the #597d background laid on the white canvas gives the green{% endif %}">
+<div class="scene">
+<div class="t1125-sheet"></div>
+<div class="t1125-tint"></div>
+<div class="t1125-box t1125-b0"></div>
+<div class="t1125-box t1125-b1"></div>
+<div class="t1125-box t1125-b2"></div>
+<div class="t1125-out t1125-o0"></div>
+<div class="t1125-out t1125-o1"></div>
+<div class="t1125-out t1125-o2"></div>
+<span class="zlab t1125-l-a" style="left:12px;top:70px">{% if include.lang == "fr" %}66q = 62,36 px → 62 · 62 · 62{% else %}66q = 62.36px → 62 · 62 · 62{% endif %}</span>
+<span class="zlab t1125-l-b" style="left:12px;top:70px">{% if include.lang == "fr" %}×0,9 · ×0,81 · ×0,729 → 56 · 50 · 45{% else %}×0.9 · ×0.81 · ×0.729 → 56 · 50 · 45{% endif %}</span>
+<span class="zlab t1125-l-c" style="left:12px;top:70px">{% if include.lang == "fr" %}html : x −6,3 → 406,3{% else %}html: x −6.3 → 406.3{% endif %}</span>
+<span class="zlab t1125-l-d" style="left:12px;top:70px">{% if include.lang == "fr" %}body : y 124,72 → 175,47{% else %}body: y 124.72 → 175.47{% endif %}</span>
+<span class="zlab t1125-l-e" style="left:12px;top:70px">{% if include.lang == "fr" %}img : 90 × 69,26{% else %}img: 90 × 69.26{% endif %}</span>
+<span class="zlab t1125-l-f" style="left:12px;top:70px">{% if include.lang == "fr" %}#597d sur #fff → vert{% else %}#597d on #fff → green{% endif %}</span>
+</div>
+</div>
+<div class="legend"><span><i style="--c:var(--t1125-h)"></i>html</span><span><i style="--c:var(--t1125-b)"></i>body</span><span><i style="--c:var(--t1125-i)"></i>img</span></div>
+</div>
+<div class="anim-side">
+<pre class="code" aria-hidden="true"><span data-on="1 5">&lt;img height=95></span>&lt;style><span data-on="1" data-tone="2">*</span>{<span data-on="2">zoom:<span class="t1125-k t1125-k1">.9</span></span>;<span data-on="4">margin:-12.7 0</span>;<span data-on="1">border-inline:66q solid#fff</span>}<span data-on="3" data-tone="2">&amp;</span>{<span data-on="3">margin:150<span class="t1125-k t1125-k2">-7</span></span>;<span data-on="6">background:#597d</span></pre>
+<div class="now" aria-live="polite">
+<div class="caps">
+{%- if include.lang == "fr" %}
+<div class="cap" data-t="0" data-step="Trois boîtes, une règle"><h3>1. Trois boîtes, une règle</h3><p><code>&lt;img height=95></code> met une image vide dans le <code>body</code> : <code>html</code> > <code>body</code> > <code>img</code>. Sans <code>src</code>, elle fait 0 de large. <code>*</code> donne aux trois la même bordure gauche et droite : <code>66q</code> = 62,36px, dessinée à 62. Ici, sans le zoom et sans le <code>-7</code>, les trois bordures font 62px.</p></div>
+<div class="cap" data-t="5" data-step="Le zoom se compose"><h3>2. Le zoom se compose</h3><p><code>zoom:.9</code> est sur les trois boîtes, et un enfant hérite du zoom de son parent. <code>html</code> est à ×0,9, le <code>body</code> à ×0,81, l'<code>img</code> à ×0,729. La même bordure tombe à 56, 50 et 45px : Chrome arrondit chaque largeur de bordure au pixel inférieur. Trois tailles pour un seul <code>66q</code>.</p></div>
+<div class="cap" data-t="10" data-step="La bande de html"><h3>3. La bande de html</h3><p><code>&amp;</code> vise <code>html</code>. <code>margin:150-7</code> vaut 135px en haut et −6,3 sur les côtés, à cause du zoom. La bande déborde de 6,3px à gauche et à droite : il reste 49,7px de bordure blanche visible de chaque côté. Le mode quirks étire <code>html</code> sur la hauteur restante, 30px ; la ligne de l'<code>img</code> y ajoute 0,19.</p></div>
+<div class="cap" data-t="14.5" data-step="Le body"><h3>4. Le body</h3><p>Le <code>body</code> remplit la boîte de contenu de <code>html</code> : x 49,7 à 350,3. <code>margin:-12.7 0</code> vaut −10,29 sous ×0,81 : il dépasse de 10,29 en haut et en bas. Il fait 50,75 de haut, y 124,72 à 175,47. Ses bordures de 50 font la deuxième marche, à gauche et à droite.</p></div>
+<div class="cap" data-t="19" data-step="L'img"><h3>5. L'img</h3><p>L'<code>img</code> se pose au début de la ligne du <code>body</code>, en x 99,7. <code>height=95</code> vaut 69,26 sous ×0,729, et ses deux bordures de 45 lui donnent 90 de large. Sa marge haute de −9,26 la remonte au-dessus du <code>body</code> : y 115,47 à 184,72. Le reste du <code>body</code>, de 189,7 à 300,3, est transparent : c'est le trou vert.</p></div>
+<div class="cap" data-t="23.5" data-step="Le vert"><h3>6. Le vert</h3><p>Le fond de <code>html</code> passe au canevas, qui est blanc au départ. <code>#597d</code> est <code>#559977</code> à 86,7 % d'opacité. Posé sur le blanc, il donne rgb(108 167 137), à un cran du <code>#6da78a</code> de la cible. Quatre chiffres au lieu de six.</p></div>
+<div class="cap" data-t="27.5" data-step="Résultat" data-live="106 caractères · 100 % identique"><h3>7. Résultat : 106 caractères</h3><p>Une bordure, une marge et un zoom partagés : les trois marches sortent toutes seules.</p></div>
+{%- else %}
+<div class="cap" data-t="0" data-step="Three boxes, one rule"><h3>1. Three boxes, one rule</h3><p><code>&lt;img height=95></code> puts an empty image in the <code>body</code>: <code>html</code> > <code>body</code> > <code>img</code>. With no <code>src</code>, it is 0 wide. <code>*</code> gives all three the same left and right border: <code>66q</code> is 62.36px, drawn at 62. Here, without the zoom and without the <code>-7</code>, all three borders are 62px.</p></div>
+<div class="cap" data-t="5" data-step="The zoom compounds"><h3>2. The zoom compounds</h3><p><code>zoom:.9</code> is on all three boxes, and a child inherits its parent's zoom. <code>html</code> is at ×0.9, the <code>body</code> at ×0.81, the <code>img</code> at ×0.729. The same border drops to 56, 50 and 45px: Chrome rounds each border width down to a whole pixel. Three sizes from a single <code>66q</code>.</p></div>
+<div class="cap" data-t="10" data-step="The html band"><h3>3. The html band</h3><p><code>&amp;</code> targets <code>html</code>. <code>margin:150-7</code> means 135px at the top and −6.3 on the sides, because of the zoom. The band sticks out 6.3px on the left and on the right: 49.7px of white border stay visible on each side. Quirks mode stretches <code>html</code> over the height that is left, 30px; the <code>img</code>'s line adds 0.19.</p></div>
+<div class="cap" data-t="14.5" data-step="The body"><h3>4. The body</h3><p>The <code>body</code> fills <code>html</code>'s content box: x 49.7 to 350.3. <code>margin:-12.7 0</code> is −10.29 at ×0.81: it sticks out 10.29 at the top and at the bottom. It is 50.75 tall, y 124.72 to 175.47. Its 50px borders make the second step, on the left and on the right.</p></div>
+<div class="cap" data-t="19" data-step="The img"><h3>5. The img</h3><p>The <code>img</code> sits at the start of the <code>body</code>'s line, at x 99.7. <code>height=95</code> is 69.26 at ×0.729, and its two 45px borders make it 90 wide. Its −9.26 top margin lifts it above the <code>body</code>: y 115.47 to 184.72. The rest of the <code>body</code>, from 189.7 to 300.3, is transparent: that is the green gap.</p></div>
+<div class="cap" data-t="23.5" data-step="The green"><h3>6. The green</h3><p><code>html</code>'s background goes to the canvas, which starts out white. <code>#597d</code> is <code>#559977</code> at 86.7% opacity. Laid on white, it gives rgb(108 167 137), one step away from the target's <code>#6da78a</code>. Four digits instead of six.</p></div>
+<div class="cap" data-t="27.5" data-step="Result" data-live="106 characters · 100% match"><h3>7. Result: 106 characters</h3><p>A shared border, margin and zoom: the three steps come out on their own.</p></div>
+{%- endif %}
+</div>
+<div class="live"></div>
+</div>
+</div>
+<script>
+(window.AnimScenes = window.AnimScenes || {}).t1125 = (fig) => {
+  const fr = document.documentElement.lang === 'fr';
+  const $ = (s) => fig.querySelector(s);
+  const $$ = (s) => [...fig.querySelectorAll(s)];
+  const live = $('.live');
+  const BOX = [0, 1, 2].map((i) => $(`.t1125-b${i}`));
+  const OUT = [0, 1, 2].map((i) => $(`.t1125-o${i}`));
+  const SHEET = $('.t1125-sheet'), TINT = $('.t1125-tint');
+  const K = (n) => $$(`.t1125-k${n}`);
+  const L = (k) => $(`.t1125-l-${k}`);
+  // measured in Chrome (quirks mode, 400 × 300), boxes as [left, top, right, bottom, border]
+  // A: no zoom, margin:150 0 · B: zoom:.9, margin:150 0 · C: the official code (zoom:.9, margin:150-7)
+  const A = [[0, 150, 400, 194.25, 62], [62, 137.31, 338, 206.94, 62], [124, 124.63, 248, 219.63, 62]];
+  const B = [[0, 135, 400, 165.19, 56], [56, 124.72, 344, 175.47, 50], [106, 115.47, 196, 184.72, 45]];
+  const C = [[-6.3, 135, 406.3, 165.19, 56], [49.7, 124.72, 350.3, 175.47, 50], [99.7, 115.47, 189.7, 184.72, 45]];
+  const TEACH = ['var(--t1125-h)', 'var(--t1125-b)', 'var(--t1125-i)'];
+  const T = { z: [5.6, 8.6], m: [10.6, 12.8], w: [24, 24.8], g: [25.4, 26.8], fin: [27.5, 28] };
+  const ease = (x) => (x < 0.5 ? 4 * x * x * x : 1 - Math.pow(-2 * x + 2, 3) / 2);
+  const pr = (t, [a, b]) => ease(Math.min(1, Math.max(0, (t - a) / (b - a))));
+  const win = (t, a, b) => Math.min(pr(t, [a, a + 0.5]), 1 - pr(t, [b - 0.4, b]));
+  const mix = (p, q, k) => p.map((v, j) => v + (q[j] - v) * k);
+  const num = (v, d) => v.toFixed(d).replace('.', fr ? ',' : '.');
+  const c = fr ? ' :' : ':';
+  return (t, st) => {
+    const step = st + 1;
+    const teach = fig.dataset.teach === '1';
+    const fin = t >= T.fin[0];
+    const z = pr(t, T.z), m = pr(t, T.m);
+    // which box the current step is about (−1: all of them)
+    const focus = step === 3 ? 0 : step === 4 ? 1 : step === 5 ? 2 : -1;
+    BOX.forEach((el, i) => {
+      const r = mix(mix(A[i], B[i], z), C[i], m);
+      const col = teach && !fin ? TEACH[i] : 'var(--t1125-w)';
+      Object.assign(el.style, {
+        left: `${r[0]}px`, top: `${r[1]}px`, width: `${r[2] - r[0]}px`, height: `${r[3] - r[1]}px`,
+        borderLeftWidth: `${r[4]}px`, borderRightWidth: `${r[4]}px`, borderColor: col,
+      });
+      // dashed outline of the whole box (teaching colors, intermediate steps only)
+      const show = teach && !fin && (focus === -1 || focus === i);
+      Object.assign(OUT[i].style, {
+        left: `${r[0]}px`, top: `${r[1]}px`, width: `${r[2] - r[0]}px`, height: `${r[3] - r[1]}px`,
+        borderColor: show ? (i === 2 ? '#3b3000' : '#10261b') : 'transparent',
+      });
+      el.style.opacity = teach && !fin && focus !== -1 && focus !== i ? 0.35 : 1;
+    });
+    // step 6: the white canvas, then the #597d background laid over it
+    const s6 = step === 6;
+    SHEET.style.opacity = s6 ? pr(t, T.w) : 0;
+    TINT.style.opacity = s6 ? pr(t, T.g) : 0;
+    // digits in the code
+    const zv = 1 - 0.1 * z;
+    K(1).forEach((k) => (k.textContent = zv > 0.999 ? '1' : zv.toFixed(2).replace(/^0/, '').replace(/0$/, '')));
+    const mv = Math.round(-7 * m);
+    K(2).forEach((k) => (k.textContent = mv === 0 ? ' 0' : String(mv)));
+    L('a').style.opacity = win(t, 0.3, T.z[0] - 0.4);
+    L('b').style.opacity = win(t, T.z[0], 10 - 0.3);
+    L('c').style.opacity = win(t, 10.2, 14.5 - 0.3);
+    L('d').style.opacity = win(t, 14.7, 19 - 0.3);
+    L('e').style.opacity = win(t, 19.2, 23.5 - 0.3);
+    L('f').style.opacity = win(t, 23.7, T.fin[0]);
+    let txt = '';
+    const bw = BOX.map((el) => Math.round(parseFloat(el.style.borderLeftWidth)));
+    if (step === 1) txt = `${fr ? 'bordures' : 'borders'}${c} ${bw.join(' · ')}`;
+    else if (step === 2) txt = `zoom ${num(zv, 2)} · ${num(zv * zv, 3)} · ${num(zv * zv * zv, 3)} → ${bw.join(' · ')}`;
+    else if (step === 3) txt = `margin:150${mv === 0 ? ' 0' : mv} → html x ${num(-0.9 * -mv, 1)} → ${num(400 + 0.9 * -mv, 1)}`;
+    else if (step === 4) txt = `body${c} 300,6 × 50,75 · y 124,72 → 175,47`;
+    else if (step === 5) txt = `img${c} 90 × 69,26 · x 99,7 → 189,7`;
+    else if (step === 6) txt = `rgb(85 153 119 / 86,7 %) ${fr ? 'sur' : 'on'} #fff → rgb(108 167 137)`;
+    else txt = $$('.caps .cap')[6].dataset.live || '';
+    if (!fr && step !== 7) txt = txt.replace(/(\d),(\d)/g, '$1.$2').replace(' %', '%');
+    live.textContent = txt;
+  };
+};
+</script>
+</figure>
