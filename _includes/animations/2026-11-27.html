@@ -1,0 +1,137 @@
+<figure class="anim t1127" data-duration="35" data-scene="t1127" data-wide="-50 -40 500 380" style="--bg:#f1eba7">
+<style>
+.t1127{--t1127-v:#411c56;--t1127-y:#f1eba7;--t1127-h:#1c7ed6;--t1127-b:#e64980}
+.t1127 .t1127-html{position:absolute;box-sizing:border-box;border:20px solid var(--t1127-v);opacity:0}
+.t1127 .t1127-out,.t1127 .t1127-in{position:absolute;left:0;top:0;width:400px;height:300px;opacity:0}
+.t1127 .t1127-out{background:var(--t1127-v);clip-path:polygon(189.76px 40px,300px 40px,300px 260px,189.76px 260px,189.76px 234.91px,100px 234.91px,100px 65.09px,189.76px 65.09px)}
+.t1127 .t1127-in{background:var(--t1127-y);clip-path:polygon(209.76px 60px,280px 60px,280px 240px,209.76px 240px,209.76px 214.91px,120px 214.91px,120px 85.09px,209.76px 85.09px)}
+.t1127 .t1127-cbox{position:absolute;box-sizing:border-box;border:1.5px dashed #000;opacity:0;pointer-events:none}
+.t1127 .t1127-body{position:absolute;box-sizing:border-box;border:20px solid var(--t1127-v);opacity:0}
+.t1127 .zlab{color:#fff;background:rgb(10 10 30 / .88);padding:1px 5px;border-radius:3px;white-space:nowrap;opacity:0}
+.t1127 .t1127-k{color:inherit}
+</style>
+<div class="anim-col">
+<div class="stage" role="img" aria-label="{% if include.lang == "fr" %}Animation : margin:10% 100 réduit html à une boîte de 200 × 220 en (100, 40), bordée de 20 ; son padding 30 20 24 10 laisse une boîte de contenu de 130 × 126 ; le body y prend 10 % de 130 = 13 de marge en haut et en bas, 100 à gauche : une boîte de 70 × 100 en (230, 103), dont la bordure droite tombe sur celle de html ; border-radius:95q 0 0 95q/mod(90%,183q) donne à html des coins de 89,76 × 25,09 et au body des coins de 89,76 × 90, réduits à 49,87 × 50 : un demi-anneau ; corner-shape:notch, sur html seul, change ses coins arrondis en encoches droites : l'union de deux cadres{% else %}Animation: margin:10% 100 shrinks html to a 200 × 220 box at (100, 40), with a 20px border; its 30 20 24 10 padding leaves a 130 × 126 content box; the body gets 10% of 130 = 13 of margin at the top and bottom, 100 on the left: a 70 × 100 box at (230, 103), whose right border falls on html's; border-radius:95q 0 0 95q/mod(90%,183q) gives html 89.76 × 25.09 corners and the body 89.76 × 90 corners, scaled down to 49.87 × 50: a half ring; corner-shape:notch, on html only, turns its round corners into straight notches: the union of two frames{% endif %}">
+<div class="scene">
+<div class="t1127-out"></div>
+<div class="t1127-in"></div>
+<div class="t1127-html"></div>
+<div class="t1127-cbox"></div>
+<div class="t1127-body"></div>
+<span class="zlab t1127-l-a" style="left:4px;top:272px">html 200 × 220 · (100, 40)</span>
+<span class="zlab t1127-l-b" style="left:4px;top:272px">{% if include.lang == "fr" %}contenu 130 × 126 · (130, 90){% else %}content 130 × 126 · (130, 90){% endif %}</span>
+<span class="zlab t1127-l-c" style="left:4px;top:272px">body 70 × 100 · (230, 103)</span>
+<span class="zlab t1127-l-d" style="left:4px;top:272px">{% if include.lang == "fr" %}html : 89,76 × 25,09{% else %}html: 89.76 × 25.09{% endif %}</span>
+<span class="zlab t1127-l-e" style="left:4px;top:272px">{% if include.lang == "fr" %}body : 89,76 × 90 → 49,87 × 50{% else %}body: 89.76 × 90 → 49.87 × 50{% endif %}</span>
+<span class="zlab t1127-l-f" style="left:4px;top:272px">{% if include.lang == "fr" %}notch 89,76 × 25,09{% else %}notch 89.76 × 25.09{% endif %}</span>
+</div>
+</div>
+<div class="legend"><span><i style="--c:var(--t1127-h)"></i>html</span><span><i style="--c:var(--t1127-b)"></i>body</span></div>
+</div>
+<div class="anim-side">
+<pre class="code" aria-hidden="true">&lt;style><span data-on="1 2 3 4 5" data-tone="2">*</span>{<span data-on="1">border:5vw solid#411c56</span>;<span data-on="4 5">border-radius:<span class="t1127-k t1127-k7">95</span>q 0 0 <span class="t1127-k t1127-k7">95</span>q/mod(<span class="t1127-k t1127-k8">90</span>%,183q)</span>;<span data-on="1 3">margin:<span class="t1127-k t1127-k1">10</span>%<span class="t1127-k t1127-k2">100</span></span>;<span data-on="2 3">padding:<span class="t1127-k t1127-k3">30</span> <span class="t1127-k t1127-k4">20</span> <span class="t1127-k t1127-k5">6</span>%<span class="t1127-k t1127-k6">10</span></span>}<span data-on="6 7" data-tone="2">&amp;</span>{<span data-on="6">corner-shape:notch</span>;<span data-on="7">background:#dc26</span></pre>
+<div class="now" aria-live="polite">
+<div class="caps">
+{%- if include.lang == "fr" %}
+<div class="cap" data-t="0" data-step="html : une boîte"><h3>1. <code>html</code> : une boîte</h3><p>Sans doctype, la page est en mode quirks : <code>100</code> vaut 100px. <code>5vw</code> = 20px de bordure. Une marge en % se mesure sur la largeur du bloc parent : pour <code>html</code>, les 400px du canevas, donc 10 % = 40. Le mode quirks étire <code>html</code> sur toute la hauteur : 300 − 2 × 40 = 220. Une boîte de 200 × 220 en (100, 40).</p></div>
+<div class="cap" data-t="5" data-step="Le padding place le body"><h3>2. Le padding place le <code>body</code></h3><p><code>padding:30 20 6%10</code> : 30 en haut, 20 à droite, 6 % de 400 = 24 en bas, 10 à gauche. Avec la bordure de 20, la boîte de contenu de <code>html</code> va de (130, 90) à (260, 216) : 130 × 126. C'est là que le <code>body</code> va se placer.</p></div>
+<div class="cap" data-t="10" data-step="body : la même règle"><h3>3. <code>body</code> : la même règle</h3><p>Le <code>body</code> prend les mêmes déclarations. Ses 10 % se mesurent cette fois sur les 130 de son parent : 13. À gauche, 100 : x = 230. Sa largeur ne peut pas descendre sous 20 + 10 + 20 + 20 = 70 : la marge droite est ignorée et il finit à 300, sur la bordure droite de <code>html</code>. Le mode quirks l'étire en hauteur : 126 − 2 × 13 = 100.</p></div>
+<div class="cap" data-t="15" data-step="mod() : html"><h3>4. <code>mod()</code> : <code>html</code></h3><p><code>95q</code> = 89,76px de rayon horizontal, à gauche seulement. Le rayon vertical est <code>mod(90%,183q)</code>, et le % se mesure sur la hauteur de la boîte. <code>html</code> fait 220 de haut : 90 % = 198. <code>183q</code> = 172,91px, et 198 mod 172,91 = 25,09. Des coins de 89,76 × 25,09.</p></div>
+<div class="cap" data-t="20" data-step="mod() : body"><h3>5. <code>mod()</code> : <code>body</code></h3><p>La même déclaration sur le <code>body</code>, 100 de haut : 90 % = 90, plus petit que 172,91, donc gardé. Des coins de 89,76 × 90 ne tiennent pas dans 70 × 100 : le navigateur réduit tous les rayons du même facteur, 100 / 180. Il reste 49,87 × 50 : un demi-cercle, et avec la bordure de 20, un demi-anneau.</p></div>
+<div class="cap" data-t="25" data-step="notch : des encoches"><h3>6. <code>notch</code> : des encoches</h3><p><code>&amp;</code> vise seulement la racine, <code>html</code>. <code>corner-shape:notch</code> remplace chaque coin arrondi par une encoche droite de la taille du rayon : 89,76 × 25,09 en haut et en bas à gauche. Le cadre devient l'union de deux cadres. Le bord intérieur suit le bord extérieur, décalé de 20 : ses encoches gardent la même taille.</p></div>
+<div class="cap" data-t="30" data-step="Résultat" data-live="143 caractères · 100 % identique"><h3>7. Résultat : 143 caractères</h3><p><code>#dc26</code>, c'est <code>#ddcc22</code> à 40 % d'opacité. Le fond de <code>html</code> passe au canevas, et sur le blanc il donne #f1eba7. Deux boîtes, une seule règle pour leurs tailles et leurs rayons.</p></div>
+{%- else %}
+<div class="cap" data-t="0" data-step="html: one box"><h3>1. <code>html</code>: one box</h3><p>With no doctype, the page is in quirks mode: <code>100</code> means 100px. <code>5vw</code> is a 20px border. A margin in % is measured on the width of the parent block: for <code>html</code>, the 400px canvas, so 10% is 40. Quirks mode stretches <code>html</code> to the full height: 300 − 2 × 40 = 220. A 200 × 220 box at (100, 40).</p></div>
+<div class="cap" data-t="5" data-step="The padding places the body"><h3>2. The padding places the <code>body</code></h3><p><code>padding:30 20 6%10</code>: 30 at the top, 20 on the right, 6% of 400 = 24 at the bottom, 10 on the left. With the 20px border, <code>html</code>'s content box goes from (130, 90) to (260, 216): 130 × 126. That is where the <code>body</code> goes.</p></div>
+<div class="cap" data-t="10" data-step="body: the same rule"><h3>3. <code>body</code>: the same rule</h3><p>The <code>body</code> gets the same declarations. This time its 10% is measured on its parent's 130: 13. On the left, 100: x = 230. Its width cannot go below 20 + 10 + 20 + 20 = 70: the right margin is ignored, and it ends at 300, on <code>html</code>'s right border. Quirks mode stretches it: 126 − 2 × 13 = 100 tall.</p></div>
+<div class="cap" data-t="15" data-step="mod(): html"><h3>4. <code>mod()</code>: <code>html</code></h3><p><code>95q</code> is an 89.76px horizontal radius, on the left only. The vertical radius is <code>mod(90%,183q)</code>, and the % is measured on the box's height. <code>html</code> is 220 tall: 90% is 198. <code>183q</code> is 172.91px, and 198 mod 172.91 = 25.09. Corners of 89.76 × 25.09.</p></div>
+<div class="cap" data-t="20" data-step="mod(): body"><h3>5. <code>mod()</code>: <code>body</code></h3><p>The same declaration on the 100px <code>body</code>: 90% is 90, less than 172.91, so it stays. Corners of 89.76 × 90 do not fit in 70 × 100: the browser scales all the radii by the same factor, 100 / 180. What is left is 49.87 × 50: a half circle, and with the 20px border, a half ring.</p></div>
+<div class="cap" data-t="25" data-step="notch: straight cuts"><h3>6. <code>notch</code>: straight cuts</h3><p><code>&amp;</code> only targets the root, <code>html</code>. <code>corner-shape:notch</code> turns each round corner into a straight notch the size of the radius: 89.76 × 25.09 at the top and bottom left. The frame becomes the union of two frames. The inner edge follows the outer edge, 20px in: its notches keep the same size.</p></div>
+<div class="cap" data-t="30" data-step="Result" data-live="143 characters · 100% match"><h3>7. Result: 143 characters</h3><p><code>#dc26</code> is <code>#ddcc22</code> at 40% opacity. <code>html</code>'s background goes to the canvas, and over white it gives #f1eba7. Two boxes, and one rule for their sizes and their radii.</p></div>
+{%- endif %}
+</div>
+<div class="live"></div>
+</div>
+</div>
+<script>
+(window.AnimScenes = window.AnimScenes || {}).t1127 = (fig) => {
+  const fr = document.documentElement.lang === 'fr';
+  const $ = (s) => fig.querySelector(s);
+  const $$ = (s) => [...fig.querySelectorAll(s)];
+  const live = $('.live');
+  const HTML = $('.t1127-html'), OUT = $('.t1127-out'), IN = $('.t1127-in'), CBOX = $('.t1127-cbox'), BODY = $('.t1127-body');
+  const K = (n) => $$(`.t1127-k${n}`);
+  const L = (k) => $(`.t1127-l-${k}`);
+  // measured in Chrome (quirks mode, 400 × 300):
+  // html 200 × 220 at (100, 40), margin 40 100, padding 30 20 24 10, border 20: content box 130 × 126 at (130, 90)
+  // body 70 × 100 at (230, 103): margin 13 (10% of 130) 100, content width 0, right margin ignored, height 126 - 26
+  // radius 95q = 89.7638; mod(90%, 183q): html 198 mod 172.913 = 25.087, body 90; body radii scaled by 100/180 → 49.87 × 50
+  // corner-shape:notch on html: notches 89.76 × 25.09, inner notches the same size
+  const RX = 89.7638, RYH = 25.087, RYB = 90;
+  const T = { m: [0.4, 3.4], p: [5.4, 8.4], b: [10.4, 13.4], rh: [15.4, 18.4], rb: [20.4, 23.4], n: [25.6, 28.4], fin: [30.2, 30.9] };
+  const ease = (x) => (x < 0.5 ? 4 * x * x * x : 1 - Math.pow(-2 * x + 2, 3) / 2);
+  const pr = (t, [a, b]) => ease(Math.min(1, Math.max(0, (t - a) / (b - a))));
+  const win = (t, a, b) => Math.min(pr(t, [a, a + 0.5]), 1 - pr(t, [b - 0.4, b]));
+  const num = (v, d) => v.toFixed(d).replace('.', fr ? ',' : '.');
+  const c = fr ? '\u00a0:' : ':';
+  const box = (el, x, y, w, h) => Object.assign(el.style, { left: `${x}px`, top: `${y}px`, width: `${w}px`, height: `${h}px` });
+  return (t, st) => {
+    const step = st + 1;
+    const teach = fig.dataset.teach === '1';
+    const fin = t >= T.fin[0];
+    const tc = teach && !fin;
+    // 1. html: margin 0 → 10% (40) and 100
+    const gm = pr(t, T.m), mx = 100 * gm, my = 40 * gm;
+    const hx = mx, hy = my, hw = 400 - 2 * mx, hh = 300 - 2 * my;
+    // 4. html's radius grows, 6. html becomes the notched frame
+    const gr = pr(t, T.rh), gn = pr(t, T.n);
+    box(HTML, hx, hy, hw, hh);
+    Object.assign(HTML.style, {
+      opacity: 1 - gn, borderColor: tc ? 'var(--t1127-h)' : 'var(--t1127-v)',
+      borderRadius: `${RX * gr}px 0 0 ${RX * gr}px / ${RYH * gr}px 0 0 ${RYH * gr}px`,
+    });
+    OUT.style.opacity = gn; IN.style.opacity = gn;
+    OUT.style.background = tc ? 'var(--t1127-h)' : 'var(--t1127-v)';
+    // 2. html's content box: padding 0 → 30 20 24 10
+    const gp = pr(t, T.p);
+    const cx = hx + 20 + 10 * gp, cy = hy + 20 + 30 * gp, cr = hx + hw - 20 - 20 * gp, cb = hy + hh - 20 - 24 * gp;
+    box(CBOX, cx, cy, cr - cx, cb - cy);
+    CBOX.style.opacity = win(t, T.p[0] - 0.2, T.b[1] + 1.2);
+    // 3. body: margin 0 → 13 and 100, inside html's content box (130, 90, 130 × 126)
+    const gb = pr(t, T.b), ml = 100 * gb, mt = 13 * gb;
+    const bw = Math.max(0, 130 - 2 * ml - 70) + 70;
+    box(BODY, 130 + ml, 90 + mt, bw, 126 - 2 * mt);
+    // 5. body's radius grows; the browser scales it down to fit
+    const gq = pr(t, T.rb);
+    Object.assign(BODY.style, {
+      opacity: t >= T.b[0] ? 1 : 0, borderColor: tc ? 'var(--t1127-b)' : 'var(--t1127-v)',
+      borderRadius: `${RX * gq}px 0 0 ${RX * gq}px / ${RYB * gq}px 0 0 ${RYB * gq}px`,
+    });
+    // digits in the code
+    K(1).forEach((k) => (k.textContent = String(Math.round(10 * gm))));
+    K(2).forEach((k) => (k.textContent = String(Math.round(100 * gm))));
+    K(3).forEach((k) => (k.textContent = String(Math.round(30 * gp))));
+    K(4).forEach((k) => (k.textContent = String(Math.round(20 * gp))));
+    K(5).forEach((k) => (k.textContent = String(Math.round(6 * gp))));
+    K(6).forEach((k) => (k.textContent = String(Math.round(10 * gp))));
+    K(7).forEach((k) => (k.textContent = String(Math.round(95 * gr))));
+    K(8).forEach((k) => (k.textContent = String(Math.round(90 * gr))));
+    L('a').style.opacity = win(t, 0.3, T.p[0] - 0.3);
+    L('b').style.opacity = win(t, T.p[0], T.b[0] - 0.3);
+    L('c').style.opacity = win(t, T.b[0], T.rh[0] - 0.3);
+    L('d').style.opacity = win(t, T.rh[0], T.rb[0] - 0.3);
+    L('e').style.opacity = win(t, T.rb[0], T.n[0] - 0.3);
+    L('f').style.opacity = win(t, T.n[0], T.fin[0]);
+    let txt = '';
+    if (step === 1) txt = `html${c} ${num(hw, 0)} × ${num(hh, 0)} · margin ${num(my, 0)} ${num(mx, 0)}`;
+    else if (step === 2) txt = `${fr ? 'contenu' : 'content'}${c} ${num(cr - cx, 0)} × ${num(cb - cy, 0)}`;
+    else if (step === 3) txt = `body${c} ${num(bw, 0)} × ${num(126 - 2 * mt, 0)} · margin ${num(mt, 0)} ${num(ml, 0)}`;
+    else if (step === 4) txt = `html${c} 90% × 220 = ${num(198 * gr, 0)} → ${num(RYH * gr, 2)}`;
+    else if (step === 5) txt = `body${c} 90% × 100 = 90 → ${num(RX * gq * Math.min(1, 100 / (2 * RYB * gq || 1), 70 / (RX * gq || 1)), 2)} × ${num(RYB * gq * Math.min(1, 100 / (2 * RYB * gq || 1), 70 / (RX * gq || 1)), 2)}`;
+    else if (step === 6) txt = `notch${c} 89${fr ? ',' : '.'}76 × 25${fr ? ',' : '.'}09`;
+    else txt = $$('.caps .cap')[6].dataset.live || '';
+    live.textContent = txt;
+  };
+};
+</script>
+</figure>
